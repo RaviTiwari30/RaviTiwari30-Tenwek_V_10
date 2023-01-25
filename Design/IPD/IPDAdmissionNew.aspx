@@ -76,6 +76,10 @@
                     });
                 });
             });
+            $("#txtAdmissionDate").attr('disabled', true);
+            $("#txtAdmissionTimeHour").attr('disabled', true);
+            $("#txtAdmissionTimeMinute").attr('disabled', true); 
+            $("#ddlAdmissionTimeMeridiem").attr('disabled', true);
         });
 
         var onPatientIDChange = function () {
