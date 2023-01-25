@@ -1,0 +1,173 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>24</ID>
+    <MenuName>Billing</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAIAAACNaGH2AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAG+SURBVDhPfdFbKENxHMDxEU9K8yAKb96VN6/yKvLkRcQTSm4lidxCLZJLhmEuG4rmfmwOkmGshB2byY5t5/LfOfufyYPUcvuf7chx26/v0zmf/+/f6USldc5nJCvjYmMU/wx8Dtq4x+DLq/g+f9Lo8fGB/+cWwOxRTNk8i1IU6/fcNJOVV3JovZAfEQTBRZLE9TULwCV4SGzTSxohwxbu47/dgPSdy2UjCIZlg69vVWunCS1z4m4hEEAL0FMUGuTQ+S/NMG/v7/TjU+7UTkgLAkVR3s8ghHLtdDrv3W6KplfPHaL+8wvRCoQcNzcou8NBkiTaImqK86uM1m7s7Eddmxb1npU7W2ENHdzJMloqajvtS2/VpTbN/C6nf4lbqKNrU3zackkzfli+dFi2ePC7mpUjDYaNz6txMy5pmxckN2qV9RMRKp3ekfSFh42rHouuHIlQ4Tgm6SsvSGqYjK/VRKhEa5I0x/PqNdOQYVvetHEf29Bv6frCnR+sS5pmmC6Vqr27R55+RgOGC+iKhHBgrFTURbpd9COOLafm4xN5BEFAYpfHB0INwisT8ENFZu/yrMVmvvMcRQy3k/UG8weZLACdgtZjngAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/Design/IPD/IPDAdmissionDetail.aspx</URLName>
+      <DispName>Admit-Dis Cancel</DispName>
+      <MenuID>24</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAIAAABL1vtsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAv9JREFUOE+llG9Ik0EYwK8EQQOxQKoZFkEIQRkVSR8ixIl+cJSkH6S+CCopaFhiYYoTE0HHFCc40WEUsxLtD/nBLXFTnDIVdaIba6KTEB0qxt7jNt4d7/Xsn7ncROjlx3Hvce/vnnueu/cEYwz95wMKw8+dvA5jniIiue3Gyg+LTuKByYcfBEOFqll07x3K7EMZkZF8Mtp2IyqKVHMoXd0yZNVb93QrRGcL4u1jvXknVapHOf1TRyiKe+dQmnrCAotQhtcYtgdZY+5NWPmRYgo97D8qCq8ivU+zuCv0ZjoLkLMoBLY0KFHMHUORBood9r0C1yRgaWKAOhGuT2Krekn77HEUas3CVthswWBGuwk9GJpcpxHT6c+FxuSAGQJ2CNw+2wK3Jdiny2rll7Kr5kcGqUXjxW5klN/XeYvqU3g3IqhzuVLElUeFUIp+v07YkyZx9Um44SKuOQtzhA1TeAUbKOBexHBVcQFexnNlUdyreGafYhYtNWvpMoQwjavPkPZUl/qJZ37Ae7iDUQRzQSmjngACpZYR3JDEaxpw7XksvQAtr22AWIhSDK+k5Vo4hUDZPtCzjsJngnNTcG74YXgb9uL++hy8RH7joMJX1MFCrjIWIg9ymnsWjetEvE4GCxL5TWh5nRxK7lJlg4W03jqkUOdwJYgrOxkA8voU4dpz1KbnDUp+sos3dNGVcZBCFvhRGZGlhG7EX9RgwL7OpmfhM5aKqE3HG7p5Qw+0dHUCpLgp2T1QQtruhMtF6OmhKwZIHj+mgG2TtttEnsKPd0CCPeZhXt9KZNdDFBOWnTCHb31MqD7FfhnY7qrgsApbZsFu5CqiYX33l3KQBhT+y978zapbdowsHmDZMfpjZL4gdqk4zlESReD6NCXjxsu4LpGf7OG1b/5WpKjX98sR94EolD4kVqOsTiRWfMyOofUi19scl0riep/vHq7HTVdI89VAFPAjeKycye+cyYf2X2ZzlSaJ0qztbfT0ZJDuLB+ZpPM+UdyF7AYUkS7oMcf/AMkdAOj6D6DkAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/design/Edp/RateListReport.aspx</URLName>
+      <DispName>RateList Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/CommonReports/TransferReportHisVsFinance.aspx</URLName>
+      <DispName>SIC (HIS vs HIS Staging)</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>6</ID>
+    <MenuName>Doctor</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAWABMDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0HxhazX+qPbvqs0UCop8hUBA9/f8AEVj/AAo1PVP7e1zRbx5ZLS3CyW7OuAPmKnHsf5g1q+KrmO817yrHmaOPZKxyAxDYwvGCVyM+m4Vp+DrIaZcapDKFe482PfIOo/dq2z6DcT/wKuSEavt3daHXOVP2CSep11FFFdZyGIujul4J55IpmPRxFtYHcWPHTGTn8BVHw1HPY6fezXrCWaW8lYOrZLLkAZJA54A+gFFFAG/bRXS26Ca4UyY5KrxRRRQB/9k=</image>
+    <Items>
+      <URLName>/Design/Doctor/DoctorReg.aspx</URLName>
+      <DispName>Registration</DispName>
+      <MenuID>6</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Doctor/ViewDoctorDetail.aspx</URLName>
+      <DispName>View Doctor</DispName>
+      <MenuID>6</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>2</ID>
+    <MenuName>DB Manager</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAA8tJREFUOE+NlH9IW1cUx+OcdbXNnIvJeyYbaTdGh/90TLoxusp+dnYdHRPDnLTbghIxVZKSIIskTBuo6BY01CZrZtBgSEgwZCFCSIjVhq0zi7RTVixxnUFxZoozs7FJJeG7m7BJbUPwwuFxefd87j3nfM8pYDyyXlYVvPbKoZIzpcVPvVdStO9IYWEBk8FA4n4ytfB3Mvnj6r2E89pXqeuMB4ztR3137esNpcJuz5EZ54wMc2suLMWmsRoPY30rgrX4PJZjtxDe8MEXVmMg8NbvTSMs1YuqJ/bnhAqHWV9473YAiBPb25qLD0M2SvflBLaYyo3zW869kf47tZm+DYWDN50T2Gbh6Dt9PJinmnB7xUPCXCRu6RwXxLCSDMETVkJ78zDEFvavOYGtFra+w0Oj2VyONisHKhcfGt/r0E2chiFQC/OMAAMT769pvMd1jcOsxtP9xWdbbSyZ1Ep15ARqx09cURBgq4UDiZXKflsIvHmkHPIxDpotLE9Vd2G1YLDkvNzOdfd4X7p2wV5hqzcyz1Z/zdj3GDS2taz7aVGL9lFuFpJ5acbaxyjIHPT1ej3zmHKMFwiuaUnZwkhhFTHMwvOHPBORu6G/6OldUBKWPpGKYjOxguDdEViCokyI6PVXJtrM1IcXbLQ3ikDOot2K6yEaYRl2AYWmMn3P5CGMzXYRvc1iO5XIOqfTaW+94aDANSfNqwCtvzpZc7W4cgfa7uDpZG42CZcFiY2C2v0ChkIfwxgQfPv50DOXFpP+vMDAUjcaDMxzO8DI+tSVkZlPskDy/KxlLvhyqKxbZGL1raRu5AVORbU4Zyxt2gEG7hj0QALTERuRSR26yAvV/ucgNrNtgsGDomD0cl6gKViPj/T739wBkop+Z51tQGQ9mHVMpZPYSEawuhn+03dH87bS+fzCNqI5oZGtcUgs1CTnYfmQvH2v9FNZDfZ4KknHiDA+14/wphu+3zSXT/YVnRoInPhnHdMPQZMILZmgGT96T2rnVu2qssRK18h/oO93TnAhdRBRW8qzwm61saFw05Da6Yu1ugPvKlxcu27y5F/6yTPb/b534ldvnMJwqO6Bysmve0zcYjP1htxB22VOOqoYq4DKy4XSU4HOcS56pngZ6C9iU7m4dvDAB0d7C19VOg4f6/VWLagDXLRZqHmh5tmynG3Y7qL5klG6hnTIeZICNbFvJDb6EhG3SmqnPmuxUdT/jsIhlkjprYDST0Nm517MO3D38rPayHySXPTz6PynJO+NG10uPn8vfnnPWG+2HzeFBBtkaCyTccb/FxnQKWEa40cAAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/EDP/CentreWiseMapping.aspx</URLName>
+      <DispName>Center Wise Mapping</DispName>
+      <MenuID>2</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/EDP/ApprovalTypeMaster.aspx</URLName>
+      <DispName>Disc Approval Master</DispName>
+      <MenuID>2</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>17</ID>
+    <MenuName>Tools</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAABEZJREFUSEud0gtMW1UYB/CrMqm09/b2kgHh4oAQWbYMCQQlIVuoYcqEpeiy1WAGCwqGuWRsjiglZJOMOyQ+GhyaMc14DHnPDMoKHY9SuIWOR+XRtbQW+3AdMJshOHQTs8/TRnTykLqTnOTm3vP/ne9892AYGhazJaEwLe0Z1/P/GTJZV6BufPwts9kssdvtSQaDwefvvMlkIpeWln5xOBz60tLSWA/hp7q7u8/qb+rnbzscYJyaAq1W2zAzM8N5NP/EXafzBKDxnVY74Qls1OvTbRYrjA6PgJpl70pycxNcucoLF7Y1NjZS/zKs09Z3zSbTorq//+Jm+Pz8fOfy8jJoR0ehS6FwFhUV7VMqle+3XL1qb21ujliTZwqZeFal+k3DsuUb4TlMDv7g/gOD64ROpxNGhoehQy6HmzodyNvkKqlU6rVutoRh4vt7XfjAuviERkMvLi7OTU9PQ+03taCbnAQdQvtUKoNard71n6d14+7K1+L6EWW6Ua972NTYBCdzTgLbz8LiwgJMjo0d3ayF7u8unF1decKNSDGjtLVfV8Eg2weop2AyGvXoqqnQlXvPI9iNo5672qIdGjxPiZvjUg7XW6g3ByC2cAJq6q7pR24MHGIYBvcYfHShlMmPUfaxs5oGxT3dvmQofyEDArOGjdjWi2GPBa6EuCmdOxrOVVuXK74GY+JemBLuhoookefHXm/3ncxYTGy2zN62Mw4GAv1gobQUbh07Bh18rvEyhxPzWBWnlo1GxxUO2b12y+ClyHOgiNoD40Ih/CAWg1UkgnZfX2cdj5eN8Cc93uDwF9rnUz+fsPgIW2HLfhaizzshLlPO1ntzKnsCAmBWIoFbR47AdYEAGgiitRLHn9sUj8pXhSd/Nm4iEtsAi++CqE8cEJKvm8NE34e7wk08nowNDoY7DAO2zEzooiioJwh7NY7v2RCn32kJ2n5GO4YntQMWLYews1YI/9Dwx5a9stdWQl+RZGgTjs/1IdwplYItO3ul8rk6gWBt3wmhlBecN9THS+kGbFcr0HkmiCi2ACf5mmR1JRV8fpYMtUEZEgLOsjKw/oU3E4Sxxdc36J/1QqlX6OnxK9sQhkW0AnV0EqI//hG4BzpqNjpeFUVdUqA2uHF0W2xZWdBNknCFJBVVNO3tzgUc15wOytXfp0/obGEFRoj4yA64uFODcQuIjWAaw7wvU1RtO8J7UVt+Ki4GW0YG9Lg2o+lT7hyV2mPhiAbrEi7dSdtefBv4YpUZe7Y6dNM/jRbUUFTJtyT5sDcoCGYLCuBeXh4Yk5LOuLOcyPIS37fVvyd+af1Z8EbXDBaQn4hUnkAg2Mrn8/3XmyRJ+mF+fgKMx8NL+PxTVVzukiEmBhZqaoZ+Vav93PDTGObvEyY5ztnxaZG3IPogxcXiEPoqAkUURb2Ong+snq73CN9PUNQrGEm+mEYQ6XU0/cHL/v5RiPT+Ezz3LVkEGqYIAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Edp/CategoryMaster.aspx</URLName>
+      <DispName>Category Master</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Edp/SubCategoryMaster.aspx</URLName>
+      <DispName>SubCategory Master</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Edp/ItemMaster.aspx</URLName>
+      <DispName>Item Master</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Edp/PanelMaster.aspx</URLName>
+      <DispName>Panel Master</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Edp/AddRoom.aspx</URLName>
+      <DispName>Create Room</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Edp/IPDPackagemaster.aspx</URLName>
+      <DispName>IPD Package Master</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Edp/ManagePackage.aspx</URLName>
+      <DispName>OPD Package Master</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/CentrewiseMarkup.aspx</URLName>
+      <DispName>CenterWise MarkUp</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/EDP/ItemMasterMapping.aspx</URLName>
+      <DispName>Item Master Mapping</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/MapStoreItem.aspx</URLName>
+      <DispName>Mapping  Store Item</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/EDP/SetPerformingCost.aspx</URLName>
+      <DispName>Centrewise Performing Cost</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Finance/Demo_Tally_Interface_Master.aspx</URLName>
+      <DispName>Map Item with Finance centre</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/Physical_VerificationApproval.aspx</URLName>
+      <DispName>Physical Verification Approval</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/PhysicalVerifcation_New.aspx</URLName>
+      <DispName>Physical Verification</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Finance/ManualFinanceTransfer.aspx</URLName>
+      <DispName>Manual Transfer</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>28</ID>
+    <MenuName>Laboratory Master</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAA2hJREFUOE+NlFtIFFEYx3dXwS4PKRRF0PYWORcvLELuzO5o7sysuerM7G5eKnrIiogM1HVmE1mW6iHyrSjE6iFSK4vAzNu6My5WYmBBktBLkPlQCj31EJhN3xmdbb3iwtlz5lx+5/9933/GarFYbJFIBDqLZXp62trT07OIxnhosNiSltFmW/xbO3Wz5HMwGEzDMEw3Ni7/otGoxTyLpuDZiiZsDMOkowZcW+7lF5m4HG8nW98tkIrakhfu38NEIukIaO7bqEd7EDgJhLEVk3vtWFg7S4Q1gVDirUTLm/EcJVaFNm4JmKoQHUAHC5r69mFK/BkmqxeJkMrgsvYKKd0KdEXIy0Croz5mJ+TRASwUr0AQUBrGFPUqGm8WuhHyaoVQHptRlHDiAa6o7wlFrfde6s8gwqMv85uHszdTuQaI4EsHSrw59U8eAfQD1jxiKCNCsRMQ+qSjvte+EXQNEG2kePE8UxrUKbaqNDsyeRKTtXukEq+AFDzEFG2GlGOVWwKiTXSpcIji/QtOTrpteg1XtAlcVqcwecye1xgrgOePpDLkQI5YXfWkbcyBkxXv07x/nmEqMw0g+BJvGuIA2EWERgQ8rN4iZO05GRpwrafS4Jgwuqw2C4Bz0NrNapprAEQFGocCdRBXEp9A5STRMHh4PZVJIMWJuaBOd3rEutTbUaHwhsQBUHaNbJ34A4X6TTaPBEilL2s9Cxm2QQB3SYCkvQGd8ga6nJ6K/alQw0ayVoeHtQskeNNx7umu1ChMcLLKRkG8AuNkpe9QlASEPQE9boZketMs1Hq9CUVrhkKKFe9QnHTdGHPSXZoV25YPWo+WV++lPEI3XDQGqRmC9go1EDBMsdJbmO9kfL7dSEAyZMpT2QhQtZCV3LAhZuYS3cyy7E6wUjHkuAbWZgDWBH6NOjnxJ81LpyCaIofPt8NIH/pD7UggsJ3yiDdgcb64vBaMLXUwzOltqeFRHp+d4qVZtzfwxcX7X7v4pQKa+TS+BamxG+F6BRqU/Cry1egU508UcpJAc4IDLjgDKr+ieZrzf6O5IDL3io/Fmlfvv8EFzsUH5piyat3lDeoAWnCXHtfdx6p0uOxHYUlFvpnf1LdlBXDZPlbIYxTs8xjlyrAR50cQ6CV96VmchbC7nbzYWVgsHUw1NwL+AxxfoqeAjLQFAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Lab/ObservationType.aspx</URLName>
+      <DispName>Create Subgroup</DispName>
+      <MenuID>28</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Lab/MapInvestigationObservationNew.aspx</URLName>
+      <DispName>Investigation Master</DispName>
+      <MenuID>28</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>3</ID>
+    <MenuName>Rate Manager</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAABLFJREFUOE9VVAtQlFUUvrsKJgIKrEhOmCPZIIaOD5wEJjFgxkfgkJOjWGaCiaMpmuSoiQKJyLqwrICBkjwWCCEEHygskGUwKCYo8RBQIzSWAoIYlqX92a/z32VyuzPfPee/c+53z/nuub8ktTPbURgZizKOG+2kjAnMbEiktMIHWSOfTZNEdPg0MTM2SSq1hET6AzvyU0xa1AM5Iu/G4cu6WETUnEBE7Ul8UXMSh2ujcOLuGUTdk3NEi6g/yxHDocBXHAmIbVAiuk4+yD4p/+zbkKr9+OjWbnxcvgfJjRm42VWFsl81kP+cjBDNfuyo2IdQTThCK8Oxs/IAx6ccB7FrAmHVh8j/fJj5F3+g9i/ZCN+iIFR0fQ9xGPQGjI6Ocv/4nVj4FAViXclmrOfYwvGeiNJgBHBsxYZrHyKwJHiIued4q+fnrMCRmhhOoNPpEFkdi1X5AVDdS8feisNwzXobS3JXcyzl1gcLs724vzzPFx75flhR4A+PPL8hZqlyUtued8bNZxpO2Px7C45WR2NayhxYJ8+BU9oCOKa5cswizCTMubgIy3LfhTNZ0/oCyNLfhHXq60OMKWzUTDkdFU+rOOGD3xqwMGMlWLwlYQpYwnRIkxw5mFIGFivB3Iwl6Ox/ArdMijvFwM5OA0uyp1g7Iky0V0sSrRFSvo8Tdv/1HO6XVsKGCHZpDsAzfw1tsAZT2HK7ONsTx2tP8diE+ylYUxzEM2ZKO7BEGREqZWqWRB8Ka2Q25fHAP3V9eDHcw/1tV8PA4ibBSuWE9EdZMIwb+Lr5eNjbBJsUZ/HQCcJzVAqVZqGcidCyfSh8dAVXmq7h4K1jcEh9gwgnY3fVIc4hCAJKW25A+7cW6ocFuNmhQau2jWtNSZkRKmxMWoi6xb9iwhkLk5ZnJiO+XsUJ+0f6SYpwPB14hqU5PmDRDE7nXTEleTaV7GDSUJo8C/MzPWCbOpcynWESP5FEJutyaRmsyHoVrIPRaHxZKbnNfW34uvEi3srxouysJjQUCRNtUPD4O1R3/QhJgigugbLbdGMHBnWDWJ2/Aey0BFuuhqC++wH0ev3/NBwx6LCKmp+qmihZMRXvFAbwoKDSbXyzBWXVNtCO5uetsFbOhlQ8JJZa5JQUfpeDoB3uRVZjHvp1/XxfXmsRJWE5Qahy4NoVd1xH0x8ttFGKTWUhPDDw8lbeaxuvb0duayF86WBfapWuwW5E3I5E9/ALHpf5MNeMULxl+VT+nAyCAdtv7UF9bwNqntRBcpY0jZMijH4C5kMwCv999gxosTybLkhuZd42tJEykd8/hzHDGPSjenhlU1PHUZnUUq9dcEd8TRI0HbfR2fcUEC+lpxUpdelY+I2n2aWIja2yh915F8y76Aa/4vfpZCNqntVhXsZivHrBlW6bJCFS3lKnJ2NFrj9G9Tp45619+fRUYmeYXkohS5iK4BuhaO19jGZtC8aN4+gZ0uKXnmaUt1fCLsXFRCi2E/WnW44n/tGPwTufCOXUp+K6SKh00DGWJDvIEmz1i7K8jceqI4WoO6eFvpE+obxdIxytPCrsLNsrTEmaLdDDFygDbukvJKwv3CzIUufT9wzTuinD5n8Bw/ytnRTFT34AAAAASUVORK5CYII=</image>
+    <Items>
+      <URLName>/Design/EDP/RateList.aspx</URLName>
+      <DispName>Items Rate Edit</DispName>
+      <MenuID>3</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>47</ID>
+    <MenuName>DocAccounting</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAthJREFUOE+VVE1rE1EUnYmagB+Ii1aputFBbbAxM+/NR8ZgUbOIYsVKB8RNQVCLoiIWsS4MceFKF/WzqBTFj6hREalFXNiV/p/+gnjOm3nhWRLEwCXv3XvuuefeuTO2ZVm5RqOBv96/ZrNp9YuvjOFuE5wbHR1d/T9mWY2cLp8kySqdyzP9DNoa8C9iYoUQa3zfPxAEXsQ8TaoIqTBJinkADksptxPQj5RYx6kXpPTuwr7AfiBn2sxRwhC4LaX4DHsPwA6q6EVKbBSJAPgFnsMw3Ox53gL/tVLVMgBLIPJZFUrH+6mkPwiCfSzO9kC2kznV6sgmitAzhEJ5CsBPCD6u1Wob+z0oPWtgD5G8XK4OYI7qrOeoWoaqXb7vKWX91OnqUDWJh/I1DMVRCDmTduUdYx6FYCaRgxa+0wCcMquZc0wLi0vAfQgCcSIb01vkkJgPZ0ypweEkgHfQxjaCuBJapaporBRiH3WL1Wp5II7jDRnHFcSaihCAgyCd4xnOp7AWB9/pdGzHcQosgHbz9Xq9EIbyOMdTLBbzHAFjqT8c9rxohB1ZlUplEIF3uKwnAVSeg+JHBOI87fvyJ+6LKNpGu68xrxbwrxBrw48HKducKQp9g13O2vbeVCpyL4IxCOYAfobzDJQWhfDmcb+JpD1h6A7TB9KziO/mnX7E78GegHCLIoTzKh0p2B+X0h1D9XkkXqMhnuiHxbZR5JeU5SPwqXca5BfZjd4Su1QqrYNjFoQtvjVZkfMgug67AdLT9OEhDCH5JQiX8f8ceYP6oSBvRhF2txtnrNBWWgoSL4SI9gN4C2syoatz8Cyk7xnhBeKUT78VJnEcu0NIWuRbg9anoGYJCz0rhPsQifcNe5D6xW90MdlVuGKBbdd1Hb3k3DXOFCoT+CZo3F19pt/33Trua9Xe9npvs4VWnzFU7X4rzTZ7nNUX6q+WTaUcgTbzi2z6za81Mbz/AU0ULR5Xm4yDAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/DocAccount/DocShareMaster.aspx</URLName>
+      <DispName>Doctor Share Master</DispName>
+      <MenuID>47</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

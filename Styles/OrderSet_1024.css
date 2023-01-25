@@ -1,0 +1,156 @@
+﻿body 
+{
+    BACKGROUND:white;MARGIN:0px 0px 0px 0px; font-family: Verdana, Arial, sans-serif; font-size:10pt;padding:0px 0px 0px 0px;
+
+}
+#Pbody_box_inventory 
+{	
+	 margin:0px 10px 3px 10px; background-color: #F5F5F5; width:864px;  display:inline-block; border:solid 1px Green;padding:1px 1px 1px 1px;
+}
+.POuter_Box_Inventory
+{
+	border:solid 1px #303e54;float:left;clear:both;WIDTH:860px;margin:1px 1px 1px 1px;vertical-align:middle;display:inline-block;
+}
+
+.ItDoseButton{ COL
+.ItDoseButton{ COLOR: #333;font-size: 9pt; font-family:Verdana, Arial, sans-serif, sans-serif;BACKGROUND-IMAGE: url('Images/1.gif');
+cursor:pointer;
+    height: 22px;
+}
+
+:9pt; font-family:Verdana, Arial, sans-serif, sans-serif; font-weight:bold;}
+
+:9pt; font-family:Verdana, Arial, sans-serif, sans-serif; font-weight:bold;}
+.ItDoseLinkButton
+{color:Navy; font-size:9pt; font-family:Verdana, Arial, sans-serif, sans-serif; font-weight:bold;
+ }
+.HeaderTab
+{
+	float:left;LINE-HEIGHT: normal;
+	background: #bfdbff url(../Images/TabstripBackground.gif) repeat-x 100% bottom; white-space:nowrap;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 11px;
+	font-family: Tahoma;
+    width: 960px;
+}
+.HeaderTab ul
+{
+	 padding:2px;MARGIN: 0px;LIST-STYLE-TYPE: none;white-space:nowrap; 
+}
+.HeaderTab LI {
+        PADDING-RIGHT: 0px;PADDING-LEFT: 5px;BACKGROUND: transparent url(../Images/tabMiddleOff.gif) no-repeat left top; 
+        FLOAT: left;PADDING-BOTTOM: 0px;MARGIN: 0px; PADDING-TOP: 0px
+}
+.HeaderTab A {
+        PADDING-RIGHT: 10px;DISPLAY: block; PADDING-LEFT: 10px; FONT-WEIGHT: bold; 
+        BACKGROUND:transparent url(../Images/tabMiddleOn.gif) no-repeat right top; 
+        FLOAT: none; PADDING-BOTTOM: 4px; COLOR: #203b78; PADDING-TOP: 5px; TEXT-DECORATION: none
+}
+.HeaderTab A:hover {
+        COLOR: #333;BACKGROUND-IMAGE: url(../Images/tabMiddleOff.gif)
+}
+.HeaderTab #current {
+        BACKGROUND-IMAGE: url(Images/tabLeftOn.gif)
+}
+.HeaderTab #current A {
+        BACKGROUND-IMAGE: url(Images/tabRightOn.gif);PADDING-BOTTOM: 5px; COLOR: #333}
+
+.HeaderTab A.wrap
+{
+	padding-right: 6px;	background: transparent url(Images/tabMiddleOff.gif) right 0px no-repeat;
+}
+ul {
+padding: 0;
+margin: 0;
+}
+li
+{
+    margin-left:7px;
+    }
+    .ItDoseLblError
+    {
+        color:red; font-size:9pt; font-family:Verdana, Arial, sans-serif, sans-serif; font-weight:bold 
+     }
+    .Purchaseheader
+{
+    padding-left: 5px;
+    color: #765;
+    font-size: 10pt;
+    background-image: url('../Images/1.gif');
+    text-align: left;
+}
+.ItDoseTextinputText
+{
+    color:Navy;border:solid 1 black; text-align:left;  font-size:9pt; font-family:Verdana, Arial, sans-serif, sans-serif;
+}
+.GridViewStyle
+{
+	border:solid 1px #C6DFF9;font-size:9pt;
+}
+.GridViewStyle .row
+{
+	border:solid 1px #C6DFF9;font-size:9pt;padding-left:5px; 
+}
+.GridViewStyle .altrow
+{
+	border:solid 1px #C6DFF9;font-size:9pt;padding-left:5px;background-color:#FFE0C0;
+}
+
+.GridViewHeaderStyle
+{
+	border:solid 1px #C6DFF9;font-weight:bold;color:white;font-size:9.5pt;
+	background-color:#6D7B8D; background-repeat:repeat-x;	
+}
+.GridViewScrollHeaderStyle
+{
+	border:solid 1px #C6DFF9;font-weight:bold;color:#765;font-size:9.5pt;
+	background-image:url(Images/headerBg.gif); background-repeat:repeat-x;
+	  position:relative ;top:expression(this.offsetParent.scrollTop);z-index: 10;	
+}
+.GridViewItemStyle
+	{ 
+		border:solid 1px #C6DFF9;padding-left:5px;font-size:9pt; 		
+	}
+.GridViewAltItemStyle
+	{ 
+		border:solid 1px #C6DFF9;padding-left:5px;font-size:9pt;background-color:#eee9e9;
+	}
+	.GridViewLabItemStyle
+	{ 
+		border:solid 1px #C6DFF9;padding-left:5px;font-size:8.75pt;
+	}
+.GridViewResultItemStyle
+	{ 
+		border:solid 1px #C6DFF9;padding-left:5px;font-size:8.75pt;background-color:#fafad2;
+	}
+.GridViewHeaderStyleMIS
+{
+	border:solid 1px #C6DFF9;font-weight:bold;color:#765;font-size:9.5pt;
+	background-image:url(Images/headerBg.gif); background-repeat:repeat-x;	
+}
+.GridViewAltStyleMIS
+{
+	border:solid 1px #C6DFF9;font-size:8.75pt;background-color:#f0fff0;
+}
+
+.GridViewItemStyleMIS
+	{ 
+		border:solid 1px #C6DFF9;padding-left:5px;font-size:9pt; 		
+	}
+	
+	#Pbody_box_inventory_orderSet
+{	
+	 margin:0px 10px 3px 10px; background-color: #F5F5F5; width:704px;  display:inline-block; border:solid 1px Green;padding:1px 1px 1px 1px;
+}
+.POuter_Box_Inventory_orderSet
+{
+	border:solid 1px #303e54;float:left;clear:both;WIDTH:700px;margin:1px 1px 1px 1px;vertical-align:middle;display:inline-block;
+}
+.pnlRequestItemsFilter
+{
+    width:425px;
+    background-color:#EAF3FD;
+    border:solid 1px maroon;
+}

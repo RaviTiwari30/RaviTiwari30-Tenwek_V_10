@@ -1,0 +1,427 @@
+﻿ tr.FullRowColorInPink td {
+                background-color:pink!important;
+}
+        tr.FullRowColorInYellow td {
+            background-color: yellow!important;
+        }
+
+           div#divPatient.vertical {
+            width: 100%;
+            height: 450px;
+            background: #ffffff;
+            float: left;
+            overflow-y: auto;
+            border-right: solid 1px gray;
+        }
+        div#MainInfoDiv.vertical{
+            height: 450px;
+            background: #ffffff;
+            overflow-y: auto;
+            display:none;
+        }
+
+
+        div#divInvestigation {
+            /*margin-left: 40%;*/
+            height:385px;
+            background: #ffffff;
+            overflow-y: auto;
+        }
+        .htCore{
+            width:100%
+        }
+
+        div#divPatient.horizontal {
+            height: 400px;
+            background: #ffffff;
+            overflow-y: auto;
+            display:none;
+        }
+
+        div#MainInfoDiv.horizontal {
+            height: 400px;
+            background: #ffffff;
+            overflow-y: auto;
+        }
+
+
+        .ht_clone_top_left_corner, .ht_clone_bottom_left_corner, .ht_clone_left, .ht_clone_top {
+            z-index: 0;
+        }
+
+        .ajax__calendar .ajax__calendar_container {
+            z-index: 9999;
+        }
+
+.modal {
+	display: none;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+	/*padding-top: 120px;*/
+	/*text-align: -moz-center;
+	text-align: -webkit-center;*/
+	/*display: none; 
+	position: fixed; 
+	z-index: 1; 
+	padding-top: 160px; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: hidden;*/
+	/*background-color: rgb(0,0,0);*/
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+	.modal.fade .modal-dialog {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+		-webkit-transition: all .25s linear; /*-webkit-transform 0.3s ease-out;*/
+		-o-transition: all .25s linear; /*-o-transform 0.3s ease-out;*/
+		transition: all .25s linear; /*transform 0.3s ease-out;*/
+	}
+
+	.modal.in .modal-dialog {
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		-o-transform: scale(0);
+		transform: scale(0);
+	}
+
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.modal-dialog {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	/*position: relative;
+  width: auto;*/
+	/*margin: 100px;*/
+}
+
+.modal-content {
+	position: relative;
+	background-color: #ffffff;
+	border: 1px solid #999999;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	outline: 0;
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.5s;
+	animation-name: animatetop;
+	animation-duration: 0.5s;
+	margin: 0 auto;
+}
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000000;
+}
+
+	.modal-backdrop.fade {
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+
+	.modal-backdrop.in {
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+
+.modal-header {
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+	min-height: 16.42857143px;
+	/*background: url('../Images/patter.jpg');*/
+}
+
+	.modal-header .close {
+		margin-top: -2px;
+		font-size: 15px;
+	}
+
+.modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+}
+
+.modal-body {
+	position: relative;
+	padding: 5px;
+	/*background: url('../Images/patter.jpg');*/
+}
+
+.modal-footer {
+	padding: 15px;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;
+	/*background: url('../Images/patter.jpg');*/
+}
+
+	.modal-footer .btn + .btn {
+		margin-left: 5px;
+		margin-bottom: 0;
+	}
+
+	.modal-footer .btn-group .btn + .btn {
+		margin-left: -1px;
+	}
+
+	.modal-footer .btn-block + .btn-block {
+		margin-left: 0;
+	}
+
+.modal-scrollbar-measure {
+	position: absolute;
+	top: -9999px;
+	width: 50px;
+	height: 50px;
+	overflow: scroll;
+}
+
+.close{float:right;font-size:21px;font-weight:bold;line-height:1;color:#000;text-shadow:0 1px 0 #fff;filter:alpha(opacity=20)}
+
+
+@keyframes animatetop{From{-webkit-transform:scale(0);transform:scale(0)}To{-webkit-transform:scale(1);transform:scale(1)}}
+
+
+        .handsontable .htDimmed {
+            color: #000000;
+        }
+
+        .currentRow {
+            background-color: #f6f8b3  !important; /*#E7E8EF*/
+        }
+        .handsontableInput
+        {
+            /*width:150px !important;*/
+            max-width:150px !important;
+        }
+        .handsontableEditor, autocompleteEditor, handsontable, listbox{
+             /*width:200px;*/
+             max-width:200px;
+        }
+
+        .InvHeader{
+            background-color:#EFF0F1;
+            font-weight:bold;
+            color:red;
+
+        }
+
+        .DeptHeader {
+            background-color:#D7EDFF;
+            font-weight:bold;
+            color:#800000;
+        }
+
+        .InvSubHead {
+            
+            font-style: italic;
+            color:#63B42F; font-weight:bold;
+        }
+
+
+        #divimgpopup
+        {
+                height: 984px;
+    min-height: 134px;
+    width: auto;
+    width: 400px;
+    padding: 10px;
+        }
+        .ui-dialog-title
+        {
+            font-weight: bold;
+        }
+        .ui-dialog
+        {
+                display: block;
+                position: absolute;
+                outline: 0px;
+                height: 300px;
+                padding: 10px;
+                width: 500px;
+                top: 0px;
+                left: 514.5px;
+                z-index: 9999;
+                background-color: whitesmoke;
+                 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            
+        }
+        .ui-icon-closethick
+        {
+            float:right;
+        }
+
+           .Printed{
+            background-color:#00FFFF;
+        }
+        .Approved{
+            background-color:#90EE90;
+        }
+        .Tested{
+            background-color:#FFC0CB;
+        }
+        .Hold{
+            background-color:#FFFF00;
+        }
+
+        .Forwarded{
+            background-color:#3399FF;
+        }
+        .MacData{
+            background-color:#E2680A;
+        }
+        .Not-Collected{
+            background-color:#CC99FF;
+        }
+        .Collected{
+            background-color:#CC99FF;
+        }
+        .Received{
+            background-color:#FFFFFF;
+        }
+        .Rejected{
+            background-color:#B0C4DE;
+        }
+        .NA{
+            background-color:#FFFFFF;
+        }
+
+        #popup_container {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	min-width: 300px; /* Dialog will be no smaller than this */
+	max-width: 600px; /* Dialog will wrap after this width */
+	background: #FFF;
+	border: solid 5px #999;
+	color: #000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#popup_title {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.75em;
+	color: #666;
+	background: #CCC url(images/title.gif) top repeat-x;
+	border: solid 1px #FFF;
+	border-bottom: solid 1px #999;
+	cursor: default;
+	padding: 0em;
+	margin: 0em;
+}
+
+#popup_content {
+	background: 16px 16px no-repeat url(images/info.gif);
+	padding: 1em 1.75em;
+	margin: 0em;
+}
+
+#popup_content.alert {
+	background-image: url(images/info.gif);
+}
+
+#popup_content.confirm {
+	background-image: url(images/important.gif);
+}
+
+#popup_content.prompt {
+	background-image: url(images/help.gif);
+}
+
+#popup_message {
+	padding-left: 48px;
+}
+
+#popup_panel {
+	text-align: center;
+	margin: 1em 0em 0em 1em;
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+}
+
+
+
+        
+.handsontable .htDimmed {
+            color: #000000;
+        }
+
+        .currentRow {
+            background-color: #E7E8EF !important;
+        }
+        .handsontableInput
+        {
+            /*width:150px !important;*/
+            max-width:150px !important;
+        }
+        .handsontableEditor, autocompleteEditor, handsontable, listbox{
+             /*width:200px;*/
+             max-width:200px;
+        }
+
+
+        .Printed{
+            background-color:#00FFFF !important;
+        }
+        .Approved{
+            background-color:#90EE90 !important;
+        }
+        .Tested{
+            background-color:#FFC0CB !important;
+        }
+        .Hold{
+            background-color:#FFFF00 !important;
+        }
+
+        .Forwarded{
+            background-color:#3399FF !important;
+        }
+        .MacData{
+            background-color:#E2680A !important;
+        }
+        .Not-Collected{
+            background-color:#CC99FF !important;
+        }
+        .Collected{
+            background-color:#CC99FF !important;
+        }
+        .Received{
+            background-color:#FFFFFF !important;
+        }
+        .Rejected{
+            background-color:#B0C4DE !important;
+        }
+        .NA{
+            background-color:#FFFFFF !important;
+        }
+

@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BaseCurrencyID" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="CityCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="ClientAddress" xml:space="preserve">
+    <value>Bomet County, Kenya</value>
+  </data>
+  <data name="ClientEmail" xml:space="preserve">
+    <value>customer.experience@tenwekhosp.org</value>
+  </data>
+  <data name="ClientFooterLogo" xml:space="preserve">
+    <value>Images/logotenwek.jpg</value>
+  </data>
+  <data name="ClientFullName" xml:space="preserve">
+    <value>Tenwek Hospital</value>
+  </data>
+  <data name="ClientLogo" xml:space="preserve">
+    <value>Images/logotenwek.jpg</value>
+  </data>
+  <data name="ClientName" xml:space="preserve">
+    <value>Tenwek Hospital</value>
+  </data>
+  <data name="ClientTelophone" xml:space="preserve">
+    <value>Tel:  +254-728-091-900</value>
+  </data>
+  <data name="ClientWebsite" xml:space="preserve">
+    <value>Website:- www.tenwekhosp.org</value>
+  </data>
+  <data name="CountryCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="CrystalReportLogo" xml:space="preserve">
+    <value>Images/ebizframeRx.jpg</value>
+  </data>
+  <data name="DefaultCity" xml:space="preserve">
+    <value>SILIBWET TOWNSHIP</value>
+  </data>
+  <data name="DefaultCountry" xml:space="preserve">
+    <value>ABC</value>
+  </data>
+  <data name="DoctorCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="General_GRN_ItemsCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="General_PR_ItemsCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="Lang_Code" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <data name="Medical_GRN_ItemsCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="Medical_PR_ItemsCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="NotificationDisplay" xml:space="preserve">
+    <value>block</value>
+    <comment>none - for hide</comment>
+  </data>
+  <data name="OldPatientLink" xml:space="preserve">
+    <value />
+    <comment>none - for hide</comment>
+  </data>
+  <data name="OPD_InvestigationCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="PanelCacheTimeOut" xml:space="preserve">
+    <value>60</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="PanelIPDCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="PanelOPDCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="ReferDoctorCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="ReportHeader" xml:space="preserve">
+    <value>Tenwek Hospitals</value>
+  </data>
+  <data name="RoleCacheTimeOut" xml:space="preserve">
+    <value>0</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="SideLinkDisplay" xml:space="preserve">
+    <value>none</value>
+    <comment>none - for hide</comment>
+  </data>
+  <data name="WebSiteURL" xml:space="preserve">
+    <value>www.tenwekhosp.org</value>
+  </data>
+  <data name="BaseCurrencyNotation" xml:space="preserve">
+    <value>KES</value>
+  </data>
+  <data name="PathologyCategoryID" xml:space="preserve">
+    <value>3</value>
+    <comment>for lab category id use in MIS report</comment>
+  </data>
+  <data name="RadiologyCategoryID" xml:space="preserve">
+    <value>7</value>
+    <comment>for radio category id use in MIS report</comment>
+  </data>
+  <data name="IsReadOnly" xml:space="preserve">
+    <value>false</value>
+    <comment>for readonly page (New Patient Information input) true/false</comment>
+  </data>
+  <data name="OPDAppointmentCategoryID" xml:space="preserve">
+    <value>LSHHI1</value>
+  </data>
+  <data name="DefaultPanelID" xml:space="preserve">
+    <value>1</value>
+    <comment>User in Diet Module</comment>
+  </data>
+  <data name="DietSubCategroyForNonStoreItem" xml:space="preserve">
+    <value />
+    <comment>Use in Diet Module</comment>
+  </data>
+  <data name="CSSDSubCategoryID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TaxRequired" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="RegistrationItemID" xml:space="preserve">
+    <value>57809</value>
+    <comment>For Get Payment</comment>
+  </data>
+  <data name="DefaultPanel" xml:space="preserve">
+    <value>CASH</value>
+  </data>
+  <data name="CategoryCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+  </data>
+  <data name="SubCategoryCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+  </data>
+  <data name="AppointmentTypeCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+  </data>
+  <data name="BankCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+  </data>
+  <data name="CurrencyCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+  </data>
+  <data name="TaxPercentage" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="TaxName" xml:space="preserve">
+    <value>VAT</value>
+    <comment>Goods &amp; Service Tax</comment>
+  </data>
+  <data name="IsRoundOff" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="RoundOffDigit" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="StoreDepartmentCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+  </data>
+  <data name="DigitsAfterDecimal" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="OPDCard" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for Yes 0 for No</comment>
+  </data>
+  <data name="IsBilledFinalised" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for yes 0 for no</comment>
+  </data>
+  <data name="EditTimePeriod" xml:space="preserve">
+    <value>1040</value>
+  </data>
+  <data name="IPD_Room_DocVisit_Admission_Charges" xml:space="preserve">
+    <value>1#1#1</value>
+  </data>
+  <data name="OTItemID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdmissionDoctorVisitSubCatrgoryID" xml:space="preserve">
+    <value>135</value>
+  </data>
+  <data name="DefaultCentreID" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="EmergencySubcategoryID" xml:space="preserve">
+    <value />
+    <comment>for OPD Emergency SubcategoryID</comment>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>/Tenwek_v10</value>
+  </data>
+  <data name="OPDAdvanceItemID" xml:space="preserve">
+    <value>13527</value>
+  </data>
+  <data name="DefaultDistrictID" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="DefaultCityID" xml:space="preserve">
+    <value>981</value>
+  </data>
+  <data name="DefaultTaulkaID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EmerencyFrameID" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="IPDFrameID" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="HospitalChargeItemID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HospitalChargeApplicable" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="StoreDamageDepartment" xml:space="preserve">
+    <value>LSHHI8181</value>
+    <comment>for damage department</comment>
+  </data>
+  <data name="DietSubcategoryID" xml:space="preserve">
+    <value>119</value>
+  </data>
+  <data name="IsDietCharged" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DoctorID_Self" xml:space="preserve">
+    <value>512</value>
+  </data>
+  <data name="StickerPrinting_OPD_Lab_Phar_Doc_Diet" xml:space="preserve">
+    <value>0#0#0#0#0</value>
+    <comment>first 1 for OPD,Second 1 Lab,Third 1 Phar,Fourth 1 Doc,Fifth 1Diet AND 1 for active 0 for deactive</comment>
+  </data>
+  <data name="CentreShowInCrystalReport" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for Yes 0 for No</comment>
+  </data>
+  <data name="DocumentDriveName" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="DocumentFolderName" xml:space="preserve">
+    <value>HISDocument</value>
+  </data>
+  <data name="DocumentDriveIPAddress" xml:space="preserve">
+    <value>\\127.0.0.1/</value>
+  </data>
+  <data name="SMSApplicable" xml:space="preserve">
+    <value>0</value>
+    <comment> 0 for No 1 for Yes</comment>
+  </data>
+  <data name="HospitalChargesApplicable" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ReceiptGenerate" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for Yes 0 For No</comment>
+  </data>
+  <data name="RegistrationChargesApplicable" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for Yes 0 For No</comment>
+  </data>
+  <data name="ShowPatientOutstanding" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for Yes 0 for No</comment>
+  </data>
+  <data name="ShowPatientPhoto" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for Yes 0 for No</comment>
+  </data>
+  <data name="Packsbutton" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PacksURL" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Mortuary_IPDCaseType_ID" xml:space="preserve">
+    <value>76</value>
+  </data>
+  <data name="TokenDisplay" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ApplicationRunCentreWise" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="RegistrationChargeApplicable" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="DefaultStateID" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PanelWiseDiscount" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for yes 0 for no</comment>
+  </data>
+  <data name="ItemWiseDiscount" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for yes 0 for no</comment>
+  </data>
+  <data name="IsmembershipCardLink" xml:space="preserve">
+    <value>block</value>
+    <comment>none : for hide</comment>
+  </data>
+  <data name="IsmembershipInIPD" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="IsmembershipInOPDPharmacy" xml:space="preserve">
+    <value />
+    <comment>'display: none' for hide and '' for show</comment>
+  </data>
+  <data name="IsmembershipInPharmacy" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="TRFRequired" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="IsReceipt" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="StoreWiseVendor" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="TaxSelectionBasedOnSupplierState" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="TransportItemID" xml:space="preserve">
+    <value>17308</value>
+  </data>
+  <data name="EnablePassword_OPD_IPDAdvance_IPDBilling_Invoice_PharmacyIssue_PO_GRN" xml:space="preserve">
+    <value>1#1#1#1#1#1#1</value>
+  </data>
+  <data name="PanelAdvanceApply" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PanelLedgerNoCr" xml:space="preserve">
+    <value>LSHHI14</value>
+  </data>
+  <data name="CourierCharges_ItemId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IsVitalSignOnApp" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="IsPaybleAmtShowInOPD" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="EmergencyVisitSubCategoryId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="allowNewDiscountReasonFromPaymentControl" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="IsShowCoPayUpdate" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="IndentRestItemsAutoReject" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="FollowUpVisitSubCategoryID" xml:space="preserve">
+    <value>69</value>
+  </data>
+  <data name="OtherChargesSubCategoryID" xml:space="preserve">
+    <value>139</value>
+  </data>
+  <data name="RadiologyRoleId" xml:space="preserve">
+    <value>104</value>
+  </data>
+  <data name="LaboratoryRoleId" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="Ticketing" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="EmailApplicable" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for applicable 0 for not applicable</comment>
+  </data>
+  <data name="PurchaseDeptLedgerNo" xml:space="preserve">
+    <value>LSHHI142</value>
+  </data>
+  <data name="OPDPackageSubcategoryId" xml:space="preserve">
+    <value>LSHHI117</value>
+  </data>
+  <data name="DisplayLocalDate" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for show 0 for hide</comment>
+  </data>
+  <data name="EmergencyPanelName" xml:space="preserve">
+    <value>CASH</value>
+  </data>
+  <data name="PROCacheTimeOut" xml:space="preserve">
+    <value>240</value>
+    <comment>For Cache in minutes</comment>
+  </data>
+  <data name="NursingCheckListApplicable" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="NursingCheckListApplicableOn" xml:space="preserve">
+    <value>13</value>
+    <comment>give the Id of Discharge Process Step from 11 for PatientClearance, 12 for NursingClearance and 13 for RoomClearance</comment>
+  </data>
+  <data name="IsTokenReceipt" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="FirstVisitSubCategoryID" xml:space="preserve">
+    <value>57</value>
+  </data>
+  <data name="UseSeparateVisitAndBilling" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="AllowFiananceIntegration" xml:space="preserve">
+    <value>2</value>
+    <comment>0 for deactive 2 for active</comment>
+  </data>
+  <data name="Last2DaysOPDInvestigationDocumentID" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Last2DaysOPDMedicineDocumentID" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="HistoCytoSubcategoryID" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="OTDeptLedgerNo" xml:space="preserve">
+    <value>LSHHI114</value>
+  </data>
+  <data name="ReceiptPrintFormat" xml:space="preserve">
+    <value>1</value>
+    <comment>0 For HTML 1 For PDF</comment>
+  </data>
+  <data name="ReportCacheTimeOutSec" xml:space="preserve">
+    <value>59</value>
+  </data>
+  <data name="DisableWalkinParmacyCentreIDs" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="IsCentrewiseTolerance" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for Yes 0 for No</comment>
+  </data>
+  <data name="IsCentrewiseSubCategoryWiseMarkup" xml:space="preserve">
+    <value>0</value>
+    <comment>0 for No 1 for Yes</comment>
+  </data>
+  <data name="IsGSTApplicable" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for GST and 0 for VAT</comment>
+  </data>
+  <data name="IsRadioApointmentReschedulePayment" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="IsInvestigationAppointment" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for active 0 for deactive</comment>
+  </data>
+  <data name="skipPanelAllocation" xml:space="preserve">
+    <value>1</value>
+    <comment>1 for Yes 0 for No</comment>
+  </data>
+  <data name="PharmacyDeptLedgerNo" xml:space="preserve">
+    <value>LSHHI57</value>
+  </data>
+  <data name="IsAvailAdvanceRoomBooking" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="AttendentSubDietID" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="AllowDoctorShareOnConfigIDs" xml:space="preserve">
+    <value>3,5,25,1,23,20</value>
+  </data>
+  <data name="ExcludeConfigIDsFromIPDPackageInDoctorShare" xml:space="preserve">
+    <value>3,25,1,11</value>
+  </data>
+  <data name="Employee_RegistrationNo_Generate" xml:space="preserve">
+    <value>0</value>
+    <comment>0 for Auto 1 for Mannual generattion of Employee Code/Reg No</comment>
+  </data>
+  <data name="CasultyDepartmentID" xml:space="preserve">
+    <value>70</value>
+  </data>
+  <data name="DepartmentIDSelf" xml:space="preserve">
+    <value>57</value>
+  </data>
+  <data name="EmergencyDoctorID_Self" xml:space="preserve">
+    <value>537</value>
+  </data>
+  <data name="PharmacyCharges_ItemId" xml:space="preserve">
+    <value>8771</value>
+  </data>
+  <data name="PharmacyChargesNotAllowedTo" xml:space="preserve">
+    <value>420#326#363#16#298#353#354#355#358#388#390#395#396#399#410#416#419</value>
+    <comment>Sepertae it by # And Entere RoleId Of Pharmacy Which charge no Amount</comment>
+  </data>
+  <data name="CoPayAmountPanel" xml:space="preserve">
+    <value>682</value>
+  </data>
+  <data name="CoPayPanelAmount" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="DefaultPanelGroupID" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="FinaceHeadDeptRoleId" xml:space="preserve">
+    <value>14</value>
+    <comment>This is related to multi approval for PR</comment>
+  </data>
+  <data name="OtherSurgeryId" xml:space="preserve">
+    <value>13243</value>
+  </data>
+  <data name="DefalutParentPanelID" xml:space="preserve">
+    <value>702</value>
+  </data>
+  <data name="OnPhoneConsultation" xml:space="preserve">
+    <value>175</value>
+    <comment>SubcategoryId of onphoneconsultation</comment>
+  </data>
+  <data name="MaxFollowUpVisitCount" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RoomShifitingRequest" xml:space="preserve">
+    <value>0</value>
+    <comment>1 for Apply 0 for Not Apply</comment>
+  </data>
+</root>

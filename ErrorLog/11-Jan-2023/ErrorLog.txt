@@ -1,0 +1,93 @@
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Welcome.aspx
+ Time Of Error            : 11-01-2023 18:30:54
+ Error Message            : Value cannot be null.
+Parameter name: source
+ Error Place              :    at System.Data.DataTableExtensions.AsEnumerable(DataTable source)
+   at Design_DefaultHome.validateBindRoleAndMenu() in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 186
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 150
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type               : System.ArgumentNullException
+ TargetSite               : System.Data.EnumerableRowCollection`1[System.Data.DataRow] AsEnumerable(System.Data.DataTable)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Welcome.aspx
+ Time Of Error            : 11-01-2023 18:30:59
+ Error Message            : Could not find file 'D:\Production Code\TenwekUAT\Tenwek_v10\Design\MenuData\HELPDESK.xml'.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at Design_DefaultHome.validateBindRoleAndMenu() in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 183
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 150
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IO.FileNotFoundException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Welcome.aspx
+ Time Of Error            : 11-01-2023 18:31:39
+ Error Message            : Could not find file 'D:\Production Code\TenwekUAT\Tenwek_v10\Design\MenuData\HELPDESK.xml'.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at Design_DefaultHome.validateBindRoleAndMenu() in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 183
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 150
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IO.FileNotFoundException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/CPOE/OnPhoneConsultation.aspx/PhoneConsultationSave
+ Time Of Error            : 11-01-2023 19:07:52
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_OnPhoneConsultation.PhoneConsultationSave(String PID) in d:\Production Code\TenwekUAT\Tenwek_v10\Design\CPOE\OnPhoneConsultation.aspx.cs:line 95
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/Lab/anatomic_master.aspx
+ Time Of Error            : 11-01-2023 20:21:07
+ Error Message            : Procedure or function 'Insert_AnatomicDetails' cannot be found in database 'tenwek_live'. Verify that user 'uat'@'localhost' has enough privileges to execute.
+ Error Place              :    at MySql.Data.MySqlClient.ProcedureCache.GetProcData(MySqlConnection connection, String spName)
+   at MySql.Data.MySqlClient.ProcedureCache.AddNew(MySqlConnection connection, String spName)
+   at MySql.Data.MySqlClient.ProcedureCache.GetProcedure(MySqlConnection conn, String spName, String cacheKey)
+   at MySql.Data.MySqlClient.StoredProcedure.CheckParameters(String spName)
+   at MySql.Data.MySqlClient.StoredProcedure.Resolve(Boolean preparing)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Design_Lab_Anatomic_Master.btnSave_Click(Object sender, EventArgs e) in d:\Production Code\TenwekUAT\Tenwek_v10\Design\Lab\Anatomic_Master.aspx.cs:line 83
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.ProcedureCacheEntry GetProcData(MySql.Data.MySqlClient.MySqlConnection, System.String)

@@ -1,0 +1,424 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto; padding: 0px" class="row col-md-24">
+    <div id="divReferralConsultation">
+        <div class="row">
+            <div class="col-md-8">
+                <label class="pull-left">Doctor Type</label>
+                <b class="pull-right">:</b>
+            </div>
+            <div class="col-md-16">
+                <input type="radio" name="rbtnDoctorType" value="In-House" checked="checked" onchange="OnDoctorChange()" />In-House<input type="radio" name="rbtnDoctorType" onchange="OnDoctorChange()" value="Out-Side" />OutSide
+            </div>
+        </div>
+
+        <div class="row hideControlInHouseDoctor" >
+            <div class="col-md-8">
+                <label class="pull-left">Department</label>
+                <b class="pull-right">:</b>
+            </div>
+            <div class="col-md-16">
+                <select id="ddlDepartment" style="font-size: 13px;">
+                    <option value="ALL">ALL</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <label class="pull-left">Refer to</label>
+                <b class="pull-right">:</b>
+            </div>
+            <div class="col-md-16">
+                <div class="hideControlInHouseDoctor">
+                    <select id="ddlReferDoctor" title="Select Refer In House Doctor" onchange="OnDoctorChange()" style="font-size: 13px;">
+                        <option value="Select">Select</option>
+                    </select>
+                </div>
+                <div class="hideControlOutsideDoctor">
+                    <select id="ddlReferOuterDoctor" title="Select Refer Outer Doctor" onchange="OnDoctorChange()" style="font-size: 13px;"></select>
+                </div>
+            </div>
+        </div>
+          <div class="row hideControlInHouseDoctorApp">
+            <div class="col-md-8">
+              
+            </div>
+            <div class="col-md-16">
+                <input type="button" id="btnAppSlot" runat="server" value="Availabiity" onclick="AppointmentSlots()" />
+            </div>
+        </div>
+          <div class="row hideControlInHouseDoctorApp">
+            <div class="col-md-8">
+                <label class="pull-left">Next App. Date</label>
+                <b class="pull-right">:</b>
+            </div>
+            <div class="col-md-16">
+                <b><span id="spnInDocAppDate" class="patientInfo"></span></b>
+            </div>
+        </div>
+        <div class="row hideControlInHouseDoctorApp">
+            <div class="col-md-8">
+                <label class="pull-left">Next App. Time</label>
+                <b class="pull-right">:</b>
+            </div>
+            <div class="col-md-16">
+                <b><span id="spnInDocAppTime"  class="patientInfo"></span></b>
+            </div>
+        </div>
+         <div class="row hideControlInHouseDoctorApp">
+            <div class="col-md-8">
+                <label class="pull-left">Book App.</label>
+                <b class="pull-right">:</b>
+            </div>
+            <div class="col-md-16">
+                <input type="radio" name="rbtnAppointmentBook" value="1" onchange="OnDoctorChange()" />
+                Yes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="rbtnAppointmentBook" checked="checked" onchange="OnDoctorChange()" value="0" />
+                No
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <label class="pull-left">Referral Type</label>
+                <b class="pull-right">:</b>
+            </div>
+            <div class="col-md-16">
+                <input type="radio" name="rbtnReferralType" value="Urgent" onchange="OnDoctorChange()" />
+                Urgent &nbsp;
+                <input type="radio" name="rbtnReferralType" onchange="OnDoctorChange()" value="Routine" />
+                Routine
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <label class="pull-left">Consult.Type</label>
+                <b class="pull-right">:</b>
+            </div>
+            <div class="col-md-16">
+                <input type="radio" name="rbtnConsultType" onchange="OnDoctorChange()" value="Refer" />
+                Refer &nbsp;&nbsp;&nbsp;
+                <input type="radio" onchange="OnDoctorChange()" name="rbtnConsultType" value="Transfer" />
+                Transfer
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <label class="pull-left">Impression/Diagnosis</label>
+                <b class="pull-right">:</b>
+            </div>
+             <div class="col-md-12">
+                 </div>
+        </div>
+        <div class="row">
+            <div class="col-md-24">
+                <textarea id="txtImpression" cols="20" rows="2" style="height: 60px;" onkeyup="OnTextImpression(event)"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <label class="pull-left">Remarks</label>
+                <b class="pull-right">:</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-24">
+                <textarea id="txtRemarks" cols="20" rows="2" style="height: 60px;" maxlength="200" onkeyup="OnTextRemarks(event)"></textarea>
+            </div>
+        </div>
+    </div>
+      
+</div>
+
+<script type="text/javascript">
+
+    var removeImpression = function () {
+        $('#txtImpression').val('').keyup();
+        if ($('#divReferralRemark').html() == "" && $('#divReferralForConsultation').html() == "") {
+            $("#chkHeaders_13").prop('checked', false);
+        }
+    }
+
+    var removeRemarks = function () {
+        $('#txtRemarks').val('').keyup();
+        if ($('#divReferralRemark').html() == "" && $('#divReferralForConsultation').html() == "") {
+            $("#chkHeaders_13").prop('checked', false);
+        }
+    }
+
+    var OnTextRemarks = function (e) {
+        if ($('#divReferralRemark').html() == "" && $('#divReferralForConsultation').html()=="")
+        {
+            $("#chkHeaders_13").prop('checked', true);
+        }
+        if (e.target.value.length > 0)
+            $('#divReferralRemark').html('<b>Referral Remarks : </b><span>' + e.target.value + '</span>');
+        else
+            $('#divReferralRemark').html('');
+
+        disabledPrint(true);
+    }
+
+
+    var OnDoctorChange = function () {
+        $('.hideControlInHouseDoctorApp').hide();
+
+        var DoctorName = "";// $('#ddlReferOuterDoctor option:selected').text();
+        var referaltype = $('input[name=rbtnReferralType]:checked').val();
+        var consultationType = $('input[name=rbtnConsultType]:checked').val();
+        var doctorType = $('input[name=rbtnDoctorType]:checked').val();
+        var IsAppBook = $('input[name=rbtnAppointmentBook]:checked').val();
+        
+        var appointmentDate = "";
+        //  var ReferOuterDoctorName = $('#ddlReferOuterDoctor option:selected').text();
+        if (doctorType == "In-House") {
+            DoctorName = $('#ddlReferDoctor option:selected').text();
+            $('.hideControlInHouseDoctor').show();
+            $('.hideControlOutsideDoctor').hide();
+            if ($("#lblAppointmentDoctorID").text() == $('#ddlReferDoctor').val() && Number($("#lblIsIPDData").text())==0) {
+                $('.hideControlInHouseDoctorApp').show();
+                if(IsAppBook=="1")
+                    appointmentDate ="<b> ,Next Appointment Date : </b>" + $("#spnInDocAppDate").text() + " (" + $("#spnInDocAppTime").text() + ")";
+
+            }
+        }
+        else {
+            DoctorName = $('#ddlReferOuterDoctor option:selected').text();
+            $('.hideControlInHouseDoctor').hide();
+            $('.hideControlOutsideDoctor').show();
+        }
+
+        if (referaltype == undefined)
+            referaltype = "";
+        else
+            referaltype = "<b> ,Referral Type : </b>" + referaltype + " ";
+
+        if (consultationType == undefined)
+            consultationType = "";
+        else
+            consultationType = "<b> ,Consultant Type : </b> " + consultationType + " ";
+
+        if (DoctorName != "Select")
+            $('#divReferralConsultationName').html('<b>Referral Consultation : </b><span>' + DoctorName  + appointmentDate + referaltype + consultationType + ' </span>');
+        else
+            $('#divReferralConsultationName').html('');
+
+        disabledPrint(true);
+
+    }
+    var OnTextImpression = function (e) {
+        if ($('#divReferralRemark').html() == "" && $('#divReferralForConsultation').html() == "") {
+            $("#chkHeaders_13").prop('checked', true);
+        }
+        if (e.target.value.length > 0)
+            $('#divReferralForConsultation').html('<b>Referral Consultation Impression : </b><span>' + e.target.value + '</span>');
+        else
+            $('#divReferralForConsultation').html('');
+
+        disabledPrint(true);
+    }
+
+    var getDoctor = function (callback) {
+        var dept = $("#ddlDepartment option:selected").text();
+        var TID = $.trim($('#lblTransactionId').text());
+        var $ddlReferDoctor = $('#ddlReferDoctor');
+        serverCall('../CPOE/services/PrescribeServices.asmx/BindDoctorAll', { Department: dept, TID: TID }, function (response) {
+            $ddlReferDoctor.bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'DoctorID', textField: 'Name', isSearchAble: true });
+            callback($ddlReferDoctor.val());
+
+        });
+    }
+    var bindReferDotor = function (callback) {
+        serverCall('../Common/CommonService.asmx/bindReferDoctor', {}, function (response) {
+            $ddlReferOuterDoctor = $('#ddlReferOuterDoctor');
+            $ddlReferOuterDoctor.bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'DoctorID', textField: 'Name', isSearchAble: true });
+            callback($ddlReferOuterDoctor.val());
+        });
+    }
+    var getDepartment = function (callback) {
+        var $ddlDepartment = $('#ddlDepartment');
+        serverCall('../CPOE/services/PrescribeServices.asmx/BindDepartment', {}, function (response) {
+            //var responseData = $.map(JSON.parse(response), function (item) {
+            //    return {
+            //        val: item.Department
+            //    }
+            //});
+
+            $ddlDepartment.bindDropDown({ defaultValue: 'ALL', data: JSON.parse(response), valueField: 'Department', textField: 'Department', isSearchAble: true });
+            callback(JSON.parse(response));
+        });
+    }
+
+    //var BindDepartment = function (callback) {
+    //    var ddlDepartment = $('#ddlDepartment');
+    //    getDepartment(function (data) {
+    //        $.each(data, function (i) {
+    //            var aa = "<option value=" + $.trim(this.val) + ">" + $.trim(this.val) + "</option>";
+    //            ddlDepartment.append(aa);
+    //        });
+    //        callback();
+    //    });
+    //}
+
+    var BindDoctor = function (callback) {
+        var ddlDoctor = $('#ddlReferDoctor').empty();
+        ddlDoctor.append('<option value="0">Select</option>');
+        getDoctor(function (data) {
+            $.each(data, function (i) {
+                var aa = "<option value=" + $.trim(this.Id) + ">" + $.trim(this.val) + "</option>";
+                ddlDoctor.append(aa);
+            });
+            callback();
+        });
+    }
+
+    function BindDoctorByDepartment() {
+        $("#ddlReferDoctor option").remove();
+        var ComplaintName = $("#ddlReferDoctor");
+        var dept = $("#ddlDepartment option:selected").val();
+
+        $.ajax({
+            url: "../Common/CommonService.asmx/bindDoctorDept",
+            data: '{ Department: "' + dept + '"}', // parameter map
+            type: "POST", // data has to be Posted    	        
+            contentType: "application/json; charset=utf-8",
+            timeout: 120000,
+            dataType: "json",
+        }).done(function (result) {
+            ComplaintData = jQuery.parseJSON(result.d);
+            if (ComplaintData > "0") {
+                $("#ddlReferDoctor").empty().append('<option selected="selected" value="0">Select</option>');
+                for (i = 0; i < ComplaintData.length; i++) {
+                    ComplaintName.append($("<option></option>").val(ComplaintData[i].DoctorID).html(ComplaintData[i].Name));
+                }
+            }
+        });
+    }
+
+    var BindReferralConsultation = function (data) {
+      //  debugger;
+        var impression = data.ReferralConsultation.length > 0 ? data.ReferralConsultation[0].Impression : '';
+        var remarks = data.ReferralConsultation.length > 0 ? data.ReferralConsultation[0].Remarks : '';
+        if (data.ReferralConsultation.length > 0) {
+            var referDoctorId = data.ReferralConsultation[0].DoctorID;
+            if (data.ReferralConsultation[0].doctorType == "In-House") {
+                $('#ddlReferDoctor').val(referDoctorId).trigger("chosen:updated");
+                $('#ddlReferOuterDoctor').val("0").trigger("chosen:updated");
+            }
+            else {
+                $('#ddlReferDoctor').val("0").trigger("chosen:updated");
+                $('#ddlReferOuterDoctor').val(referDoctorId).trigger("chosen:updated");
+            }
+            $('input[name=rbtnReferralType][value=' + data.ReferralConsultation[0].ReferralType + ']').attr('checked', 'checked');
+            $('input[name=rbtnConsultType][value=' + data.ReferralConsultation[0].ConsultationType + ']').attr('checked', 'checked');
+            $('input[name=rbtnDoctorType][value=' + data.ReferralConsultation[0].doctorType + ']').attr('checked', 'checked');
+            $("#spnInDocAppDate").text(data.ReferralConsultation[0].NewAppDate);
+            $("#spnInDocAppTime").text(data.ReferralConsultation[0].NewAppTime);
+            if (data.ReferralConsultation[0].NewAppTime != "")
+                $('input[name=rbtnAppointmentBook][value=1]').attr('checked', 'checked');
+            else
+                $('input[name=rbtnAppointmentBook][value=2]').attr('checked', 'checked');
+
+            $("#spnSelectedAppDate").text(data.ReferralConsultation[0].AppDate);
+            $("#spnReferralSelectedCentre").text(data.ReferralConsultation[0].centreID);
+        }
+        else {
+            $('#ddlReferDoctor').val(0).trigger("chosen:updated");
+        }
+        OnDoctorChange();
+        $('#txtImpression').val(impression).keyup();
+        $('#txtRemarks').val(remarks).keyup();
+    }
+
+
+    function AppointmentSlots() {
+        clearAppointMentDetails();
+        var DoctorId = $('#ddlReferDoctor').val();
+        var AppDate = $("#spnSelectedAppDate").text();
+        var starttime = "00:00:00";
+        var endtime = "23:59:50";
+        var centreID = $("#spnReferralSelectedCentre").text();
+        var time = starttime + '-' + endtime;
+        var appSlotMin = $("#ddlSolotMin").val();
+
+        serverCall('../OPD/BookDirectAppointment.aspx/GetDoctorAppointmentTimeSlot', { DoctorId: DoctorId, appointmentDate: AppDate, appointmentType: 2, centreId: centreID, AppSlot: appSlotMin, IsManualSlot: 0 }, function (response) {
+            var $responseData = JSON.parse(response);
+            if ($responseData.status) {
+                $('#divSlotAvailabilityBody').html($responseData.response);
+
+                String.isNullOrEmpty(time) ? (time = $responseData.defaultAvilableSlot) : '';
+                $('#divSlotAvailabilityBody div #spnAppointmentTime').each(function (index, elem) {
+                    if ($.trim($(elem).text()) == $responseData.defaultAvilableSlot)
+                        $(elem).parent().addClass('badge-pink');
+                });
+                $('#txtAppointmentSlotDate').val(AppDate)
+                $('#divSlotAvailability').showModel();
+
+            }
+            else {
+                modelAlert($responseData.response, function () {
+                    clearAppointMentDetails();
+                });
+
+            }
+        });
+    }
+    var clearAppointMentDetails = function () {
+        $('#divSlotAvailabilityBody').html('');
+    }
+    var $selectSlot = function (elem) {
+        $('#divSlotAvailabilityBody .circle').removeClass('badge-pink');
+        $(elem).addClass('badge-pink');
+    }
+
+    var $dobuleClick = function (elem) {
+        $("#spnInDocAppDate").text($('#txtAppointmentSlotDate').val());
+        $("#spnInDocAppTime").text($.trim($(elem).find('#spnAppointmentTime').text()));
+        $('input[name=rbtnAppointmentBook][value=1]').attr('checked', 'checked');
+        $('#divSlotAvailability').hideModel();
+        OnDoctorChange();
+    }
+    $(document).ready(function () {
+      //  BindDepartment(function () {
+            getDepartment(function () {
+            BindDoctor(function () {
+                bindReferDotor(function () {
+                    loadViewData(function (patientPrescriptionDetails) {
+                        BindReferralConsultation(patientPrescriptionDetails);
+                    });
+                });
+            });
+        });
+
+
+        $("#ddlDepartment").change(function () {
+            BindDoctor(function () { });
+        });
+
+        $('#txtAppointmentSlotDate').change(function (e) {
+            var $appointmentDate = (e.target.type == 'text' ? e.target.value : $('#txtAppointmentSlotDate').val());
+            var appSlotMin = $('#ddlSolotMin').val();
+            var centreID = $("#spnReferralSelectedCentre").text();
+            serverCall('../OPD/BookDirectAppointment.aspx/GetDoctorAppointmentTimeSlot', { DoctorId: $('#ddlReferDoctor').val(), appointmentDate: $appointmentDate, appointmentType: 2, centreId: centreID, AppSlot: appSlotMin, IsManualSlot: 0 }, function (response) {
+                var $responseData = JSON.parse(response);
+                if ($responseData.status) {
+                    $('#divSlotAvailabilityBody').html($responseData.response);
+
+                    String.isNullOrEmpty($('.time').val()) ? ($('.time').val($responseData.defaultAvilableSlot)) : '';
+                    $('#divSlotAvailabilityBody div #spnAppointmentTime').each(function (index, elem) {
+                        if ($.trim($(elem).text()) == $responseData.defaultAvilableSlot)
+                            $(elem).parent().addClass('badge-pink');
+                    });
+
+                    $('#txtAppointmentSlotDate').val($appointmentDate)
+                    $('#divSlotAvailability').showModel();
+
+                }
+                else {
+                    modelAlert($responseData.response, function () {
+                        clearAppointMentDetails();
+                    });
+
+                }
+            });
+        });
+    });
+</script>

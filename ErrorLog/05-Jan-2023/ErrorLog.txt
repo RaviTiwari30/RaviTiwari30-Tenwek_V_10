@@ -1,0 +1,414 @@
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/Commonreport.aspx
+ Time Of Error            : 05-01-2023 11:22:06
+ Error Message            : 
+
+This group section cannot be printed because its condition field is nonexistent or invalid.  Format the section to choose another condition field.Error in File IPDPanelGroupReport {38CB93EB-5648-494D-B515-7F1B58A12BDF}.rpt:
+Invalid group condition.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 2473
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type               : CrystalDecisions.CrystalReports.Engine.InvalidArgumentException
+ TargetSite               : Boolean ThrowDotNetException(System.Exception)
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : 
+
+This group section cannot be printed because its condition field is nonexistent or invalid.  Format the section to choose another condition field.Error in File IPDPanelGroupReport {38CB93EB-5648-494D-B515-7F1B58A12BDF}.rpt:
+Invalid group condition.
+ Inner Source             : 
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/Commonreport.aspx
+ Time Of Error            : 05-01-2023 11:22:25
+ Error Message            : 
+
+This group section cannot be printed because its condition field is nonexistent or invalid.  Format the section to choose another condition field.Error in File IPDPanelGroupReport {B969AB78-6C3E-4F3C-8A08-D0EA39321690}.rpt:
+Invalid group condition.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 2473
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : CrystalDecisions.CrystalReports.Engine.InvalidArgumentException
+ TargetSite               : Boolean ThrowDotNetException(System.Exception)
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : 
+
+This group section cannot be printed because its condition field is nonexistent or invalid.  Format the section to choose another condition field.Error in File IPDPanelGroupReport {B969AB78-6C3E-4F3C-8A08-D0EA39321690}.rpt:
+Invalid group condition.
+ Inner Source             : 
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/Commonreport.aspx
+ Time Of Error            : 05-01-2023 11:23:00
+ Error Message            : 
+
+This group section cannot be printed because its condition field is nonexistent or invalid.  Format the section to choose another condition field.Error in File IPDPanelGroupReport {0B55EE60-CEED-4ADF-AE4D-6D1BC909F725}.rpt:
+Invalid group condition.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 2473
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : CrystalDecisions.CrystalReports.Engine.InvalidArgumentException
+ TargetSite               : Boolean ThrowDotNetException(System.Exception)
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : 
+
+This group section cannot be printed because its condition field is nonexistent or invalid.  Format the section to choose another condition field.Error in File IPDPanelGroupReport {0B55EE60-CEED-4ADF-AE4D-6D1BC909F725}.rpt:
+Invalid group condition.
+ Inner Source             : 
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/Commonreport.aspx
+ Time Of Error            : 05-01-2023 11:23:14
+ Error Message            : 
+
+This group section cannot be printed because its condition field is nonexistent or invalid.  Format the section to choose another condition field.Error in File IPDPanelGroupReport {F7279F22-40C8-4319-8E5F-45F572A040A2}.rpt:
+Invalid group condition.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 2473
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : CrystalDecisions.CrystalReports.Engine.InvalidArgumentException
+ TargetSite               : Boolean ThrowDotNetException(System.Exception)
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : 
+
+This group section cannot be printed because its condition field is nonexistent or invalid.  Format the section to choose another condition field.Error in File IPDPanelGroupReport {F7279F22-40C8-4319-8E5F-45F572A040A2}.rpt:
+Invalid group condition.
+ Inner Source             : 
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Email/Email_Templatemaster.aspx/SaveEmailTemplate
+ Time Of Error            : 05-01-2023 11:38:33
+ Error Message            : Unknown column 'Email_repeat' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 208
+   at Design_Email_Email_Templatemaster.SaveEmailTemplate(String TemplateName, String Status, String ScheduleType, String ScheduleTime, String ScheduleDate, Int32 isPanelWise, String emailrepeattype, String repeatparameter) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Email\Email_Templatemaster.aspx.cs:line 38
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Email/Email_Templatemaster.aspx/SaveEmailTemplate
+ Time Of Error            : 05-01-2023 11:38:41
+ Error Message            : Unknown column 'Email_repeat' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 208
+   at Design_Email_Email_Templatemaster.SaveEmailTemplate(String TemplateName, String Status, String ScheduleType, String ScheduleTime, String ScheduleDate, Int32 isPanelWise, String emailrepeattype, String repeatparameter) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Email\Email_Templatemaster.aspx.cs:line 38
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Email/Email_Templatemaster.aspx/SaveEmailTemplate
+ Time Of Error            : 05-01-2023 11:38:47
+ Error Message            : Unknown column 'Email_repeat' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 208
+   at Design_Email_Email_Templatemaster.SaveEmailTemplate(String TemplateName, String Status, String ScheduleType, String ScheduleTime, String ScheduleDate, Int32 isPanelWise, String emailrepeattype, String repeatparameter) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Email\Email_Templatemaster.aspx.cs:line 38
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Email/Email_Templatemaster.aspx/SaveEmailTemplate
+ Time Of Error            : 05-01-2023 11:38:50
+ Error Message            : Unknown column 'Email_repeat' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 208
+   at Design_Email_Email_Templatemaster.SaveEmailTemplate(String TemplateName, String Status, String ScheduleType, String ScheduleTime, String ScheduleDate, Int32 isPanelWise, String emailrepeattype, String repeatparameter) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Email\Email_Templatemaster.aspx.cs:line 38
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Email/Email_Templatemaster.aspx/SaveEmailTemplate
+ Time Of Error            : 05-01-2023 11:38:50
+ Error Message            : Unknown column 'Email_repeat' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 208
+   at Design_Email_Email_Templatemaster.SaveEmailTemplate(String TemplateName, String Status, String ScheduleType, String ScheduleTime, String ScheduleDate, Int32 isPanelWise, String emailrepeattype, String repeatparameter) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Email\Email_Templatemaster.aspx.cs:line 38
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Email/Email_Templatemaster.aspx/SaveEmailTemplate
+ Time Of Error            : 05-01-2023 11:38:56
+ Error Message            : Unknown column 'Email_repeat' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 208
+   at Design_Email_Email_Templatemaster.SaveEmailTemplate(String TemplateName, String Status, String ScheduleType, String ScheduleTime, String ScheduleDate, Int32 isPanelWise, String emailrepeattype, String repeatparameter) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Email\Email_Templatemaster.aspx.cs:line 38
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Email/Email_Templatemaster.aspx/SaveEmailTemplate
+ Time Of Error            : 05-01-2023 11:38:57
+ Error Message            : Unknown column 'Email_repeat' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 208
+   at Design_Email_Email_Templatemaster.SaveEmailTemplate(String TemplateName, String Status, String ScheduleType, String ScheduleTime, String ScheduleDate, Int32 isPanelWise, String emailrepeattype, String repeatparameter) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Email\Email_Templatemaster.aspx.cs:line 38
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Email/Email_Templatemaster.aspx/SaveEmailTemplate
+ Time Of Error            : 05-01-2023 11:38:57
+ Error Message            : Unknown column 'Email_repeat' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 208
+   at Design_Email_Email_Templatemaster.SaveEmailTemplate(String TemplateName, String Status, String ScheduleType, String ScheduleTime, String ScheduleDate, Int32 isPanelWise, String emailrepeattype, String repeatparameter) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Email\Email_Templatemaster.aspx.cs:line 38
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Email/Email_Templatemaster.aspx/SaveEmailTemplate
+ Time Of Error            : 05-01-2023 11:40:44
+ Error Message            : Unknown column 'Email_repeat' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 208
+   at Design_Email_Email_Templatemaster.SaveEmailTemplate(String TemplateName, String Status, String ScheduleType, String ScheduleTime, String ScheduleDate, Int32 isPanelWise, String emailrepeattype, String repeatparameter) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Email\Email_Templatemaster.aspx.cs:line 44
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Email/Email_ID.aspx
+ Time Of Error            : 05-01-2023 12:02:40
+ Error Message            : Unknown column 'smtp_host' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Design_Email_Email_id.btnSave_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Email\Email_id.aspx.cs:line 34
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Email/Email_ID.aspx
+ Time Of Error            : 05-01-2023 12:02:41
+ Error Message            : Unknown column 'smtp_host' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Design_Email_Email_id.btnSave_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Email\Email_id.aspx.cs:line 34
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Email/Email_ID.aspx
+ Time Of Error            : 05-01-2023 12:02:43
+ Error Message            : Unknown column 'smtp_host' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Design_Email_Email_id.btnSave_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Email\Email_id.aspx.cs:line 34
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/Services/PatientRegistration.asmx/SaveBulkPatientRegistration
+ Time Of Error            : 05-01-2023 12:20:13
+ Error Message            : Incorrect number of arguments for PROCEDURE tenwek_live.Insert_patient; expected 99, got 93
+ Error Place              :    at ExcuteCMD.ExecuteScalar(MySqlTransaction tnx, String sqlCmd, CommandType commandType, Object inParameters, Object outParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 149
+   at PatientRegistration.SaveBulkPatientRegistration(String Qty, String Gender, String Remarks) in d:\RaviTiwari\ProductionCode\Tenwek\Design\OPD\Services\PatientRegistration.asmx:line 522
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Object ExecuteScalar(MySql.Data.MySqlClient.MySqlTransaction, System.String, System.Data.CommandType, System.Object, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/MRD/MRDFileRequest.aspx
+ Time Of Error            : 05-01-2023 12:23:06
+ Error Message            : DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'Panel_ID'.
+ Error Place              :    at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName, String format)
+   at System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   at System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.ListControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at Design_MRD_MRDFileRequest.BindPanel() in d:\RaviTiwari\ProductionCode\Tenwek\Design\MRD\MRDFileRequest.aspx.cs:line 71
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.Web.HttpException
+ TargetSite               : System.Object GetPropertyValue(System.Object, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/MRD/MRDFileRequest.aspx
+ Time Of Error            : 05-01-2023 12:23:06
+ Error Message            : DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'Panel_ID'.
+ Error Place              :    at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName, String format)
+   at System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   at System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.ListControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at Design_MRD_MRDFileRequest.BindParentPanel() in d:\RaviTiwari\ProductionCode\Tenwek\Design\MRD\MRDFileRequest.aspx.cs:line 89
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.Web.HttpException
+ TargetSite               : System.Object GetPropertyValue(System.Object, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CommonReports/Commonreport.aspx
+ Time Of Error            : 05-01-2023 12:50:36
+ Error Message            : Index was outside the bounds of the array.
+ Error Place              :    at Design_Store_Reports_CommonReport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\CommonReports\CommonReport.aspx.cs:line 79
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : Void Page_Load(System.Object, System.EventArgs)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/EDP/CopyRates.aspx
+ Time Of Error            : 05-01-2023 13:29:17
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_EDP_CopyRates.btnSave_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\CopyRates.aspx.cs:line 98
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.NullReferenceException
+ TargetSite               : Void btnSave_Click(System.Object, System.EventArgs)

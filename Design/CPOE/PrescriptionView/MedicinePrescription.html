@@ -1,0 +1,943 @@
+﻿
+<div id="divMedicinePrescribe" style="margin: 0px; font-size: 11px; height: auto; padding: 0px" class="row col-md-24">
+    <div class="row">
+        <div class="col-md-8">
+            <select>
+                <option>All</option>
+               <!-- <option>Favorite</option>-->
+            </select>
+        </div>
+        <div class="col-md-16">
+            <input type="text" name="name" autocomplete="off" placeholder="Search Medicine" value="" autocomplete="off" id="txtMedicineSearch" />
+        </div>
+    </div>
+  
+    <div class="row">
+        <div class="col-md-24">
+            <div style="height: 200px" id="listMedicine" class="chkList-Control">
+                <ul id="medicineListMenu"></ul>
+            </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-md-24">
+            <input type="text" placeholder="Replace None Tenwek Medicine" data-title="Prees Enter To Add Prescription" onkeyup="onOtherMedicinePrescriptionAdd(event)" id="txtOtherMedicine" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <label class="pull-left">Dose </label>
+            <b class="pull-right">:</b>
+        </div>
+        <div class="col-md-7">
+           <!-- <input autocomplete="off" type="text" id="" value="0" onkeyup="onPrescribeMedicineDetailChange(2,event)" onchange="onPrescribeMedicineDetailChange(2,event)" onblur="updateAmount();updateAmount1($('#txtAmount').val());" />
+            <span class="clear_input">X</span>-->
+
+             <!-- <input type="text" id="txtDoses" style="width:80px" tabindex="6"  class="requiredField ItDoseTextinputNum indentMedicalRequiredField" onkeyup="onPrescribeMedicineDetailChange(2,event)" onchange="onPrescribeMedicineDetailChange(2,event)"  onlynumber="5" decimalplace="2" max-value="999" class="requiredField"   />  
+               -->      
+            
+              <input type="text" id="txtDoses" style="width:80px" tabindex="6"  class="requiredField ItDoseTextinputNum indentMedicalRequiredField" onkeyup="calculateQuantity()" onchange="calculateQuantity()"  onlynumber="5" decimalplace="2" max-value="999" class="requiredField"   />  
+                            
+        </div>
+        <div class="col-md-5">
+            <label class="pull-left">Unit </label>
+           <!-- <label class="pull-left">Times </label>-->
+            <b class="pull-right">:</b>
+        </div>
+         <div class="col-md-7"  >
+             <select id="ddlUnit" class="requiredField indentMedicalRequiredField" onchange="onPrescribeMedicineDetailChange(3,event)"></select>
+                             
+             </div>
+        <div class="col-md-7" style="display:none">
+            <select style="display: none" id="ddlTimes" onchange="onPrescribeMedicineDetailChange()"></select>
+            <input id="txtTimes" type="text" />
+            <span class="clear_input">X</span>
+        </div>
+    </div>
+    <div class="row">
+
+          <div class="col-md-5">
+             <label class="pull-left">Interval</label>
+          
+            <b class="pull-right">:</b>
+        </div>
+
+        <div class="col-md-7">
+              <select id="ddlInterval" onchange="ddlintervalchange();" style="width:80px" tabindex="4" class="requiredField indentMedicalRequiredField" ></select> 
+                        
+        </div>
+
+        <div class="col-md-5">
+            <label class="pull-left">Duration </label>
+            <b class="pull-right">:</b>
+        </div>
+        <div class="col-md-7">
+                 <select id="ddlDuration" onchange="calculateQuantity();" style="width:80px" tabindex="4" class="requiredField indentMedicalRequiredField" ></select> 
+                                                     <span style="color: red; font-size: 10px;display:none">*</span>
+        </div>
+        <div class="col-md-7" style="display: none" >
+            <select style="display: none" id="ddlDays"  "></select>
+            <input id="txtDays" type="text" class="search-box"   />
+            <span class="clear_input">X</span>
+        </div>
+      
+
+
+    </div>
+    <div class="row">
+        <div class="col-md-5" style="display:none">
+            <label class="pull-left">Meal </label>
+            <b class="pull-right">:</b>
+        </div>
+        <div class="col-md-7" style="display:none">
+            <select id="ddlMeal" onchange="onPrescribeMedicineDetailChange(5,event)"></select>
+        </div>
+        <div class="col-md-5">
+            <label class="pull-left">Amt. </label>
+            <b class="pull-right">:</b>
+        </div>
+        <div class="col-md-7">
+            <input type="text" id="txtAmount"    disabled="disabled"  />
+            <input type="text" id="txtMRP" style="display:none;"   />
+        </div>
+        
+        <div  class="col-md-5">
+            <label class="pull-left">Quantity </label>
+            <b class="pull-right">:</b>
+        </div>
+        <div  class="col-md-7">
+            <input type="text" id="txtQuantity" class="search-box" onlynumber="2" value="1" onkeypress="$commonJsNumberValidation(event);calculateNewQuantity();"  onchange="onPrescribeMedicineDetailChange(9,event);calculateNewQuantity();" onkeyup="onPrescribeMedicineDetailChange(9,event);calculateNewQuantity();"    />
+            
+        </div>
+    </div>
+    <div class="row">
+          <div class="col-md-5">
+             
+            <label class="pull-left">Route </label>
+            <b class="pull-right">:</b>
+        </div>
+        
+        <div class="col-md-7"  >
+            <select id="ddlRoute"   onchange="onPrescribeMedicineDetailChange(8,event)"></select>
+            <!--<input id="txtRoute" class="search-box" onchange="onPrescribeMedicineDetailChange(8,event)" onkeyup="onPrescribeMedicineDetailChange(8,event)" type="text" />
+            <span class="clear_input">X</span>-->
+        </div>
+
+        <div class="col-md-5">
+             
+            <label class="pull-left">Refil(In Month) </label>
+            <b class="pull-right">:</b>
+        </div>
+        
+        <div class="col-md-7"  >
+             <input id="txtRefeal"  onchange="onPrescribeMedicineDetailChange(14,event)" onkeyup="onPrescribeMedicineDetailChange(14,event)" type="number" style="width:80px" />
+            
+        </div>
+    </div>
+    <div class="row">
+         <div class="col-md-4">
+                            Times :
+                        </div>
+
+                        <div class="col-md-20" >
+                              <div class="row" id="divBindTimesLabel">
+                                   
+                              </div>
+                              
+                        </div>
+    </div>
+       <div class="row">
+           <div class="col-md-10">
+               Total Approx Amt :
+           </div>
+        <div class="col-md-14">
+            <label id="lblTotalAmount" style="font-size:16px;color:red"></label>
+            <label  id="MdItemID" style="font-size:16px;color:red;display:none"></label>
+            </div>
+           </div>
+    <div class="row">
+        <div class="col-md-24">
+            <textarea style="height:200px" cols="1" placeholder="Enter Remarks" id="txtMedicineRemarks" onkeyup="onPrescribeMedicineDetailChange(11,event)"></textarea>
+        </div>
+    </div>
+</div>
+  
+
+
+      <script src="../../Scripts/Date%20Time%20Js/jquery.timepicker.min.js"></script>
+    <link href="../../Scripts/Date%20Time%20Js/jquery.timepicker.min.css" rel="stylesheet" />
+<script id="prescribedMedicineScript" type="text/javascript">
+    selectedMedicine = {};
+    debugger;
+    var initMedicineSearch = function (callback) {
+        var txtMedicineSearch = $('#divMedicinePrescribe #txtMedicineSearch');
+        $(txtMedicineSearch).autocomplete({
+            source: function (request, response) {
+                getMedicines(request.term, function (responseItems) {
+                    response(responseItems)
+                });
+            },
+            select: function (e, i) {
+                //alert($('#divPrescribeMedicinePreview table tbody').html());
+                if ($('#divPrescribeMedicinePreview table tbody').html() == "");
+                {
+                    $("#chkHeaders_9").prop('checked', true);
+                }
+
+ 
+                getMedicinePrescriptionDetails(function (data) {
+                    data.itemID = i.item.val;
+                    data.name = i.item.Brand;
+                    data.dose = i.item.Dose;
+                    data.times = i.item.Times;
+                    data.duration = i.item.Duration;
+                    //data.route = i.item.Route;
+                    data.route = "Oral or NG (PO)";
+                    data.Amount = getAmounts(i.item.val,0);
+                    //data.IntervalId = i.item.IntervalId;
+                    data.IntervalId = "15#1";
+                    //data.IntervalName = i.item.IntervalName;
+                    data.IntervalName = "Every 24 hours";
+                    data.DurationName = i.item.DurationName;
+                    data.DurationVal = i.item.DurationVal;
+                    data.TimetoGive = i.item.TimetoGive;
+                    data.Unit = i.item.Unit;
+                    data.RefealVal = i.item.RefealVal;
+
+                    var TransactionID = $.trim($('#lblTransactionId').text());
+                    serverCall('../CPOE/services/PrescribeServices.asmx/CheckTransactionDetail', { TransactionID: TransactionID }, function (response) {
+                        responsedata = JSON.parse(response);
+                        if (responsedata.status == 1) { 
+                            serverCall('../CPOE/services/PrescribeServices.asmx/CheckStockofItem', { ItemId: i.item.val }, function (response) {
+                                var responseData = JSON.parse(response);
+                                if (responseData.status) {
+                                    modelConfirmation('Prescribed Confirm ?', 'Selected Item has no stock do you want to prescribed.', 'Yes', 'No', function (response) {
+                                        if (response) {
+                                            addMedicinePreviewRow(data, function () { });
+                                        }
+
+                            });
+                        } else {
+                            addMedicinePreviewRow(data, function () { });
+                        }
+
+                            });
+                        }
+                        else {
+                            modelAlert('Please Enter Final Diagnosis', function () {
+                            });
+                        }
+                    });
+
+                    disabledPrint(true);
+
+                    //   WriteXDoc($.trim($('#lblTransactionId').text()), i.item.val,"", "Product");
+                });
+
+            },
+            close: function (el) {
+                el.target.value = '';
+            },
+            open: function () {
+                txtMedicineSearch.autocomplete('widget').css(
+                     { 'overflow-y': 'auto', 'max-height': '250px', 'max-width': '400px', 'overflow-x': 'hidden', 'border-radius': '5px' });
+            },
+            minLength: 0
+        });
+    }
+
+    var getRoute = function (callback) {
+        serverCall('../CPOE/services/PrescribeServices.asmx/getRoute', {}, function (response) {
+            callback(JSON.parse(response))
+        });
+    }
+    function getAmounts(itemid,qty) {
+        var mrp = '0';
+        serverCall('../CPOE/services/PrescribeServices.asmx/GetAmount', { ItemID: itemid }, function (response) {
+            var responseData = JSON.parse(response);
+            if (responseData.status) {
+                $("#txtMRP").val(parseFloat(responseData.response[0].MRP).toFixed(2));
+                // $("#txtAmount").val(parseFloat(responseData.response[0].MRP).toFixed(2));
+                mrp = Number($("#txtMRP").val() * qty);
+            }
+            else { $("#txtAmount").val(0); }
+            $("#txtAmount").val(mrp);
+            updateMedicinePreviewRow(itemid, 16, $("#txtAmount").val());
+            var TotalAmount = 0;
+            $('#divPrescribeMedicinePreview tbody tr').each(function (index, elem) {
+                var $row = $(elem);
+                var Amount = Number($($row).find('#lblAmount').text());
+                TotalAmount = Number(TotalAmount + Amount);
+
+            });
+
+            $('#lblTotalAmount').text(TotalAmount);
+        });
+        
+        //return mrp;
+    }
+
+    var prescribedMedicineInit = function (callback) {
+        initMedicineSearch(function () { });
+        getMedicineDoses(2, function (response) {
+            var ddlTimesData = response;
+            $('#txtTimes').autocomplete({
+                source: function (request, response) {
+                    filteredAutoComplete(ddlTimesData, request, function (filtered) {
+                        response(filtered);
+                    });
+                },
+                open: function () {
+                    $('#txtTimes').autocomplete('widget').css({ 'Width': '100%', 'overflow-x': 'hidden' });
+                }
+            });
+        });
+        getMedicineDoses(3, function (response) {
+            var ddlDaysData = response;
+            $('#txtDays').autocomplete({
+                source: function (request, response) {
+                    filteredAutoComplete(ddlDaysData, request, function (filtered) {
+                        response(filtered);
+                    });
+                },
+                open: function () {
+                    $('#txtDays').autocomplete('widget').css({ 'Width': '100%', 'overflow-x': 'hidden' });
+                }
+            });
+        });
+
+        getMedicineDoses(4, function (response) {
+            var ddlRouteData = response;
+            $('#txtRoute').autocomplete({
+                source: function (request, response) {
+                    filteredAutoComplete(ddlRouteData, request, function (filtered) {
+                        response(filtered);
+                    });
+                },
+                open: function () {
+                    $('#txtRoute').autocomplete('widget').css({ 'Width': '100%', 'overflow-x': 'hidden' });
+                }
+            });
+        });
+
+        getMedicineDoses(1, function (response) {
+            var ddlDoseData = response;
+            $('#txtDose').autocomplete({
+                source: function (request, response) {
+                    filteredAutoComplete(ddlDoseData, request, function (filtered) {
+                        response(filtered);
+                    });
+                },
+                open: function () {
+                    $('#txtDose').autocomplete('widget').css({ 'Width': '100%', 'overflow-x': 'hidden' });
+                }
+            });
+        });
+
+        $('#ddlMeal').bindDropDown({ data: ['', 'After Meal', 'Before Meal'] });
+        var medicineListMenu = $('#medicineListMenu');
+        callback(medicineListMenu);
+    }
+
+
+
+    var filteredAutoComplete = function (data, request, callback) {
+        var matcher = new RegExp($.ui.autocomplete.escapeRegex(request.term), "i");
+        var matching = $.grep(data, function (value) {
+            return matcher.test(value.Text);
+        });
+        var filtered = [];
+        $(matching).each(function () {
+            filtered.push({ label: this.Text, val: this.Text })
+        });
+        callback(filtered.slice(0, 5));
+    }
+
+
+    var getMedicinePrescriptionDetails = function (callback) {
+        callback({
+            dose: $.trim($('#txtDoses').val('').val()),
+            Unit: $('#ddlUnit').val($('#ddlUnit option:nth-child(0)').val()).val(),
+            times: $('#txtTimes').val('').val(),
+            duration: $('#txtDays').val('').val(),
+            meal: $('#ddlMeal').val($('#ddlMeal option:nth-child(0)').val()).val(),
+            route: $('#ddlRoute').val($('#ddlMeal option:nth-child(0)').val()).val(),
+            quantity: $('#txtQuantity').val('1').val(),
+            remarks: $('#txtMedicineRemarks').val('').val(),
+            IsIssued: 0,
+            IntervalId: $('#ddlInterval').val($('#ddlInterval option:nth-child(0)').val()).val().split('#')[0],
+            IntervalName: $('#ddlInterval option:selected').text(),
+            DurationName: $('#ddlDuration option:selected').text(),
+            DurationVal:  $('#ddlDuration').val($('#ddlDuration option:nth-child(1)').val()).val(),
+            TimetoGive:"",
+            RefealVal: $.trim($('#txtRefeal').val('').val()),
+        });
+    }
+
+    onOtherMedicinePrescriptionAdd = function (e) {
+        var code = (e.keyCode ? e.keyCode : e.which);
+        var medicineName = $.trim(e.target.value);
+        var othMedicineCount = $('#tblPrescribeMedicinePreview').find('[id^=OTH]').length;
+        if (medicineName.length < 1) {
+            modelAlert('Please Enter Medicine Name', function () {
+            });
+            return false;
+        }
+        if (code == 13) {
+            getMedicinePrescriptionDetails(function (data) {
+                data.name = e.target.value;
+                data.itemID = 'OTH' + othMedicineCount;
+                addMedicinePreviewRow(data, function () { });
+                disabledPrint(true);
+                e.target.value = '';
+            });
+        }
+    }
+
+    var addFavoriteMedicineList = function (data, callback) {
+        var medicineListMenu = $('#divMedicinePrescribe #medicineListMenu');
+        medicineListMenu.find('li').remove();
+        $.each(data, function (i) {
+            var aa = '<li  role="menuitem"><a>'
+                + '<label class="trimList"  title="' + this.TempName + '" >'
+                + '<input   id="' + $.trim(this.ID) + '" onchange="onMedicineTemplateSelect(this);" templateName="' + this.TempName + '"  templateFor="' + this.templateFor + '"   value="' + encodeURIComponent(JSON.stringify(this.ValueField)) + '" class="ui-all" type="checkbox">' + this.TempName + '</label>'
+                + '</a><a onclick="onDeleteTemplate(this)" class="icon icon-color icon-trash pull-right"></a><a onclick="onEditTemplate(this)" class="icon icon-color icon-edit pull-right"></a></li>';
+            medicineListMenu.append(aa);
+        });
+        callback();
+    }
+
+    var onMedicineTemplateSelect = function (elem) {
+
+        var data = JSON.parse(decodeURIComponent(elem.value));
+        if (elem.checked) {
+            $(data).each(function () {
+                deleteMedicinePreViewRow(this.itemID);
+                addMedicinePreviewRow(this, function () { });
+            });
+        }
+        else {
+            $(data).each(function () {
+                deleteMedicinePreViewRow(this.itemID);
+            });
+        }
+    }
+
+    var addMedicinePreviewRow = function (data, callback) {
+
+        $('#tblPrescribeMedicinePreview  tr').removeClass("selectedMedicine");
+        if (data.Unit==undefined || data.Unit==null) {
+            data.Unit = "";
+        }
+
+        if (data.IntervalName == undefined || data.IntervalName == null) {
+            data.IntervalName = "";
+        }
+
+        if (data.DurationName == undefined || data.DurationName == null) {
+            data.DurationName = "";
+        }
+
+        if (data.TimetoGive == undefined || data.TimetoGive == null) {
+            data.TimetoGive = "";
+        }
+        if (data.RefealVal == undefined || data.RefealVal == null) {
+            data.RefealVal = "";
+        }
+        var table = $('#divPrescribeMedicinePreview table tbody');
+        var tableRows = $(table).find('tr');
+       // getAmount(($.trim(data.itemID)));
+        var addMedicineTemplate = '<tr   class="prescribedItem"     id="' + ($.trim(data.itemID)) + '">'
+            + '<td onclick="onPreviewMedicineSelect(this)">' + parseInt(tableRows.length + 1) + '</td>'
+            + '<td onclick="onPreviewMedicineSelect(this)" style="word-wrap:break-word;"><span id="lblMedicineName">' + data.name + '</span></td>'
+            + '<td onclick="onPreviewMedicineSelect(this)"><span id="lblMedicineDose">' + data.dose + '</span></td>'
+             + '<td onclick="onPreviewMedicineSelect(this)"><span id="lblMedicineUnit">' + data.Unit + '</span></td>'
+             + '<td onclick="onPreviewMedicineSelect(this)"><span id="lblMedicineIntrvalName">' + data.IntervalName + '</span></td>'
+            + '<td onclick="onPreviewMedicineSelect(this)"><span id="lblMedicineDurationName">' + data.DurationName + '</span></td>'
+             + '<td onclick="onPreviewMedicineSelect(this)" style="width:50px;word-wrap:break-word;"><span id="lblMedTime">' + data.TimetoGive + '</span></td>'
+            + '<td onclick="onPreviewMedicineSelect(this)" style="display:none"><span id="lblMedicineMeal">' + data.meal + '</span></td>'
+            + '<td onclick="onPreviewMedicineSelect(this)" style="width:50px;word-wrap:break-word;"><span id="lblMedicineRoute">' + data.route + '</span></td>'
+            + '<td onclick="onPreviewMedicineSelect(this)" ><span id="lblMedicineQuantity">' + data.quantity + '</span></td>'
+            + '<td ondblclick="onPreviewMedicineRemove(this)" style="display:none" ><span id="lblIssued">' + data.IsIssued + '</span></td>'
+            + '<td ondblclick="onPreviewMedicineRemove(this)" style="width:50px;word-wrap:break-word;"><span id="lblMedicineRemarks">' + data.remarks + '</span></td>'
+            + '<td ondblclick="onPreviewMedicineRemove(this)" ondblclick="onPreviewMedicineRemove(this)" style="display:none" ><span id="lblIntervalId">' + data.IntervalId + '</span></td>'
+            + '<td ondblclick="onPreviewMedicineRemove(this)" style="display:none" ><span id="lblDurationVal">' + data.DurationVal + '</span></td>'
+            + '<td ondblclick="onPreviewMedicineRemove(this)"><span id="lblRefealVal">' + data.RefealVal + '</span></td>'
+
+            + '<td style="width:50px;word-wrap:break-word;display:none;"><img id="imgDrugDetail" alt="" src="../../Images/view.gif" style="cursor:pointer"  onclick="GetDrugDetail(this)"   /></td>'
+
+            + '<td><span id="lblAmount">' + (data.Amount == null ? data.MRP : data.Amount) + '</span></td>'
+            + '<td style="display:none" ><span id="lblItemid">' + ($.trim(data.itemID)) + '</span></td>'
+           // + '<td style="display:none" ><span id="lsblAmount">' + (data.Amount == null ? getAmount(($.trim(data.itemID))) : data.Amount) + '</span></td>'
+        
+            + '</tr>';
+        $(table).append(addMedicineTemplate);
+        onPreviewMedicineSelect(table.find('tr').last());
+        showHideTableHeader(table);
+
+    }
+
+    var GetDrugDetail = function (elem) {    
+        MedData($(elem).closest('tr').find('#lblMedicineName').text(), $(elem).closest('tr')[0].id);        
+    }
+
+    var onPreviewMedicineRemove = function (elem) {
+        modelConfirmation('Delete Confirm ?', 'Do you want to delete the selected data from this screen', 'Yes', 'No', function (response) {
+            if (response) {
+                var isIssued = Number($(elem).find('#lblIssued').text());
+                if (isIssued == 0) {
+                    $(elem).closest('tr').remove();
+
+                   // $(elem).remove();
+                    //var medicineElem = $('#listMedicine').find('#' + medicineID).prop('checked', false);
+                    //var li = $(medicineElem).closest('li').css({ 'background': '' });
+                    //$(li).find('a label').removeClass('selectedPreItem');
+                    //deleteMedicinePreViewRow(medicineID);
+                    disabledPrint(true);
+                }
+
+                if ($('#tblPrescribeMedicinePreview tbody').html().trim() == "") {
+                    $("#chkHeaders_9").prop('checked', false);
+                }
+
+            }
+        });
+    }
+
+    var onPreviewMedicineSelect = function (elem) {
+        $(elem).closest('tbody').find('tr').removeClass('selectedMedicine');
+        $(elem).closest('tr').addClass('selectedMedicine');
+        $('#txtDoses').val($(elem).closest('tr').find('#lblMedicineDose').text());
+        $('#txtRefeal').val($(elem).closest('tr').find('#lblRefealVal').text());
+        $('#txtTimes').val($(elem).closest('tr').find('#lblMedicineTimes').text());
+        $('#txtDays').val($(elem).closest('tr').find('#lblMedicineDuration').text());
+        $('#ddlMeal option:contains("' + $(elem).closest('tr').find('#lblMedicineMeal').text() + '")').chosen('destroy').prop('selected', true).chosen;
+       // $('#ddlMeal').val($(elem).find('#lblMedicineMeal').text());
+        //$('#ddlRoute').val($(elem).find('#lblMedicineRoute').text());
+        $('#ddlRoute option:contains("' + $(elem).closest('tr').find('#lblMedicineRoute').text() + '")').chosen('destroy').prop('selected', true).chosen;
+        $('#txtAmount').val($(elem).closest('tr').find('#lblAmount').text());
+        $('#txtQuantity').val($(elem).closest('tr').find('#lblMedicineQuantity').text());
+        $('#txtMedicineRemarks').val($(elem).closest('tr').find('#lblMedicineRemarks').text());
+        $('#ddlDuration').val($(elem).closest('tr').find('#lblDurationVal').text()).chosen('destroy');
+      //  $('#ddlDuration option:contains("' + $(elem).find('#lblDurationVal').text() + '")').chosen('destroy').prop('selected', true).chosen;
+        $('#ddlUnit').val($(elem).closest('tr').find('#lblMedicineUnit').text()).chosen('destroy');
+        
+        $('#MdItemID').text($(elem).closest('tr').find('#lblItemid').text());
+        $('#ddlInterval ').chosen('destroy');
+        $('#ddlInterval option:contains("' + $(elem).closest('tr').find('#lblMedicineIntrvalName').text() + '")').prop('selected', true).chosen;
+        $('#ddlInterval ').chosen();
+
+        ddlintervalchange();
+        //updateAmount();
+
+    }
+
+    function MedData(ItemName, ItemID) {
+        serverCall('../CPOE/Services/prescribeServices.asmx/SearchMedData', { prefix: ItemName, itemId: ItemID }, function (response) {
+            //if (response!="") {
+                var url = "../CPOE/CIMS/" + ItemID + ".html";
+                $('#pagecontent').attr('src', url);
+                $('#divshowDrugDetail').showModel();
+            //}
+        });
+    }
+    function WriteXDoc(TID, ItemID,CIMS_GUID,CIMS_Type) {
+        serverCall('../CPOE/Services/prescribeServices.asmx/WriteXDoc', { tId: TID, itemId: ItemID, cims_guid: "", cims_Type: CIMS_Type }, function (response) {
+            if (response != "0") {
+                var url = "../CPOE/CIMS/TID/xDoc_" + TID + ".html";
+                $('#pagecontent').attr('src', url);
+                $('#divshowDrugDetail').showModel();
+            }
+        });
+    }
+    function RemoveItemXDoc(ID, CIMS_Type) {
+        serverCall('../CPOE/Services/prescribeServices.asmx/RemoveItemXDoc', { Id: ID, Type: CIMS_Type }, function (response) {
+            if (response != "0") {
+                var url = "../CPOE/CIMS/TID/xDoc_" + TID + ".html";
+                $('#pagecontent').attr('src', url);
+                $('#divshowDrugDetail').showModel();
+            }
+        });
+    }
+    //by indra prakash
+    //function updateAmount1(value) {
+    //    var tr = $('#divPrescribeMedicinePreview table tbody').find('.selectedMedicine');
+
+    //    var isIssued = Number($(tr).find('#lblIssued').text());
+    //    if (isIssued == 0) {
+    //        if (tr.length > 0) {
+    //            var medicineID = $.trim(tr[0].id);
+    //            if (!String.isNullOrEmpty(medicineID))
+    //                $(tr).find('td:eq(11) span').text(value);
+    //        }
+    //    }
+    //    //$("#txtAmount").val(($("#txtMRP").val() * $("#txtDose").val()).toFixed(2));
+    //}
+
+    function updateAmount() {
+
+        $("#txtAmount").val(($("#txtMRP").val() * $("#txtQuantity").val()).toFixed(2));
+    }
+    var onPrescribeMedicineDetailChange = function (index, e) {
+        var itemId = $('#medicineListMenu .selectedPreItem input[type=checkbox]').val();
+        var value = e.target.value;
+        updateMedicinePreviewRow(itemId, index, value);
+    }
+
+
+    var showHideTableHeader = function (table) {
+        if (table.find('tr').length <= 0)
+            $('.lblDivPrescribeMedicinePreview').hide();
+        else
+            $('.lblDivPrescribeMedicinePreview').show();
+    }
+
+
+    var updateMedicinePreviewRow = function (itemID, index, value) {
+        var tr = "";
+        if (itemID==null || itemID==undefined) {
+            tr = $('#divPrescribeMedicinePreview table tbody').find('.selectedMedicine');
+        }else {
+            tr = $('#divPrescribeMedicinePreview table tbody').find('#' + itemID + '');
+        }
+        
+        debugger;
+        var isIssued = Number($(tr).find('#lblIssued').text());
+        if (isIssued == 0) {
+            if (tr.length > 0) {
+                var medicineID = $.trim(tr[0].id);
+                if (!String.isNullOrEmpty(medicineID))
+                    $(tr).find('td:eq(' + index + ') span').text(value);
+            }
+        }
+    }
+
+    var deleteMedicinePreViewRow = function (itemID) {
+        var table = $('#divPrescribeMedicinePreview table tbody');
+        $(table).find('#' + itemID).remove();
+        $(table).find('tr').each(function (index, elem) {
+            $(this).find('td:eq(0)').text(index + 1);
+        });
+        showHideTableHeader(table);
+    }
+
+
+    var $searchMedicineByWord = function (e) {
+        if (e.target.value.length >= 1)
+            $('#medicineListMenu').find('li a label').show().not(":containsIgnoreCase('" + e.target.value + "')").closest('li').hide();
+        else if (e.target.value.length < 3)
+            $('#medicineListMenu').find('li').show();
+    }
+
+    var bindPatientMedicineDetails = function (data) {
+        var table = $('#divPrescribeMedicinePreview table tbody');
+        table.find('tr').remove();
+        $(data.medicinesList).each(function (index) {
+            addMedicinePreviewRow(this);
+            var selectedChecked = $('#medicineListMenu').find('#' + this.itemID).prop('checked', true);
+            if (data.medicinesList.length == index + 1)
+                $(selectedChecked).closest('label').addClass('selectedPreItem');
+        });
+        showHideTableHeader(table);
+    }
+
+
+    $(document).ready(function () {
+        prescribedMedicineInit(function () {
+            loadViewData(function (patientPrescriptionDetails) {
+                bindPatientMedicineDetails(patientPrescriptionDetails);
+                $('#listMedicine').slimScroll({
+                    height: '200px',
+                    width: '100%',
+                    color: '#028fff',
+                });
+                $('.clear_input').click(function () {
+                    $(this).prev().val('').focus().change();
+                });
+
+                BindUnit();
+                BindDurationForm();
+                BindInterVal();
+                BindRouteForm();
+
+            });
+
+
+        });
+
+
+
+    });
+
+
+
+    function BindUnit() {
+        serverCall(' ../Store/Doctoer_Medicine_Order.aspx/GetUnit', {}, function (response) {
+            var responseData = JSON.parse(response);
+            $('#ddlUnit').bindDropDown({
+                data: responseData,
+                valueField: 'Name',
+                textField: 'Name',
+                isSearchAble: true,
+                //defaultValue: 'Select'
+
+            });
+        });
+    }
+
+
+    function BindInterVal() {
+        serverCall('../Store/Doctoer_Medicine_Order.aspx/GetInterval', {}, function (response) {
+            var responseData = JSON.parse(response);
+            $('#ddlInterval').bindDropDown({
+                data: responseData,
+                valueField: 'IdTimes',
+                textField: 'Name',
+                isSearchAble: true,
+                defaultValue: 'Select'
+
+            });
+        });
+    }
+
+
+
+
+    function BindDurationForm() {
+        serverCall('../Common/CommonService.asmx/getTimeDuration', { Type: 'Duration' }, function (response) {
+            var responseData = JSON.parse(response);
+            $('#ddlDuration').bindDropDown({
+                data: responseData,
+                valueField: 'Quantity',
+                textField: 'NAME',
+                defaultValue: 'Select',
+            });
+        });
+    }
+
+
+    function ddlintervalchange() {
+
+        if ($('#ddlInterval').val() == 0 || $('#ddlInterval').val() == null || $('#ddlInterval').val() == "" || $('#ddlInterval').val() == undefined) {
+            return false;
+        }
+
+
+        var id = $('#ddlInterval').val().split('#')[0];
+        BindTimeLabel(id);
+        calculateQuantity();
+        
+
+    }
+
+    function BindTimeLabel(Id) {
+
+
+
+        serverCall('../Store/Doctoer_Medicine_Order.aspx/GetIntervalTimes', { Id: Id }, function (response) {
+
+            var GetData = JSON.parse(response);
+
+            if (GetData.status) {
+
+                data = GetData.data;
+                var count = 0;
+                $('#divBindTimesLabel').empty();
+                $.each(data, function (i, item) {
+
+                    var rdb = '';
+                    rdb += '<div class="col-md-12" style="color: blue;font-weight: bolder;">';
+                    rdb += ' <input type="text" id="txtTime' + i + '" class="ItDoseTextinputText txtPDoseTime required" onchange="Updatetime()" value="' + item.TimeLable + '"  />';
+                    rdb += '</div>';
+
+                    $('#divBindTimesLabel').append(rdb);
+                });
+
+                $('.txtPDoseTime').timepicker({
+                    timeFormat: 'h:mm p',
+                    interval: 10,
+                    minTime: '00:01',
+                    maxTime: '11:59pm',
+                    // defaultTime: new Date(),
+                    startTime: '00:01',
+                    dynamic: false,
+                    dropdown: true,
+                    scrollbar: true
+                });
+
+                var itemId = $('#medicineListMenu .selectedPreItem input[type=checkbox]').val();
+
+                var PatientDoseTimeDis = "";
+                var count = 0;
+                $('.txtPDoseTime').each(function () {
+                    if (count == 0) {
+
+                        PatientDoseTimeDis += this.value;
+                    }
+                    else {
+
+                        PatientDoseTimeDis += "," + this.value;
+                    }
+                    count = count + 1;
+                });
+
+
+                updateMedicinePreviewRow(itemId, 6, PatientDoseTimeDis);
+
+
+
+
+            } else {
+                $('#divBindTimesLabel').empty();
+            }
+
+        });
+
+
+
+    }
+
+    function Updatetime() {
+        var itemId = $('#medicineListMenu .selectedPreItem input[type=checkbox]').val();
+
+        var PatientDoseTimeDis = "";
+        var count = 0;
+        $('.txtPDoseTime').each(function () {
+            if (count == 0) {
+
+                PatientDoseTimeDis += this.value;
+            }
+            else {
+
+                PatientDoseTimeDis += "," + this.value;
+            }
+            count = count + 1;
+        });
+
+
+        updateMedicinePreviewRow(itemId, 6, PatientDoseTimeDis);
+
+
+    }
+
+
+
+
+    function calculateQuantity() {
+        var itemId = $('#medicineListMenu .selectedPreItem input[type=checkbox]').val();
+
+        var dose = $('#txtDoses').val();
+        var times = Number($('#ddlInterval').val().split('#')[1]);
+        var duratation = Number($('#ddlDuration').val());
+
+        var quantity = precise_round((times * duratation), 2);
+        if (quantity==NaN || quantity==undefined) {
+            quantity = 0;
+        }
+        var DoseArray = dose.split('/');
+        if (DoseArray.length > 1) {
+            quantity = 1;
+            $('#txtQuantity').val(quantity);
+            updateAmount();
+            getAmounts($('#MdItemID').text(), quantity);
+            var duration = $('#ddlDuration option:selected').text();
+            var Unit = $('#ddlUnit option:selected').text();
+            var Interval = $('#ddlInterval option:selected').text();
+
+            updateMedicinePreviewRow(itemId, 2, dose);
+            updateMedicinePreviewRow(itemId, 9, quantity);
+            updateMedicinePreviewRow(itemId, 5, duration);
+            updateMedicinePreviewRow(itemId, 3, Unit);
+            updateMedicinePreviewRow(itemId, 4, Interval);
+            updateMedicinePreviewRow(itemId, 12, $('#ddlInterval').val().split('#')[0]);
+            updateMedicinePreviewRow(itemId, 13, $('#ddlDuration').val());
+
+
+        } else {
+            if (dose != "") {
+                GetActualQuantity($('#MdItemID').text(), dose, times, duratation)
+            } else {
+                $('#txtQuantity').val(quantity);
+                updateAmount();
+                getAmounts($('#MdItemID').text(), quantity);
+                var duration = $('#ddlDuration option:selected').text();
+                var Unit = $('#ddlUnit option:selected').text();
+                var Interval = $('#ddlInterval option:selected').text();
+
+                updateMedicinePreviewRow(itemId, 2, dose);
+                updateMedicinePreviewRow(itemId, 9, quantity);
+                updateMedicinePreviewRow(itemId, 5, duration);
+                updateMedicinePreviewRow(itemId, 3, Unit);
+                updateMedicinePreviewRow(itemId, 4, Interval);
+                updateMedicinePreviewRow(itemId, 12, $('#ddlInterval').val().split('#')[0]);
+                updateMedicinePreviewRow(itemId, 13, $('#ddlDuration').val());
+            }
+
+        }
+
+
+    }
+
+    function BindRouteForm() {
+        $.ajax({
+            type: "POST",
+            url: "../Store/Doctoer_Medicine_Order.aspx/BindRoute",
+            data: '{}',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            async: false,
+            success: function (result) {
+                var Rou = jQuery.parseJSON(result.d);
+                if (Rou != null) {
+                    $('#ddlRoute').append($("<option></option>").val("0").html("Select"));
+                    for (i = 0; i < Rou.length; i++) {
+                        $('#ddlRoute').append($("<option></option>").val(Rou[i]).html(Rou[i]));
+                    }
+                }
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                jQuery("#lblMsg").text('Error occurred, Please contact administrator');
+            }
+
+        });
+    }
+
+    function GetActualQuantity(ItemId, Dose, Time, Duration) {
+        serverCall('../Common/CommonService.asmx/GetItemActualQuantity', { ItemId: ItemId, Dose: Dose, Time: Time, Duration: Duration }, function (response) {
+            var GetData = JSON.parse(response);
+
+
+            if (GetData.status) {
+                $('#txtQuantity').val(GetData.quantity);
+                updateAmount();
+                getAmounts($('#MdItemID').text(), GetData.quantity);
+                var duration = $('#ddlDuration option:selected').text();
+                var Unit = $('#ddlUnit option:selected').text();
+                var Interval = $('#ddlInterval option:selected').text();
+
+                updateMedicinePreviewRow(ItemId, 2, Dose);
+                updateMedicinePreviewRow(ItemId, 9, GetData.quantity);
+                updateMedicinePreviewRow(ItemId, 5, duration);
+                updateMedicinePreviewRow(ItemId, 3, Unit);
+                updateMedicinePreviewRow(ItemId, 4, Interval);
+                updateMedicinePreviewRow(ItemId, 12, $('#ddlInterval').val().split('#')[0]);
+                updateMedicinePreviewRow(ItemId, 13, $('#ddlDuration').val());
+            }
+
+        });
+
+
+    }
+
+
+    function calculateNewQuantity() {
+          
+        updateAmount();
+        getAmounts($('#MdItemID').text(), $('#txtQuantity').val());
+
+
+
+    }
+
+</script>

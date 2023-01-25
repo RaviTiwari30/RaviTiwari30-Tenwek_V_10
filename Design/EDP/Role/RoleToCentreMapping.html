@@ -1,0 +1,134 @@
+﻿<div style="margin: 0px; font-size: 13px; height: auto">
+
+    <div id="divInvestigationPrescribe">
+        <div class="POuter_Box_Inventory" style="margin-left: -6px">
+             <div class="Purchaseheader">
+                    Centre Details
+                </div>
+            <div class="row">
+               
+                <div class="row">
+                    <div>
+                        <input type="checkbox" id="SelectAllCentre" name="SelectAllCentre" /><label for="SelectAllCentre">Select All</label>
+                    </div>
+                    <div class="row" id="chkcentreappend">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="POuter_Box_Inventory" style="margin-left: -6px">
+            <div style="text-align: center" class="row col-md-24">
+                <input style="width: 80px" type="button" id="btnSave" runat="server" value="Save" onclick="SaveRoleToCentre()" />
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script id="CenterAccessScript">
+
+
+
+
+    function BindCentreTable(RoleID) {
+        var count = 0;
+
+        serverCall('RoleManager.aspx/BindCentreTable', { RoleID: RoleID }, function (response) {
+
+            var CentreData = JSON.parse(response);
+
+            if (CentreData.status) {
+                data = CentreData.response;
+                $('#chkcentreappend').empty();
+
+                $.each(data, function (i, item) {
+                    var check = '';
+
+                    if (item.IsMaped == 1) {
+                        check = 'checked';
+
+                    }
+
+                    $("#chkcentreappend").append(" <div class='col-md-4' > <input type='checkbox' id='chk-" + i + "' name='chk-" + i + "' value=" + item.CentreID + " class='ChkCentreId' " + check + " style='cursor:pointer'/>  <label for='chk-" + i + "' style='cursor:pointer'>" + item.CentreName + "</label></div>");
+
+                });
+
+            }
+
+
+        });
+
+    }
+
+
+    $('#SelectAllCentre').click(function () {
+        if ($(this).is(":checked")) {
+            $(".ChkCentreId").prop("checked", true)
+
+
+        }
+
+        else {
+            $(".ChkCentreId").prop("checked", false)
+
+        }
+    });
+
+    var SaveRoleToCentre = function () {
+        var RoleId = $('#txtRoleID').val();
+
+        var CentreID = new Array();
+
+
+        if (RoleId == '') {
+            modelAlert('Error Occured');
+            return false;
+        }
+        // Parent checked check box value
+        $('#chkcentreappend .ChkCentreId:checked').each(function () {
+            CentreID.push($(this).val());
+        });
+
+    
+        if (CentreID == ''||CentreID==null||CentreID==0||CentreID==undefined) {
+
+            modelConfirmation('Confirmation', 'Are You Sure? Don not save Role To any Centre ', 'Yes', 'No', function (status) {
+                if (status==false) {
+                    return false;
+                } 
+            });
+        }
+
+        var obj = {
+            CentreID: CentreID,
+            RoleID: RoleId,
+        };
+
+        var data = JSON.stringify(obj)
+
+
+        $.ajax({
+
+            url: 'RoleManager.aspx/MapRoleToCentre',
+            contentType: 'application/json; charset=utf-8',
+            type: 'POST',
+            data: JSON.stringify(obj),
+            cache: false,
+            success: function () {
+                modelAlert('Record Saved Successfully');
+
+
+            },
+            error: function (xhr, status, error) {
+                modelAlert('Some Error Occured  while saveing Role');
+            }
+        });
+
+
+
+
+    };
+
+</script>
+

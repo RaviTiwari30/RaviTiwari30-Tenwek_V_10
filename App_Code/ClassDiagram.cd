@@ -1,0 +1,1937 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AMCTypeMaster" Collapsed="true">
+    <Position X="23.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GIQAIEJkQgEAAgCKECAIIEFgACIiAAACAMAEgBBAAAE=</HashCode>
+      <FileName>App_Code\Asset\AMCTypeMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AssetGroup" Collapsed="true">
+    <Position X="28.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEBAAgGAAAACkAAAAAAAAAAgAAAAAEAAAAAAEAE=</HashCode>
+      <FileName>App_Code\Asset\AssetGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AssetMaster" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQACEBAAgAAAAACEAgCAAQAAAAEAAAAQEAgAAAQAAM=</HashCode>
+      <FileName>App_Code\Asset\AssetMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AssetService" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FQJEAAEKAAEAAgAAAAAKICAAAAAABAgAAUQAUAiAAQA=</HashCode>
+      <FileName>App_Code\Asset\AssetService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AssetStock" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jIAhIEpkCuQAAKAbEIpjAASAgQAEAgDAjFCBgQDQAhM=</HashCode>
+      <FileName>App_Code\Asset\AssetStock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AssetSubGroup" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQACEBAAgAAAAACEAgAAQQAAAAAAAAAQEAAAAEAAAE=</HashCode>
+      <FileName>App_Code\Asset\AssetSubGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CallTypeMaster" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAEBACgAAACACEAAAAAAAQAAAAAAAEEAAAgAABAE=</HashCode>
+      <FileName>App_Code\Asset\CallTypeMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaintenanceMaster" Collapsed="true">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIQAAEBAAggAAAACEAAAAAAQAAAAAAAAAEAMAAAAABE=</HashCode>
+      <FileName>App_Code\Asset\MaintenanceMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemMaster" Collapsed="true">
+    <Position X="11" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAEBAQgAAEAACEAAAABAAAAAACAAAgEAAAAAAAAE=</HashCode>
+      <FileName>App_Code\Asset\ProblemMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="All_LoadData" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4LtCQdWYYrbLmd+DIPRt5rVVZC0hOgCVEP7QHeVgIDQ=</HashCode>
+      <FileName>App_Code\BLL\All_LoadData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllGlobalFunction" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>WAIkIFQgAQAACBDAIUMQxQCgwQAAAoARUQBQEoBNRQA=</HashCode>
+      <FileName>App_Code\BLL\AllGlobalFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllLoadData_IPD" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAyBAA5AEAAIAIAAIAgAAAIAAEgQA4IBCoAACAQAAA=</HashCode>
+      <FileName>App_Code\BLL\AllLoadData_IPD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllLoadData_OPD" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQVAEIAAACkAAAAABwAkBIAAAEAAAAwAgAABARAAAA=</HashCode>
+      <FileName>App_Code\BLL\AllLoadData_OPD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllLoadData_Store" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAEAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\AllLoadData_Store.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AmountCalculation" Collapsed="true">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\AmountCalculation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BarcodeImg" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAJAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>App_Code\BLL\BarcodeImg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLog" Collapsed="true">
+    <Position X="23.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\ClassLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common" Collapsed="true">
+    <Position X="28.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAIAAAAEAAAAAAABAAAACABAACAIAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\Common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConvertCurrencyInWord" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\ConvertCurrencyInWord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cpoe_Complication" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACASALAEAAAAABAEBRAAAAAIAAAQIAAAACAAIAARA=</HashCode>
+      <FileName>App_Code\BLL\Cpoe_Complication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreateStockMaster" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACGwYCIAPQSAABByCEYEKSCQCUAIwkIgAUiEBJFQIhg=</HashCode>
+      <FileName>App_Code\BLL\CreateStockMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BatchTransactionDetail" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIMAAAAAAgAAAABAAAAAIAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>App_Code\BLL\CSSD\BatchTransactionDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Items" Collapsed="true">
+    <Position X="18" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\CSSD\Items.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Set" Collapsed="true">
+    <Position X="19.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAIABAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\CSSD\Set.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Setitemdetails" Collapsed="true">
+    <Position X="25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgAAAAAAgAAAAAAAAAAAAAAAAAAAIggAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\CSSD\Setitemdetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SetItemStockDetail" Collapsed="true">
+    <Position X="26.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\CSSD\SetItemStockDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess" Collapsed="true">
+    <Position X="25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAgAAAAAAABAQAEAAAAAAQ=</HashCode>
+      <FileName>App_Code\BLL\DataAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Docgrouprate" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\Docgrouprate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoctorOPD" Collapsed="true">
+    <Position X="23.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\DoctorOPD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoctorResearch_master" Collapsed="true">
+    <Position X="26.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAQAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>App_Code\BLL\DoctorResearch_master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dummy" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAgIAAAAAAAgAACAAAAAAgAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>App_Code\BLL\Dummy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDPReports" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQQAAAAAAAQAEAAAAAAAAAAACBAAAIAAAIAAAACA=</HashCode>
+      <FileName>App_Code\BLL\EDPReports.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GetDiscount" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\GetDiscount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Insert_PatientInfo" Collapsed="true">
+    <Position X="21.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\Insert_PatientInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IpdBillAdjustment" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAgAAAEBAAAAAAAAAAIIAAAAAABgAAA=</HashCode>
+      <FileName>App_Code\BLL\IpdBillAdjustment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IPDBilling" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAQAAAAAAAECAAIAACEAAAAEgAAAAAAAAIAAAAQAAA=</HashCode>
+      <FileName>App_Code\BLL\IPDBilling.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabOPD" Collapsed="true">
+    <Position X="23.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAIQAAAAAAAAAAAACAAAAAAAgIAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\LabOPD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginRestrict" Collapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\LoginRestrict.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MapInvestigation_Observation" Collapsed="true">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgAAAGQAAAAAACAgAAQMAwAAJAAAgEAAAgkAQAAABAA=</HashCode>
+      <FileName>App_Code\BLL\MapInvestigation_Observation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mrd_AllLoaddate" Collapsed="true">
+    <Position X="12.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACBAAgAAQAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\mrd_AllLoaddate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OPD" Collapsed="true">
+    <Position X="28.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAABAAAAAgAACAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\OPD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OPDBillGenerate" Collapsed="true">
+    <Position X="4" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAMAAgAAABABAAAgAACEACAAAABAAAAAACAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\OPDBillGenerate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OpdDiscount" Collapsed="true">
+    <Position X="5.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAqAAAAAAAAQABAAAAgCAAAABAAAAAAAAAAACAAA=</HashCode>
+      <FileName>App_Code\BLL\OPDBillGenerate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PanelInvoice" Collapsed="true">
+    <Position X="12.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAQAABAAAAAACAAAAEAACAEIAgAEBAA=</HashCode>
+      <FileName>App_Code\BLL\PanelInvoice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatientProfile" Collapsed="true">
+    <Position X="26.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\PatientProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_AllLoadDate" Collapsed="true">
+    <Position X="0.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAEGAMBIAgACBAAAJQAAgQACAAQAAAAiARRACUAAAgA=</HashCode>
+      <FileName>App_Code\BLL\Payroll_AllLoadDate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Research_master" Collapsed="true">
+    <Position X="5.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAAgAAAAAAAEAIAAAAAAgACAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>App_Code\BLL\Research_master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RoomBilling" Collapsed="true">
+    <Position X="11" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAASAIAAIAABAiACCAAIAAAAAAAghEAAAQAAAAIAAA=</HashCode>
+      <FileName>App_Code\BLL\RoomBilling.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RoomScheduler" Collapsed="true">
+    <Position X="12.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\RoomScheduler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SalesEntry" Collapsed="true">
+    <Position X="16.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAABAgAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\SalesEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SchedulerClass" Collapsed="true">
+    <Position X="18" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\SchedulerClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StockReports" Collapsed="true">
+    <Position X="4" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAgAEgCABIggBQCIBQAAECgAAAABAAJhAAAAEQU=</HashCode>
+      <FileName>App_Code\BLL\StockReports.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserValidation" Collapsed="true">
+    <Position X="25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\UserValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BloodBank" Collapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAIAAAEAUAAEgAAQQAAACAAAAAgBJAgAAAAAAIAAQwA=</HashCode>
+      <FileName>App_Code\BloodBank\BuisnessLogic\BloodBank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Designation" Collapsed="true">
+    <Position X="28.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>App_Code\BloodBank\BuisnessLogic\Designation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Blood_Collection" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAGAKQgAAQCACIAEAAACCAAIIAAQIAkAAAAOCAgE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\Blood_Collection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BloodEmp" Collapsed="true">
+    <Position X="19.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAgAAABACAAAAAAAAAAAAAAAAEFAAAAAAAEA=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\BloodEmp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BloodGrouping" Collapsed="true">
+    <Position X="21.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEAAEJECgBAAAQDAAGABwAACgIIABABAEBAABAAAAE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\BloodGrouping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BloodGrouping_History" Collapsed="true">
+    <Position X="23.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACCoAAgCADABEAAAAAAAACAAADAEAAABAAAAA=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\BloodGrouping_History.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BloodProcess" Collapsed="true">
+    <Position X="25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEEBAwBAAQACpAGIAAAAAAAAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\BloodProcess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BloodReturn" Collapsed="true">
+    <Position X="26.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAEGAAgAAYAQChAGIAiECBAAABAJAMEACAAQAABE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\BloodReturn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BloodScreening" Collapsed="true">
+    <Position X="28.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABBAEEFCAgAAIICjABEgAAUAAACCAKADAUAAAAEAIQM=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\BloodScreening.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BloodScreening_History" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACAoAAACADEAEAAAQAAAACAAADAEAAIgAAAAA=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\BloodScreening_History.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BloodTest_Master" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBAAEBAAgAAABCCEAAgAAQAAAAAAAAAAEAgAAAAAQM=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\BloodTest_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BloodVenderReturn" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAEAAAiAAQAIDAAAAACACAAAAAAIAAEAAAQAACAk=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\BloodVenderReturn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Camp_Duties" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAEBAAgAAAAACAAAAAAAAAAIAAAAAAEAAAAAAAAk=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\Camp_Duties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Camp_Request" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YIAAAEAAAqAAgAASACGAAQAAAAAQAAAAAEAIFAgCACA=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\Camp_Request.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CampAnswer" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEBAAgAAAAACSAAAAAAAAAIAAAAAAEAAAgAAAAE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\CampAnswer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CampInformation" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAFgEBMQoihEAASAAGADAEEECIAAAAAAEAozBACAAE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\CampInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CampIssueItem" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAEAAAgAhAAADgQAgAgAAAAAAAQAAAEAAAAAAABA=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\CampIssueItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CampItem_Master" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAEAEBAAgAAAAACEAAAAAAAAABAAAAAAEAAAAAAAAE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\CampItem_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CampQuestion_Master" Collapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAAEBAAgAAAAACEAAAAAAAAAAAAAAEAEAAAAAAAAE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\CampQuestion_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Component" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQEAEBCAgAAAEIDAgVAACAAAAIAAAQJAEIAAAAAAAE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\Component.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiscardBlood" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAEACAqABQCIDBAEAAAASBAAABAAIAEAAAQAAAAk=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\DiscardBlood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiscardReason_Master" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAEBAAgCAAAICEAAAABACAAAAAAIAAEBAAAAAAAE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\DiscardReason_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DispatchBlood" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYBAAEEAggAAYAQCxAGeAIAGRBgABADIIEAAAAQAARE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\DispatchBlood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IssueBlood" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EYBAAEEAAgAAYIQChAmeAIACBAgABABIIEAAAAYAARE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\IssueBlood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Method_Master" Collapsed="true">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBAAEBAAgAAAAACEAAgAAAAAAAAAAAAAEAAAAAAAAE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\Method_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Organisation_master" Collapsed="true">
+    <Position X="7.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIACAEBAAoAAAgBKEAAIAEABACASAAASAEAAFCgAAAE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\Organisation_master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Question_Master" Collapsed="true">
+    <Position X="23.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAAEBAAgAAAAACEAAAAACAAAAAAAAEAUAAAAAABAE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\Question_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RejectedBlood" Collapsed="true">
+    <Position X="4" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAEEAAgAAIAQCgAAAAAAAAABAAAAAAEAAgAQACBE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\RejectedBlood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Result_Master" Collapsed="true">
+    <Position X="7.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAEBAAgAAAAACEAAAAAQAAAAAAAAAAEAAAAAAAAM=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\Result_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StockInsert" Collapsed="true">
+    <Position X="2.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AERUAEBAAgABQAIDBAWEACCSAAIAAAYJAEAAAAAAAAE=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\StockInsert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Visitors" Collapsed="true">
+    <Position X="0.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhACQGACCuCQgkCaAAEKIESZEqswAAISCkIAgAAEAAg=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\Visitors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Visitors_Answer" Collapsed="true">
+    <Position X="2.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAEAAAoAAAGACQAAAAAAIRAAAAAAEAEAAAgAAAAA=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\Visitors_Answer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Visitors_History" Collapsed="true">
+    <Position X="4" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAygWCCBrlQACACAAGBCACIAGAABgMIAGAAwIIQAAk=</HashCode>
+      <FileName>App_Code\BloodBank\DataLinkLayer\Visitors_History.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoadCacheQuery" Collapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAQCoAAAAAAEBAAgCQGAAAAAEhAIAAgAAAAwAAA=</HashCode>
+      <FileName>App_Code\CacheQuery\LoadCacheQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DashBoard" Collapsed="true">
+    <Position X="23.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAECAAYADggACIEQhBAABAAIYAgMAIAACCALggIDIAg=</HashCode>
+      <FileName>App_Code\DashBoard\DashBoard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Advance_Room_Booking" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQUEBDuBYwsCKAkoNAACCgIMAIACGDUBBTDAMwQg=</HashCode>
+      <FileName>App_Code\DLL\Advance_Room_Booking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllDeleteQuery" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAACCAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\AllDeleteQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllInsert" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAACAEAAAAAAAEAACAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>App_Code\DLL\AllInsert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllQuery" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KCECYAtAroEAwJAbricQIaKWi8AJwJYCFMj4ZhVeolE=</HashCode>
+      <FileName>App_Code\DLL\AllQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllSelectQuery" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>STIQQAIICoASAIACAAAAKAAAIwAAwAIAxMAAAAQYAAA=</HashCode>
+      <FileName>App_Code\DLL\AllSelectQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTables" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\AllTables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllUpdate" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAgBgQKgAAABACQAAQAAwJAAAAIkAIQECEkAEAAQA=</HashCode>
+      <FileName>App_Code\DLL\AllUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllUpdatesQuery" Collapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAgAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\AllUpdatesQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appointment" Collapsed="true">
+    <Position X="26.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UJwiMUOTTmF4J0Uag0OeG/TCtIsy4RFPjUoj2LQIOZA=</HashCode>
+      <FileName>App_Code\DLL\appointment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoPo" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgEEAAggAAAACgCIAAAgBCAAAAAAAAUEAACAEBAI=</HashCode>
+      <FileName>App_Code\DLL\AutoPo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BillCancellation" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAgMAAAgAIAAQCAACQACEYBAEAAAAIEEAASBACITA=</HashCode>
+      <FileName>App_Code\DLL\BillCancellation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BillFinalisedCancel" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAEAAAgAIAAQCAACQACEYBAAAAAAIEEAASBACITA=</HashCode>
+      <FileName>App_Code\DLL\BillFinalisedCancel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CategoryMaster" Collapsed="true">
+    <Position X="19.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgMRiAkggiAACAAIQIAxAAAEAEBIkIEgAAAAEAAA=</HashCode>
+      <FileName>App_Code\DLL\CategoryMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Center_Master" Collapsed="true">
+    <Position X="21.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKAAEUBCAwCBgAACEAEIAEABwAICCAQTAkAAAACAAAk=</HashCode>
+      <FileName>App_Code\DLL\Center_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="complain_master" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAEAAAgAAAAACAAAAAAAAAAMAAAAAAEAAAABCAAA=</HashCode>
+      <FileName>App_Code\DLL\complain_master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Converson_Master" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABwAAEQAAggKkEQCAAACIAgAIIEAAAgBFEIhAEJcgAE=</HashCode>
+      <FileName>App_Code\DLL\Converson_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CountryMaster" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAQAAMCIAqgAAAECEQgCAkBECDAwAAAiAMgAAAAAAOA=</HashCode>
+      <FileName>App_Code\DLL\CountryMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_anestheisa" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAaUEUACA2GBricLJABUMBySAiIKeBUFxFwwJziFbbA=</HashCode>
+      <FileName>App_Code\DLL\cpoe_anestheisa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_deathnotification" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>zDUQ0MAgAiCQoBUCVgAZgDDBAgMgoAGQRVQBgAhFVTE=</HashCode>
+      <FileName>App_Code\DLL\cpoe_deathnotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_hip_analysis" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>65YDM1inX+yf9WCaV2nNM4/y9X1DNB+JCO9/QoGHScA=</HashCode>
+      <FileName>App_Code\DLL\cpoe_hip_analysis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_history_physical" Collapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>XI4QWsq3o6rgiHoePaIPbW7yXbFKAJB8AFhwKS1N02c=</HashCode>
+      <FileName>App_Code\DLL\cpoe_history_physical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_kneework_score" Collapsed="true">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jYfe51lBC8wjgf8XQmndL533PtFXcB7HP86bX1jFPoY=</HashCode>
+      <FileName>App_Code\DLL\cpoe_Kneework_score.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_neurological_analysis" Collapsed="true">
+    <Position X="19.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAQAEFAKJwgAgCwSAkKMpDilAGPrWY5GI9FYLBakgQA=</HashCode>
+      <FileName>App_Code\DLL\cpoe_neurological_analysis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_patient_general_notes" Collapsed="true">
+    <Position X="21.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQqAEAIAyAAAQACACBQAAAAAAEAAAAAAEAQAAAEAAg=</HashCode>
+      <FileName>App_Code\DLL\cpoe_patient_general_notes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_ReferPatient" Collapsed="true">
+    <Position X="23.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggAAEOBkCgAgIISCAAEAAACAAEAIwAQBgEAQIAAQABE=</HashCode>
+      <FileName>App_Code\DLL\cpoe_ReferPatient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_research_hip" Collapsed="true">
+    <Position X="25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AlXACEAABmABiAQLIAECAQQEDAAA0BAAAEAASACMExg=</HashCode>
+      <FileName>App_Code\DLL\cpoe_research_hip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_research_xray" Collapsed="true">
+    <Position X="26.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oISGFEIQkjFEsFTGwAEUiBCSAC6KCAwAjngRgAYklJI=</HashCode>
+      <FileName>App_Code\DLL\cpoe_research_xray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_spine_analysis" Collapsed="true">
+    <Position X="28.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>93xq/3ZRZzk6/7iXK54+yi7mfztawTt7vuv6r+/s+e8=</HashCode>
+      <FileName>App_Code\DLL\cpoe_spine_analysis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_surgery_estimate" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>aoa2CuLQF5wkMXDeuQLVyH6kxGliUCAdEkaQAmZT1yc=</HashCode>
+      <FileName>App_Code\DLL\cpoe_surgery_estimate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cpoe_symptoms_detail" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAwAAEABAyAggCACAAAMAASgAAFCABAAAEAAAAAFQAg=</HashCode>
+      <FileName>App_Code\DLL\cpoe_symptoms_Detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cssd_Batch" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIAKAkEAAggAoABCgAAEAIigQoBIAQBABFTAgAAEGQE=</HashCode>
+      <FileName>App_Code\DLL\Cssd_Batch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cssd_f_batch_tnxdetails" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QMSOAkEAAggAoBBigAAEAIigQIBIIQBABGTAwAAEGSE=</HashCode>
+      <FileName>App_Code\DLL\cssd_f_batch_tnxdetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cssd_setstock" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECKAEBAAgAAgAAiAAAAAAAAAAAAAAAAAEAAAAAECAE=</HashCode>
+      <FileName>App_Code\DLL\Cssd_setstock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CssdReciveSet" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMCPAGEAAwgAghEylAAAAIgSAABAAAAAAEAoQAAkCAA=</HashCode>
+      <FileName>App_Code\DLL\CssdReciveSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="d_Category_Master" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAgMRiAkogiAACAAIQIAxAAAEAEBIkIEggAAAEAAA=</HashCode>
+      <FileName>App_Code\DLL\d_Category_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D_Configrelation" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAQAEACAkAAAIACEAAIIAQAAAAAAAIAAEAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\D_Configrelation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="d_dischargeinformation" Collapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DGRMQkQECwlKkSQywIAAAJgIEgZCUFIBElgQMQAGEFA=</HashCode>
+      <FileName>App_Code\DLL\d_DischargeInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="d_ItemMaster" Collapsed="true">
+    <Position X="18" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>mIxVgscgCkDhiBBa9hYCQjCAKAPwUdYnJOgRJeIFQFQ=</HashCode>
+      <FileName>App_Code\DLL\d_ItemMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="d_SubcategoryMaster" Collapsed="true">
+    <Position X="19.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAkMBiAkAgiEACAgoSIAQAAAMAABIlAEgAAAQEAAA=</HashCode>
+      <FileName>App_Code\DLL\d_SubcategoryMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="d_Surgery_Site_care" Collapsed="true">
+    <Position X="21.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAEAAAwgAgCQSAAAAAogAAABCQAgAAEgEAEAGABA=</HashCode>
+      <FileName>App_Code\DLL\d_Surgery_Site_care.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DepartmentWiseStock" Collapsed="true">
+    <Position X="26.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAYSgMEAAgAAIAASgAIAAAQAAAEAABQBBFACAAQgCAQ=</HashCode>
+      <FileName>App_Code\DLL\DepartmentWiseStock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="diet_assesment_information" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAIAAUAIAkAI0QGaCQGIcwT0QBWIAUQIKEBIAAAEgAA=</HashCode>
+      <FileName>App_Code\DLL\diet_assesment_information.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DispatchMaster" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhYAREAATokkgiQ+CCALXAltBAAAiTAQKVAQWAFGBTA=</HashCode>
+      <FileName>App_Code\DLL\DispatchMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="doctor_hospital" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIQAgMAIImDDBMgiChAMAAQAuiEgEBCAAmiABKAAARE=</HashCode>
+      <FileName>App_Code\DLL\doctor_hospital.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="doctor_referal" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIYCAEE4AiHxmkDOEoIDIAQQgoEAAgCiJWgCZ3AECEA=</HashCode>
+      <FileName>App_Code\DLL\Doctor_Referal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoctorDegree" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAgMAAAgBAAAACQgAEAAQQAAMAAAAAAEAABCAEAAA=</HashCode>
+      <FileName>App_Code\DLL\DoctorDegree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoctorHospital" Collapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQCgMAAImBwAAACAgAAAAAABAEAABIEAEgQAAgAAQA=</HashCode>
+      <FileName>App_Code\DLL\DoctorHospital.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoctorMaster" Collapsed="true">
+    <Position X="18" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYGgMM4AiHxikDOQ4IDIQQSgoEAAwCiJWgGZXAECEA=</HashCode>
+      <FileName>App_Code\DLL\DoctorMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoctorMasterReferal" Collapsed="true">
+    <Position X="19.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCgME4AiHRikDOQ4IDIAQQgoEAAgCiJWgAZXAECEA=</HashCode>
+      <FileName>App_Code\DLL\DoctorMasterReferal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoctorMembership" Collapsed="true">
+    <Position X="21.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgOAAAgBgAAACAwAAAAAAQAkAAAAAgEAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\DoctorMembership.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoctorRate" Collapsed="true">
+    <Position X="25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FhgAAEAACoBAgQQCAgAUAQAQBAAIACQgAEAAAgBUgQA=</HashCode>
+      <FileName>App_Code\DLL\DoctorRate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoctorSpecialization" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAgOAAAgJgAAACAxAAAAgAAAkAAAAAAEAAABAACAA=</HashCode>
+      <FileName>App_Code\DLL\DoctorSpecialization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dvendormaster" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DCSAgMAAgmBQAgALRAAGAEQUABMAIQCAAMACwQBAACA=</HashCode>
+      <FileName>App_Code\DLL\dvendormaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeeHospital" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgMASAgAAAAACAAEAAAAAAAFAAhAAAFgAAAAAgEA=</HashCode>
+      <FileName>App_Code\DLL\EmployeeHospital.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpenceReceipt" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QSQQndByhiQAqJwmBAMCwyABCBERCVA1FkoCiKQEIVA=</HashCode>
+      <FileName>App_Code\DLL\ExpenceReceipt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="f_receiptdetail" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgFQEBkCJABQCAgCHAAIAAAFAEAAQAGIDAQAUghA=</HashCode>
+      <FileName>App_Code\DLL\f_receiptDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Insert_ConfigRelation" Collapsed="true">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACAgAAAIACEAAAIAQAAAAAAAIAAEAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\Insert_ConfigRelation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Insert_DoctorResearch_Detail" Collapsed="true">
+    <Position X="18" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCAAAERAAgAAAAgCYAAIAAAgAAAAAgAMAEAAAgAAAAE=</HashCode>
+      <FileName>App_Code\DLL\Insert_DoctorResearch_Detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Insert_DoctorResearch_master" Collapsed="true">
+    <Position X="19.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAIEBAAyAAAIACAAAIABAgAAAEABAAAUAACAAAAAE=</HashCode>
+      <FileName>App_Code\DLL\Insert_DoctorResearch_master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Insert_Research_Detail" Collapsed="true">
+    <Position X="23.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCAAAERAAgAAAAgCYAAIAAAgAAAAAgAMAEAAAgAAAAE=</HashCode>
+      <FileName>App_Code\DLL\Insert_Research_Detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Insert_Research_master" Collapsed="true">
+    <Position X="25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAIEBAA6AAAKACAAAIABAgAAAEABAAAUAACAAAAAE=</HashCode>
+      <FileName>App_Code\DLL\Insert_Research_master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Insert_ResearchText_Detail" Collapsed="true">
+    <Position X="26.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAgAEBAAgAAAAiCACAIAAAgAAAEAgAIAEEACAAAAAE=</HashCode>
+      <FileName>App_Code\DLL\Insert_ResearchText_Detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Investigation_Master" Collapsed="true">
+    <Position X="28.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QDQAgMAgIgEoiAICCQLAIIQCBAUgIAAuAUgQCAkEBBA=</HashCode>
+      <FileName>App_Code\DLL\Investigation_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Investigation_ObservationType" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAiMAAIgAAAAACAAAAAgAABAEAAAAAAEgQBAgAAAA=</HashCode>
+      <FileName>App_Code\DLL\Investigation_ObservationType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InvoiceMaster" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQQgMghIwEAiAECAgIAAAQAAAEAChCgBEgMAQAVRIA=</HashCode>
+      <FileName>App_Code\DLL\InvoiceMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IPD_Case_History" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAUCiMAEBgWAEAQCxggRYABIAAEBIAAAIVUwgAAAAVA=</HashCode>
+      <FileName>App_Code\DLL\IPD_Case_History.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ipd_case_type_master" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SIQAgMApAgo4iAACEAIAIAQAAAEAAAAkAEAQAAAEQAA=</HashCode>
+      <FileName>App_Code\DLL\ipd_case_type_master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ipdadjustment" Collapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgUIoMNSKogAIIwGKIFVkAkKBAFiMHAIAEgiSARgRRk=</HashCode>
+      <FileName>App_Code\DLL\IPDAdjustment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemMaster" Collapsed="true">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIxVgschGgDhiBBa1hYCQjDCKAOgVdYnJPgRJeAFQFQ=</HashCode>
+      <FileName>App_Code\DLL\ItemMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="itemmaster_deptWise" Collapsed="true">
+    <Position X="16.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgBCEFAAgCAgIBShgIKQDAAAAKAAEADBMAABAAUAEE=</HashCode>
+      <FileName>App_Code\DLL\itemmaster_deptWise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Labobservation_master" Collapsed="true">
+    <Position X="19.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAQAqsCkEwIgiAACAgsMIBQAFBFBAZAkAGIQghgEIBA=</HashCode>
+      <FileName>App_Code\DLL\LabObservation_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabObservation_Range" Collapsed="true">
+    <Position X="21.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACCUIEIokagACCggAAAAgAgUAAIBABAEgGMoIE5hQ=</HashCode>
+      <FileName>App_Code\DLL\LabObservation_Range.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ledger_Master" Collapsed="true">
+    <Position X="25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>eAQyidxgRkwJjCADEAIk0IQYwCUgBNghAEggTAEUVkQ=</HashCode>
+      <FileName>App_Code\DLL\Ledger_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ledger_Transaction" Collapsed="true">
+    <Position X="26.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARAGAuB2A8hgqCUSBEfIEz2LJQI9G1AplFpISiaULxg=</HashCode>
+      <FileName>App_Code\DLL\Ledger_Transaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ledger_Transaction_PaymentDetail" Collapsed="true">
+    <Position X="28.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAkQCUgQIoCASAAEBIACAAIJAABACAFpAAGYEAAA=</HashCode>
+      <FileName>App_Code\DLL\Ledger_Transaction_PaymentDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LedgerTnxDetail" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>aQOmQkvrfgjjqSZCjoOfBCzTkALQARBlBUiJqCeWbJs=</HashCode>
+      <FileName>App_Code\DLL\LedgerTnxDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Machine" Collapsed="true">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAIBAAAgAAAABAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>App_Code\DLL\Machine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSTEmployee" Collapsed="true">
+    <Position X="14.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AATiyOEwCmAgq8AeAIIBIASAgIEBIoCgTFAAeNBFAEA=</HashCode>
+      <FileName>App_Code\DLL\MSTEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nursing_dailycarerecord1" Collapsed="true">
+    <Position X="23.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GXRUePNea2JiwhSeUBpMaQ3VsqyKiIE5RUgbaG0eDXM=</HashCode>
+      <FileName>App_Code\DLL\nursing_dailycarerecord1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObservationType_Master" Collapsed="true">
+    <Position X="26.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIQAiMAgAhAgiAACEAIAIASCBAkAAAAkAEgQBAgEABA=</HashCode>
+      <FileName>App_Code\DLL\ObservationType_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MySqlHelper" Collapsed="true">
+    <Position X="16.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAACAEABAAAEAAgAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\ODBCHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MySqlHelperParameterCache" Collapsed="true">
+    <Position X="21.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAECAAIAAAAAAAARAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\ODBCHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MySqlHelperNEw" Collapsed="true">
+    <Position X="18" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAACAEABAAAEAAgAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\ODBCHelperNew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MySqlHelperNEwParameterCache" Collapsed="true">
+    <Position X="19.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAECAAIAAAAAAAARAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\ODBCHelperNew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OPD_Advance" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAFRCggAAoAQCAAEAAAAAAAAAIBAAAEgASAQEABE=</HashCode>
+      <FileName>App_Code\DLL\OPD_Advance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OPD_Advance_Detail" Collapsed="true">
+    <Position X="2.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAEBCAgAAoAQGAQEgAAAAEAAAAhBAAEgASAQEABE=</HashCode>
+      <FileName>App_Code\DLL\OPD_Advance_Detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ortho_progress" Collapsed="true">
+    <Position X="9.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ocVgq3gHMpKGvkO+Q2ArWg6kv0AASQ4WgdHs4vIkB7o=</HashCode>
+      <FileName>App_Code\DLL\Ortho_progress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OT_AutoCompletion" Collapsed="true">
+    <Position X="16.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAiAAAAACAAAAAAAAAAAAAAAAAEAAAACAAAA=</HashCode>
+      <FileName>App_Code\DLL\OT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ot_anaesthesia_pre_induction" Collapsed="true">
+    <Position X="11" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>LhSHCWGIH6SWgSy6QSmXjoASLQ9C2MFTcGhCusMFgJs=</HashCode>
+      <FileName>App_Code\DLL\ot_anaesthesia_pre_induction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ot_anaesthesia_record" Collapsed="true">
+    <Position X="12.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQQIcAIEmlg5STWFBSIKAGxr8pEoQIWAUIA4ww0BB0=</HashCode>
+      <FileName>App_Code\DLL\ot_anaesthesia_record.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ot_anesthesiacareunit" Collapsed="true">
+    <Position X="14.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgDBMgAAgCEEYACAAOJgwixjQkIhGAAAEoaAgQQQE4=</HashCode>
+      <FileName>App_Code\DLL\ot_anesthesiacareunit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OT_CheckList_Insert" Collapsed="true">
+    <Position X="18" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAogEACJCQCAIBAgAAAABAAEBAEAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\OT_CheckList_Insert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ot_intra_operative" Collapsed="true">
+    <Position X="19.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>tAgMinJOxigAsrCaERS4K0JwMNdKVxYi4FYU1S6lXfY=</HashCode>
+      <FileName>App_Code\DLL\ot_intra_operative.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OT_Notes" Collapsed="true">
+    <Position X="21.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBQQBUAoJ4hVCKOCSCIABIgAGTAgJEHQg0kLAoBgBDA=</HashCode>
+      <FileName>App_Code\DLL\OT_Notes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ot_operating_room_record" Collapsed="true">
+    <Position X="23.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BMSAgEIkAhBysgkyZIiIAqKk0lUGDXAA4NERN1QdBAg=</HashCode>
+      <FileName>App_Code\DLL\ot_operating_room_record.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ot_operation_room_record_detail" Collapsed="true">
+    <Position X="25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JiACMNEkA1AAgIICgAIJQqIoMR0DDQgCBEFFCEKECSA=</HashCode>
+      <FileName>App_Code\DLL\ot_operation_room_record_detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ot_operationrecord" Collapsed="true">
+    <Position X="26.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgcAOGAEKg5AsDa6gsFpmgpAIhASRcFBBsKF7TfAgDI=</HashCode>
+      <FileName>App_Code\DLL\ot_OperationRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ot_operative_notes" Collapsed="true">
+    <Position X="28.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICAAIFBkAzAAgKICAAMJAIAgIRkqB0gCBEFJAACECCw=</HashCode>
+      <FileName>App_Code\DLL\ot_operative_notes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ot_patient_medicine" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgBAAEACB4AAgKACAACIAwAgAAEAABAgAUAgAAAEBAA=</HashCode>
+      <FileName>App_Code\DLL\ot_patient_medicine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ot_post_operative" Collapsed="true">
+    <Position X="2.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hgEAAmAAEggghCACEAAIogAgiAmoAAABFEAogQEEJAA=</HashCode>
+      <FileName>App_Code\DLL\ot_post_operative.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ot_postanesthesiaunit" Collapsed="true">
+    <Position X="4" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ZgSQEOlMAySkhI1GFBQACBQgAUASCAcw4lsQwEyFgFk=</HashCode>
+      <FileName>App_Code\DLL\ot_postanesthesiaunit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ot_pre_operative" Collapsed="true">
+    <Position X="5.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAX1qFfiUsBdgASPQOqcAi4ggj2oAIAQMEQQBJWcPGI=</HashCode>
+      <FileName>App_Code\DLL\ot_pre_operative.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Package_Detail" Collapsed="true">
+    <Position X="7.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAEAAAgAAAAACgAAAAAAAAAAAAAAAAEAAgAAAIAA=</HashCode>
+      <FileName>App_Code\DLL\Package_Detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Package_DoctorVistiDetail" Collapsed="true">
+    <Position X="9.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCEAEAAAgAAAAACAAACAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\Package_DoctorVistiDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Package_Master" Collapsed="true">
+    <Position X="11" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AISAAMAoAwAwiEACEAIAIAQKAAACAQAkAEAABIAFAIA=</HashCode>
+      <FileName>App_Code\DLL\Package_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PanelMaster" Collapsed="true">
+    <Position X="14.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQBhsAAAgAAHCkSBAgKDIABgAECSBCEAVggZAgFAgI=</HashCode>
+      <FileName>App_Code\DLL\PanelMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="panelonaccount" Collapsed="true">
+    <Position X="16.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASQQAlhAAgQAACCCAoICAQSBIgIACASIFUABEQQCBAE=</HashCode>
+      <FileName>App_Code\DLL\panelonaccount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PanelOnaccount_Detail" Collapsed="true">
+    <Position X="18" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQANBgggBAAACCAoIoQwShIgAAHAQCFUAAWAQABAE=</HashCode>
+      <FileName>App_Code\DLL\PanelOnaccount_Detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pateint_account" Collapsed="true">
+    <Position X="19.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABIAHACwwBEIAQKAyEAAAiACBAAQBAABUgQAAQABAA=</HashCode>
+      <FileName>App_Code\DLL\Pateint_account.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_Complains" Collapsed="true">
+    <Position X="23.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoAAAEAAAwAAoAQGAACIAAAgAAIAABABBEAAAAQEAAA=</HashCode>
+      <FileName>App_Code\DLL\Patient_Complains.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="patient_family_history" Collapsed="true">
+    <Position X="25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAEAAAwAAoQADAIAIAAAgAAEBABAgEkIAIAQEAAA=</HashCode>
+      <FileName>App_Code\DLL\patient_family_history.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_General_Master" Collapsed="true">
+    <Position X="26.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACQgAQEECCAEEAIEQAEIAAIBACAEiAgAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\Patient_General_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_IPD_Profile" Collapsed="true">
+    <Position X="28.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAgMAHAwkAQAQCAgMEEAAgIAEiJBACAFiAAEAQQBA=</HashCode>
+      <FileName>App_Code\DLL\Patient_IPD_Profile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_Lab_InvestigationIPD" Collapsed="true">
+    <Position X="0.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAQAoNAuIohAqCQCDgOIAAgCEA0CAyAhNFkISCQUQZA=</HashCode>
+      <FileName>App_Code\DLL\Patient_Lab_InvestigationIPD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_Lab_InvestigationOPD" Collapsed="true">
+    <Position X="2.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAoNAmIojAqCQCDgOIAAgCAAUKEzAhJFkISCQEQZA=</HashCode>
+      <FileName>App_Code\DLL\Patient_Lab_InvestigationOPD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_Lab_Radiology_IPD" Collapsed="true">
+    <Position X="4" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAYAgMAAIhAAxACCAAAAAAAAAAEAABAAMEgAAAAEABA=</HashCode>
+      <FileName>App_Code\DLL\Patient_Lab_Radiology_IPD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_Lab_Radiology_OPD" Collapsed="true">
+    <Position X="5.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAYAgMAAIhAAxACCAAAAAAAAAAEAABAAMEgAAAAEABA=</HashCode>
+      <FileName>App_Code\DLL\Patient_Lab_Radiology_OPD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_Master" Collapsed="true">
+    <Position X="9.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQmyeEjLvC6u0Gei8MfF6DWkKubKRGuDcxxbLAukYI=</HashCode>
+      <FileName>App_Code\DLL\Patient_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_Medical_History" Collapsed="true">
+    <Position X="11" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEzFqs2rJsrGnyYWvpNGLq6DfGE8KJUtO0q13LV+pbI=</HashCode>
+      <FileName>App_Code\DLL\Patient_Medical_History.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_Medicine" Collapsed="true">
+    <Position X="12.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABhJEAAB4UAIiRGoICBAQAAAAAEABAxBEiAABQAABA=</HashCode>
+      <FileName>App_Code\DLL\Patient_Medicine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="patient_notes" Collapsed="true">
+    <Position X="14.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQiAEAAA4AAACACACAQAAAAAIEAAAAAAECQAAAECAA=</HashCode>
+      <FileName>App_Code\DLL\Patient_Notes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_Observation" Collapsed="true">
+    <Position X="16.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAgA4BAoCACAgAIAAAgAAACABABBEAAAAQEAAA=</HashCode>
+      <FileName>App_Code\DLL\Patient_Observation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="patient_profile_doctor" Collapsed="true">
+    <Position X="18" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgMAAAgBAAAACAgQAAAAAAAEAAAAAAEAASAACAAA=</HashCode>
+      <FileName>App_Code\DLL\patient_profile_doctor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="patient_profile_hospital" Collapsed="true">
+    <Position X="19.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgMAAAgAAAAACAAAAAAAAAAEAABAAAEgASAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\patient_profile_hospital.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="patient_researchdetail" Collapsed="true">
+    <Position X="21.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAEAAAgAAgAACAAAAABQAAAEEAAAAAUAACAAEAAA=</HashCode>
+      <FileName>App_Code\DLL\patient_ResearchDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_Test" Collapsed="true">
+    <Position X="23.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAERAA4BAIKACEgCIAAACEAQAABAAIEAAgAQAABE=</HashCode>
+      <FileName>App_Code\DLL\Patient_Test.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PatientLabObservation_IPD" Collapsed="true">
+    <Position X="25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAYAgMAEAhAghBiCKgAAAAAAAAECAAAMMEQwACAEIhA=</HashCode>
+      <FileName>App_Code\DLL\PatientLabObservation_IPD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patient_LabObservation_OPD" Collapsed="true">
+    <Position X="7.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAgMAEAhAghBiCKgAAAAAAAAECAAAMIEQwACAEIhA=</HashCode>
+      <FileName>App_Code\DLL\PatientLabObservation_OPD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payment" Collapsed="true">
+    <Position X="28.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAgMBgBnAAqIACAAIAAQQCCBEQAVA1BEoAgKAEIYA=</HashCode>
+      <FileName>App_Code\DLL\Payment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_EmployeeRegistration" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BhTnS2FxD2rwu+ifoIMFMD26kIMBJq6lfHoofv1HTUE=</HashCode>
+      <FileName>App_Code\DLL\Payroll_EmployeeRegistration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PreSurgeryBooking" Collapsed="true">
+    <Position X="9.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAMBgSgBqCAACAAIAAACRGAAACABhBFgAyGAQAQE=</HashCode>
+      <FileName>App_Code\DLL\PreSurgeryBooking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PurchaseOrderDetail" Collapsed="true">
+    <Position X="12.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SICEAMEEUwAgAfZSoICSFACFIYRhxQADAEIAECAQBAQ=</HashCode>
+      <FileName>App_Code\DLL\PurchaseOrderDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PurchaseOrderMaster" Collapsed="true">
+    <Position X="14.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BICAGMRmA4Q4iaUSjMIhIAAVIIikAAIyA05IJioUBDE=</HashCode>
+      <FileName>App_Code\DLL\PurchaseOrderMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PurchaseOrderPurchaseRequest" Collapsed="true">
+    <Position X="16.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAEAAgCAAAACAACAAAAAAAIABAAiAEAIAAAEhAA=</HashCode>
+      <FileName>App_Code\DLL\PurchaseOrderPurchaseRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PurchaseOrderTax" Collapsed="true">
+    <Position X="18" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIgAAAEAAgCAAAACAAAAJAAEIAAAAwAGAEAAAAAAhAA=</HashCode>
+      <FileName>App_Code\DLL\PurchaseOrderTax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PurchaseOrderTerms" Collapsed="true">
+    <Position X="19.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAgAAAAgAhAAACAAQAEAAAAAAAAAAAAEAAAQAABAA=</HashCode>
+      <FileName>App_Code\DLL\PurchaseOrderTerms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PurchaseRequestMaster" Collapsed="true">
+    <Position X="21.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAGMAmA4AwiKYSBJIAhABQABggCQAwAUAAIAgUBCA=</HashCode>
+      <FileName>App_Code\DLL\PurchaseRequestMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rate_History" Collapsed="true">
+    <Position X="25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAoUEEBBAgAAgAICEAAACABDAABgASYAAlCAMAgHRAE=</HashCode>
+      <FileName>App_Code\DLL\Rate_History.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RateList" Collapsed="true">
+    <Position X="26.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAQCgMmhAggAyEACwAIgAAgLACOACBAhAEgABAAFKAI=</HashCode>
+      <FileName>App_Code\DLL\RateList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RateListIPD" Collapsed="true">
+    <Position X="28.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAACAMmhAggCyEACgAIgAAgLACKACBAhAEgABAAFaAI=</HashCode>
+      <FileName>App_Code\DLL\RateListIPD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Receipt" Collapsed="true">
+    <Position X="0.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQQADNI2hkAgvIQCCEeIEiUhChAwGVI9FkoAkKQEIRA=</HashCode>
+      <FileName>App_Code\DLL\Receipt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Receipt_PaymentDetail" Collapsed="true">
+    <Position X="2.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAlQG0gQIhCASAAEBIASAAIJAABACAFpAEGIEAAA=</HashCode>
+      <FileName>App_Code\DLL\Receipt_PaymentDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Room_Master" Collapsed="true">
+    <Position X="9.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAgMApAgAwyAgCFAIAMAQABAEEAAAmAEAAEAwEQAA=</HashCode>
+      <FileName>App_Code\DLL\Room_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sales_Details" Collapsed="true">
+    <Position X="14.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>WAYCrMNjDggDqIQSkEMgAAgAACEQABAxBElBSiRUTyA=</HashCode>
+      <FileName>App_Code\DLL\Sales_Details.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Set_Item_Detail" Collapsed="true">
+    <Position X="21.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICMAEEAAggAgBACkAAAAAgAAABAAAAAAEAAwAAEAAE=</HashCode>
+      <FileName>App_Code\DLL\Set_Item_Detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Set_master" Collapsed="true">
+    <Position X="23.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAEAAAggggBACEAAAAAgAAAAAAAAEAEAAQAAEAAA=</HashCode>
+      <FileName>App_Code\DLL\Set_master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock" Collapsed="true">
+    <Position X="28.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>eeaens09oxkRqJVytoILCAxhcQF0Dzy3BPocEwQ3TJQ=</HashCode>
+      <FileName>App_Code\DLL\Stock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StockExpiry" Collapsed="true">
+    <Position X="0.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEEAAwgAQAACgAAABAgAAgACAAAAAEAAAAAACAA=</HashCode>
+      <FileName>App_Code\DLL\StockExpiry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StockStatusReport" Collapsed="true">
+    <Position X="5.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAABAABAAAAAAAAAAAAAAAAAAAAgAAAAACAAAAEA=</HashCode>
+      <FileName>App_Code\DLL\StockStatusReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SubCategoryMaster" Collapsed="true">
+    <Position X="7.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAkMBiAkAgiAACAgISIAQAAAMAABIlAEgAAAQEAAA=</HashCode>
+      <FileName>App_Code\DLL\SubCategoryMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Surgery" Collapsed="true">
+    <Position X="9.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>App_Code\DLL\Surgery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Surgery_Calculator" Collapsed="true">
+    <Position X="11" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAMEAAgAAAAACgAAAAAAAEAgAAAAAAEAAEEAAQAA=</HashCode>
+      <FileName>App_Code\DLL\Surgery_Calculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Surgery_Description" Collapsed="true">
+    <Position X="12.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QICAAMEgQgAAKAICgAsIAICpAAAAAABgAkAASAQAAQA=</HashCode>
+      <FileName>App_Code\DLL\Surgery_Description.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Surgery_Doctor" Collapsed="true">
+    <Position X="14.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAMEAQgBAAAACggkAAACAAAgAAAAAAkAAEAAAAAA=</HashCode>
+      <FileName>App_Code\DLL\Surgery_Doctor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Surgery_Master" Collapsed="true">
+    <Position X="16.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIQAiMAgAgAAiAICEAIgYAQAHAEABABgAEAQAAgEAAA=</HashCode>
+      <FileName>App_Code\DLL\Surgery_Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxCalculation_DirectGRN" Collapsed="true">
+    <Position X="18" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIAEAAAAgAAAAACAAAAAABBIAAgAAAEAUAAkAAABAE=</HashCode>
+      <FileName>App_Code\DLL\TaxCalculation_DirectGRN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxChargedList" Collapsed="true">
+    <Position X="19.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQCgNEgQgAgqAACgAIAAACAAAkAARAgAEgAEAQECAA=</HashCode>
+      <FileName>App_Code\DLL\TaxChargedList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxChargeList" Collapsed="true">
+    <Position X="21.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAgMCgAgAAiAACAAIAAAAAAAsAARAgAEgAEAAEAAA=</HashCode>
+      <FileName>App_Code\DLL\TaxChargeList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeOfAppoinment_master" Collapsed="true">
+    <Position X="23.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAgAAAAACAAAAAAAEAAAACQAAAEAAAAAAAgA=</HashCode>
+      <FileName>App_Code\DLL\TypeOfAppoinment_master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Util" Collapsed="true">
+    <Position X="26.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAxAhECABAZQAMgAABIGAABIEAAAEAhAAAIWAICA=</HashCode>
+      <FileName>App_Code\DLL\Util.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vendor" Collapsed="true">
+    <Position X="28.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BaSCgMAgkiBQgiALVAAGAEQ0ARMBIQCCAMCXwQAAASg=</HashCode>
+      <FileName>App_Code\DLL\vendor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoctorshareDetail" Collapsed="true">
+    <Position X="28.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiACAFBAhwAgAMAGAAEYEAEJBgAAAhIAA1AARAABBQE=</HashCode>
+      <FileName>App_Code\DocAccount\DoctorshareDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_assessment" Collapsed="true">
+    <Position X="4" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IFngCWKABikGwgSKCyxEqwYgAG0ARECJxXCAEUFNp1o=</HashCode>
+      <FileName>App_Code\Physio\physio_assessment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_dis_PhyTherapy" Collapsed="true">
+    <Position X="5.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CqA0CGBhAiBAQIQKQoBmKwACOUgARgBIBEECgJQAiVE=</HashCode>
+      <FileName>App_Code\Physio\physio_dis_PhyTherapy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_dis_Spine" Collapsed="true">
+    <Position X="7.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIFCMRAAiASwAYKBwImJQxAKYgQRgRqCF0EAJIBCRE=</HashCode>
+      <FileName>App_Code\Physio\physio_dis_Spine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_dis_THR" Collapsed="true">
+    <Position X="9.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DoCESuBAAiqiAowKAoCFKQbACYgABgfpDFkEgAiDmTE=</HashCode>
+      <FileName>App_Code\Physio\physio_dis_THR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_dis_TKR" Collapsed="true">
+    <Position X="11" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgAFyMDAgioGAK0KAoIHMQyBCcgoRg7pCEkEAJiCHRE=</HashCode>
+      <FileName>App_Code\Physio\physio_dis_TKR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_discharge_report" Collapsed="true">
+    <Position X="12.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAGCAIiACwhQSAAlAIAKAAABABAEEAGABSAAEABg=</HashCode>
+      <FileName>App_Code\Physio\physio_discharge_report.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_FlowSheet" Collapsed="true">
+    <Position X="14.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEBQAgABAAUCCAAAAABAQAAAAAAIAEAASAAAIBk=</HashCode>
+      <FileName>App_Code\Physio\physio_FlowSheet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_functional_evaluation_detail" Collapsed="true">
+    <Position X="16.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAUIAAwAAgJACAAAIUgAgAAEAAAEIAEAAgQAEKAA=</HashCode>
+      <FileName>App_Code\Physio\physio_functional_evaluation_detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_history" Collapsed="true">
+    <Position X="18" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qAkCQFliAhEAkAYDtgTIIQBlUAHjBEYJEExgaAyAAZ0=</HashCode>
+      <FileName>App_Code\Physio\physio_history.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_le_rehab" Collapsed="true">
+    <Position X="19.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qKAwWuLAAyDCkIwKDgKJISQkOltkHAcZDFDw2CsFgdk=</HashCode>
+      <FileName>App_Code\Physio\physio_le_rehab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_objective_examination_detail" Collapsed="true">
+    <Position X="21.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SrgMQtAUF6AglSEnZQwMBwM0AsWCQgBDwkVgAQAtAAQ=</HashCode>
+      <FileName>App_Code\Physio\physio_objective_examination_detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_progess_report" Collapsed="true">
+    <Position X="23.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AcBQiUAAgiwAghSjAAAAEAAxgAFAIAgJAGAFSEIEIRk=</HashCode>
+      <FileName>App_Code\Physio\physio_progess_report.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_progress_note" Collapsed="true">
+    <Position X="25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UQQBAEAQRikAwAQCQCsIKAGQNAAACIwAgcBAyCAEQJg=</HashCode>
+      <FileName>App_Code\Physio\physio_progress_note.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_rehab" Collapsed="true">
+    <Position X="26.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>vvzdjeCT/y1R4c6GunLb8gq+gEHzKg9RuFSJxrRl8U8=</HashCode>
+      <FileName>App_Code\Physio\physio_rehab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_soap_thr" Collapsed="true">
+    <Position X="28.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ZwBhQsLEAmAIwgQSBhAEMAwBAEQAAQBTBFAgCiAFCRU=</HashCode>
+      <FileName>App_Code\Physio\physio_soap_thr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_soap_tkr" Collapsed="true">
+    <Position X="0.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JQJBYkhEImAowgQSBhBEMIAAA9RIAQEDBFggijAlAVE=</HashCode>
+      <FileName>App_Code\Physio\physio_soap_tkr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_subjective_examination_detail" Collapsed="true">
+    <Position X="2.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAIAEgAAkAFgIgCAAAYAgAgCAEAAAACAUABgAQcAAA=</HashCode>
+      <FileName>App_Code\Physio\physio_subjective_examination_detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_thr_rehab" Collapsed="true">
+    <Position X="4" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DMTHWMhwGnCAgAwSDgCFcSQgCActChcfRFAglnoVERE=</HashCode>
+      <FileName>App_Code\Physio\physio_thr_rehab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_tka_rehab" Collapsed="true">
+    <Position X="5.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>6ITE2sB+CzIBgEya34llNSXhCBYvyw8ZDFgglGoFYVE=</HashCode>
+      <FileName>App_Code\Physio\physio_tka_rehab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="physio_ue_rehab" Collapsed="true">
+    <Position X="7.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>LMAGXERMEyAAgAwKDgABYSCgKJYkCAMZTFCgkqqFAVE=</HashCode>
+      <FileName>App_Code\Physio\physio_ue_rehab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GenCode128.Code128Content" Collapsed="true">
+    <Position X="26.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAEAAAAAAAgAAAAgAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\Code128Content.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GenCode128.Code128Code" Collapsed="true">
+    <Position X="25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAMAAQAIAAAAAAAAAgIAIAAAAgAAQAAAAAIAAAEA=</HashCode>
+      <FileName>App_Code\BLL\Code128Content.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Browsing.FileList" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAACQAIIACAAABAAABAACJGIA=</HashCode>
+      <FileName>App_Code\BLL\FileList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Browsing.PathHelper" Collapsed="true">
+    <Position X="21.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAAAAAAAAACgA=</HashCode>
+      <FileName>App_Code\BLL\PathHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.ObjectExtension" Collapsed="true">
+    <Position X="25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Core\ObjectExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="GenCode128.CodeSet" Collapsed="true">
+    <Position X="0.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BLL\Code128Content.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

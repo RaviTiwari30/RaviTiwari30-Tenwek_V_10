@@ -1,0 +1,141 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>8</ID>
+    <MenuName>IPD</MenuName>
+    <Items>
+      <URLName>/Design/IPD/Patientsearch.aspx</URLName>
+      <DispName>Patient Search</DispName>
+      <MenuID>8</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/PatientOrderSetSearch.aspx</URLName>
+      <DispName>Search Patient Order Set</DispName>
+      <MenuID>8</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>11</ID>
+    <MenuName>MIS</MenuName>
+    <Items>
+      <URLName>/Design/MIS/BedDetails.aspx</URLName>
+      <DispName>BedDetails</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MIS/BedOccupancyReport.aspx</URLName>
+      <DispName>Bed Occupancy</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>12</ID>
+    <MenuName>Password</MenuName>
+    <Items>
+      <URLName>/Design/Employee/ChangePassword.aspx</URLName>
+      <DispName>ChangePassword</DispName>
+      <MenuID>12</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <Items>
+      <URLName>/Design/IPD/CatherPatientReport.aspx</URLName>
+      <DispName>Cather Patient Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/VantilatorPatientReport.aspx</URLName>
+      <DispName>Vantilator Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/NeedleInjuryReport.aspx</URLName>
+      <DispName>Needle Injury Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/IncidentReport.aspx</URLName>
+      <DispName>Incident Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/AdmissionDischargeList.aspx</URLName>
+      <DispName>Daily Admit Discharge</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/AdmittedPatientList.aspx</URLName>
+      <DispName>Admitted Patient List</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/LowStockDepatment.aspx</URLName>
+      <DispName>Department Low Stock Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/StockLedgerMedical.aspx</URLName>
+      <DispName>Current Stock Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/StockClosing.aspx</URLName>
+      <DispName>Stock Status Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/IndentStatusReport.aspx</URLName>
+      <DispName>Requisition Status Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/AdmitShiftedPatient.aspx</URLName>
+      <DispName>Room Shift Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>16</ID>
+    <MenuName>Requisition</MenuName>
+    <Items>
+      <URLName>/Design/Store/CreateIndent.aspx</URLName>
+      <DispName>Create Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/IndentSearch.aspx</URLName>
+      <DispName>Search</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>15</ID>
+    <MenuName>Consume</MenuName>
+    <Items>
+      <URLName>/Design/Store/ConsumeItem.aspx</URLName>
+      <DispName>Consume Item</DispName>
+      <MenuID>15</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/DamageDeptTransfer.aspx</URLName>
+      <DispName>Damage Store</DispName>
+      <MenuID>15</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>33</ID>
+    <MenuName>Circular</MenuName>
+    <Items>
+      <URLName>/design/Circular/NewCircular.aspx</URLName>
+      <DispName>New Circular</DispName>
+      <MenuID>33</MenuID>
+    </Items>
+    <Items>
+      <URLName>/design/circular/ViewCircular.aspx</URLName>
+      <DispName>View Circular</DispName>
+      <MenuID>33</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

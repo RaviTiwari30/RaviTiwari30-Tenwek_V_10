@@ -1,0 +1,281 @@
+﻿
+<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="Role">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-24" style="text-align: center;">
+                    <label>
+                        <strong style="font-size: medium;">Roles Mapping</strong>
+                    </label>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Search Criteria </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-22">
+                    <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3">
+                             <label class="pull-left">
+                                Filter
+                            </label>
+                            <b class="pull-right">:</b>
+
+                        </div>
+                        <div class="col-md-3">
+                            <select id="ddlFilterTypeRoles" onchange="onRolesFilterTypeChange(this);"> 
+                                <option value="0">Search</option>
+                                <option value="1">All Checked</option>
+                                <option value="2"> All UnChecked</option>
+                             
+                            </select>
+                        </div>
+                        <div class="col-md-7">
+                            <input type="text" id="txtSearchRoles" onkeyup="$searchRoleByWord(event);" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row divBlockRoles" style="margin: 0px;">
+                <div class="Purchaseheader">
+                    Roles
+                </div>
+
+                <div class="row" style="padding: 0px; margin: 0px;">
+                    <label style="cursor: pointer">
+                        <input type="checkbox" onchange="onSelectAllRoles(this)" /><b> All</b> </label>
+                </div>
+                <div id="divRoleMapping" class="clearDiv" style="font-size:10pt;overflow:scroll;height:200px;"></div>
+            </div>
+            <div class="row" style="">
+                <div class="col-md-24 textCenter">
+                     <input type="button" id="btnSaveRoles" value="Save" class="save margin-top-on-btn" onclick="saveRolesMappingDetails(this)" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------Modal Pop up---------------------------------------------------------------------------------->
+<div id="divRolesMappingModel" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content" style="min-width: 500px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="divRolesMappingModel" aria-hidden="true">&times;</button>
+                    <b class="modal-title">Copy Same Doctors</b>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-22">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Copy Centre Name 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <label id="lblCentreFromRoles" class="pull-left patientInfo" style="font-weight: bold"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Select Centre To Copy 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <ul id="ulCentreRolesTo" style="list-style-type: none; margin-left: -10px;"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" onclick="copyCentreRoles(this)" class="save" style="font-size:10pt;">Save</button>
+                    <button type="button" data-dismiss="divRolesMappingModel" onclick="CloseRolesModal()" style="font-size:10pt;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------------------------------END----------------------------------------------------------------------------->
+
+<script id="templateRolesMapping" type="text/html">
+		<#
+		var dataLength=templateData.length;
+		window.status="Total Records Found :"+ dataLength;
+		var objRow;
+		var status;
+		for(var j=0;j<dataLength;j++)
+		{
+		objRow = templateData[j];
+		#>
+            <div class="row" style="padding: 0px;margin: 0px;">
+              <label style="cursor:pointer"> <input type="checkbox" 
+                  
+                  <#if(objRow.MapID>0){#>
+                       checked
+                  <#}#>
+                   /><span>  <#=objRow.TextField#></span> </label>
+                <label class="hidden lblData"> <#= JSON.stringify(objRow) #></label>
+            </div>
+            	
+		<#}#>     
+	</script>
+
+<script type="text/javascript">
+
+    function CloseRolesModal() {
+        $("#divRolesMappingModel").hide();
+    }
+
+    var GetAllRolesMappings = function () {
+        var Rolecenterid = $.trim($("#spnCenter_ID").text());
+        serverCall('../EDP/Services/CentreWiseMapping.asmx/GetAllMappings', { centreID: Rolecenterid }, function (responseRole) {
+            var responseData = JSON.parse(responseRole);
+
+            var divRoleMapping = $('#divRoleMapping');
+            templateData = responseData.dtRoles;
+            var parseHTML = $('#templateRolesMapping').parseTemplate(templateData);
+            divRoleMapping.html(parseHTML);
+            var totalChecked = templateData.filter(function (i) { return i.MapID > 0 });
+            if (templateData.length == totalChecked.length)
+                divRoleMapping.closest('.divBlockRoles').find('.row:first input[type=checkbox]').prop('checked', true);
+        });
+    }
+
+    var onSelectAllRoles = function (el) {
+        $(el).closest('.divBlockRoles').find('.clearDiv').find('input[type=checkbox]').prop('checked', el.checked);
+    }
+
+    var $searchRoleByWord = function (e) {
+        if (e.target.value.length >= 3)
+            $('.divBlockRoles .clearDiv').find('.row').show().find('span').not(":containsIgnoreCase('" + e.target.value + "')").closest('.row').hide();
+        else if (e.target.value.length == 0)
+            $('.divBlockRoles .clearDiv').find('.row').show();
+    }
+
+    var onRolesFilterTypeChange = function (el) {
+        var filterType = Number(el.value);
+        var txtSearchRoles = $('#txtSearchRoles');
+        if (filterType == 0) {
+            txtSearchRoles.prop('disabled', false);
+            $('.divBlockRoles .clearDiv').find('.row').show();
+        }
+        else if (filterType == 1) {
+            txtSearchRoles.val('').prop('disabled', true);
+            $('.divBlockRoles .clearDiv').find('.row').hide();
+            $('.divBlockRoles .clearDiv').find('.row input[type=checkbox]:checked').closest('.row').show();
+        }
+        else if (filterType == 2) {
+            txtSearchRoles.val('').prop('disabled', true);
+            $('.divBlockRoles .clearDiv').find('.row').show();
+            $('.divBlockRoles .clearDiv').find('.row input[type=checkbox]:checked').closest('.row').hide();
+
+        }
+    }
+
+    var saveRolesMappingDetails = function () {
+        getRolesMappingDetails(function (data) {
+            serverCall('../EDP/CenterManagement/CenterManagement.asmx/SavesRolesMappingsDetails', data, function (resposneDoc) {
+                var responseData = JSON.parse(resposneDoc);
+                modelAlert(responseData.response, function () {
+                    if (responseData.status)
+                        loadCentreToModelRoles($("#spnCenter_ID").text(), $("#spnCenter_Name").text());
+                });
+            });
+        });
+    }
+
+    var getRolesMappingDetails = function (callback) {
+        var centreID = Number($("#spnCenter_ID").text());
+        var mappedRoles = [];
+
+        $('#divRoleMapping').find('input[type=checkbox]:checked').each(function () {
+            var tdRoleData = JSON.parse($(this).closest('.row').find('.lblData').text());
+            mappedRoles.push({
+                centreID: centreID,
+                valueField: tdRoleData.ValueField
+            });
+        });
+
+        callback({ centreID: centreID, mappedRoles: mappedRoles });
+    }
+
+    var loadCentreToModelRoles = function (centreId, CentreName) {
+        $("#lblCentreFromRoles").text(CentreName);
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetALLCentre', {}, function (response) {
+            var responseData = JSON.parse(response);
+            var responseCentreTo = responseData.filter(function (i) { return i.CentreID != centreId });
+            var ulCentreRolesTo = $('#ulCentreRolesTo');
+            ulCentreRolesTo.find('li').remove();
+            if (responseCentreTo.length > 0) {
+                $.each(responseCentreTo, function (i) {
+                    var aa = '<li  role="menuitem"><a>'
+                        + '<label class="trimList"  title="' + this.CentreName + '" >'
+                        + '<input   id="' + $.trim(this.CentreID) + '" value="' + this.CentreID + '" class="ui-all" type="checkbox" '
+                        + ' >' + this.CentreName + '</label></a> </li>';
+                    ulCentreRolesTo.append(aa);
+                });
+
+
+                $("#divRolesMappingModel").showModel();
+            }
+            else
+                modelAlert("Only One Centre Exist in the System !!!");
+
+        });
+    }
+
+    var copyCentreRoles = function (btnCopy) {
+        var centreRoleList = [];
+        $('#ulCentreRolesTo li').each(function () {
+            if ($(this).find('input').is(":checked")) {
+                centreRoleList.push({
+                    centreId: $(this).find('input').attr('id')
+                })
+            }
+        });
+
+        if (centreRoleList.length == 0) {
+            modelAlert('Please Select Atleast One Centre To Copy !!!');
+            return;
+        }
+
+        var centerID = Number($("#spnCenter_ID").text());
+        $mappedRoles = [];
+
+        $('#divRoleMapping').find('input[type=checkbox]:checked').each(function () {
+            var tdRoleData = JSON.parse($(this).closest('.row').find('.lblData').text());
+            $mappedRoles.push({
+                centreID: centerID,
+                valueField: tdRoleData.ValueField
+            });
+        });
+
+        $(btnCopy).attr('disabled', true).val('Submitting...');
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/CopyRolesCenterAccess', { mappedRoles: $mappedRoles, centreRolesList: centreRoleList }, function (resspan) {
+            $responseData = JSON.parse(resspan);
+            modelAlert($responseData.response, function (resspan) {
+                if ($responseData.status) {
+                    $("#divRolesMappingModel").hide();
+                    $(btnCopy).removeAttr('disabled').val('Save');
+                }
+                else
+                    $(btnCopy).removeAttr('disabled').val('Save');
+            });
+        });
+    }
+</script>

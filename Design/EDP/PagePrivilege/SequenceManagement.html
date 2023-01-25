@@ -1,0 +1,193 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+
+    <div id="divInvestigationPrescribe">
+        <div class="row">
+            <div class="col-md-24">
+                <div class="row">
+                    <div class="col-md-24" style="text-align: center;">
+                        <label>
+                            <strong style="font-size: medium;">
+                                <input type="radio" name="ss" value="0" class="rdoss" checked="checked" />
+                        <span>Normal Menu</span>
+                        <input type="radio" name="ss" value="2" class="rdoss" />
+                        <span>CPOE Menu</span>
+                        <input type="radio" name="ss" value="3" class="rdoss" />
+                        <span>Prescription Menu</span>                                   
+                                <br />
+                            </strong>
+                        </label>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <label class="pull-left">
+                            Role
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5">
+                        <select id="ddlRoleMenu" class="ddlLoginType" title="Select Role" onchange="bindSequenceMenu();"></select>
+                    </div>
+                  
+                    <div class="col-md-12">
+                        
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-md-24  Purchaseheader">
+                <label class="pull-left">
+                    <strong>Search Detail </strong>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="divViewMenuSequenceDetails"></div>
+            <script id="ScrdivViewMenuSequenceDetails" type="text/html">
+                           <table  cellspacing="0" rules="all" border="1" id="tb_grdMenu"
+        style="border-collapse:collapse;width:100%;"  class="GridViewStyle">
+            <tr id="Header">        
+                <th class="GridViewHeaderStyle" scope="col" style="width:30px;">S.No.</th>
+                <th class="GridViewHeaderStyle" scope="col" style="width:320px;">Menu Name</th>
+                <th class="GridViewHeaderStyle" scope="col" style="width:60px;">Sequence No.</th>
+                 <th class="GridViewHeaderStyle" scope="col" style="width:190px; display:none">MenuID</th>
+					        
+            </tr>
+            <#       
+            var dataLength=templateMenuSequenceData.length;
+        window.status="Total Records Found :"+ dataLength;
+        var objRow;   
+        for(var j=0;j<dataLength;j++)
+        {       
+            objRow = templateMenuSequenceData[j];
+        #>
+                    <tr id="<#=j+1#>">                                                                                                                  
+                    <td class="GridViewLabItemStyle" id="tdSNo"><#=j+1#></td>
+                    <td class="GridViewLabItemStyle" id="tdMenuName" onmouseover="chngcurmove()"  style="width:320px;" ><#=objRow.MenuName#></td>
+                    <td class="GridViewLabItemStyle" id="tdSeqNo" onmouseover="chngcurmove()" style="width:60px; text-align:center " ><#=objRow.SNo#></td>
+              
+                    <td class="GridViewLabItemStyle" id="tdID"  style="width:60px; display:none" ><#=objRow.Id#></td>
+
+                        
+                    </tr>           
+        <#}       
+        #>       
+     </table>
+ 
+                        </script>
+        </div>
+    </div>
+    <div class="row" style="text-align: center;">
+        <input type="button" value="Save" id="btnSaveMenu" class="ItDoseButton" onclick="saveMenuTable()" />
+    </div>
+</div>
+<script type="text/javascript" src="../../Scripts/jquery.tablednd.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+    $commonJsInit(function () {
+    });
+    $("#btnSaveMenu").attr('disabled', 'disabled');
+    $('.rdoss').change(function () {
+        if ($("#ddlRoleMenu").val() == "0") {
+            modelAlert('Please Select Role');
+            $("#ddlRoleMenu").focus();
+            return false;
+        }
+        bindSequenceMenu();
+    });
+});
+    var bindSequenceMenu = function () {
+        var data = {};
+        data.RoleID = $("#ddlRoleMenu").val();
+        data.Type = $("input[name='ss']:checked").val();
+        serverCall('Services/PagePrivilage.asmx/bindSequenceMenu', data, function (response) {
+            templateMenuSequenceData = JSON.parse(response);
+            if (templateMenuSequenceData.length > 0) {
+                var parseHTML = $('#ScrdivViewMenuSequenceDetails').parseTemplate(templateMenuSequenceData);
+                $('.divViewMenuSequenceDetails').removeClass('hidden').html(parseHTML);
+            }
+            else {
+                $('.divViewMenuSequenceDetails').addClass('hidden').html("");
+                modelAlert('Record Not Found');
+
+            }
+            condition();
+
+            $('#tb_grdMenu').tableDnD({
+                onDragClass: "myDragClass",
+
+                onDragStart: function (table, row) {
+
+                    //   modelAlert("Started dragging row " + row.id);
+                },
+                dragHandle: ".dragHandle"
+
+            });
+        });
+    }
+    function condition() {
+        if ($('#tb_grdMenu tr').length > 0) {
+            $("#btnSaveMenu").removeAttr('disabled');
+        }
+        else {
+            $("#btnSaveMenu").attr('disabled', 'disabled');
+        }
+    }
+    function saveMenuTable() {
+        $("#btnSaveMenu").attr('disabled', 'disabled');
+
+        if ($('#tb_grdMenu tr').length > 0) {
+            var data = [];
+            $("#tb_grdMenu tr").each(function () {
+                var id = $(this).attr("id");
+                var $rowid = $(this).closest("tr");
+                if (id != "Header") {
+                    data.push({ "SNo": $(this).attr("id"), "ID": $.trim($rowid.find("#tdID").text()), "MenuName": $.trim($rowid.find("#tdMenuName").text()), "SequenceNo": $.trim($rowid.find('#tdSeqNo').text()) });
+                }
+            });
+            if (data.length > "0") {
+
+                $.ajax({
+                    type: "POST",
+                    data: JSON.stringify({ Data: data, RoleID: $("#ddlRoleMenu").val(), type: Number($("input[name='ss']:checked").val()), RoleName: $.trim($("#ddlRoleMenu  option:selected").text()) }),
+                    url: "Services/PagePrivilage.asmx/saveTable",
+                    dataType: "json",
+                    contentType: "application/json;charset=UTF-8",
+                    timeout: 120000,
+                    async: false,
+                    success: function (result) {
+                        dataResult = (result.d);
+
+                        if (dataResult == "1") {
+                            bindSequenceMenu();
+                            modelAlert('Record Saved Successfully');
+                        }
+                        else {
+
+                            modelAlert('Error occurred, Please contact administrator');
+                        }
+
+                    },
+                    error: function (xhr, status) {
+                        window.status = status + "\r\n" + xhr.responseText;
+                        modelAlert('Error occurred, Please contact administrator');
+                        $("#btnSaveMenu").removeAttr('disabled');
+                    }
+                });
+            }
+        }
+    }
+    function chngcurmove() {
+        document.body.style.cursor = 'move';
+    }
+
+
+</script>

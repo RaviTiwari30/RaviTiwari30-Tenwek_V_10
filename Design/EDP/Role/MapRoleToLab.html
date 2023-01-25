@@ -1,0 +1,123 @@
+﻿<div style="margin: 0px; font-size: 13px; height: auto">
+    <div id="divInvestigationPrescribe">
+          <div class="POuter_Box_Inventory" style="margin-left: -6px">
+        <div class="row">
+            <div class="Purchaseheader">
+             Bind Investigation Groups
+            </div>
+            <div class="row" style="cursor:pointer">
+                <div class="">
+                    <input type="checkbox" id="SelectLabDept" name="SelectLabDept" /><label for="SelectLabDept"><b>Select All</b></label>
+                </div>
+                <div class="row" id="chklabappend"  >
+                </div>
+
+            </div>
+        </div>
+              </div>
+          <div class="POuter_Box_Inventory" style="margin-left: -6px">
+        <div style="text-align: center" class="row col-md-24">
+            <input style="width: 80px" type="button" id="btnSave" runat="server" value="Save" onclick="SaveRoleToLab()" />
+        </div>
+              </div>
+    </div>
+</div>
+
+<script id="CenterAccessScript">
+
+
+
+
+    function BindlabDept(RoleID) {
+        var count = 0;
+
+        serverCall('RoleManager.aspx/BindLabDept', { RoleID: RoleID }, function (response) {
+
+            var CentreData = JSON.parse(response);
+
+            if (CentreData.status) {
+                data = CentreData.response;
+                $('#chklabappend').empty();
+
+                $.each(data, function (i, item) {
+                    var check = '';
+
+                    if (item.isExist==1) {
+                        check = 'checked';
+                        
+                    }
+
+                    $("#chklabappend").append(" <div class='col-md-5' style='cursor:pointer;width: 300px;'> <input style='cursor:pointer' type='checkbox' id='chk-" + i + "' name='chk-" + i + "' value=" + item.ObservationType_ID + ','+ item.Name +" class='Chklabdept' " + check + "/>  <label style='cursor:pointer' for='chk-" + i + "'>" + item.Name + "</label></div>");
+
+                });
+
+            }
+
+
+        });
+
+    }
+
+
+    $('#SelectLabDept').click(function () {
+        if ($(this).is(":checked")) {
+            $(".Chklabdept").prop("checked", true)
+
+
+        }
+
+        else {
+            $(".Chklabdept").prop("checked", false)
+
+        }
+    });
+
+    var SaveRoleToLab= function () {
+        var RoleId = $('#txtRoleID').val();
+        var RoleName = $('#txtRoleName').val();
+        var labidname = new Array();
+
+
+        if (RoleId == '') {
+            modelAlert('Error Occured');
+            return false;
+        }
+        // Parent checked check box value
+        $('#chklabappend .Chklabdept:checked').each(function () {
+            labidname.push($(this).val());
+        });
+
+
+        var obj = {
+            LabIdName: labidname,
+            RoleID: RoleId,
+            RoleName: RoleName
+        };
+
+        var data = JSON.stringify(obj)
+
+
+        $.ajax({
+
+            url: 'RoleManager.aspx/SaveRoleToLab',
+            contentType: 'application/json; charset=utf-8',
+            type: 'POST',
+            data: JSON.stringify(obj),
+            cache: false,
+            success: function () {
+                modelAlert('Record Saved Successfully');
+
+
+            },
+            error: function (xhr, status, error) {
+                modelAlert('Some Error Occured  while saveing Role');
+            }
+        });
+
+
+
+
+    };
+
+</script>
+

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../../../Styles/grid24.css" rel="stylesheet" />
+    <link href="../../../Styles/framestyle.css" rel="stylesheet" />
+    <script type="text/javascript" src="../../../Scripts/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+    <!-- <div style="height:130px" class="row">
+       
+     </div> -->
+    <div class="row">
+        <!--<div class="col-md-1"></div>-->
+        <div  class="col-md-24">
+            <div id="printPreview">
+                
+            </div>
+        </div>
+        <!--<div class="col-md-1"></div>-->
+    </div>
+    <div class="row">
+        <div class="col-md-24">
+            <!--OPD Timings : Monday to Saturday 12.00 P.M to 10.00 P.M (Tea Break : 6.00 P.M to 6.30 P.M) <br/>
+            OPD Timings : Sunday 12.00 P.M to 5.00 P.M (No Consultation On Phone) <br/>
+            Patients are at liberty to buy generic formulations or medicines of any brand from anywhere. <br/>-->
+        </div>
+    </div>
+</body>
+     <script type="text/javascript">
+         $(window).load(function () {
+             setTimeout(function () { window.print(); }, 200);
+             window.onfocus = function () { setTimeout(function () { window.close(); }, 200); }
+             return false;
+         });
+         
+   </script>
+</html>

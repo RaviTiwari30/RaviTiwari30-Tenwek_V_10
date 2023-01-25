@@ -1,0 +1,254 @@
+<%@ Page Language="C#" MasterPageFile="~/DefaultHome.master" AutoEventWireup="true" CodeFile="LeaveApplication.aspx.cs" Inherits="Design_Payroll_LeaveApplication"  %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="Ajax" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<script type="text/javascript">
+    function doClick(buttonName,e)
+    {
+//the purpose of this function is to allow the enter key to 
+//point to the correct button to click.
+        var key;
+
+         if(window.event)
+              key = window.event.keyCode;     //IE
+         else
+              key = e.which;     //firefox
+    
+        if (key == 13)
+        {
+            //Get the button the user wants to have clicked
+            var btn = document.getElementById(buttonName);
+            if (btn != null)
+            { //If we find the button click it
+                btn.click();
+                event.keyCode = 0
+            }
+        }
+   }
+    </script>
+ <Ajax:ScriptManager ID="sm" runat="server" />
+
+     <div id="Pbody_box_inventory">
+    <div class="Outer_Box_Inventory" >
+    <div class="content" style="text-align:center;">
+        <span style="font-size: 12pt"><strong>Leave Application<br />
+        </strong>
+            <asp:Label ID="lblmsg" runat="server" Font-Bold="True" Font-Size="9pt" ForeColor="Red"></asp:Label></span></div>
+    </div>
+      <div class="Outer_Box_Inventory" >
+     <div class="Purchaseheader">
+         Search Criteria 
+     </div>
+   
+     <table border="0" style="width:100%">
+      <tr>
+      <td style="width:20%" align="right">
+          <span style="color: #ff0066"><strong>
+          *</strong> </span>
+          Employee ID :</td>
+      <td style="width:20%">
+          <asp:TextBox ID="txtEmployeeID" runat="server"></asp:TextBox>
+          <asp:RequiredFieldValidator ID="rq1" runat="server" ErrorMessage="*" ControlToValidate="txtEmployeeID" ValidationGroup="search"></asp:RequiredFieldValidator></td>
+      <td style="width:20%" align="left">
+          </td>
+      <td style="width:20%">
+                 <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" ValidationGroup="search" /></td>
+      <td style="width:20%"></td>
+      </tr> 
+         <tr>
+             <td align="right" style="width: 20%">
+             </td>
+             <td style="width: 20%">
+             <cc1:FilteredTextBoxExtender ID="fc11" runat="server" TargetControlID="txtEmployeeID" FilterType="Numbers"></cc1:FilteredTextBoxExtender>
+             </td>
+             <td align="center" style="width: 20%">
+                 </td>
+             <td style="width: 20%">
+             </td>
+             <td style="width: 20%">
+             </td>
+         </tr>
+      </table>
+         </div>
+ <div class="Outer_Box_Inventory" >
+     <div class="Purchaseheader">
+         Employee Detail</div>
+   
+     <table border="0" style="width:100%">
+         <tr>
+             <td align="right" style="width: 20%">
+                 <asp:Label ID="lblEmployeeName" runat="server" Font-Bold="True" Text="Employee Name :"></asp:Label></td>
+             <td style="width: 20%">
+                 <asp:Label ID="lblEmployeeName1" runat="server" Font-Bold="True"></asp:Label></td>
+             <td align="right" style="width: 20%">
+             </td>
+             <td style="width: 20%">
+             </td>
+             <td style="width: 20%">
+             </td>
+         </tr>
+         <tr>
+             <td align="right" valign="top" style="width: 20%">
+                 <strong>Leave Detail :</strong></td>
+             <td align="left" colspan="2" valign="top">
+             <asp:GridView ID="LeaveGrid" runat="server" AutoGenerateColumns="False" CssClass="GridViewStyle" OnRowDataBound="EmpGrid_RowDataBound">
+                     <AlternatingRowStyle CssClass="GridViewAltItemStyle" />
+                     <Columns>
+                         <asp:TemplateField HeaderText="#">
+                             <ItemTemplate>
+                                 <%# Container.DataItemIndex+1 %>
+                             </ItemTemplate>
+                             <ItemStyle CssClass="GridViewItemStyle" />
+                             <HeaderStyle CssClass="GridViewHeaderStyle" Width="30px" HorizontalAlign="Center" />
+                         </asp:TemplateField>
+                     
+                        
+                             <asp:TemplateField HeaderText="Name" >
+                                    <ItemStyle HorizontalAlign="Left" CssClass="GridViewItemStyle" />
+                                    <HeaderStyle CssClass="GridViewHeaderStyle" Width="50px" />
+                                    <ItemTemplate>
+                                    <asp:Label ID="lblTypeID" runat="server" Text='<%#Eval("ID") %>' Visible="false"></asp:Label>
+                                  <asp:Label ID="lblName" runat="server" Text='<%#Eval("Name") %>'></asp:Label>
+                                    </ItemTemplate>
+                          </asp:TemplateField>
+                                
+                         
+                         <asp:TemplateField HeaderText="Leave" >
+                                    <ItemStyle HorizontalAlign="Left" CssClass="GridViewItemStyle" />
+                                    <HeaderStyle CssClass="GridViewHeaderStyle" Width="50px" />
+                                    <ItemTemplate>
+                                  <asp:TextBox ID="txtLeave" AutoCompleteType="disabled" Text='<%#Eval("Amount") %>' ReadOnly="True" Width="100" runat="server"></asp:TextBox> 
+                                  <cc1:FilteredTextBoxExtender ID="fEarn3" runat="server" TargetControlID="txtAmount" ValidChars="." FilterMode="ValidChars" FilterType="Numbers, Custom"></cc1:FilteredTextBoxExtender>     
+                                  <asp:RequiredFieldValidator ID="req1" runat="server" ControlToValidate="txtAmount" Display="Dynamic" Text="*" ErrorMessage="*"></asp:RequiredFieldValidator>
+                                    </ItemTemplate>
+                          </asp:TemplateField>
+                               
+                             
+                     </Columns>
+                 </asp:GridView>
+             </td>
+             <td style="width: 20%">
+             </td>
+             <td style="width: 20%">
+             </td>
+         </tr>
+      </table>
+         </div>
+       <div class="Outer_Box_Inventory" >
+       
+     <div class="Purchaseheader">
+         Employee Leave Detail</div>
+   
+     <table border="0" style="width:100%">
+      <tr>
+      <td style="width:20%; height: 24px;" align="right">
+          Leave Type :</td>
+      <td style="width:20%; height: 24px;">
+          <asp:DropDownList ID="ddlLeaveType" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlLeaveType_SelectedIndexChanged">
+              <asp:ListItem Value="EL">Earned Leave</asp:ListItem>
+              <asp:ListItem Value="CL">Casual Leave</asp:ListItem>
+          </asp:DropDownList></td>
+      <td style="width:20%; height: 24px;" align="left">
+      <asp:Label ID="lblRemainingLeave" runat="server" Text="Leave Remain."></asp:Label>
+          </td>
+      <td style="width:20%; height: 24px;">
+          </td>
+      <td style="width:20%; height: 24px;"></td>
+      </tr> 
+         <tr>
+             <td align="right" style="width: 20%">
+                 From Date :</td>
+             <td style="width: 20%">
+             <uc1:EntryDate ID="txtfromdate" runat="server" />
+                 </td>
+             <td align="right" style="width: 20%">
+                 </td>
+             <td style="width: 20%">
+                 </td>
+             <td style="width: 20%">
+             </td>
+         </tr>
+         <tr>
+             <td align="right" style="width: 20%; height: 22px;">
+                 To Date :</td>
+             <td style="width: 20%; height: 22px;">
+             <uc1:EntryDate ID="txttodate" runat="server" />
+             </td>
+             <td align="center" style="width: 20%; height: 22px;">
+                 </td>
+             <td style="width: 20%; height: 22px;">
+             </td>
+             <td style="width: 20%; height: 22px;">
+             </td>
+         </tr>
+         <tr>
+             <td align="right" style="width: 20%">
+                 Days :</td>
+             <td style="width: 20%">
+                 <asp:TextBox ID="txtDays" runat="server" Width="63px"></asp:TextBox></td>
+             <td align="left" style="width: 20%">
+             <cc1:FilteredTextBoxExtender ID="fc1" runat="server" TargetControlID="txtDays" FilterType="Custom,Numbers" FilterMode="validChars" ValidChars="."></cc1:FilteredTextBoxExtender>
+             </td>
+             <td style="width: 20%">
+             </td>
+             <td style="width: 20%">
+             </td>
+         </tr>
+         <tr>
+             <td align="right" style="width: 20%">
+                 Forward :</td>
+             <td style="width: 20%">
+                 <asp:DropDownList ID="ddlApprove" runat="server">
+                     <asp:ListItem>CEO</asp:ListItem>
+                     <asp:ListItem>Dept. Senior</asp:ListItem>
+                     <asp:ListItem>PRO</asp:ListItem>
+                     <asp:ListItem>Other</asp:ListItem>
+                 </asp:DropDownList></td>
+             <td align="center" style="width: 20%">
+             </td>
+             <td style="width: 20%">
+             </td>
+             <td style="width: 20%">
+             </td>
+         </tr>
+         <tr>
+             <td align="right" style="width: 20%">
+                 Remarks :</td>
+             <td align="left" colspan="2">
+                 <asp:TextBox ID="txtRemarks" runat="server" Height="48px" TextMode="MultiLine" Width="374px"></asp:TextBox></td>
+             <td style="width: 20%">
+                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtRemarks"
+                     Display="None" ErrorMessage="Remarks Required" SetFocusOnError="True" ValidationGroup="save"></asp:RequiredFieldValidator></td>
+             <td style="width: 20%">
+             </td>
+         </tr>
+      </table>
+         </div>
+         <div class="Outer_Box_Inventory" >
+    
+   
+     <table border="0" style="width:100%">
+         <tr>
+             <td align="right" style="width: 20%">
+             </td>
+             <td style="width: 20%">
+             </td>
+             <td align="center" style="width: 20%">
+             <asp:Button ID="btnSubmit" runat="server" Text="Submit" Enabled="False" OnClick="btnSubmit_Click" ValidationGroup="save" />&nbsp;
+                 <asp:Button ID="btnReset" runat="server" Text="Reset" Enabled="False" OnClick="btnReset_Click" /></td>
+             <td style="width: 20%">
+                 <asp:ValidationSummary ID="ValidationSummary1" runat="server" ShowMessageBox="True"
+                     ShowSummary="False" ValidationGroup="save" />
+             </td>
+             <td style="width: 20%">
+             </td>
+         </tr>
+      </table>
+         </div>
+   </div> 
+</asp:Content>
+

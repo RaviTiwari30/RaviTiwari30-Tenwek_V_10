@@ -1,0 +1,460 @@
+﻿using System;
+using System.Data;
+using MySql.Data.MySqlClient;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Text;
+
+public partial class Design_Physiotherapy_Physio_Confirm : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            txtToDate.Text = DateTime.Now.ToString("dd-MMM-yyyy");
+            txtfromDate.Text = DateTime.Now.ToString("dd-MMM-yyyy");
+            LoadDoc();
+            ViewState["UserID"] = Session["ID"].ToString();
+            txtHash.Attributes.Add("style", "display:none");
+        }
+        txtfromDate.Attributes.Add("readOnly", "true");
+        txtToDate.Attributes.Add("readOnly", "true");
+    }
+    protected void LoadDoc()
+    {
+        DataTable dtDoc = All_LoadData.dtPhysiodoctor();
+        ddlDoctor.DataSource = dtDoc;
+        ddlDoctor.DataTextField = "Name";
+        ddlDoctor.DataValueField = "DoctorID";
+        ddlDoctor.DataBind();
+        ddlDoctor.Items.Insert(0, "All");
+    }
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+        Search();
+    }
+    protected void Search()
+    {
+
+        string DocID = "";
+        lblMsg.Text = "";
+        if (ddlDoctor.SelectedItem.Text != "All")
+        {
+            DocID = ddlDoctor.SelectedItem.Value;
+        }
+
+        DataTable dtSearch = All_LoadData.SearchPhysioAppointment(DocID, Util.GetDateTime(txtfromDate.Text), Util.GetDateTime(txtToDate.Text), "", ddlStatus.SelectedValue.ToString());
+
+        if (dtSearch != null && dtSearch.Rows.Count > 0)
+        {
+            grdAppointment.DataSource = dtSearch;
+            grdAppointment.DataBind();
+            //lblMsg.Text = "Record Found :" + dtSearch.Rows.Count;
+        }
+        else
+        {
+            grdAppointment.DataSource = "";
+            grdAppointment.DataBind();
+            lblMsg.Text = "Record Not Found";
+
+        }
+    }
+    private bool CheckAlreadyDone(string App_ID)
+    {
+        int count = Util.GetInt(StockReports.ExecuteScalar(" SELECT COUNT(*) FROM appointment WHERE App_ID=" + App_ID + " AND (IsConform=1 OR IsCancel=1) "));
+        if (count > 0)
+            return false;
+        else
+            return true;
+    }
+    protected void grdAppointment_RowCommand(object sender, GridViewCommandEventArgs e)
+    {
+        lblMsg.Text = "";
+        if (e.CommandName.ToString() == "ReSchedule")
+        {
+            //check Appointment already Confirm or Reject
+            if (!CheckAlreadyDone(e.CommandArgument.ToString()))
+            {
+
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "key", "DisplayMsg('MM010','" + lblMsg.ClientID + "');", true);
+                return;
+            }
+            string url = string.Format("../../Design/Physiotherapy/Physio_Confirm.aspx");
+            Response.Redirect("../../Design/OPD/NewAppointment.aspx?App_ID=" + e.CommandArgument.ToString() + "&RedirectUrl=" + url + "");
+        }
+        if (e.CommandName.ToString() == "reject")
+        {
+            //check Appointment already Confirm or Reject
+            if (!CheckAlreadyDone(e.CommandArgument.ToString()))
+            {
+
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "key", "DisplayMsg('MM010','" + lblMsg.ClientID + "');", true);
+                return;
+            }
+            lblAppID.Text = e.CommandArgument.ToString();
+            txtReason.Text = "";
+            mpCancel.Show();
+        }
+        if (e.CommandName.ToString() == "Print")
+        {
+            //check Appointment already Confirm or Reject
+            if (!CheckAlreadyDone(e.CommandArgument.ToString()))
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "key1", "window.open('../../Design/OPD/AppointmentSlip.aspx?item=" + Util.GetString(e.CommandArgument) + "&apptime=" + Util.GetString(e.CommandArgument) + "');", true);
+                return;
+            }
+            lblAppID.Text = e.CommandArgument.ToString();
+            txtReason.Text = "";
+            mpCancel.Show();
+        }
+        if (e.CommandName.ToString() == "Conform")
+        {
+            decimal amount = Util.GetDecimal(e.CommandArgument.ToString().Split('#')[1]);
+            //check Appointment already Confirm or Reject
+            if (!CheckAlreadyDone(e.CommandArgument.ToString().Split('#')[0]))
+            {
+
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "key", "DisplayMsg('MM010','" + lblMsg.ClientID + "');", true);
+                return;
+            }
+
+            MySqlConnection con = Util.GetMySqlCon();
+            con.Open();
+            MySqlTransaction tnx = con.BeginTransaction(IsolationLevel.Serializable);
+            try
+            {
+                string result = "", PatientID = "";
+                AllUpdate Updt = new AllUpdate();
+                result = Updt.UpdateAppointmentStatus(e.CommandArgument.ToString().Split('#')[0], "1", "", "", "", tnx);
+                if (result == "0")
+                {
+                    tnx.Rollback();
+                    tnx.Dispose();
+                    con.Close();
+                    con.Dispose();
+                }
+                PatientID = Util.GetString(MySqlHelper.ExecuteScalar(tnx, CommandType.Text, "Select PatientID from Appointment where App_ID='" + e.CommandArgument.ToString().Split('#')[0] + "'"));
+                if (PatientID != "")
+                {
+                    txtHash.Text = Util.getHash();
+
+                    DataTable dtAppDetail = All_LoadData.BindAppointmentDetail(e.CommandArgument.ToString().Split('#')[0]);
+                    Patient_Medical_History newpmh = new Patient_Medical_History(tnx);
+                    newpmh.PatientID = PatientID;
+                    newpmh.DoctorID = Util.GetString(dtAppDetail.Rows[0]["DoctorID"]);
+                    newpmh.Hospital_ID = Util.GetString(Session["HOSPID"].ToString());
+                    newpmh.Time = Util.GetDateTime(DateTime.Now.ToString("hh:mm:ss"));
+                    newpmh.DateOfVisit = Util.GetDateTime(DateTime.Now);
+                    newpmh.Type = "OPD";
+                    newpmh.Purpose = Util.GetString(dtAppDetail.Rows[0]["PurposeOfVisit"]);
+                    newpmh.PanelID = dtAppDetail.Rows[0]["PanelID"].ToString();
+                    newpmh.UserID = Util.GetString(Session["ID"].ToString());
+                    newpmh.EntryDate = DateTime.Now;
+                    newpmh.HashCode = txtHash.Text;
+                    string TID = newpmh.Insert();
+                    if (TID == "")
+                    {
+                        tnx.Rollback();
+                        tnx.Dispose();
+                        con.Close();
+                        con.Dispose();
+                    }
+                    if (amount <= 0)
+                    {
+                        string DiscountApproveBy = "";
+                        string DiscountReason = "";
+                        string Narration = "";
+                        DataTable dtPaymentDetail = ViewState["dtPaymentDetail"] as DataTable;
+                        if (dtPaymentDetail == null)
+                        {
+                            dtPaymentDetails();
+                            dtPaymentDetail = ViewState["dtPaymentDetail"] as DataTable;
+                        }
+                        DataTable dt = StockReports.GetDataTable("SELECT cnm.S_CountryID,cnm.S_Currency,cnm.S_Notation,cnm.B_Currency FROM country_master cm INNER JOIN converson_master cnm ON cm.CountryID = cnm.S_CountryID WHERE cm.IsActive=1 AND cm.IsBaseCurrency=1 ");
+                        if (dt.Rows.Count > 0)
+                        {
+                            AllSelectQuery ASQ = new AllSelectQuery();
+                            DataRow drRow = dtPaymentDetail.NewRow();
+                            drRow["PaymentMode"] = "Cash";
+                            drRow["PaymentModeID"] = "1";
+                            drRow["PaidAmount"] = "0";
+                            drRow["Currency"] = dt.Rows[0]["S_Currency"].ToString();
+                            drRow["CountryID"] = dt.Rows[0]["S_CountryID"].ToString();
+                            drRow["BankName"] = "";
+                            drRow["RefNo"] = "";
+                            drRow["BaceCurrency"] = dt.Rows[0]["B_Currency"].ToString();
+                            drRow["C_Factor"] = ASQ.GetConversionFactor(Util.GetInt(dt.Rows[0]["S_CountryID"])).ToString();
+                            drRow["BaseCurrency"] = "0";
+                            drRow["Notation"] = dt.Rows[0]["S_Notation"].ToString();
+                            drRow["PaymentRemarks"] = "";
+                            drRow["RefDate"] = Util.GetDateTime(DateTime.Now.ToString("yyyy-MM-dd"));
+                            dtPaymentDetail.Rows.Add(drRow);
+                        }
+
+                        string  docName = Util.GetString(MySqlHelper.ExecuteScalar(tnx, CommandType.Text, "Select concat(title,' ',Name)docname From doctor_master where DoctorID='" + dtAppDetail.Rows[0]["DoctorID"].ToString() + "' "));
+                        DataTable dt1 = dtPaymentDetail;
+                        OPD opd = new OPD();
+                        string LedgerTransactionNo = opd.SaveOPDAppointment(dt1, HttpContext.Current.Session["HOSPID"].ToString(), PatientID, "OPD-APPOINTMENT", Util.GetDateTime(DateTime.Now.ToString("yyyy-MM-dd")), Util.GetDateTime(DateTime.Now.ToString("HH:mm:ss")), amount, amount, amount, dtAppDetail.Rows[0]["PanelID"].ToString(), TID, ViewState["UserID"].ToString(), dtAppDetail.Rows[0]["ItemID"].ToString(), docName, dtAppDetail.Rows[0]["SubCategoryID"].ToString(), Narration, DiscountReason, DiscountApproveBy, amount, amount, dtAppDetail.Rows[0]["DoctorID"].ToString(), amount, tnx);
+                        if (LedgerTransactionNo == "")
+                        {
+                            tnx.Rollback();
+                        }
+                        else
+                        {
+                            string update = Util.GetString(MySqlHelper.ExecuteNonQuery(tnx, CommandType.Text, "UPDATE appointment SET LedgerTnxNo='" + LedgerTransactionNo + "' WHERE App_ID='" + e.CommandArgument.ToString().Split('#')[0] + "' and PatientID='" + PatientID + "'"));
+
+                        }
+                    }
+                    string AppUpdate = Util.GetString(MySqlHelper.ExecuteNonQuery(tnx, CommandType.Text, "Update Appointment Set TransactionID='" + TID.ToString() + "' where App_ID='" + e.CommandArgument.ToString().Split('#')[0] + "'"));
+                    int RefID = Util.GetInt(MySqlHelper.ExecuteScalar(tnx, CommandType.Text, "Select ID From cpoe_referpatient where AppID='" + e.CommandArgument.ToString().Split('#')[0] + "' "));
+                    string Phy = Util.GetString(MySqlHelper.ExecuteNonQuery(tnx, CommandType.Text, "Update  physio_10cm_patient  set TransactionID='" + TID.ToString() + "' where CPOERef_ID='" + RefID + "' "));
+                }
+
+            
+                tnx.Commit();
+                Search();
+                if (amount > 0)
+                {
+
+                    lblMsg.Text = "Appointment Confirm Successfully Kindly Make Payment From OPD";
+
+                }
+                else
+                {
+                    lblMsg.Text = "Record Updated Successfully";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                lblMsg.Text = "Error occurred, Please contact administrator";
+                tnx.Rollback();
+                ClassLog objClassLog = new ClassLog();
+                objClassLog.errLog(ex);
+                lblMsg.Text = ex.Message;
+            }
+            finally
+            {
+                tnx.Dispose();
+                con.Close();
+                con.Dispose();
+            }
+        }
+    }
+    private void dtPaymentDetails()
+    {
+
+        DataTable dt = new DataTable();
+
+        dt.Columns.Add(new DataColumn("PaymentMode"));
+        dt.Columns.Add(new DataColumn("PaymentModeID"));
+        dt.Columns.Add(new DataColumn("PaidAmount"));
+        dt.Columns.Add(new DataColumn("Currency"));
+        dt.Columns.Add(new DataColumn("CountryID"));
+        dt.Columns.Add(new DataColumn("BankName"));
+        dt.Columns.Add(new DataColumn("RefNo"));
+        dt.Columns.Add(new DataColumn("BaceCurrency"));
+        dt.Columns.Add(new DataColumn("C_Factor"));
+        dt.Columns.Add(new DataColumn("BaseCurrency"));
+        dt.Columns.Add(new DataColumn("Notation"));
+        dt.Columns.Add(new DataColumn("PaymentRemarks"));
+        dt.Columns.Add(new DataColumn("RefDate"));
+        ViewState["dtPaymentDetail"] = dt;
+    }
+
+    protected void grdAppointment_RowDataBound(object sender, GridViewRowEventArgs e)
+    {
+        string Appdate = "";
+        string a = "";
+        if (e.Row.RowIndex > -1)
+        {
+            if (((Label)e.Row.FindControl("lblIsReschedule")).Text == "0" && ((Label)e.Row.FindControl("lblIsConform")).Text == "0")
+            {
+                ((ImageButton)e.Row.FindControl("imbView")).Visible = false;
+            }
+            if (((Label)e.Row.FindControl("lblIsReschedule")).Text == "0" && ((Label)e.Row.FindControl("lblIsConform")).Text == "0" && ((Label)e.Row.FindControl("lblIsCancel")).Text == "0")
+            {
+                e.Row.BackColor = System.Drawing.Color.LightBlue;
+                Appdate = ((Label)e.Row.FindControl("lblAppDate")).Text + " " + ((Label)e.Row.FindControl("lblAppTime")).Text;
+                a = System.DateTime.Now.ToString("dd-MMM-yy hh: mm tt");
+                if (Util.GetDateTime(Appdate) < Util.GetDateTime(a))
+                {
+                    ((Button)e.Row.FindControl("btnConform")).Enabled = false;
+                    e.Row.BackColor = System.Drawing.Color.Olive;
+                }
+            }
+            else
+            {
+                if (((Label)e.Row.FindControl("lblIsReschedule")).Text == "1")
+                {
+                    ((ImageButton)e.Row.FindControl("imbSelect")).Enabled = false;
+                    ((ImageButton)e.Row.FindControl("imbView")).Visible = true;
+
+                    e.Row.BackColor = System.Drawing.Color.Yellow;
+                }
+                if (((Label)e.Row.FindControl("lblIsConform")).Text == "1")
+                {
+                    ((Button)e.Row.FindControl("btnConform")).Enabled = false;
+                    ((Button)e.Row.FindControl("btnReSchedule")).Enabled = false;
+                    ((ImageButton)e.Row.FindControl("imbSelect")).Enabled = false;
+                    ((ImageButton)e.Row.FindControl("imbView")).Visible = true;
+
+                    e.Row.BackColor = System.Drawing.Color.LimeGreen;
+                }
+
+                if (((Label)e.Row.FindControl("lblIsCancel")).Text == "1")
+                {
+                    ((Button)e.Row.FindControl("btnConform")).Enabled = false;
+                    ((Button)e.Row.FindControl("btnReSchedule")).Enabled = false;
+                    ((ImageButton)e.Row.FindControl("imbSelect")).Enabled = false;
+
+                    ((ImageButton)e.Row.FindControl("imbView")).Visible = false;
+                    e.Row.BackColor = System.Drawing.Color.LightPink;
+                }
+                if (((Label)e.Row.FindControl("lblIsReschedule")).Text == "1" && ((Label)e.Row.FindControl("lblIsCancel")).Text == "0")
+                {
+                    if (((Label)e.Row.FindControl("lblIsConform")).Text == "0")
+                    {
+                        Appdate = ((Label)e.Row.FindControl("lblAppDate")).Text + " " + ((Label)e.Row.FindControl("lblAppTime")).Text;
+                        a = System.DateTime.Now.ToString("dd-MMM-yy hh: mm tt");
+                        ((ImageButton)e.Row.FindControl("imbSelect")).Enabled = true;
+                        ((ImageButton)e.Row.FindControl("imbView")).Visible = false;
+                        if (Util.GetDateTime(Appdate) < Util.GetDateTime(a))
+                        {
+                            ((Button)e.Row.FindControl("btnConform")).Enabled = false;
+                            e.Row.BackColor = System.Drawing.Color.Olive;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    protected void btnCancelApp_Click(object sender, EventArgs e)
+    {
+        MySqlConnection con = Util.GetMySqlCon();
+        con.Open();
+        MySqlTransaction tnx = con.BeginTransaction(IsolationLevel.Serializable);
+        try
+        {
+            AllUpdate Updt = new AllUpdate();
+            string result = Updt.UpdateAppointmentStatus(lblAppID.Text, "", "1", "", txtReason.Text.Trim(), tnx);
+
+            if (result == "")
+            {
+                tnx.Rollback();
+                tnx.Dispose();
+                con.Close();
+                con.Dispose();
+            }
+            tnx.Commit();
+
+            Search();
+            lblMsg.Text = "Appointment Cancel Successfully";
+        }
+        catch (Exception ex)
+        {
+            tnx.Rollback();
+            ClassLog objClassLog = new ClassLog();
+            objClassLog.errLog(ex);
+            lblMsg.Text = ex.Message;
+        }
+        finally
+        {
+            tnx.Dispose();
+            con.Close();
+            con.Dispose();
+        }
+    }
+    protected void btnReport_Click(object sender, EventArgs e)
+    {
+        string DoctorID = "";
+        lblMsg.Text = "";
+        if (ddlDoctor.SelectedItem.Text != "All")
+        {
+            DoctorID = ddlDoctor.SelectedItem.Value;
+        }
+
+        DataTable dtReport = All_LoadData.SearchPhysioAppointment(DoctorID, Util.GetDateTime(txtfromDate.Text), Util.GetDateTime(txtToDate.Text), "", ddlStatus.SelectedValue.ToString());
+
+        if (dtReport != null && dtReport.Rows.Count > 0)
+        {
+
+            for (int i = 0; i < dtReport.Rows.Count; i++)
+            {
+                if (dtReport.Rows[i]["IsConform"].ToString() == "0" && dtReport.Rows[i]["IsCancel"].ToString() == "0" && Util.GetDateTime(dtReport.Rows[i]["AppDateTime"]) < Util.GetDateTime(System.DateTime.Now.ToString("dd-MMM-yy hh: mm tt")))
+                {
+                    dtReport.Rows[i]["Status"] = "App Time Expired";
+                }
+                else
+                {
+                    if (dtReport.Rows[i]["IsConform"].ToString() == "1")
+                    {
+                        dtReport.Rows[i]["Status"] = "Confirmed";
+                    }
+                    else if (dtReport.Rows[i]["IsCancel"].ToString() == "1")
+                    {
+                        dtReport.Rows[i]["Status"] = "Canceled";
+                    }
+                    else if (dtReport.Rows[i]["IsReschedule"].ToString() == "1")
+                    {
+                        dtReport.Rows[i]["Status"] = "ReScheduled";
+                    }
+                    else
+                    {
+                        dtReport.Rows[i]["Status"] = "Pending";
+                    }
+                }
+                dtReport.AcceptChanges();
+            }
+            DataColumn dc = new DataColumn();
+            dc.ColumnName = "ReportDate";
+            dc.DefaultValue = "From : " + Util.GetDateTime(txtfromDate.Text).ToString("dd-MMM-yyyy") + " To : " + Util.GetDateTime(txtToDate.Text).ToString("dd-MMM-yyyy");
+            dtReport.Columns.Add(dc);
+            dc = new DataColumn();
+            dc.ColumnName = "UserName";
+            dc.DefaultValue = StockReports.GetUserName(Convert.ToString(Session["ID"])).Rows[0][0];
+            dtReport.Columns.Add(dc);
+            if (rdoReportType.SelectedValue == "1")
+            {
+                DataSet ds = new DataSet();
+                ds.Tables.Add(dtReport.Copy());
+                //ds.WriteXmlSchema(@"D:\AppConfirmationReport.xml");
+                Session["ds"] = ds;
+                Session["ReportName"] = "AppConfirmationReport";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "key", "window.open('../../Design/common/Commonreport.aspx');", true);
+            }
+            else
+            {
+                dtReport.Columns.Remove("TransactionID");
+                dtReport.Columns.Remove("App_ID");
+                dtReport.Columns.Remove("DoctorID");
+                dtReport.Columns.Remove("IsConform");
+                dtReport.Columns.Remove("IsReschedule");
+                dtReport.Columns.Remove("IsCancel");
+                dtReport.Columns.Remove("CancelReason");
+                dtReport.Columns.Remove("ConformDate");
+                dtReport.Columns.Remove("LedgerTnxNo");
+                dtReport.Columns.Remove("AppDateTime");
+                dtReport.AcceptChanges();
+                dtReport.Columns[0].ColumnName = "MRNo";
+                dtReport.Columns[4].ColumnName = "Patient Type";
+                dtReport.Columns[2].ColumnName = "Patient Name";
+                Session["dtExport2Excel"] = dtReport;
+                Session["ReportName"] = "Appointment Status Report";
+                Session["Period"] = dtReport.Rows[0]["ReportDate"].ToString();
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Key1", "window.open('../../Design/common/ExportToExcel.aspx');", true);
+            }
+
+
+        }
+        else
+            lblMsg.Text = "No Record Found";
+    }
+}

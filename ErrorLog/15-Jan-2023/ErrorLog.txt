@@ -1,0 +1,9 @@
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/doctor/MapOPDSeenByDoctor.aspx/SaveMapOPDSeenByDoctor
+ Time Of Error            : 15-01-2023 20:22:12
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Doctor_MapOPDSeenByDoctor.SaveMapOPDSeenByDoctor(String Date, String ActualDoctorID, String SeenByDoctorID) in d:\Production Code\TenwekUAT\Tenwek_v10\Design\Doctor\MapOPDSeenByDoctor.aspx.cs:line 33
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type               : System.NullReferenceException
+ TargetSite               : System.String SaveMapOPDSeenByDoctor(System.String, System.String, System.String)

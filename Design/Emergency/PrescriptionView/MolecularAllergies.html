@@ -1,0 +1,96 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto; padding: 0px" id="divMolecularPrescribe" class="row col-md-24">
+    <div class="row">
+        <div class="col-md-24">
+            <input type="text" placeholder="Search Molecular" id="txtSearchMolecular" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-24">
+            <div id="divMolecularList" class="chosen-container-multi">
+                <ul style="border: none; background-image: none; padding: 0" class="chosen-choices">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+</div>
+
+
+<script type="text/javascript">
+
+    var _cachedMolecullar = [];
+    var getMolecullar = function (callback) {
+        if (_cachedMolecullar.length > 0) {
+            callback(_cachedMolecullar);
+            return false;
+        }
+
+        serverCall('../CPOE/services/PrescribeServices.asmx/GetMolecular', {}, function (response) {
+            _cachedMolecullar = JSON.parse(response);
+            callback(_cachedMolecullar);
+        })
+    }
+
+    var initMolecullarSearch = function (callback) {
+        var _txtSearchMolecular = $('#txtSearchMolecular');
+        _txtSearchMolecular.autocomplete({
+            source: filterMolecullars,
+            select: function (e, i) {
+                addMolecular({ value: i.item.val.split('#')[0], text: i.item.label });
+               // WriteAllergiesXDoc($.trim($('#lblTransactionId').text()), $.trim(i.item.val.split('#')[0]), $.trim(i.item.val.split('#')[1]), "Molecule");
+            },
+            close: function (el) { el.target.value = ''; },
+            open: function () { _txtSearchMolecular.autocomplete('widget').css({ 'overflow-y': 'auto', 'max-height': '250px', 'max-width': '400px', 'overflow-x': 'hidden', 'border-radius': '5px' }); },
+            minLength: 0
+        });
+        callback();
+    }
+
+    function WriteAllergiesXDoc(TID, ItemID, CIMS_GUID, CIMS_Type) {
+        serverCall('../CPOE/Services/prescribeServices.asmx/WriteXDoc', { tId: TID, itemId: ItemID, cims_guid: CIMS_GUID, cims_Type: CIMS_Type }, function (response) {
+            if (response != "0") {
+                var url = "../CPOE/CIMS/TID/xDoc_" + TID + ".html";
+                $('#pagecontent').attr('src', url);
+                $('#divshowDrugDetail').showModel();
+            }
+        });
+    }
+
+    var filterMolecullars = function (query, process) {
+        getMolecullar(function (i) {
+            var matcher = new RegExp(query.term.replace(/([.?*+^$[\]\\(){}|-])/g, '\\$1'), 'i');
+            process($.grep(i, function (obj) {
+                return matcher.test(obj.label);
+            }));
+        });
+    }
+
+    var addMolecular = function (data) {
+        var _divMolecularList = $('#divMolecularList');
+        var isAlready = _divMolecularList.find('#' + data.value).length;
+        if (isAlready > 0) {
+            modelAlert('Already Added.', function myfunction() {
+                $('#txtSearchMolecular').val('').focus();
+            });
+        }
+        else {
+            _divMolecularList.find('ul').append('<li id=' + data.value + ' class="search-choice"><span>' + data.text + '</span><a onclick="$(this).parent().remove()" style="cursor:pointer" class="search-choice-close" data-option-array-index="4">' + data.value + '</a></li>');
+        }
+    }
+
+  
+
+    var bindPatientMolecularAllergies = function (data) {
+        for (var i = 0; i < data.molecularAllergies.length; i++) {
+            addMolecular({ text: data.molecularAllergies[i].MolecularName, value: data.molecularAllergies[i].MolecularID });
+        }
+    }
+
+    $(document).ready(function () {
+        loadViewData(function (patientPrescriptionDetails) {
+            initMolecullarSearch(function () {
+                bindPatientMolecularAllergies(patientPrescriptionDetails);
+            });
+        });
+    });
+</script>

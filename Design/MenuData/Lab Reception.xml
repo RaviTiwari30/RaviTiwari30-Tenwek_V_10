@@ -1,0 +1,124 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>4</ID>
+    <MenuName>OPD</MenuName>
+    <Items>
+      <URLName>/Design/OPD/Lab_PrescriptionOPD.aspx</URLName>
+      <DispName>Diagnosis(Lab,Radio,Others)</DispName>
+      <MenuID>4</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/OPD/OpdPackage.aspx</URLName>
+      <DispName>OPD Package</DispName>
+      <MenuID>4</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/OPD/OPDFinalSettlementNew.aspx</URLName>
+      <DispName>OPD Payment</DispName>
+      <MenuID>4</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>13</ID>
+    <MenuName>Reprint</MenuName>
+    <Items>
+      <URLName>/Design/OPD/DuplicateReceipt.aspx</URLName>
+      <DispName>Receipt Reprint</DispName>
+      <MenuID>13</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>12</ID>
+    <MenuName>Password</MenuName>
+    <Items>
+      <URLName>/Design/Employee/ChangePassword.aspx</URLName>
+      <DispName>ChangePassword</DispName>
+      <MenuID>12</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <Items>
+      <URLName>/Design/OPD/InvestigationAnalysisReport.aspx</URLName>
+      <DispName>Item Analysis Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/OPD/OPDPanelGroupReport.aspx</URLName>
+      <DispName>OPD Bill Register New</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>50</ID>
+    <MenuName>Help Desk</MenuName>
+    <Items>
+      <URLName>/Design/HelpDesk/HelpDeskDoctor.aspx</URLName>
+      <DispName>DoctorDetail</DispName>
+      <MenuID>50</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/HelpDesk/DoctorHelpRateList.aspx</URLName>
+      <DispName>DoctorRateList</DispName>
+      <MenuID>50</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/HelpDesk/DoctorTiming.aspx</URLName>
+      <DispName>DoctorTiming</DispName>
+      <MenuID>50</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/HelpDesk/HelpDeskIPD.aspx</URLName>
+      <DispName>HelpDeskIPD</DispName>
+      <MenuID>50</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/HelpDesk/HelpDeskOPD.aspx</URLName>
+      <DispName>HelpDeskOPD</DispName>
+      <MenuID>50</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>16</ID>
+    <MenuName>Requisition</MenuName>
+    <Items>
+      <URLName>/Design/Store/CreateIndent.aspx</URLName>
+      <DispName>Create Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/IndentSearch.aspx</URLName>
+      <DispName>Search</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>15</ID>
+    <MenuName>Consume</MenuName>
+    <Items>
+      <URLName>/Design/Store/DamageDeptTransfer.aspx</URLName>
+      <DispName>Damage Store</DispName>
+      <MenuID>15</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>33</ID>
+    <MenuName>Circular</MenuName>
+    <Items>
+      <URLName>/design/circular/ViewCircular.aspx</URLName>
+      <DispName>View Circular</DispName>
+      <MenuID>33</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>60</ID>
+    <MenuName>Intercom</MenuName>
+    <Items>
+      <URLName>/Design/OPD/IntercomSearch.aspx</URLName>
+      <DispName>Search Intercom</DispName>
+      <MenuID>60</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

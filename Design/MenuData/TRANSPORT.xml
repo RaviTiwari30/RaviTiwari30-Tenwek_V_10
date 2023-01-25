@@ -1,0 +1,93 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>20</ID>
+    <MenuName>Master</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfiCRsJBSxdLgHvAAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAMXSURBVDhPrVRZSJRRFP5mXEbFUXOcccGxMhoZyhRaiAERK9cw0ZcopJegejAhyCJaoF7qKQh88CHaMMEtSdOSUosUtdJIrRQpy3GfGceZf5zN+ed0/Z0Mc0Gj7+Xce+75v3vud875RcSA/4h1E1ot0/jS+xJ2mxlOhxXSIDmCgiMQt/OAJ2IB6yLs6qiEbmIQCXtyIZPHwMvbF7OcAaPDvehnl2TmXYWfv3QheJ5wLbQ23aV3rWWeHRFnNpB+Skt2u0XYOx02Kn9wlubmHMJ+zQwNuh/obq9E6pEimI1jaHx+H5FKNaSBdoyOEKQBdiQdPAnr7AxaGotxOO/K2hnWV90gnueFdcmdAiJbMdHwFqKfKiK9hvp7a+l9+xPh/FX9bbJZORJ7klkRbrcLYrEYba9LcezoIWCyhHm3MuWjAQuPuNhmTE2MCLH7k06gt7sOqxI6WCVDZEphrR36jCCZg93wWx1mRX6A+QNkihiYTZOsUBJWfcvqhBJJAIz6YWGt3KIGZ4piThXjYsQQMesCpGpM67WshcLZFW54s+ov03DO7iKXY0G374MdguUdbsEy4Yi0cUzHeKJxFQ32VVLH2wrhpP3NIzJOj/6pspvnUVlaCINPJzidEfk5TxEcEoXq8nOwyb5CakpActpFDH2rwaYgYHRSCV+xGSnpp+ByOVFXcQ25x29B1PexgfS6IThn7RgXNcEt4aCwpiM1qwhVNWcgThyAv30bwnRp0KTlw2TUY9ZqQmioYrGZq0vPIzX7ApscBUQWTk8+Pv7wZZpZTSYYprTgRVb09zVDrlSif+AFIgL3ITnrNMwzEwgNixFIeNccm5RP6GwtY1kWICw8VvAvaWyn04aG6uvYkZgFuXw7q3IkyM2CvFiXcHr0dNXCMjMFB4ubn+VQ+Wbs2p3t+XoBK05KzcPL4AJ7oPDWICPnkse7Pixrm2ePb4LXtMFX6g+VijXzBrGEcF4jsYQQOKxBtCgTseq9npP1Y/HJbS332C9Jh5SMQrhdBElAgBCwUQiEk2MDmDZooY7f+BP/xopF+XcAvwBJcvN2HrwUKAAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/Design/Transport/VehicleMaster.aspx</URLName>
+      <DispName>Vehicle Master</DispName>
+      <MenuID>20</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Transport/ReadingMaster.aspx</URLName>
+      <DispName>Reading Master</DispName>
+      <MenuID>20</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Transport/Drivermaster.aspx</URLName>
+      <DispName>Driver Registration</DispName>
+      <MenuID>20</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>68</ID>
+    <MenuName>Transport</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAzNJREFUOE+dk+1TElEUxrc/sJp8q3R0mvpSMWWOqVSjodiygYjmqDOlkzmYTi+WAmmovOwiCCjIovgKqIArC2gqggsut7M1GZnTh+785sy55z7P3rt3zr2AEML+e4D5H+PkhA8xsW8HyXM12LnVbPZkK8LaXL4Jau7loK5brTk8Sv+t/MOcyWRXg2GznX7zQd/Y1m+dWwQDTJf9oTGzM5k66xfMcKqF5aDWYCe6hsZMjmh8b9zkWAmGLd71sRmvdno+/C2pHrdOL/rPbI519o8MaUwrgdAXo0NPzs64l5yelS8m58FBcmva1v5Y9rJJNdk3SGvGo1bbvst1MDd36POhXE646VqiZ8rqXt+M6KnZ3f1D9+I63jnYN2oy4C2huyK28n6g9NpGWWnk1s1odXWwonytpNh36eJ2/xvBTPR+Wtrclr8e6R4an7K6ZunVndguj1AYf5bFn63VS0i9nbS47T2DzN3b9ldvScptnnQ4VF2ZcAgbK7thEVWS9U0xfzD/l7ZksuOGelpKGI6Q6QRRFp+/pIiiFiA3c8g4vbqt0WJLVy7nVK3pJkmo5mHCaDz1h54/B7NXShjjyHyILEZP4PpVi8ENOckiI4vm3w5jdHEx197OdXSkcXy1qirhcOw5nQmn0y8Wc02NdIN0kkWwOal3BkqKzF/thqTghEhqSIwuLOQUihTso1AkxOJtkYi5d48RiSCHeqSm1vNI4mmQLteI9+rqlh+KIafrpV4J7hJVYgt37uR2dniAYVAshuJxIf4AigjY3EAbQRQJC0WIkG8CG4nhjz/MLIsEogLRKP8nsApAEZYEQQwim4vF4lotRhcVZZUtRwThbcQBSDIKeUouT+cBU04hz9fwqlamuhrzFhQct7V9aulW6yi1zgLJkVLJqVTpPGCaUio/52m49hdsXS22VlE+/0QyoLP0Dk8BAzrK87Q5R8hSst/wBE4/bYavn2rgjPGqB9ixb4GUtahHzb3v9T3v9ANaipQSDCHbIohTGAKnpIRaS/7SkKaG5l24MOiKDEKjE1b1iAkYmbBxPA9df4YMz49O2PI1Qm//bCnQr/hD8G55Hvr6/PG35jtwD4vpYeQn7wAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/Design/transport/vehiclerequest.aspx</URLName>
+      <DispName>Department Request</DispName>
+      <MenuID>68</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Transport/DeptVehicleRequestStatus.aspx</URLName>
+      <DispName>Dept Request status</DispName>
+      <MenuID>68</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/transport/TransportRequisition.aspx</URLName>
+      <DispName>Patient Request</DispName>
+      <MenuID>68</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Transport/PatientVehicleRequestStatus.aspx</URLName>
+      <DispName>Patient Request Status</DispName>
+      <MenuID>68</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/transport/TransportPayment.aspx</URLName>
+      <DispName>Transport Payment</DispName>
+      <MenuID>68</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Transport/MonthClosing.aspx</URLName>
+      <DispName>Fuel Closing</DispName>
+      <MenuID>68</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>67</ID>
+    <MenuName>Vehicle</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAIAAADQR7l6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAstJREFUOE9j/P//PwNx4NWHz0CFYgK86MqBRhAE+y/cCm2cY1/YD0ThzXMOXbqDrIWBoP59528aZ3Q0Ld529vajs7ceNSzcapLZeejibbhGFCN+//n7+NV7oLrtp64u2XNqwc4TD1++Daqf1bd6L7JNXSt3AwW//fgJEUQYcebmw+CG2dZ5vWZZXTb5fW7lk9P6lu05d8OldNKzNx+QjQBa41Q88eLdJ+hGdCzf6Vk5df/5W9cfvnj+7uPnbz+AKoDmupZNevfpK7IRrz9+di2bfPzafXQj0vuW9azagxY0z95+dCiaAAwOZPHdZ294VU4FRhDCiK8/fr5499Gnevq6w+cxQ7d75R7Hoglnbj6CSJ268cC5ZFJy9xJEcD58+c63Zrpr6SRgENx49BJrBLUs2W6d3xvZOi+ieR7QOKvcHp2k5o7lu6CuuP/8DdBVRuntQCMaFm1tWrStdOa6nMmrMiYsBwZnWt/SvCmrt564cvDS7Xk7js/fcfzgxduHL98BhoV0WFX3qt1///4FxcjdZ2+A4a8a26AYVase34iG1OIb9VPb4jsW1i/YUjZrvW/19MJpa/adv+FQ2C8RWjlzyxGQEdM3HdJPbQVGftH0tYZp7cCEhIaAbtRKbFaJrY9um9+5YjcwaXWv3H353lNgCqiZtxlkRFL34uQeUPB8+vrduXiiYVobVlPMsjqBKQ2oDJhAA+tnARkv33/6+PU7yIgJ6/YD09Kxq/cW7zllmtkJdAjQWjRkmN4ONHrqxkPnbj/yr5lRPXcTSgJ/9/lrSOMc7aRm3ZRWoI90klu0k7AgvdQ23ZQWoKxb2WRgPKLnEWBAaCc26Sa35E1edfrmwxPX7qMhoGD9gq1ABVqJTUXT1yHHPTSPNC/eDowOIGpctA1r0gAKztl2FKImvX8FFiOAeWHm5sNAdPL6A1xGXH3wDKIGWHwgqwEA/v9ARTL1dn4AAAAASUVORK5CYII=</image>
+    <Items>
+      <URLName>/Design/transport/issuevehicle.aspx</URLName>
+      <DispName>Issue Vehicle</DispName>
+      <MenuID>67</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Transport/VehicleServicing.aspx</URLName>
+      <DispName>Vehicle Servicing</DispName>
+      <MenuID>67</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAIAAABL1vtsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAv9JREFUOE+llG9Ik0EYwK8EQQOxQKoZFkEIQRkVSR8ixIl+cJSkH6S+CCopaFhiYYoTE0HHFCc40WEUsxLtD/nBLXFTnDIVdaIba6KTEB0qxt7jNt4d7/Xsn7ncROjlx3Hvce/vnnueu/cEYwz95wMKw8+dvA5jniIiue3Gyg+LTuKByYcfBEOFqll07x3K7EMZkZF8Mtp2IyqKVHMoXd0yZNVb93QrRGcL4u1jvXknVapHOf1TRyiKe+dQmnrCAotQhtcYtgdZY+5NWPmRYgo97D8qCq8ivU+zuCv0ZjoLkLMoBLY0KFHMHUORBood9r0C1yRgaWKAOhGuT2Krekn77HEUas3CVthswWBGuwk9GJpcpxHT6c+FxuSAGQJ2CNw+2wK3Jdiny2rll7Kr5kcGqUXjxW5klN/XeYvqU3g3IqhzuVLElUeFUIp+v07YkyZx9Um44SKuOQtzhA1TeAUbKOBexHBVcQFexnNlUdyreGafYhYtNWvpMoQwjavPkPZUl/qJZ37Ae7iDUQRzQSmjngACpZYR3JDEaxpw7XksvQAtr22AWIhSDK+k5Vo4hUDZPtCzjsJngnNTcG74YXgb9uL++hy8RH7joMJX1MFCrjIWIg9ymnsWjetEvE4GCxL5TWh5nRxK7lJlg4W03jqkUOdwJYgrOxkA8voU4dpz1KbnDUp+sos3dNGVcZBCFvhRGZGlhG7EX9RgwL7OpmfhM5aKqE3HG7p5Qw+0dHUCpLgp2T1QQtruhMtF6OmhKwZIHj+mgG2TtttEnsKPd0CCPeZhXt9KZNdDFBOWnTCHb31MqD7FfhnY7qrgsApbZsFu5CqiYX33l3KQBhT+y978zapbdowsHmDZMfpjZL4gdqk4zlESReD6NCXjxsu4LpGf7OG1b/5WpKjX98sR94EolD4kVqOsTiRWfMyOofUi19scl0riep/vHq7HTVdI89VAFPAjeKycye+cyYf2X2ZzlSaJ0qztbfT0ZJDuLB+ZpPM+UdyF7AYUkS7oMcf/AMkdAOj6D6DkAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Transport/ExpiryReport.aspx</URLName>
+      <DispName>Vehicle Reg/Licence Expiry</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/transport/TransportTransactionReport.aspx</URLName>
+      <DispName>Transaction Detail Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Transport/VehicleFuelEntryReport.aspx</URLName>
+      <DispName>Vehicle Fuel Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

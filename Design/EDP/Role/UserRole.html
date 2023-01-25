@@ -1,0 +1,1046 @@
+﻿<div style="margin: 0px; font-size: 13px; height: auto" class="row col-md-24">
+    <div id="divInvestigationPrescribe">
+       <div class="POuter_Box_Inventory" style="margin-left:-13px">
+             <div class="Purchaseheader">
+               New Role
+            </div>
+         <div class="row">
+            <div class="col-md-24">
+               
+                <table style="width: 100%; border-collapse: collapse" >
+
+                    <tr>
+                        <td style="width: 20%">Role :&nbsp;
+                        </td>
+                        <td style="text-align: left; width: 20%">
+                            
+                            <input type="text" id="txtRole" name="txtRole" maxlength="50" style="width:200px;margin-left:-100px" />
+                            <span style="color: red; font-size: 10px;" class="shat">*</span>
+
+                        </td>
+                    
+                        <td style="width: 20%"> <div style="margin-left:0px">Is Department :&nbsp;</div> 
+                        </td>
+                        <td style="width: 20%; text-align: left">
+                            <div style="margin-left:0px"> 
+                                   <input type="hidden" id="DepartmentLedger"  />
+                            <input type="radio" name="RbtnIsDepartment" id="rbtdeptyes" class="RbtnIsDepartment" value="1" />
+                            <label for="rbtdeptyes">Yes</label>
+                            <input type="radio" name="RbtnIsDepartment" id="rbtdeptno" class="RbtnIsDepartment" value="0"  />
+                            <label for="rbtdeptno">No</label>
+</div>
+                        </td>
+                        <td style="width:20%">
+                       
+                    <table style="width:100%">
+                    <tr id="trIsUniversal" style="display: none;width:100%;margin-left: -267px;">
+                        <td style="width:50%; text-align: left">
+                            <div style="width:150px">
+                       Is Universal Format :&nbsp; </div>
+                        </td>
+                        <td style="width: 50%; text-align: left">
+                            <table style="width: 100%">
+                                <tr>
+                                  
+                                   
+                                    <td style="text-align: left">
+                                        <div style="margin-left:100px; width:110px">
+                                        <input type="radio" name="rblIsUniversal" class="rblIsUniversal" id="rblIsUniversalYes" value="1" />
+                                        <label for="rblIsUniversalYes">Yes</label>
+                                        <input type="radio" name="rblIsUniversal" class="rblIsUniversal" id="rblIsUniversalNo" value="0"  />
+                                        <label for="rblIsUniversalNo">No</label>
+                                        </div>
+                                    </td>
+
+                                    <td style="text-align: left">
+                                        <input type="button" class="ItDoseButton" id="btnUniversalFormat" value="Universal Format" onclick="showUniversalFormatModel()" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                     
+                    </tr>
+                 </table>
+                       
+                        </td>
+
+                    </tr>
+
+
+                       <tr id="trFormat" style="text-align: center; width: 100%; display: none">
+                        <td style="text-align: center; width: 100%" colspan="5">
+                            <table style="border: 0; border-collapse: collapse; text-align: center; width: 100%">
+                                <tr>
+                                    <td class="GridViewHeaderStyle" style="width: 140px">Type</td>
+                                    <td class="GridViewHeaderStyle" style="width: 40px">Is&nbsp;Universal</td>
+                                    <td class="GridViewHeaderStyle" style="width: 40px">Initial&nbsp;Character</td>
+                                    <td class="GridViewHeaderStyle" style="width: 40px">Separator</td>
+                                    <td class="GridViewHeaderStyle" style="width: 120px">Financial&nbsp;Year</td>
+                                    <td class="GridViewHeaderStyle" style="width: 40px">Separator</td>
+                                    <td class="GridViewHeaderStyle" style="width: 40px">Length</td>
+                                    <td class="GridViewHeaderStyle" style="width: 120px">Preview</td>
+                                    <td class="GridViewHeaderStyle" style="width: 60px">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="GridViewItemStyle">
+                                        <Select id="ddlType" runat="server" clientidmode="Static" width="140px">
+                                    </Select>
+                                    </td>
+                                    <td class="GridViewItemStyle">
+
+                                        <input type="checkbox" id="chkIsUniversal" clientidmode="Static" runat="server" onclick="universalCheck()" />
+                                      
+                                    </td>
+                                    <td class="GridViewItemStyle">
+                                        <input type="text" id="txtInitial" autocompletetype="Disabled" runat="server" maxlength="6" onkeyup="GeneratePreview()" clientidmode="Static" width="40px" />
+                                     
+                                        <span style="color: red; font-size: 10px;" class="shat">*</span>
+                                    </td>
+
+                                    <td class="GridViewItemStyle">
+                                        <select id="ddlSeparator1" runat="server" width="40px" clientidmode="Static" onchange="GeneratePreview()">
+                                    <Option Value=""></Option>
+                                     <Option Value="/">/</Option>
+                                    <Option Value="-">-</Option>
+                                </select>
+                                    </td>
+                                    <td class="GridViewItemStyle" style="width: 140px">
+                                        <input type="checkbox" id="chkFinYear" clientidmode="Static" runat="server" onclick="checkFinYear()"  onChange="GeneratePreview()"   />
+                                       
+
+                                        <input type="date" id="txtFinYear" autocompletetype="Disabled" clientidmode="Static" runat="server" width="40px"  onChange="GeneratePreview()" />
+
+                                    
+                                    </td>
+                                    <td class="GridViewItemStyle">
+                                        <Select id="ddlSeparator2" width="40px" runat="server" clientidmode="Static" onchange="GeneratePreview()">
+                                    <Option Value=""></Option>
+                                     <Option Value="/">/</Option>
+                                    <Option Value="-">-</Option>
+                                </Select>
+                                    </td>
+                                    <td class="GridViewItemStyle">
+                                        <Select id="ddlLength" runat="server" clientidmode="Static" onchange="GeneratePreview()">
+                                    <Option selected="selected" Value="6" >000001</Option>
+                                    <Option Value="7">0000001</Option>
+                                    <Option Value="8">00000001</Option>
+                                    <Option Value="9">000000001</Option>
+                                    <Option Value="10">0000000001</Option>
+                                    <Option Value="11">00000000001</Option>
+                                    <Option Value="12">000000000001</Option>
+                                </Select>
+                                    </td>
+                                    <td class="GridViewItemStyle" style="width: 120px">
+                                        <label id="lblPreview" runat="server" clientidmode="Static"></label>
+                                    </td>
+                                    <td class="GridViewItemStyle" style="width: 60px">
+                                        <input type="button" class="ItDoseButton" value="Add" onclick="addFormat()" />
+                                    </td>
+
+
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="tbSelected" rules="all" border="1" style="border-collapse: collapse; width: 100%; display: none" class="GridViewStyle">
+                                
+                                <tr id="formatHeader">
+                                    <th class="GridViewHeaderStyle" scope="col" style="width: 140px; text-align: left">Type</th>
+                                    <th class="GridViewHeaderStyle" scope="col" style="width: 40px; text-align: left">Is&nbsp;Universal</th>
+                                    <th class="GridViewHeaderStyle" scope="col" style="width: 120px; text-align: left">Initial&nbsp;Character</th>
+                                    <th class="GridViewHeaderStyle" scope="col" style="width: 80px; text-align: left">Separator1</th>
+                                    <th class="GridViewHeaderStyle" scope="col" style="width: 80px; text-align: left">Financial&nbsp;Year</th>
+                                    <th class="GridViewHeaderStyle" scope="col" style="width: 80px; text-align: left">Separator2</th>
+                                    <th class="GridViewHeaderStyle" scope="col" style="width: 40px; text-align: left">Length</th>
+                                    <th class="GridViewHeaderStyle" scope="col" style="width: 100px; text-align: left">Preview</th>
+                                    <th class="GridViewHeaderStyle" scope="col" style="width: 30px; text-align: left">&nbsp;</th>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr style="text-align: right">
+                        <td style="width:20%;text-align: left;"> Can Generate PR And PO or GRN :&nbsp;
+                        </td>
+                        <td style="width: 20%; text-align: left">
+
+
+
+                            <input type="radio" name="rbtnStore" id="rbtnStoreYes" class="rbtnStore" value="1"  />
+                            <label for="rbtnStoreYes">Yes</label>
+                            <input type="radio" name="rbtnStore" id="rbtnStoreNo" class="rbtnStore" value="0" />
+                            <label for="rbtnStoreNo">No</label>
+
+
+                        </td>
+                        
+                   
+                        <td style="text-align: left;width:20%">Generate Menu :&nbsp;
+                        </td>
+                        <td style="text-align: left;width:20%">
+                            <div  style="width:100%">
+                                 <Select id="ddlDeptMenu" style="width:100%" > 
+
+
+                            </Select>
+                            </div>
+                           
+                        </td>
+                       
+                        <td style="width:20%">
+                            <table>
+                                    <tr id="trcheckRight" style="display: none">
+                        <td style="text-align: right">
+                            <label id="lblRightsFor" clientidmode="Static" runat="server" text="Rights For :&nbsp;" style="display: none"></label>
+                        </td>
+                        <td style="text-align: left">
+                            <input type="checkbox" id="chkMed" clientidmode="Static" text="Medical" runat="server" /> <label for="chkMed">Medical</label>
+
+                            <input type="checkbox" id="chkGen" clientidmode="Static" text="General" runat="server" /><label for="chkGen">General</label>
+                       
+                        </td>
+                        <td colspan="3"></td>
+                    </tr>
+                
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: center">
+                            <br />
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+
+
+
+            </div>
+        </div>
+           </div>
+        <div class="POuter_Box_Inventory" style="margin-left:-13px">
+
+        
+                <div class="row">
+
+
+                    <div style="text-align: center">
+                        <input type="button" class="ItDoseButton" value="Save" id="btnSaveRole" onclick="saveRole()" />
+
+                              <input type="button" class="ItDoseButton" value="Update" id="btnUpdateRole" onclick="EditRole()" style="display:none" />
+                            </div>
+
+
+                </div>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <!--/Model Popup for Copy Role And Rights/-->
+<div id="ModelUniversalFormate" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content " style="width: 80%">
+            <div class="modal-header">
+                <button type="button" class="close" onclick="CloseUniversalFormateModel()" aria-hidden="true">&times;</button>
+                <b class="modal-title">Copy Role & Rights</b>
+            </div>
+            <div class="modal-body">
+                
+                  <div id="id_master"></div>
+
+            </div>
+            <div class="modal-footer">
+                
+               
+                <button type="button" onclick="CloseUniversalFormateModel()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--\End Of Model PopUp\-->
+
+
+<!--Script For Showing Model-->
+<script>
+
+    function showUniversalFormatModel() {
+
+        bindUniversalFormat();
+        OpenUniversalFormateModel();
+
+    }
+    function CloseUniversalFormateModel() {
+        $('#ModelUniversalFormate').closeModel();
+    }
+    function OpenUniversalFormateModel() {
+        $('#ModelUniversalFormate').showModel();
+    }
+
+
+</script>
+
+<!--End For Showing Model Script-->
+
+
+    <script type="text/javascript">
+        debugger;
+        function format() {
+            var dataFormat = new Array();
+            var Obj = new Object();
+            $("#tbSelected tr").each(function () {
+                debugger;
+
+                var id = $(this).attr("id");
+
+                var $rowid = $(this).closest("tr");
+                if (id != "formatHeader") {
+
+                    Obj.TypeName = $.trim($rowid.find("#spnTypeName").text());
+                     Obj.formatID = $.trim($rowid.find("#spnTypeID").text());
+                    Obj.InitialCharacter = $.trim($rowid.find("#spnInitialCharacter").text());
+                    if ($.trim($rowid.find("#spnFinYear").text()) != "") {
+                        Obj.FinYear = $.trim($rowid.find("#spnFinYear").text());
+                        Obj.chkFinancialYear = "1";
+                    }
+                    else {
+                        Obj.FinYear = "0001-01-01";
+                        Obj.chkFinancialYear = "0";
+                    }
+                    Obj.Separator1 = $.trim($rowid.find("#spnSeparator1").text());
+                    Obj.Separator2 = $.trim($rowid.find("#spnSeparator2").text());
+                    Obj.Length = $.trim($rowid.find("#spnLength").text());
+                    Obj.TextLength = $.trim($rowid.find("#spnTextLength").text());
+                    Obj.FormatPreview = $.trim($rowid.find("#spnlPreview").text());
+                    Obj.IsUniversalType = $.trim($rowid.find("#spnIsUniversalType").text());
+
+                    dataFormat.push(Obj);
+                    Obj = new Object();
+                }
+
+            });
+
+            return dataFormat;
+        }
+        function saveRole() {
+            $("#btnSaveRole").attr('disabled', 'disabled');
+            if ($.trim($("#txtRole").val()) == "") {
+                $("#lblMsg").text('Please Enter Role Name');
+                $("#txtRole").focus();
+                $("#btnSaveRole").removeAttr('disabled');
+                return false;
+            }
+            //$("#ddlType  option").each(function () {
+            //    $('#tbSelected tr:not(#formatHeader)').each(function () {
+            //        if ($(this).val() == $.trim($(this).closest("tr").find("#spnTypeID").text())) {
+
+            //        }
+            //    });
+
+            //});
+            $('#txtRoleName').val($("#txtRole").val());
+
+            if ((parseFloat($("#ddlType  option").length - 1) != parseFloat($('#tbSelected tr:not(#formatHeader)').length)) && (($("input[name='rblIsUniversal']:checked").val()) == "0")) {
+                $("#lblMsg").text('Please Add All Type');
+                $("#ddlType").focus();
+                $("#btnSaveRole").removeAttr('disabled');
+                return false;
+            }
+
+            var data = new Array();
+            var Obj = new Object();
+
+            Obj.RoleName = $('#txtRole').val();
+            Obj.IsDepartment = $("input[name='RbtnIsDepartment']:checked").val();
+            Obj.IsUniversal = $("input[name='rblIsUniversal']:checked").val();
+
+            Obj.menuFor = $('#ddlDeptMenu').val();
+            Obj.menuForText = $('#ddlDeptMenu option:selected').text();
+            Obj.IsStore = $("input[name='rbtnStore']:checked").val();
+            Obj.IsGeneral = $('#chkGen').is(':checked') ? 1 : 0;
+            Obj.IsMedical = $('#chkMed').is(':checked') ? 1 : 0;
+            data.push(Obj);
+
+            var formatData = format();
+            $.ajax({
+                url: "RoleManager.aspx/saveRoles",
+                data: JSON.stringify({ roleDetail: data, FormatDetail: formatData }),
+                type: "POST",
+                async: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (mydata) {
+                    if (mydata.d.length == "1") {
+                        data = mydata.d;
+                        if (data == "1") {
+                            modelAlert("Record Save Successfully");
+                            GetCurrentRoleID();
+                            clearAllData();
+                            var TabPosition = 2;
+
+                            $("#tabs").tabs({
+                                cache: true, //make click only load page once
+                                ajaxOptions: { cache: false }, //but don't cache the ajax request!
+                                active: 0, //first tab is active
+                                disabled: false
+                            });
+
+                            if (TabPosition >= 5) {
+                                $("#tabs").tabs("enable", TabPosition);
+                                $("#tabs").tabs({ active: TabPosition - 1 });
+                                $('#tabs').tabs('option', 'disabled', [])
+                            }
+                            else {
+                                $("#tabs").tabs("enable", TabPosition);
+                                $("#tabs").tabs({ active: TabPosition - 1 });
+                            }
+
+                        }
+                        else if (data == "2") {
+                            modelAlert("Role Name Already Added");
+
+                        }
+                        else if (data == "3") {
+                            modelAlert("Universal Format Not Found");
+
+                        }
+                        else {
+                            modelAlert("Error");
+
+                        }
+                    }
+                    else {
+                        data = jQuery.parseJSON(mydata.d);
+                        for (i = 0; i < data.length; i++) {
+                            var titleText = data[i].InitialCharacter + ' Initial Character Already Added ';
+                            $('#tbSelected tbody tr:eq(' + data[i].Id + ') td').css("background-color", "#FF0000");
+                            $('#tbSelected tbody tr:eq(' + data[i].Id + ') td').attr('title', titleText);
+                        }
+                        jQuery("#lblMsg").text('');
+                    }
+
+                    $("#btnSaveRole").removeAttr('disabled');
+                }
+            });
+            $('#btnSaveFromat').removeAttr('disabled');
+        }
+        function clearAllData() {
+            $("#ddlType,#ddlSeparator1,#ddlSeparator2,#ddlLength,#ddlDeptMenu,#ddlRole1").prop('selectedIndex', '0');
+            $("#txtInitial,#txtFinYear,#txtRole").val('').removeAttr('disabled');
+            $("#lblPreview #").text('');
+            $("#txtFinYear").attr('disabled', 'disabled');
+            $("#tbSelected tr:not(#formatHeader)").remove();
+            $('#tbSelected').removeAttr('disabled').hide();
+            $('#chkGen,#chkMed,#chkFinYear,#chkIsUniversal').attr('checked', false).removeAttr('disabled');
+            $('#lblRightsFor,#trIsUniversal,#ddlRole1,#trcheckRight,#trFormat').hide();
+
+            $('#rbtdeptno').attr("checked", "checked");
+            $('#rblIsUniversalYes').attr("checked", "checked");
+            $('#rbtnStoreNo').attr("checked", "checked");
+            $("#btnSaveRole,#ddlSeparator1,#ddlSeparator2,#ddlLength").removeAttr('disabled');
+
+        }
+
+
+
+        function updateRole() {
+            if ($("#ddlRole1 option:selected").text() == "Select") {
+                $("#lblMsg").text('Please Select Role');
+                $("#ddlRole1").focus();
+                return false;
+            }
+            $.ajax({
+                url: "UserManager_New.aspx/saveRole",
+                data: JSON.stringify({ roleDetail: data, FormatDetail: formatData }),
+                type: "POST",
+                async: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (mydata) {
+
+                }
+
+            });
+        }
+    </script>
+ 
+    
+
+    <script type="text/javascript">
+
+
+        $('.RbtnIsDepartment').on('click', function () {
+
+
+            var value = $("input[name='RbtnIsDepartment']:checked").val();
+
+            ShowhidtrIsUniversal(value);
+
+        });
+
+        function ShowhidtrIsUniversal(value) {
+
+            if (value == 1) {
+                $("#trIsUniversal").show();
+            } else {
+                $("#trIsUniversal").hide();
+
+                ShowhidetrFormat(1);
+            }
+
+            $("#rblIsUniversalYes").attr("checked", "checked");
+
+        }
+
+
+        $('.rblIsUniversal').on('click', function () {
+            var value = $("input[name='rblIsUniversal']:checked").val();
+
+
+
+            ShowhidetrFormat(value);
+        });
+
+        $('.rbtnStore').on('click', function () {
+
+
+            var value = $("input[name='rbtnStore']:checked").val();
+
+            ShowhidStore(value);
+
+        });
+
+
+        function ShowhidetrFormat(value) {
+
+            if (value == 0) {
+                $("#trFormat").show();
+                $ddlTypes();
+
+
+            } else {
+                $("#trFormat").hide();
+            }
+            clearAllFormat();
+        }
+
+
+        function ShowhidStore(value) {
+
+            if (value == 1) {
+                $("#trcheckRight,#lblRightsFor,#chkMed,#chkGen").show();
+            } else {
+                $("#trcheckRight,#lblRightsFor,#chkMed,#chkGen").hide();
+            }
+            $("#chkMed,#chkGen").attr('checked', false);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function universalCheck() {
+            if ($("#chkIsUniversal").is(':checked')) {
+                $('#txtInitial,#txtFinYear').val('').attr('disabled', 'disabled');
+                $("#ddlSeparator1,#ddlSeparator2,#ddlLength").prop('selectedIndex', '0').attr('disabled', 'disabled');
+                $("#chkFinYear").attr('disabled', 'disabled');
+                $("#lblPreview").text('');
+            }
+
+            else {
+                $('#txtInitial,#txtFinYear').val('').removeAttr('disabled');
+                $("#ddlSeparator1,#ddlSeparator2,#ddlLength").prop('selectedIndex', '0').removeAttr('disabled');
+                $("#chkFinYear").removeAttr('disabled');
+            }
+        }
+
+        function clearAllFormat() {
+            $("#ddlType,#ddlSeparator1,#ddlSeparator2,#ddlLength").prop('selectedIndex', '0').removeAttr('disabled');
+            $("#txtInitial,#txtFinYear").val('').removeAttr('disabled');
+            $("#lblPreview").text('');
+            $("#txtFinYear").attr('disabled', 'disabled');
+            $("#chkFinYear,#chkIsUniversal").attr('checked', false).removeAttr('disabled');
+            $("#tbSelected tr:not(#formatHeader)").remove();
+            $('#tbSelected').removeAttr('disabled').hide();
+
+        }
+        function clearFormat() {
+            $("#ddlType,#ddlSeparator1,#ddlSeparator2,#ddlLength").prop('selectedIndex', '0').removeAttr('disabled');
+            $("#txtInitial,#txtFinYear").val('').removeAttr('disabled');
+            $("#lblPreview").text('');
+            $("#txtFinYear").attr('disabled', 'disabled');
+            $("#chkFinYear,#chkIsUniversal").attr('checked', false).removeAttr('disabled');
+        }
+        function checkFinYear() {
+            if ($("#chkFinYear").is(':checked'))
+                $("#txtFinYear").removeAttr('disabled');
+            else
+                $("#txtFinYear").val('').attr('disabled', 'disabled');
+            GeneratePreview();
+        }
+
+        var $ddlTypes = function (callback) {
+            var ddlType = $('#ddlType');
+            serverCall('RoleManager.aspx/BindDdlType', {}, function (response) {
+                ($(ddlType).bindDropDown({ data: JSON.parse(response), defaultValue: 'Select', valueField: 'ID', textField: 'TypeName', isSearchable: true }));
+            });
+        }
+
+
+        var $ddlDeptMenus = function (callback) {
+
+            var ddlDeptMenu = $('#ddlDeptMenu');
+            serverCall('RoleManager.aspx/GetRole', {}, function (response) {
+                ($(ddlDeptMenu).bindDropDown({ data: JSON.parse(response), defaultValue: 'Select', valueField: 'ID', textField: 'RoleName', isSearchable: true }));
+            });
+        }
+
+
+        function GeneratePreview() {
+            $('#lblPreview').text('');
+            if (($.trim($("#txtInitial").val()) != "")) {
+                $('#ddlSeparator2 option[value="' + $('#ddlSeparator1').val() + '"]').attr('selected', true);
+                var initial = $('#txtInitial').val().toUpperCase();
+                var Separator1 = $('#ddlSeparator1').val();
+                var FinYear = "";
+                if ($.trim($('#txtFinYear').val()) != "")
+                    FinYear = GetFinancialYear();
+                var Separator2 = $('#ddlSeparator2').val();
+                var Length = $('#ddlLength option:selected').text();
+                $('#lblPreview').text(initial + Separator1 + FinYear + Separator2 + Length);
+            }
+            else {
+                $('#lblPreview').text('');
+            }
+
+        }
+
+        function GetFinancialYear() {
+            var data;
+            $.ajax({
+                url: "Services/EDP.asmx/GetFinYear",
+                data: '{date:"' + $('#txtFinYear').val() + '"}',
+                type: "POST",
+                async: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (mydata) {
+                    data = mydata.d;
+
+                }
+            });
+            return data;
+        }
+
+        function FindFinancialYear(date) {
+            var data;
+            $.ajax({
+                url: "Services/EDP.asmx/GetFinYear",
+                data: '{date:"' + date + '"}',
+                type: "POST",
+                async: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (mydata) {
+                    data = mydata.d;
+
+                }
+            });
+            return data;
+        }
+        function GetCurrentRoleID() {
+
+            $.ajax({
+                url: "RoleManager.aspx/GetLatestRoleID",
+                data: {},
+                type: "POST",
+                async: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (mydata) {
+                    data = mydata.d;
+
+                    $('#txtRoleID').val(data);
+
+
+                }
+            });
+
+        }
+
+
+    </script>
+<script>
+    function createRole() {
+        clearAllData();
+        $("#pnlRole,#txtRole,#btnSaveRole").show();
+        $("#btnUpdateRole,#btnCancelRole").hide();
+    }
+    function removeRows(rowid) {
+        $(rowid).closest('tr').remove();
+        if ($('#tbSelected tr:not(#formatHeader)').length == 0) {
+            $('#tbSelected').hide();
+        }
+
+    }
+    function checkDuplicateType(typeID) {
+        var count = 0;
+        $('#tbSelected tr:not(#formatHeader)').each(function () {
+            if ($(this).find('#spnTypeID').text().trim() == typeID) {
+                count = count + 1;
+            }
+        });
+        if (count == 0)
+            return true;
+        else
+            return false;
+    }
+    function checkDupInitial(InitialCharacter) {
+        var count = 0;
+        $('#tbSelected tr:not(#formatHeader)').each(function () {
+            if ($(this).find('#spnInitialCharacter').text().trim() == InitialCharacter) {
+                count = count + 1;
+            }
+        });
+        if (count == 0)
+            return true;
+        else
+            return false;
+    }
+
+
+    function addFormat() {
+        $("#lblMsg").text('');
+        if ($("#ddlType").val() != "0") {
+            if (checkDuplicateType($("#ddlType").val())) {
+                $('#tbSelected').css('display', 'block');
+                var FinYear = "";
+                if ($.trim($('#txtFinYear').val()) != "")
+                    FinYear = GetFinancialYear();
+                var isUniversalType = "No"; var isUniversalCheck = 0;
+                if ($('#chkIsUniversal').is(':checked')) {
+                    isUniversalType = "YES";
+                    isUniversalCheck = 1;
+                }
+                if (!($("#chkIsUniversal").is(':checked'))) {
+                    if (($.trim($("#txtInitial").val()) != "")) {
+                        if (checkDupInitial($("#txtInitial").val())) {
+
+                            $('#tbSelected').append('<tr><td class="GridViewLabItemStyle"><span id="spnTypeName">' + $("#ddlType option:selected").text() + '</span><span id="spnTypeID" style="display:none">' + $("#ddlType").val() + '</span></td><td class="GridViewLabItemStyle"><span id="spnIsUniversal">' + isUniversalType + '</span><span id="spnIsUniversalType" style="display:none">' + isUniversalCheck + '</span></td><td class="GridViewLabItemStyle"><span id="spnInitialCharacter">' + $("#txtInitial").val() + '</span></td><td class="GridViewLabItemStyle"><span id="spnSeparator1">' + $("#ddlSeparator1").val() + '</span></td><td class="GridViewLabItemStyle"><span id="spnFinYearFormat">' + FinYear + '</span><span id="spnFinYear" style="display:none">' + $("#txtFinYear").val() + '</span></td><td class="GridViewLabItemStyle"><span id="spnSeparator2">' + $("#ddlSeparator2").val() + '</span><td class="GridViewLabItemStyle"><span id="spnLength">' + $("#ddlLength").val() + '</span><span id="spnTextLength" style="display:none">' + $("#ddlLength option:selected").text() + '</span> </td><td class="GridViewLabItemStyle"><span id="spnlPreview">' + $("#lblPreview").text() + '</span></td><td class="GridViewLabItemStyle"><img id="imgRemove" onclick="removeRows(this)"  src="../../Images/Delete.gif" style="cursor:pointer"/></td></tr>');
+                            clearFormat();
+                        }
+                        else {
+                            $("#lblMsg").text('Initial Character Already Added');
+                            $("#txtInitial").focus();
+                            return;
+                        }
+                    }
+                    else {
+                        $("#lblMsg").text('Please Enter Initial Character');
+                        $("#txtInitial").focus();
+                        return;
+                    }
+                }
+                else {
+                    $('#tbSelected').append('<tr><td class="GridViewLabItemStyle"><span id="spnTypeName">' + $("#ddlType option:selected").text() + '</span><span id="spnTypeID" style="display:none">' + $("#ddlType").val() + '</span></td><td class="GridViewLabItemStyle" style="text-align:center"><span id="spnIsUniversal">' + isUniversalType + '</span><span id="spnIsUniversalType" style="display:none">' + isUniversalCheck + '</span></td><td class="GridViewLabItemStyle"><span id="spnInitialCharacter">' + $("#txtInitial").val() + '</span></td><td class="GridViewLabItemStyle" style="text-align:center"><span id="spnSeparator1">' + $("#ddlSeparator1").val() + '</span></td><td class="GridViewLabItemStyle"><span id="spnFinYearFormat">' + FinYear + '</span><span id="spnFinYear" style="display:none">' + $("#txtFinYear").val() + '</span></td><td class="GridViewLabItemStyle" style="text-align:center"><span id="spnSeparator2">' + $("#ddlSeparator2").val() + '</span><td class="GridViewLabItemStyle" style="text-align:center"><span id="spnLength">' + $("#ddlLength").val() + '</span><span id="spnTextLength" style="display:none">' + $("#ddlLength option:selected").text() + '</span> </td><td class="GridViewLabItemStyle"><span id="spnlPreview">' + $("#lblPreview").text() + '</span></td><td class="GridViewLabItemStyle"><img id="imgRemove" onclick="removeRows(this)"  src="../../Images/Delete.gif" style="cursor:pointer"/></td></tr>');
+                    clearFormat();
+                }
+            }
+            else {
+                $("#lblMsg").text('Type Already Added');
+                $("#ddlType").focus();
+                return;
+            }
+        }
+        else {
+            $("#lblMsg").text('Please Select Type');
+            $("#ddlType").focus();
+            return;
+        }
+    }
+    function bindUniversalFormat() {
+        $.ajax({
+            url: "RoleManager.aspx/bindUniversalFormats",
+            data: '',
+            type: "POST",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (mydata) {
+                data = jQuery.parseJSON(mydata.d);
+                if (data != null) {
+                    var output = $('#tb_id_master_format').parseTemplate(data);
+                    $('#id_master').html(output);
+                }
+                else {
+
+                }
+            }
+        });
+    }
+
+
+
+
+    $(document).ready(function () {
+
+        $ddlDeptMenus();
+    });
+
+
+
+
+    function GetRoleToEdit(RoleID) {
+
+        serverCall('RoleManager.aspx/GetRoleToEdit', { RoleID: RoleID }, function (response) {
+            console.log(response)
+
+            var RoleData = JSON.parse(response);
+
+            if (RoleData.status) {
+                data = RoleData.response;
+                var RoleId = data[0].RoleId;
+                var RoleName = data[0].RoleName;
+                var IsGenral = data[0].IsGeneral;
+                var isMedical = data[0].IsMedical;
+                $('#txtRoleName').val(RoleName);
+
+                var isUniversal = data[0].IsUniversal;
+
+                var IsDepartment = data[0].IsDepartment;
+
+                var CanGenrateProandGrn = data[0].cangenrateprandgrn;
+
+                $('#DepartmentLedger').val(data[0].DeptLedgerNo);
+                ShowhidtrIsUniversal(IsDepartment);
+                ShowhidetrFormat(isUniversal);
+                ShowhidStore(CanGenrateProandGrn);
+                $('#txtRoleID').val(RoleId);
+                $('#txtRole').val(RoleName);
+                if (IsDepartment == 1) {
+                    $('#rbtdeptyes').attr("checked", "checked");
+
+
+
+                } else {
+                    $('#rbtdeptno').attr("checked", "checked");
+                }
+
+                if (isUniversal == 1) {
+                    $('#rblIsUniversalYes').attr("checked", "checked");
+
+                }
+                else {
+                    $('#rblIsUniversalNo').attr("checked", "checked");
+                      GetNonUniversalFormate(data[0].DeptLedgerNo);
+                }
+
+                if (CanGenrateProandGrn == 1) {
+                    $('#rbtnStoreYes').attr("checked", "checked");
+
+                }
+                else {
+                    $('#rbtnStoreNo').attr("checked", "checked");
+
+                }
+                if (isMedical == 1) {
+                    $('#chkMed').attr("checked", "checked");
+                }
+
+                if (IsGenral == 1) {
+                    $('#chkGen').attr("checked", "checked");
+                }
+
+            }
+
+
+
+
+        });
+    }
+    function GetNonUniversalFormate(DeptLedgerNo) {
+
+        serverCall('RoleManager.aspx/GetNotUniversalFormate', { DeptLedgerNo: DeptLedgerNo }, function (response) {
+            console.log(response)
+            debugger;
+
+            var RoleData = JSON.parse(response);
+
+            if (RoleData.status) {
+                data = RoleData.response;
+                $.each(data, function (i, item) {
+                    var isuniversaltype = "Yes";
+                    var isuniversal = 1;
+                    if (item.isUniversal == 0) {
+                        isuniversaltype = 'No';
+                        isuniversal = 0;
+                    }
+                    var textlength = item.FormatPreview;
+                    var arr = textlength.split(item.Separator1)
+                    
+                    var value = arr[arr.length - 1];
+                  
+                    var rows = ('<tr><td class="GridViewLabItemStyle"><span id="spnTypeName">' + item.TypeName + '</span><span id="spnTypeID" style="display:none">' + item.TypeID + '</span></td><td class="GridViewLabItemStyle"><span id="spnIsUniversal">' + isuniversaltype + '</span><span id="spnIsUniversalType" style="display:none">' + isuniversal + '</span></td><td class="GridViewLabItemStyle"><span id="spnInitialCharacter">' + item.InitialChar + '</span></td><td class="GridViewLabItemStyle"><span id="spnSeparator1">' + item.Separator1 + '</span></td><td class="GridViewLabItemStyle"><span id="spnFinYearFormat">' + FindFinancialYear(item.FinancialYearStart) + '</span><span id="spnFinYear" style="display:none">' + item.FinancialYearStart + '</span></td><td class="GridViewLabItemStyle"><span id="spnSeparator2">' + item.Separator2 + '</span><td class="GridViewLabItemStyle"><span id="spnLength">' + item.TypeLength + '</span><span id="spnTextLength" style="display:none">' + value + '</span> </td><td class="GridViewLabItemStyle"><span id="spnlPreview">' + item.FormatPreview + '</span></td><td class="GridViewLabItemStyle"><img id="imgRemove" onclick="removeRows(this)"  src="../../Images/Delete.gif" style="cursor:pointer"/></td></tr>');
+
+
+
+                    $('#tbSelected').append(rows);
+                });
+
+            }
+
+            $('#tbSelected').show();
+
+        });
+    }
+
+
+    function EditRole() {
+        $("#btnUpdateRole").attr('disabled', 'disabled');
+        if ($.trim($("#txtRole").val()) == "") {
+            $("#lblMsg").text('Please Enter Role Name');
+            $("#txtRole").focus();
+            $("#btnUpdateRole").removeAttr('disabled');
+            return false;
+        }
+        //$("#ddlType  option").each(function () {
+        //    $('#tbSelected tr:not(#formatHeader)').each(function () {
+        //        if ($(this).val() == $.trim($(this).closest("tr").find("#spnTypeID").text())) {
+
+        //        }
+        //    });
+
+        //});
+        $('#txtRoleName').val($("#txtRole").val());
+
+        if ((parseFloat($("#ddlType  option").length - 1) != parseFloat($('#tbSelected tr:not(#formatHeader)').length)) && (($("input[name='rblIsUniversal']:checked").val()) == "0")) {
+            $("#lblMsg").text('Please Add All Type');
+            $("#ddlType").focus();
+            $("#btnUpdateRole").removeAttr('disabled');
+            return false;
+        }
+
+        var data = new Array();
+        var Obj = new Object();
+
+        Obj.RoleName = $('#txtRole').val();
+        Obj.RoleId = $('#txtRoleID').val();
+        Obj.IsDepartment = $("input[name='RbtnIsDepartment']:checked").val();
+        Obj.IsUniversal = $("input[name='rblIsUniversal']:checked").val();
+
+        Obj.menuFor = $('#ddlDeptMenu').val();
+
+        Obj.DepartmentLedgerNumber = $('#DepartmentLedger').val()
+        Obj.menuForText = $('#ddlDeptMenu option:selected').text();
+        Obj.IsStore = $("input[name='rbtnStore']:checked").val();
+        Obj.IsGeneral = $('#chkGen').is(':checked') ? 1 : 0;
+        Obj.IsMedical = $('#chkMed').is(':checked') ? 1 : 0;
+        data.push(Obj);
+
+        var formatData = format();
+
+        $.ajax({
+            url: "RoleManager.aspx/EditRoleById",
+            data: JSON.stringify({ roleDetail: data, FormatDetail: formatData }),
+            type: "POST",
+            async: false,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (mydata) {
+
+                if (mydata.d.length == "1") {
+                    data = mydata.d;
+                    if (data == "1") {
+                        modelAlert("Record Updated Successfully");
+
+
+                    }
+                    else if (data == "3") {
+                        modelAlert("Universal Format Not Found");
+
+                    }
+                    else {
+                        modelAlert("Error");
+
+                    }
+                }
+                else {
+                    data = jQuery.parseJSON(mydata.d);
+                    for (i = 0; i < data.length; i++) {
+                        var titleText = data[i].InitialCharacter + ' Initial Character Already Added ';
+                        $('#tbSelected tbody tr:eq(' + data[i].Id + ') td').css("background-color", "#FF0000");
+                        $('#tbSelected tbody tr:eq(' + data[i].Id + ') td').attr('title', titleText);
+                    }
+                    jQuery("#lblMsg").text('');
+                }
+
+                $("#btnUpdateRole").removeAttr('disabled');
+            }
+        });
+        $('#btnSaveFromat').removeAttr('disabled');
+    }
+
+
+
+</script>
+
+
+
+
+   
+    
+     <script id="tb_id_master_format" type="text/html">
+    <table  id="id_master_format"  cellspacing="0" rules="all" border="1"  style="width:100%;border-collapse:collapse; ">
+        <thead>
+		<tr id="Header">
+             
+            <th class="GridViewHeaderStyle" scope="col" style="width:140px;text-align:left">Type</th>
+            <th class="GridViewHeaderStyle" scope="col" style="width:80px;text-align:left">Initial Character</th>
+            <th class="GridViewHeaderStyle" scope="col" style="width:40px;text-align:center">Separator1</th>
+            <th class="GridViewHeaderStyle" scope="col" style="width:120px; text-align:left">Financial Year Start</th>
+            <th class="GridViewHeaderStyle" scope="col" style="width:40px; text-align:center">Separator2</th>
+            <th class="GridViewHeaderStyle" scope="col" style="width:20px; text-align:left">Length</th>
+            <th class="GridViewHeaderStyle" scope="col" style="width:180px;text-align:left">Preview</th>
+		</tr>
+            </thead>
+        <tbody>
+            <#                
+        for(var j=0;j<data.length;j++)
+        {       
+       var objRow = data[j];
+        #>
+                        <tr>
+                        
+                        <td  class="GridViewLabItemStyle" style="width:140px;text-align:left"><#=objRow.TypeName#></td>
+                        <td class="GridViewLabItemStyle" style="width:80px;text-align:left"><#=objRow.InitialChar#></td>
+                        <td class="GridViewLabItemStyle" style="width:40px;text-align:center"><#=objRow.Separator1#></td>
+                        <td class="GridViewLabItemStyle" style="width:120px;text-align:left"><#=objRow.FinancialYearStart#></td>
+                        <td class="GridViewLabItemStyle" style="width:40px;text-align:center"><#=objRow.Separator2#></td>
+                        <td class="GridViewLabItemStyle" style="width:20px;text-align:left"><#=objRow.TypeLength#></td>
+                        <td class="GridViewLabItemStyle" style="width:180px;text-align:left"><#=objRow.FormatPreview#></td>   
+                              </tr>            
+        <#}        
+        #>
+            </tbody>      
+     </table>  
+    
+    </script>
+
+

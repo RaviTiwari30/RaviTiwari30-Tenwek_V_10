@@ -1,0 +1,37 @@
+﻿@charset "utf-8";
+/* CSS Document */
+input[type="submit"], input[type="button"], input[type="text"], input[type="password"] { -webkit-border-radius:2px; -webkit-appearance: none; }
+a[href^=tel] {text-decoration:inherit;/*color: inherit;*/}
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 1201px) {
+body{ overflow-x:hidden;}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+body {  background-position: 60% 0;}
+.logo { display: inline-block; padding: 51px 1105px 0 0; position: static;  width: 150px;text-align: center; width: 100%;}
+.logo2 { display: inline-block; padding: 0 0 0 0; position: static;  width: 150px;text-align: center; width: 100%;}
+.loginpad{margin-top:0;}
+}
+
+@media screen and (max-width:767px) {
+body { background-position: 60% 0;}
+.logo { display: inline-block; padding: 51px 1105px 0 0; position: static;  width: 150px;text-align: center; width: 100%;}
+.logo2 { display: inline-block;padding: 0 0 0 0; position: static;  width: 150px;text-align: center; width: 100%;}
+.loginpad{margin-top:0;}
+.load-item{display:none !important;}
+}
+/* Mobile Landscape Size (devices and browsers) */
+@media screen and (max-width:639px) {
+
+}
+
+@media screen and (max-width:479px) {
+.loginpad { width: 90%;}
+.logininnerpad {padding: 15px;}
+
+
+}

@@ -1,0 +1,226 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>18</ID>
+    <MenuName>GRN</MenuName>
+    <Items>
+      <URLName>/Design/Store/PostStoreItems.aspx</URLName>
+      <DispName>PO GRN Search</DispName>
+      <MenuID>18</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/StorePurchase.aspx</URLName>
+      <DispName>PO GRN</DispName>
+      <MenuID>18</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/DirectGRNSearch.aspx</URLName>
+      <DispName>Direct GRN Search</DispName>
+      <MenuID>18</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/DirectGRN.aspx</URLName>
+      <DispName>Direct GRN</DispName>
+      <MenuID>18</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>19</ID>
+    <MenuName>Issue</MenuName>
+    <Items>
+      <URLName>/Design/Store/PurchaseRequestTransfer.aspx</URLName>
+      <DispName>Issue Against Purchase Request</DispName>
+      <MenuID>19</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>26</ID>
+    <MenuName>Purchase Request</MenuName>
+    <Items>
+      <URLName>/Design/Purchase/PRApproval.aspx</URLName>
+      <DispName>PR Approval</DispName>
+      <MenuID>26</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/PR_NotApproved.aspx</URLName>
+      <DispName>Pending PR Report</DispName>
+      <MenuID>26</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/SearchPurchaseRequest.aspx</URLName>
+      <DispName>PR Status</DispName>
+      <MenuID>26</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>25</ID>
+    <MenuName>Purchase Order</MenuName>
+    <Items>
+      <URLName>/Design/Purchase/StoreItemRate.aspx</URLName>
+      <DispName>Set Items Quation</DispName>
+      <MenuID>25</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/purchase/SetItemQuotation.aspx</URLName>
+      <DispName>Compare Quotation</DispName>
+      <MenuID>25</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/DirectPO_ItemWise.aspx</URLName>
+      <DispName>PO By Item</DispName>
+      <MenuID>25</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/DirectPurchaseOrder.aspx</URLName>
+      <DispName>PO By Supplier</DispName>
+      <MenuID>25</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/PendingPurchaseRequest.aspx</URLName>
+      <DispName>PO By PR</DispName>
+      <MenuID>25</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/POApproval.aspx</URLName>
+      <DispName>PO Approval</DispName>
+      <MenuID>25</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/SearchPO.aspx</URLName>
+      <DispName>PO Status</DispName>
+      <MenuID>25</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>12</ID>
+    <MenuName>Password</MenuName>
+    <Items>
+      <URLName>/Design/Employee/ChangePassword.aspx</URLName>
+      <DispName>ChangePassword</DispName>
+      <MenuID>12</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>27</ID>
+    <MenuName>Vendor</MenuName>
+    <Items>
+      <URLName>/Design/Purchase/MapVendor_Category.aspx</URLName>
+      <DispName>Map Supplier With category</DispName>
+      <MenuID>27</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/CompanyWiseVendorList.aspx</URLName>
+      <DispName>Supplier Company Report</DispName>
+      <MenuID>27</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/MapVendor_Company.aspx</URLName>
+      <DispName>Map Supplier With Company</DispName>
+      <MenuID>27</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>20</ID>
+    <MenuName>Master</MenuName>
+    <Items>
+      <URLName>/Design/Store/ManufactureMaster.aspx</URLName>
+      <DispName>Manufacture Master</DispName>
+      <MenuID>20</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/VendorDetail.aspx</URLName>
+      <DispName>Supplier Master</DispName>
+      <MenuID>20</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/ItemMaster.aspx</URLName>
+      <DispName>Store Item Master</DispName>
+      <MenuID>20</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/SetPRQuantity.aspx</URLName>
+      <DispName>Set PR Quantity</DispName>
+      <MenuID>20</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <Items>
+      <URLName>/Design/Purchase/POAmendmentReport.aspx</URLName>
+      <DispName>PO Amendment Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/LowStockReport.aspx</URLName>
+      <DispName>Low Stock report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/PurchaseSummaryReport.aspx</URLName>
+      <DispName>Purchase Summary Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/PurchaseReceiveReport.aspx</URLName>
+      <DispName>GRN Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/ConsumeGatherReport.aspx</URLName>
+      <DispName>Consume Gather Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>17</ID>
+    <MenuName>Tools</MenuName>
+    <Items>
+      <URLName>/Design/Purchase/PRAnalysis.aspx</URLName>
+      <DispName>Request Analysis</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/POAnalysis.aspx</URLName>
+      <DispName>Order Analysis</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>33</ID>
+    <MenuName>Circular</MenuName>
+    <Items>
+      <URLName>/design/Circular/NewCircular.aspx</URLName>
+      <DispName>New Circular</DispName>
+      <MenuID>33</MenuID>
+    </Items>
+    <Items>
+      <URLName>/design/circular/ViewCircular.aspx</URLName>
+      <DispName>View Circular</DispName>
+      <MenuID>33</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>16</ID>
+    <MenuName>Requisition</MenuName>
+    <Items>
+      <URLName>/Design/Store/CreateIndent.aspx</URLName>
+      <DispName>Create Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/IndentSearch.aspx</URLName>
+      <DispName>Search</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>15</ID>
+    <MenuName>Consume</MenuName>
+    <Items>
+      <URLName>/Design/Store/ConsumeItem.aspx</URLName>
+      <DispName>Consume Item</DispName>
+      <MenuID>15</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

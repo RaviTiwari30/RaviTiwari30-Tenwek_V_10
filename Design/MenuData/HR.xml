@@ -1,0 +1,123 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>36</ID>
+    <MenuName>Employee Exit</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAUABQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC3HG00qRRjc7sFUepPQVatJ20jU4xcecskxMHlhcbDvAyTu/yK1PDbSQeY2oWaxiIKkURi2m4lbJ4Z+pAHABArAnaN5tNeGSWRGui26VcNky855Ne0587cOh8jQwqoKFVu7f4bHXaj4Ulu7rzXu0VioGAhPTjrmiuluf8AWD6UVwRxFRJJM9qpluFnNylHV+b/AMzyA3EtncWkySO7RyB1EjFhke1dJ4W0q11HT4Li6Qu0Ersi7iBnfnJx70UV34r3YXX9bnk5d781za/8OjsJbt2bJVenvRRRXko+le5//9k=</image>
+    <Items>
+      <URLName>/Design/Payroll/NoDuesSearch.aspx</URLName>
+      <DispName>Clearance Form</DispName>
+      <MenuID>36</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Payroll/FullandFinal.aspx</URLName>
+      <DispName>Financial setoff</DispName>
+      <MenuID>36</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Payroll/Experience_Letter.aspx</URLName>
+      <DispName>Reference Letter</DispName>
+      <MenuID>36</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Payroll/Relievingletter.aspx</URLName>
+      <DispName>Relieving Letter</DispName>
+      <MenuID>36</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Payroll/NoDuesReprint.aspx</URLName>
+      <DispName>View Clearance Forms</DispName>
+      <MenuID>36</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Payroll/ViewFullandFinal.aspx</URLName>
+      <DispName>View Financial Setoff</DispName>
+      <MenuID>36</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Payroll/RelievingLetterSearch.aspx</URLName>
+      <DispName>View Relieving Letter</DispName>
+      <MenuID>36</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>16</ID>
+    <MenuName>Requisition</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAARLSURBVDhPnVR7UNRVGP05GoFoiGSaiTFNM5HjMOYrRRFRESEUkBCK4iEv3eUxJVqWZULIW+QlD0MWgUUx1nhOJqYCy0NgkaaadFWE0hEVecdjgdP97sJuTP3lnfnm3Pu7vzn33O8795thsCQQ4+MTgqvzGqGqVik8eNgj6OnOEgDh+cZMAx8kZ1wBjcprv2OecSDokPmvBz9XCDtdkzjZwOAIR7v3T0LQ8YDOywF4kWJBAHQX7IPeKywW7sdsFvqLWLwqwhwWcxeLMfc1MV5iYcDECCs3hWG3ewrEB/I5YaGsEdt2xcPeJYmTWzvGY+vOOGzaEY2NNpF4d0sE1mwOx4oN38Bs/VGYrj6Ct1Z9CZPlh2BkEgKBThD0vLDS4hgGB4c5aX3jXVyt/gMlFTdRdqkVhRcb8UOZAmcLanFedgOnJdchkcqRlF7J55EnKiC9UI+M7GsQKFck/Q2zz3C37TEnTM68AtGnuXD+6BR8ArPh5J7K1nkcAw/kwfnjVIhDaZ2CkM8L+E2IvKHxnppwnnEQzwEpo/HXw25cqvwVknw5V5fD1BSVNPN1UfEUNuFMXg1kpc3IlFRB3nAHl3/+TU1ouDQYOkb+kLGfaTzt6kda1lXYOJ2A5/4sUOH8gnNgz9A/iOGeRPgGSmDLlAWEnIXVe7GIjC/H9ZpbWsIXGGFC6k+ckMaz7gGuTFaqQH5hPYrLWziWVKiR1rnn6nies5nS6trbWoWkctZ8f3xy+JyGkCaWtjFw25sJm90J8NqXhe1M8RR6BHzHq+8tOgNz60iERZdoFaoJ/eDimTaNUJJfg++Lm5B3vo5XmRRN4UWmPKdAzpVm5Vajpk45XSEZebNdDFSqcQ3pFvtYuPud5lXcK86GrXMCfCaRlJFi3yAJLHZEISKuDFXy2+ocUtALMDM/is7HvRrCavZDU0sbq6ASitZ2yOvvoIWjkn2/jyqWN8XNdu7Z9j+7OGoIyeBLTENxv6ML95gf7V0S4eadwSKd4x7PdLh6pcPFI42H4wcpcPowBQ5uyXBkSJ60sInSEpIX9ReJ0PJLBx4wH7654jCM3w7lSE9r2dqv+FN7Z+MxrLYMx7qtEdiwPRKWdtGwdojnz5FuqVFIXiTrULK5bZ4NoItFX98Qe5IjGB5WYWxMm99p1ZtcWLGc/4cwNvFHjIyo0Nc/hJ7evzEyqsL4xAQnU1GoxjA6OobunkE8edqP/oEhvndL+Yjd4oiWkApD7YeuSFf5IkzGjW7tEIf1246zThOlibVW3yLokBSJaZXYxXJobn0cpiwtvNH8u5EamQRjhoEvf1r9A+rOc/LUZQj63ur+yHojzVdZhKHzSR/fL2I+pVTpsn5JXNMI6cNMQz+Ex5RqUqRo7cBs1lCpaOp9X3ix9z01HnX2Yumyg5izWPT/hNSJl6/7GuWsD95obuNW0VuoPp2CujMRSC80oJl5MfiglB9oOLn/D9GNAlA25CK9AAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Store/CreateIndent.aspx</URLName>
+      <DispName>Create Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/IndentSearch.aspx</URLName>
+      <DispName>View Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>90</ID>
+    <MenuName>Recruitment</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfiCRsJBSxdLgHvAAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAMXSURBVDhPrVRZSJRRFP5mXEbFUXOcccGxMhoZyhRaiAERK9cw0ZcopJegejAhyCJaoF7qKQh88CHaMMEtSdOSUosUtdJIrRQpy3GfGceZf5zN+ed0/Z0Mc0Gj7+Xce+75v3vud875RcSA/4h1E1ot0/jS+xJ2mxlOhxXSIDmCgiMQt/OAJ2IB6yLs6qiEbmIQCXtyIZPHwMvbF7OcAaPDvehnl2TmXYWfv3QheJ5wLbQ23aV3rWWeHRFnNpB+Skt2u0XYOx02Kn9wlubmHMJ+zQwNuh/obq9E6pEimI1jaHx+H5FKNaSBdoyOEKQBdiQdPAnr7AxaGotxOO/K2hnWV90gnueFdcmdAiJbMdHwFqKfKiK9hvp7a+l9+xPh/FX9bbJZORJ7klkRbrcLYrEYba9LcezoIWCyhHm3MuWjAQuPuNhmTE2MCLH7k06gt7sOqxI6WCVDZEphrR36jCCZg93wWx1mRX6A+QNkihiYTZOsUBJWfcvqhBJJAIz6YWGt3KIGZ4piThXjYsQQMesCpGpM67WshcLZFW54s+ov03DO7iKXY0G374MdguUdbsEy4Yi0cUzHeKJxFQ32VVLH2wrhpP3NIzJOj/6pspvnUVlaCINPJzidEfk5TxEcEoXq8nOwyb5CakpActpFDH2rwaYgYHRSCV+xGSnpp+ByOVFXcQ25x29B1PexgfS6IThn7RgXNcEt4aCwpiM1qwhVNWcgThyAv30bwnRp0KTlw2TUY9ZqQmioYrGZq0vPIzX7ApscBUQWTk8+Pv7wZZpZTSYYprTgRVb09zVDrlSif+AFIgL3ITnrNMwzEwgNixFIeNccm5RP6GwtY1kWICw8VvAvaWyn04aG6uvYkZgFuXw7q3IkyM2CvFiXcHr0dNXCMjMFB4ubn+VQ+Wbs2p3t+XoBK05KzcPL4AJ7oPDWICPnkse7Pixrm2ePb4LXtMFX6g+VijXzBrGEcF4jsYQQOKxBtCgTseq9npP1Y/HJbS332C9Jh5SMQrhdBElAgBCwUQiEk2MDmDZooY7f+BP/xopF+XcAvwBJcvN2HrwUKAAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/Design/Payroll/Manpower.aspx</URLName>
+      <DispName>Personnel Form</DispName>
+      <MenuID>90</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Payroll/ManpowerSearch.aspx</URLName>
+      <DispName>View Personnel Forms</DispName>
+      <MenuID>90</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Payroll/offerletterNew.aspx</URLName>
+      <DispName>Offer Letter</DispName>
+      <MenuID>90</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>23</ID>
+    <MenuName>Employee</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAWCAYAAADNX8xBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAHNXQABzV0BFcuyNwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAL+SURBVDhPlZRZTBNRFIaHaEHlReWBRH0yvhhNNAbRBgSLLCWsDchS9kKJARKViDEi8gCSgESQTYEgKqFWCgEsq6IiRjHRNCKgAhLAlrURbWmnLDP9HZaIUMpykj93cuecb865c88xIRhzDBBcmKXpVJqidpqYmFC0nibMTHds47q4mFvsteAIeU6tBRXSst4f/cHt7e1qFos1H0aAIMzMWKwuU7Pt/oRzsMDbkS+kAuOuIirhJgRXbiAiPnHhOeOBGDmimt6ssqpKZtUm3rmP8MvXF3zmFZmQBF70JTj4C9qJs37hUrfwGHR87YFuehoakoSW1EE1pUFpTTPSH0qQ87QOaSVitH36ApJ5t+hDgtTpUFgugQ0vmCTsfEOlnpFxkI+OYbUNjoyh9WMH2mSdePe5e+EDq00sbQLbO2iKsPcNq/UQxGFArjBw2sxGeU092Lwg9bqg/v5+JCcnI1wQheraOtA0bcDeEDShVMLLJwCHDh+DvY01uBxrZGRmQ69fCdsQJK1vRojnKYhTuBgUuWGozBHxQh6GhpUrstoQ1FhxD98K7YCXbkCLB/QNXDTd5qKvp2troGlZFn6LzmBS7MRAPDD6mANNlTOoCdnWQJhTAW+igAZXoJkH1J0Dk+LWD3shQvkaeHYSqD4BtPoxG+qtg8g5Peq6xtFZfBqq/N1oqbiGDxOGN2vdwx74Q8NLosWebB2O5ivgUCDDgVwV9udpcOv9DOb+uwFGQbOME7+WhGk6E5irhmXeNCzyaOzL08LyrhrmmWqIumf/pWYUNKSiwX6kwZEiDY6XGOpgwRQuvljuOaMgHQX0TdLoZTS/rtb3XzTk6uXajIL6pmjYviJh9ZyEdYuhrJq0iJXNGC9tULHY/Sqm/GoFhUo5hao1VPmTwlvlckai2qXuZ+ZRo3tELEbG1/i3m5gjS/NISzj4R6S4hsUgNbcIxU+qUCiSoGjTqkRsUhrsz4eNEe7R0bscA4Wltj6hA2wvvoLtFSjftLz5w5yAyE4XvjDkL+gWqsfN0N75AAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Payroll/Employee_Registration.aspx</URLName>
+      <DispName>Registration</DispName>
+      <MenuID>23</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Payroll/Employee_Search.aspx</URLName>
+      <DispName>View Employees</DispName>
+      <MenuID>23</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Payroll/Letterofappointment.aspx</URLName>
+      <DispName>Appointment Letter</DispName>
+      <MenuID>23</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Payroll/ProbationPeriodSetandConfirm.aspx</URLName>
+      <DispName>Probation Period</DispName>
+      <MenuID>23</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>20</ID>
+    <MenuName>Master</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfiCRsJBSxdLgHvAAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAMXSURBVDhPrVRZSJRRFP5mXEbFUXOcccGxMhoZyhRaiAERK9cw0ZcopJegejAhyCJaoF7qKQh88CHaMMEtSdOSUosUtdJIrRQpy3GfGceZf5zN+ed0/Z0Mc0Gj7+Xce+75v3vud875RcSA/4h1E1ot0/jS+xJ2mxlOhxXSIDmCgiMQt/OAJ2IB6yLs6qiEbmIQCXtyIZPHwMvbF7OcAaPDvehnl2TmXYWfv3QheJ5wLbQ23aV3rWWeHRFnNpB+Skt2u0XYOx02Kn9wlubmHMJ+zQwNuh/obq9E6pEimI1jaHx+H5FKNaSBdoyOEKQBdiQdPAnr7AxaGotxOO/K2hnWV90gnueFdcmdAiJbMdHwFqKfKiK9hvp7a+l9+xPh/FX9bbJZORJ7klkRbrcLYrEYba9LcezoIWCyhHm3MuWjAQuPuNhmTE2MCLH7k06gt7sOqxI6WCVDZEphrR36jCCZg93wWx1mRX6A+QNkihiYTZOsUBJWfcvqhBJJAIz6YWGt3KIGZ4piThXjYsQQMesCpGpM67WshcLZFW54s+ov03DO7iKXY0G374MdguUdbsEy4Yi0cUzHeKJxFQ32VVLH2wrhpP3NIzJOj/6pspvnUVlaCINPJzidEfk5TxEcEoXq8nOwyb5CakpActpFDH2rwaYgYHRSCV+xGSnpp+ByOVFXcQ25x29B1PexgfS6IThn7RgXNcEt4aCwpiM1qwhVNWcgThyAv30bwnRp0KTlw2TUY9ZqQmioYrGZq0vPIzX7ApscBUQWTk8+Pv7wZZpZTSYYprTgRVb09zVDrlSif+AFIgL3ITnrNMwzEwgNixFIeNccm5RP6GwtY1kWICw8VvAvaWyn04aG6uvYkZgFuXw7q3IkyM2CvFiXcHr0dNXCMjMFB4ubn+VQ+Wbs2p3t+XoBK05KzcPL4AJ7oPDWICPnkse7Pixrm2ePb4LXtMFX6g+VijXzBrGEcF4jsYQQOKxBtCgTseq9npP1Y/HJbS332C9Jh5SMQrhdBElAgBCwUQiEk2MDmDZooY7f+BP/xopF+XcAvwBJcvN2HrwUKAAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/Design/Payroll/CommonMasterForm.aspx</URLName>
+      <DispName>HR Common Master</DispName>
+      <MenuID>20</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>12</ID>
+    <MenuName>Password</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAYAAACTQC2+AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACzkAAAs5AcnGdmAAAAOYSURBVEhLxZR7TNNXFMcPtFAq7bBDw3QwVqVkbZlEM7slLDpg60B5DF9/aGQagyGrCUZcghkLsMWkoZ0dhkbjAkrYcHS6tmkjwWzBUGnQBkM0WwbLpiidrxjjFlrog+9OW+djc8kqy3bz++Qk996czzn3/n4/ov95FOQsVZg1mtfcBQWve1au1Liys15s5ZqW/Vt1Jchk6R+VlVfNXPpuHNOBMAIhYHo6iMEhD94ofPOeSCSqnbNMKpXWbanegWvX7+DgoS6UlJb/WlikvVZWsc53/KQTVyZv4S3tWggEgsq5yDKWr3jll8GRMVRvr519Jk3WxsmUzGImf/HzWV82NOnh/HYYSqXaw3Pip5WtqdywFZ2WPizJyT3zhCSSvGX5Yyf6hrC66G3/XO6rauPWWnxs/AwLF73wyZOqzZYrHKYOK0rLN4HXlz9FR9J0ogTDau067P7gAMSSBX2cpIJIUPUQqpQtzLzw3r4DKNRWRER7iDJS45Ll5Qq/OLyHMGzNxOWRXDiOpcLeKX4MW4cYzi4pxocVGLVnoWUbQSEX6eMSvZpH5+FKAW4rgLu5gF/F77T6r0TmI+s3luJurxDqHDoVl0ijorO+bhFCF7OBH5mf7scJjteZK4/Mj2djdjQTV40CqOVkjU+kpLNThxMRPJ0KuCXAeWZEgh/M81FXlo6bljTAk4jwGUJ4gBBwEC7vI8hl9FX8IlMCglYB0M98wwwJsH9TEhJJCIsuEQNtStgOFsHRXgxHWzG6PyzClo1lE83NzUebmpqORWhsbIzGP2hoaOjWarU7uBhhtCDNS9yRgRA8TgBXCyfTT5g8RFi1guDRy+C5MIYwgCAzzb8lfv7RcLlcUKlU+Q9EvlYWfc4CG2OPCX0WwhEd8RFm4ueJ29HEk5Ne6HQ69Pb2wm63o729HZFkLS0tcLvdqK+vh9lsRk9PT3S/1+uFRqNZ9bAjPYt6HhHdl2GQ8L3xWXhGxzEb6YZb8t78Dfd8YQRDYczMzEQT+v3+aJyamkIgEEAoFOs5IlcqlbGPm4/u3KyJJSdiR4bTf8JKGGxVY+BIKVwda+DuLMcpw1rUVK+/ZTAaLXq93mIymR5EI88ZDAYL39XXJSUlu1iRFBW9vCTJ1vVOMmzbUuCs4Q9z5+P014rRX0Owb2feJVg3E/YXE55LoU/jeutEaRlysVhcJ01J3jvvb4isxRDulc5Lfp/360iyaEFcov9i8+9CJ3nQTR4/DQAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/Design/Employee/ChangePassword.aspx</URLName>
+      <DispName>Change Password</DispName>
+      <MenuID>12</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

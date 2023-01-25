@@ -1,0 +1,26 @@
+ObservationTypeID,SubCategoryID,GroupName,SubGroup,Investigation_Name,Investigation_ShortName,Investigation_Code,Sample_Required,Report_Type,Print_Sequence,IsOutSource,Sample_Name,SampleQty,Method,Gender
+,,Radiology,X-Ray,X-RAY SKULL LAT,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY SKULL AP,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY PNS,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY PELVIS AP,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY MASTOIDS,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY LUMBAR SPINE LAT,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY LUMBAR SPINE AP,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY LATERAL LEG,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY KNEE AP,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY HYSTEROSALPINGOGRAPHY (HSG),,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY HUMERUS AP,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY DORSAL SPINE AP,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY CHEST PA,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY CHEST LAT,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY CHEST APICAL VIEW,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY CHEST AP,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY CERVICAL SPINE LAT,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY CERVICAL SPINE AP,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY BOTH KNEES AP AND LAT,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY BOTH KNEES (AP),,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY ABDOMEN ERECT,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY ABDOMEN (KUB),,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY KUB,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY SMALL BOWEL ENEMA,,,N,Text,,No,,,,B
+,,Radiology,X-Ray,X-RAY BARIUM MEAL FOLLOW THROUGH,,,N,Text,,No,,,,B

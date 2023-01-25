@@ -1,0 +1,61 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="divInvestigationPrescribe">
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-24">
+                <div class="row">
+                    <div class="col-md-8">
+                        <select>
+                            <option>All</option>
+                            <option>Favorite</option>
+                        </select>
+                    </div>
+                    <div style="padding: 0px" class="col-md-16">
+                        <input type="text" name="name" autocomplete="off" placeholder="Search Investigation" value="" onkeyup="$searchInvestigationByWord(event)" autocomplete="off" id="Text1" />
+                    </div>
+                </div>
+                <div class="row col-md-24">
+                    <input type="text" autocomplete="off" id="txtOtherInvestigation" onkeyup="onOtherInvestigationPrescriptionAdd(event)" placeholder="Write Other Invstigation" data-title="Prees Enter To Add on Prescription" />
+
+                </div>
+
+                <div class="row col-md-24">
+                    <div style="height: 200px" id="listInvestigation" class="chkList-Control">
+                        <ul id="investigationListMenu"></ul>
+                    </div>
+                </div>
+                <div class="row col-md-24">
+                    <div style="padding: 0px; display: none" class="col-md-5">
+                        <label class="pull-left">Remarks </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <textarea style="min-height: 61px;" placeholder="Enter Laboratory & Radiology Remarks" id="txtInvestigationRemarks" onkeyup="onPrescribeInvestigationRemarkChange(event)"></textarea>
+                </div>
+            </div>
+        </div>
+        <div style="display: none" class="row">
+            <div style="padding: 0px" class="col-md-5">
+                <label class="pull-left">Quantity </label>
+                <b class="pull-right">:</b>
+            </div>
+            <div class="col-md-4">
+                <input type="text" value="1" disabled="disabled" id="txtInvestigationQuantity" />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script id="prescribedInvestigationScript">
+   
+
+    $(document).ready(function () {
+        
+    });
+
+</script>

@@ -1,0 +1,137 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+public partial class Design_Payroll_LeaveApplication : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            txtfromdate.SetCurrentDate();
+            txttodate.SetCurrentDate();
+            txtEmployeeID.Attributes.Add("onKeyPress", "doClick('" + btnSearch.ClientID + "',event)");
+        }
+    }
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+        BindData();
+    }
+
+    protected void BindData()
+    {
+        lblmsg.Text = "";
+        try
+        {
+            string query = "SELECT EmployeeID,Name,LeaveID,noOfLeave FROM pay_employeeleavedetail le INNER JOIN pay_employee_master emp ON le.EmployeeID=emp.Employee_ID WHERE EmployeeID='"+txtEmployeeID.Text.Trim()+"' AND IsActive=1";
+            DataTable dt = StockReports.GetDataTable(query);
+            if (dt.Rows.Count > 0)
+            {
+               lblEmployeeName1.Text = dt.Rows[0]["Name"].ToString();
+               LeaveGrid.DataSource = dt;
+               LeaveGrid.DataBind();
+               btnReset.Enabled = true;
+               btnSubmit.Enabled = true;
+            }
+            else
+            {
+                lblEmployeeName1.Text = string.Empty;
+                lblCL1.Text = string.Empty;
+                lblEL1.Text = string.Empty;
+                lblELBalance1.Text = string.Empty;
+                lblCLBalance1.Text = string.Empty;
+                btnReset.Enabled = false;
+                btnSubmit.Enabled = false;
+
+            }
+        }
+        catch(Exception ex)
+        {
+            lblmsg.Text = ex.Message;
+        }
+
+    }
+    protected void btnSubmit_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            //TimeSpan t1 = Util.GetDateTime(txttodate.GetDateForDisplay()) - Util.GetDateTime(txtfromdate.GetDateForDisplay());
+
+            float days = Util.GetDecimal(txtDays.Text.Trim()); //t1.Days+1;
+            float Balance = 0;
+            if (ddlLeaveType.SelectedItem.Value == "EL")
+            {
+                Balance = Util.GetDecimal(lblELBalance1.Text);
+                if (Balance < days)
+                {
+                    lblmsg.Text = "Employee Max Leave Limit Exceed.";
+                    return;
+                }
+            }
+            else if (ddlLeaveType.SelectedItem.Value == "CL")
+            {
+                Balance = Util.GetDecimal(lblCLBalance1.Text);
+                if (Balance < days)
+                {
+                    lblmsg.Text = "Employee Max Leave Limit Exceed.";
+                    return;
+                }
+            }
+            if (days > 5 && ddlLeaveType.SelectedItem.Value == "CL")
+            {
+                lblmsg.Text = "Casual Leave Limit Exceed. Select Earned Leave";
+                return;
+            }
+            string query = "insert into pay_leavedetail (EmployeeID,LeaveType,Days,FromDate,ToDate,ApprovedBy,Approved,Remarks,UserID)values('" + txtEmployeeID.Text.Trim() + "','" + ddlLeaveType.SelectedItem.Value + "','" + days + "','" + txtfromdate.GetDateForDataBase() + "','" + txttodate.GetDateForDataBase() + "','" + ddlApprove.SelectedItem.Value + "',0,'" + txtRemarks.Text.Trim() + "','" + Session["ID"].ToString() + "')";
+            StockReports.ExecuteDML(query);
+            clear();
+            txtEmployeeID.Text = "";
+            lblmsg.Text = "Recors Save";
+        }
+        catch (Exception ex)
+        {
+            lblmsg.Text = ex.Message;
+        }
+    }
+    protected void clear()
+    {
+        lblmsg.Text = "";
+        lblCL1.Text = "";
+        lblCLBalance1.Text = "";
+        lblEL1.Text = "";
+        lblELBalance1.Text = "";
+        lblEmployeeName1.Text = "";
+        btnReset.Enabled = false;
+        btnSubmit.Enabled = false;
+        txtEmployeeID.Text = "";
+    }
+    protected void btnReset_Click(object sender, EventArgs e)
+    {
+        
+        ScriptManager.RegisterStartupScript(this, this.GetType(), "key1", "location.href('LeaveApplication.aspx');", true);
+                  
+        
+    }
+    protected void ddlLeaveType_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        try
+        {
+            string str = "SELECT noOfLeave-LeaveTake LeaveLeft FROM Pay_EmployeeLeaveDetail Lm INNER JOIN  " +
+            "   (SELECT SUM(IFNULL(Days,0))LeaveTake,EmployeeID FROM pay_leavedetail WHERE Approved=1 GROUP BY EmployeeID, LeaveID)ld ON lm.EmployeeID=ld.EmployeeID " +
+            "   WHERE lm.LeaveID=" + ddlLeaveType.SelectedValue + " AND  lm.EmployeeID=" + txtEmployeeID.Text.Trim() + "";
+            lblRemainingLeave.Text = StockReports.ExecuteScalar(str).ToString();
+        }
+        catch (Exception ex)
+        {
+            lblmsg.Text = ex.Message;
+        }
+
+    }
+}

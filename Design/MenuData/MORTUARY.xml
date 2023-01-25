@@ -1,0 +1,83 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>71</ID>
+    <MenuName>Mortuary</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAlFJREFUOE+FlM+rjFEYx+e8887vpjFNGZTyowi5cq1EjWws2EhTtjYiC1xXNpgG6dJVpJQdG3+A1CV7KRZS14LNXapbFmJBvV6f79s5tzOv91xT3857fjyf853nPOeYUqkUjUYjmuLfeDzWxJ8ois6kaTpPezJJkhfERJrzY+kbDUSDwSAOSbRarbbVGLOMUrTY6/Xabns/bjgcljX+X2AcxwcsTMDv5XL5EE6v0x4n3jhoBgw59BJQA3LXAy7yvWD7C3mnhUAtqlQqu3BxjsAn6At6gN4xdp72swXewuWxdrvdk7FChxa2l8BLfE8R+AjNodvoObrB3EU0y/cngdl8t+L+AXqw2U6n01W/2WyuJ4f7Cfzp/e3XjB2k/xK9An6lXq9vVD6zv4xiC5vWzg6mZNvxfQT+9oDZaVer1W20763L6SyfAtqgqSIYJbOJgLc5mIDSU3RH+VVpqWIyKDnYA+xav99vqe+c4WA746cJ+BAALjF/lrlv6I1KVvGGwJ0MzLPLZlcGFjZDfw1zjwPARIeE7nHaR7McuupWmTBxH+gWgdl5ptVq9bMdjXkWAKaAjvi1uFKHGrROHwK7DGytxnTNgLm6c7lz7bJy7NJUWDZaQKmsc7vKdcDdL9ydcDDlvfAuO1Cj0dgASLck70r9hH9xSmsFWfUuaxFFOyBoKZQ3YBdcyeVfqYm7rPzbnIXKJAV2VTDexpVXxodOWLYHswNnPwLubq4GKzoU0+12O7pWBcA5vzyKHuQJoEuugji9wwA/WuhX3SIfprVO+Rf7L6BKCdkSXOo5AAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Mortuary/AddFreezer.aspx</URLName>
+      <DispName>Create Freezer</DispName>
+      <MenuID>71</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Mortuary/Mortuary_CorpseReceiving.aspx</URLName>
+      <DispName>Hospital Corpse Receive </DispName>
+      <MenuID>71</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Mortuary/CorpseDeposite.aspx</URLName>
+      <DispName>Outside Corpse Deposite</DispName>
+      <MenuID>71</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Mortuary/Mortuary_ReceivedSearch.aspx</URLName>
+      <DispName>View Received Corpse</DispName>
+      <MenuID>71</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Mortuary/CorpseSearch.aspx</URLName>
+      <DispName>View Corpse</DispName>
+      <MenuID>71</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Mortuary/MortuaryReceiptBill.aspx</URLName>
+      <DispName>Advance/Settlement</DispName>
+      <MenuID>71</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>51</ID>
+    <MenuName>Ticketing</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAA9VJREFUOE/Nk31Mm1UUxo/RwXBQV7ChSNgcxo25OWWKoMlcXNTtjyFuC2hDOp26yTCTUGsMHaOydCwQSSk0bCVrupQgZFI3ZRCIATHbqKQLYMlIG8AtA1NbaC3rx6DSPh6IbiNb/PzHm5y8b+4553ef577nJfo/LAwmFcK6bBgdtOc/6fFbNsXCuroC1uXAAAFfkxMt9MS/gmI4NR1WkRk95GGQG20MPEPhSDNl/WMghtbshUXgxkWGNNM8q7rCcRONNOtroE1/G4jxFx/EQHItLFFAJ8MsjwLWdfhVT76QgUYZGJ7VUq+ninY6VJT2p2BcXr0eQ6Le3+8KGMkEQgbArwV6RQioyeGrpR+h44O0BM9RmnIo6el7QtliLi4Lfl602PEA4HgDQBvmXEqUyzbDYZEATVGYUdHYlIqmvCqu0xB+ktPZJUB0x0djMOU4+qMj6OKiC4nAjXKGfY7wtBLVis04UrgRrW3Z8Di2w1VJ8y4FjTgVhOkS8k4Wk+QWEAOPr8FQYucti1fSGcQWOUwNW/FB3loU5abh22+2Qx9JxeF5Mfo7l2FGTpgsoq+uHaLnbsOGkrJhEV6HZcHi/YArd1HVrFOJ79tzoCl7FvJ96zHnrEAESpR5Y/FhIBpdXRT2vk+G8T0UdxvWRam4EA30ESJNDBzfCv+0DtryDLSyMtlbaWhr2AYENEDEBI8lA4rJGFYYh2prlPauj8CqYtFOl2BenHy++yi4hvNRo8xCh/FljJrz4QwW4oewFP1jL8DUGQvZRBxkXgFknuTzFcFMeWXwmSOqmfSDdchYsXhA0Ehp+JJaQkYaDC+MQbcICGrgGCli6yZUuzfizYmHsN8hRIFLhIJrQhy4uhLF7oehmBXjcEiMT8MpKJ4Qb1uieKqUYvy11BauZfuWJxnWg0jfFtT3rUC+XQiJPd4nscXflNoSInvtCZDa4kP5NmFAahfOcd4tGRWk33UFv3xGRWCg5zjBpxcidJRg+4RGNeeW5+QMJW7YbRW9tmtQFHj7ehL4WSexJ26Q2BKe2mmOf+yeQ+1RUc3CkHpKCf4SgktOrdhN4j+Kt/QKU3aYH7mRdzUFO8xJH//lfxyS0ypPCY35FRRwHKISbrjvzqbMiyvXPt8t9r86sgpZPeKF/NKlNUBQfxo5HB9xHFM3oaJZe67fpFbb1Y04qTmNL7imvU6P8zoDzlYZ0bHLlB3J+e4lFLecuaQ7hWOcK+Xed7luHelbEMMbmSeMeJ03pRwFVY3YX2nEe1ojFFxUdmfUc/MJPQ5qTuGdBiMO8Ps+XSPymPFKTQOSfwMZdIghhMUUiAAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/Design/HelpDesk/NewTicket.aspx</URLName>
+      <DispName>NewTicket</DispName>
+      <MenuID>51</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/HelpDesk/MyTicket.aspx</URLName>
+      <DispName>MyTicket</DispName>
+      <MenuID>51</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>16</ID>
+    <MenuName>Requisition</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAARLSURBVDhPnVR7UNRVGP05GoFoiGSaiTFNM5HjMOYrRRFRESEUkBCK4iEv3eUxJVqWZULIW+QlD0MWgUUx1nhOJqYCy0NgkaaadFWE0hEVecdjgdP97sJuTP3lnfnm3Pu7vzn33O8795thsCQQ4+MTgqvzGqGqVik8eNgj6OnOEgDh+cZMAx8kZ1wBjcprv2OecSDokPmvBz9XCDtdkzjZwOAIR7v3T0LQ8YDOywF4kWJBAHQX7IPeKywW7sdsFvqLWLwqwhwWcxeLMfc1MV5iYcDECCs3hWG3ewrEB/I5YaGsEdt2xcPeJYmTWzvGY+vOOGzaEY2NNpF4d0sE1mwOx4oN38Bs/VGYrj6Ct1Z9CZPlh2BkEgKBThD0vLDS4hgGB4c5aX3jXVyt/gMlFTdRdqkVhRcb8UOZAmcLanFedgOnJdchkcqRlF7J55EnKiC9UI+M7GsQKFck/Q2zz3C37TEnTM68AtGnuXD+6BR8ArPh5J7K1nkcAw/kwfnjVIhDaZ2CkM8L+E2IvKHxnppwnnEQzwEpo/HXw25cqvwVknw5V5fD1BSVNPN1UfEUNuFMXg1kpc3IlFRB3nAHl3/+TU1ouDQYOkb+kLGfaTzt6kda1lXYOJ2A5/4sUOH8gnNgz9A/iOGeRPgGSmDLlAWEnIXVe7GIjC/H9ZpbWsIXGGFC6k+ckMaz7gGuTFaqQH5hPYrLWziWVKiR1rnn6nies5nS6trbWoWkctZ8f3xy+JyGkCaWtjFw25sJm90J8NqXhe1M8RR6BHzHq+8tOgNz60iERZdoFaoJ/eDimTaNUJJfg++Lm5B3vo5XmRRN4UWmPKdAzpVm5Vajpk45XSEZebNdDFSqcQ3pFvtYuPud5lXcK86GrXMCfCaRlJFi3yAJLHZEISKuDFXy2+ocUtALMDM/is7HvRrCavZDU0sbq6ASitZ2yOvvoIWjkn2/jyqWN8XNdu7Z9j+7OGoIyeBLTENxv6ML95gf7V0S4eadwSKd4x7PdLh6pcPFI42H4wcpcPowBQ5uyXBkSJ60sInSEpIX9ReJ0PJLBx4wH7654jCM3w7lSE9r2dqv+FN7Z+MxrLYMx7qtEdiwPRKWdtGwdojnz5FuqVFIXiTrULK5bZ4NoItFX98Qe5IjGB5WYWxMm99p1ZtcWLGc/4cwNvFHjIyo0Nc/hJ7evzEyqsL4xAQnU1GoxjA6OobunkE8edqP/oEhvndL+Yjd4oiWkApD7YeuSFf5IkzGjW7tEIf1246zThOlibVW3yLokBSJaZXYxXJobn0cpiwtvNH8u5EamQRjhoEvf1r9A+rOc/LUZQj63ur+yHojzVdZhKHzSR/fL2I+pVTpsn5JXNMI6cNMQz+Ex5RqUqRo7cBs1lCpaOp9X3ix9z01HnX2Yumyg5izWPT/hNSJl6/7GuWsD95obuNW0VuoPp2CujMRSC80oJl5MfiglB9oOLn/D9GNAlA25CK9AAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Store/CreateIndent.aspx</URLName>
+      <DispName>Create Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/IndentSearch.aspx</URLName>
+      <DispName>View Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAIAAABL1vtsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAv9JREFUOE+llG9Ik0EYwK8EQQOxQKoZFkEIQRkVSR8ixIl+cJSkH6S+CCopaFhiYYoTE0HHFCc40WEUsxLtD/nBLXFTnDIVdaIba6KTEB0qxt7jNt4d7/Xsn7ncROjlx3Hvce/vnnueu/cEYwz95wMKw8+dvA5jniIiue3Gyg+LTuKByYcfBEOFqll07x3K7EMZkZF8Mtp2IyqKVHMoXd0yZNVb93QrRGcL4u1jvXknVapHOf1TRyiKe+dQmnrCAotQhtcYtgdZY+5NWPmRYgo97D8qCq8ivU+zuCv0ZjoLkLMoBLY0KFHMHUORBood9r0C1yRgaWKAOhGuT2Krekn77HEUas3CVthswWBGuwk9GJpcpxHT6c+FxuSAGQJ2CNw+2wK3Jdiny2rll7Kr5kcGqUXjxW5klN/XeYvqU3g3IqhzuVLElUeFUIp+v07YkyZx9Um44SKuOQtzhA1TeAUbKOBexHBVcQFexnNlUdyreGafYhYtNWvpMoQwjavPkPZUl/qJZ37Ae7iDUQRzQSmjngACpZYR3JDEaxpw7XksvQAtr22AWIhSDK+k5Vo4hUDZPtCzjsJngnNTcG74YXgb9uL++hy8RH7joMJX1MFCrjIWIg9ymnsWjetEvE4GCxL5TWh5nRxK7lJlg4W03jqkUOdwJYgrOxkA8voU4dpz1KbnDUp+sos3dNGVcZBCFvhRGZGlhG7EX9RgwL7OpmfhM5aKqE3HG7p5Qw+0dHUCpLgp2T1QQtruhMtF6OmhKwZIHj+mgG2TtttEnsKPd0CCPeZhXt9KZNdDFBOWnTCHb31MqD7FfhnY7qrgsApbZsFu5CqiYX33l3KQBhT+y978zapbdowsHmDZMfpjZL4gdqk4zlESReD6NCXjxsu4LpGf7OG1b/5WpKjX98sR94EolD4kVqOsTiRWfMyOofUi19scl0riep/vHq7HTVdI89VAFPAjeKycye+cyYf2X2ZzlSaJ0qztbfT0ZJDuLB+ZpPM+UdyF7AYUkS7oMcf/AMkdAOj6D6DkAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Mortuary/Mortuary_CorpseReport.aspx</URLName>
+      <DispName>Mortuary Corpse Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Mortuary/Mortuary_PostMortemReport.aspx</URLName>
+      <DispName>Corpse Post-Mortem Status Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

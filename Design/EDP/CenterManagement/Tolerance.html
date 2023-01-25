@@ -1,0 +1,391 @@
+﻿
+<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="tolerance">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-24" style="text-align: center;">
+                    <label>
+                        <strong style="font-size: medium;">Tolerance Level</strong>
+                    </label>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Search Criteria </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-22">
+                    <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Category
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="ddlCategorytolerance" onchange="$bindSubCategorytolerance($('#ddlCategorytolerance').val(),function(){});"></select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Sub Category
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="ddlSubCategorytolerance"></select>
+                        </div>
+                        <div class="col-md-3" style="display:none;">
+                            <label class="pull-left Centrediv">
+                                Centre Name 
+                            </label>
+                            <b class="pull-right Centrediv">:</b>
+                        </div>
+                        <div class="col-md-5" style="display:none;">
+                            <div class="Centrediv">
+                                <select id="ddlCentretolerance"></select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Item Name 
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" id="txtItemNametolerance" tabindex="4" />
+                        </div>
+                    </div>
+                    <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Is Set
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="radio" name="rbIsSet" id="rbIsSetNo" value="0" checked="checked" />No
+                            <input type="radio" name="rbIsSet" id="rbIsSetYes" value="1" />Yes
+                            <input type="radio" name="rbIsSet" id="rbIsSetBoth" value="2" />Both
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="">
+                <div class="col-md-24 textCenter">
+                     <input type="button" id="btnSearchTolerance" value="Search" class="save margin-top-on-btn" onclick="SearchToleranceItems()" />
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Item List </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="row" id="dvItemTolerance" style="font-size:10pt;">
+                <div class="col-md-24 textCenter">
+                    <div id="dvItemListTolerance" ></div>
+                </div>
+            </div>
+            <div class="row" id="dvSavetolerance" style="display:none;">
+                <div class="col-md-24 textCenter">
+                    <input type="button" id="btnSaveTolerance" onclick="saveToleranceItems()" class="save" value="Save" tabindex="7" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------Modal Pop up---------------------------------------------------------------------------------->
+<div id="divToleranceMappingModel" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content" style="min-width: 500px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="divToleranceMappingModel" aria-hidden="true">&times;</button>
+                    <b class="modal-title">Copy Same Tolerance</b>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-22">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Copy Centre Name 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <label id="lblCentreFromTolerance" class="pull-left patientInfo" style="font-weight: bold"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Select Centre To Copy 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <ul id="ulCentreRolesTolerance" style="list-style-type: none; margin-left: -10px;"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" onclick="copyCentreTolerance(this)" class="save" style="font-size:10pt;">Save</button>
+                    <button type="button" data-dismiss="divToleranceMappingModel" onclick="CloseToler()" style="font-size:10pt;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------------------------------END----------------------------------------------------------------------------->
+
+<script type="text/javascript">
+    function CloseToler() {
+        $("#divToleranceMappingModel").hide();
+    }
+    var $bindCategorytolerance = function (callback) {
+        serverCall('../common/CommonService.asmx/BindCategory', { Type: '7' }, function (response) {
+            $Category = $('#ddlCategorytolerance');
+            $Category.bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'CategoryID', textField: 'Name', isSearchAble: true, selectedValue: 'All' });
+            $bindSubCategorytolerance($Category.val(), function () {
+                callback($Category.find('option:selected').text());
+            });
+
+        });
+    }
+
+    $bindSubCategorytolerance = function (categoryID, callback) {
+        $subCategory = $('#ddlSubCategorytolerance');
+        serverCall('../common/CommonService.asmx/BindSubCategory', { Type: '0', CategoryID: categoryID }, function (response) {
+            $subCategory.bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'SubCategoryID', textField: 'Name', isSearchAble: true, selectedValue: 'All' });
+            callback($subCategory.find('option:selected').text());
+        });
+    }
+
+    $(document).ready(function () {
+        $bindCategorytolerance(function () { });
+    });
+
+    var searchedItemsT = "";
+
+    function SearchToleranceItems() {
+        var typeValue = ['A', 'P'];
+        $('#lblMsg').text('');
+        $('#dvItemListTolerance').html('');
+        $('#dvItemListTolerance,#dvSavetolerance,#dvItemTolerance').hide();
+
+        if ($('#ddlCategorytolerance').val() == "0") {
+            $('#lblMsg').text('Please Select Category');
+            return false;
+        }
+        if ($('#ddlSubCategorytolerance').val() == "0") {
+            $('#lblMsg').text('Please Select SubCategory');
+            return false;
+        }
+
+        var IsCentrewiseTolerance = $("#spnCenterwiseTolerance").text();
+
+        var centerIdTolerance;
+        if (IsCentrewiseTolerance == 1) {
+            centerIdTolerance = $.trim($("#spnCenter_ID").text());
+        }
+
+        var data = {
+            CategoryID: $.trim($('#ddlCategorytolerance').val()),
+            SubCategoryID: $.trim($('#ddlSubCategorytolerance').val()),
+            ItemName: $.trim($('#txtItemNametolerance').val()),
+            IsSet: $("input[name='rbIsSet']:checked").val(),
+            CentreID: centerIdTolerance
+        };
+
+        serverCall('Services/ToleranceLevel.asmx/BindGridItems', data, function (responses) {
+            searchedItems = JSON.parse(responses);
+            if (searchedItems.length > 0) {
+                searchedItemsT = searchedItems;
+                $('#dvItemListTolerance,#dvSavetolerance,#dvItemTolerance').show();
+                $('#lblMsg').text('Total Records : ' + searchedItems.length);
+                container2 = document.getElementById('dvItemListTolerance'),
+                hot2 = new Handsontable(container2, {
+                    data: searchedItems,
+                    colHeaders: ["Item Name", "Tolerance Level Qty(+)", "Tolerance Level Qty(-)", "Tolerance Rate(+)", "Tolerance Rate(-)", "Type"],
+                    readOnly: true,
+                    columns: [
+                   { data: 'TypeName', renderer: safeHtmlRenderer, readOnly: true, width: '300' },
+                    { data: 'Maximum_Tolerance_Qty', type: 'numeric', format: '0', readOnly: false, allowInvalid: false, width: '100' },
+                     { data: 'Minimum_Tolerance_Qty', type: 'numeric', format: '0', readOnly: false, allowInvalid: false, width: '100' },
+                      { data: 'Maximum_Tolerance_Rate', type: 'numeric', format: '0.0000', readOnly: false, allowInvalid: false, width: '100' },
+                       { data: 'Minimum_Tolerance_Rate', type: 'numeric', format: '0.0000', readOnly: false, allowInvalid: false, width: '100' },
+                     {
+                         type: 'dropdown',
+                         data: 'type',
+                         source: typeValue,
+                         width: '55',
+                         strict: true,
+                         readOnly: false,
+
+                     },
+
+                    ],
+                    beforeChange: function (changes, source) {
+                        if (source === 'loadData' || source === 'internal' || changes.length > 1)
+                            return;
+
+                        var h = this;
+                        var row = changes[0][0];
+                        var prop = changes[0][1];
+                        var value = $.trim(changes[0][3]);
+
+                        if (prop === 'type') {
+                            var matchedType = typeValue.filter(function (t) { if (t == value) { return t; } }); //global Variable
+                            if (matchedType.length < 1)
+                                return false;
+                        }
+                    },
+                    stretchH: "all",
+                    //   fixedColumnsLeft: 1,
+                    autoWrapRow: false,
+                    fillHandle: false,
+                    rowHeaders: true,
+                    contextMenu: false,
+                    filters: true,
+                    height: 380
+                });
+            }
+            else {
+                $('#lblMsg').text('No Record found as per searching criteria');
+                return false;
+            }
+        });
+    }
+
+    var copyCentreTolerance = function (btnCopy) {
+        var centreToleranceList = [];
+        $('#ulCentreRolesTolerance li').each(function () {
+            if ($(this).find('input').is(":checked")) {
+                centreToleranceList.push({
+                    centreId: $(this).find('input').attr('id')
+                })
+            }
+        });
+
+        if (centreToleranceList.length == 0) {
+            modelAlert('Please Select Atleast One Centre To Copy !!!');
+            return;
+        }
+
+        var centerIDT = Number($("#spnCenter_ID").text());
+
+        var dataTol = {
+            CategoryID: $.trim($('#ddlCategorytolerance').val()),
+            SubCategoryID: $.trim($('#ddlSubCategorytolerance').val()),
+            ItemName: $.trim($('#txtItemNametolerance').val()),
+            IsSet: $("input[name='rbIsSet']:checked").val(),
+            CentreID: centerIDT
+        };
+
+        serverCall('Services/ToleranceLevel.asmx/BindGridItems', dataTol, function (responses) {
+            ssT = JSON.parse(responses);
+            if (ssT.length > 0) {
+
+                var dataT = {
+                    CentreID: centerIDT,
+                    ItemListt: ssT,
+                    IsSet: Number($("input[name='rbIsSet']:checked").val())
+                };
+
+                var set = Number($("input[name='rbIsSet']:checked").val());
+
+                $(btnCopy).attr('disabled', true).val('Submitting...');
+                serverCall('../EDP/CenterManagement/CenterManagement.asmx/CopyCenterToleranceItems', { ItemListt: ssT, IsSet: set, centreTolList: centreToleranceList }, function (ressT) {
+                    $responseData = JSON.parse(ressT);
+                    modelAlert($responseData.response, function (ressT) {
+                        if ($responseData.status) {
+                            $("#divToleranceMappingModel").hide();
+                            $(btnCopy).removeAttr('disabled').val('Save');
+                        }
+                        else
+                            $(btnCopy).removeAttr('disabled').val('Save');
+                    });
+                });
+            }
+        });
+    }
+
+    function saveToleranceItems() {
+        $('#lblMsg').text('');
+        if ($('#ddlCategorytolerance').val() == "0") {
+            $('#lblMsg').text('Please Select Category');
+            return false;
+        }
+        if ($('#ddlSubCategorytolerance').val() == "0") {
+            $('#lblMsg').text('Please Select SubCategory');
+            return false;
+        }
+        var IsCentrewiseTolerance = $("#spnCenterwiseTolerance").text();
+        var centeridTolerance;
+        if (IsCentrewiseTolerance == 1) {
+            centeridTolerance = $.trim($("#spnCenter_ID").text());
+        }
+        $('#btnSaveTolerance').attr('disabled', true).val('Submitting...');
+
+        var data = {
+            CentreID: centeridTolerance,
+            ItemList: searchedItems,
+            IsSet: Number($("input[name='rbIsSet']:checked").val())
+        };
+
+        serverCall('Services/ToleranceLevel.asmx/saveToleranceItems', data, function (responset) {
+            $responseData = JSON.parse(responset);
+            modelAlert($responseData.response, function (response) {
+                if ($responseData.status) {
+                    //  window.location.reload();
+                   // SearchToleranceItems();
+                    loadCentreToModelTolerance($("#spnCenter_ID").text(), $("#spnCenter_Name").text());
+                    $('#btnSaveTolerance').removeAttr('disabled').val('Save');
+                }
+                else {
+                    $('#btnSaveTolerance').removeAttr('disabled').val('Save');
+                }
+            });
+        });
+    }
+
+    var loadCentreToModelTolerance = function (centreId, CentreName) {
+        $("#lblCentreFromTolerance").text(CentreName);
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetALLCentre', {}, function (response) {
+            var responseData = JSON.parse(response);
+            var responseCentreTo = responseData.filter(function (i) { return i.CentreID != centreId });
+            var ulCentreRolesTolerance = $('#ulCentreRolesTolerance');
+            ulCentreRolesTolerance.find('li').remove();
+            if (responseCentreTo.length > 0) {
+                $.each(responseCentreTo, function (i) {
+                    var aa = '<li  role="menuitem"><a>'
+                        + '<label class="trimList"  title="' + this.CentreName + '" >'
+                        + '<input   id="' + $.trim(this.CentreID) + '" value="' + this.CentreID + '" class="ui-all" type="checkbox" '
+                        + ' >' + this.CentreName + '</label></a> </li>';
+                    ulCentreRolesTolerance.append(aa);
+                });
+
+
+                $("#divToleranceMappingModel").showModel();
+            }
+            else
+                modelAlert("Only One Centre Exist in the System !!!");
+
+        });
+    }
+
+    
+</script>

@@ -1,0 +1,292 @@
+﻿
+<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="DeptIndent">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-24" style="text-align: center;">
+                    <label>
+                        <strong style="font-size: medium;">Department Indent Mapping</strong>
+                    </label>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Search Criteria </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-22">
+                     <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3">
+                             <label class="pull-left">
+                                Filter
+                            </label>
+                            <b class="pull-right">:</b>
+
+                        </div>
+                        <div class="col-md-3">
+                            <select id="ddlFilterTypeDI" onchange="onDIFilterTypeChange(this);"> 
+                                <option value="0">Search</option>
+                                <option value="1">All Checked</option>
+                                <option value="2"> All UnChecked</option>
+                             
+                            </select>
+                        </div>
+                        <div class="col-md-7">
+                            <input type="text" id="txtSearchDI" onkeyup="$searchDIByWord(event);" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row divBlockDeptIndent" style="margin: 0px;">
+                <div class="Purchaseheader">
+                    Department Indent
+                </div>
+
+                <div class="row" style="padding: 0px; margin: 0px;">
+                    <label style="cursor: pointer">
+                        <input type="checkbox" onchange="onSelectAllDI(this)" /><b> All</b> </label>
+                </div>
+                <div id="divDeptIndentMapping" class="clearDiv" style="font-size:10pt;overflow:scroll;height:200px;"></div>
+            </div>
+            <div class="row" style="">
+                <div class="col-md-24 textCenter">
+                     <input type="button" id="btnSaveDI" value="Save" class="save margin-top-on-btn" onclick="saveDIMappingDetails(this)" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------Modal Pop up---------------------------------------------------------------------------------->
+<div id="divDIMappingModel" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content" style="min-width: 500px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="divDIMappingModel" aria-hidden="true">&times;</button>
+                    <b class="modal-title">Copy Same Doctors</b>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-22">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Copy Centre Name 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <label id="lblCentreFromDI" class="pull-left patientInfo" style="font-weight: bold"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Select Centre To Copy 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <ul id="ulCentreDITo" style="list-style-type: none; margin-left: -10px;"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" onclick="copyCentreDI(this)" class="save" style="font-size:10pt;">Save</button>
+                    <button type="button" data-dismiss="divDIMappingModel" onclick="CloseDIModal()" style="font-size:10pt;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------------------------------END----------------------------------------------------------------------------->
+
+<script id="templateMappingDeptIndent" type="text/html">
+		<#
+		var dataLength=templateDataDI.length;
+		window.status="Total Records Found :"+ dataLength;
+		var objRow;
+		var status;
+		for(var j=0;j<dataLength;j++)
+		{
+		objRow = templateDataDI[j];
+		#>
+			
+            
+            <div class="row" style="padding: 0px;margin: 0px;">
+              <label style="cursor:pointer"> <input type="checkbox"
+                  
+                  <#if(objRow.IsDepartmentIndent>0 ){#>
+                       checked
+                  <#}#>
+                   /><span>  <#=objRow.TextField#></span> </label>
+                <label class="hidden lblData"> <#= JSON.stringify(objRow) #></label>
+            </div>
+            	
+		<#}#>     
+	</script>
+
+<script type="text/javascript">
+
+    function CloseDIModal() {
+        $("#divDIMappingModel").hide();
+    }
+
+    var GetAllRolesForDIMappings = function (callback) {
+        var DIcenterid = $.trim($("#spnCenter_ID").text());
+        serverCall('../EDP/Services/CentreWiseMapping.asmx/GetAllMappings', { centreID: DIcenterid }, function (responseDI) {
+            var responseData = JSON.parse(responseDI);
+           // templateData = responseData.dtRoles;
+
+            bindDIIndentMappingDetails(0, responseData.dtRoles);
+            callback(responseData);
+        });
+    }
+
+    var bindDIIndentMappingDetails = function (isRoleChecedCheck, responseData) {
+        templateDataDI = [];
+
+        templateDataDI = responseData.filter(function (i) { return i.MapID > 0 && i.IsStore > 0 });
+
+        var divDeptIndentMapping = $('#divDeptIndentMapping');
+        var parseHTML = $('#templateMappingDeptIndent').parseTemplate(templateDataDI);
+        divDeptIndentMapping.html(parseHTML);
+        var totalChecked = templateDataDI.filter(function (i) { return i.IsDepartmentIndent > 0 });
+        if (templateDataDI.length == totalChecked.length)
+            divDeptIndentMapping.closest('.divBlockDeptIndent').find('.row:first input[type=checkbox]').prop('checked', true);
+    }
+
+    var onSelectAllDI = function (el) {
+        $(el).closest('.divBlockDeptIndent').find('.clearDiv').find('input[type=checkbox]').prop('checked', el.checked);
+    }
+
+    var $searchDIByWord = function (e) {
+        if (e.target.value.length >= 3)
+            $('.divBlockDeptIndent .clearDiv').find('.row').show().find('span').not(":containsIgnoreCase('" + e.target.value + "')").closest('.row').hide();
+        else if (e.target.value.length == 0)
+            $('.divBlockDeptIndent .clearDiv').find('.row').show();
+    }
+
+    var onDIFilterTypeChange = function (el) {
+        var filterType = Number(el.value);
+        var txtSearchDI = $('#txtSearchDI');
+        if (filterType == 0) {
+            txtSearchDI.prop('disabled', false);
+            $('.divBlockDeptIndent .clearDiv').find('.row').show();
+        }
+        else if (filterType == 1) {
+            txtSearchDI.val('').prop('disabled', true);
+            $('.divBlockDeptIndent .clearDiv').find('.row').hide();
+            $('.divBlockDeptIndent .clearDiv').find('.row input[type=checkbox]:checked').closest('.row').show();
+        }
+        else if (filterType == 2) {
+            txtSearchDI.val('').prop('disabled', true);
+            $('.divBlockDeptIndent .clearDiv').find('.row').show();
+            $('.divBlockDeptIndent .clearDiv').find('.row input[type=checkbox]:checked').closest('.row').hide();
+
+        }
+    }
+
+    var getDIMappingDetails = function (callback) {
+        var centreID = Number($("#spnCenter_ID").text());
+        var deptIndentMapping = [];
+
+        $('#divDeptIndentMapping').find('input[type=checkbox]:checked').each(function () {
+            var tdData = JSON.parse($(this).closest('.row').find('.lblData').text());
+            deptIndentMapping.push({
+                centreID: centreID,
+                valueField: tdData.ValueField
+            });
+        });
+
+        callback({ centreID: centreID, deptIndentMapping: deptIndentMapping });
+    }
+
+    var saveDIMappingDetails = function () {
+        getDIMappingDetails(function (data) {
+            serverCall('../EDP/CenterManagement/CenterManagement.asmx/SavesDIMappingsDetails', data, function (resposneDI) {
+                var responseData = JSON.parse(resposneDI);
+                modelAlert(responseData.response, function () {
+                    if (responseData.status)
+                        loadCentreToModelDI($("#spnCenter_ID").text(), $("#spnCenter_Name").text());
+                });
+            });
+        });
+    }
+
+    var loadCentreToModelDI = function (centreId, CentreName) {
+        $("#lblCentreFromDI").text(CentreName);
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetALLCentre', {}, function (response) {
+            var responseData = JSON.parse(response);
+            var responseCentreTo = responseData.filter(function (i) { return i.CentreID != centreId });
+            var ulCentreDITo = $('#ulCentreDITo');
+            ulCentreDITo.find('li').remove();
+            if (responseCentreTo.length > 0) {
+                $.each(responseCentreTo, function (i) {
+                    var aa = '<li  role="menuitem"><a>'
+                        + '<label class="trimList"  title="' + this.CentreName + '" >'
+                        + '<input   id="' + $.trim(this.CentreID) + '" value="' + this.CentreID + '" class="ui-all" type="checkbox" '
+                        + ' >' + this.CentreName + '</label></a> </li>';
+                    ulCentreDITo.append(aa);
+                });
+
+
+                $("#divDIMappingModel").showModel();
+            }
+            else
+                modelAlert("Only One Centre Exist in the System !!!");
+
+        });
+    }
+
+    var copyCentreDI = function (btnCopy) {
+        var centreDIList = [];
+        $('#ulCentreDITo li').each(function () {
+            if ($(this).find('input').is(":checked")) {
+                centreDIList.push({
+                    centreId: $(this).find('input').attr('id')
+                })
+            }
+        });
+
+        if (centreDIList.length == 0) {
+            modelAlert('Please Select Atleast One Centre To Copy !!!');
+            return;
+        }
+
+        var centerID = Number($("#spnCenter_ID").text());
+        $mappedDI = [];
+
+        $('#divDeptIndentMapping').find('input[type=checkbox]:checked').each(function () {
+            var tdDIData = JSON.parse($(this).closest('.row').find('.lblData').text());
+            $mappedDI.push({
+                centreID: centerID,
+                valueField: tdDIData.ValueField
+            });
+        });
+
+        $(btnCopy).attr('disabled', true).val('Submitting...');
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/CopyDICenterAccess', { deptIndentMapping: $mappedDI, centreDEIList: centreDIList }, function (ressdi) {
+            $responseData = JSON.parse(ressdi);
+            modelAlert($responseData.response, function (ressdi) {
+                if ($responseData.status) {
+                    $("#divDIMappingModel").hide();
+                    $(btnCopy).removeAttr('disabled').val('Save');
+                }
+                else
+                    $(btnCopy).removeAttr('disabled').val('Save');
+            });
+        });
+    }
+</script>

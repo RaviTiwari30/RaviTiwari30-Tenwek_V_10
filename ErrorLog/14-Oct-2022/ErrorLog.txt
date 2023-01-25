@@ -1,0 +1,44 @@
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Edp/IPDPackageMaster.aspx/UpdatePackage
+ Time Of Error            : 14-10-2022 11:37:08
+ Error Message            : Data too long for column 'PanelID' at row 1
+ Error Place              :    at ExcuteCMD.DML(MySqlTransaction tnx, String sqlCmd, CommandType commandType, Object inParameters, Object outParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 52
+   at Design_EDP_IPDPackageMaster.UpdatePackage(packagemaster packageMaster, List`1 packageDetails) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\IPDPackageMaster.aspx.cs:line 299
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type               : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Object DML(MySql.Data.MySqlClient.MySqlTransaction, System.String, System.Data.CommandType, System.Object, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Edp/Services/EDP.asmx/SavePackage
+ Time Of Error            : 14-10-2022 14:14:56
+ Error Message            : Incorrect integer value: '' for column 'DoctorID' at row 1
+ Error Place              :    at Package_DoctorVistiDetail.Insert() in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\Package_DoctorVistiDetail.cs:line 83
+   at EDP.SavePackage(Object Packageinfo, List`1 ItemDetail, List`1 DoctorVisitDetail, Int32 IsConsumablesAllow, Int32 IsVaccinationAllow) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\Services\EDP.asmx:line 305
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : Int32 Insert()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 14-10-2022 14:20:30
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Finance_UpdatePanelApproval.btnUpdateBilling_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 336
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.NullReferenceException
+ TargetSite               : Void btnUpdateBilling_Click(System.Object, System.EventArgs)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 14-10-2022 14:20:36
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Finance_UpdatePanelApproval.btnUpdateBilling_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 336
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.NullReferenceException
+ TargetSite               : Void btnUpdateBilling_Click(System.Object, System.EventArgs)

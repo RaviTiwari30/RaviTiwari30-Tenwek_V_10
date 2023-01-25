@@ -1,0 +1,197 @@
+﻿  <script id="templateMapping" type="text/html">
+
+
+       <table class="FixedTables" cellspacing="0" width="100%" rules="all" border="1" id="tblRoleWithBillingType" style="width:100%;border-collapse:collapse;">
+		<#if(responseData.length>0){#>
+		    <thead>
+                <tr  id='Header'>
+                    <th class='GridViewHeaderStyle'>S.No.</th>
+                    <th class='GridViewHeaderStyle'>Centre Name</th>
+                    <th class='GridViewHeaderStyle' style="display:none;">Mapped Panel Group </th>
+                    <th class='GridViewHeaderStyle'>Map Panel Group <br />
+                        <hr  style="width:100%; height:2px; background-color:white;" />
+                         <label class="pull-center" style="font-size:8.75pt; font-weight:normal">
+                             <#
+                              for(var a=0;a<panelGroupList.length;a++)
+		                        {
+		                          #>
+                                 <input id='chkHeader_<#=panelGroupList[a].PanelGroupID#>' type="checkbox" name='chkPanelGroup_Header' onchange="onSelectElem(this)" value='<#=panelGroupList[a].PanelGroupID#>'/>
+                                <label for='chkHeader_<#=panelGroupList[a].PanelGroupID#>'><#=panelGroupList[a].PanelGroup#></label>
+                                  <#}#>
+                         </label>
+                        <br />
+                    </th>
+                </tr>
+		    </thead>
+		 <#}#>
+		    <tbody>
+
+		    <#
+
+		    var dataLength=responseData.length;
+		    window.status="Total Records Found :"+ dataLength;
+		    var objRow;   
+		    var status;
+		    for(var j=0;j<dataLength;j++)
+		    {
+                
+		    objRow = responseData[j];
+		
+		      #>
+                <tr class="trRoleList" <# if(objRow.PanelGroupID !='') {#> style="background-color:lightgreen"  <#}#> >
+                    <td id="tdIndex" class="GridViewLabItemStyle" style="text-align:center"><#=j+1#></td>
+                    <td id="tdData" class="GridViewLabItemStyle" style="text-align:center;display:none"><#=JSON.stringify(objRow)#></td>
+                    <td id="tdRoleName" class="GridViewLabItemStyle" style="text-align:center"><#=objRow.CentreName#></td>
+			        <td id="tdBillingType" class="GridViewLabItemStyle" style="text-align:center; display:none;"><#=objRow.PanelGroup#></td>
+	    		    <td id="tdBillingTypeNew" class="GridViewLabItemStyle" style="text-align:center;">
+                         <label class="pull-center" >
+                             <# for(var a=0;a<panelGroupList.length;a++) { #>
+                                 <input id='chkItem_<#=panelGroupList[a].PanelGroupID#>' class='<#=panelGroupList[a].PanelGroupID#>' type="checkbox" name='chkPanelGroup_<#=objRow.CentreID#>' value='<#=panelGroupList[a].PanelGroupID#>' 
+                                      
+                                      />
+                                <label for='chkItem_<#=panelGroupList[a].PanelGroupID#>'><#=panelGroupList[a].PanelGroup#></label>
+                                  <#}#>
+                         </label>
+	    		    </td>
+				</tr>   
+
+			<#}#>
+        </tbody>
+	 </table>    
+	</script>
+
+    <div  style="margin: 0px; font-size: 13px; height: auto">
+        <div class="POuter_Box_Inventory" style="margin-left: -6px">
+        <div class="Purchaseheader" style="text-align:center">
+            <span id="lblHeader bold">Role-Wise Billing Type Mapping List</span>
+              </div>
+      
+
+
+        <div class="" style="padding-bottom: 0px;">
+
+            <div class="row" style="margin: 0px;">
+                <div class="">
+                
+                </div>
+                <div id="divRoleMapping" style="max-height: 425px; overflow: auto;"></div>
+            </div>
+
+        </div>
+            </div>
+        <div class="POuter_Box_Inventory" style="margin-left: -6px">
+        <div class=" textCenter">
+            <input type="button" id="btnSave" value="Save" class="save margin-top-on-btn" onclick="saveMappingDetails(this)" />
+        </div>
+
+            </div>
+    </div>
+  <script type="text/javascript">
+
+      panelGroupList = [];
+
+      var checkBoxListHTML = "";
+
+      $(document).ready(function () {
+          bindPanelGroup();
+      });
+
+
+      function bindPanelGroup() {
+          serverCall('Services/CentreWiseMapping.asmx/bindPanelGroup', {}, function (response) {
+              panelGroupList = JSON.parse(response);
+
+          });
+      }
+
+
+      var getMappings = function (RoleID, callback) {
+
+          serverCall('RoleManager.aspx/GetCentreWithPanelGroupMappings', { RoleID: RoleID }, function (response) {
+              responseData = JSON.parse(response);
+
+              var divRoleMapping = $('#divRoleMapping');
+              var parseHTML = $('#templateMapping').parseTemplate(responseData);
+              divRoleMapping.html(parseHTML).customFixedHeader();
+              callback(responseData);
+          });
+      }
+
+
+
+      var saveMappingDetails = function () {
+          getMappingDetails(function (data) {
+              serverCall('RoleManager.aspx/SaveRoleWiseCentrePanelGroup', data, function (resposne) {
+                  var responseData = JSON.parse(resposne);
+                  modelAlert(responseData.response, function () {
+                      if (responseData.status)
+                          window.location.reload();
+                  });
+              });
+          });
+      }
+
+
+
+      var checkAlreadyMapped = function () {
+
+          $('#divRoleMapping').find('#tblRoleWithBillingType tbody tr').each(function (i, r) {
+              debugger;
+              var rowId = $(this);
+              var tdData = JSON.parse(rowId.find('#tdData').text());
+              if (tdData.panelGroupID != null || tdData.PanelGroupID != '' || tdData.PanelGroupID != 0) {
+                  var PanelGroups = tdData.PanelGroupID.split(',');
+                  checkBoxList = rowId.find('input[type=checkbox][name=chkPanelGroup_' + tdData.CentreID + ']');
+                  $.each(PanelGroups, function (j, r) {
+                      $.each(checkBoxList, function (k, r) {
+                          var chkid = "#chkItem_" + $(checkBoxList[k]).val();
+
+                          if ($(checkBoxList[k]).val() == PanelGroups[j])
+                              $(rowId.find(chkid)).prop('checked', true);
+                      });
+                  });
+              }
+
+
+          });
+
+      }
+      var getMappingDetails = function (callback) {
+
+          debugger;
+
+          var roleID = Number($("#txtRoleID").val());
+          var mappedRolesWisePanelGroup = [];
+          $('#divRoleMapping').find('#tblRoleWithBillingType tbody tr').each(function (i, r) {
+              var tdData = JSON.parse($(this).find('#tdData').text());
+              var selectedPanelGroups = $(this).find('input[type=checkbox][name=chkPanelGroup_' + tdData.CentreID + ']:checked');
+
+              var panelGroupIDs = "";
+              if (selectedPanelGroups.length > 0) {
+                  $.each(selectedPanelGroups, function (k, r) {
+
+                      if (panelGroupIDs == "")
+                          panelGroupIDs = $(selectedPanelGroups[k]).val();
+                      else
+                          panelGroupIDs = panelGroupIDs + "," + $(selectedPanelGroups[k]).val();
+                  });
+              }
+              mappedRolesWisePanelGroup.push({
+                  centreID: tdData.CentreID,
+                  roleID: roleID,
+                  PanelGroupIDs: panelGroupIDs
+              });
+          });
+
+          callback({ RoleID: roleID, MappedRolesWisePanelGroup: mappedRolesWisePanelGroup });
+      }
+
+      var onSelectElem = function (el) {
+          if ($(el).is(':checked'))
+              $('.' + $(el).val()).prop('checked', true);
+          else
+              $('.' + $(el).val()).prop('checked', false);
+      }
+
+    </script>
+    

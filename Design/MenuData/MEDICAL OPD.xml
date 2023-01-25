@@ -1,0 +1,64 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>12</ID>
+    <MenuName>Password</MenuName>
+    <Items>
+      <URLName>/Design/Employee/ChangePassword.aspx</URLName>
+      <DispName>ChangePassword</DispName>
+      <MenuID>12</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>16</ID>
+    <MenuName>Requisition</MenuName>
+    <Items>
+      <URLName>/Design/Store/CreateIndentGeneral.aspx</URLName>
+      <DispName>Create General Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/CreateIndent.aspx</URLName>
+      <DispName>Create Medical Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/IndentSearch.aspx</URLName>
+      <DispName>Search</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>51</ID>
+    <MenuName>Tickting</MenuName>
+    <Items>
+      <URLName>/Design/HelpDesk/NewTicket.aspx</URLName>
+      <DispName>NewTicket</DispName>
+      <MenuID>51</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/HelpDesk/Report.aspx</URLName>
+      <DispName>Report</DispName>
+      <MenuID>51</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/HelpDesk/Search.aspx</URLName>
+      <DispName>SearchTicket</DispName>
+      <MenuID>51</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>49</ID>
+    <MenuName>Token</MenuName>
+    <Items>
+      <URLName>/Design/CPOE/CreateToken.aspx</URLName>
+      <DispName>Create Token</DispName>
+      <MenuID>49</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/CPOE/ShowTokenScreen.aspx</URLName>
+      <DispName>Show Token Screen</DispName>
+      <MenuID>49</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

@@ -1,0 +1,153 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>11</ID>
+    <MenuName>MIS</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QA2RXhpZgAASUkqAAgAAAACAAEDBQABAAAAJgAAAAMDAQABAAAAAAAAAAAAAACghgEAj7EAAP/bAEMACAYGBwYFCAcHBwkJCAoMFA0MCwsMGRITDxQdGh8eHRocHCAkLicgIiwjHBwoNyksMDE0NDQfJzk9ODI8LjM0Mv/bAEMBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIABYAFgMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APatXN+Ldf7OeJZtwyZOm3Bz2PtXNNda9fLdWcd/Yb0QJIVfBXcpKkHHpzwa1vFLObQRxXLWzFkYuikkqG5GB6jiuJ0DRzpFnLEt210SsWf9HKgbVK989c/pXLWw8HerKTSS6PT7jopVbLkSTd1uj0Lw7DqVvo0MOrXcV1dIMGZARuHbOerep70Vi+FNKlj1C91UXM6i6/1luH3Rs+R+8wejYGOOD6cUVdGsqkFJJ6kVKahJxuHiOVru5MargJ8hy3XBPPQ+tc6kLLdwzo8yyQMSoWbapJBB3BVG4YJ4NFFbvVamXU67w9dtFBJG0YJJ3ZDf/WooooA//9k=</image>
+    <Items>
+      <URLName>/Design/IPD/BedManagement.aspx</URLName>
+      <DispName>Bed &amp; Ward Occupancy</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MIS/TAT.aspx</URLName>
+      <DispName>Patient TAT Detail</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MIS/Summary.aspx</URLName>
+      <DispName>Summary</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MIS/BedOccupancyReport.aspx</URLName>
+      <DispName>Bed Occupancy</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MIS/BedDetails.aspx</URLName>
+      <DispName>Bed &amp; Ward Details</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/PharmacyAnalysisReport.aspx</URLName>
+      <DispName>Pharmacy MIS</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MIS/Analysis.aspx</URLName>
+      <DispName>Analysis</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MIS/MISNew.aspx</URLName>
+      <DispName>New MIS</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAIAAABL1vtsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAv9JREFUOE+llG9Ik0EYwK8EQQOxQKoZFkEIQRkVSR8ixIl+cJSkH6S+CCopaFhiYYoTE0HHFCc40WEUsxLtD/nBLXFTnDIVdaIba6KTEB0qxt7jNt4d7/Xsn7ncROjlx3Hvce/vnnueu/cEYwz95wMKw8+dvA5jniIiue3Gyg+LTuKByYcfBEOFqll07x3K7EMZkZF8Mtp2IyqKVHMoXd0yZNVb93QrRGcL4u1jvXknVapHOf1TRyiKe+dQmnrCAotQhtcYtgdZY+5NWPmRYgo97D8qCq8ivU+zuCv0ZjoLkLMoBLY0KFHMHUORBood9r0C1yRgaWKAOhGuT2Krekn77HEUas3CVthswWBGuwk9GJpcpxHT6c+FxuSAGQJ2CNw+2wK3Jdiny2rll7Kr5kcGqUXjxW5klN/XeYvqU3g3IqhzuVLElUeFUIp+v07YkyZx9Um44SKuOQtzhA1TeAUbKOBexHBVcQFexnNlUdyreGafYhYtNWvpMoQwjavPkPZUl/qJZ37Ae7iDUQRzQSmjngACpZYR3JDEaxpw7XksvQAtr22AWIhSDK+k5Vo4hUDZPtCzjsJngnNTcG74YXgb9uL++hy8RH7joMJX1MFCrjIWIg9ymnsWjetEvE4GCxL5TWh5nRxK7lJlg4W03jqkUOdwJYgrOxkA8voU4dpz1KbnDUp+sos3dNGVcZBCFvhRGZGlhG7EX9RgwL7OpmfhM5aKqE3HG7p5Qw+0dHUCpLgp2T1QQtruhMtF6OmhKwZIHj+mgG2TtttEnsKPd0CCPeZhXt9KZNdDFBOWnTCHb31MqD7FfhnY7qrgsApbZsFu5CqiYX33l3KQBhT+y978zapbdowsHmDZMfpjZL4gdqk4zlESReD6NCXjxsu4LpGf7OG1b/5WpKjX98sR94EolD4kVqOsTiRWfMyOofUi19scl0riep/vHq7HTVdI89VAFPAjeKycye+cyYf2X2ZzlSaJ0qztbfT0ZJDuLB+ZpPM+UdyF7AYUkS7oMcf/AMkdAOj6D6DkAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/OPD/PatientHistoryDetails.aspx</URLName>
+      <DispName>Patient Related OPD Reports</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MIS/Conversion.aspx</URLName>
+      <DispName>OPD Patient Converted</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/AdmittedPatientList.aspx</URLName>
+      <DispName>Admitted Patient Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/CommonReports/CollectionReport.aspx</URLName>
+      <DispName>Daily Collection</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/CollectionOrRevenuReport.aspx</URLName>
+      <DispName>Collection Revenu Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/OPD/Reports/DoctorChargesDetails.aspx</URLName>
+      <DispName>Doctor wise App. Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/DiagnisticsDuesReport.aspx</URLName>
+      <DispName>Diagnostics Dues</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MRD/ViewICDPatientWise.aspx</URLName>
+      <DispName>Patient ICD Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/Reports/ABCReport.aspx</URLName>
+      <DispName>ABC Analysis</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/NewAgeingReport.aspx</URLName>
+      <DispName>Aging Analysis</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Payroll/MiscellaneousReport.aspx</URLName>
+      <DispName>Miscellaneous Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MRD/MRDDashboard.aspx</URLName>
+      <DispName>MRD All Reports</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MRD/MRD_Report.aspx</URLName>
+      <DispName>MRD Analysis Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/design/MRD/Form_l.aspx</URLName>
+      <DispName>Notifiable Detail L</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Lab/Form_L.aspx</URLName>
+      <DispName>Notifiable Disease (Government)</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MRD/NotifiableDiseaseReport.aspx</URLName>
+      <DispName>Notifiable Disease Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/OPD/MonthWiseDiagnosisReport.aspx</URLName>
+      <DispName>Statstic Report OPD_Ward</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/OPD/StaticAdmissionReport.aspx</URLName>
+      <DispName>IPD Statistics Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/OPD/StatiRecordOpd.aspx</URLName>
+      <DispName>OPD Statistics Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/CommonReports/NABHReportNew.aspx</URLName>
+      <DispName>NABH Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

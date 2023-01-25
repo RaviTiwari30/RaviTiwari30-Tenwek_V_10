@@ -1,0 +1,292 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto; padding: 0px" class="row col-md-24">
+    <div id="divMedicinePrescribe">
+        <div class="row">
+            <div class="col-md-4">
+                <select>
+                    <option>All</option>
+                  <!--  <option>Favorite</option>-->
+                </select>
+            </div>
+            <div class="col-md-13">
+                <input type="text" name="name" autocomplete="off" placeholder="Search Procedure" value="" onkeyup="$searchProceduresByWord(event)" autocomplete="off" id="Text1" />
+            </div>
+            <div  class="col-md-3">
+                Qty.
+            </div>
+            <div  class="col-md-4">
+                 <input type="text" autocomplete="off" id="txtProcedureQty" value="1" onlynumber="2" max-value="99"  onkeypress='$commonJsNumberValidation(event)' onkeyDown='$commonJsPreventDotRemove(event)' onkeyup="onProcedureQtyChange(event)"  placeholder="Please Enter Qty." />
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-md-10">
+                <b>Prescription Date : </b>
+            </div>
+             <div  class="col-md-14">
+                 <input type="text" readonly="readonly" id="txtProPrescriptionDate" placeholder="Enter Date" />
+            </div>
+
+        </div>
+       
+        <div class="row">
+            <div class="col-md-24">
+                <div style="height: 300px" id="listProcedure" class="chkList-Control">
+                    <ul id="procedureListMenu"></ul>
+                </div>
+            </div>
+        </div>
+         <div  class="row">
+            <div class="col-md-24">
+                <input type="text" autocomplete="off" id="txtOtherProcedures" onkeyup="onOtherProcedurePrescriptionAdd(event)" placeholder="Write Other Procedure" data-title="Prees Enter To Add on Prescription" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-24">
+            <textarea style="min-height: 61px;" placeholder="Enter Procedure Remarks" id="txtProcedureRemarks" onkeyup="onPrescribeProcedureRemarkChange(event)"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script id="prescribedInvestigationScript">
+    var selectedInvestigation = {};
+    var initInvestigationSearch = function () {
+
+    }
+    var getProcedures = function (callback) {
+        var transactionId = $.trim($('#lblTransactionId').text());
+        serverCall('../CPOE/services/PrescribeServices.asmx/ProcedureItemSearch', { TransactionId: transactionId }, function (response) {
+            var responseData = $.map(JSON.parse(response), function (item) {
+                return {
+                    label: item.ProName,
+                    val: item.NewItemID,
+                    TnxType: item.TnxType,
+                    SubCategoryID: item.SubCategoryID,
+                    CategoryID: item.CategoryID,
+                    Name: item.Name,
+                    RateEditable: item.RateEditable,
+                    Type_ID: item.Type_ID
+                }
+            });
+            callback(responseData);
+        })
+    }
+
+    var prescribedProcedureInit = function (callback) {
+        var procedureListMenu = $('#procedureListMenu');
+        getProcedures(function (data) {
+            $.each(data, function (i) {
+                var aa = '<li style="max-width: 99%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"   role="menuitem"><a><label style="cursor:pointer" title="' + this.label + '" ><input  type="checkbox" id="' + $.trim(this.val) + '" onchange="onProcedureSelect(this); "np-data="' + encodeURIComponent(JSON.stringify(this)) + '" value="' + this.val + '" class="ui-all">' + this.label + '</label></a></li>';
+                procedureListMenu.append(aa);
+            });
+            callback();
+        });
+    }
+
+
+
+    var onProcedureSelect = function (elem) {
+        var chk = $(elem).closest('ul').find('input:checkbox:checked');
+
+        if (chk.length == '1') {
+            //alert(chk.length);
+            $("#chkHeaders_8").prop('checked', true);
+        }
+        var checked = $(elem).is(':checked');
+        $(elem).closest('ul').find('li a label').removeClass('selectedPreItem');
+        if (checked) {
+            $(elem).closest('li').find('a label').addClass('selectedPreItem');
+            var closestli = $(elem).closest('li');
+            $(closestli).css({ 'background': '#80808052' });
+            getProcedurePrescriptionDetails(function (data) {
+                if (data.quantity == 0)
+                {
+                    modelAlert("Please Enter The Quantity", function () {
+                        $(elem).prop('checked', false);
+                        $(elem).closest('ul').find('li a label').removeClass('selectedPreItem');
+                        $('#txtProcedureQuantity').focus();
+                    });
+                    return;
+                }
+                data.itemID = elem.value,
+                data.name = $(closestli).find('a label').text(),
+                data.data =decodeURIComponent($(elem).attr('np-data')),
+                data.IsIssue = 0,
+                data.isPreviousEntry = 0
+                addProcedurePreviewRow(data, function () { });
+                disabledPrint(true);
+            });
+        }
+        else {
+            $(elem).closest('li').css({ 'background': '' });
+            deleteProcedurePreviewRow(elem.value);
+            disabledPrint(true);
+            chk = $(elem).closest('ul').find('input:checkbox:checked');
+            if (chk.length == 0) {
+                $("#chkHeaders_8").prop('checked', false);
+            }
+        }
+    }
+
+    var getProcedurePrescriptionDetails = function (callback) {
+        callback({
+            quantity: Number($('#txtProcedureQuantity').val()),
+            remarks: $('#txtProcedureRemarks').val('').val(),
+            prescriptionDate: $('#txtProPrescriptionDate').val(),
+        })
+    }
+
+    var addProcedurePreviewRow = function (data) {
+
+        var procedureQty = Number($("#txtProcedureQty").val());
+        if(data.isPreviousEntry==0)
+            data.quantity = procedureQty;
+
+        $('#divProcedurePreview ul').append('<li  class="prescribedItem" data-IsIssue="' + data.IsIssue + '" title="Double Click To Remove"  ondblclick="onPreviewProcedureRemove(this)" onclick="onSelectProcedure(this) " data-name="' + data.name + '"    data-quantity="' + data.quantity + '"  data-prescriptionDate="' + data.prescriptionDate + '" style="list-style: none;font-size: 9px;font-weight: bold;" id="' + (data.IsIssue == 0 ? $.trim(data.itemID) : '') + '" value="' + data.itemID + '">&#10004; <span class="spnProcedureQty">' + data.quantity + '</span> ' + data.name + ' ( <span style="color:red;" class="spnPrescriptionDate">' + data.prescriptionDate + '</span> )<br/><div style="font-weight: 500;">' + (data.remarks.length > 0 ? '&nbsp;Remark:' : '') + data.remarks + '</div></li>')
+    }
+
+    var onPreviewProcedureRemove = function (elem) {
+        modelConfirmation('Delete Confirm ?', 'Do you want to delete the selected data from this screen', 'Yes', 'No', function (response) {
+            if (response) {
+                var IsIssued = Number($(elem).attr('data-IsIssue'));
+                var procedureID = $.trim(elem.id);
+                if (IsIssued == 0) {
+                    var procedureElem = $('#listProcedure').find('#' + procedureID).prop('checked', false);
+                    var li = $(procedureElem).closest('li').css({ 'background': '' });
+                    $(li).find('a label').removeClass('selectedPreItem');
+                    deleteProcedurePreviewRow(procedureID);
+                    disabledPrint(true);
+                }
+            }
+        });
+    }
+	 //dev
+    var onSelectProcedure = function (e)
+    {
+        $(e).closest('ul').find('li').removeClass('selectedMedicine');
+        $(e).addClass('selectedMedicine');
+    }
+    onProcedureQtyChange = function (e) {
+        proQty = Number(e.target.value);
+        if(proQty<=0)
+            proQty=1;
+
+        var itemname = $('#divProcedurePreview ul').find('.selectedMedicine').attr('data-name');
+        $('#divProcedurePreview ul').find('.selectedMedicine').attr('data-quantity', proQty);
+        $('#divProcedurePreview ul').find('.selectedMedicine').find('.spnProcedureQty').text(proQty);
+    }
+
+    var deleteProcedurePreviewRow = function (itemID) {
+        var table = $('#divProcedurePreview ul');
+        $(table).find('#' + itemID).remove();
+    }
+
+    var onPrescribeProcedureRemarkChange = function (e) {
+        var lastProcedure = $('#divProcedurePreview ul li').last();
+        var value = e.target.value;
+        if (e.target.value.length > 0)
+            $(lastProcedure).find('div').html('&nbsp;Remark: ' + value);
+        else
+            $(lastProcedure).find('div').html('');
+    }
+
+    var $searchProceduresByWord = function (e) {
+        $('#procedureListMenu').find('li').show();
+        // if (e.target.value.length >= 1)
+            $('#procedureListMenu').find('li a label').show().not(":containsIgnoreCase('" + e.target.value + "')").closest('li').hide();
+       // else if (e.target.value.length == 0)
+           
+    }
+
+
+    var bindPatientProcedureDetails = function (data) {
+        $('#divProcedurePreview ul').find('li').remove();
+        $(data.proceduresList).each(function (index) {
+            this.isPreviousEntry = 1;
+            addProcedurePreviewRow(this);
+            var selectedChecked = $('#procedureListMenu').find('#' + this.itemID).prop('checked', true);
+            if (data.proceduresList.length == index + 1)
+                $(selectedChecked).closest('label').addClass('selectedPreItem');
+        });
+    }
+
+
+    onOtherProcedurePrescriptionAdd = function (e) {
+        var code = (e.keyCode ? e.keyCode : e.which);
+        var medicineName = $.trim(e.target.value);
+        var othProcedureCount = $('#divProcedurePreview ul').find('[id^=OTH]').length;
+        if (medicineName.length < 1) {
+            modelAlert('Please Enter Procedure Name', function () {
+            });
+            return false;
+        }
+        if (code == 13) {
+            getProcedurePrescriptionDetails(function (data) {
+                data.name = e.target.value;
+                data.itemID = 'OTH' + othProcedureCount;
+                data.data = {},
+                data.isOutSource = 0,
+                data.IsIssue = 0,
+                data.isPreviousEntry = 0,
+                addProcedurePreviewRow(data, function () { });
+                disabledPrint(true);
+                e.target.value = '';
+            });
+        }
+    }
+
+    today = '';
+
+    var $getCurentDate = function (callback) {
+        serverCall('../common/CommonService.asmx/getDate', {}, function (response) {
+            today = response;
+            $('#txtProPrescriptionDate').val(response);
+            callback(true);
+        });
+    }
+
+    $(document).ready(function () {
+        $getCurentDate(function (response) {
+            $('#txtProPrescriptionDate').datepicker({
+                changeYear: true,
+                dateFormat: 'd-MM-yy',
+                changeMonth: true,
+                buttonImageOnly: true,
+                minDate: today,
+                onSelect: function (dateText, inst) {
+                    $(this).val(dateText);
+                    onProcedurePrescriptionDateChange(dateText);
+                }
+            });
+        });
+        prescribedProcedureInit(function () {
+            loadViewData(function (patientPrescriptionDetails) {
+                bindPatientProcedureDetails(patientPrescriptionDetails);
+                $('#listProcedure').slimScroll({
+                    height: '200px',
+                    width: '100%',
+                    color: '#028fff',
+                });
+            });
+        });
+    });
+   
+    var onProcedurePrescriptionDateChange = function (prescriptionDate) {
+
+
+        var isIssue = Number($('#divProcedurePreview ul').find('.selectedMedicine').attr('data-isissue'));
+        if (isIssue == 1) {
+            modelAlert("Selected Procedure Already Issued to Patient. So You have Not Changed Anything..", function () {
+                $('#divProcedurePreview ul').find('.selectedMedicine').removeClass('selectedMedicine');
+            });
+        }
+        else {
+
+            $('#divProcedurePreview ul').find('.selectedMedicine').attr('data-prescriptiondate', prescriptionDate);
+            $('#divProcedurePreview ul').find('.selectedMedicine').find('.spnPrescriptionDate').text(prescriptionDate);
+        }
+
+    }
+
+</script>

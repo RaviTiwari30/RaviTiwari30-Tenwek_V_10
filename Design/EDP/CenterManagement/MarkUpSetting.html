@@ -1,0 +1,449 @@
+﻿
+<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="MarkUp">
+        <div class="row">
+            <div class="row">
+                    <div class="col-md-24" style="text-align: center;">
+                        <label>
+                            <strong style="font-size: medium;">Centre wise Markup Setting</strong>
+                        </label>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </div>
+                </div>
+            <div class="row">
+                    <div class="col-md-24  Purchaseheader">
+                        <label class="pull-left">
+                            <strong>Search Criteria </strong>
+                        </label>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-22">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Category
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="ddlCategoryM" onchange="$bindSubCategoryM($('#ddlCategoryM').val(),function(){});"></select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Sub Category
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="ddlSubCategoryM" onchange="$SearchMarkupDetails();" ToolTip="Select SubCategory"></select>
+                        </div>
+                        <div class="col-md-3 isCentreWise" style="display:none;">
+                            <label class="pull-left">
+                                Centre Name 
+                            </label>
+                            <b class="pull-right isCentreWise">:</b>
+                        </div>
+                        <div class="col-md-5 isCentreWise" style="display:none;">
+                            <select id="ddlCentre" onchange="$SearchMarkupDetails();"></select>
+                        </div>
+                    </div>
+                    <div class="row" style="display: none;">
+                        <div class="row">
+                            <div class="col-md-24 textCenter">
+                                <input type="button" id="btnSearch" onclick="$SearchMarkupDetails()" class="save" value="Search" tabindex="6" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="row"></div>
+                <div class="row" id="dvListM" style="display: none;">
+                        <div class="col-md-24 Purchaseheader">
+                            <label class="pull-left">
+                            <strong>Markup List</strong>
+                            </label>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-24" style="text-align: center;">
+                                <div id="dvMarkupList"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="dvSaveM" style="display: none;">
+                        <div class="row">
+                            <div class="col-md-24 textCenter">
+                                <input type="button" id="btnSave" onclick="savePerformingItems()" class="save" value="Save" tabindex="7" />
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------Modal Pop up---------------------------------------------------------------------------------->
+<div id="divItemMarkupMappingModelM" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content" style="min-width: 500px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="divItemMarkupMappingModelM" aria-hidden="true">&times;</button>
+                    <b class="modal-title">Copy Same Item Mapping</b>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-22">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Copy Centre Name 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <label id="lblCentreFromM" class="pull-left patientInfo" style="font-weight: bold"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Select Centre To Copy 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <ul id="ulCentreToM" style="list-style-type: none; margin-left: -10px;"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" onclick="copyCentreMarkUpSetting(this)" class="save" style="font-size:10pt;">Save</button>
+                    <button type="button" data-dismiss="divItemMarkupMappingModelM" onclick="closeM()" style="font-size:10pt;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------------------------------END----------------------------------------------------------------------------->
+
+<script id="tb_MarkupDetails" type="text/html">
+        <table  id="tableMarkupDetails" cellspacing="0" rules="all" border="1" style="width:50%;border-collapse :collapse;">
+            <thead>
+                <tr id="TrHeader">
+                    <th class="GridViewHeaderStyle" scope="col"style="text-align:center;width: 10px;"  >S/No.</th>
+                    <th class="GridViewHeaderStyle" scope="col" style="text-align:center;">From Rate</th>
+                    <th class="GridViewHeaderStyle" scope="col" style="text-align:center;">To Rate</th>
+                    <th class="GridViewHeaderStyle" scope="col" style="text-align:center;">MarkUp(%)</th>
+                    <th class="GridViewHeaderStyle" scope="col" style="text-align:center;"></th>
+                    <th class="GridViewHeaderStyle" scope="col" style="text-align:center;"></th>
+                    <th class="GridViewHeaderStyle" scope="col" style="width:80px;display:none;">Id</th>
+                </tr>
+            </thead>
+            <tbody>
+            <#                       
+                var dataLength=MarkupDetails.length;
+                for(var j=0;j<dataLength;j++)
+                {           
+                    var objRow = MarkupDetails[j];
+            #>              
+                <tr onmouseover="this.style.color='#00F'" onMouseOut="this.style.color=''" id="<#=j+1#>"
+                     <#if(objRow.ID!="0"){#> style='cursor:pointer;background-color:lightgreen;' <#} else {#> style='cursor:pointer;' <#} #>  >   
+                                                                             
+                    <td  class="GridViewLabItemStyle" id="tdSRNo"style="text-align:center;width: 10px;" ><#=j+1#></td>
+                    <td class="GridViewLabItemStyle" id="tdFromRate" style="text-align:right;" ><#=objRow.FromRate#></td>
+                    <td class="GridViewLabItemStyle" id="tdToRate" style="text-align:right;" >
+                        <input type="text" id="txtToRate" class="requiredField IsEdittable" onlynumber="14" style="text-align:left;" decimalplace="4" max-value="10000000" onkeypress="$commonJsNumberValidation(event)" 
+                            onkeydown="$commonJsPreventDotRemove(event)" title="Enter To Rate" style="text-align:right;" value='<#=objRow.ToRate#>'  />
+                    </td>
+                    <td class="GridViewLabItemStyle" id="tdMarkUpPercentage" style="text-align:right;" >
+                            <input type="text" id="txtMarkUpPercentage" class="requiredField"  style="text-align:left;" onlynumber="10" decimalplace="4" max-value="100" onkeypress="$commonJsNumberValidation(event)" 
+                            onkeydown="$commonJsPreventDotRemove(event)" title="Enter MarkUp(%)" style="text-align:right;" value='<#=objRow.MarkUpPercentage#>'  />
+                    </td>
+                    <td class="GridViewLabItemStyle" style="width:5px;">
+                     <img alt="" src="../../Images/Post.gif" class="imgPlus" title="Add New Row" style="cursor:pointer" onclick="AddRow(this)"  /></td>
+
+                       <td class="GridViewLabItemStyle" style="width:5px;">
+                     <img alt="" src="../../Images/Delete.gif" class="imgPlus" title="Delete Row" style="cursor:pointer" onclick="DeleteRow(this)"  /></td>
+
+                    <td class="GridViewLabItemStyle" id="tdID" style="width:80px;display:none"><#=objRow.ID#></td>                         
+                </tr>            
+            <#}#>
+            </tbody>      
+        </table>
+         </script>
+<script type="text/javascript">
+    function closeM() {
+        $("#divItemMarkupMappingModelM").hide();
+    }
+    var $bindCentre = function (callback) {
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/BindCentre', {}, function (response) {
+            $Centre = $('#ddlCentre');
+            var DefaultValue = "Select";
+            var isCentreWiseSubCategoryWise = Number($("#spnCenterSubcategoryMarkup").text());
+            if (isCentreWiseSubCategoryWise == 0)
+                DefaultValue = "Universal";
+            $Centre.bindDropDown({ defaultValue: DefaultValue, data: JSON.parse(response), valueField: 'CentreID', textField: 'CentreName', isSearchAble: true, selectedValue: DefaultValue });
+            callback($Centre.find('option:selected').text());
+        });
+
+    }
+
+    var $bindCategoryM = function (callback) {
+        serverCall('../common/CommonService.asmx/BindCategory', { Type: '7' }, function (response) {
+            $Category = $('#ddlCategoryM');
+            $Category.bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'CategoryID', textField: 'Name', isSearchAble: true, selectedValue: 'Select' });
+            if ($Category.val() != "0") {
+                $bindSubCategory($Category.val(), function () {
+                    callback($Category.find('option:selected').text());
+                });
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        //$bindCentre(function () {
+           // $bindCategory(function () {
+                //$('#dvList,#dvSave').hide();
+
+                //var isCentreWiseSubCategoryWise = Number('<%= Resources.Resource.IsCentrewiseSubCategoryWiseMarkup%>');
+                //if (isCentreWiseSubCategoryWise == 1) {
+                //    $(".isCentreWise").show();
+                //}
+                //else {
+                //    $(".isCentreWise").hide();
+                //}
+           // });
+        //});
+
+        $bindCategoryM(function () { });
+        
+    });
+   
+
+    $bindSubCategoryM = function (categoryID, callback) {
+        if (categoryID == 0)
+            categoryID = '';
+        $subCategory = $('#ddlSubCategoryM');
+        serverCall('../common/CommonService.asmx/BindSubCategory', { Type: '7', CategoryID: categoryID }, function (response) {
+            $subCategory.bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'SubCategoryID', textField: 'Name', isSearchAble: true, selectedValue: 'Select' });
+            callback($subCategory.find('option:selected').text());
+            $SearchMarkupDetails();
+        });
+    }
+
+    var $SearchMarkupDetails = function (callback) {
+        $('#lblMsg').text('');
+        var isCentreWiseSubCategoryWise = Number($("#spnCenterSubcategoryMarkup").text());
+        if (isCentreWiseSubCategoryWise == 1) {
+            if ($('#ddlCentre').val() == "0") {
+                $('#lblMsg').text('Please Select Centre');
+                return false;
+            }
+        }
+        else {
+            //if ($('#ddlCentre').val() != "0") {
+            //    $('#lblMsg').text('Set Only Universal Sub Category wise Markup');
+            //    return false;
+            //}
+
+        }
+        if ($('#ddlCategoryM').val() == "0") {
+            $('#lblMsg').text('Please Select Category');
+            return false;
+        }
+        if ($('#ddlSubCategoryM').val() == "0") {
+            $('#lblMsg').text('Please Select Sub Category');
+            return false;
+        }
+
+        data = {
+            centreID: Number($("#spnCenter_ID").text()),
+            categoryID: $('#ddlCategoryM').val(),
+            subcategoryID: $('#ddlSubCategoryM').val()
+        };
+
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/SearchMarkupDetails', data, function (response) {
+            MarkupDetails = JSON.parse(response);
+            var outputMarkupDetails = $('#tb_MarkupDetails').parseTemplate(MarkupDetails);
+            $('#dvMarkupList').html(outputMarkupDetails).customFixedHeader();
+            var rowNo = Number($("#tableMarkupDetails tbody tr").length);
+            if (rowNo > 1)
+                $("#tableMarkupDetails tbody tr").not(':last').find('.imgPlus').hide();
+
+            $('#dvListM,#dvSaveM').show();
+        });
+    }
+
+    function savePerformingItems() {
+        $('#lblMsg').text('');
+        var isCentreWiseSubCategoryWise = Number($("#spnCenterSubcategoryMarkup").text());
+        if (isCentreWiseSubCategoryWise == 1) {
+            //if ($('#ddlCentre').val() == "0") {
+            //    $('#lblMsg').text('Please Select Centre');
+            //    return false;
+            //}
+        }
+        if ($('#ddlCategoryM').val() == "0") {
+            $('#lblMsg').text('Please Select Category');
+            return false;
+        }
+        if ($('#ddlSubCategoryM').val() == "0") {
+            $('#lblMsg').text('Please Select Sub Category');
+            return false;
+        }
+
+        var IsRateCheck = 0, SelectedRowid = "";
+        $('#tableMarkupDetails tbody tr').each(function (index, row) {
+            if (Number($.trim($(row).find('#tdFromRate').text())) > Number($.trim($(row).find('#txtToRate').val()))) {
+                IsRateCheck = 1;
+                SelectedRowid = row;
+            }
+        });
+
+        if (IsRateCheck == 1) {
+            $('#lblMsg').text('To Rate should be greater than or equal to From Rate');
+            $(SelectedRowid).find('#txtToRate').focus();
+            return false;
+        }
+
+        $('#btnSave').attr('disabled', true).val('Submitting...');
+
+        $MarkUp = [];
+        $('#tableMarkupDetails tbody tr').each(function (index, row) {
+            $MarkUp.push({
+                centreID: $.trim($("#spnCenter_ID").text()),//$('#ddlCentre').val()
+                SubCategoryID: $.trim($('#ddlSubCategoryM').val()),
+                CategoryID: $.trim($('#ddlCategoryM').val()),
+                FromRate: Number($.trim($(row).find('#tdFromRate').text())),
+                ToRate: Number($.trim($(row).find('#txtToRate').val())),
+                MarkupPer: Number($.trim($(row).find('#txtMarkUpPercentage').val())),
+            });
+        });
+
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/saveMarkup', { MarkUpList: $MarkUp }, function (response) {
+            $responseData = JSON.parse(response);
+            modelAlert($responseData.response, function (response) {
+                $SearchMarkupDetails();
+                modelConfirmation('Confirmation ?', 'Do you want to apply Same Markup Setting to Another Centre.', 'Yes Copy To Another Centre', 'Cancel', function (response) {
+                    if (response) {
+                        // $("#divItemMappingModel").showModel();
+                        loadCentreToModelM($("#spnCenter_ID").text(), $("#spnCenter_Name").text());
+                        $(btnSave).removeAttr('disabled').val('Save');
+                    }
+                    else {
+                        // window.location.reload();
+                        $('#btnSave').removeAttr('disabled').val('Save');
+                    }
+                });
+                
+            });
+        });
+    }
+
+    var copyCentreMarkUpSetting = function (btnCopy) {
+        var centreListM = [];
+        $('#ulCentreToM li').each(function () {
+            if ($(this).find('input').is(":checked")) {
+                centreListM.push({
+                    centreId: $(this).find('input').attr('id')
+                })
+            }
+        });
+
+        if (centreListM.length == 0) {
+            modelAlert('Please Select Atleast One Centre To Copy !!!');
+            return;
+        }
+
+        $MarkUp = [];
+        $('#tableMarkupDetails tbody tr').each(function (index, row) {
+            $MarkUp.push({
+                centreID: $.trim($("#spnCenter_ID").text()),//$('#ddlCentre').val()
+                SubCategoryID: $.trim($('#ddlSubCategoryM').val()),
+                CategoryID: $.trim($('#ddlCategoryM').val()),
+                FromRate: Number($.trim($(row).find('#tdFromRate').text())),
+                ToRate: Number($.trim($(row).find('#txtToRate').val())),
+                MarkupPer: Number($.trim($(row).find('#txtMarkUpPercentage').val())),
+            });
+        });
+
+        $(btnCopy).attr('disabled', true).val('Submitting...');
+
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/copyCentreMarkUpSetting', { MarkUpList: $MarkUp, centreList: centreListM }, function (res) {
+            $responseData = JSON.parse(res);
+            modelAlert($responseData.response, function (res) {
+                if ($responseData.status) {
+                    $("#divItemMarkupMappingModelM").hide();
+                    $(btnCopy).removeAttr('disabled').val('Save');
+                }
+                else
+                    $(btnCopy).removeAttr('disabled').val('Save');
+            });
+        });
+    }
+
+    var loadCentreToModelM = function (centreId, CentreName) {
+        $("#lblCentreFromM").text(CentreName);
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetALLCentre', {}, function (response) {
+            var responseData = JSON.parse(response);
+            var responseCentreTo = responseData.filter(function (i) { return i.CentreID != centreId });
+            var ulCentreToM = $('#ulCentreToM');
+            ulCentreToM.find('li').remove();
+            if (responseCentreTo.length > 0) {
+                $.each(responseCentreTo, function (i) {
+                    var aa = '<li  role="menuitem"><a>'
+                        + '<label class="trimList"  title="' + this.CentreName + '" >'
+                        + '<input   id="' + $.trim(this.CentreID) + '" value="' + this.CentreID + '" class="ui-all" type="checkbox" '
+                        + ' >' + this.CentreName + '</label></a> </li>';
+                    ulCentreToM.append(aa);
+                });
+
+
+                $("#divItemMarkupMappingModelM").showModel();
+            }
+            else
+                modelAlert("Only One Centre Exist in the System !!!");
+
+        });
+    }
+
+    function AddRow(rowid) {
+        $('#lblMsg').text('');
+        if (Number($(rowid).closest("tr").find('#txtToRate').val()) < Number($(rowid).closest("tr").find('#tdFromRate').text())) {
+            $('#lblMsg').text('To Rate should be greater than or equal to From Rate');
+            $(rowid).closest("tr").find('#txtToRate').focus();
+            return false;
+        }
+
+        $("#tableMarkupDetails").find('.imgPlus').hide();
+        $("#tableMarkupDetails").find('.IsEdittable').attr('disabled', true);
+
+        var FromRate = Number($(rowid).closest("tr").find('#txtToRate').val());
+        var rowNo = Number($("#tableMarkupDetails tbody tr").length) + 1;
+
+        $("#tableMarkupDetails tbody").append("  <tr onmouseover='this.style.color='#00F'' onMouseOut='this.style.color=''' style='cursor:pointer;' id=" + rowNo + " >  " +
+        " <td  class='GridViewLabItemStyle' id='tdSRNo' style='text-align:center;' >" + rowNo + "</td>  " +
+        " <td class='GridViewLabItemStyle' id='tdFromRate' style='text-align:right; '>" + FromRate + "</td> " +
+        " <td class='GridViewLabItemStyle' id='tdToRate' style='text-align:right; '> <input id='txtToRate' style='text-align:left;' onlynumber='14' decimalplace='4' max-value='10000000' onkeypress='$commonJsNumberValidation(event)' onkeydown='$commonJsPreventDotRemove(event)' class='requiredField IsEdittable' type='text' title='Enter To Rate' /> </td> " +
+        " <td class='GridViewLabItemStyle' id='tdMarkUpPercentage' style='text-align:right; '> <input id='txtMarkUpPercentage' style='text-align:left;' onlynumber='10' decimalplace='4' max-value='100' onkeypress='$commonJsNumberValidation(event)' onkeydown='$commonJsPreventDotRemove(event)' class='requiredField' type='text' value='0' title='Enter Markup %' /> </td> " +
+
+        " <td class='GridViewLabItemStyle'><img alt='' src='../../Images/Post.gif' class='imgPlus' title='Add New Row' style='cursor:pointer' onclick='AddRow(this)'  /></td> " +
+         " <td class='GridViewLabItemStyle'><img alt='' src='../../Images/Delete.gif' class='imgPlus' title='Delete Row' style='cursor:pointer' onclick='DeleteRow(this)'  /></td> " +
+
+       " <td class='GridViewLabItemStyle' id='tdID' style='display:none;'>0</td> " +
+        " </tr> ");
+    }
+
+    function DeleteRow(rowid) {
+        $(rowid).closest("tr").remove();
+        $("#tableMarkupDetails tbody tr:last").find('.imgPlus').show();
+        $("#tableMarkupDetails tbody tr:last").find('.IsEdittable').removeAttr('disabled');
+    }
+</script>

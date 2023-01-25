@@ -1,0 +1,170 @@
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/Commonreport.aspx
+ Time Of Error            : 30-09-2022 16:25:21
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1017
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type               : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CancelIPDReport {7C057E71-6A4A-46EF-8F3F-8633CF3431E9}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/Commonreport.aspx
+ Time Of Error            : 30-09-2022 16:25:53
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1017
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CancelIPDReport {ED9BA234-2BA5-4B3F-9E42-31DCFB2D8C7B}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 30-09-2022 18:13:16
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1684
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File AdvanceRoomBookingRpt {71520E81-84D4-4557-B23C-18158F4BE99F}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonService.asmx/getTimeDuration
+ Time Of Error            : 30-09-2022 18:34:26
+ Error Message            : The process cannot access the file 'D:\RaviTiwari\ProductionCode\Tenwek\CacheDependency\LoadMedicineQuantity.txt' because it is being used by another process.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at LoadCacheQuery.LoadMedicineQuantity(String TYPE) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\CacheQuery\LoadCacheQuery.cs:line 855
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 30-09-2022 18:48:43
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 838
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File NewIndent {CB7689DE-7129-41CF-8ECA-7BD83D8EEB09}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/EDP/UserPrivilege/UserPrivilege.asmx/SaveEmployee
+ Time Of Error            : 30-09-2022 19:01:47
+ Error Message            :  is not a valid value for Int32.
+ Error Place              :    at System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.AssignToPropertyOrField(Object propertyValue, Object o, String memberName, JavaScriptSerializer serializer, Boolean throwOnError)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType[T](Object obj)
+   at UserPrivilege.SaveEmployee(Object EmployeeDetail) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\UserPrivilege\UserPrivilege.asmx:line 67
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.Exception
+ TargetSite               : System.Object ConvertFrom(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, System.Object)
+ Inner Exception Type     : System.IndexOutOfRangeException
+ Inner Exception          : Index was outside the bounds of the array.
+ Inner Source             : System
+ Inner Stack Trace        :    at System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/EDP/UserPrivilege/UserPrivilege.asmx/SaveEmployee
+ Time Of Error            : 30-09-2022 19:02:02
+ Error Message            :  is not a valid value for Int32.
+ Error Place              :    at System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.AssignToPropertyOrField(Object propertyValue, Object o, String memberName, JavaScriptSerializer serializer, Boolean throwOnError)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType[T](Object obj)
+   at UserPrivilege.SaveEmployee(Object EmployeeDetail) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\UserPrivilege\UserPrivilege.asmx:line 67
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.Exception
+ TargetSite               : System.Object ConvertFrom(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, System.Object)
+ Inner Exception Type     : System.IndexOutOfRangeException
+ Inner Exception          : Index was outside the bounds of the array.
+ Inner Source             : System
+ Inner Stack Trace        :    at System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/EDP/UserPrivilege/UserPrivilege.asmx/SaveEmployee
+ Time Of Error            : 30-09-2022 19:02:42
+ Error Message            : Fatal error encountered during command execution.
+ Error Place              :    at MSTEmployee.Insert() in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\MSTEmployee.cs:line 1425
+   at UserPrivilege.SaveEmployee(Object EmployeeDetail) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\UserPrivilege\UserPrivilege.asmx:line 108
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.String Insert()
+ Inner Exception Type     : MySql.Data.MySqlClient.MySqlException
+ Inner Exception          : Fatal error encountered attempting to read the resultset.
+ Inner Source             : MySql.Data
+ Inner Inner Exception    : Reading from the stream has failed.
+ Inner Inner Source       : MySql.Data
+ Inner Stack Trace        :    at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)

@@ -1,0 +1,104 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>8</ID>
+    <MenuName>IPD</MenuName>
+    <Items>
+      <URLName>/Design/IPD/Patientsearch.aspx</URLName>
+      <DispName>Patient Search</DispName>
+      <MenuID>8</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/ViewPatientOrder_Sets.aspx</URLName>
+      <DispName>Admission Order</DispName>
+      <MenuID>8</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>58</ID>
+    <MenuName>Diet</MenuName>
+    <Items>
+      <URLName>/Design/Kitchen/PatientDietRequest.aspx</URLName>
+      <DispName>Patient Diet Request</DispName>
+      <MenuID>58</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>12</ID>
+    <MenuName>Password</MenuName>
+    <Items>
+      <URLName>/Design/Employee/ChangePassword.aspx</URLName>
+      <DispName>ChangePassword</DispName>
+      <MenuID>12</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <Items>
+      <URLName>/Design/Store/LowStockDepatment.aspx</URLName>
+      <DispName>Department Low Stock Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/StockLedgerMedical.aspx</URLName>
+      <DispName>Current Stock Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>17</ID>
+    <MenuName>Tools</MenuName>
+    <Items>
+      <URLName>/Design/OPD/DirectPatientReg.aspx</URLName>
+      <DispName>Edit Patient Detail</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>16</ID>
+    <MenuName>Requisition</MenuName>
+    <Items>
+      <URLName>/Design/Store/CreateIndent.aspx</URLName>
+      <DispName>Create Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/IndentSearch.aspx</URLName>
+      <DispName>Search</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>15</ID>
+    <MenuName>Consume</MenuName>
+    <Items>
+      <URLName>/Design/Store/ConsumeItem.aspx</URLName>
+      <DispName>Consume Item</DispName>
+      <MenuID>15</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/DamageDeptTransfer.aspx</URLName>
+      <DispName>Damage Store</DispName>
+      <MenuID>15</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>33</ID>
+    <MenuName>Circular</MenuName>
+    <Items>
+      <URLName>/design/circular/ViewCircular.aspx</URLName>
+      <DispName>View Circular</DispName>
+      <MenuID>33</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>60</ID>
+    <MenuName>Intercom</MenuName>
+    <Items>
+      <URLName>/Design/OPD/IntercomSearch.aspx</URLName>
+      <DispName>Search Intercom</DispName>
+      <MenuID>60</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

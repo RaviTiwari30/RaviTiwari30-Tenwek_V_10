@@ -1,0 +1,330 @@
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/IPD/HistologyForm.aspx
+ Time Of Error            : 1/10/2023 1:27:53 PM
+ Error Message            : The string was not recognized as a valid DateTime. There is an unknown word starting at index 0.
+ Error Place              :    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at Util.GetDateTime(Object obj) in d:\ItdoseCode\ITDOSEUAT\Tenwek_v10\App_Code\DLL\Util.cs:line 133
+   at Design_IPD_HistologyForm.btnSave_Click(Object sender, EventArgs e) in d:\ItdoseCode\ITDOSEUAT\Tenwek_v10\Design\IPD\HistologyForm.aspx.cs:line 304
+ Error On Machine         : ITD-HIS-WS-34
+ Error Machine IP Address : fe80::c50e:68a2:a934:5a8%18
+ Exception Type               : System.FormatException
+ TargetSite               : System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/EDP/services/Frame.asmx/FrameRoleInsert
+ Time Of Error            : 1/10/2023 1:37:42 PM
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''64',41,'EMP001')' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\ItdoseCode\ITDOSEUAT\Tenwek_v10\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\ItdoseCode\ITDOSEUAT\Tenwek_v10\App_Code\DLL\ODBCHelper.cs:line 208
+   at Frame.FrameRoleInsert(List`1 Data) in d:\ItdoseCode\ITDOSEUAT\Tenwek_v10\Design\EDP\Services\Frame.asmx:line 89
+ Error On Machine         : ITD-HIS-WS-34
+ Error Machine IP Address : fe80::c50e:68a2:a934:5a8%18
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/OPD/CardPrint.aspx
+ Time Of Error            : 1/10/2023 3:47:23 PM
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   at System.IO.DirectoryInfo.Create()
+   at All_LoadData.createDocumentFolder(String folderName, String subFolderName, String anotherSubFolderName) in d:\ItdoseCode\ITDOSEUAT\Tenwek_v10\App_Code\BLL\All_LoadData.cs:line 1534
+ Error On Machine         : ITD-HIS-WS-34
+ Error Machine IP Address : fe80::c50e:68a2:a934:5a8%18
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/OPD/CardPrint.aspx
+ Time Of Error            : 1/10/2023 3:47:30 PM
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   at System.IO.DirectoryInfo.Create()
+   at All_LoadData.createDocumentFolder(String folderName, String subFolderName, String anotherSubFolderName) in d:\ItdoseCode\ITDOSEUAT\Tenwek_v10\App_Code\BLL\All_LoadData.cs:line 1534
+ Error On Machine         : ITD-HIS-WS-34
+ Error Machine IP Address : fe80::c50e:68a2:a934:5a8%18
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/OPD/CardPrint.aspx
+ Time Of Error            : 1/10/2023 3:47:41 PM
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   at System.IO.DirectoryInfo.Create()
+   at All_LoadData.createDocumentFolder(String folderName, String subFolderName, String anotherSubFolderName) in d:\ItdoseCode\ITDOSEUAT\Tenwek_v10\App_Code\BLL\All_LoadData.cs:line 1534
+ Error On Machine         : ITD-HIS-WS-34
+ Error Machine IP Address : fe80::c50e:68a2:a934:5a8%18
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/Store/VendorReturn.aspx
+ Time Of Error            : 10-01-2023 16:31:31
+ Error Message            : Table 'tenwek_live.f_vendor_return_saveasdraft' doesn't exist
+ Error Place              :    at ExcuteCMD.ExecuteScalar(MySqlTransaction tnx, String sqlCmd, CommandType commandType, Object inParameters, Object outParameters) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\DLL\ExcuteCMD.cs:line 149
+   at Design_Store_VendorReturn.SaveAsDraft() in d:\Production Code\TenwekUAT\Tenwek_v10\Design\Store\VendorReturn.aspx.cs:line 533
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Object ExecuteScalar(MySql.Data.MySqlClient.MySqlTransaction, System.String, System.Data.CommandType, System.Object, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/Store/VendorReturn.aspx
+ Time Of Error            : 10-01-2023 16:31:40
+ Error Message            : Table 'tenwek_live.f_vendor_return_saveasdraft' doesn't exist
+ Error Place              :    at ExcuteCMD.ExecuteScalar(MySqlTransaction tnx, String sqlCmd, CommandType commandType, Object inParameters, Object outParameters) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\DLL\ExcuteCMD.cs:line 149
+   at Design_Store_VendorReturn.SaveAsDraft() in d:\Production Code\TenwekUAT\Tenwek_v10\Design\Store\VendorReturn.aspx.cs:line 533
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Object ExecuteScalar(MySql.Data.MySqlClient.MySqlTransaction, System.String, System.Data.CommandType, System.Object, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/Lab/HandlerCS.ashx
+ Time Of Error            : 10-01-2023 18:04:25
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   at All_LoadData.createDocumentFolder(String folderName, String subFolderName, String anotherSubFolderName) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\BLL\All_LoadData.cs:line 1534
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/Lab/HandlerCS.ashx
+ Time Of Error            : 10-01-2023 18:07:26
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   at All_LoadData.createDocumentFolder(String folderName, String subFolderName, String anotherSubFolderName) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\BLL\All_LoadData.cs:line 1534
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Welcome.aspx
+ Time Of Error            : 10-01-2023 19:16:08
+ Error Message            : Could not find file 'D:\Production Code\TenwekUAT\Tenwek_v10\Design\MenuData\BIOMEDICAL.xml'.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at Design_DefaultHome.validateBindRoleAndMenu() in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 183
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 150
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IO.FileNotFoundException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Welcome.aspx
+ Time Of Error            : 10-01-2023 19:16:31
+ Error Message            : Could not find file 'D:\Production Code\TenwekUAT\Tenwek_v10\Design\MenuData\BIOMEDICAL.xml'.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at Design_DefaultHome.validateBindRoleAndMenu() in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 183
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 150
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IO.FileNotFoundException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Welcome.aspx
+ Time Of Error            : 10-01-2023 19:21:55
+ Error Message            : Could not find file 'D:\Production Code\TenwekUAT\Tenwek_v10\Design\MenuData\BIOMEDICAL.xml'.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at Design_DefaultHome.validateBindRoleAndMenu() in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 183
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 150
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IO.FileNotFoundException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Welcome.aspx
+ Time Of Error            : 10-01-2023 19:53:21
+ Error Message            : Could not find file 'D:\Production Code\TenwekUAT\Tenwek_v10\Design\MenuData\MENTAL HEALTH SERVICES.xml'.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at Design_DefaultHome.validateBindRoleAndMenu() in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 183
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 150
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IO.FileNotFoundException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Welcome.aspx
+ Time Of Error            : 10-01-2023 19:56:25
+ Error Message            : Could not find file 'D:\Production Code\TenwekUAT\Tenwek_v10\Design\MenuData\NURSING ADMINISTRATION.xml'.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at Design_DefaultHome.validateBindRoleAndMenu() in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 183
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 150
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IO.FileNotFoundException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Welcome.aspx
+ Time Of Error            : 10-01-2023 19:58:59
+ Error Message            : Could not find file 'D:\Production Code\TenwekUAT\Tenwek_v10\Design\MenuData\OPTHALMOLOGY.xml'.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at Design_DefaultHome.validateBindRoleAndMenu() in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 183
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 150
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IO.FileNotFoundException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Welcome.aspx
+ Time Of Error            : 10-01-2023 20:03:24
+ Error Message            : Could not find file 'D:\Production Code\TenwekUAT\Tenwek_v10\Design\MenuData\OUTPATIENT UNIT.xml'.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at Design_DefaultHome.validateBindRoleAndMenu() in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 183
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 150
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IO.FileNotFoundException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Welcome.aspx
+ Time Of Error            : 10-01-2023 20:03:24
+ Error Message            : Could not find file 'D:\Production Code\TenwekUAT\Tenwek_v10\Design\MenuData\OUTPATIENT UNIT.xml'.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at Design_DefaultHome.validateBindRoleAndMenu() in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 183
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in d:\Production Code\TenwekUAT\Tenwek_v10\DefaultHome.master.cs:line 150
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : System.IO.FileNotFoundException
+ TargetSite               : Void WinIOError(Int32, System.String)

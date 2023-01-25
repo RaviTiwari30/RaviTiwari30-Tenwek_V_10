@@ -1,0 +1,290 @@
+﻿
+<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="PatientIndent">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-24" style="text-align: center;">
+                    <label>
+                        <strong style="font-size: medium;">Patient Indent Mapping</strong>
+                    </label>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Search Criteria </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-22">
+                     <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3">
+                             <label class="pull-left">
+                                Filter
+                            </label>
+                            <b class="pull-right">:</b>
+
+                        </div>
+                        <div class="col-md-3">
+                            <select id="ddlFilterTypePI" onchange="onPIFilterTypeChange(this);"> 
+                                <option value="0">Search</option>
+                                <option value="1">All Checked</option>
+                                <option value="2"> All UnChecked</option>
+                             
+                            </select>
+                        </div>
+                        <div class="col-md-7">
+                            <input type="text" id="txtSearchPI" onkeyup="$searchPIByWord(event);" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row divBlockPatientIndent" style="margin: 0px;">
+                <div class="Purchaseheader">
+                    Patient Indent
+                </div>
+
+                <div class="row" style="padding: 0px; margin: 0px;">
+                    <label style="cursor: pointer">
+                        <input type="checkbox" onchange="onSelectAllPI(this)" /><b> All</b> </label>
+                </div>
+                <div id="divPatientIndentMapping" class="clearDiv" style="font-size:10pt;overflow:scroll;height:200px;"></div>
+            </div>
+            <div class="row" style="">
+                <div class="col-md-24 textCenter">
+                     <input type="button" id="btnSavePI" value="Save" class="save margin-top-on-btn" onclick="savePIMappingDetails(this)" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------Modal Pop up---------------------------------------------------------------------------------->
+<div id="divPIMappingModel" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content" style="min-width: 500px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="divPIMappingModel" aria-hidden="true">&times;</button>
+                    <b class="modal-title">Copy Same Doctors</b>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-22">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Copy Centre Name 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <label id="lblCentreFromPI" class="pull-left patientInfo" style="font-weight: bold"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Select Centre To Copy 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <ul id="ulCentrePITo" style="list-style-type: none; margin-left: -10px;"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" onclick="copyCentrePI(this)" class="save" style="font-size:10pt;">Save</button>
+                    <button type="button" data-dismiss="divPIMappingModel" onclick="ClosePIModal()" style="font-size:10pt;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------------------------------END----------------------------------------------------------------------------->
+
+<script id="templateMappingPatientIndent" type="text/html">
+		<#
+		var dataLength=templateData.length;
+		window.status="Total Records Found :"+ dataLength;
+		var objRow;
+		var status;
+		for(var j=0;j<dataLength;j++)
+		{
+		objRow = templateData[j];
+		#>
+            <div class="row" style="padding: 0px;margin: 0px;">
+              <label style="cursor:pointer"> <input type="checkbox"
+                  
+                  <#if(objRow.IsPatientIndent>0 ){#>
+                       checked
+                  <#}#>
+                   /><span>  <#=objRow.TextField#></span> </label>
+                <label class="hidden lblData"> <#= JSON.stringify(objRow) #></label>
+            </div>
+            	
+		<#}#>     
+	</script>
+
+<script type="text/javascript">
+
+    function ClosePIModal() {
+        $("#divPIMappingModel").hide();
+    }
+
+    var GetAllRolesForPIMappings = function (callback) {
+        var PIcenterid = $.trim($("#spnCenter_ID").text());
+        serverCall('../EDP/Services/CentreWiseMapping.asmx/GetAllMappings', { centreID: PIcenterid }, function (responsePI) {
+            var responseData = JSON.parse(responsePI);
+           // templateData = responseData.dtRoles;
+
+            bindIndentMappingDetails(0, responseData.dtRoles);
+            callback(responseData);
+        });
+    }
+
+    var bindIndentMappingDetails = function (isRoleChecedCheck, responseData) {
+        templateData = [];
+
+        templateData = responseData.filter(function (i) { return i.MapID > 0 && i.IsStore > 0 });
+
+        var divPatientIndentMapping = $('#divPatientIndentMapping');
+        var parseHTML = $('#templateMappingPatientIndent').parseTemplate(templateData);
+        divPatientIndentMapping.html(parseHTML);
+        var totalChecked = templateData.filter(function (i) { return i.IsPatientIndent > 0 });
+        if (templateData.length == totalChecked.length)
+            divPatientIndentMapping.closest('.divBlockPatientIndent').find('.row:first input[type=checkbox]').prop('checked', true);
+    }
+
+    var onSelectAllPI = function (el) {
+        $(el).closest('.divBlockPatientIndent').find('.clearDiv').find('input[type=checkbox]').prop('checked', el.checked);
+    }
+
+    var $searchPIByWord = function (e) {
+        if (e.target.value.length >= 3)
+            $('.divBlockPatientIndent .clearDiv').find('.row').show().find('span').not(":containsIgnoreCase('" + e.target.value + "')").closest('.row').hide();
+        else if (e.target.value.length == 0)
+            $('.divBlockPatientIndent .clearDiv').find('.row').show();
+    }
+
+    var onPIFilterTypeChange = function (el) {
+        var filterType = Number(el.value);
+        var txtSearchPI = $('#txtSearchPI');
+        if (filterType == 0) {
+            txtSearchPI.prop('disabled', false);
+            $('.divBlockPatientIndent .clearDiv').find('.row').show();
+        }
+        else if (filterType == 1) {
+            txtSearchPI.val('').prop('disabled', true);
+            $('.divBlockPatientIndent .clearDiv').find('.row').hide();
+            $('.divBlockPatientIndent .clearDiv').find('.row input[type=checkbox]:checked').closest('.row').show();
+        }
+        else if (filterType == 2) {
+            txtSearchPI.val('').prop('disabled', true);
+            $('.divBlockPatientIndent .clearDiv').find('.row').show();
+            $('.divBlockPatientIndent .clearDiv').find('.row input[type=checkbox]:checked').closest('.row').hide();
+
+        }
+    }
+
+    var getPIMappingDetails = function (callback) {
+        var centreID = Number($("#spnCenter_ID").text());
+        var patientIndentMapping = [];
+
+        $('#divPatientIndentMapping').find('input[type=checkbox]:checked').each(function () {
+            var tdPIData = JSON.parse($(this).closest('.row').find('.lblData').text());
+            patientIndentMapping.push({
+                centreID: centreID,
+                valueField: tdPIData.ValueField
+            });
+        });
+
+        callback({ centreID: centreID, patientIndentMapping: patientIndentMapping });
+    }
+
+    var savePIMappingDetails = function () {
+        getPIMappingDetails(function (data) {
+            serverCall('../EDP/CenterManagement/CenterManagement.asmx/SavesPIMappingsDetails', data, function (resposnePI) {
+                var responseData = JSON.parse(resposnePI);
+                modelAlert(responseData.response, function () {
+                    if (responseData.status)
+                        loadCentreToModelPI($("#spnCenter_ID").text(), $("#spnCenter_Name").text());
+                });
+            });
+        });
+    }
+
+    var loadCentreToModelPI = function (centreId, CentreName) {
+        $("#lblCentreFromPI").text(CentreName);
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetALLCentre', {}, function (response) {
+            var responseData = JSON.parse(response);
+            var responseCentreTo = responseData.filter(function (i) { return i.CentreID != centreId });
+            var ulCentrePITo = $('#ulCentrePITo');
+            ulCentrePITo.find('li').remove();
+            if (responseCentreTo.length > 0) {
+                $.each(responseCentreTo, function (i) {
+                    var aa = '<li  role="menuitem"><a>'
+                        + '<label class="trimList"  title="' + this.CentreName + '" >'
+                        + '<input   id="' + $.trim(this.CentreID) + '" value="' + this.CentreID + '" class="ui-all" type="checkbox" '
+                        + ' >' + this.CentreName + '</label></a> </li>';
+                    ulCentrePITo.append(aa);
+                });
+
+
+                $("#divPIMappingModel").showModel();
+            }
+            else
+                modelAlert("Only One Centre Exist in the System !!!");
+
+        });
+    }
+
+    var copyCentrePI = function (btnCopy) {
+        var centrePIList = [];
+        $('#ulCentrePITo li').each(function () {
+            if ($(this).find('input').is(":checked")) {
+                centrePIList.push({
+                    centreId: $(this).find('input').attr('id')
+                })
+            }
+        });
+
+        if (centrePIList.length == 0) {
+            modelAlert('Please Select Atleast One Centre To Copy !!!');
+            return;
+        }
+
+        var centerID = Number($("#spnCenter_ID").text());
+        $mappedPI = [];
+
+        $('#divPatientIndentMapping').find('input[type=checkbox]:checked').each(function () {
+            var tdPIData = JSON.parse($(this).closest('.row').find('.lblData').text());
+            $mappedPI.push({
+                centreID: centerID,
+                valueField: tdPIData.ValueField
+            });
+        });
+
+        $(btnCopy).attr('disabled', true).val('Submitting...');
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/CopyPICenterAccess', { patientIndentMapping: $mappedPI, centrePAIList: centrePIList }, function (resspi) {
+            $responseData = JSON.parse(resspi);
+            modelAlert($responseData.response, function (resspi) {
+                if ($responseData.status) {
+                    $("#divPIMappingModel").hide();
+                    $(btnCopy).removeAttr('disabled').val('Save');
+                }
+                else
+                    $(btnCopy).removeAttr('disabled').val('Save');
+            });
+        });
+    }
+</script>

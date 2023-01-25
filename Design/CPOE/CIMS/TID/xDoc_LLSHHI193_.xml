@@ -1,0 +1,2418 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Result buildID="2465" copyright="MIMS Pte Ltd" expiryDate="31/12/2020">
+  <Interaction>
+    <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+      </Route>
+      <Allergy>
+        <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol">
+          <CrossSensitive>
+            <PrescribingSubstanceClass reference="{5C60F191-B92F-4186-ADF5-859CB3B66E11}" name="Nonsteroidal anti-inflammatory drugs">
+              <PrescribingMolecule reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" name="diclofenac sodium" />
+            </PrescribingSubstanceClass>
+            <AllergySubstanceClass reference="{50227FDE-1699-4083-92FA-AA75F30A285D}" name="Paracetamol and related agents">
+              <AllergyMolecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol" />
+            </AllergySubstanceClass>
+          </CrossSensitive>
+        </Molecule>
+      </Allergy>
+    </Product>
+    <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+      </Route>
+      <Allergy>
+        <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol">
+          <CrossSensitive>
+            <PrescribingSubstanceClass reference="{5C60F191-B92F-4186-ADF5-859CB3B66E11}" name="Nonsteroidal anti-inflammatory drugs">
+              <PrescribingMolecule reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" name="diclofenac sodium" />
+            </PrescribingSubstanceClass>
+            <AllergySubstanceClass reference="{50227FDE-1699-4083-92FA-AA75F30A285D}" name="Paracetamol and related agents">
+              <AllergyMolecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol" />
+            </AllergySubstanceClass>
+          </CrossSensitive>
+        </Molecule>
+      </Allergy>
+    </Product>
+    <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+      </Route>
+      <Allergy>
+        <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol">
+          <CrossSensitive>
+            <PrescribingSubstanceClass reference="{5C60F191-B92F-4186-ADF5-859CB3B66E11}" name="Nonsteroidal anti-inflammatory drugs">
+              <PrescribingMolecule reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" name="diclofenac sodium" />
+            </PrescribingSubstanceClass>
+            <AllergySubstanceClass reference="{50227FDE-1699-4083-92FA-AA75F30A285D}" name="Paracetamol and related agents">
+              <AllergyMolecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol" />
+            </AllergySubstanceClass>
+          </CrossSensitive>
+        </Molecule>
+      </Allergy>
+    </Product>
+    <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+      </Route>
+      <Allergy>
+        <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol">
+          <CrossSensitive>
+            <PrescribingSubstanceClass reference="{5C60F191-B92F-4186-ADF5-859CB3B66E11}" name="Nonsteroidal anti-inflammatory drugs">
+              <PrescribingMolecule reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" name="diclofenac sodium" />
+            </PrescribingSubstanceClass>
+            <AllergySubstanceClass reference="{50227FDE-1699-4083-92FA-AA75F30A285D}" name="Paracetamol and related agents">
+              <AllergyMolecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol" />
+            </AllergySubstanceClass>
+          </CrossSensitive>
+        </Molecule>
+      </Allergy>
+    </Product>
+    <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+      </Route>
+      <Allergy>
+        <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol">
+          <CrossSensitive>
+            <PrescribingSubstanceClass reference="{5C60F191-B92F-4186-ADF5-859CB3B66E11}" name="Nonsteroidal anti-inflammatory drugs">
+              <PrescribingMolecule reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" name="diclofenac sodium" />
+            </PrescribingSubstanceClass>
+            <AllergySubstanceClass reference="{50227FDE-1699-4083-92FA-AA75F30A285D}" name="Paracetamol and related agents">
+              <AllergyMolecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol" />
+            </AllergySubstanceClass>
+          </CrossSensitive>
+        </Molecule>
+      </Allergy>
+    </Product>
+    <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+      </Route>
+      <Allergy>
+        <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol">
+          <CrossSensitive>
+            <PrescribingSubstanceClass reference="{5C60F191-B92F-4186-ADF5-859CB3B66E11}" name="Nonsteroidal anti-inflammatory drugs">
+              <PrescribingMolecule reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" name="diclofenac sodium" />
+            </PrescribingSubstanceClass>
+            <AllergySubstanceClass reference="{50227FDE-1699-4083-92FA-AA75F30A285D}" name="Paracetamol and related agents">
+              <AllergyMolecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol" />
+            </AllergySubstanceClass>
+          </CrossSensitive>
+        </Molecule>
+      </Allergy>
+    </Product>
+    <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+      </Route>
+      <Allergy>
+        <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol">
+          <CrossSensitive>
+            <PrescribingSubstanceClass reference="{5C60F191-B92F-4186-ADF5-859CB3B66E11}" name="Nonsteroidal anti-inflammatory drugs">
+              <PrescribingMolecule reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" name="diclofenac sodium" />
+            </PrescribingSubstanceClass>
+            <AllergySubstanceClass reference="{50227FDE-1699-4083-92FA-AA75F30A285D}" name="Paracetamol and related agents">
+              <AllergyMolecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol" />
+            </AllergySubstanceClass>
+          </CrossSensitive>
+        </Molecule>
+      </Allergy>
+    </Product>
+    <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+        </Product>
+      </Route>
+    </Product>
+    <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <Molecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>reduces effect of</Abbreviated>
+                <Professional>reduces effect of</Professional>
+                <Full>decreases effect of</Full>
+                <Consumer>decreases effect of</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+      </Route>
+      <Allergy>
+        <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol">
+          <CrossSensitive>
+            <PrescribingSubstanceClass reference="{5C60F191-B92F-4186-ADF5-859CB3B66E11}" name="Nonsteroidal anti-inflammatory drugs">
+              <PrescribingMolecule reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" name="diclofenac sodium" />
+            </PrescribingSubstanceClass>
+            <AllergySubstanceClass reference="{50227FDE-1699-4083-92FA-AA75F30A285D}" name="Paracetamol and related agents">
+              <AllergyMolecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol" />
+            </AllergySubstanceClass>
+          </CrossSensitive>
+        </Molecule>
+      </Allergy>
+    </Product>
+    <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" name="SPILACTONE FILM-COATED TAB 50mg">
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Potassium sparing diuretics" reference="{B0F33E4A-DD4E-4888-9CAE-225FFCBDB017}" description="These drugs inhibit sodium-potassium exchange in the distal tubule.">
+                <PrescribingMolecule name="spironolactone" reference="{74DCDDAF-9349-430F-A2F2-B7F2BC5CD8AA}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Good" ranking="3">Good</Likelihood>
+              <Documentation name="Good" ranking="3">Good</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>has its effect reduced by</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of diuretics with nonsteroidal anti-inflammatory drugs (NSAIDs)may reduce the antihypertensive and diuretic effects of diuretics. This may be due to impaired prostaglandin synthesis which may lead to salt and water retention. Studies have shown that concurrent use led to decreased natriuretic effects of diuretics. Additionally, NSAIDs also have nephrotoxic effects which may be exacerbated by diuretic therapy. The addition of an ACE inhibitor to this combination (NSAID + diuretic) will further increase the risk of renal impairment, especially in the elderly. Monitor concurrent use and increase the dose of diuretic if needed.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor renal function.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor serum potassium.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor blood pressure.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+      </Route>
+    </Product>
+    <DuplicateTherapy />
+  </Interaction>
+</Result>

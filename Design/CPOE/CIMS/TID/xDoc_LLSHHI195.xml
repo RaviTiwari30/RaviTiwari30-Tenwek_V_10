@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Request>
+  <Interaction>
+    <Prescribing>
+      <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" ItemID="LSHHI34190" />
+      <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" ItemID="LSHHI34187" />
+    </Prescribing>
+    <HealthIssueCodes />
+    <Prescribing />
+    <Allergies>
+      <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" SaltID="554" />
+    </Allergies>
+  </Interaction>
+  <PatientProfile />
+</Request>

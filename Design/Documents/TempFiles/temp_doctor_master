@@ -1,0 +1,154 @@
+Title,DoctorName,Gender,IMARegistration,Degree,Designation,Groupss,PhoneNo,MobileNO,HouseNO,StreetName,Locality,State,City,Email,Specialization,pager_number
+Dr,Anjichi Nathan,M,,,Mo,,,728091900,,,,,,,General Practice,757
+Dr,Anzenze Angela,F,,,Consultant,,,728091900,,,,,,,Obstetrics/Gynaecology ,738
+Dr,lydia lulua,F,,,Consultant,,,728091900,,,,,,,ortho,739
+Dr,Baraka Daniel,M,,,Mo,,,728091900,,,,,,,General Practice,763
+Dr,Baraza Janet Chao,F,,,Mo,,,728091900,,,,,,,General Practice,758
+Dr,Burgert Stephen ,M,,,Consultant,,,728091900,,,,,,,Gastroenterology/Internal Medicine ,722
+Dr,Chebet Faith,F,,,Mo,,,728091900,,,,,,,General Practice,755
+Dr,Copeland William,M,,,Consultant,,,728091900,,,,,,,Neurosurgery ,725
+Dr,Crognale Janice,F,,,Consultant,,,728091900,,,,,,,family medicine,702
+Dr,Crognale  Dino,M,,,Consultant,,,728091900,,,,,,,family medicine,702
+Dr,Cowles Cheryl,F,,,Consultant,,,728091900,,,,,,,Obstetrics/Gynaecology ,714
+Dr,Dillard Thomas,M,,,Consultant,,,728091900,,,,,,,peadiatrics,719
+Dr,Dindi Esther ,F,,,Consultant,,,728091900,,,,,,,internal medicine,734
+Dr,Dindi Keith,M,,,Consultant,,,728091900,,,,,,,cardiothoracic fellow,733
+Dr,Fekadu Arega,M,,,Consultant,,,728091900,,,,,,,cardiothoracic surgery,723
+Dr,Ganey Michael,M,,,Consultant,,,728091900,,,,,,,peadiatrics surgery,701
+Dr,Kareko Catherine,F,,,Consultant,,,728091900,,,,,,,opthalmology,521
+Dr,Kimaiga Henry,M,,,MO,,,728091900,,,,,,,General Practice,765
+Dr,Kositany Kirui Hillary,M,,,Consultant,,,728091900,,,,,,,family medicine,715
+Dr,Lando Justus,M,,,Consultant,,,728091900,,,,,,,cardiothoracic fellow,731
+Dr,Lusaka Rebecca,F,,,MO,,,728091900,,,,,,,General Practice,759
+Dr,Makite Irene,F,,,Consultant,,,728091900,,,,,,,opthalmology,728
+Dr,Manchester Stephen,M,,,Consultant,,,728091900,,,,,,,family medicine,673
+Dr,Melenia Mourine,F,,,Consultant,,,728091900,,,,,,,family medicine,724
+Dr,Moselle Marie Stark,F,,,Consultant,,,728091900,,,,,,,Obstetrics/Gynaecology ,736
+Dr,Mwachiro Michael,M,,,Consultant,,,728091900,,,,,,,General Practice,721
+Dr,Ngila Nassim,F,,,MO,,,728091900,,,,,,,General Practice,754
+Dr,Nyambaka Brenda ,F,,,MO,,,728091900,,,,,,,General Practice,753
+Dr,Nyandwaro Jemima,F,,,MO,,,728091900,,,,,,,General Practice,768
+Dr,Odera Agneta,F,,,Consultant,,,728091900,,,,,,,cardiothoracic fellow,729
+Dr,Okemwa Elizabeth ,F,,,Consultant,,,728091900,,,,,,,general surgery,713
+Dr,Okech Umani Kevin,M,,,Consultant,,,728091900,,,,,,,anesthesiologist,735
+Dr,Parker Andrea,M,,,Consultant,,,728091900,,,,,,,general surgery,718
+Dr,Parker Robert,M,,,Consultant,,,728091900,,,,,,,general surgery,717
+Dr,Roberts Benjamin ,M,,,Consultant,,,728091900,,,,,,,opthalmology,707
+Dr,Ronoh Mike,M,,,MO,,,728091900,,,,,,,General Practice,769
+Dr,Rono Sylvester,M,,,Consultant,,,728091900,,,,,,,General Practice,720
+Dr,Schule Deborah,F,,,Consultant,,,728091900,,,,,,,internal medicine,730
+Dr,Schule Georg,M,,,Consultant,,,728091900,,,,,,,opthalmology,727
+Dr,Sleeth Clark,M,,,Consultant,,,728091900,,,,,,,peadiatrics/internal medicine,708
+Dr,Spriegel John,M,,,Consultant,,,728091900,,,,,,,internal medicine,706
+Dr,Thure Achieng Linda,F,,,MO,,,728091900,,,,,,,General Practice,762
+Dr,Wambui Fridah,F,,,MO,,,728091900,,,,,,,General Practice,764
+Dr,Wanjala Miriam,F,,,MO,,,728091900,,,,,,,General Practice,751
+Dr,Wekesa Marvin,M,,,MO,,,728091900,,,,,,,ortho,648
+Dr,White Russell,M,,,Consultant,,,728091900,,,,,,,cardiothoracic surgery,700
+Dr,Ruth Wanjala,F,,,MO,,,728091900,,,,,,,General Practice,620
+Dr,George Waiyaki,G,,,MO,,,728091900,,,,,,,General Practice,770
+Dr,Naomi Rono,F,,,MO,,,728091900,,,,,,,General Practice,761
+Dr,Joyce Lunar,F,,,Ortho Res ,,,728091900,,,,,,,,653
+Dr,Emmanuel Fadipe,M,,,GS Res,,,728091900,,,,,,,,655
+Dr,Samuel Odongo,M,,,GS Res,,,728091900,,,,,,,,644
+Dr,Silas Ndege,M,,,Ortho Res ,,,728091900,,,,,,,,647
+Dr,Danson Mogaka,M,,,GS Res,,,728091900,,,,,,,,656
+Dr,Danny Araka,M,,,Ortho Res ,,,728091900,,,,,,,,661
+Dr,Daniel Moenga ,M,,,GS Res,,,728091900,,,,,,,,652
+Dr,Emmanuel Wafula,M,,,NS Res,,,728091900,,,,,,,,651
+Dr,Cyril Oike,M,,,Ortho Res ,,,728091900,,,,,,,,650
+Dr,Benjamin Ngau,M,,,GS Res,,,728091900,,,,,,,,649
+Dr,June Owino,F,,,GS Res,,,728091900,,,,,,,,641
+Dr,Eric Yegon,M,,,Ortho Res ,,,728091900,,,,,,,,640
+Dr,Yves Yankunze,M,,,GS Res,,,728091900,,,,,,,,654
+Dr,Violet Otoki,F,,,GS Res,,,728091900,,,,,,,,645
+Dr,Hicks Green,M,,,Ortho Res ,,,728091900,,,,,,,,646
+Dr,Mercy Mitei,F,,,GS Res,,,728091900,,,,,,,,670
+Dr,Ivy Baraza,F,,,NS Res,,,728091900,,,,,,,,663
+Dr,George Gasana,M,,,GS Res,,,728091900,,,,,,,,657
+Dr,Oscar Rotich ,M,,,GS Res,,,728091900,,,,,,,,664
+Dr,Ian Simel ,M,,,GS Res,,,728091900,,,,,,,,659
+Dr,Lidetu Kabede,F,,,MO,,,728091900,,,,,,,General Practice,
+Dr,Winny Chebii,F,,,MOI,,,728091900,,,,,,,,p612
+Dr,Lydiah Waruguru,F,,,MOI,,,728091900,,,,,,,,p602
+Dr,Dorcas Kimutai,F,,,MOI,,,728091900,,,,,,,,p605
+Dr,Esther Mumbi,F,,,MOI,,,728091900,,,,,,,,p607
+Dr,Eunice Mokeira,F,,,MOI,,,728091900,,,,,,,,p615
+Dr,Wisdom Carlos,M,,,MOI,,,728091900,,,,,,,,p613
+Dr,Billy Magara,M,,,MOI,,,728091900,,,,,,,,p609
+Dr,Byron Obala,M,,,MOI,,,728091900,,,,,,,,p601
+Dr,Agnes Chepkorir,F,,,MOI,,,728091900,,,,,,,,p620
+Dr,Noel K Kiprono,M,,,MOI,,,728091900,,,,,,,,p625
+Dr,Shadrack Langat,M,,,MOI,,,728091900,,,,,,,,p603
+Dr,Elisha Kiptoo,M,,,MOI,,,728091900,,,,,,,,p618
+Dr,Winny Sirya,F,,,MOI,,,728091900,,,,,,,,p619
+Dr,Jeremiah Ekiru Ameyan,M,,,MOI,,,728091900,,,,,,,,p616
+RCO,Erick Barchumbin,M,,,RCO,,,728091900,,,,,,,General Practice,513
+RCO,Antonina Leboo,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Maxwell Ombima,M,,,RCO,,,728091900,,,,,,,ECCO,
+RCO,Enock Mutai,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Hillary Kirui,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Marion Wanjiru,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Weldon Kiprotich,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Betsy Keter,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Vincent Kirui,M,,,RCO,,,728091900,,,,,,,Mental health ,
+RCO,Amos Ngeno,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Meshack Korir,M,,,RCO,,,728091900,,,,,,,ECCO,
+RCO,Lily Koech,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Chelangat Ngeno,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Moses Cheruiyot,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Mercy Jerotich,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Lillian Maritim,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Benard Ngetich,M,,,RCO,,,728091900,,,,,,,ECHO,
+RCO,Pascal Kisanya ,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Moses Rotich ,M,,,RCO,,,728091900,,,,,,,ORTHO,
+RCO,Moses  Tanui,M,,,RCO,,,728091900,,,,,,,Oncology,
+RCO,Felix Kibutit ,M,,,RCO,,,728091900,,,,,,,Oncology,
+RCO,Keziah Mwendwa ,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Enock Tonui ,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Pendo Karisa ,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Sharon Cherop,F,,,RCO,,,728091900,,,,,,,Peds (in school),
+RCO,Felix Kibet ,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Gloria Cherotich ,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Leonard Korir ,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Josphat Langat ,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Amos Langat ,M,,,RCO,,,728091900,,,,,,,ENT (in school),
+RCO,Naumi Keter ,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Jackson Agutu ,M,,,RCO,,,728091900,,,,,,,ECCO,
+RCO,Eric Bett,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Benard Maritim,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Amos K Langat,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Trizah Chepkirui ,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Mercy Cheruto,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Aggrey Koech ,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Cynthia Chepkemoi ,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Stella chemutai ,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Mercy chelangat ,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Ishmael Cheruiyot,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Patrick Rotich,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Kipkirui Towett,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Geoffrey Langat,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Hilda Bett,F,,,RCO,,,728091900,,,,,,,Anesthesia (in school),
+RCO,Robert Maison,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Ester Maina,F,,,RCO,,,728091900,,,,,,,Dermatology (in school),
+RCO,Rodgers Ouma ,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Patricia Bii,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Lilah Leitich,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Aneth Chepkirui,F,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Alex Kimemia,M,,,RCO,,,728091900,,,,,,,General Practice,
+RCO,Milton Chesongol,M,,,RCO,,,728091900,,,,,,,Anesthesia ,
+RCO,Philip Koech ,M,,,RCO,,,728091900,,,,,,,Anesthesia,
+RCO,Kenneth Mutai,M,,,RCO,,,728091900,,,,,,,Anesthesia,
+RCO,Stephen Ngari,M,,,RCO,,,728091900,,,,,,,Anesthesia,
+RCO,Jackson Kirui,M,,,RCO,,,728091900,,,,,,,Anesthesia ,
+RCO,Mary Kipkeino,F,,,RCO,,,728091900,,,,,,,Ophthalmology/cataract,
+RCO,Collins Chepkwony ,M,,,RCO,,,728091900,,,,,,,OPhthalmology/cataract(in school),
+RCO,Dancun Shammah,M,,,RCO,,,728091900,,,,,,,ECCO,
+RCO,Ian Moya,M,,,RCO,,,728091900,,,,,,,ECHO,
+RCO,Mercy Koros ,F,,,RCO,,,728091900,,,,,,,ECHO,
+RCO,Linus Pyego,M,,,RCO,,,728091900,,,,,,,ECHO,
+RCO,Melody Chesire,F,,,RCO,,,728091900,,,,,,,TCHS,
+RCO,Fiona Ngoda,F,,,RCO,,,728091900,,,,,,,TCHS,
+RCO,Gilbert Lelei,M,,,RCO,,,728091900,,,,,,,TCHS,
+RCO,Jane Momanyi,F,,,RCO,,,728091900,,,,,,,TCHS,
+RCO,Gladys Chibole,F,,,RCO,,,728091900,,,,,,,TCHS,

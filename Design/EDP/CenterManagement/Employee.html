@@ -1,0 +1,295 @@
+﻿
+<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="Employee">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-24" style="text-align: center;">
+                    <label>
+                        <strong style="font-size: medium;">Employees Mapping</strong>
+                    </label>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Search Criteria </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-22">
+                    <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3" style="display:none;">
+                            <label class="pull-left">
+                                Center Name 
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5" style="display:none;">
+                            <select></select>
+                        </div>
+                        <div class="col-md-3">
+                             <label class="pull-left">
+                                Filter
+                            </label>
+                            <b class="pull-right">:</b>
+
+                        </div>
+                        <div class="col-md-3">
+                            <select id="ddlFilterType" onchange="onFilterTypeChange(this);"> 
+                                <option value="0">Search</option>
+                                <option value="1">All Checked</option>
+                                <option value="2"> All UnChecked</option>
+                             
+                            </select>
+                        </div>
+                        <div class="col-md-7">
+                            <input type="text" id="txtSearchEmployee" onkeyup="$searchEmployeeByWord(event);" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row divBlock" style="margin: 0px;">
+                <div class="Purchaseheader">
+                    Employee
+                </div>
+
+                <div class="row" style="padding: 0px; margin: 0px;">
+                    <label style="cursor: pointer">
+                        <input type="checkbox" onchange="onSelectAll(this)" /><b> All</b> </label>
+                </div>
+                <div id="divEmployeeMapping" class="clearDiv" style="font-size:10pt;overflow:scroll;height:200px;"></div>
+            </div>
+            <div class="row" style="">
+                <div class="col-md-24 textCenter">
+                     <input type="button" id="btnSaveEmployee" value="Save" class="save margin-top-on-btn" onclick="saveEmployeeMappingDetails(this)" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------Modal Pop up---------------------------------------------------------------------------------->
+<div id="divEmployeeMappingModel" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content" style="min-width: 500px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="divEmployeeMappingModel" aria-hidden="true">&times;</button>
+                    <b class="modal-title">Copy Same Employee</b>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-22">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Copy Centre Name 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <label id="lblCentreFromEmployee" class="pull-left patientInfo" style="font-weight: bold"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Select Centre To Copy 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <ul id="ulCentreEmployeeTo" style="list-style-type: none; margin-left: -10px;"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" onclick="copyCentreEmployee(this)" class="save" style="font-size:10pt;">Save</button>
+                    <button type="button" data-dismiss="divEmployeeMappingModel" onclick="CloseEmployeeModal()" style="font-size:10pt;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------------------------------END----------------------------------------------------------------------------->
+
+<script id="templateMapping" type="text/html">
+		<#
+		var dataLength=templateData.length;
+		window.status="Total Records Found :"+ dataLength;
+		var objRow;
+		var status;
+		for(var j=0;j<dataLength;j++)
+		{
+		objRow = templateData[j];
+		#>
+            <div class="row" style="padding: 0px;margin: 0px;">
+              <label style="cursor:pointer"> <input type="checkbox" 
+                  
+                  <#if(objRow.MapID>0){#>
+                       checked
+                  <#}#>
+                   /><span>  <#=objRow.TextField#></span> </label>
+                <label class="hidden lblData"> <#= JSON.stringify(objRow) #></label>
+            </div>
+            	
+		<#}#>     
+	</script>
+<script type="text/javascript">
+
+    function CloseEmployeeModal() {
+        $("#divEmployeeMappingModel").hide();
+    }
+
+    var getAllMappings = function () {
+        var centerid = $.trim($("#spnCenter_ID").text());
+        serverCall('../EDP/Services/CentreWiseMapping.asmx/GetAllMappings', { centreID: centerid }, function (response) {
+            var responseData = JSON.parse(response);
+
+            var divEmployeeMapping = $('#divEmployeeMapping');
+            templateData = responseData.dtEmployees;
+            var parseHTML = $('#templateMapping').parseTemplate(templateData);
+            divEmployeeMapping.html(parseHTML);
+            var totalChecked = templateData.filter(function (i) { return i.MapID > 0 });
+            if (templateData.length == totalChecked.length)
+                divEmployeeMapping.closest('.divBlock').find('.row:first input[type=checkbox]').prop('checked', true);
+
+            //callback(responseData);
+        });
+    }
+
+    var $searchEmployeeByWord = function (e) {
+        if (e.target.value.length >= 3)
+            $('.divBlock .clearDiv').find('.row').show().find('span').not(":containsIgnoreCase('" + e.target.value + "')").closest('.row').hide();
+        else if (e.target.value.length == 0)
+            $('.divBlock .clearDiv').find('.row').show();
+    }
+
+    $(document).ready(function () {
+    });
+
+    var onSelectAll = function (el) {
+        $(el).closest('.divBlock').find('.clearDiv').find('input[type=checkbox]').prop('checked', el.checked);
+    }
+    
+    var onFilterTypeChange = function (el) {
+        var filterType = Number(el.value);
+        var txtSearchEmployee = $('#txtSearchEmployee');
+        if (filterType == 0) {
+            txtSearchEmployee.prop('disabled', false);
+            $('.divBlock .clearDiv').find('.row').show();
+        }
+        else if (filterType == 1) {
+            txtSearchEmployee.val('').prop('disabled', true);
+            $('.divBlock .clearDiv').find('.row').hide();
+            $('.divBlock .clearDiv').find('.row input[type=checkbox]:checked').closest('.row').show();
+        }
+        else if (filterType == 2) {
+            txtSearchEmployee.val('').prop('disabled', true);
+            $('.divBlock .clearDiv').find('.row').show();
+            $('.divBlock .clearDiv').find('.row input[type=checkbox]:checked').closest('.row').hide();
+
+        }
+    }
+
+    var saveEmployeeMappingDetails = function () {
+        getMappingDetailss(function (data) {
+            serverCall('../EDP/CenterManagement/CenterManagement.asmx/SavesEmployeeMappingsDetails', data, function (resposne) {
+                var responseData = JSON.parse(resposne);
+                modelAlert(responseData.response, function () {
+                    if (responseData.status) {
+                        loadCentreToModelEmployee($("#spnCenter_ID").text(), $("#spnCenter_Name").text());
+                    }
+                });
+            });
+        });
+    }
+
+    var getMappingDetailss = function (callback) {
+        var centreID = Number($("#spnCenter_ID").text());
+        var mappedEmployees = [];
+        
+        $('#divEmployeeMapping').find('input[type=checkbox]:checked').each(function () {
+            var tdData = JSON.parse($(this).closest('.row').find('.lblData').text());
+            mappedEmployees.push({
+                centreID: centreID,
+                valueField: tdData.ValueField
+            });
+        });
+
+        callback({ centreID: centreID, mappedEmployees: mappedEmployees });
+    }
+
+    var loadCentreToModelEmployee = function (centreId, CentreName) {
+        $("#lblCentreFromEmployee").text(CentreName);
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetALLCentre', {}, function (response) {
+            var responseData = JSON.parse(response);
+            var responseCentreTo = responseData.filter(function (i) { return i.CentreID != centreId });
+            var ulCentreEmployeeTo = $('#ulCentreEmployeeTo');
+            ulCentreEmployeeTo.find('li').remove();
+            if (responseCentreTo.length > 0) {
+                $.each(responseCentreTo, function (i) {
+                    var aa = '<li  role="menuitem"><a>'
+                        + '<label class="trimList"  title="' + this.CentreName + '" >'
+                        + '<input   id="' + $.trim(this.CentreID) + '" value="' + this.CentreID + '" class="ui-all" type="checkbox" '
+                        + ' >' + this.CentreName + '</label></a> </li>';
+                    ulCentreEmployeeTo.append(aa);
+                });
+
+
+                $("#divEmployeeMappingModel").showModel();
+            }
+            else
+                modelAlert("Only One Centre Exist in the System !!!");
+
+        });
+    }
+
+    var copyCentreEmployee = function (btnCopy) {
+        var centreEmployeeList = [];
+        $('#ulCentreEmployeeTo li').each(function () {
+            if ($(this).find('input').is(":checked")) {
+                centreEmployeeList.push({
+                    centreId: $(this).find('input').attr('id')
+                })
+            }
+        });
+
+        if (centreEmployeeList.length == 0) {
+            modelAlert('Please Select Atleast One Centre To Copy !!!');
+            return;
+        }
+
+        var centreID = Number($("#spnCenter_ID").text());
+        $mappEmployees = [];
+
+        $('#divEmployeeMapping').find('input[type=checkbox]:checked').each(function () {
+            var tdData = JSON.parse($(this).closest('.row').find('.lblData').text());
+            $mappEmployees.push({
+                centreID: centreID,
+                valueField: tdData.ValueField
+            });
+        });
+
+        $(btnCopy).attr('disabled', true).val('Submitting...');
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/CopyEmployeesCenterAccess', { mappedEmployees: $mappEmployees, centreEMPList: centreEmployeeList }, function (ress) {
+            $responseData = JSON.parse(ress);
+            modelAlert($responseData.response, function (ress) {
+                if ($responseData.status) {
+                    $("#divEmployeeMappingModel").hide();
+                    $(btnCopy).removeAttr('disabled').val('Save');
+                }
+                else
+                    $(btnCopy).removeAttr('disabled').val('Save');
+            });
+        });
+    }
+</script>

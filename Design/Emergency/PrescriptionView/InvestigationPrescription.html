@@ -1,0 +1,272 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto; padding: 0px" class="row col-md-24">
+    <div id="divInvestigationPrescribe">
+
+        <div class="row">
+            <div class="col-md-8">
+                <select>
+                    <option>All</option>
+                    <option>Favorite</option>
+                </select>
+            </div>
+            <div class="col-md-16">
+                <input type="text" name="name" autocomplete="off" placeholder="Search Investigation" value="" onkeyup="$searchInvestigationByWord(event)" autocomplete="off" id="Text1" />
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-24">
+                <div style="height: 200px" id="listInvestigation" class="chkList-Control">
+                    <ul id="investigationListMenu"></ul>
+                </div>
+            </div>
+        </div>
+      <!--  <div class="row">
+            <div class="col-md-24">
+                <input type="text" autocomplete="off" id="txtOtherInvestigation" onkeyup="onOtherInvestigationPrescriptionAdd(event)" placeholder="Write Other Invstigation" data-title="Prees Enter To Add on Prescription" />
+            </div>
+        </div>-->
+
+        <div class="row">
+            <div class="col-md-24">
+                <textarea style="min-height: 61px;" placeholder="Enter Laboratory & Radiology Remarks" id="txtInvestigationRemarks" onkeyup="onPrescribeInvestigationRemarkChange(event)"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-24">
+             <label class="pull-left">Rate</label><b class="pull-right">:</b>&nbsp;&nbsp;&nbsp;&nbsp; <span id="spnrate" style="color:red;font-size:small">0</span>
+            </div>
+        </div>
+        <div style="display: none" class="row">
+            <div style="padding: 0px" class="col-md-5">
+                <label class="pull-left">Quantity </label>
+                <b class="pull-right">:</b>
+            </div>
+            <div class="col-md-4">
+                <input type="text" value="1" disabled="disabled" id="txtInvestigationQuantity" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script id="prescribedInvestigationScript">
+    var selectedInvestigation = {};
+    var initInvestigationSearch = function () { }
+
+
+    var cachedInvestigation = [];
+    var getInvestigations = function (callback) {
+        var IsIPDData = "0";
+        var transactionID = $.trim($('#lblTransactionId').text()) == '' ? $.trim($('#lblTransactionIdPre').text()) : $.trim($('#lblTransactionId').text());
+        var appointmentID = $.trim($('#lblApp_ID').text());
+        serverCall('../CPOE/services/PrescribeServices.asmx/InvestigationItemSearch', { isIPDData: IsIPDData, transactionId: transactionID, appID: appointmentID }, function (response) {
+            var responseData = $.map(JSON.parse(response), function (item) {
+                return {
+                    label: item.TypeName,
+                    val: item.NewItemID +"_"+ 0,
+                    TnxType: item.TnxType,
+                    SubCategoryID: item.SubCategoryID,
+                    categoryid: item.categoryid,
+                    LabType: item.LabType,
+                    Type_ID: item.Type_ID,
+                    Sample: item.Sample,
+                    TnxType: item.TnxType,
+                    ItemCode: item.ItemCode,
+                    GenderInvestigate: item.GenderInvestigate,
+                    isadvance: item.isadvance,
+                    IsOutSource: item.IsOutSource,
+                    RateEditable: item.RateEditable,
+                    IsPackage: Number(item.IsPackage),
+                    PatientTest_ID: 0,
+                }
+            });
+            cachedInvestigation = responseData;
+            callback(responseData);
+        })
+    }
+
+    var prescribedInvestigationInit = function (callback) {
+        getInvestigations(function (data) {
+            bindFillterInvestigations(data, function (investigationListMenu) {
+                callback(investigationListMenu);
+            });
+        });
+    }
+
+    var bindFillterInvestigations = function (data, callback) {
+        var investigationListMenu = $('#investigationListMenu');
+        investigationListMenu.find('li').remove();
+        $.each(data, function (i) {
+            if (this.IsPackage == 0) {
+                var aa = '<li  style="max-width: 99%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;" role="menuitem"><a><label style="cursor:pointer;"  title="' + this.label + '" ><input type="checkbox"  id="' + $.trim(this.val) + '" onchange="onInvestigationSelect(this);"  IsPackage="' + this.IsPackage + '" PatientTest_ID="' + this.PatientTest_ID + '"    isOutSource="' + this.IsOutSource + '"     np-data="' + encodeURIComponent(JSON.stringify(this)) + '" value="' + this.val + '" class="ui-all" >' + this.label + '</label></a></li>';
+                investigationListMenu.append(aa);
+            }
+        });
+        callback(investigationListMenu);
+    }
+
+
+    var deleteInvestigationPreviewRow = function (itemID) {
+        var table = $('#divInvestigationPreview ul');
+        //alert(itemID + "ankur");
+        //$(table).find('#' + itemID).remove();
+        //$(table).find('#').remove();
+    }
+
+    var onInvestigationSelect = function (elem) {
+        var checked = $(elem).is(':checked');
+        $(elem).closest('ul').find('li a label').removeClass('selectedPreItem');
+        if (checked) {
+            $(elem).closest('li').find('a label').addClass('selectedPreItem');
+            var closestli = $(elem).closest('li');
+            var isoutsource = Number($(closestli).find('input').attr('isOutSource'));
+            serverCall('../common/CommonService.asmx/bindLabInvestigationRate', { PanelID: 1, ItemID: elem.value.split('_')[0], TID: "", IPDCaseTypeID: "", panelCurrencyFactor: 1 }, function (response) {
+                if (!String.isNullOrEmpty(response)) {
+                    var responseData = JSON.parse(response);
+                    //alert(responseData[0].Rate);
+                    $('#spnrate').text(responseData[0].Rate + Number($('#spnrate').text()));
+                }
+            });
+            
+            $(closestli).css({ 'background': '#80808052' });
+            getInvestigationPrescriptionDetails(function (data) {
+                data.itemID = elem.value;
+                data.name = $(closestli).find('a label').text();
+                data.data = decodeURIComponent($(elem).attr('np-data'));
+                data.isOutSource = isoutsource;
+                data.IsIssue = 0;
+                data.IsPackage = Number($(closestli).find('input').attr('IsPackage'));
+                data.PatientTest_ID = Number($(closestli).find('input').attr('PatientTest_ID'));
+                addInvestigationPreviewRow(data,0, function () { });
+                disabledPrint(true);
+            });
+            //$(elem).attr('checked', false);
+        }
+        else {
+            $(elem).closest('li').css({ 'background': '' });
+            //deleteInvestigationPreviewRow(elem.value);
+            disabledPrint(true);
+            var closestli = $(elem).closest('li');
+            serverCall('../common/CommonService.asmx/bindLabInvestigationRate', { PanelID: 1, ItemID: elem.value.split('_')[0], TID: "", IPDCaseTypeID: "", panelCurrencyFactor: 1 }, function (response) {
+                if (!String.isNullOrEmpty(response)) {
+                    var responseData = JSON.parse(response);
+                    //alert(responseData[0].Rate);
+                    $('#spnrate').text(Number($('#spnrate').text()) - responseData[0].Rate);
+                }
+            });
+        }
+    }
+
+    var getInvestigationPrescriptionDetails = function (callback) {
+        callback({
+            quantity: Number($('#txtInvestigationQuantity').val()),
+            remarks: $('#txtInvestigationRemarks').val('').val(),
+        })
+    }
+
+
+    var addInvestigationPreviewRow = function (data,isOldInv) {
+        var _divInvestigationPreview = $('#divInvestigationPreview ul');
+        if (_divInvestigationPreview.find('#' + $.trim(data.itemID)).length == 0)
+            _divInvestigationPreview.append('<li class="prescribedItem"  data-IsIssue="' + data.IsIssue + '" data-name="' + data.name + '" ' + (isOldInv == 0 ? " ondblclick='onPreviewInvestigationRemove(this)' title='Double Click To Remove' " : "") + ' style="list-style: none;font-size: 9px;font-weight: bold;" data-quantity="' + data.quantity + '" data-isOutSource="' + data.isOutSource + '" data-IsPackage="' + data.IsPackage + '"  id="' + $.trim(data.itemID) + '" value="' + data.itemID + '">&#10004; ' + data.quantity + ' ' + data.name + '<br/><div style="font-weight: 500;">' + (data.remarks.length > 0 ? '&nbsp;Remark:' : '') + data.remarks + '</div></li>')
+        else
+            modelAlert('This Item Already Prescribed.');
+    }
+
+    var onPreviewInvestigationRemove = function (elem) {
+
+        var IsIssued = Number($(elem).attr('data-IsIssue'));
+        var investigationID = $.trim(elem.id);
+        if (IsIssued == 0) {
+            $(elem).remove();
+            disabledPrint(true);
+        }
+        else {
+            modelAlert("This Investigation Already Billed.");
+        }
+    }
+
+
+
+    var onPrescribeInvestigationRemarkChange = function (e) {
+        var lastInvestigation = $('#divInvestigationPreview ul li').last();
+        var value = e.target.value;
+        if (e.target.value.length > 0)
+            $(lastInvestigation).find('div').html('&nbsp;Remark: ' + value);
+        else
+            $(lastInvestigation).find('div').html('');
+    }
+
+    var $searchInvestigationByWord = function (e) {
+        var _t = e.target.value.length;
+        if (_t >= 3) {
+            var _temp = cachedInvestigation.filter(function (i) {
+                if (i.label.toLowerCase().indexOf($.trim(e.target.value).toLowerCase()) > -1)
+                    return i;
+
+            });
+            bindFillterInvestigations(_temp, function () {
+                if (_temp.length == 1) {
+                    var _input = $('#investigationListMenu li input')
+                    if (_input.length > 0)
+                        if (_input[0].checked == false)
+                            _input.click();
+                    e.target.value = '';
+                }
+            });
+        }
+        else if (_t == 0)
+            bindFillterInvestigations(cachedInvestigation, function () { });
+    }
+
+    var bindPatientInvestigationDetails = function (data) {
+        $('#divInvestigationPreview ul li').remove();
+        $(data.investigationList).each(function (index) {
+            addInvestigationPreviewRow(this,1);
+            var selectedChecked = $('#investigationListMenu').find('#' + this.itemID).prop('checked', true);
+            if (data.investigationList.length == index + 1)
+                $(selectedChecked).closest('label').addClass('selectedPreItem');
+        });
+    }
+
+
+    onOtherInvestigationPrescriptionAdd = function (e) {
+        var code = (e.keyCode ? e.keyCode : e.which);
+        var medicineName = $.trim(e.target.value);
+        var othInvestigationCount = $('#divInvestigationPreview ul').find('[id^=OTH]').length;
+        if (medicineName.length < 1) {
+            modelAlert('Please Enter Investigation Name', function () {
+            });
+            return false;
+        }
+        if (code == 13) {
+            getInvestigationPrescriptionDetails(function (data) {
+                data.name = e.target.value;
+                data.itemID = 'OTH' + othInvestigationCount + "_" + 0;
+                data.data = {},
+                data.isOutSource = 0,
+                data.IsIssue = 0,
+                data.IsPackage = 0,
+                data.PatientTest_ID = 0,
+                addInvestigationPreviewRow(data,0, function () { });
+                disabledPrint(true);
+                e.target.value = '';
+            });
+        }
+    }
+
+    $(document).ready(function () {
+        prescribedInvestigationInit(function (investigationListMenu) {
+            loadViewData(function (patientPrescriptionDetails) {
+                bindPatientInvestigationDetails(patientPrescriptionDetails);
+                $('#listInvestigation').slimScroll({
+                    height: '200px',
+                    width: '100%',
+                    color: '#028fff',
+                });
+            });
+        });
+    });
+
+</script>

@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>92</ID>
+    <MenuName>Referral</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAWABYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1e9nvTdX7xNeuIZwirAVCqgjRm7ZLHLY68kCr+kSXDSXUU7SkxuvEzKWXKgkZUYIzz+Nebaz4s164u4prXwjY3ccltDIZ5bF5SxaNWIDAjgFsY56VabxRq7aaLW20a704Ov737LpbAhieSp3YGRgZIz71pGKdlp6mTbV3v5He2Gux3txfRS28tqtrN5QknGFkPPK/ln6EetFeKajLqb+Hrpb+0ubK0W7gFtFPlcfLNuOSBljwSfp0AABTlGN9Bxcranruj+DtP0+3eO+t7S+lbywskturFQsUcePmyeqE/jWn/wAI5oX/AEBtO/8AAVP8KKKzKOa8RfD2DWWkSxkt9PicQsY47cAZTzsnAx180f8AfNFFFO4rH//Z</image>
+    <Items>
+      <URLName>/design/ipd/Transferpatientrequestfromoutside.aspx</URLName>
+      <DispName>Outside Referral</DispName>
+      <MenuID>92</MenuID>
+    </Items>
+    <Items>
+      <URLName>/design/ipd/SearchPatientTransferOnRequest.aspx</URLName>
+      <DispName>Search Referral</DispName>
+      <MenuID>92</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>51</ID>
+    <MenuName>Ticketing</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAA9VJREFUOE/Nk31Mm1UUxo/RwXBQV7ChSNgcxo25OWWKoMlcXNTtjyFuC2hDOp26yTCTUGsMHaOydCwQSSk0bCVrupQgZFI3ZRCIATHbqKQLYMlIG8AtA1NbaC3rx6DSPh6IbiNb/PzHm5y8b+4553ef577nJfo/LAwmFcK6bBgdtOc/6fFbNsXCuroC1uXAAAFfkxMt9MS/gmI4NR1WkRk95GGQG20MPEPhSDNl/WMghtbshUXgxkWGNNM8q7rCcRONNOtroE1/G4jxFx/EQHItLFFAJ8MsjwLWdfhVT76QgUYZGJ7VUq+ninY6VJT2p2BcXr0eQ6Le3+8KGMkEQgbArwV6RQioyeGrpR+h44O0BM9RmnIo6el7QtliLi4Lfl602PEA4HgDQBvmXEqUyzbDYZEATVGYUdHYlIqmvCqu0xB+ktPZJUB0x0djMOU4+qMj6OKiC4nAjXKGfY7wtBLVis04UrgRrW3Z8Di2w1VJ8y4FjTgVhOkS8k4Wk+QWEAOPr8FQYucti1fSGcQWOUwNW/FB3loU5abh22+2Qx9JxeF5Mfo7l2FGTpgsoq+uHaLnbsOGkrJhEV6HZcHi/YArd1HVrFOJ79tzoCl7FvJ96zHnrEAESpR5Y/FhIBpdXRT2vk+G8T0UdxvWRam4EA30ESJNDBzfCv+0DtryDLSyMtlbaWhr2AYENEDEBI8lA4rJGFYYh2prlPauj8CqYtFOl2BenHy++yi4hvNRo8xCh/FljJrz4QwW4oewFP1jL8DUGQvZRBxkXgFknuTzFcFMeWXwmSOqmfSDdchYsXhA0Ehp+JJaQkYaDC+MQbcICGrgGCli6yZUuzfizYmHsN8hRIFLhIJrQhy4uhLF7oehmBXjcEiMT8MpKJ4Qb1uieKqUYvy11BauZfuWJxnWg0jfFtT3rUC+XQiJPd4nscXflNoSInvtCZDa4kP5NmFAahfOcd4tGRWk33UFv3xGRWCg5zjBpxcidJRg+4RGNeeW5+QMJW7YbRW9tmtQFHj7ehL4WSexJ26Q2BKe2mmOf+yeQ+1RUc3CkHpKCf4SgktOrdhN4j+Kt/QKU3aYH7mRdzUFO8xJH//lfxyS0ypPCY35FRRwHKISbrjvzqbMiyvXPt8t9r86sgpZPeKF/NKlNUBQfxo5HB9xHFM3oaJZe67fpFbb1Y04qTmNL7imvU6P8zoDzlYZ0bHLlB3J+e4lFLecuaQ7hWOcK+Xed7luHelbEMMbmSeMeJ03pRwFVY3YX2nEe1ojFFxUdmfUc/MJPQ5qTuGdBiMO8Ps+XSPymPFKTQOSfwMZdIghhMUUiAAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/Design/HelpDesk/NewTicket.aspx</URLName>
+      <DispName>NewTicket</DispName>
+      <MenuID>51</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/HelpDesk/MyTicket.aspx</URLName>
+      <DispName>MyTicket</DispName>
+      <MenuID>51</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

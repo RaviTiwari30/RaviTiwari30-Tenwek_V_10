@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>47</ID>
+    <MenuName>DocAccounting</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAthJREFUOE+VVE1rE1EUnYmagB+Ii1aputFBbbAxM+/NR8ZgUbOIYsVKB8RNQVCLoiIWsS4MceFKF/WzqBTFj6hREalFXNiV/p/+gnjOm3nhWRLEwCXv3XvuuefeuTO2ZVm5RqOBv96/ZrNp9YuvjOFuE5wbHR1d/T9mWY2cLp8kySqdyzP9DNoa8C9iYoUQa3zfPxAEXsQ8TaoIqTBJinkADksptxPQj5RYx6kXpPTuwr7AfiBn2sxRwhC4LaX4DHsPwA6q6EVKbBSJAPgFnsMw3Ox53gL/tVLVMgBLIPJZFUrH+6mkPwiCfSzO9kC2kznV6sgmitAzhEJ5CsBPCD6u1Wob+z0oPWtgD5G8XK4OYI7qrOeoWoaqXb7vKWX91OnqUDWJh/I1DMVRCDmTduUdYx6FYCaRgxa+0wCcMquZc0wLi0vAfQgCcSIb01vkkJgPZ0ypweEkgHfQxjaCuBJapaporBRiH3WL1Wp5II7jDRnHFcSaihCAgyCd4xnOp7AWB9/pdGzHcQosgHbz9Xq9EIbyOMdTLBbzHAFjqT8c9rxohB1ZlUplEIF3uKwnAVSeg+JHBOI87fvyJ+6LKNpGu68xrxbwrxBrw48HKducKQp9g13O2vbeVCpyL4IxCOYAfobzDJQWhfDmcb+JpD1h6A7TB9KziO/mnX7E78GegHCLIoTzKh0p2B+X0h1D9XkkXqMhnuiHxbZR5JeU5SPwqXca5BfZjd4Su1QqrYNjFoQtvjVZkfMgug67AdLT9OEhDCH5JQiX8f8ceYP6oSBvRhF2txtnrNBWWgoSL4SI9gN4C2syoatz8Cyk7xnhBeKUT78VJnEcu0NIWuRbg9anoGYJCz0rhPsQifcNe5D6xW90MdlVuGKBbdd1Hb3k3DXOFCoT+CZo3F19pt/33Trua9Xe9npvs4VWnzFU7X4rzTZ7nNUX6q+WTaUcgTbzi2z6za81Mbz/AU0ULR5Xm4yDAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/DocAccount/DoctorShareSetupNew.aspx</URLName>
+      <DispName>Doctor Share Master</DispName>
+      <MenuID>47</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/DocAccount/SetDocShareDate.aspx</URLName>
+      <DispName>Set Doctor Share Date</DispName>
+      <MenuID>47</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/DocAccount/PostDocShare.aspx</URLName>
+      <DispName>Post Doctor Share</DispName>
+      <MenuID>47</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/DocAccount/UnPostDocShare.aspx</URLName>
+      <DispName>UnPost Doctor Share</DispName>
+      <MenuID>47</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/DocAccount/DoctorShareReportNew.aspx</URLName>
+      <DispName>Doctor Share Report</DispName>
+      <MenuID>47</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAIAAABL1vtsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAv9JREFUOE+llG9Ik0EYwK8EQQOxQKoZFkEIQRkVSR8ixIl+cJSkH6S+CCopaFhiYYoTE0HHFCc40WEUsxLtD/nBLXFTnDIVdaIba6KTEB0qxt7jNt4d7/Xsn7ncROjlx3Hvce/vnnueu/cEYwz95wMKw8+dvA5jniIiue3Gyg+LTuKByYcfBEOFqll07x3K7EMZkZF8Mtp2IyqKVHMoXd0yZNVb93QrRGcL4u1jvXknVapHOf1TRyiKe+dQmnrCAotQhtcYtgdZY+5NWPmRYgo97D8qCq8ivU+zuCv0ZjoLkLMoBLY0KFHMHUORBood9r0C1yRgaWKAOhGuT2Krekn77HEUas3CVthswWBGuwk9GJpcpxHT6c+FxuSAGQJ2CNw+2wK3Jdiny2rll7Kr5kcGqUXjxW5klN/XeYvqU3g3IqhzuVLElUeFUIp+v07YkyZx9Um44SKuOQtzhA1TeAUbKOBexHBVcQFexnNlUdyreGafYhYtNWvpMoQwjavPkPZUl/qJZ37Ae7iDUQRzQSmjngACpZYR3JDEaxpw7XksvQAtr22AWIhSDK+k5Vo4hUDZPtCzjsJngnNTcG74YXgb9uL++hy8RH7joMJX1MFCrjIWIg9ymnsWjetEvE4GCxL5TWh5nRxK7lJlg4W03jqkUOdwJYgrOxkA8voU4dpz1KbnDUp+sos3dNGVcZBCFvhRGZGlhG7EX9RgwL7OpmfhM5aKqE3HG7p5Qw+0dHUCpLgp2T1QQtruhMtF6OmhKwZIHj+mgG2TtttEnsKPd0CCPeZhXt9KZNdDFBOWnTCHb31MqD7FfhnY7qrgsApbZsFu5CqiYX33l3KQBhT+y978zapbdowsHmDZMfpjZL4gdqk4zlESReD6NCXjxsu4LpGf7OG1b/5WpKjX98sR94EolD4kVqOsTiRWfMyOofUi19scl0riep/vHq7HTVdI89VAFPAjeKycye+cyYf2X2ZzlSaJ0qztbfT0ZJDuLB+ZpPM+UdyF7AYUkS7oMcf/AMkdAOj6D6DkAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/DocAccount/DoctorwiseRevenue.aspx</URLName>
+      <DispName>Doctor Wise Revenue Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

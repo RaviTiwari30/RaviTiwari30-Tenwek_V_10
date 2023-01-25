@@ -1,0 +1,708 @@
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 7:25:39 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type               : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 7:29:20 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 7:29:29 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 7:29:38 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/VitalSignChart.aspx
+ Time Of Error            : 5/19/2022 7:32:21 PM
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToDouble(IFormatProvider provider)
+   at System.Convert.ToDouble(Object value)
+   at Design_IPD_VitalSignChart.BindGraphSPO2(String TID) in e:\Production Code\Tenwek\Design\IPD\VitalSignChart.aspx.cs:line 120
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.FormatException
+ TargetSite               : Double ParseDouble(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 7:32:44 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 7:32:55 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Doctor/Room_Doctor_Assign.aspx/saveRoomDoctor
+ Time Of Error            : 5/19/2022 7:35:13 PM
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and CenterID='1'' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 998
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 974
+   at StockReports.ExecuteScalar(String strQuery) in e:\Production Code\Tenwek\App_Code\BLL\StockReports.cs:line 100
+   at Design_OPD_Room_Doctor_Assign.saveRoomDoctor(Object RoomDoctor) in e:\Production Code\Tenwek\Design\Doctor\Room_Doctor_Assign.aspx.cs:line 98
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Doctor/Room_Doctor_Assign.aspx/saveRoomDoctor
+ Time Of Error            : 5/19/2022 7:35:14 PM
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and CenterID='1'' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 998
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 974
+   at StockReports.ExecuteScalar(String strQuery) in e:\Production Code\Tenwek\App_Code\BLL\StockReports.cs:line 100
+   at Design_OPD_Room_Doctor_Assign.saveRoomDoctor(Object RoomDoctor) in e:\Production Code\Tenwek\Design\Doctor\Room_Doctor_Assign.aspx.cs:line 98
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Doctor/Room_Doctor_Assign.aspx/saveRoomDoctor
+ Time Of Error            : 5/19/2022 7:35:23 PM
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and CenterID='1'' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 998
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 974
+   at StockReports.ExecuteScalar(String strQuery) in e:\Production Code\Tenwek\App_Code\BLL\StockReports.cs:line 100
+   at Design_OPD_Room_Doctor_Assign.saveRoomDoctor(Object RoomDoctor) in e:\Production Code\Tenwek\Design\Doctor\Room_Doctor_Assign.aspx.cs:line 98
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Doctor/Room_Doctor_Assign.aspx/saveRoomDoctor
+ Time Of Error            : 5/19/2022 7:41:31 PM
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and CenterID='1'' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 998
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 974
+   at StockReports.ExecuteScalar(String strQuery) in e:\Production Code\Tenwek\App_Code\BLL\StockReports.cs:line 100
+   at Design_OPD_Room_Doctor_Assign.saveRoomDoctor(Object RoomDoctor) in e:\Production Code\Tenwek\Design\Doctor\Room_Doctor_Assign.aspx.cs:line 98
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Doctor/Room_Doctor_Assign.aspx/saveRoomDoctor
+ Time Of Error            : 5/19/2022 7:41:41 PM
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and CenterID='1'' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 998
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 974
+   at StockReports.ExecuteScalar(String strQuery) in e:\Production Code\Tenwek\App_Code\BLL\StockReports.cs:line 100
+   at Design_OPD_Room_Doctor_Assign.saveRoomDoctor(Object RoomDoctor) in e:\Production Code\Tenwek\Design\Doctor\Room_Doctor_Assign.aspx.cs:line 98
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Doctor/Room_Doctor_Assign.aspx/saveRoomDoctor
+ Time Of Error            : 5/19/2022 7:41:42 PM
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and CenterID='1'' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 998
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 974
+   at StockReports.ExecuteScalar(String strQuery) in e:\Production Code\Tenwek\App_Code\BLL\StockReports.cs:line 100
+   at Design_OPD_Room_Doctor_Assign.saveRoomDoctor(Object RoomDoctor) in e:\Production Code\Tenwek\Design\Doctor\Room_Doctor_Assign.aspx.cs:line 98
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Doctor/Room_Doctor_Assign.aspx/saveRoomDoctor
+ Time Of Error            : 5/19/2022 7:41:43 PM
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and CenterID='1'' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 998
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 974
+   at StockReports.ExecuteScalar(String strQuery) in e:\Production Code\Tenwek\App_Code\BLL\StockReports.cs:line 100
+   at Design_OPD_Room_Doctor_Assign.saveRoomDoctor(Object RoomDoctor) in e:\Production Code\Tenwek\Design\Doctor\Room_Doctor_Assign.aspx.cs:line 98
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Doctor/Room_Doctor_Assign.aspx/saveRoomDoctor
+ Time Of Error            : 5/19/2022 7:41:43 PM
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and CenterID='1'' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 998
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 974
+   at StockReports.ExecuteScalar(String strQuery) in e:\Production Code\Tenwek\App_Code\BLL\StockReports.cs:line 100
+   at Design_OPD_Room_Doctor_Assign.saveRoomDoctor(Object RoomDoctor) in e:\Production Code\Tenwek\Design\Doctor\Room_Doctor_Assign.aspx.cs:line 98
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Doctor/Room_Doctor_Assign.aspx/saveRoomDoctor
+ Time Of Error            : 5/19/2022 7:41:44 PM
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and CenterID='1'' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 998
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 974
+   at StockReports.ExecuteScalar(String strQuery) in e:\Production Code\Tenwek\App_Code\BLL\StockReports.cs:line 100
+   at Design_OPD_Room_Doctor_Assign.saveRoomDoctor(Object RoomDoctor) in e:\Production Code\Tenwek\Design\Doctor\Room_Doctor_Assign.aspx.cs:line 98
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Doctor/Room_Doctor_Assign.aspx/saveRoomDoctor
+ Time Of Error            : 5/19/2022 7:41:44 PM
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and CenterID='1'' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 998
+   at MySqlHelper.ExecuteScalar(MySqlConnection connection, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 974
+   at StockReports.ExecuteScalar(String strQuery) in e:\Production Code\Tenwek\App_Code\BLL\StockReports.cs:line 100
+   at Design_OPD_Room_Doctor_Assign.saveRoomDoctor(Object RoomDoctor) in e:\Production Code\Tenwek\Design\Doctor\Room_Doctor_Assign.aspx.cs:line 98
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/PatientICDCodes.aspx
+ Time Of Error            : 5/19/2022 7:50:12 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_PatientICDCodes.btnAddICDCode_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\CPOE\PatientICDCodes.aspx.cs:line 656
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/PatientICDCodes.aspx
+ Time Of Error            : 5/19/2022 7:50:51 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_PatientICDCodes.btnAddICDCode_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\CPOE\PatientICDCodes.aspx.cs:line 672
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/PatientICDCodes.aspx
+ Time Of Error            : 5/19/2022 7:50:52 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_PatientICDCodes.btnAddICDCode_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\CPOE\PatientICDCodes.aspx.cs:line 672
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/PatientICDCodes.aspx
+ Time Of Error            : 5/19/2022 7:50:58 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_PatientICDCodes.btnAddICDCode_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\CPOE\PatientICDCodes.aspx.cs:line 672
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/PatientICDCodes.aspx
+ Time Of Error            : 5/19/2022 7:51:00 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_PatientICDCodes.btnAddICDCode_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\CPOE\PatientICDCodes.aspx.cs:line 672
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 8:07:04 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Pregnancydetails.aspx
+ Time Of Error            : 5/19/2022 8:14:45 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Insert_PatientInfo.savePatientMaster(Object PM, MySqlTransaction tnx, MySqlConnection con) in e:\Production Code\Tenwek\App_Code\BLL\Insert_PatientInfo.cs:line 179
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.Collections.Generic.List`1[Insert_PatientInfo+patientList] savePatientMaster(System.Object, MySql.Data.MySqlClient.MySqlTransaction, MySql.Data.MySqlClient.MySqlConnection)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Lab/SampleCollectionLab.aspx/SearchSampleCollection
+ Time Of Error            : 5/19/2022 8:20:18 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Lab_SampleCollectionLab.SearchSampleCollection(List`1 searchdata) in e:\Production Code\Tenwek\Design\Lab\SampleCollectionLab.aspx.cs:line 118
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String SearchSampleCollection(System.Collections.Generic.List`1[System.String])
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Lab/SampleCollectionLab.aspx/SearchSampleCollection
+ Time Of Error            : 5/19/2022 8:20:21 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Lab_SampleCollectionLab.SearchSampleCollection(List`1 searchdata) in e:\Production Code\Tenwek\Design\Lab\SampleCollectionLab.aspx.cs:line 118
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String SearchSampleCollection(System.Collections.Generic.List`1[System.String])
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Lab/SampleCollectionLab.aspx/SearchSampleCollection
+ Time Of Error            : 5/19/2022 8:20:56 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Lab_SampleCollectionLab.SearchSampleCollection(List`1 searchdata) in e:\Production Code\Tenwek\Design\Lab\SampleCollectionLab.aspx.cs:line 118
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String SearchSampleCollection(System.Collections.Generic.List`1[System.String])
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Lab/SampleCollectionLab.aspx/SearchSampleCollection
+ Time Of Error            : 5/19/2022 8:21:15 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Lab_SampleCollectionLab.SearchSampleCollection(List`1 searchdata) in e:\Production Code\Tenwek\Design\Lab\SampleCollectionLab.aspx.cs:line 118
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String SearchSampleCollection(System.Collections.Generic.List`1[System.String])
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Pregnancydetails.aspx
+ Time Of Error            : 5/19/2022 8:21:57 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Insert_PatientInfo.savePatientMaster(Object PM, MySqlTransaction tnx, MySqlConnection con) in e:\Production Code\Tenwek\App_Code\BLL\Insert_PatientInfo.cs:line 179
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.Collections.Generic.List`1[Insert_PatientInfo+patientList] savePatientMaster(System.Object, MySql.Data.MySqlClient.MySqlTransaction, MySql.Data.MySqlClient.MySqlConnection)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/design/OPD/Lab_PrescriptionOPD.aspx
+ Time Of Error            : 5/19/2022 8:31:01 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.validateBindRoleAndMenu() in e:\Production Code\Tenwek\DefaultHome.master.cs:line 193
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 140
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/Doctoer_Medicine_Order.aspx/SaveReorder
+ Time Of Error            : 5/19/2022 8:32:53 PM
+ Error Message            : String was not recognized as a valid DateTime.
+ Error Place              :    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at Util.GetDateTime(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 133
+   at Design_Store_Doctoer_Medicine_Order.SaveReorder(insert item) in e:\Production Code\Tenwek\Design\Store\Doctoer_Medicine_Order.aspx.cs:line 722
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.FormatException
+ TargetSite               : System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/Doctoer_Medicine_Order.aspx/SaveReorder
+ Time Of Error            : 5/19/2022 8:33:02 PM
+ Error Message            : String was not recognized as a valid DateTime.
+ Error Place              :    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at Util.GetDateTime(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 133
+   at Design_Store_Doctoer_Medicine_Order.SaveReorder(insert item) in e:\Production Code\Tenwek\Design\Store\Doctoer_Medicine_Order.aspx.cs:line 722
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.FormatException
+ TargetSite               : System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/Doctoer_Medicine_Order.aspx/SaveReorder
+ Time Of Error            : 5/19/2022 8:33:08 PM
+ Error Message            : String was not recognized as a valid DateTime.
+ Error Place              :    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at Util.GetDateTime(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 133
+   at Design_Store_Doctoer_Medicine_Order.SaveReorder(insert item) in e:\Production Code\Tenwek\Design\Store\Doctoer_Medicine_Order.aspx.cs:line 722
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.FormatException
+ TargetSite               : System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 8:40:04 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Lab/DepartmentReceiving.aspx/SaveSampleReceive
+ Time Of Error            : 5/19/2022 8:53:01 PM
+ Error Message            : Deadlock found when trying to get lock; try restarting transaction
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Design_Lab_DepartmentReceiving.SaveSampleReceive(List`1 data) in e:\Production Code\Tenwek\Design\Lab\DepartmentReceiving.aspx.cs:line 157
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Lab/SampleCollectionLab.aspx/SearchSampleCollection
+ Time Of Error            : 5/19/2022 10:36:27 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Lab_SampleCollectionLab.SearchSampleCollection(List`1 searchdata) in e:\Production Code\Tenwek\Design\Lab\SampleCollectionLab.aspx.cs:line 118
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String SearchSampleCollection(System.Collections.Generic.List`1[System.String])
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 10:36:54 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 10:37:07 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 10:37:11 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 10:37:27 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 10:37:48 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 10:37:56 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 10:38:08 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Lab/SampleCollectionLab.aspx/SearchSampleCollection
+ Time Of Error            : 5/19/2022 10:38:31 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Lab_SampleCollectionLab.SearchSampleCollection(List`1 searchdata) in e:\Production Code\Tenwek\Design\Lab\SampleCollectionLab.aspx.cs:line 118
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String SearchSampleCollection(System.Collections.Generic.List`1[System.String])
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 10:38:43 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 10:48:49 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 10:49:03 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 10:50:24 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 10:50:33 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Lab/SampleCollectionLab.aspx/SaveSamplecollection
+ Time Of Error            : 5/19/2022 11:24:05 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Lab_SampleCollectionLab.SaveSamplecollection(List`1 data) in e:\Production Code\Tenwek\Design\Lab\SampleCollectionLab.aspx.cs:line 267
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String SaveSamplecollection(System.Collections.Generic.List`1[System.String])
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 11:38:50 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 5/19/2022 11:39:03 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 109
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : fe80::6024:1812:ca80:80c1%11
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)

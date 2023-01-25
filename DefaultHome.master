@@ -1,0 +1,242 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DefaultHome.master.cs" Inherits="Design_DefaultHome" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title id="titleUser" runat="server"></title>
+<link rel="shortcut icon" href="Images/logoico.ico" type="image/x-icon" />
+
+    <style type="text/css">
+
+        .micon {
+            margin-bottom: -6px;
+            -moz-border-radius: 16px;
+            -webkit-border-radius:16px;
+            border-radius:16px;
+            width: 22px;
+            height: 22px;
+            border: black;
+            background-color: #0291FF !important;
+            border: 2px solid #0291FF  !important;
+            
+        }
+    </style>
+
+
+</head>
+
+
+<body style="margin: 0px 0px 0px 0px;">
+    <script type="text/javascript">
+
+        applicationName = '<%=Resources.Resource.ApplicationName%>'
+
+        function GetNotificationDetail(RoleID, UserID) {
+            //serverCall('<%=Resources.Resource.ApplicationName%>' + '/Design/Common/CommonService.asmx/GetNotificationDetail', { RoleID: RoleID, UserID: UserID }, function (response) {
+            //    var NotificationData = jQuery.parseJSON(response);
+            //    if (NotificationData.length > 0) {
+             //       var table = "<table id='tblResult' style='border-collapse:collapse;width:100%;display:none' rules='all' border='1'><tr > <th style='width:100%; background-color:#018eff; color:white ' scope='col'>Notification</th></tr><tbody>";
+             //       for (var i = 0; i < NotificationData.length; i++) {
+             //           var row = "<tr onclick='updateNotification(this)'> ";
+               //         row += "<td style='display:none' id='notificationID'>" + NotificationData[i].ID + "</td>";
+                 //       row += "<td style='display:none' id='notificationType'>" + NotificationData[i].NotificationType + "</td>";
+                   //     row += "<td style='width:100%;'><a style='text-decoration:none;color:black;font-weight:bold; opacity: 0.5;' href='http://" + window.location.host + "<%=Resources.Resource.ApplicationName%>" + NotificationData[i].PagePath + "'>" + NotificationData[i].Message + "</a></td>";
+                     //   row += "</tr>";
+                       // table += row;
+                   // }
+                    //table += "</tbody></table>";
+                    //jQuery("#NotificationBody").text('');
+                    //jQuery("#NotificationBody").append(table);
+                    //jQuery('.Ncount').text(NotificationData.length);
+                  //  toastr.info(table, '')
+               // }
+                //else {
+                    jQuery('.Ncount').text('0');
+                    jQuery("#NotificationBody").text('');
+                //}
+            //});
+        }
+
+        function openPopup() {
+            var url = "http://" + window.location.hostname + "/<%=Resources.Resource.ApplicationName%>/Document_downloads.aspx";
+            window.open(url, null, 'left=100, top=100, height=450, width=540, status=yes, resizable= no, scrollbars= yes, toolbar= no,location= no, menubar= no');
+            event.keyCode = 0;
+            return true;
+        }
+
+
+        var markRoleAsDefault = function (roleID) {
+            var roleID = Number(roleID);
+            serverCall('<%=Resources.Resource.ApplicationName%>/Design/Common/CommonService.asmx/SetDefaultRole', { roleID: roleID }, function () {
+
+            });
+        }
+        var setRoleDefaultPage = function () {
+           // alert(href);
+           // debugger;
+            var data = {
+                href: '<%=HttpContext.Current.Request.Url.AbsolutePath.Remove(0, VirtualPathUtility.ToAbsolute("~/").Length - 1)%>',
+                roleID: Number($('#lblRoleID').text()),
+                empID: $('#lblUserID').text()
+            }
+            serverCall('<%=Resources.Resource.ApplicationName%>/Design/EDP/Services/EDP.asmx/SetRoleDefaultPage', data, function (response) {
+                var responseData = JSON.parse(response);
+                modelAlert(responseData.response, function () {
+                    window.location.reload();
+                });
+            });
+        }
+        
+    </script>
+
+
+
+
+    <%: System.Web.Optimization.Scripts.Render("~/bundle/js") %>
+    <%: System.Web.Optimization.Styles.Render("~/bundle/css") %>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <form id="formMaster" runat="server" name="formMaster" defaultbutton="lnkSignOut" clientidmode="Static">
+        <div style="position: fixed; width: 100%; z-index: 1" class="Purchaseheader defaultpagesetting" id="divMasterNav" runat="server">
+            <table style="width: 100%; font-size: 12px;">
+                <tr>
+                    <td>
+                        <img src="<%=Resources.Resource.ApplicationName %>/Images/menu-btn.png" id="imgShowMenu" class="headerIcon" data-title="Click To Open Menu" alt="Show" style="border: none; margin-top: 0px; cursor: pointer" onclick="showHISMenu(event);" />
+                    </td>
+                    <td style="vertical-align: central;">Employee Name :&nbsp;<asp:Label ID="lblEmpName" ClientIDMode="Static" runat="server" Text="" ForeColor="White" Font-Bold="true"></asp:Label></td>
+                    <td style="vertical-align: central;">Centre Name :&nbsp;
+                        
+                       
+                        <asp:Label ID="lblCenterName" runat="server"  ClientIDMode="Static" Text="" ForeColor="White" Font-Bold="true"></asp:Label>
+
+                    </td>
+                    <td style="vertical-align: central;"><span> Logged in :</span>&nbsp;<asp:Label ID="lblLoginPanel" ClientIDMode="Static" runat="server" Text="" ForeColor="White" Font-Bold="true"></asp:Label></td>
+
+                    <td style="text-align: center"><a id="linkRoleDefaultURL" runat="server" style="text-decoration: none; border: none;">
+                        <img class="headerIcon" src='<%=ResolveUrl("Images/NewImages/star.png") %>' title="Click To Role Default Page" alt="Home" style="border: none; margin-top: -2px; height: 20px; cursor: pointer" /></a>
+                    </td>
+
+                    <td>
+                        <img class="headerIcon" src='<%=ResolveUrl("Images/NewImages/info_usermanual.png") %>' alt="User Manual" onclick="openPopup()" title="User Manual" style="border-style: none; border-color: inherit; border-width: medium; margin-top: 0px; height: 20px; cursor: pointer" /></td>
+                    <td style="text-align: center"><a href='<%=ResolveUrl("Welcome.aspx") %>' style="text-decoration: none; border: none;">
+                        <img class="headerIcon" src='<%=ResolveUrl("Images/NewImages/home-icon.png") %>' title="Click To Go Home Page" alt="Home" style="border: none; margin-top: 4px; height: 20px; cursor: pointer" /></a></td>
+                    <td id="tdNotification" valign="top" >
+                        <div style="cursor: pointer;">
+                            <img class="headerIcon" src='<%=ResolveUrl("Images/NewImages/rem-icon.png") %>' alt="Notification" style="margin-top: 3px; height: 20px;" /><span id="Ncount" class="Ncount" style="min-width: 12px; border-radius: 4px; background-color: Red; color: White; margin-top: 0px; margin-left: -7px; position: absolute; font-weight: bold; text-align: right; font-size: 13px"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <img class="headerIcon" src='<%=ResolveUrl("Images/NewImages/role.png") %>' alt="Department" onclick="$showRoleModel()" title="Department" style="border-style: none; border-color: inherit; border-width: medium; margin-top: 0px; height: 20px; cursor: pointer" /></td>
+                    <td style="text-align: center">
+                        <asp:ImageButton ID="imglogout" runat="server" ImageUrl="~/Images/icon-logout.png" CssClass="headerIcon" CausesValidation="false" ClientIDMode="Static" OnClick="lnkSignOut_Click" ToolTip="LogOut" Style="cursor: pointer; padding: 0px; margin: 0px;" /></td> <!--OnClientClick="return false;signOutConfirmation(e);" --!>
+                    <td style="text-align: center">
+                        <img class="headerIcon" id="imgWindowReSize" style="cursor: pointer; padding: 0px; margin: 0px;" onclick="$toggleWindow(this)" alt="X" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABfElEQVQ4jdWUz0tVQRTHP3Nf8XxQJm6DhNy9lZQblxGucpFtW2YQoS36BwTX/RdB+6CNoLhKAiUI10IKBbUK+/VeYJ8Wbx6M8+be1J1fGM7cc8585szcwwS1DcwAvWz8DCH8oCD1MnANGMvGV9TrjqqvLpRgETih7hTWrVXA7yy/DzwIIbypA4YQvgHzwG4W6lXxeCcKAP7UwRIdx81PFqNWsdye+inOf6nzdST1qrqdHPVjtMvDhO/qPfWmetAELcCeJXe6NEy6myyohRZgy0lsQr1dd6QU+iLx31KPctipFKGrBf+c+uRMsIuh+AMWC/4b6p3zwLbVv+rjDLbf1KdVTJxOYcA6MAcEoJ3kt4BLQAd4nbVUS50afhyq3VjZ21KfJQtH+jTCXqmPUEMMflHfNcEaoBtx/hS146hWTnHPKXSo5xWDhzHVEbD5PyBwALzPfO0ScBzYUrsN1bWAl8D9HBjUK8BDBu9iP7GfQwgfaoCTwCyDDhhL7N4/rxL4kpTDkcIAAAAASUVORK5CYII=" /></td>
+                    <td style="text-align: right; width: 190px; display: none">
+                        <asp:Label ID="lblRoleID" ClientIDMode="Static" Style="display: none" Text="0" runat="server"></asp:Label>
+                        <asp:Label ID="lblUserID" ClientIDMode="Static" Style="display: none" runat="server"></asp:Label>
+                        <%--<asp:DropDownList ID="ddlUserName" runat="server" AutoPostBack="True" Width="190px" ClientIDMode="Static">
+                        </asp:DropDownList>--%>
+                        <asp:LinkButton ID="lnkSignOut" runat="server" OnClientClick="return false" CausesValidation="false" Text="LogOut" Style="display: none;" Width="22px" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: none;">
+            <%--  <asp:Label ID="txtRoleID" ClientIDMode="Static" runat="server"></asp:Label>--%>
+            <asp:Label ID="txtUid" ClientIDMode="Static" runat="server"></asp:Label>
+        </div>
+        <div style="float: right; top: 0px;">
+            <div style="display: none">
+                <audio style="width: 300px; height: 30px" id="audio" controls="controls"><source src='<%= ResolveUrl("~/Audio/notification.mp3")%>' type="audio/mpeg" /></audio>
+            </div>
+        </div>
+
+        <div id="wrapper">
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav mainmenu">
+                    <li>
+                        <asp:Repeater ID="rptMenu" OnItemDataBound="rptMenu_ItemDataBound" runat="server">
+                            <HeaderTemplate>
+                                <ul class="mainMenu">
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <li class="has-sub">
+                                    <span class="holder"></span>
+                                    <asp:Label runat="server" Visible="false" Text='<%#Eval("ID") %>' ID="lblMenuID"> </asp:Label>
+                                    <a href="javascript:void(0);" class="mainMenuAnchor" id='<%# Eval("ID") %>'> <img class="micon" src='<%# Eval("image") %>' alt="" /> <span> <%#Eval("MenuName") %> </span></a>
+                                    <asp:Repeater ID="rptSubMenu" runat="server">
+                                        <HeaderTemplate>
+                                            <ul class="submenus">
+                                        </HeaderTemplate>
+                                        <ItemTemplate>
+                                            <li><a style="background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAPxJREFUOI1jYKARYCRWITOGyP//jPJvtJokDB153p7ddotkA1Seyvk8k/eY8ZFPxUtBTeXRuzNbL+MzgAldgOXnO2EGBkaGH/zS/E+U/aerZE2PJsmAfwzM/2DsH7xSfE9U/acpZ02LJdoAdPCDT5LvqW7AFPmqlYFkGcDAwMDwg1uS752Y2kKtlBYDsgxgYGBgYPzP8I+FhfEPWQawf3n2QeDljZhLM6qvkGwA+5dnH+Subsx81BG5BZs8C6aJf+GGsn969kHu4cbM21OzVuCyAMOAv1xirxn+/2Pg+PTko+zjzZm3Z+DWjB38/8+okLWsXiN1kjdpGgcKAAAs+VIyHT+VPAAAAABJRU5ErkJggg==') no-repeat left center; margin-left: 25px;text-indent: 18px;" href="<%# Eval("MenuURL") %>" id="<%# Eval("MenuID") %>"><%#Eval("MenuDisplayName") %></a></li>
+                                        </ItemTemplate>
+                                        <FooterTemplate>
+                                            </ul>
+                                        </FooterTemplate>
+                                    </asp:Repeater>
+                                </li>
+                            </ItemTemplate>
+                            <FooterTemplate>
+                                </ul>
+                            </FooterTemplate>
+                        </asp:Repeater>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <%--MASTER PAGE CONTENT--%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <div id="divMasterPageParent" style="height: 650px; overflow: auto">
+                </div>
+            </asp:ContentPlaceHolder>
+        </div>
+        <%--NOTIFICATION--%>
+        <div id="Pbody_box_inventory" class="Notification" style="width: 320px; float: right; display: none; position: absolute; top: 0px; right: 10px; background-color: white;">
+
+            <div id="NotificationBody" style="text-align: center;"></div>
+
+        </div>
+        <div id="divRoleModel" style="background: rgba(0, 0, 0, 0.94);" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 900px; max-height: 500px;">
+                    <div style="padding: 5px" class="modal-header">
+                        <button type="button" class="close" data-dismiss="divRoleModel" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Authorized Roles & Departments</h4>
+                    </div>
+                    <div class="chosen-container-single">
+                        <div class="chosen-search">
+                            <input class="chosen-search-input" placeholder="Search And Press Enter To Select !!" style="text-align: center; font-weight: bold; color: blue; text-transform: uppercase" onkeyup="searchRole(event)" type="text" autocomplete="off" onlytext="50" maxlength="50" />
+                        </div>
+                    </div>
+                    <div class="modal-body popup-container">
+
+                        <asp:Repeater ID="rptRole" runat="server" OnItemCommand="rptRole_ItemCommand">
+                            <HeaderTemplate>
+                                <ul>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <li class='liRoleDeaprtments <%#Eval("ID") %>' id='<%#Eval("ID") %>' na-data-title='<%# Eval("RoleName") %>' style="height: 100px; float: left;">
+                                    <asp:LinkButton ID="select" CommandName="Select" CommandArgument='<%# Eval("RoleName") +"#"+Eval("ID") %>' BackColor='<%# System.Drawing.ColorTranslator.FromHtml(Eval("background").ToString())%>' na-data-title='<%# Eval("RoleName") %>' runat="server">
+                                           <img alt="" style="background-color: white;-webkit-border-radius: 90px;-moz-border-radius: 90px;width: 50px; height: 50px" na-data-title='<%# Eval("RoleName") %>'   src='<%# Resources.Resource.ApplicationName+Eval("image") %>' />
+                                           <p na-data-title='<%# Eval("RoleName") %>'><%# Eval("RoleName") %></p> 
+                                    </asp:LinkButton>
+                                </li>
+                            </ItemTemplate>
+                            <FooterTemplate>
+                                </ul>
+                            </FooterTemplate>
+                        </asp:Repeater>
+                    </div>
+                    <div style="padding: 5px" class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,569 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="divInvestigationPrescribe">
+        <div class="row">
+            <div class="col-md-24">
+                <div class="row">
+                    <div class="col-md-24" style="text-align: center;">
+                        <label>
+                            <strong style="font-size: medium;"> 
+                                    <input type="radio" name="ar" checked="checked" value="0" class="rdoar" />
+                                <span>Normal Menu</span>
+                                <input type="radio" name="ar" value="1" class="rdoar" />
+                                <span>Frame Menu</span>
+
+                                <input type="radio" name="ar" value="2" class="rdoar" />
+                                <span>CPOE Menu</span>
+                                <input type="radio" name="ar" value="3" class="rdoar" />
+                                <span>Prescription Menu</span>
+                                <br />
+                            </strong>
+                            <input type="button" id="btnDefaultSelect" value="Default Tab Selection" onclick="showDefaultTabModel()" class="pull-right" style="margin-right: 5px; display: none;" />
+                        </label>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-22">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Privilege
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <select id="ddlLoginType" class="ddlLoginType" title="Select Privilege"></select>
+                            </div>
+                            <div class="col-md-3 DivAccessRightMenu">
+                                <label class="pull-left">
+                                    Menu
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5 DivAccessRightMenu">
+                                <select id="ddlMenuAccessRight" class="ddlMenu" title="Select Menu"></select>
+                            </div>
+                            <div class="col-md-3 hidden DivAccessRightFrame">
+                                <label class="pull-left">
+                                    Frame
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5 hidden DivAccessRightFrame">
+                                <select id="ddlFrameAccessRight" class="ddlFrame" title="Select Frame"></select>
+                            </div>
+
+                            <div class="col-md-3 hidden DivAccessRightDoctor">
+                                <label class="pull-left">
+                                    Doctor
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5 hidden DivAccessRightDoctor">
+                                <select id="ddlDoctor" class="ddlDoctor" title="Select Doctor"></select>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-24  Purchaseheader">
+                        <label class="pull-left">
+                            <strong>Search Detail </strong>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <table style="width: 100%">
+                        <tr>
+                            <td></td>
+                            <td>Available</td>
+                            <td></td>
+                            <td>Remaining
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img id="move-up" src="../../Images/Up.png" alt="" />
+                                <br />
+                                <br />
+                                <img id="move-down" src="../../Images/Down.png" alt="" /></td>
+                            <td style="width: 522px;">
+                                <select id="lstAvailAbleRight" multiple="multiple" name="Name_of_list_box" class="ItDoseListbox" style="width: 480px; height: 400px;"></select>
+                                <!--     <asp:ListBox ID="lstAvailAbleRight" runat="server" Height="400px" SelectionMode="Multiple"
+                            CssClass="ItDoseListbox" Width="485px"></asp:ListBox>-->
+                            </td>
+                            <td>
+                                <br />
+                                <img id="right" src="../../Images/Right.png" alt="" />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <img id="left" src="../../Images/Left.png" alt="" />
+                            <td>
+                                <select id="lstRight" multiple="multiple" name="Name_of_list_box" class="ItDoseListbox" style="width: 480px; height: 400px;"></select>
+                                <!--       <asp:ListBox ID="lstRight" runat="server" SelectionMode="Multiple" Height="400px"
+                                Width="480px" CssClass=""></asp:ListBox>-->
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row DivAccessRightMenu">
+                    <div style="text-align: center;">
+                        <input id="btnGenerate" type="button" class="ItDoseButton" value="Generate Menu" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="dvDefaultTab" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: white; width: 40%;">
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="closeDefaultTabModel();" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Default Tab For Print</h4>
+                </div>
+                <div style="max-height: 400px; overflow: auto; margin-left: 10px;" id="listDefaultTabs" class="modal-body">
+                    <ul id="ulDefaultTabSelection"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="saveDefaultTabSeletion();">Save</button>
+                    <button type="button" onclick="closeDefaultTabModel();">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" id="prescribedInvestigationScript">
+    $(document).ready(function () {
+        $commonJsInit(function () {
+        });
+        $('.rdoar').change(function () {
+            $('#btnDefaultSelect').css('display', 'none');
+            if ($(this).val() == "1") {
+                $('.DivAccessRightMenu,.DivAccessRightDoctor').addClass('hidden');
+                $('.DivAccessRightFrame').removeClass('hidden');
+            }
+            else if ($(this).val() == "0") {
+                $('.DivAccessRightFrame,.DivAccessRightDoctor').addClass('hidden');
+                $('.DivAccessRightMenu').removeClass('hidden');
+            }
+            else {
+                $('.DivAccessRightFrame,.DivAccessRightMenu').addClass('hidden');
+                if ($(this).val() == "3") {
+                    $('#btnDefaultSelect').css('display', 'block')
+                }
+                $('.DivAccessRightDoctor').removeClass('hidden');
+            }
+            $("#lstAvailAbleRight,#lstRight").html('');
+            $('#ddlLoginType,#ddlFrameAccessRight,#ddlMenuAccessRight,#ddlDoctor').val('0').chosen('destroy').chosen();
+        });
+        $('#move-up').click(moveUp);
+        $('#move-down').click(moveDown);
+        $('#btnGenerate').click(UpdateSNo);
+        $('#ddlLoginType,#ddlMenuAccessRight,#ddlFrameAccessRight,#ddlDoctor').change(function () {
+            bindRightFrame();
+            bindAvailRight();
+        });
+        $("#right").bind("click", function () {
+            if ($("#ddlLoginType").val() == "0") {
+                modelAlert('Please Select Privilege');
+                $("#ddlLoginType").focus();
+                cond = 1;
+                return;
+            }
+            $('#lstRight option').prop("selected", false);
+            var cond = 0;
+            if ($('#lstAvailAbleRight option:selected').text() == "") {
+                modelAlert('Please Select Available Right');
+                return false;
+                cond = 1;
+            }
+            if (cond == 0) {
+                var options = $('#lstAvailAbleRight option:selected');
+                for (var i = 0; i < options.length; i++) {
+                    var opt = $(options[i]).clone();
+                    $(options[i]).remove();
+                    $('#lstRight').append(opt);
+                }
+
+                var data = new Array();
+                $('#lstRight option').each(function () {
+                    var obj = new Object();
+                    obj.URLId = $(this).val();
+                    obj.RoleID = $('#ddlLoginType').val();
+                    obj.Type = $("input[name='ar']:checked").val();
+                    obj.doctorID = $('#ddlDoctor').val();
+                    data.push(obj);
+                });
+                if (data.length > 0) {
+                    $.ajax({
+                        url: "Services/PagePrivilage.asmx/RoleUpdate",
+                        data: JSON.stringify({ Data: data }),
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        timeout: 120000,
+                        async: true,
+                        dataType: "json",
+                        success: function (result) {
+                            if (result.d == "1") {
+                                modelAlert('Record Update Successfully');
+                            }
+
+                            $('#lstRight option').attr("selected", false);
+                        },
+                        error: function (xhr, status) {
+                            window.status = status + "\r\n" + xhr.responseText;
+
+                        }
+                    });
+                }
+            }
+            else {
+                modelAlert('Please Select Available');
+                return false;
+            }
+        });
+        $("#left").bind("click", function () {
+            if ($("input[name='ar']:checked").val() == "0" && $("#ddlMenuAccessRight").val() == "0") {
+                modelAlert('Please Select Menu');
+                $("#ddlMenuAccessRight").focus();
+                cond = 1;
+                return;
+            }
+            if ($("input[name='ar']:checked").val() == "1" && $("#ddlFrameAccessRight").val() == "0") {
+                modelAlert('Please Select Frame');
+                $("#ddlFrameAccessRight").focus();
+                cond = 1;
+                return;
+            }
+            if (($("#ddlDoctor").val() == "0") && ($("#ddlDoctor").is(':visible')) && ($("input[name='ar']:checked").val() == "2" || $("input[name='ar']:checked").val() == "3")) {
+                modelAlert('Please Select Doctor');
+                $("#ddlDoctor").focus();
+                cond = 1;
+                return;
+            }
+            var cond = 0;
+            if ($('#lstRight option:selected').text() == "") {
+                modelAlert('Please Select Remaining');
+                return false;
+                cond = 1;
+            }
+            if (cond == 0) {
+                var options = $('#lstRight option:selected');
+                for (var i = 0; i < options.length; i++) {
+                    var opt = $(options[i]).clone();
+                    $(options[i]).remove();
+                    $('#lstAvailAbleRight').append(opt);
+                }
+
+                var data = new Array();
+                $('#lstAvailAbleRight option').each(function () {
+                    var obj = new Object();
+                    obj.URLId = $(this).val();
+                    obj.RoleID = $('#ddlLoginType').val();
+                    obj.Type = $("input[name='ar']:checked").val();
+                    obj.SequenceNo = $(this).index();
+                    obj.doctorID = $('#ddlDoctor').val();
+                    data.push(obj);
+
+                });
+                if (data.length > 0) {
+                    $.ajax({
+                        url: "Services/PagePrivilage.asmx/RoleInsert",
+                        data: JSON.stringify({ Data: data }),
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        timeout: 120000,
+                        async: true,
+                        dataType: "json",
+                        success: function (result) {
+                            if (result.d == "1") {
+                                modelAlert('Record Saved Successfully');
+                            }
+                            $('#lstAvailAbleRight option').attr("selected", false);
+
+                        },
+                        error: function (xhr, status) {
+                            window.status = status + "\r\n" + xhr.responseText;
+                        }
+                    });
+                }
+            }
+            else {
+                modelAlert('Please Select Remaining');
+                return false;
+            }
+        });
+    });
+
+    var bindRightFrame = function () {
+        var ID = "";
+        var lstRight = $("#lstRight");
+        lstRight.html('');
+        if ($("input[name='ar']:checked").val() == "0") {
+            if ($("#ddlMenuAccessRight").val() == "0")
+                return false;
+            ID = $("#ddlMenuAccessRight").val();
+        }
+        else if ($("input[name='ar']:checked").val() == "1") {
+            if ($("#ddlFrameAccessRight").val() == "0")
+                return false;
+            ID = $("#ddlFrameAccessRight").val();
+        }
+        else {
+            if ($("#ddlDoctor").val() == "0")
+                return false;
+            ID = $("#ddlDoctor").val();
+        }
+        $.ajax({
+            url: "Services/PagePrivilage.asmx/bindRightFrame",
+            data: '{LoginType:"' + $("#ddlLoginType").val() + '",ID:"' + ID + '",doctorDeptID:"",type:"' + Number($('input[name="ar"]:checked').val()) + '" }',
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            timeout: 120000,
+            async: true,
+            dataType: "json",
+            success: function (result) {
+                FrameData = jQuery.parseJSON(result.d);
+                if (FrameData != null) {
+                    for (i = 0; i < FrameData.length; i++) {
+                        lstRight.append($("<option></option>").val(FrameData[i].Id).html(FrameData[i].DisplayName));
+                    }
+                }
+            },
+            error: function (xhr, status) {
+                window.status = status + "\r\n" + xhr.responseText;
+            }
+        });
+    }
+
+    var bindAvailRight = function () {
+        var ID = "";
+        var AvailAbleRight = $("#lstAvailAbleRight");
+        AvailAbleRight.html('');
+        if ($("input[name='ar']:checked").val() == "0") {
+            if ($("#ddlMenuAccessRight").val() == "0")
+                return false;
+            ID = $("#ddlMenuAccessRight").val();
+        }
+        else if ($("input[name='ar']:checked").val() == "1") {
+            if ($("#ddlFrameAccessRight").val() == "0")
+                return false;
+            ID = $("#ddlFrameAccessRight").val();
+        }
+        else {
+            if ($("#ddlDoctor").val() == "0")
+                return false;
+            ID = $("#ddlDoctor").val();
+        }
+        $.ajax({
+            url: "Services/PagePrivilage.asmx/bindAvailableType",
+            data: '{ID:"' + ID + '",RoleID:"' + $("#ddlLoginType").val() + '",doctorDeptID:"",type:"' + Number($('input[name="ar"]:checked').val()) + '"}',
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            timeout: 120000,
+            async: true,
+            dataType: "json",
+            success: function (result) {
+                AvaType = jQuery.parseJSON(result.d);
+                if (AvaType != null) {
+                    for (i = 0; i < AvaType.length; i++) {
+                        AvailAbleRight.append($("<option></option>").val(AvaType[i].Id).html(AvaType[i].DisplayName));
+                    }
+                }
+            },
+            error: function (xhr, status) {
+                window.status = status + "\r\n" + xhr.responseText;
+            }
+        });
+    }
+
+    function UpdateSNo(e) {
+
+        var list = new Array();
+        var obj = new Object();
+        var i = 1;
+        $('#lstAvailAbleRight option').each(function () {
+            obj.UrlID = $(this).val();
+            obj.SNo = i;
+            list.push(obj);
+            i = i + 1;
+            obj = new Object();
+
+        });
+
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ RoleID: "'" + $('#ddlLoginType').val() + "'", RoleName: "" + $('#ddlLoginType option:selected').text() + "", fileRoleList: list }),
+            url: "Services/PagePrivilage.asmx/UpdateMenuSNo",
+            dataType: "json",
+            contentType: "application/json;charset=UTF-8",
+            timeout: 120000,
+            async: false,
+            success: function (result) {
+
+                if (result.d == "1") {
+                    modelAlert('Menu Generated Successfully');
+                }
+                else {
+                    modelAlert('Error occurred, Please contact administrator');
+                }
+            },
+            error: function (xhr, status) {
+                window.status = status + "\r\n" + xhr.responseText;
+
+            }
+        });
+        return;
+    }
+    function moveUp() {
+        if ($('#lstAvailAbleRight option:selected').val() == null) {
+            modelAlert('Please Select To Move Up');
+            return false;
+        }
+        $('#lstAvailAbleRight :selected').each(function (i, selected) {
+            $(this).insertBefore($(this).prev());
+        });
+        if ($("input[name='ar']:checked").val() != "0") {
+            var data = new Array();
+            $('#lstAvailAbleRight option').each(function () {
+                var obj = new Object();
+                obj.SequenceNo = $(this).index();
+                obj.URLId = $(this).val();
+                obj.RoleID = $("#ddlLoginType").val();
+                obj.Type = $("input[name='ar']:checked").val();
+                obj.doctorID = $('#ddlDoctor').val();
+                data.push(obj);
+            });
+            SequenceUpdate(data);
+            $('#lstAvailAbleRight :selected').focus().blur();
+        }
+    }
+    function moveDown() {
+        if ($('#lstAvailAbleRight option:selected').val() == null) {
+            modelAlert('Please Select To Move Down');
+            return false;
+        }
+        $('#lstAvailAbleRight :selected').each(function (i, selected) {
+            $(this).insertAfter($(this).next());
+        });
+        if ($("input[name='ar']:checked").val() != "0") {
+            var data = new Array();
+            $('#lstAvailAbleRight option').each(function () {
+                var obj = new Object();
+                obj.SequenceNo = $(this).index();
+                obj.URLId = $(this).val();
+                obj.RoleID = $("#ddlLoginType").val();
+                obj.Type = $("input[name='ar']:checked").val();
+                obj.doctorID = $('#ddlDoctor').val();
+                data.push(obj);
+            });
+            SequenceUpdate(data);
+            $('#lstAvailAbleRight :selected').focus().blur();
+        }
+    }
+    function SequenceUpdate(data) {
+        $.ajax({
+            url: "Services/PagePrivilage.asmx/SequenceUpdate",
+            data: JSON.stringify({ Data: data }),
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            timeout: 120000,
+            async: true,
+            dataType: "json",
+            success: function (result) {
+                SequenceData = jQuery.parseJSON(result.d);
+                if (result.d == "1") {
+                }
+            },
+            error: function (xhr, status) {
+                window.status = status + "\r\n" + xhr.responseText;
+            }
+        });
+    }
+    var $bindDoctorDropDown = function () {
+        serverCall('Services/PagePrivilage.asmx/bindDoctorDropDown', {}, function (response) {
+            $('.ddlDoctor').bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'DoctorID', textField: 'Name', isSearchAble: true, selectedValue: 'Select' });
+        });
+    };
+    var showDefaultTabModel = function () {
+        data = {
+            doctorId: $("#ddlDoctor").val(),
+            RoleID: $("#ddlLoginType").val()
+        }
+        serverCall('Services/PagePrivilage.asmx/bindDoctorTabs', data, function (response) {
+            var responseData = JSON.parse(response);
+            if (responseData.length > 0) {
+                var ulDefaultTabSelection = $('#ulDefaultTabSelection');
+                ulDefaultTabSelection.find('li').remove();
+                $.each(responseData, function (i) {
+                    var aa = '<li  role="menuitem" style="margin-left: 0px;"><a>'
+                        + '<label class="trimList"  title="' + this.AccordianName + '" >'
+                        + '<input   id="' + $.trim(this.Id) + '" value="' + this.Id + '" class="ui-all" type="checkbox" ';
+
+
+                    if (this.IsDefaultCheck == 1)
+                        aa = aa + ' checked="checked" ';
+
+                    aa = aa + ' >' + this.AccordianName + '</label> </li>';
+                    ulDefaultTabSelection.append(aa);
+                });
+                $('#dvDefaultTab').showModel();
+            }
+            else {
+                modelAlert("Doctor should have rights alteast one prescription tab");
+            }
+        });
+
+    }
+    var closeDefaultTabModel = function () {
+        $('#dvDefaultTab').closeModel();
+    }
+    var saveDefaultTabSeletion = function () {
+        var data = [];
+        $('#ulDefaultTabSelection li').each(function () {
+            if ($(this).find('input').is(":checked")) {
+                data.push({
+                    tabId: $(this).find('input').attr('id'),
+                    doctorID: $("#ddlDoctor").val(),
+                    RoleID: $("#ddlLoginType").val()
+                })
+            }
+        });
+
+        serverCall('Services/PagePrivilage.asmx/saveDefaultTabSeletionRights', { Data: data }, function (response) {
+            var responseData = JSON.parse(response);
+            modelAlert(responseData.response, function () {
+                if (responseData.status) {
+                    $('#dvDefaultTab').hideModel();
+                }
+
+            });
+        });
+    }
+    function pageLoad(sender, args) {
+        if (!args.get_isPartialLoad()) {
+            $addHandler(document, "keydown", onKeyDown);
+        }
+    }
+    function onKeyDown(e) {
+        if (e && e.keyCode == Sys.UI.Key.esc) {
+            if ($find('mpMenu')) {
+                $find('mpMenu').hide();
+            }
+        }
+
+    }
+</script>

@@ -1,0 +1,203 @@
+﻿<div style="margin: 0px; font-size: 13px; height: auto">
+    <div id="divInvestigationPrescribe">
+          <div class="POuter_Box_Inventory" style="margin-left: -6px">
+                <div class="Purchaseheader">
+                Room Details
+            </div>
+        <div class="row">
+          
+            <div class="col-md-24"  overflow-y: scroll">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <label class="pull-left">
+                            Select Centre
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-4">
+                        <select id="ddlCentre" tabindex="2"></select>
+                    </div>
+
+                   
+                    
+                    <div class="col-md-8"></div>
+                </div>
+
+                <div class="row " style="display:none;" id="divfloor" >
+                    <div class="row" id="chkfloorappend">
+                       
+                          
+                         </div>
+                   
+                </div>
+            </div>
+        </div>
+              </div>
+                <div class="POuter_Box_Inventory" style="margin-left: -6px">
+        <div style="text-align: center" class="row col-md-24">
+            <input style="width: 80px;display:none;margin-top:10px;" type="button" id="btnFloorSave" runat="server" value="Save" onclick="MapRoleWithRoom()" />
+        </div>
+                    </div>
+    </div>  
+</div>
+
+<script>
+
+    $('#ddlCentre').on('change', function () {
+
+        GetFloorByCentre(this.value)
+    })
+
+    var $ddlCentres = function (callback) {
+        var ddlRole = $('#ddlCentre');
+        var RoleID = $('#txtRoleID').val();
+        serverCall('RoleManager.aspx/DdlBindCentre', { RoleID: RoleID }, function (response) {
+            var Data = JSON.parse(response);
+          
+            if (Data != ''||Data!=null) {
+                ($(ddlRole).bindDropDown({ data: JSON.parse(response), defaultValue: 'Select', valueField: 'CentreID', textField: 'CentreName', isSearchable: true }));
+
+            }
+        });
+    }
+
+
+    function GetFloorByCentre(CentreID) {
+        if (CentreID == 0) {
+            $('#divfloor').hide();
+            $('#btnFloorSave').hide();
+            $("#chkfloorappend").empty();
+        }
+        $('#divfloor').show();
+        $('#btnFloorSave').show();
+
+        serverCall('RoleManager.aspx/GetFloorByCentre', { Cid: CentreID }, function (response) {
+            var RoleId = $('#txtRoleID').val();
+            var CentreData = JSON.parse(response);
+
+            if (CentreData.status) {
+                data = CentreData.response;
+                $("#chkfloorappend").empty();
+                $.each(data, function (i, item) {
+                    $("#chkfloorappend").append(" <div style='width: 1290px;margin-left: -21px;' class='Row POuter_Box_Inventory'  ><div class='Row' id='floorappend-" + item.ID + "'  > </div> <div style='margin-left:20px; ' class='Row ' id='Room-" + item.ID + "'></div> </div> ")
+                    $("#floorappend-" + item.ID + "").append(" <div class='col-md-24' style='cursor:pointer'> <input style='cursor:pointer' type='checkbox' id='chkfloor-" + i + "' name='chk-" + i + "' value=" + item.ID + " class='chkfloor' /> <b> <label style='cursor:pointer' for='chkfloor-" + i + "'>" + item.NAME + "</label> </b></div>");
+
+                    GetRoom(RoleId, item.ID, item.NAME)
+
+
+                });
+
+            }
+
+
+        });
+
+    }
+
+
+
+    function GetRoom(RoleID, FloorId, Floor) {
+
+        serverCall('RoleManager.aspx/GetRoomByFloor', { RoleID: RoleID, FloorId: FloorId, Floor: Floor }, function (response) {
+
+            var CentreData = JSON.parse(response);
+
+            if (CentreData.status) {
+                data = CentreData.response;
+                $("#Room-" + FloorId + "").empty();
+
+                $.each(data, function (i, item) {
+                    var check = '';
+
+                    if (item.isExist == 1) {
+                        check = 'checked';
+
+                    }
+
+                    $("#Room-" + FloorId + "").append(" <div class='col-md-3' style='cursor:pointer'> <input style='cursor:pointer' type='checkbox' id='chk-" + i + '-' + FloorId + "' name='chk-" + i + '-' + FloorId + "' value=" + item.IPDCaseTypeID + ',' + FloorId + " class='chkroom chkroom-" + FloorId + "' " + check + "/>  <label style='cursor:pointer' for='chk-" + i + '-' + FloorId + "'>" + item.Name + "</label></div>");
+
+
+                });
+
+            }
+
+
+        });
+
+    }
+
+
+
+    $(document).on('click', '.chkfloor', function () {
+
+        var id = $(this).attr("value");
+
+        if ($(this).is(":checked")) {
+            $(".chkroom-" + id + "").prop("checked", true)
+
+        }
+
+        else {
+            $(".chkroom-" + id + "").prop("checked", false)
+
+        }
+
+    });
+
+    var MapRoleWithRoom = function () {
+        var RoleId = $('#txtRoleID').val();
+
+        var IpdCaseTypeID = new Array();
+
+
+        if (RoleId == '') {
+            modelAlert('Error Occured');
+            return false;
+        }
+        // Parent checked check box value
+        $('.chkroom:checked').each(function () {
+            IpdCaseTypeID.push($(this).val());
+        });
+
+        if (IpdCaseTypeID == '') {
+            modelConfirmation('Confirmation', 'Are You Sure? Don not save Role To any Room ', 'Yes', 'Close', function (status) {
+                if (status == false) {
+                    return false;
+                }
+            });
+        }
+
+        var obj = {
+            IpdCaseTypeID: IpdCaseTypeID,
+            RoleID: RoleId,
+
+        };
+
+        var data = JSON.stringify(obj)
+
+
+        $.ajax({
+
+            url: 'RoleManager.aspx/MapRoleToRoom',
+            contentType: 'application/json; charset=utf-8',
+            type: 'POST',
+            data: JSON.stringify(obj),
+            cache: false,
+            success: function () {
+                modelAlert('Record Saved Successfully');
+
+
+            },
+            error: function (xhr, status, error) {
+                modelAlert('Some Error Occured  while saveing Role');
+            }
+        });
+
+
+
+
+    };
+
+</script>
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>15</ID>
+    <MenuName>Consume</MenuName>
+    <Items>
+      <URLName>/Design/Store/ConsumeItemGeneral.aspx</URLName>
+      <DispName>Consume General Item</DispName>
+      <MenuID>15</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/ConsumeItem.aspx</URLName>
+      <DispName>Consume Medical Item</DispName>
+      <MenuID>15</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>19</ID>
+    <MenuName>Issue</MenuName>
+    <Items>
+      <URLName>/Design/CSSD/IssueToDepartmentFromCSSD.aspx</URLName>
+      <DispName>Direct Issue to Department</DispName>
+      <MenuID>19</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/InternalStockTransferGeneral.aspx</URLName>
+      <DispName>General Items To Dept</DispName>
+      <MenuID>19</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/InternalStockTransfer.aspx</URLName>
+      <DispName>Medical Items To Dept</DispName>
+      <MenuID>19</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/IndentSearchForStore.aspx</URLName>
+      <DispName>Requisition Search</DispName>
+      <MenuID>19</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/SearchSales.aspx</URLName>
+      <DispName>Search</DispName>
+      <MenuID>19</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>12</ID>
+    <MenuName>Password</MenuName>
+    <Items>
+      <URLName>/Design/Employee/ChangePassword.aspx</URLName>
+      <DispName>ChangePassword</DispName>
+      <MenuID>12</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <Items>
+      <URLName>/Design/Store/StockLedgerMedical.aspx</URLName>
+      <DispName>Current Stock Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/LowStockDepatment.aspx</URLName>
+      <DispName>Department Low Stock Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>16</ID>
+    <MenuName>Requisition</MenuName>
+    <Items>
+      <URLName>/Design/Store/CreateIndentGeneral.aspx</URLName>
+      <DispName>Create General Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/CreateIndent.aspx</URLName>
+      <DispName>Create Medical Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/IndentSearch.aspx</URLName>
+      <DispName>Search</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>51</ID>
+    <MenuName>Tickting</MenuName>
+    <Items>
+      <URLName>/Design/HelpDesk/NewTicket.aspx</URLName>
+      <DispName>NewTicket</DispName>
+      <MenuID>51</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/HelpDesk/Report.aspx</URLName>
+      <DispName>Report</DispName>
+      <MenuID>51</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/HelpDesk/Search.aspx</URLName>
+      <DispName>SearchTicket</DispName>
+      <MenuID>51</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

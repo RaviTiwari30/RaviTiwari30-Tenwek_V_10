@@ -1,0 +1,55 @@
+body {padding:0;}
+body,p,div,span,table{ font: 12px Arial, Helvetica, sans-serif; }
+form { padding: 0px; margin: 0px; border: 0px; }
+td{vertical-align:top}
+p { margin:0px;}
+h1 { font:bold 17px verdana; margin-bottom:10px; color: #224488;}
+a:link {color: #16387C; text-decoration: underline}
+a:visited {	color: #16387C; text-decoration: underline}
+a:active { color: #16387C; text-decoration: underline}
+a:hover { color: #16387C; text-decoration: none}
+img{border:0;}
+code{font-size:11px;}
+#nav {margin:0 15px 15px 5px;padding:0 12px;background-color:#2D588F;height: 27px;line-height: 25px;font-family: "Segoe UI", sans-serif;}
+#nav a:link, #nav a:visited {color: #fff;padding:0 3px;}
+
+#footer { clear: both;	padding: 1em;	text-align: center;	border-top:solid 1px #eee; width:750;  margin:30px;}	
+
+#leftcolumn
+{
+	width: 150px;
+	padding-left:0px;
+}
+#leftcolumn ul {padding:0 0 3px 10px; list-style-position: outside; margin: 0; margin-bottom: 5px; list-style: none;}
+#leftcolumn li {padding-top: 1px;padding-bottom: 1px;padding-left: 2px; }
+#leftcolumn li a{color:#333333;text-decoration: none; }
+#leftcolumn li a:hover{color:navy;text-decoration: underline; }
+.leftcolumntitle {padding:0 0 3px 10px;color:#224488; font-size:110%}
+
+/*----Example CSS Class --*/ 
+img.greyborder {
+	border: 1px solid #c0c0c0;
+}
+td.module {
+	background-color: #efefef;
+}
+td.content {
+	color: black; 
+	font-family: tahoma, arial, helvetica; 
+	font-weight: bold; 
+}
+.subtabbg {
+	background-color: #efefef;
+}
+.redcolor{
+	color:red;
+}
+.boldgreen
+{
+	color: green; font-weight: bold;
+}
+.highlight
+{
+	background-color: yellow;
+}
+/*----End of Example CSS Class --*/ 

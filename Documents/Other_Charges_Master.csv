@@ -1,0 +1,1251 @@
+SubGroup,ItemName,ItemCode,RateList
+SKIN,Excision of Moles,23,397
+SKIN,Excision of Warts,24,357
+SKIN,Excision of Molluscum contagiosum,25,150
+SKIN,Excision of Veneral Warts,26,184
+SKIN,Excision of Corns,27,161
+SKIN,I/D Injection Keloid,28,112
+SKIN,Chemical Cautery (s),29,127
+OPTHALMOLOGY,Subconjunctival/subtenons injections in one eyes,30,79
+OPTHALMOLOGY,Subconjunctival/subtenons injections in both eyes,31,158
+OPTHALMOLOGY,Pterygium Surgery,32,99
+OPTHALMOLOGY,Conjunctival Peritomy,33,67
+OPTHALMOLOGY,"Conjunctival wound repair or exploration following blunt
+trauma",34,132
+OPTHALMOLOGY,Removal of corneal foreign body,35,132
+OPTHALMOLOGY,Cauterization of ulcer/subconjunctival injection in one eye,36,79
+OPTHALMOLOGY,Cauterization of ulcer/subconjunctival injection in both eyes,37,159
+OPTHALMOLOGY,Corneal grafting?Penetrating keratoplasty,38,6613
+OPTHALMOLOGY,Corneal grafting?Lamellar keratoplasty,39,5750
+OPTHALMOLOGY,Cyanoacrylate /fibrin glue application for corneal perforation,40,794
+OPTHALMOLOGY,Bandage contact lenses for corneal perforation,41,529
+OPTHALMOLOGY,Scleral grafting or conjunctival flap for corneal perforation,42,2645
+OPTHALMOLOGY,Keratoconus correction with therapeutic contact lenses,43,1380
+OPTHALMOLOGY,UV radiation for cross-linking for keratoconus,44,2070
+OPTHALMOLOGY,EDTA for band shaped keratopathy,45,992
+OPTHALMOLOGY,Arcuate keratotomy for astigmatism,46,3220
+OPTHALMOLOGY,Re-suturing (Primary suturing) of corneal wound,47,1323
+OPTHALMOLOGY,Penetrating keratoplasty ---- with glaucoma surgery,48,13966
+OPTHALMOLOGY,Penetrating keratoplasty --- with vitrectomy,49,13966
+OPTHALMOLOGY,Penetrating keratoplasty ---- with IOL implantation,50,15703
+OPTHALMOLOGY,DALK- Deep anterior lamellar keratoplasty,51,19838
+OPTHALMOLOGY,Keratoprosthesis stage I and II,52,13225
+OPTHALMOLOGY,"DSAEK- Descemet?s stripping automated endothelial
+keratoplasty",53,19176
+OPTHALMOLOGY,ALTK- Automated lamellar therapeutic keratoplasty,54,18975
+OPTHALMOLOGY,Probing and Syringing of lacrimal sac- in one eye,55,79
+OPTHALMOLOGY,Probing and Syringing of lacrimal sac- in both eye,56,159
+OPTHALMOLOGY,Dacryocystorhinostomy?Plain,57,3306
+OPTHALMOLOGY,"Dacryocystorhinostomy?Plain with intubation and/or with
+lacrimal implants",58,11213
+OPTHALMOLOGY,Dacryocystorhinostomy?conjunctival with implant,59,10580
+OPTHALMOLOGY,Caliculoplasty,60,2645
+OPTHALMOLOGY,Dacryocystectomy,61,1984
+OPTHALMOLOGY,Punctal plugs for dry eyes,62,150
+OPTHALMOLOGY,Refraction,63,46
+OPTHALMOLOGY,Indirect Ophthalmoscopy,64,77
+OPTHALMOLOGY,Orthoptic check-up- with synoptophore,65,51
+OPTHALMOLOGY,Lees? charting or Hess charting,66,115
+OPTHALMOLOGY,Orthoptic exercises,67,58
+OPTHALMOLOGY,Pleoptic exercises,68,58
+OPTHALMOLOGY,Perimetry/field test?Goldman,69,166
+OPTHALMOLOGY,Perimetry/field test? automated,70,166
+OPTHALMOLOGY,Fluorescein angiography for fundus or iris,71,1058
+OPTHALMOLOGY,Ultrasound A- Scan,72,992
+OPTHALMOLOGY,Ultrasound B- Scan,73,265
+OPTHALMOLOGY,Fundus Photo Test,74,230
+OPTHALMOLOGY,Indocyanin green angiography,75,1058
+OPTHALMOLOGY,Corneal endothelial cell count with specular microscopy,76,265
+OPTHALMOLOGY,Corneal topography,77,381
+OPTHALMOLOGY,Corneal pachymetry,78,265
+OPTHALMOLOGY,Auto-refraction,79,40
+OPTHALMOLOGY,Macular function tests,80,51
+OPTHALMOLOGY,Potential acuity metry,81,115
+OPTHALMOLOGY,Laser interferometry,82,199
+OPTHALMOLOGY,OCT-Optical coherence tomography,83,2500
+OPTHALMOLOGY,HRT- Heidelberg?s retinal tomogram,84,173
+OPTHALMOLOGY,GDX--- Nerve fibre layer analyzer,85,101
+OPTHALMOLOGY,UBM- Ultrasound bio microscopy,86,173
+OPTHALMOLOGY,Non Contact tonometry,87,58
+OPTHALMOLOGY,IOP measurement with schiotz,88,35
+OPTHALMOLOGY,IOP measurement with applation tonometry,89,58
+OPTHALMOLOGY,Three mirror examination for reti,90,67
+OPTHALMOLOGY,90 D lens examination,91,58
+OPTHALMOLOGY,Gonioscopy,92,67
+OPTHALMOLOGY,Chalazion incision and curettage in one eye,93,460
+OPTHALMOLOGY,Chalazion incision and curettage in both eyes,94,496
+OPTHALMOLOGY,Ptosis surgery with fasanella servat procedure,95,2645
+OPTHALMOLOGY,Ptosis surgery with LPS resection one lid,96,6325
+OPTHALMOLOGY,Ptosis surgery with Sling surgery one lid,97,7671
+OPTHALMOLOGY,Ectropion surgery- one lid,98,1610
+OPTHALMOLOGY,Ectropion surgery- both lids,99,2875
+OPTHALMOLOGY,Epicanthus correction,100,1783
+OPTHALMOLOGY,Cantholysis and canthotomy,101,662
+OPTHALMOLOGY,Entropion surgery- one lid,102,1587
+OPTHALMOLOGY,Entropion surgery- both lids,103,2300
+OPTHALMOLOGY,Tarsorraphy,104,748
+OPTHALMOLOGY,Suturing of lid lacerations,105,1323
+OPTHALMOLOGY,Lid retraction repair,106,1955
+OPTHALMOLOGY,Concretions removal,107,132
+OPTHALMOLOGY,Bucket handle procedure for lid tumors,108,397
+OPTHALMOLOGY,Cheek rotation flap for lid tumors,109,7935
+OPTHALMOLOGY,Orbitotomy,110,9258
+OPTHALMOLOGY,Enucleation,111,3450
+OPTHALMOLOGY,Enucleation with orbital implants and artificial prosthesis,112,3450
+OPTHALMOLOGY,Evisceration,113,3968
+OPTHALMOLOGY,Evisceration with orbital implants and artificial prosthesis,114,6547
+OPTHALMOLOGY,Telecanthus correction,115,5951
+OPTHALMOLOGY,Orbital decompression,116,6613
+OPTHALMOLOGY,Exenteration,117,6613
+OPTHALMOLOGY,Exenteration with skin grafting,118,7935
+OPTHALMOLOGY,Fracture orbital repair,119,10580
+OPTHALMOLOGY,Retinal laser procedures,120,1725
+OPTHALMOLOGY,Retinal detachment surgery,121,13225
+OPTHALMOLOGY,Retinal detachment surgery with scleral buckling,122,15870
+OPTHALMOLOGY,Buckle removal,123,1323
+OPTHALMOLOGY,Silicone oil removal,124,3220
+OPTHALMOLOGY,Anterior retinal cryopexy,125,1336
+OPTHALMOLOGY,Squint correction for one eye,126,5750
+OPTHALMOLOGY,Squint correction for both eyes,127,8625
+OPTHALMOLOGY,Trabeculectomy,128,7935
+OPTHALMOLOGY,Trabeculotomy,129,7935
+OPTHALMOLOGY,Trabeculectomy with Trabeculotomy,130,11903
+OPTHALMOLOGY,Trephition,131,2645
+OPTHALMOLOGY,Goniotomy,132,397
+OPTHALMOLOGY,Glaucoma surgery with Glaucoma valves,133,7935 +valve
+OPTHALMOLOGY,Cyclocryotherapy,134,1323
+OPTHALMOLOGY,YAG laser iridotomy,135,1725
+OPTHALMOLOGY,YAG laser capsulotomy,136,1257
+OPTHALMOLOGY,ALT-Argon laser trabeculoplasty,137,1719
+OPTHALMOLOGY,PDT-Photodymic therapy,138,3968
+OPTHALMOLOGY,TTT- Transpupillary thermal therapy,139,3450
+OPTHALMOLOGY,PTK- Phototherapeutic keratectomy,140,8625
+OPTHALMOLOGY,Argon/diode laser for retinal detatchment,141,1323
+OPTHALMOLOGY,Intralase application for keratoconus,142,6613
+OPTHALMOLOGY,EOG- electro-oculogram,143,1035
+OPTHALMOLOGY,ERG- Electro-retinogram,144,913
+OPTHALMOLOGY,VEP- visually evoked potential,145,920
+OPTHALMOLOGY,Vitrectomy- pars plana,146,13225
+OPTHALMOLOGY,Intravitreal injections- of antibiotics,147,1323
+OPTHALMOLOGY,Intravitreal injections- of lucentis excluding cost of drug,148,3450
+OPTHALMOLOGY,X- Ray orbit,149,132
+OPTHALMOLOGY,CT-orbit and brain,150,199
+OPTHALMOLOGY,MRI- Orbit and brain,151,3968
+OPTHALMOLOGY,Dacryocystography,152,391
+OPTHALMOLOGY,Orbital angio-graphical studies,153,1725
+OPTHALMOLOGY,ECCE with IOL,154,3968
+OPTHALMOLOGY,SICS with IOL,155,5750
+OPTHALMOLOGY,Phaco with foldable IOL (silicone and acrylic)/PMMA IOL,156,12398
+OPTHALMOLOGY,Pars plana lensectomy with/without IOL,157,11903
+OPTHALMOLOGY,"Secondary IOL implantation- AC IOL PC IOL or scleral
+fixated IOL",158,7935
+OPTHALMOLOGY,"Cataract extraction with IOL with capsular tension rings
+(Cionni?s ring)",159,15525
+OPTHALMOLOGY,Optic nerve sheathotomy,160,8625
+OPTHALMOLOGY,Iridodialysis repair or papillary reconstruction,161,5750
+OPTHALMOLOGY,Iris cyst removal,162,978
+OPTHALMOLOGY,Lid Abscess incision and Drainage,163,1955
+OPTHALMOLOGY,Orbital Abscess incision and Drainage,164,3450
+OPTHALMOLOGY,Biopsy,165,529
+OPTHALMOLOGY,Paracentesis,166,265
+OPTHALMOLOGY,Scleral graft for scleral melting or perforation,167,3220
+OPTHALMOLOGY,Amniotic membrane grafting,168,1265
+OPTHALMOLOGY,Cyclodiathermy,169,2645
+OPTHALMOLOGY,Intraocular foreign body removal,170,215
+OPTHALMOLOGY,Electrolysis,171,265
+OPTHALMOLOGY,Perforating injury repair,172,5175
+OPTHALMOLOGY,Botulinum injection for blepharospasm or squint,173,2875
+DENTAL,Flap Operation per quadrant,174,414
+DENTAL,Gingivectomy per quadrant,175,269
+DENTAL,Reduction & immobilization of fracture- Maxilla Under LA,176,1035
+DENTAL,Reduction & immobilization of fracture-Mandible Under LA,177,4025
+DENTAL,splints/Cirucum mandibular wiring under LA,178,587
+DENTAL,splints/Cirucum mandibular wiring under GA,179,1139
+DENTAL,Internal wire fixation/plate fixation of Maxilla under LA,180,3450
+DENTAL,Internal wire fixation/plate fixation of Maxilla under GA,181,4600
+DENTAL,Internal wire fixation/plate fixation of Mandible under LA,182,4025
+DENTAL,Internal wire fixation/plate fixation of Mandible under GA,183,4888
+DENTAL,Extraction per tooth under LA,184,92
+DENTAL,Complicated Ext. per Tooth under LA,185,115
+DENTAL,Extraction of impacted tooth under LA,186,184
+DENTAL,"Extraction in mentally retarded/patients with systemic
+diseases/patient with special needs under short term GA",187,1080
+DENTAL,"Cyst & tumour of Maxilla /mandible by enucleation/
+excision/ marsupalisation upto 4 cms under LA",188,281
+DENTAL,"Cyst & tumour of Maxilla/mandible by enucleation/
+excision/ marsupalisation size more than 4 cms under LA",189,467
+DENTAL,"Cyst & tumour of Maxilla/mandible by
+enucleation/excision/marsupalisation size more than 4 cms
+under GA",190,1150
+DENTAL,TM joint ankylosis- under GA,191,8625
+DENTAL,Biopsy Intraoral-Soft tissue,192,430
+DENTAL,Biopsy Intraoral-Bone,193,430
+DENTAL,Hemi-mandibulectomy with graft,194,24150
+DENTAL,Hemi-mandibulectomy without graft,195,24150
+DENTAL,Segmental-mandibulectomy with graft,196,3910
+DENTAL,Segmental-mandibulectomy without graft,197,1139
+DENTAL,Maxillectomy- Total with graft,198,2875
+DENTAL,Maxillectomy- Total without graft,199,2243
+DENTAL,Maxillectomy- partial with graft,200,3450
+DENTAL,Maxillectomy- partial without graft,201,2875
+DENTAL,"Release of fibrous bands & grafting -in (OSMF) treatment
+under GA",202,1725
+DENTAL,Pre-prosthetic surgery- Alveoloplasty,203,575
+DENTAL,Pre-prosthetic surgery - ridge augmentation,204,1380
+DENTAL,Root canal Treatment(RCT) Anterior teeth(per tooth),205,575
+DENTAL,Root canal Treatment(RCT) Posterior teeth (per tooth),206,805
+DENTAL,Apicoectomy- Single root,207,575
+DENTAL,Apicoectomy-Multiple roots,208,748
+DENTAL,Metal Crown-per unit,209,575
+DENTAL,Metal Crown with Acrylic facing per unit,210,805
+DENTAL,Complete single denture-metal based,211,1725
+DENTAL,Complete denture- acrylic based per arch,212,1093
+DENTAL,Removable partial denture-Metal based-upto 3 teeth,213,805
+DENTAL,Removable partial denture-Metal based-more than 3 teeth,214,1035
+DENTAL,Removable partial denture-Acrylic based-upto 3 teeth,215,575
+DENTAL,Removable partial denture-Acrylic based-more than 3 teeth,216,304
+DENTAL,Amalgum restoration-per tooth,217,230
+DENTAL,Composite Restoration-per tooth-anterior tooth,218,288
+DENTAL,Glas Ionomer-per tooth,219,230
+DENTAL,Scaling & polishing,220,345
+DENTAL,Removable Orthodontics appliance- per Arch,221,805
+DENTAL,Fixed Orhtodontics-per Arch,222,1323
+DENTAL,Space maintainers-Fixed,223,575
+DENTAL,Habit breaking appliances-removable,224,920
+DENTAL,Habit breaking appliances-Fixed,225,1725
+DENTAL,Expansion plate,226,1150
+DENTAL,Feeding appliance for cleft palate,227,1725
+DENTAL,"Maxillo-facial prosthesis (sal/auricular/orbital/facial lost
+part)",228,4025
+DENTAL,Functional orthodentic appliances,229,3450
+DENTAL,Obturator (Maxillo-facial),230,1725
+DENTAL,Occlusal night guard(splint),231,920
+ENT,Pure Tone Audiogram,232,198
+ENT,Impedence with stepedeal reflex,233,265
+ENT,SISI Tone Decay,234,152
+ENT,Multiple hearing assessment test to Adults,235,132
+ENT,Speech Discrimination Score,236,103
+ENT,Speech Assessment,237,138
+ENT,Speech therapy per session of 30-40 minutes,238,151
+ENT,Cold Calorie Test for Vestibular function,239,198
+ENT,Removal of foreign body From Nose,240,397
+ENT,Removal of foreign body From Ear,241,265
+ENT,Syringing (Ear),242,191
+ENT,Polyp removal under LA,243,661
+ENT,Polyp removal under GA,244,978
+ENT,Peritonsillar abscess Drainage under LA,245,1666
+ENT,Myringoplasty,246,7935
+ENT,Myringoplasty,247,10580
+ENT,Myringotomy with Grommet insertion,248,5290
+ENT,Tympanotomy,249,9919
+ENT,Tympanoplasty,250,15870
+ENT,Mastoidectomy,251,17193
+ENT,Otoplasty,252,18515
+ENT,Labyrinthectomy,253,15870
+ENT,Skull Base surgery,254,28750
+ENT,Facial Nerve Decompression,255,19838
+ENT,Septoplasty,256,6613
+ENT,Submucous Resection,257,8411
+ENT,Septo-rhinoplasty,258,18515
+ENT,Rhinoplasty- Non-cosmetic,259,13225
+ENT,Fracture Reduction,260,5000
+ENT,Intra nasal Diathermy,261,1323
+ENT,Turbinectomy,262,6613
+ENT,Endoscopic DCR,263,14950
+ENT,Endoscopic Surgery,264,15870
+ENT,Septal Perforation Repair,265,15870
+ENT,Antrum Puncture,266,1093
+ENT,Lateral Rhinotomy,267,1150
+ENT,Cranio-facial resection,268,29325
+ENT,Caldwell Luc Surgery,269,12220
+ENT,Angiofibroma Excision,270,19550
+ENT,Endoscopic Hypophysectomy,271,24725
+ENT,Endoscopic Optic Nerve Decompression,272,37691
+ENT,Decompression of Orbit,273,29325
+ENT,Punch/Wedge biopsy,274,775
+ENT,Tonsillectomy,275,5750
+ENT,Uvulo-palatoplasty,276,17250
+ENT,FESS for antrochoal polyp,277,6613
+ENT,FESS for ethmoidal polyp,278,6613
+ENT,Polyp removal ear,279,860
+ENT,Polyp removal Nose(Septal polyp),280,860
+ENT,"Mastoidectomy plus Ossciculoplasty including TORP or
+PORP",281,2777
+ENT,Endolymphatic sac decompression,282,3306
+ENT,Diagnostic endoscopy under GA,283,2645
+ENT,Yonges operation for Atrophic rhinitis,284,7935
+ENT,Vidian neurectomy for vasomotor Rhinitis,285,11903
+ENT,Nasal Packing-anterior,286,397
+ENT,Nasal Packing-posterior,287,926
+ENT,Ranula Excision,288,7869
+ENT,Tongue Tie excision,289,1725
+ENT,Sub Mandibular Duct Lithotomy,290,309
+ENT,Adenoidectomy,291,6486
+ENT,Palatopharyngoplasty,292,9390
+ENT,Pharyngoplasty,293,19772
+ENT,Styloidectomy,294,10580
+ENT,Direct laryngoscopy including Biopsy under GA,295,5750
+ENT,Oesophagoscopy/foreign body removal from,296,2070
+ENT,Bronchoscopy with F.B.removal,297,2804
+ HEAD AND NECK,Ear Lobe Repair one side,300,575
+ HEAD AND NECK,"Excision of Pinna for Growth (Squamous/Basal/ Injuries)
+Skin Only",301,4600
+ HEAD AND NECK,"Excision of Pinna for Growth (Squamous/Basal/ Injuries)
+Skin and Cartilage",302,4370
+ HEAD AND NECK,Partial Amputation of Pinna,303,5175
+ HEAD AND NECK,Total Amputation of Pinna,304,7130
+ HEAD AND NECK,Total Amputation & Excision of External Auditory Meatus,305,1725
+ HEAD AND NECK,Excision of Cystic Hygroma,306,5951
+ HEAD AND NECK,Excision of Cystic Hygroma Extensive,307,8570
+ HEAD AND NECK,Excision of Branchial Cyst,308,11903
+ HEAD AND NECK,Excision of Branchial Sinus,309,11903
+ HEAD AND NECK,Excision of Pharyngeal Diverticulum,310,12167
+ HEAD AND NECK,Excision of Carotid Body-Tumours,311,13357
+ HEAD AND NECK,Operation for Cervical Rib,312,14375
+ HEAD AND NECK,Block Dissection of Cervical Lymph Nodes,313,17250
+ HEAD AND NECK,Pharyngectomy & Reconstruction,314,17250
+ HEAD AND NECK,Operation for Carcinoma Lip - Wedge-Excision,315,9258
+ HEAD AND NECK,Operation for Carcinoma Lip - Vermilionectomy,316,6622
+ HEAD AND NECK,"Operation for Carcinoma Lip - Wedge Excision and
+Vermilonectomy",317,10686
+ HEAD AND NECK,Estlander Operation,318,8596
+ HEAD AND NECK,Abbe Operation,319,11270
+ HEAD AND NECK,Cheek Advancement,320,11241
+ HEAD AND NECK,Excision of the Maxilla,321,22218
+ HEAD AND NECK,Excision of mandible-segmental,322,17854
+ HEAD AND NECK,Mandibulectomy,323,24150
+ HEAD AND NECK,Partial Glossectomy,324,6348
+ HEAD AND NECK,Hemiglossectomy,325,8050
+ HEAD AND NECK,Total Glossectomy,326,26318
+ HEAD AND NECK,Commondo Operation,327,25300
+ HEAD AND NECK,Parotidectomy - Superficial,328,13886
+ HEAD AND NECK,Parotidectomy - Total,329,17250
+ HEAD AND NECK,Parotidectomy - Radical,330,22483
+ HEAD AND NECK,Repair of Parotid Duct,331,13225
+ HEAD AND NECK,Removal of Submandibular Salivary gland,332,9919
+ HEAD AND NECK,Hemithyroidectomy,333,10925
+ HEAD AND NECK,Partial Thyroidectomy (lobectomy),334,13225
+ HEAD AND NECK,Subtotal Thyroidectomy,335,15011
+ HEAD AND NECK,Total Thyroidectomy,336,21850
+ HEAD AND NECK,Resection Enucleation of thyroid Adenoma,337,12167
+ HEAD AND NECK,Total Thyroidectomy and Block Dissection,338,30418
+ HEAD AND NECK,Excision of Lingual Thyroid,339,19414
+ HEAD AND NECK,Excision of Thyroglossal Cyst/Fistula,340,15209
+ HEAD AND NECK,Excision of Parathyroid Adenoma/Carcinoma,341,24466
+ HEAD AND NECK,Laryngectomy,342,20499
+ HEAD AND NECK,Laryngo Pharyngectomy,343,34500
+ HEAD AND NECK,Hyoid Suspension,344,11903
+ HEAD AND NECK,Genioplasty,345,13800
+ HEAD AND NECK,Direct Laryngoscopy including biopsy under GA,346,5951
+ HEAD AND NECK,Phonosurgery,347,15870
+ HEAD AND NECK,Fibroptic examition of Larynx under LA,348,1984
+ HEAD AND NECK,Microlaryngeal Surgery,349,11903
+ HEAD AND NECK,Laryngofissure,350,19838
+ HEAD AND NECK,Tracheal Stenosis Excision,351,22747
+BREST,Drainage of abscess,362,6900
+BREST,Excision of lumps,363,8014
+BREST,Local mastectomy-simple,364,14548
+BREST,Radical mastectomy-formal or modified.,365,33063
+BREST,Excision of mammary fistula,366,17854
+BREST,Segmental resection of breast,367,18515
+GENERAL SURGERY,Injury Of Superficial Soft Tissues,370,500
+GENERAL SURGERY,Suturing of small wounds,371,309
+GENERAL SURGERY,Secondary suture of wounds,372,334
+GENERAL SURGERY,Debridement of wounds,373,518
+GENERAL SURGERY,Removal Of Foreign Bodies,374,345
+Biopsies,Excision of Cervical Lymph Node,375,1984
+Biopsies,Excision of Axillary Lymph Node,376,2619
+Biopsies,Excision of Inguinal Lymph Node,377,2619
+Biopsies,Excision Biopsy of Ulcers,378,1691
+Biopsies,Excision Biopsy of Superficial Lumps,379,3703
+Biopsies,Incision Biopsy of Growths/Ulcers,380,1691
+Biopsies,Trucut Needle Biopsy,381,1783
+Biopsies,Percutaneous Kidney Biopsy,382,1691
+Biopsies,Marrow Biopsy (Open),383,1219
+Biopsies,Muscle Biopsy,384,1691
+Biopsies,Scalene Node Biopsy,385,1553
+Biopsies,Excision of Sebaceous Cysts,386,1428
+Biopsies,Excision of Superficial Lipoma,387,2222
+Biopsies,Excision of Superficial Neurofibroma,388,2875
+Biopsies,Excision of Dermoid Cysts,389,2619
+Biopsies,Haemorrhoidectomy,390,2875
+Biopsies,Stappler haemorrhoidectomy,391,4629
+Biopsies,keloid excision,392,1323
+Biopsies,"Vericose vein surger
+or ligation.",393,9919
+OESOPHAGUS,Atresia of Oesophagus and Tracheo Oesophageal Fistula,394,33063
+OESOPHAGUS,Operations for Replacement of Oesophagus by Colon,395,28750
+OESOPHAGUS,Oesophagectomy for Carcinoma Easophagus,396,28750
+OESOPHAGUS,Oesophageal Intubation (Mausseau Barbin Tube),397,13225
+OESOPHAGUS,Achalasia Cardia Transthoracic,398,17193
+OESOPHAGUS,Achalasia Cardia Abdominal,399,14548
+OESOPHAGUS,Oesophago Gastrectomy for mid 1/3 lesion,400,28169
+OESOPHAGUS,Hellers Operation,401,22713
+OESOPHAGUS,Colon-Inter position or Replacement of Oesophagus,402,25921
+OESOPHAGUS,Oesophago Gastrectomy ? Lower Corringers procedure,403,24599
+ABDOMEN / GI SURGERY,Gastroscopy,406,1984
+ABDOMEN / GI SURGERY,Gastric & Duodenal Biopsy (Endoscopic),407,2243
+ABDOMEN / GI SURGERY,Pyloromyotomy,408,3220
+ABDOMEN / GI SURGERY,Gastrostomy,409,9919
+ABDOMEN / GI SURGERY,Simple Closure of Perforated peptic Ulcer,410,11241
+ABDOMEN / GI SURGERY,Vagotomy Pyleroplasty / Gastro Jejunostomy,411,15870
+ABDOMEN / GI SURGERY,Duodenojejunostomy,412,21793
+ABDOMEN / GI SURGERY,Partial/Subtotal Gastrectomy for Carcinoma,413,26450
+ABDOMEN / GI SURGERY,Partial/Subtotal Gastrectomy for Ulcer,414,25789
+ABDOMEN / GI SURGERY,Operation for Bleeding Peptic Ulcer,415,24122
+ABDOMEN / GI SURGERY,Operation for Gastrojejunal Ulcer,416,22747
+ABDOMEN / GI SURGERY,Total Gastrectomy for Cancer,417,25723
+ABDOMEN / GI SURGERY,Highly Selective Vagotomy,418,21425
+ABDOMEN / GI SURGERY,Selective Vagotomy & Drainage,419,21425
+ABDOMEN / GI SURGERY,Congenital Diaphragmatic Hernia,420,21821
+ABDOMEN / GI SURGERY,Hiatus Hernia Repair- Abdominal,421,16664
+ABDOMEN / GI SURGERY,Hiatus Hernia Repair- Transthoracic,422,18515
+ABDOMEN / GI SURGERY,Exploratory Laparotomy,423,14548
+ABDOMEN / GI SURGERY,Epigastric Hernia Repair,424,13093
+ABDOMEN / GI SURGERY,Umbilical Hernia Repair,425,13093
+ABDOMEN / GI SURGERY,Ventral /incisional Hernia Repair,426,11837
+ABDOMEN / GI SURGERY,Inguinal Hernia Herniorraphy,427,17060
+ABDOMEN / GI SURGERY,Inguinal Hernia - Hernioplasty,428,18975
+ABDOMEN / GI SURGERY,Femoral Hernia Repair,429,21028
+ABDOMEN / GI SURGERY,"Rare Hernias Repair (Spigalion, Obturator, Lumbar, Sciatic)",430,21821
+ABDOMEN / GI SURGERY,Splenectomy - For Trauma,431,21821
+ABDOMEN / GI SURGERY,Splenectomy - For Hypersplenism,432,16664
+ABDOMEN / GI SURGERY,Splenorenal Anastomosis,433,26450
+ABDOMEN / GI SURGERY,Portocaval Anastomosis,434,33063
+ABDOMEN / GI SURGERY,Direct Operation on Oesophagus for Portal Hypertension,435,26318
+ABDOMEN / GI SURGERY,Mesentericocaval Anastomosis,436,29268
+ABDOMEN / GI SURGERY,Warren Shunt,437,33063
+ABDOMEN / GI SURGERY,Pancerato Duodenectomy,438,24995
+ABDOMEN / GI SURGERY,By Pass Procedure for Inoperable Carcinoma of Pancreas,439,26450
+ABDOMEN / GI SURGERY,Cystojejunostomy or Cystogastrostomy,440,16664
+ABDOMEN / GI SURGERY,Cholecystectomy,441,11836
+ABDOMEN / GI SURGERY,Cholecystectomy & Exploration of CBD,442,16531
+ABDOMEN / GI SURGERY,Repair of CBD,443,16000
+ABDOMEN / GI SURGERY,Operation for Hydatid Cyst of Liver,444,13687
+ABDOMEN / GI SURGERY,Cholecystostomy,445,11836
+ABDOMEN / GI SURGERY,Hepatic Resections (Lobectomy /Hepatectomy),446,16531
+ABDOMEN / GI SURGERY,Operation on Adrenal Glands - Bilateral,447,30021
+ABDOMEN / GI SURGERY,Operation on Adrenal Glands - Unilateral,448,15870
+ABDOMEN / GI SURGERY,Appendicectomy,449,9324
+ABDOMEN / GI SURGERY,Appendicular Abscess ? Drainage,450,11241
+ABDOMEN / GI SURGERY,Mesenteric Cyst- Excision,451,12696
+ABDOMEN / GI SURGERY,Peritonioscopy/Laparoscopy,452,5290
+ABDOMEN / GI SURGERY,Jejunostomy,453,6613
+ABDOMEN / GI SURGERY,Ileostomy,454,17722
+ABDOMEN / GI SURGERY,Resection & Anastomosis of Small Intestine,455,23805
+ABDOMEN / GI SURGERY,Duodenal Diverticulum,456,21160
+ABDOMEN / GI SURGERY,Operation for Intestinal Obstruction,457,11903
+ABDOMEN / GI SURGERY,Operation for Intestinal perforation,458,43700
+ABDOMEN / GI SURGERY,Benign Tumours of Small Intestine,459,22483
+ABDOMEN / GI SURGERY,Excision of Small Intestine Fistula,460,22483
+ABDOMEN / GI SURGERY,Operations for GI Bleed,461,18400
+ABDOMEN / GI SURGERY,Operations for Haemorrhage of Small Intestines,462,22483
+ABDOMEN / GI SURGERY,Operations of the Duplication of the Intestines,463,20499
+ABDOMEN / GI SURGERY,"Operations for Recurrent Intestinal Obstruction (Noble
+Plication & Other Operations for Adhesions)",464,26450
+ABDOMEN / GI SURGERY,Ilieosigmoidostomy and related resection,465,19309
+ABDOMEN / GI SURGERY,Ilieotransverse Colostomy and related resection,466,19309
+ABDOMEN / GI SURGERY,Caecostomy,467,4488
+ABDOMEN / GI SURGERY,Loop Colostomy Transverse Sigmoid,468,15077
+ABDOMEN / GI SURGERY,Terminal Colostomy,469,19838
+ABDOMEN / GI SURGERY,Closure of Colostomy,470,20102
+ABDOMEN / GI SURGERY,Right Hemi-Colectomy,471,15870
+ABDOMEN / GI SURGERY,Left Hemi-Colectomy,472,15870
+ABDOMEN / GI SURGERY,Total Colectomy,473,19838
+ABDOMEN / GI SURGERY,Operations for Volvulus of Large Bowel,474,28658
+ABDOMEN / GI SURGERY,Operations for Sigmoid Diverticulitis,475,21425
+ABDOMEN / GI SURGERY,"Fissure in Ano with Internal sphinctrectomy with
+fissurectomy.",476,15870
+ABDOMEN / GI SURGERY,Fissure in Ano - Fissurectomy,477,6613
+ABDOMEN / GI SURGERY,Rectal Polyp-Excision,478,6507
+ABDOMEN / GI SURGERY,Fistula in Ano - High Fistulectomy,479,19297
+ABDOMEN / GI SURGERY,Fistula in Ano - Low Fistulectomy,480,11347
+ABDOMEN / GI SURGERY,Prolapse Rectum - Theirch Wiring,481,11903
+ABDOMEN / GI SURGERY,Prolapse Rectum - Rectopexy,482,6613
+ABDOMEN / GI SURGERY,Prolapse Rectum - Grahams Operation,483,21160
+ABDOMEN / GI SURGERY,Operations for Hirschsprungs Disease,484,16399
+ABDOMEN / GI SURGERY,Excision of Pilonidal Sinus (open),485,13225
+ABDOMEN / GI SURGERY,Excision of Pilonidal Sinus with closure,486,13225
+ABDOMEN / GI SURGERY,Abdomino-Perineal Excision of Rectum,487,21045
+ABDOMEN / GI SURGERY,Anterior Resection of rectum,488,25128
+ABDOMEN / GI SURGERY,Pull Through Abdominal Resection,489,19746
+ABDOMEN / GI SURGERY,Retro Peritoneal Tumor Removal,490,20700
+ABDOMEN / GI SURGERY,Radio ablation of varicose veins,491,2070
+ABDOMEN / GI SURGERY,Laser ablation of varicose veins,492,19838
+ABDOMEN / GI SURGERY,Laproscopic Fundoplication,493,22195
+ABDOMEN / GI SURGERY,Laproscopic Spleenectomy,494,28750
+ABDOMEN / GI SURGERY,Laproscopic Removal of hydatid cyst,495,20700
+ABDOMEN / GI SURGERY,Laproscopic treatment of Pseudo Pancreatic cyst,496,20700
+ABDOMEN / GI SURGERY,Laproscopic whipples operation,497,23000
+ABDOMEN / GI SURGERY,Laproscopic GI bypass operation,498,25300
+ABDOMEN / GI SURGERY,Laproscopic Total Colectomy,499,28750
+ABDOMEN / GI SURGERY,Laproscopic Hemi Colectomy,500,26450
+ABDOMEN / GI SURGERY,Laproscopic Anterior Resection,501,26450
+ABDOMEN / GI SURGERY,Laproscopic Cholecystetomy,502,21821
+ABDOMEN / GI SURGERY,Laproscopic Appedicectomy,503,20700
+ABDOMEN / GI SURGERY,Laproscopic Hernia inguinal repair,504,20700
+ABDOMEN / GI SURGERY,Laproscopic ventral Hernia Repair,505,20125
+ABDOMEN / GI SURGERY,Laproscopic Paraumblical Hernia Repair,506,14800
+ABDOMEN / GI SURGERY,Laproscopic Adrenelectomy,507,13800
+ABDOMEN / GI SURGERY,Laproscopic Nephrectomy,508,25300
+OBSTETRICS AND GYNAECOLOGY,Normal delivery with or without Episiotomy & P. repair,611,9200
+OBSTETRICS AND GYNAECOLOGY,vacuum delivery,612,9919
+OBSTETRICS AND GYNAECOLOGY,Forceps Delivery,613,10580
+OBSTETRICS AND GYNAECOLOGY,Cesarean Section,614,16158
+OBSTETRICS AND GYNAECOLOGY,Cesarean Hysterectomy,615,21821
+OBSTETRICS AND GYNAECOLOGY,Rupture Uterus closure & repair with Tubal Ligation,616,19838
+OBSTETRICS AND GYNAECOLOGY,Perforation of Uterus after D/E Laparotomy & Closure,617,15870
+OBSTETRICS AND GYNAECOLOGY,Laparotomy for Ectopic pregnancy,618,15870
+OBSTETRICS AND GYNAECOLOGY,Laparotomy-peritonitis Lavage and Drainage,619,13225
+OBSTETRICS AND GYNAECOLOGY,Salphingo-Oophorectomy/ Oophorectomy Laproscopic,620,11500
+OBSTETRICS AND GYNAECOLOGY,Ovarian Cystectomy-laparoscopic.,621,11903
+OBSTETRICS AND GYNAECOLOGY,Ovarian Cystectomy -laparotomy.,622,15870
+OBSTETRICS AND GYNAECOLOGY,Salpingo-Oophorectomy-laparotomy,623,13248
+OBSTETRICS AND GYNAECOLOGY,"Laproscopic Broad Ligament Hematoma Drainage with
+repair",624,7935
+OBSTETRICS AND GYNAECOLOGY,Exploration of perineal Haematoma & Repair,625,9200
+OBSTETRICS AND GYNAECOLOGY,"Exploration of abdominal Haematoma (after laparotomy +
+LSCS)",626,9258
+OBSTETRICS AND GYNAECOLOGY,Manual Removal of Placenta,627,3968
+OBSTETRICS AND GYNAECOLOGY,Examination under anesthesia (EUA),628,1150
+OBSTETRICS AND GYNAECOLOGY,Burst-abdomen Repair,629,11500
+OBSTETRICS AND GYNAECOLOGY,Gaping Perineal Wound Secondary Suturing,630,1904
+OBSTETRICS AND GYNAECOLOGY,Gaping abdominal wound Secondary Suturing,631,3968
+OBSTETRICS AND GYNAECOLOGY,Complete perineal tear-repair,632,2447
+OBSTETRICS AND GYNAECOLOGY,Exploration of PPH-tear repair,633,4025
+OBSTETRICS AND GYNAECOLOGY,Suction evacuation vesicular mole,634,5750
+OBSTETRICS AND GYNAECOLOGY,Suction evacuation Missed abortion/ incomplete abortion,635,5951
+OBSTETRICS AND GYNAECOLOGY,Colpotomy,636,3968
+OBSTETRICS AND GYNAECOLOGY,Repair of post-coital tear/ perineal injury,637,4034
+OBSTETRICS AND GYNAECOLOGY,Excision of urethral caruncle,638,3968
+OBSTETRICS AND GYNAECOLOGY,Shirodhkar/ Mc. Donalds stitch,639,3703
+OBSTETRICS AND GYNAECOLOGY,"Abdominal Hysterectomy with or without salpingo-
+oophorectomy",640,19838
+OBSTETRICS AND GYNAECOLOGY,Vaginal Hysterectomy (NDVH),641,19838
+OBSTETRICS AND GYNAECOLOGY,Vaginal Hysterectomy with repairs (UV Prolapse),642,19838
+OBSTETRICS AND GYNAECOLOGY,Myomectomy -laparotomy,643,16100
+OBSTETRICS AND GYNAECOLOGY,Myomectomy -laparoscopic,644,7274
+OBSTETRICS AND GYNAECOLOGY,Vaginoplasty,645,17193
+OBSTETRICS AND GYNAECOLOGY,Vulvectomy -Simple,646,10580
+OBSTETRICS AND GYNAECOLOGY,Vulvectomy-Radical,647,10580
+OBSTETRICS AND GYNAECOLOGY,RVF Repair,648,16100
+OBSTETRICS AND GYNAECOLOGY,Manchester Operation,649,17250
+OBSTETRICS AND GYNAECOLOGY,"Shirodkars sling Operation or other sling operations for
+prolapse uterus",650,3968
+OBSTETRICS AND GYNAECOLOGY,Laparoscopic sling operations for prolapse uterus,651,32200
+OBSTETRICS AND GYNAECOLOGY,Diagnostic Curettage,652,2857
+OBSTETRICS AND GYNAECOLOGY,Cervical Biopsy,653,2070
+OBSTETRICS AND GYNAECOLOGY,Polypectomy,654,1746
+OBSTETRICS AND GYNAECOLOGY,Other-Minor Operation Endometrial,655,2645
+OBSTETRICS AND GYNAECOLOGY,Excision Vaginal Cyst/Bartholin Cyst,656,3968
+OBSTETRICS AND GYNAECOLOGY,Excision Vaginal Septum,657,5290
+OBSTETRICS AND GYNAECOLOGY,"Laparoscopy -Diagnostic with chromopertubation and or
+adhesiolysis and drilling",658,4629
+OBSTETRICS AND GYNAECOLOGY,Laparoscopy Sterilization,659,3968
+OBSTETRICS AND GYNAECOLOGY,LAVH,660,29029
+OBSTETRICS AND GYNAECOLOGY,Balloon Temponade for PPH,661,3220
+OBSTETRICS AND GYNAECOLOGY,Total laparoscopic hysterectomy,662,29029
+OBSTETRICS AND GYNAECOLOGY,"Laparoscopic treatment of Ectopic pregnancy-
+salpingectomy/salpinostomy conservative",663,11241
+OBSTETRICS AND GYNAECOLOGY,Conisation of cervix,664,4629
+OBSTETRICS AND GYNAECOLOGY,Trachhelectomy of cervix for early CA cervix,665,6325
+OBSTETRICS AND GYNAECOLOGY,Hysteroscopic cannulation,666,3306
+OBSTETRICS AND GYNAECOLOGY,"Laparotomy recannalization of Fallopian tubes-
+(Tubuloplasty)",667,25789
+OBSTETRICS AND GYNAECOLOGY,"Laparoscopic recannalization of Fallopian tubes-
+(Tubuloplasty)",668,22425
+OBSTETRICS AND GYNAECOLOGY,Colposcopy,669,1102
+OBSTETRICS AND GYNAECOLOGY,Inversion of Uterus ? Vaginal Reposition,670,2875
+OBSTETRICS AND GYNAECOLOGY,Inversion of Uterus ? Abdominal Reposition,671,2875
+OBSTETRICS AND GYNAECOLOGY,Laparoscopic VVF Repair,672,32200
+OBSTETRICS AND GYNAECOLOGY,Abdominal VVF Repair,673,32200
+OBSTETRICS AND GYNAECOLOGY,Vaginal VVF Repair,674,32200
+OBSTETRICS AND GYNAECOLOGY,Interventional Ultrasonography (CVS),675,1012
+OBSTETRICS AND GYNAECOLOGY,Amniocentesis,676,1012
+OBSTETRICS AND GYNAECOLOGY,Karyotyping,677,920
+OBSTETRICS AND GYNAECOLOGY,Thermal balloon ablation.,678,13225
+OBSTETRICS AND GYNAECOLOGY,Ultrasonographic myolysis,679,11837
+OBSTETRICS AND GYNAECOLOGY,Vaginal Myomectomy,680,11500
+OBSTETRICS AND GYNAECOLOGY,Intra Uterine Inseminition,681,1058
+OBSTETRICS AND GYNAECOLOGY,ICSI,682,13225
+OBSTETRICS AND GYNAECOLOGY,Laparotomy abdominal sacro-colpopexy,683,17250
+OBSTETRICS AND GYNAECOLOGY,Vaginal Colpopexy,684,25300
+OBSTETRICS AND GYNAECOLOGY,Laparoscopic abdominal sacro-colpopexy,685,23000
+OBSTETRICS AND GYNAECOLOGY,Laparotomy pelvic Lymphadenectomy,686,1380
+OBSTETRICS AND GYNAECOLOGY,Laparoscopic pelvic Lymphadenectomy,687,4025
+OBSTETRICS AND GYNAECOLOGY,Endometrial aspiration cytology/biopsy,688,656
+OBSTETRICS AND GYNAECOLOGY,"Transvaginal sonography (TVS for Follicular monitioring
+/aspiration)",689,529
+OBSTETRICS AND GYNAECOLOGY,laparoscopic treatment for stress incontinence,690,17250
+OBSTETRICS AND GYNAECOLOGY,Transvaginal tapes for Stress incontinence,691,17250
+OBSTETRICS AND GYNAECOLOGY,trans-obturator tapes for Stress incontinence,692,13800
+OBSTETRICS AND GYNAECOLOGY,Interventional radiographic arterial embolization,693,20700
+OBSTETRICS AND GYNAECOLOGY,Diagnostic cystoscopy,694,3306
+OBSTETRICS AND GYNAECOLOGY,Staging laparotomy surgery for CA Ovary,695,7274
+OBSTETRICS AND GYNAECOLOGY,Internal Iliac ligation,696,3902
+OBSTETRICS AND GYNAECOLOGY,stepwise devascularisation,697,10580
+OBSTETRICS AND GYNAECOLOGY,Assisted breech delivery,698,12564
+OBSTETRICS AND GYNAECOLOGY,Intra-uterine fetal blood transfusion,699,24466
+OBSTETRICS AND GYNAECOLOGY,Hysteroscopy TCRE,700,9775
+OBSTETRICS AND GYNAECOLOGY,Hysteroscopy Removal of IUCD,701,8625
+OBSTETRICS AND GYNAECOLOGY,Hysteroscopy Removal of Septum,702,12650
+OBSTETRICS AND GYNAECOLOGY,Hysteroscopy Diagnostic,703,8625
+OBSTETRICS AND GYNAECOLOGY,"Radical Hysterectomy for Cancer cervix with pelvic
+lymphadenectomy",704,9775
+OBSTETRICS AND GYNAECOLOGY,"Radical Hysterectomy for Cancer endometrium extending
+to cervix with pelvic and para aortic lymphadenectomy",705,9775
+OBSTETRICS AND GYNAECOLOGY,Sterilization Post partum (minilap),706,4313
+OBSTETRICS AND GYNAECOLOGY,Sterilization interval (minilap),707,4313
+OBSTETRICS AND GYNAECOLOGY,Ultrasonography Level II scan/Anomaly Scan,708,575
+OBSTETRICS AND GYNAECOLOGY,Fetal nuchal Translucency,709,345
+OBSTETRICS AND GYNAECOLOGY,Fetal Doppler/Umblical Doppler/Uterine Vessel Doppler,710,978
+OBSTETRICS AND GYNAECOLOGY,MTP- 1st Trimester,711,3450
+OBSTETRICS AND GYNAECOLOGY,MTP - 2nd Trimester,712,5026
+OBSTETRICS AND GYNAECOLOGY,Quadruple test,713,2300
+OBSTETRICS AND GYNAECOLOGY,Biophysical score,714,690
+OBSTETRICS AND GYNAECOLOGY,Other Major Surgery,715,32200
+OBSTETRICS AND GYNAECOLOGY,Other Minor Surgery,716,5750
+ NEPHROLOGY AND UROLOGY,Partial Nephrectomy -open,717,18647
+ NEPHROLOGY AND UROLOGY,Partial Nephrectomy-laproscopic/endoscopic,718,16664
+ NEPHROLOGY AND UROLOGY,Nephrolithomy -open,719,13800
+ NEPHROLOGY AND UROLOGY,Nephrolithomy -laproscopic/endoscopic,720,16100
+ NEPHROLOGY AND UROLOGY,Pyelolithotomy-open,721,14950
+ NEPHROLOGY AND UROLOGY,Pyelolithotomy -laproscopic/endoscopic,722,12167
+ NEPHROLOGY AND UROLOGY,Operations for Hydronephrosis -pyeloplasty open,723,21160
+ NEPHROLOGY AND UROLOGY,Operations for Hydronephrosis -pyeloplasty Lap/endoscopic,724,21850
+ NEPHROLOGY AND UROLOGY,Operations for Hydronephrosis Endoplyelotomy antegrade,725,23000
+ NEPHROLOGY AND UROLOGY,Operations for Hydronephrosis Endoplyelotomy retrograde,726,23000
+ NEPHROLOGY AND UROLOGY,Operations for Hydronephrosis -ureterocalicostomy,727,20700
+ NEPHROLOGY AND UROLOGY,Operations for Hydronephrosis-Ileal ureter,728,20700
+ NEPHROLOGY AND UROLOGY,Open Drainage of Perinephric Abscess,729,9200
+ NEPHROLOGY AND UROLOGY,"Percutaneous Drainage of Perinephric Abscess -Ultrasound
+guided",730,
+ NEPHROLOGY AND UROLOGY,Cavernostomy,731,11500
+ NEPHROLOGY AND UROLOGY,Operations for Cyst of the Kidney -open,732,13754
+ NEPHROLOGY AND UROLOGY,Operations for Cyst of the Kidney -Lap/endoscopic,733,16135
+ NEPHROLOGY AND UROLOGY,Ureterolithotomy -open,734,15235
+ NEPHROLOGY AND UROLOGY,Ureterolithotomy-Lap/Endoscopic,735,11500
+ NEPHROLOGY AND UROLOGY,Nephroureterectomy open,736,18515
+ NEPHROLOGY AND UROLOGY,Nephroureterectomy -Lap/Endoscopic,737,18515
+ NEPHROLOGY AND UROLOGY,Operations for Ureter for -Double Ureters,738,21850
+ NEPHROLOGY AND UROLOGY,Operations for Ureter -for Ectopia of Single Ureter,739,20700
+ NEPHROLOGY AND UROLOGY,Operations for Vesico- ureteric Reflux -Open,740,20700
+ NEPHROLOGY AND UROLOGY,Operations for Vesico- ureteric Reflux-Lap/Endoscopic,741,20700
+ NEPHROLOGY AND UROLOGY,"Operations for Vesico- ureteric Reflux/ Urinary incontinence
+with bulking agents",742,23805
+ NEPHROLOGY AND UROLOGY,Ureterostomy - Cutaneous,743,13800
+ NEPHROLOGY AND UROLOGY,Uretero-Colic anastomosis,744,18400
+ NEPHROLOGY AND UROLOGY,Formation of an Ileal Conduit,745,19838
+ NEPHROLOGY AND UROLOGY,Ureteric Catheterisation,746,794
+ NEPHROLOGY AND UROLOGY,Biopsy of Bladder (Cystoscopic),747,2645
+ NEPHROLOGY AND UROLOGY,Cysto-Litholapaxy,748,12564
+ NEPHROLOGY AND UROLOGY,Operations for Injuries of the Bladder,749,11500
+ NEPHROLOGY AND UROLOGY,Suprapubic Drainage (Cystostomy/vesicostomy),750,6900
+ NEPHROLOGY AND UROLOGY,Simple Cystectomy,751,19838
+ NEPHROLOGY AND UROLOGY,Diverticulectomy -open,752,18400
+ NEPHROLOGY AND UROLOGY,Diverticulectomy- Lap/Endoscopic,753,21160
+ NEPHROLOGY AND UROLOGY,Diverticulectomy -Endoscopic incision of neck,754,1984
+ NEPHROLOGY AND UROLOGY,Augmentation Cystoplasty,755,7671
+ NEPHROLOGY AND UROLOGY,Operations for Extrophy of the Bladder- Single stage repair,756,25645
+ NEPHROLOGY AND UROLOGY,Operations for Extrophy of the Bladder- Multistage repair,757,23937
+ NEPHROLOGY AND UROLOGY,"Operations for Extrophy of the Bladder- simple cystectomy
+with urinary diversion",758,25875
+ NEPHROLOGY AND UROLOGY,Repair of Ureterocoel -Open,759,15870
+ NEPHROLOGY AND UROLOGY,Repair of Ureterocoel -Lap/Endoscopic,760,16531
+ NEPHROLOGY AND UROLOGY,Repair of Ureterocoel -Endoscopic incision,761,14950
+ NEPHROLOGY AND UROLOGY,Open Suprapubic Prostatectomy,762,23805
+ NEPHROLOGY AND UROLOGY,Open Retropubic Prostatectomy,763,23144
+ NEPHROLOGY AND UROLOGY,Transurethral Resection of Prostate (TURP),764,21425
+ NEPHROLOGY AND UROLOGY,Urethroscopy/ Cystopanendoscopy,765,5290
+ NEPHROLOGY AND UROLOGY,Internal urethrotomy -optical,766,6613
+ NEPHROLOGY AND UROLOGY,Internal urethrotomy -Core through urethroplasty,767,12696
+ NEPHROLOGY AND UROLOGY,Urethral Reconstruction -End to end ansatamosis,768,3968
+ NEPHROLOGY AND UROLOGY,"Urethral Reconstruction - substitution urethroplasty
+(Transpubic urethroplasty",769,22483
+ NEPHROLOGY AND UROLOGY,Abdomino Perineal urethroplasty,770,16100
+ NEPHROLOGY AND UROLOGY,Posterior Urethral Valve fulguration.,771,12961
+ NEPHROLOGY AND UROLOGY,Operations for Incontinence of Urine - Male -Open,772,19838
+ NEPHROLOGY AND UROLOGY,Operations for Incontinence of Urine - Male -Sling,773,21160
+ NEPHROLOGY AND UROLOGY,Operations for Incontinence of Urine - Male-Bulking agent,774,22350
+ NEPHROLOGY AND UROLOGY,Operations for Incontinence of Urine - Female -Open,775,19838
+ NEPHROLOGY AND UROLOGY,Operations for Incontinence of Urine - Female-Sling,776,21160
+ NEPHROLOGY AND UROLOGY,Operations for Incontinence of Urine - Female-Bulking agent,777,22350
+ NEPHROLOGY AND UROLOGY,Reduction of Paraphimosis,778,1984
+ NEPHROLOGY AND UROLOGY,Circumcision,779,3450
+ NEPHROLOGY AND UROLOGY,Meatotomy,780,2698
+ NEPHROLOGY AND UROLOGY,Meatoplasty,781,3703
+ NEPHROLOGY AND UROLOGY,Operations for Hypospadias + Chordee Correction,782,10580
+ NEPHROLOGY AND UROLOGY,Operations for Hypospadias - Second Stage,783,17250
+ NEPHROLOGY AND UROLOGY,Operations for Hypospadias - One Stage Repair,784,10580
+ NEPHROLOGY AND UROLOGY,Operations for Crippled Hypospadias,785,13225
+ NEPHROLOGY AND UROLOGY,Operations for Epispadias _primary repair,786,14482
+ NEPHROLOGY AND UROLOGY,Operations for Epispadias-crippled epispadias,787,13093
+ NEPHROLOGY AND UROLOGY,Partial Amputation of the Penis,788,12379
+ NEPHROLOGY AND UROLOGY,Total amputation of the Penis,789,13800
+ NEPHROLOGY AND UROLOGY,Orchidectomy-Simple,790,11241
+ NEPHROLOGY AND UROLOGY,Orchidectomy -Radical,791,13886
+ NEPHROLOGY AND UROLOGY,"Post Radical Orchidectomy retroperitoneal lymph node
+dissection.",792,16100
+ NEPHROLOGY AND UROLOGY,Epididymectomy,793,9200
+ NEPHROLOGY AND UROLOGY,"Adreneclectomy Unilateral/Bilateral for Tumour/For
+Carcinoma- Open",794,29095
+ NEPHROLOGY AND UROLOGY,"Adreneclectomy Unilateral/Bilateral for Tumour/For
+Carcinoma -Lap/Endoscopic",795,16531
+ NEPHROLOGY AND UROLOGY,Operations for Hydrocele - Unilateral,796,6745
+ NEPHROLOGY AND UROLOGY,Operations for Hydrocele - Bilateral,797,9839
+ NEPHROLOGY AND UROLOGY,Operation for Torsion of Testis,798,13225
+ NEPHROLOGY AND UROLOGY,"Micro-surgical Vasovasostomy /Vaso epidedymal
+ansatamosis.",799,12696
+ NEPHROLOGY AND UROLOGY,Operations for Varicocele Unilateral-Microsurgical,800,8861
+ NEPHROLOGY AND UROLOGY,Operations for Varicocele Palomo?s Unilateral - Lap,801,10580
+ NEPHROLOGY AND UROLOGY,Operations for Varicocele Bilateral --Microsurgical,802,14548
+ NEPHROLOGY AND UROLOGY,Operations for Varicocele Bilateral ? Lap/ Palomo,803,17193
+ NEPHROLOGY AND UROLOGY,"Block Dissection of ilio-inguinal Nodes - One Side (For Ca-
+Penis)",804,7274
+ NEPHROLOGY AND UROLOGY,"Block Dissection of ilio-inguinal Nodes - Both Sides (For Ca-
+Penis)",805,26450
+ NEPHROLOGY AND UROLOGY,Excision of Filarial Scrotum,806,13225
+ NEPHROLOGY AND UROLOGY,Kidney Transplantation (related),807,4025
+ NEPHROLOGY AND UROLOGY,Kidney Transplantation (Spousal/ unrelated),808,164450
+ NEPHROLOGY AND UROLOGY,ABO incompatible Transplantation,809,563500
+ NEPHROLOGY AND UROLOGY,Swap Transplantation,810,446200
+ NEPHROLOGY AND UROLOGY,Kidney Transplant Graft Nephrectomy,811,70000
+ NEPHROLOGY AND UROLOGY,Donor Nephrectomy (open),812,33063
+ NEPHROLOGY AND UROLOGY,Donor Nephrectomy (Laproscopic),813,52900
+ NEPHROLOGY AND UROLOGY,Cadaver Transplantation,814,95795
+ NEPHROLOGY AND UROLOGY,"Kidney Transplant with Native Kidney Nephrectomy
+(Related)/ Unilateral",815,32200
+ NEPHROLOGY AND UROLOGY,"Kidney Transplant with Native Kidney Nephrectomy
+(Related)/ Bilateral",816,97750
+ NEPHROLOGY AND UROLOGY,"Kidney Transplant with Native Kidney Nephrectomy
+(Spousal/ Unrelated) Unilateral",817,97750
+ NEPHROLOGY AND UROLOGY,"Kidney Transplant with Native Kidney Nephrectomy
+(Spousal/ Unrelated) Bilateral",818,97750
+ NEPHROLOGY AND UROLOGY,Post-Transplant Collection drainage for Lymphocele (open),819,8000
+ NEPHROLOGY AND UROLOGY,"Post-Transplant Collection drainage for Lymphocele
+(percutaneous)",820,8000
+ NEPHROLOGY AND UROLOGY,"Post-Transplant Collection drainage for Lymphocele
+(Laproscopic)",821,9000
+ NEPHROLOGY AND UROLOGY,Arteriovenous Fistula for Haemodialysis,822,2645
+ NEPHROLOGY AND UROLOGY,Arteriovenous Shunt for Haemodialysis,823,4025
+ NEPHROLOGY AND UROLOGY,Jugular Catheterization for Haemodialysis,824,1725
+ NEPHROLOGY AND UROLOGY,Subclavian Catheterization for Haemodialysis,825,2588
+ NEPHROLOGY AND UROLOGY,"One sided (single Lumen) Femoral Catheterization for
+Haemodialysis",826,1150
+ NEPHROLOGY AND UROLOGY,"Bilateral (single Lumen) Femoral Catheterization for
+Haemodialysis",827,1725
+ NEPHROLOGY AND UROLOGY,Double Lumen Femoral Catheterization for Haemodialysis,828,2128
+ NEPHROLOGY AND UROLOGY,Permcath Insertion,829,3220
+ NEPHROLOGY AND UROLOGY,Arterio venous Prosthetic Graft,830,2128
+ NEPHROLOGY AND UROLOGY,Single lumen Jugular Catheterization,831,1725
+ NEPHROLOGY AND UROLOGY,Single lumen Subclavian Catheterization,832,2000
+ NEPHROLOGY AND UROLOGY,Plasma Exchange/ Plasma phresis,833,1984
+ NEPHROLOGY AND UROLOGY,Open method CAPD catheter insertion,834,4025
+ NEPHROLOGY AND UROLOGY,Schlendinger method CAPD catheter insertion,835,4025
+ NEPHROLOGY AND UROLOGY,Sustained low efficiency hemodialysis,836,1438
+ NEPHROLOGY AND UROLOGY,Continuous Veno venous/Arteriovenous Hemofilteration,837,2588
+ NEPHROLOGY AND UROLOGY,Hemodialysis for Sero negative cases,838,1610
+ NEPHROLOGY AND UROLOGY,Hemodialysis for Sero Positive cases,839,1898
+ NEPHROLOGY AND UROLOGY,Acute Peritoneal Dialysis,840,1668
+ NEPHROLOGY AND UROLOGY,Fistologram for Arteriovenous Fistula,841,2875
+ NEPHROLOGY AND UROLOGY,Ultrasound guided kidney Biopsy,842,978
+ NEPHROLOGY AND UROLOGY,Fistula stenosis dilation,843,3450
+ NEPHROLOGY AND UROLOGY,Slow continuous Ultrafilteration,844,2875
+ NEPHROLOGY AND UROLOGY,PCNL - Unilateral,845,23000
+ NEPHROLOGY AND UROLOGY,PCNL - Bilateral,846,28750
+ NEPHROLOGY AND UROLOGY,Endoscopic Bulking agent Inject,847,5175
+ NEPHROLOGY AND UROLOGY,Testicular Biopsy,848,2248
+ NEPHROLOGY AND UROLOGY,Radical Nephrectomy -Open,849,19838
+ NEPHROLOGY AND UROLOGY,Radical Nephrectomy -Lap/Endoscopic,850,23805
+ NEPHROLOGY AND UROLOGY,Radical Nephrectomy plus IV thrombus,851,26450
+ NEPHROLOGY AND UROLOGY,Radical Nephrectomy plus IV thrombus plus cardiac bypass.,852,26450
+ NEPHROLOGY AND UROLOGY,Vesico Vaginal Fistula Repair (Open),853,18400
+ NEPHROLOGY AND UROLOGY,Vesico Vaginal Fistula Repair (Laproscopic),854,25300
+ NEPHROLOGY AND UROLOGY,Radical Cystectomy -Ileal conduit,855,20000
+ NEPHROLOGY AND UROLOGY,Radical Cystectomy - continent diversion.,856,17250
+ NEPHROLOGY AND UROLOGY,Radical Cystectomy ? Neo bladder,857,21275
+ NEPHROLOGY AND UROLOGY,Nephrectomy Simple -Open,858,11585
+ NEPHROLOGY AND UROLOGY,Nephrectomy Simple-lap/Endoscopic,859,14482
+ NEPHROLOGY AND UROLOGY,Nephrostomy -Open,860,11500
+ NEPHROLOGY AND UROLOGY,Nephrostomy -Lap/Endoscopic,861,12593
+ NEPHROLOGY AND UROLOGY,"Ureteric Re- implant for Megaureter/Vesicoureteric reflex/
+uterocele (open)",862,12068
+ NEPHROLOGY AND UROLOGY,"Ureteric Re -implant for Megaureter/Vesicoureteric reflex/
+uterocele (Laproscopic)",863,12068
+ NEPHROLOGY AND UROLOGY,Partial Cystectomy,864,15870
+ NEPHROLOGY AND UROLOGY,TURP & TUR Bladder Tumour,865,19838
+ NEPHROLOGY AND UROLOGY,TURP with Cystolithotripsy,866,19550
+ NEPHROLOGY AND UROLOGY,Closure of Urethral Fistula,867,12650
+ NEPHROLOGY AND UROLOGY,Orchidopexy - Unilateral -Open,868,11347
+ NEPHROLOGY AND UROLOGY,Orchidopexy - Unilateral- Lap/Endoscopic,869,14184
+ NEPHROLOGY AND UROLOGY,Orchidopexy - Bilateral -Open,870,14124
+ NEPHROLOGY AND UROLOGY,Orchidopexy - Bilateral -Lap/Endoscopic,871,16675
+ NEPHROLOGY AND UROLOGY,Cystolithotomy -Suprapubic,872,11241
+ NEPHROLOGY AND UROLOGY,Endoscopic Removal of Stone in Bladder,873,3968
+ NEPHROLOGY AND UROLOGY,"Resection Bladder Neck Endoscopic /Bladder neck
+incision/transurethral incision on prostrate",874,12564
+ NEPHROLOGY AND UROLOGY,Ureteroscopic Surgery,875,11903
+ NEPHROLOGY AND UROLOGY,Urethroplasty 1st Stage,876,12564
+ NEPHROLOGY AND UROLOGY,Scrotal Exploration,877,9839
+ NEPHROLOGY AND UROLOGY,Perineal Urethrostomy,878,5422
+ NEPHROLOGY AND UROLOGY,Dilatation of Stricture Urethra under G.A.,879,2300
+ NEPHROLOGY AND UROLOGY,Dilatation of Stricture Urethra under LA,880,1984
+ NEPHROLOGY AND UROLOGY,Laproscopic Nephrectomy,881,38353
+ NEPHROLOGY AND UROLOGY,Laproscopic partial Nephrectomy,882,11500
+ NEPHROLOGY AND UROLOGY,Laproscopic pyelolithotomy,883,14548
+ NEPHROLOGY AND UROLOGY,Laproscopic Pyeloplasty,884,11241
+ NEPHROLOGY AND UROLOGY,Laproscopic surgery for Renal cyst,885,11241
+ NEPHROLOGY AND UROLOGY,Laproscopic ureterolithotomy,886,13225
+ NEPHROLOGY AND UROLOGY,Laproscopic Nephro ureterotectomy,887,15209
+ NEPHROLOGY AND UROLOGY,Lithotripsy Extra corporeal shock wave.,888,21850
+ NEPHROLOGY AND UROLOGY,Uroflow Study (Uroflometry),889,518
+ NEPHROLOGY AND UROLOGY,Urodynamic Study (Cystometry),890,552
+ NEPHROLOGY AND UROLOGY,Cystoscopy with Retrograde Catheter -Unilateral /RGP,891,3223
+ NEPHROLOGY AND UROLOGY,Cystoscopy with Retrograde Catheter - Bilateral /RGP,892,5500
+ NEPHROLOGY AND UROLOGY,Cystoscopy with Bladder Biopsy (Cold Cup Biopsy),893,3888
+ NEPHROLOGY AND UROLOGY,"Voiding-cysto-urethrogram and retrograde urethrogram
+(Nephrostogram)",894,476
+ NEPHROLOGY AND UROLOGY,Radical prostatectomy-Open,895,20499
+ NEPHROLOGY AND UROLOGY,Radical prostatectomy-Laproscopic,896,23144
+ NEPHROLOGY AND UROLOGY,"Radical prostatectomy- Robotic (Robotic Partial
+Nephrectomy)",897,23144
+ NEPHROLOGY AND UROLOGY,Hollmium YAG Prostate Surgery,898,17250
+ NEPHROLOGY AND UROLOGY,Hollmium YAG OIU,899,5290
+ NEPHROLOGY AND UROLOGY,Hollmium YAG Core Through,900,19838
+ NEPHROLOGY AND UROLOGY,Hollmium YAG Stone Lithotripsy,901,12000
+ NEPHROLOGY AND UROLOGY,Green Light laser for prostate,902,19838
+ NEPHROLOGY AND UROLOGY,RIRS/ Flexible Ureteroscopy,903,7820
+ NEPHROLOGY AND UROLOGY,Microscopic VEA/ Vaso-Vasostomy (for Infertility),904,15525
+ NEPHROLOGY AND UROLOGY,"Cystoscopic Botulinum Toxin Injection ( Over active
+bladder/ Neurogenic bladder)",905,7820
+ NEPHROLOGY AND UROLOGY,Peyronie?s disease ? Plaque excision with grafting,906,4000
+ NEPHROLOGY AND UROLOGY,"High Intensity Focus Ultrasound (HIFU) (Robotic) for
+Carcinoma prostrate and renal cell carcinoma",907,5290
+ NEPHROLOGY AND UROLOGY,Prosthetic surgery for urinary incontinence,908,2645
+ NEPHROLOGY AND UROLOGY,TRUS guided prostate biopsy,909,661
+ NEPHROLOGY AND UROLOGY,Ultra sound guided PCN,910,828
+NEURO-SURGERY,Craniotomy and Evacuation of Haematoma -Subdural,913,58322
+NEURO-SURGERY,Craniotomy and Evacuation of Haematoma -Extradural,914,57500
+NEURO-SURGERY,Evacuation /Excision of Brain Abscess by craniotomy,915,46000
+NEURO-SURGERY,Excision of Lobe (Frontal Temporal Cerebellum etc.),916,47150
+NEURO-SURGERY,Excision of Brain Tumours -Supratentorial,917,44991
+NEURO-SURGERY,Excision of Brain Tumours -Infratentorial,918,51750
+NEURO-SURGERY,Surgery of spinal Cord Tumours,919,51750
+NEURO-SURGERY,Ventriculoatrial /Ventriculoperitoneal Shunt,920,28750
+NEURO-SURGERY,Twist Drill Craniostomy,921,5000
+NEURO-SURGERY,Subdural Tapping,922,2824
+NEURO-SURGERY,Ventricular Tapping,923,3412
+NEURO-SURGERY,Abscess Tapping,924,3306
+NEURO-SURGERY,Placement of ICP Monitor -,925,3306
+NEURO-SURGERY,Skull Traction Application,926,2645
+NEURO-SURGERY,Lumber Pressure Monitoring,927,5000
+NEURO-SURGERY,Vascular Malformations,928,25300
+NEURO-SURGERY,Meningo Encephalocoele excision and repair,929,17250
+NEURO-SURGERY,Meningomyelocoel Repair,930,28744
+NEURO-SURGERY,C.S.F. Rhinorrhaea Repair,931,33063
+NEURO-SURGERY,Cranioplasty,932,27773
+NEURO-SURGERY,Anterior Cervical Dissectomy,933,19090
+NEURO-SURGERY,Brachial Plexus Exploration and neurotization,934,17854
+NEURO-SURGERY,Median Nerve Decompression,935,16100
+NEURO-SURGERY,Peripheral Nerve Surgery ? Major,936,19838
+NEURO-SURGERY,Peripheral Nerve Surgery Minor,937,9522
+NEURO-SURGERY,Ventriculo-Atrial Shunt,938,13357
+NEURO-SURGERY,Nerve Biopsy,939,7935
+NEURO-SURGERY,Brain Biopsy,940,6679
+NEURO-SURGERY,Anterior Cervical Spine Surgery with fusion,941,37030
+NEURO-SURGERY,Anterio Lateral Decompression of spine,942,33063
+NEURO-SURGERY,Brain Mapping,943,963
+NEURO-SURGERY,Cervical or Dorsal or Lumbar Laminectomy,944,26450
+NEURO-SURGERY,Combined Trans-oral Surgery & CV Junction Fusion,945,39675
+NEURO-SURGERY,C.V. Junction Fusion procedures,946,34500
+NEURO-SURGERY,Depressed Fracture Elevation,947,28750
+NEURO-SURGERY,Lumbar Discectomy,948,31740
+NEURO-SURGERY,Endarterectomy (Carotid),949,23000
+NEURO-SURGERY,R.F. Lesion for Trigeminal Neuralgia,950,13225
+NEURO-SURGERY,Spasticity Surgery -,951,45626
+NEURO-SURGERY,Spinal Fusion Procedure,952,34500
+NEURO-SURGERY,Spinal Intra Medullary Tumours,953,39675
+NEURO-SURGERY,Spinal Bifida Surgery Major,954,21821
+NEURO-SURGERY,Spinal Bifida Surgery Minor,955,17250
+NEURO-SURGERY,Stereotaxic Procedures- biopsy/aspiration of cyst,956,26450
+NEURO-SURGERY,Trans Sphenoidal Surgery,957,34500
+NEURO-SURGERY,Trans Oral Surgery,958,34500
+NEURO-SURGERY,Implantation of DBS -One electrode,959,39675
+NEURO-SURGERY,Implantation of DBS -two electrodes,960,46288
+NEURO-SURGERY,Endoscopic aqueductoplasty,961,17250
+NEURO-SURGERY,Facial nerve reconstruction,962,34500
+NEURO-SURGERY,Carotid stenting,963,48602
+NEURO-SURGERY,Cervical disc arthroplasty,964,31740
+NEURO-SURGERY,Lumbar disc arthroplasty,965,15870
+NEURO-SURGERY,Corpus callostomy for Epilepsy,966,40250
+NEURO-SURGERY,Hemishpherotomy for Epilepsy,967,37030
+NEURO-SURGERY,Endoscopic CSF rhinorrhea repair,968,34500
+NEURO-SURGERY,Burr hole evacuation of chronic subdural haematoma,969,27773
+NEURO-SURGERY,Epilepsy surgery,970,41659
+NEURO-SURGERY,RF lesion for facet joint pain syndrome,971,19838
+NEURO-SURGERY,Cervical laminoplasty,972,36800
+NEURO-SURGERY,Lateral mass C1-C2 screw fixation,973,26450
+NEURO-SURGERY,Microsurgical decompression for Trigeminal nerve,974,43700
+NEURO-SURGERY,Microsurgical decompression for hemifacial spasm,975,5343
+NEURO-SURGERY,IC EC bypass procedures,976,36800
+NEURO-SURGERY,Image guided craniotomy,977,33327
+NEURO-SURGERY,Baclofen pump implantation,978,44850
+NEURO-SURGERY,Programmable VP shunt,979,28750
+NEURO-SURGERY,Endoscopic sympathectomy,980,19673
+NEURO-SURGERY,Lumber puncture,981,238
+NEURO-SURGERY,External ventricular drainage (EVD),982,5290
+NEURO-SURGERY,Endoscopic 3rd ventriculostomy,983,46000
+NEURO-SURGERY,Endoscopic cranial surgery/Biopsy/aspiration,984,36266
+NEURO-SURGERY,"Endoscopic discectomy (Lumbar, Cervical)",985,40964
+NEURO-SURGERY,Aneurysm coiling (Endovascular),986,39560
+NEURO-SURGERY,Surgery for skull fractures,987,46000
+NEURO-SURGERY,Carpel Tunnel decompression,988,17250
+NEURO-SURGERY,Clipping of intracranial aneurysm,989,27773
+NEURO-SURGERY,Surgery for intracranial Arteriovenous malformarions(AVM),990,46000
+NEURO-SURGERY,Foramen magnum decompression for Chari Malformation,991,1265
+NEURO-SURGERY,"Dorsal column stimulation for backache in failed back
+syndrome",992,33063
+NEURO-SURGERY,Surgery for recurrent disc prolapse/epidural fibrosis,993,37030
+NEURO-SURGERY,Surgery for brain stem tumours,994,50586
+NEURO-SURGERY,"Decompressive craniotomy for hemishpherical acute
+subdural haematoma/brain swelling/large infarct",995,46000
+NEURO-SURGERY,Intra-arterial thrombolysis with TPA (for ischemic stroke ),996,5290
+NEURO-SURGERY,Steriotactic aspiration of intracerebral haematoma,997,37427
+NEURO-SURGERY,Endoscopic aspiration of intracerebellar haematoma,998,46000
+NEURO-SURGERY,"Steriotactic Radiosurgery for brain pathology(X
+knife/Gamma ) - ONE session",999,31694
+NEURO-SURGERY,"Steriotactic Radiosurgery for brain pathology(X knife /
+Gamma knife -Two or more sessions",1000,66125
+NEURO-SURGERY,Chemotheraphy wafers for malignant brain tumors,1001,16618
+NEURO-SURGERY,Battery Placement for DBS,1002,25300
+NEURO-SURGERY,Baclofen pump implantation for spasticity,1003,19930
+NEURO-SURGERY,Peripheral Nerve tumor surgery,1004,27600
+NEURO-SURGERY,Surgery Intra Cranial Meningioma,1005,23000
+NEURO-SURGERY,Surgery for Intracranial Schwannoma,1006,40250
+NEURO-SURGERY,Surgery for Gliomas,1007,51750
+NEURO-SURGERY,Surgery for Orbital tumors,1008,46000
+NEURO-SURGERY,Surgery for Cranial (Skull) tumors,1009,44275
+NEURO-SURGERY,Surgery for Scalp AVMs,1010,28750
+NEURO-SURGERY,Kyphoplasty,1011,46000
+NEURO-SURGERY,Balloon Kyphoplasty,1012,46000
+NEURO-SURGERY,"Lesioning procedures for Parkinsons disease, Dystonia etc.",1013,40250
+ PAEDIATRIC SURGERY,Excision of thyroglossal Duct/Cyst,1016,18400
+ PAEDIATRIC SURGERY,"Diaphragmatic Hernia Repair (Thoracic or Abdominal
+Approach)",1017,19838
+ PAEDIATRIC SURGERY,Tracheo Oesophageal Fistula (Correction Surgery),1018,26450
+ PAEDIATRIC SURGERY,Colon Replacement of Oesophagus,1019,26450
+ PAEDIATRIC SURGERY,Omphalo Mesenteric Cyst Excision,1020,19838
+ PAEDIATRIC SURGERY,Omphalo Mesenteric Duct- Excision,1021,17854
+ PAEDIATRIC SURGERY,Meckels Diverticulectomy,1022,3849
+ PAEDIATRIC SURGERY,Omphalocele 1st Stage (Hernia Repair),1023,17854
+ PAEDIATRIC SURGERY,Omphalocele 2nd Stge (Hernia Repair),1024,19838
+ PAEDIATRIC SURGERY,Gastrochisis Repair,1025,18515
+ PAEDIATRIC SURGERY,Inguinal Herniotomy,1026,14442
+ PAEDIATRIC SURGERY,Congenital Hydrocele,1027,13800
+ PAEDIATRIC SURGERY,Hydrocele of Cord,1028,13800
+ PAEDIATRIC SURGERY,Torsion Testis Operation,1029,17250
+ PAEDIATRIC SURGERY,Congenital Pyloric Stenosis- operation,1030,16029
+ PAEDIATRIC SURGERY,Duodenal- Atresia Operation,1031,16100
+ PAEDIATRIC SURGERY,Pancreatic Ring Operation,1032,25789
+ PAEDIATRIC SURGERY,Meconium Ileus Operation,1033,16675
+ PAEDIATRIC SURGERY,Malrotation of Intestines Operation,1034,14950
+ PAEDIATRIC SURGERY,Rectal Biopsy (Megacolon),1035,11196
+ PAEDIATRIC SURGERY,Colostomy Transverse,1036,17250
+ PAEDIATRIC SURGERY,Colostomy Left Iliac,1037,17250
+ PAEDIATRIC SURGERY,Abdominal Perineal Pull Through (Hirschaprugis Disease),1038,21850
+ PAEDIATRIC SURGERY,Imperforate Anus Low Anomaly -Cut Back Operation,1039,11770
+ PAEDIATRIC SURGERY,Imperforate Anus Low Anomaly - Perineal Anoplasty,1040,13800
+ PAEDIATRIC SURGERY,"Imperforate Anus High Anomaly -Sacroabdomino Perineal
+Pull Through",1041,14375
+ PAEDIATRIC SURGERY,Imperforate Anus High Anomaly - Closure of Colostomy,1042,9919
+ PAEDIATRIC SURGERY,Intususception Operation,1043,23805
+ PAEDIATRIC SURGERY,"Choledochoduodenostomy for Atresia of Extra Hepatic
+Billiary Duct",1044,17250
+ PAEDIATRIC SURGERY,Operation of Choledochal Cyst,1045,18400
+ PAEDIATRIC SURGERY,Nephrectomy for -Pyonephrosis,1046,19550
+ PAEDIATRIC SURGERY,Nephrectomy for - Hydronephrosis,1047,17250
+ PAEDIATRIC SURGERY,Nephrectomy for -Wilms Tumour,1048,17250
+ PAEDIATRIC SURGERY,"Paraortic Lymphadenoctomy with Nephrectomy for Wilms
+Tumour",1049,23000
+ PAEDIATRIC SURGERY,Sacro-Coccygeal Teratoma Excision,1050,16100
+ PAEDIATRIC SURGERY,Neuroblastoma Debulking,1051,18400
+ PAEDIATRIC SURGERY,Neuroblastoma Total Excision,1052,23805
+ PAEDIATRIC SURGERY,Rhabdomyosarcoma wide Excision,1053,17250
+ PAEDIATRIC SURGERY,Congenital Atresia & Stenosis of Small Intestine,1054,21850
+ PAEDIATRIC SURGERY,Muconium ileus,1055,18400
+ PAEDIATRIC SURGERY,Mal-rotation & Volvulus of the Midgut,1056,17250
+ PAEDIATRIC SURGERY,Excision of Meckle?s Deverticulum,1057,13800
+ BURNS AND PLASTIC SURGERY,Primary Suturing of Wound,1060,345
+ BURNS AND PLASTIC SURGERY,Injection of Keloids - Ganglion,1061,1264
+ BURNS AND PLASTIC SURGERY,Injection of Keloids - Haemangioma,1062,1323
+ BURNS AND PLASTIC SURGERY,Free Grafts - Wolfe Grafts,1063,1984
+ BURNS AND PLASTIC SURGERY,Free Grafts - Theirech- Small Area 5%,1064,8596
+ BURNS AND PLASTIC SURGERY,Free Grafts - Large Area 10%,1065,9200
+ BURNS AND PLASTIC SURGERY,Free Grafts - Very Large Area 20% and above.,1066,11903
+ BURNS AND PLASTIC SURGERY,Skin Flaps - Rotation Flaps,1067,10316
+ BURNS AND PLASTIC SURGERY,Skin Flaps - Advancement Flaps,1068,14375
+ BURNS AND PLASTIC SURGERY,Skin Flaps - Direct- cross Leg Flaps- Cross Arm Flap,1069,14375
+ BURNS AND PLASTIC SURGERY,Skin Flaps - Cross Finger,1070,14375
+ BURNS AND PLASTIC SURGERY,Skin Flaps - Abdominal,1071,11000
+ BURNS AND PLASTIC SURGERY,Skin Flaps - Thoracic,1072,11000
+ BURNS AND PLASTIC SURGERY,Skin Flaps - Arm Etc.,1073,12650
+ BURNS AND PLASTIC SURGERY,Subcutaneous Pedicle Flaps Raising,1074,7935
+ BURNS AND PLASTIC SURGERY,Subcutaneous Pedicle Flaps Delay,1075,7000
+ BURNS AND PLASTIC SURGERY,Subcutaneous Pedicle Flaps Transfer,1076,7000
+ BURNS AND PLASTIC SURGERY,Cartilage Grafting,1077,9919
+ BURNS AND PLASTIC SURGERY,Reduction of Facial Fractures of Nose,1078,1587
+ BURNS AND PLASTIC SURGERY,Reduction of Facial Fractures of Maxilla,1079,9200
+ BURNS AND PLASTIC SURGERY,"Reduction of Fractures of Mandible & Maxilla - Eye Let
+Splinting",1080,8596
+ BURNS AND PLASTIC SURGERY,"Reduction of Fractures of Mandible & Maxilla - Cast Netal
+Splints",1081,7935
+ BURNS AND PLASTIC SURGERY,"Reduction of Fractures of Mandible & Maxilla - Gumming
+Splints",1082,8625
+ BURNS AND PLASTIC SURGERY,Internal Wire Fixation of Mandible & Maxilla,1083,13225
+ BURNS AND PLASTIC SURGERY,Cleft Lip - repair.,1084,13225
+ BURNS AND PLASTIC SURGERY,Cleft Palate Repair,1085,14548
+ BURNS AND PLASTIC SURGERY,Primary Bone Grafting for alveolar cleft in Cleft Lip,1086,13225
+ BURNS AND PLASTIC SURGERY,Secondary Surgery for Cleft Lip Deformity,1087,11500
+ BURNS AND PLASTIC SURGERY,Secondary Surgery for Cleft Palate,1088,14548
+ BURNS AND PLASTIC SURGERY,Reconstruction of Eyelid Defects - Minor,1089,7274
+ BURNS AND PLASTIC SURGERY,Reconstruction of Eyelid Defects - Major,1090,9775
+ BURNS AND PLASTIC SURGERY,Plastic Surgery of Different Regions of the Ear - Minor,1091,9258
+ BURNS AND PLASTIC SURGERY,Plastic Surgery of Different Regions of the Ear - Major,1092,11903
+ BURNS AND PLASTIC SURGERY,Plastic Surgery of the Nose - Minor,1093,9258
+ BURNS AND PLASTIC SURGERY,Plastic Surgery of the Nose - Major,1094,10925
+ BURNS AND PLASTIC SURGERY,"Plastic Surgery for Facial Paralysis (Support with
+Reanimation)",1095,18515
+ BURNS AND PLASTIC SURGERY,Pendulous Breast - Mammoplasty,1096,14950
+ BURNS AND PLASTIC SURGERY,Underdeveloped Breast Mammoplasty,1097,13800
+ BURNS AND PLASTIC SURGERY,After Mastectomy (Reconstruction)Mammoplasty,1098,13800
+ BURNS AND PLASTIC SURGERY,Syndactyly Repair,1099,15000
+ BURNS AND PLASTIC SURGERY,Dermabrasion Face,1100,15209
+ BURNS AND PLASTIC SURGERY,upto 30% Burns 1st Dressing,1101,175
+ BURNS AND PLASTIC SURGERY,upto 30% Burns Subsequent Dressing,1102,143
+ BURNS AND PLASTIC SURGERY,30% to 50% Burns 1st Dressing,1103,222
+ BURNS AND PLASTIC SURGERY,30% to 50% Burns Subsequent Dressing,1104,175
+ BURNS AND PLASTIC SURGERY,Extensive Burn -above 50% Frist Dressing,1105,317
+ BURNS AND PLASTIC SURGERY,Extensive Burn -above 50% Subsequent dressing,1106,222
+ORTHOPEDICS,Plaster Work,1107,300
+ORTHOPEDICS,Fingers (post slab),1108,298
+ORTHOPEDICS,Fingers full plaster,1109,298
+ORTHOPEDICS,Colles Fracture - Below elbow,1110,1125
+ORTHOPEDICS,Colles Fracture - Full plaster,1111,1143
+ORTHOPEDICS,Colles fracture Ant. Or post. slab,1112,460
+ORTHOPEDICS,Above elbow full plaster,1113,199
+ORTHOPEDICS,Above Knee post-slab,1114,288
+ORTHOPEDICS,Below Knee full plaster,1115,199
+ORTHOPEDICS,Below Knee post-slab,1116,826
+ORTHOPEDICS,Tube Plaster (or plaster cylinder),1117,920
+ORTHOPEDICS,Above knee full plaster,1118,1455
+ORTHOPEDICS,Above knee full slab,1119,1332
+ORTHOPEDICS,Minerva Jacket,1120,2777
+ORTHOPEDICS,Plaster Jacket,1121,2513
+ORTHOPEDICS,Shoulder spica,1122,2248
+ORTHOPEDICS,Single Hip spica,1123,2579
+ORTHOPEDICS,Double Hip spica,1124,3174
+ORTHOPEDICS,Strapping of Finger,1125,206
+ORTHOPEDICS,Strapping of Toes,1126,207
+ORTHOPEDICS,Strapping of Wrist,1127,265
+ORTHOPEDICS,Strapping of Elbow,1128,301
+ORTHOPEDICS,Strapping of Knee,1129,397
+ORTHOPEDICS,Strapping of Ankle,1130,397
+ORTHOPEDICS,Strapping of Chest,1131,529
+ORTHOPEDICS,Strapping of Shoulder,1132,596
+ORTHOPEDICS,Figure of 8 bandage,1133,596
+ORTHOPEDICS,Collar and cuff sling,1134,300
+ORTHOPEDICS,Ball bandage,1135,460
+ORTHOPEDICS,Application of P.O.P Casts for Upper & Lower Limbs,1136,728
+ORTHOPEDICS,Application of Functiol Cast Brace,1137,1553
+ORTHOPEDICS,Application of Skin Traction,1138,794
+ORTHOPEDICS,Application of Skeletal Tractions,1139,1091
+ORTHOPEDICS,Bandage & Strappings for Fractures,1140,635
+ORTHOPEDICS,Aspiration & Intra Articular Injections,1141,661
+ORTHOPEDICS,Application of P.O.P Spices & Jackets,1142,2844
+ORTHOPEDICS,Close Reduction of Fractures of Limb & P.O.P,1143,2990
+ORTHOPEDICS,Reduction of Compound Fractures,1144,3174
+ORTHOPEDICS,Open Reduction & Internal Fixation of Fingurs & Toes,1145,5951
+ORTHOPEDICS,"Open Reduction offracture of Long Bones of Upper / Lower
+Limb -iling & Exterl Fixation",1146,9258
+ORTHOPEDICS,"Open Reduction of fracture of Long Bones of Upper / Lower
+Limb -AO Procedures",1147,11109
+ORTHOPEDICS,Tension Band Wirings,1148,6507
+ORTHOPEDICS,Bone Grafting,1149,7591
+ORTHOPEDICS,Excision of Bone Tumours,1150,7935
+ORTHOPEDICS,Excision or other Operations for Scaphoid Fractures,1151,8266
+ORTHOPEDICS,Sequestrectomy & Saucerisation,1152,7935
+ORTHOPEDICS,Sequestrectomy & Saucerizations -Arthrotomy,1153,11467
+ORTHOPEDICS,Multiple Pinning Fracture Neck Femur,1154,13225
+ORTHOPEDICS,Plate Fixations for Fracture Neck Femur,1155,15525
+ORTHOPEDICS,A.O.Compression Procedures for Fracture Neck Femur,1156,19044
+ORTHOPEDICS,"Open Reduction of Fracture Neck Femur Muscle Pedicle
+Graft and Internal Fixations",1157,22425
+ORTHOPEDICS,Close Reduction of Dislocations,1158,3650
+ORTHOPEDICS,Open Reduction of Dislocations,1159,3955
+ORTHOPEDICS,Open Reduction of Fracture Dislocation & Internal Fixation,1160,15525
+ORTHOPEDICS,Neurolysis/Nerve repair,1161,15870
+ORTHOPEDICS,Nerve Repair with Grafting,1162,19176
+ORTHOPEDICS,Tendon with Transplant or Graft,1163,11903
+ORTHOPEDICS,Tendon Lengthening/Tendon repair,1164,9258
+ORTHOPEDICS,Tendon Transfer,1165,3571
+ORTHOPEDICS,Laminectomy Excision Disc and Tumours,1166,5555
+ORTHOPEDICS,Spil Ostectomy and Internal Fixations,1167,27773
+ORTHOPEDICS,"Anterolateral decompression for tuberculosis/ Costo-
+Transversectomy",1168,3968
+ORTHOPEDICS,Antereolateral Decompression and Spil Fusion,1169,22253
+ORTHOPEDICS,Corrective Ostectomy & Internal Fixation - short bones,1170,15870
+ORTHOPEDICS,Corrective Ostectomy & Internal Fixation - long bones,1171,12696
+ORTHOPEDICS,Arthrodesis of - Minor Joints,1172,11903
+ORTHOPEDICS,Arthrodesis of - Major Joints,1173,11500
+ORTHOPEDICS,Soft Tissue Operations for C.T.E.V.,1174,9258
+ORTHOPEDICS,Soft Tissue Operations for Polio,1175,7935
+ORTHOPEDICS,Hemiarthroplasty- Hip,1176,23000
+ORTHOPEDICS,Hemiarthroplasty- Shoulder,1177,23000
+ORTHOPEDICS,Operations for Brachial Plexus & Cervical Rib,1178,27773
+ORTHOPEDICS,Amputations - Below Knee,1179,7935
+ORTHOPEDICS,Amputations - Below Elbow,1180,7869
+ORTHOPEDICS,Amputations - Above Knee,1181,9258
+ORTHOPEDICS,Amputations - Above Elbow,1182,7869
+ORTHOPEDICS,Amputations - Forequarter,1183,15209
+ORTHOPEDICS,Amputations -Hind Quarter and Hemipelvectomy,1184,21160
+ORTHOPEDICS,Disarticulations - Major joint,1185,23805
+ORTHOPEDICS,Disarticulations - Minor joint,1186,14548
+ORTHOPEDICS,Arthrography,1187,10580
+ORTHOPEDICS,Arthroscopy - Diagnostic,1188,9853
+ORTHOPEDICS,Arthroscopy-therapeutic: without implant,1189,11500
+ORTHOPEDICS,Arthroscopy-therapeutic: with implant,1190,19838
+ORTHOPEDICS,Soft Tissue Operation on JOINTS -SMALL,1191,7935
+ORTHOPEDICS,Soft Tissue Operation on JOINTS -LARGE,1192,15525
+ORTHOPEDICS,"Myocutaneous and Fasciocutaneous Flap Procedures for
+Limbs",1193,21425
+ORTHOPEDICS,Removal of Wires & Screw,1194,2024
+ORTHOPEDICS,Removal of Plates,1195,4761
+ORTHOPEDICS,Total Hip Replacement,1196,90850
+ORTHOPEDICS,Total Ankle Joint Replacement,1197,109710
+ORTHOPEDICS,Total Knee Joint Replacement,1198,126500
+ORTHOPEDICS,Total Shoulder Joint Replacement,1199,90850
+ORTHOPEDICS,Total Elbow Joint Replacement,1200,90850
+ORTHOPEDICS,Total Wrist Joint Replacement,1201,115000
+ORTHOPEDICS,Total finger joint replacement,1202,23000
+ORTHOPEDICS,Tubular external fixator,1203,5290
+ORTHOPEDICS,Ilizarovs external fixator,1204,8927
+ORTHOPEDICS,Pelvi-acetebular fracture -Internal fixation,1205,9919
+ORTHOPEDICS,Meniscectomy,1206,13800
+ORTHOPEDICS,Meniscus Repair,1207,11500
+ORTHOPEDICS,ACL Reconstruction,1208,9775
+ORTHOPEDICS,PCL Reconstruction,1209,15525
+ORTHOPEDICS,Knee Collateral Ligament Reconstruction,1210,14375
+ORTHOPEDICS,Bencarf Repair Shoulder,1211,15180
+ORTHOPEDICS,RC Repair,1212,1725
+ORTHOPEDICS,Biceps tenodesis,1213,16100
+ORTHOPEDICS,Distal biceps tendon repair,1214,11937
+ORTHOPEDICS,Arthrolysis of knee,1215,14375
+ORTHOPEDICS,Capsulotomy of Shoulder,1216,18170
+ORTHOPEDICS,Conservative Pop,1217,1380
+ORTHOPEDICS,Application for CTEV per sitting,1218,1380
+ORTHOPEDICS,Total Hip Replacement Revision Stage-I,1219,19550
+ORTHOPEDICS,Total Hip Replacement Revision Stage-II,1220,57500
+ORTHOPEDICS,Total Knee Replacement Revision Stage-I,1221,40250
+ORTHOPEDICS,Total Knee Replacement Revision Stage-II,1222,40250
+ORTHOPEDICS,"Illizarov/ external fixation for limb lengthening/ deformity
+correction",1223,14375
+ORTHOPEDICS,Discectomy/ Micro Discectomy,1224,14375
+ORTHOPEDICS,Laminectomy,1225,5343
+ORTHOPEDICS,Spinal Fixation Cervical/dorsolumbar/ lumbosacral,1226,18400
+ORTHOPEDICS,Fusion Surgery Cervical/ Lumbar Spine upto 2 Level,1227,25300
+ORTHOPEDICS,More than 2 Level,1228,13800
+ORTHOPEDICS,Scoliosis Surgery/ Deformity Correction of Spine,1229,28750
+ORTHOPEDICS,Vertebroplasty,1230,13800
+ORTHOPEDICS,Spinal Injections,1231,518
+ORTHOPEDICS,DHS for Fracture Neck Femur,1232,17250
+ORTHOPEDICS,Proximal Femoral Nail (PFN for IT Fracture),1233,16100
+ORTHOPEDICS,Spinal Osteotomy,1234,1649
+ORTHOPEDICS,Illizarov?s / External Fixation for Trauma,1235,14950
+ORTHOPEDICS,Soft Tissue Operations for Polio/ Cerebral Palsy,1236,12420
+ORTHOPEDICS,Mini Fixator for Hand/Foot,1237,10350
+PHYSIOTHERAPY,Ultrasonic therapy,1240,90
+PHYSIOTHERAPY,S.W. Diathermy,1241,90
+PHYSIOTHERAPY,Electrical stimulation (therapeutic),1242,90
+PHYSIOTHERAPY,Muscle testing and diagnostic,1243,82
+PHYSIOTHERAPY,Infra red,1244,90
+PHYSIOTHERAPY,U.V. Therapeutic dose,1245,67
+PHYSIOTHERAPY,Intermittent Lumbar Traction,1246,90
+PHYSIOTHERAPY,Intermittent Cervical traction,1247,86
+PHYSIOTHERAPY,Wax bath,1248,86
+PHYSIOTHERAPY,Hot pack,1249,90
+PHYSIOTHERAPY,Breathing Exercises & Postural Drainage,1250,58
+PHYSIOTHERAPY,Cerebral Palsy ? exercise,1251,58
+PHYSIOTHERAPY,Post ? polio exercise,1252,58
+RADIOTHERAPY AND CHEMOTHERAPY,Cobalt 60 therapy,1253,75000
+RADIOTHERAPY AND CHEMOTHERAPY,Radical therapy,1254,78689
+RADIOTHERAPY AND CHEMOTHERAPY,Palliative therapy,1255,28104
+RADIOTHERAPY AND CHEMOTHERAPY,Linear accelerator,1256,35000
+RADIOTHERAPY AND CHEMOTHERAPY,Radical therapy,1257,67448
+RADIOTHERAPY AND CHEMOTHERAPY,Palliative therapy,1258,39345
+RADIOTHERAPY AND CHEMOTHERAPY,3 D Planning,1259,5621
+RADIOTHERAPY AND CHEMOTHERAPY,2 D Planing,1260,5621
+RADIOTHERAPY AND CHEMOTHERAPY,IMRT(Intensity Modulated radiotherapy),1261,116010
+RADIOTHERAPY AND CHEMOTHERAPY,SRT (Stereotactic radiotherapy),1262,70145
+RADIOTHERAPY AND CHEMOTHERAPY,SRS(Stereotactic radio surgery),1263,92628
+RADIOTHERAPY AND CHEMOTHERAPY,IGRT(Image guided radiotherapy),1264,169068
+RADIOTHERAPY AND CHEMOTHERAPY,Respiratory Gating-alongwith Linear accelerator planning,1265,126500
+RADIOTHERAPY AND CHEMOTHERAPY,Electron beam with Linear accelerator,1266,79380
+RADIOTHERAPY AND CHEMOTHERAPY,Tomotherapy,1267,91310
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Upper G.I. Endoscopy + Lower G.I. Endoscopy,1281,1984
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Diagnostic endoscopy,1282,288
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Endoscopic biopsy,1283,397
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Endoscopic mucosal resection,1284,1815
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Oesophageal stricture dilatation,1285,1984
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Balloon dilatation of achalasia cardia,1286,3306
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Foreign body removal,1287,1984
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Oesophageal stenting,1288,3450
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Band ligation of oesophageal varices,1289,2875
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Sclerotherapy of oesophageal varices,1290,2875
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Glue injection of varices,1291,2875
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Argon plasma coagulation,1292,4629
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Pyloric balloon dilatation,1293,2777
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Enteranal stenting,1294,4232
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Duodenal stricture dilation,1295,1139
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Single balloon enterocopy,1296,4600
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Double balloon enteroscopy,1297,4025
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Capsule endoscopy,1298,5693
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Piles banding,1299,1264
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Colonic stricture dilatation,1300,3148
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Hot biopsy forceps procedures,1301,3450
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Colonic stenting,1302,3148
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Junction biopsy,1303,2300
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Conjugal microscopy,1304,4600
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Endoscopic sphincterotomy,1305,2777
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,CBD stone extraction,1306,2777
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,CBD stricture dilatation,1307,7475
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Biliary stenting (plastic and metallic),1308,5555
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Mechanical lithotripsy of CBD stones,1309,9200
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Pancreatic sphincterotomy,1310,7500
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Pancreatic stricture dilatation,1311,6613
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Pancreatic stone extraction,1312,11613
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Mechanical lithotripsy of pancreatic stones,1313,13093
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Endoscopic cysto gastrostomy,1314,9258
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Balloon dilatation of papilla,1315,7935
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Ultrasound guided FNAC,1316,661
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Ultrasound guided abscess Drainage,1317,828
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,PTBD,1318,1323
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Diagnostic angiography,1319,2300
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Vascular embolization,1320,17365
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,TIPS,1321,6210
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,IVC graphy + hepatic veinography,1322,39344
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Muscular stenting,1323,112413
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,BRTO,1324,66125
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Portal haemodymic studies,1325,2250
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Manometry and PH metry,1326,1897
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Oesophageal PH metry,1327,5750
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Oesophageal manometry,1328,5750
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Small bowel manometry,1329,8000
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Anorectal manometry,1330,8000
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Colonic manometry,1331,9000
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Biliary manometry,1332,9000
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Sengstaken blackenesse tube tempode,1333,3306
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Lintas machles tube tempode,1334,3306
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Fecal fat test/ fecal chymotrypsin/ fecal elastase,1335,403
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Breath tests,1336,345
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Extra corporeal shortwave lithotripsy,1337,47610
+GASTROENTEROLOGY / ENDOSCOPIC PROCEDURES,Liver biopsy,1338,1587

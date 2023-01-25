@@ -1,0 +1,60 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto; padding: 0px" id="divProvisionalDiagnosiss" class="row col-md-24">
+    <div style="display:none" class="row">
+        <div class="col-md-24">
+            <input type="text" onkeyup="$searchChiefComplaintByWord(event)" placeholder="Search Allergies Template" id="txtSearchAllergiesTemplates" />
+        </div>
+    </div>
+    <div  style="display:none" class="row">
+        <div class="col-md-24">
+            <div style="height: 200px" id="listAllergies" class="chkList-Control">
+                <ul id="allergiesListMenu"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-24">
+            <textarea id="txtProvisionalDiagnosis" style="height: 100px" onkeyup="OnTextProvisionalDiagnosis(event)" maxlength="500" />
+            <span id="spnProvisionalDiagnosisOld" style="display:none;" />
+        </div>
+    </div>
+    <br />
+</div>
+
+<script type="text/javascript">
+    
+
+    var OnTextProvisionalDiagnosis = function (e) {
+
+        if (e.target.value.length > 0) {
+            var now = new Date(Date.now());
+            var hours = (Number(now.getHours()) > 12 ? (Number(now.getHours()) - 12) : now.getHours());
+            var formatted = (now.getDate().toString().length < 2 ? '0' + now.getDate() : now.getDate()) + "-" + (now.getMonth().toString().length < 2 ? '0' + (now.getMonth() + 1) : (now.getMonth() + 1)) + "-" + now.getFullYear() + " " + (hours.toString().length < 2 ? '0' + hours : hours) + ":" + (now.getMinutes().toString().length < 2 ? '0' + now.getMinutes() : now.getMinutes()) + (Number(now.getHours()) > 12 ? ' PM' : ' AM');
+            //  $('#divProvisionalDiagnosis').html('<b>Provisional Diagnosis : </b><span>' + e.target.value + '</span>');
+            $('#divProvisionalDiagnosis').html('<b>Provisional Diagnosis : </b> <br /><span style="white-space: pre-wrap;" >' + $('#spnProvisionalDiagnosisOld').text() + ($('#spnProvisionalDiagnosisOld').text().length > 0 ? ' <br />' : '') + '<b> ' + formatted + ' :- </b> ' + e.target.value + '</span>');
+        }
+        else {
+            //    $('#divProvisionalDiagnosis').html('');
+            $('#divProvisionalDiagnosis').html(($('#spnProvisionalDiagnosisOld').text().length > 0 ? '<b>Provisional Diagnosis : </b> <br /><span style="white-space: pre-wrap;">' + $('#spnProvisionalDiagnosisOld').text() + '</span>' : ''));
+        }
+        disabledPrint(true);
+    }
+
+    var removePD = function () {
+        $('#txtProvisionalDiagnosis').val('').keyup();
+    }
+
+    var bindProvisionalDiagnosis = function (data) {
+        var data = data.ProvisionalDiagnosis.length > 0 ? data.ProvisionalDiagnosis[0].ProvisionalDiagnosis : '';
+       // $('#txtProvisionalDiagnosis').val(data).keyup();
+        $('#spnProvisionalDiagnosisOld').text(data);
+      //  if (data.length > 0)
+            if (!String.isNullOrEmpty(data))
+            $('#divProvisionalDiagnosis').html('<b>Provisional Diagnosis : </b> <br /><span style="white-space: pre-wrap;">' + data + '</span>');
+    }
+    $(document).ready(function () {
+        loadViewData(function (patientPrescriptionDetails) {
+            bindProvisionalDiagnosis(patientPrescriptionDetails);
+        });
+    });
+    
+</script>

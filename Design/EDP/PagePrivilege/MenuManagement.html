@@ -1,0 +1,333 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="divInvestigationPrescribe">
+        <div class="row">
+            <div class="col-md-24">
+                <div class="row">
+                    <div class="col-md-24" style="text-align: center;">
+                        <label>
+                            <strong style="font-size: medium;"> 
+                                <input type="radio" name="MF" checked="checked" value="0" class="rdoMF" />
+                                <span>Normal Menu</span>
+                                <input type="radio" name="MF" value="1" class="rdoMF" />
+                                <span>Frame Menu</span>
+                                <br />
+                            </strong>
+                        </label>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3 Divmenu">
+                        <label class="pull-left">
+                            Menu Name
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 Divmenu">
+                        <input type="text" id="txtMenuName" autocomplete="off" data-title="Enter Menu" maxlength="20" class="Alphanumeric required" />
+                    </div>
+                    <div class="col-md-3 Divmenu">
+                        <label class="pull-left">
+                            <label class="pull-left">Browse Image</label>
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 Divmenu">
+                        <input type="file" onchange="encodeImageFileAsURL(this)" id="flMenuUpload" accept="image/x-png,image/gif,image/jpeg,image/jpg" onchange="previewPanelDocument(this)" />
+                        <span id="spnMenuDocumentBase64" style="display: none"></span>
+                    </div>
+                    <div class="col-md-2 Divmenu"></div>
+                    <div class="col-md-3 DivFrame hidden">
+                        <label class="pull-left">
+                            Frame Name
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 DivFrame hidden">
+                        <input type="text" id="txtFrameName" autocomplete="off" data-title="Enter Frame Name" maxlength="20" class="Alphanumeric required" />
+                    </div>
+                    <div class="col-md-3 DivFrame hidden">
+                        <label class="pull-left">
+                            Staus
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-1 DivFrame hidden">
+                        <input type="checkbox" id="ChkFrameStatus" name="ChkFrameStatus" value="1" checked="checked" />
+                    </div>
+                    <div class="col-md-6 DivFrame hidden"></div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-md-10"></div>
+                    <div class="col-md-3">
+                        <label id="lblMenuID" class="hidden"></label>
+                        <input type="button" id="btnSaveMenuMaster" value="Save" class="save margin-top-on-btn" onclick="SaveMenuMaster(this)" />
+
+                    </div>
+
+                </div>
+              
+                <div class="row">
+                    <div class="col-md-24  Purchaseheader">
+                        <label class="pull-left">
+                            <strong>Search Menu Detail </strong>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-3 Divmenu">
+                        <label class="pull-left">
+                            Search By Menu 
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 Divmenu">
+                        <select id="ddlMenu" class="ddlMenu" title="Select Menu" onchange="BindMenuDetail();"></select>
+                    </div>
+                    <div class="col-md-3 DivFrame hidden">
+                        <label class="pull-left">
+                            Search By Frame 
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 DivFrame hidden">
+                        <select id="ddlFrame" class="ddlFrame" title="Select Frame" onchange="BindFrameDetail();"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="divViewMenuDetails hidden Divmenu"></div>
+                     <script id="templateViewMenuDetails" type="text/html">
+    <table  cellspacing="0" rules="all" border="1"  style="width:100%;border-collapse:collapse;">
+        <thead>
+        <tr>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:10px" >SrNo</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px">Menu Name</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:100px">Image</th>           
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px;">Status</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:70px;">EntryBy</th>
+                <th class="GridViewHeaderStyle" scope="col"  style="width:50px;">Entry Date</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px;">Edit</th>
+        </tr>
+         </thead>
+        <tbody>
+        <#       
+        var dataLength=templateMenuData.length;
+        var objRow;   
+        for(var j=0;j<dataLength;j++)
+        {       
+        objRow = templateMenuData[j];
+        #>
+                <tr  id="tr2">
+                    <td class="GridViewLabItemStyle textCenter" style="width:10px"> <#=j+1#>
+                        <label id="GrdlblMenuID" class="hidden" ><#= objRow.ID #></label>
+                        <label id="GrdlblFilePath" class="hidden" ><#= objRow.image #></label>
+                    </td> 
+                    <td class="GridViewLabItemStyle textCenter"> <#= objRow.MenuName #></td>
+                    <td class="GridViewLabItemStyle textCenter"><img src="<#= objRow.image #>" alt="" style="width:20px;height:20px"></td>                                                     
+                       <td class="GridViewLabItemStyle textCenter" ><#=objRow.STATUS#></td>
+                       <td class="GridViewLabItemStyle textCenter" ><#=objRow.EntryBy#></td> 
+                     <td class="GridViewLabItemStyle textCenter" ><#=objRow.EntryDate#></td>
+                    <td class="GridViewLabItemStyle textCenter" ><img alt="" src="../../Images/edit.png" class="imgPlus"  style="cursor:pointer" onclick="EditMenuDetails(this)"  /></td>                       
+               </tr>     
+        <#}#>   
+       </tbody>   
+     </table>
+                        </script>              
+                    <div  class="divViewFrameDetails hidden DivFrame"> </div>
+                    <script id="templateViewFrameDetails" type="text/html">
+    <table  cellspacing="0" rules="all" border="1"  style="width:100%;border-collapse:collapse;">
+        <thead>
+        <tr>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:10px" >SrNo</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px">Frame Name</th>           
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px;">Status</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:70px;">EntryBy</th>
+                <th class="GridViewHeaderStyle" scope="col"  style="width:50px;">Entry Date</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px;">Edit</th>
+        </tr>
+         </thead>
+        <tbody>
+        <#       
+        var dataLength=templateFrameData.length;
+        var objRow;   
+        for(var j=0;j<dataLength;j++)
+        {       
+        objRow = templateFrameData[j];
+        #>
+                <tr  id="tr1">
+                    <td class="GridViewLabItemStyle textCenter" style="width:10px"> <#=j+1#>
+                        <label id="GrdlblFrameID" class="hidden" ><#= objRow.FrameID #></label>
+                    </td> 
+                    <td class="GridViewLabItemStyle textCenter"> <#= objRow.FrameName #></td>                   
+                       <td class="GridViewLabItemStyle textCenter" ><#=objRow.STATUS#></td>
+                       <td class="GridViewLabItemStyle textCenter" ><#=objRow.EntryBy#></td> 
+                     <td class="GridViewLabItemStyle textCenter" ><#=objRow.EntryDate#></td>
+                    <td class="GridViewLabItemStyle textCenter" ><img alt="" src="../../Images/edit.png" class="imgPlus"  style="cursor:pointer" onclick="EditFrameDetails(this)"  /></td>                       
+               </tr>     
+        <#}#>   
+       </tbody>   
+     </table>
+                        </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" id="prescribedInvestigationScript">
+    $(document).ready(function () {
+        $commonJsInit(function () {
+        });
+        $('.rdoMF').change(function () {
+            if ($(this).val() == "1") {
+                $('.Divmenu,.DivmenuCpoe').addClass('hidden');
+                $('.DivFrame').removeClass('hidden');
+            }
+            else if ($(this).val() == "0") {
+                $('.DivFrame,.DivmenuCpoe').addClass('hidden');
+                $('.Divmenu').removeClass('hidden');
+            }
+        });
+        $(".Alphanumeric").keypress(function (e) {
+            var keyCode = e.keyCode || e.which;
+            var regex = /^[A-Za-z\s0-9]+$/; /^[a-zA-Z\s]+$/
+            var isValid = regex.test(String.fromCharCode(keyCode));
+            return isValid;
+        });
+    });
+    var $bindMenuDropDownNew = function () {
+        serverCall('Services/PagePrivilage.asmx/BindMenuDropDown', {}, function (response) {
+            $('.ddlMenu').bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'ID', textField: 'MenuName', isSearchAble: true, selectedValue: 'Select' });
+        });
+    }
+    var bindFrameDropDownNew = function () {
+        serverCall('Services/PagePrivilage.asmx/BindFrameDropDown', {}, function (response) {
+            $('.ddlFrame').bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'FrameID', textField: 'FrameName', isSearchAble: true, selectedValue: 'Select' });
+        });
+    }
+    function encodeImageFileAsURL(element) {
+        var file = element.files[0];
+        var reader = new FileReader();
+        reader.onloadend = function () {
+            if (reader.result) {
+                $('#spnMenuDocumentBase64').text(reader.result);//base64encoded string
+                element.value = null;
+            }
+        };
+        reader.readAsDataURL(file);
+    }
+    var SaveMenuMaster = function (btnSave) {
+        if ($.trim($("input[name='MF']:checked").val()) == '0') {
+            if ($.trim($('#txtMenuName').val()) == '') {
+                modelAlert("Please Enter Menu Name.");
+                return false;
+            }
+            if ($.trim($('#spnMenuDocumentBase64').text()) == '' && $.trim($('#lblMenuID').text()) == '') {
+                modelAlert("Please Browse Image.");
+                return false;
+            }
+            var data = {};
+            data.MenuID = $.trim($('#lblMenuID').text());
+            data.MenuName = $.trim($('#txtMenuName').val());
+            data.MenuUpload = $.trim($('#spnMenuDocumentBase64').text());
+            $(btnSave).attr('disabled', true).val('Submitting...');
+            serverCall('Services/PagePrivilage.asmx/SaveMenuMaster', data, function (response) {
+                var responseData = JSON.parse(response);
+                modelAlert(responseData.message, function () {
+                    if (responseData.status) {
+                        $(btnSave).removeAttr('disabled', true).val('Save');
+                        $('#txtMenuName,#hdnMenuUpload').val('');
+                        $('#lblMenuID').text('');
+                        $bindMenuDropDown();
+                    }
+                    else {
+                        if ($.trim($('#lblMenuID').text()) != '')
+                            $(btnSave).removeAttr('disabled', true).val('Update');
+                        else
+                            $(btnSave).removeAttr('disabled', true).val('Save');
+                    }
+                });
+            });
+        }
+        if ($.trim($("input[name='MF']:checked").val()) == '1') {
+            if ($.trim($('#txtFrameName').val()) == '') {
+                modelAlert("Please Enter Frame Name.");
+                return false;
+            }
+            var data = {};
+            data.FrameID = $.trim($('#lblFrameID').text());
+            data.FrameName = $.trim($('#txtFrameName').val());
+            if ($("#ChkFrameStatus").is(":checked")) { data.Active = 1; } else { data.Active = 0; }
+            $(btnSave).attr('disabled', true).val('Submitting...');
+            serverCall('Services/PagePrivilage.asmx/SaveFrameMaster', data, function (response) {
+                var responseData = JSON.parse(response);
+                modelAlert(responseData.message, function () {
+                    if (responseData.status) {
+                        $(btnSave).removeAttr('disabled', true).val('Save');
+                        $('#txtFrameName').val('');
+                        $('#lblFrameID').text('');
+                        $('#ChkFrameStatus').attr('checked');
+                        $bindFrameDropDown();
+                    }
+                    else {
+                        if ($.trim($('#lblFrameID').text()) != '')
+                            $(btnSave).removeAttr('disabled', true).val('Update');
+                        else
+                            $(btnSave).removeAttr('disabled', true).val('Save');
+                    }
+                });
+            });
+        }
+    };
+    var BindMenuDetail = function () {
+        var data = {};
+        data.MenuID = $.trim($('#ddlMenu').val());
+        serverCall('Services/PagePrivilage.asmx/BindMenuDetail', data, function (response) {
+            templateMenuData = JSON.parse(response);
+            if (templateMenuData.length > 0) {
+                var parseHTML = $('#templateViewMenuDetails').parseTemplate(templateMenuData);
+                $('.divViewMenuDetails').removeClass('hidden').html(parseHTML);
+            }
+            else {
+                $('.divViewMenuDetails').addClass('hidden').html('');
+                modelAlert('Record Not Found');
+            }
+        });
+    }
+    var EditMenuDetails = function (el) {
+        $('#lblMenuID').text($.trim($(el).closest('tr').find('#GrdlblMenuID').text()));
+        $('#txtMenuName').val($.trim($(el).closest('tr').find('td:eq(1)').text()));
+        $('#btnSaveMenuMaster').val('Update');
+    };
+    var BindFrameDetail = function () {
+        var data = {};
+        data.FrameID = $.trim($('#ddlFrame').val());
+        serverCall('Services/PagePrivilage.asmx/BindFrameDetail', data, function (response) {
+            templateFrameData = JSON.parse(response);
+            if (templateFrameData.length > 0) {
+                var parseHTML = $('#templateViewFrameDetails').parseTemplate(templateFrameData);
+                $('.divViewFrameDetails').removeClass('hidden').html(parseHTML);
+            }
+            else {
+                $('.divViewFrameDetails').addClass('hidden').html('');
+                modelAlert('Record Not Found');
+            }
+        });
+    }
+    var EditFrameDetails = function (el) {
+        $('#lblFrameID').text($.trim($(el).closest('tr').find('#GrdlblFrameID').text()));
+        $('#txtFrameName').val($.trim($(el).closest('tr').find('td:eq(1)').text()));
+        if ($.trim($(el).closest('tr').find('td:eq(2)').text()) == 'Active')
+            $('#ChkFrameStatus').attr('checked', 'checked');
+        else
+            $('#ChkFrameStatus').removeAttr('checked');
+        $('#btnSaveMenuMaster').val('Update');
+    };
+</script>
+
+

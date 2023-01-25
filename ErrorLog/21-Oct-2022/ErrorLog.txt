@@ -1,0 +1,10 @@
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Edp/Services/EDP.asmx/SavePackage
+ Time Of Error            : 21-10-2022 15:58:29
+ Error Message            : Incorrect integer value: '' for column 'DoctorID' at row 1
+ Error Place              :    at Package_DoctorVistiDetail.Insert() in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\Package_DoctorVistiDetail.cs:line 83
+   at EDP.SavePackage(Object Packageinfo, List`1 ItemDetail, List`1 DoctorVisitDetail, Int32 IsConsumablesAllow, Int32 IsVaccinationAllow) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\Services\EDP.asmx:line 305
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type               : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : Int32 Insert()

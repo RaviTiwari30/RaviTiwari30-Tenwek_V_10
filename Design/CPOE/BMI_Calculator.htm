@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../../Styles/PurchaseStyle.css" rel="stylesheet" type="text/css" />
+    <script language="Javascript" type="text/javascript">
+        function convfromcmeters() {
+            document.getElementById('yourbmi').value = "";
+            var frm = document.getElementById('height_feet').value;
+            var weight = document.getElementById('your_weight').value;
+            var feet2 = 0;
+            var inches2 = 0;
+            var pound = parseFloat(weight * 2.20462).toFixed(3);
+            inches2 = ((frm) * .39370078740157477);
+
+            if (inches2 == 0) {
+
+            }
+            else if (inches2 == "") {
+                alert("Please enter valid values into the boxes");
+            }
+
+            feet2 = parseInt(inches2 / 12);
+            inches2 = inches2 % 12;
+            if (feet2 != "0" && inches2 != "0" && pound != "0.000") {
+                compute(feet2, inches2, pound);
+            }
+
+        }
+        function cal_bmi(lbs, ins) {
+            h2 = ins * ins;
+            var bmi = lbs / h2 * 703;
+            f_bmi = Math.floor(bmi);
+            diff = bmi - f_bmi;
+            diff = diff * 10;
+            diff = Math.round(diff);
+
+            if (diff == 10)    // Need to bump up the whole thing instead
+            {
+                f_bmi += 1;
+                diff = 0;
+            }
+            bmi = f_bmi + "." + diff;
+            return bmi;
+        }
+       function compute(feet,inch,weight) {
+            var f = self.document.forms[1];
+
+            w = weight;
+            v = feet;
+            u = inch;
+        
+            //w = document.getElementById('height_feet').value;
+            // Format values for the BMI calculation
+            var fi = parseInt(feet * 12);
+            var i = parseInt(feet * 12) + inch * 1.0;
+
+            if (w != "" && i != "") {
+                document.getElementById('yourbmi').value = cal_bmi(w, i);
+              
+            }
+          
+            //             f.bmi.value = cal_bmi(w, i);
+            //             f.bmi.focus();
+        }
+
+        function chkw(w) {
+            if (isNaN(parseInt(w))) {
+                return false;
+            } else if (w < 0) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+      
+    </script>
+    <style type="text/css">
+        .style1
+        {
+        }
+        .style2
+        {
+            width: 52%;
+        }
+    </style>
+</head>
+<body>
+    <div id="Pbody_box_inventory" style="width: 60%">
+        <div class="POuter_Box_Inventory" style="width: 99.4%">
+            <div style="text-align: center">
+                <b>BMI CALCULATOR</b>
+            </div>
+        </div>
+        <div class="POuter_Box_Inventory" style="width: 99.4%">
+            <table style="width: 100%">
+                <tr>
+                    <td style="width: 50%">
+                        <table border="1" cellspacing="0" style="width: 100%; height: 229px;" summary="This table is used for layout purposes only.">
+                            <tr>
+                                <td>
+                                    <table border="0" cellspacing="0" style="width: 99%; height: 200px;" cellpadding="1"
+                                        summary="This table is used for layout purposes only.">
+                                        <tr>
+                                            <td style="text-align: right" class="style2">
+                                                <b>
+                                                    <label for="your_height">
+                                                        Your Height :</label></b>&nbsp;
+                                            </td>
+                                            <td class="style1">
+                                                <input type="text" name="htf" size="8" id="height_feet" Onkeyup="convfromcmeters();">
+                                                                                            
+                                                    <label for="height_feet">
+                                                        (cm)</label>
+                                               
+                                            </td>
+                                        </tr>
+                                      
+                                        <tr>
+                                            <td style="text-align: right" class="style2">
+                                                <b>
+                                                    <label for="your_weight">
+                                                        Your Weight :</label>
+                                                </b>&nbsp;
+                                            </td>
+                                            <td class="style1">
+                                                <input type="text" name="wt" size="8" id="your_weight" Onkeyup="convfromcmeters();">&nbsp;(Kg)<input type="text" name="weightinp" size="8" id="Wieght_Pound" Style="display:none"/>
+                                            </td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td colspan="2" style="text-align: center">
+                                                &nbsp;<label for="yourbmi"><span style="font-size: .9em; font-weight: bold;">Your BMI :</span></label>&nbsp;
+                                                   
+                                                    <input name="bmi" type="text" size="6" id="yourbmi" style="text-align: center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="style2">
+                                            </td>
+                                            <td align="left" class="style1">
+                                                <div style="margin-left: 0px; margin-top: -3px; width: 97px;">
+                                                   
+                                                   
+                                                   
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width: 50%">
+                        <table border="1" cellspacing="0" style="width: 100%" cellpadding="0">
+                            <tr>
+                                <td style="height: 224px;">
+                                    <p style="font-family: Verdana, Arial, sans-serif; font-size: 1.05em; line-height: 17px;
+                                        margin: 0px; padding: 0px 0px 12px; border: 0px; color: rgb(0, 0, 0); font-style: normal;
+                                        font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto;
+                                        text-align: left; text-indent: 0px; text-transform: none; white-space: normal;
+                                        widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                                        <b style="margin: 0px; padding: 0px; border: 0px;">&nbsp;BMI Categories:</b></p>
+                                    <ul style="margin: 0px; padding: 0px 0px 0px 50px; border: 0px; list-style: none;
+                                        font-size: 1.05em; color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif;
+                                        font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal;
+                                        line-height: 14px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none;
+                                        white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                                        <li style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; list-style-type: disc;
+                                            margin-bottom: 12px; margin-left: -5px; margin-top: -1px; line-height: 17px;">Underweight
+                                            = &lt;18.5</li>
+                                        <li style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; list-style-type: disc;
+                                            margin-bottom: 12px; margin-left: -5px; margin-top: -1px; line-height: 17px;">Normal
+                                            weight = 18.5–24.9</li>
+                                        <li style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; list-style-type: disc;
+                                            margin-bottom: 12px; margin-left: -5px; margin-top: -1px; line-height: 17px;">Overweight
+                                            = 25–29.9</li>
+                                        <li style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; list-style-type: disc;
+                                            margin-bottom: 12px; margin-left: -5px; margin-top: -1px; line-height: 17px;">Obesity
+                                            = BMI of 30 or greate</li>
+                                    </ul>
+                                </td>
+                                
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </td>
+    </div>
+</body>
+</html>

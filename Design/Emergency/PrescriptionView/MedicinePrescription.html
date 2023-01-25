@@ -1,0 +1,487 @@
+﻿
+<div id="divMedicinePrescribe" style="margin: 0px; font-size: 11px; height: auto; padding: 0px" class="row col-md-24">
+      <div class="row">
+        <div class="col-md-5">
+            <label class="pull-left">Dept. </label>
+            <b class="pull-right">:</b>
+        </div>
+        <div class="col-md-19">
+           <select id="ddldepartment" onchange="onPrescribeMedicineDetailChange(11,event)"></select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <select>
+                <option>All</option>
+                <option>Favorite</option>
+            </select>
+        </div>
+        <div class="col-md-16">
+            <input type="text" name="name" autocomplete="off" placeholder="Search Medicine" value="" autocomplete="off" id="txtMedicineSearch" />
+        </div>
+    </div>
+  
+    <div class="row">
+        <div class="col-md-24">
+            <div style="height: 200px" id="listMedicine" class="chkList-Control">
+                <ul id="medicineListMenu"></ul>
+            </div>
+        </div>
+    </div>
+      <!--<div class="row">
+        <div class="col-md-24">
+            <input type="text" placeholder="Write Other Medicine" data-title="Prees Enter To Add Prescription" onkeyup="onOtherMedicinePrescriptionAdd(event)" id="txtOtherMedicine" />
+        </div>
+    </div>-->
+
+    <div class="row">
+        <div class="col-md-5">
+            <label class="pull-left">Dose </label>
+            <b class="pull-right">:</b>
+        </div>
+        <div class="col-md-7">
+            <input autocomplete="off" type="text" id="txtDose" onkeyup="onPrescribeMedicineDetailChange(2,event)" onchange="onPrescribeMedicineDetailChange(2,event)" />
+            <span class="clear_input">X</span>
+        </div>
+        <div class="col-md-5">
+            <label class="pull-left">Times </label>
+            <b class="pull-right">:</b>
+        </div>
+        <div class="col-md-7">
+            <select style="display: none" id="ddlTimes" onchange="onPrescribeMedicineDetailChange(3,event)"></select>
+            <input id="txtTimes" type="text" onchange="onPrescribeMedicineDetailChange(3,event)" onkeyup="onPrescribeMedicineDetailChange(3,event)" />
+            <span class="clear_input">X</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <label class="pull-left">Duration </label>
+            <b class="pull-right">:</b>
+        </div>
+        <div class="col-md-7">
+            <select style="display: none" id="ddlDays" onchange="onPrescribeMedicineDetailChange(4,event)"></select>
+            <input id="txtDays" type="text" class="search-box" onchange="onPrescribeMedicineDetailChange(4,event)" onkeyup="onPrescribeMedicineDetailChange(4,event)" />
+            <span class="clear_input">X</span>
+        </div>
+        <div class="col-md-5">
+            <label class="pull-left">Route </label>
+            <b class="pull-right">:</b>
+        </div>
+        <div class="col-md-7">
+            <select id="ddlRoute" style="display: none" onchange="onPrescribeMedicineDetailChange(6,event)"></select>
+            <input id="txtRoute" class="search-box" onchange="onPrescribeMedicineDetailChange(6,event)" onkeyup="onPrescribeMedicineDetailChange(6,event)" type="text" />
+            <span class="clear_input">X</span>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <label class="pull-left">Meal </label>
+            <b class="pull-right">:</b>
+        </div>
+        <div class="col-md-7">
+            <select id="ddlMeal" onchange="onPrescribeMedicineDetailChange(5,event)"></select>
+        </div>
+
+        <div class="col-md-5">
+            <label class="pull-left">Qty. </label>
+            <b class="pull-right">:</b>
+        </div>
+        <div class="col-md-7">
+            <input type="text" id="txtQuantity" class="search-box" onlynumber="2" value="0" onkeypress="$commonJsNumberValidation(event)" onkeydown="$commonJsPreventDotRemove(event)" onkeyup="onPrescribeMedicineDetailChange(7,event)" />
+        </div>
+    </div>
+  
+    <div class="row">
+        <div class="col-md-12">
+            <label class="pull-left">Dis. Medicine</label><b class="pull-right">:</b>
+        </div>
+        <div class="col-md-12">
+          <select id="ddlDischarge" onchange="onPrescribeMedicineDetailChange(10,event)">
+                <option value="0">No</option>
+                <option value="1">YES</option>
+                                                           </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-24">
+            <textarea style="" cols="1" placeholder="Enter Remarks" id="txtMedicineRemarks" onkeyup="onPrescribeMedicineDetailChange(9,event)"></textarea>
+        </div>
+    </div>
+</div>
+  
+
+
+<script id="prescribedMedicineScript" type="text/javascript">
+    function binddepartment() {
+        var ddldepartment = $('#ddldepartment');
+        serverCall('Services/prescribeServices.asmx/BindStoreDepartment', {}, function (response) {
+            var responseData = JSON.parse(response);
+            ddldepartment.bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'ledgerNumber', textField: 'ledgerName', isSearchAble: true });
+        });
+        ddldepartment.val('LSHHI117').chosen("destroy").chosen();
+    }
+
+    selectedMedicine = {};
+    var initMedicineSearch = function (callback) {
+        
+        var txtMedicineSearch = $('#divMedicinePrescribe #txtMedicineSearch');
+     
+        $(txtMedicineSearch).autocomplete({
+            source: function (request, response) {
+                getMedicines(request.term, function (responseItems) {
+                    response(responseItems)
+                });
+            },
+            select: function (e, i) {
+                var ddldepartment = $('#ddldepartment');
+                //alert($(ddldepartment).val());
+                if ($(ddldepartment).val() == 0 && $('#ddlDischarge').val() == 0) {
+                    modelAlert("Please Select Department First.", function () {
+                        $(txtMedicineSearch).val('');
+                    });
+                    return;
+                }
+                var Dept = $('#ddldepartment').val();
+
+                getMedicinePrescriptionDetails(function (data) {
+                    data.itemID = i.item.val;
+                    data.name = i.item.Brand;
+                    data.dose = i.item.Dose;
+                    data.times = i.item.Times;
+                    data.duration = i.item.Duration;
+                    data.route = i.item.Route;
+                    data.isDischarge = $('#ddlDischarge').val();
+                    data.Dept = Dept;
+                    data.IndentNo = 0;
+                    addMedicinePreviewRow(data, function () { });
+                    disabledPrint(true);
+
+                    WriteXDoc($.trim($('#lblTransactionId').text()), i.item.val,"", "Product");
+                });
+
+            },
+            close: function (el) {
+                el.target.value = '';
+            },
+            open: function () {
+                txtMedicineSearch.autocomplete('widget').css(
+                     { 'overflow-y': 'auto', 'max-height': '250px','max-width':'400px','overflow-x': 'hidden','border-radius': '5px'  });
+            },
+            minLength: 0
+        });
+    }
+
+    var getRoute = function (callback) {
+        serverCall('../CPOE/services/PrescribeServices.asmx/getRoute', {}, function (response) {
+            callback(JSON.parse(response))
+        });
+    }
+
+
+    var prescribedMedicineInit = function (callback) {
+        initMedicineSearch(function () { });
+        getMedicineDoses(2, function (response) {
+            var ddlTimesData = response;
+            $('#txtTimes').autocomplete({
+                source: function (request, response) {
+                    filteredAutoComplete(ddlTimesData, request, function (filtered) {
+                        response(filtered);
+                    });
+                },
+                open: function () {
+                    $('#txtTimes').autocomplete('widget').css({ 'Width': '100%', 'overflow-x': 'hidden' });
+                }
+            });
+        });
+        getMedicineDoses(3, function (response) {
+            var ddlDaysData = response;
+            $('#txtDays').autocomplete({
+                source: function (request, response) {
+                    filteredAutoComplete(ddlDaysData, request, function (filtered) {
+                        response(filtered);
+                    });
+                },
+                open: function () {
+                    $('#txtDays').autocomplete('widget').css({ 'Width': '100%', 'overflow-x': 'hidden' });
+                }
+            });
+        });
+
+        getMedicineDoses(4, function (response) {
+            var ddlRouteData = response;
+            $('#txtRoute').autocomplete({
+                source: function (request, response) {
+                    filteredAutoComplete(ddlRouteData, request, function (filtered) {
+                        response(filtered);
+                    });
+                },
+                open: function () {
+                    $('#txtRoute').autocomplete('widget').css({ 'Width': '100%', 'overflow-x': 'hidden' });
+                }
+            });
+        });
+
+        getMedicineDoses(1, function (response) {
+            var ddlDoseData = response;
+            $('#txtDose').autocomplete({
+                source: function (request, response) {
+                    filteredAutoComplete(ddlDoseData, request, function (filtered) {
+                        response(filtered);
+                    });
+                },
+                open: function () {
+                    $('#txtDose').autocomplete('widget').css({ 'Width': '100%', 'overflow-x': 'hidden' });
+                }
+            });
+        });
+
+        $('#ddlMeal').bindDropDown({ data: ['', 'After Meal', 'Before Meal'] });
+        var medicineListMenu = $('#medicineListMenu');
+        callback(medicineListMenu);
+    }
+
+
+
+    var filteredAutoComplete = function (data, request, callback) {
+        var matcher = new RegExp($.ui.autocomplete.escapeRegex(request.term), "i");
+        var matching = $.grep(data, function (value) {
+            return matcher.test(value.Text);
+        });
+        var filtered = [];
+        $(matching).each(function () {
+            filtered.push({ label: this.Text, val: this.Text })
+        });
+        callback(filtered.slice(0, 5));
+    }
+
+
+    var getMedicinePrescriptionDetails = function (callback) {
+        callback({
+            dose: $.trim($('#txtDose').val('').val()),
+            times: $('#txtTimes').val('').val(),
+            duration: $('#txtDays').val('').val(),
+            meal: $('#ddlMeal').val($('#ddlMeal option:nth-child(0)').val()).val(),
+            route: $('#txtRoute').val('').val(),
+            quantity: $('#txtQuantity').val('1').val(),
+            remarks: $('#txtMedicineRemarks').val('').val(),
+            IsIssued: 0,
+            IndentNo: 0
+        });
+    }
+
+    onOtherMedicinePrescriptionAdd = function (e) {
+        var code = (e.keyCode ? e.keyCode : e.which);
+        var medicineName = $.trim(e.target.value);
+        var othMedicineCount = $('#tblPrescribeMedicinePreview').find('[id^=OTH]').length;
+        if (medicineName.length < 1) {
+            modelAlert('Please Enter Medicine Name', function () {
+            });
+            return false;
+        }
+        if (code == 13) {
+            getMedicinePrescriptionDetails(function (data) {
+                data.name = e.target.value;
+                data.itemID = 'OTH' + othMedicineCount;
+                addMedicinePreviewRow(data, function () { });
+                disabledPrint(true);
+                e.target.value = '';
+            });
+        }
+    }
+
+    var addFavoriteMedicineList = function (data, callback) {
+        var medicineListMenu = $('#divMedicinePrescribe #medicineListMenu');
+        medicineListMenu.find('li').remove();
+        $.each(data, function (i) {
+            var aa = '<li  role="menuitem"><a>'
+                + '<label class="trimList"  title="' + this.TempName + '" >'
+                + '<input   id="' + $.trim(this.ID) + '" onchange="onMedicineTemplateSelect(this);" templateName="' + this.TempName + '"  templateFor="' + this.templateFor + '"   value="' + encodeURIComponent(JSON.stringify(this.ValueField)) + '" class="ui-all" type="checkbox">' + this.TempName + '</label>'
+                + '</a><a onclick="onDeleteTemplate(this)" class="icon icon-color icon-trash pull-right"></a><a onclick="onEditTemplate(this)" class="icon icon-color icon-edit pull-right"></a></li>';
+            medicineListMenu.append(aa);
+        });
+        callback();
+    }
+
+    var onMedicineTemplateSelect = function (elem) {
+        var ddldepartment = $('#ddldepartment');
+        //alert($(ddldepartment).val());
+        if ($(ddldepartment).val() == 0 && $('#ddlDischarge').val() == 0) {
+            modelAlert("Please Select Department First.", function () {
+                $(elem).prop('checked', false);
+            });
+            return;
+        }
+        var data = JSON.parse(decodeURIComponent(elem.value));
+        if (elem.checked) {
+            $(data).each(function () {
+                deleteMedicinePreViewRow(this.itemID);
+                addMedicinePreviewRow(this, function () { });
+            });
+        }
+        else {
+            $(data).each(function () {
+                deleteMedicinePreViewRow(this.itemID);
+            });
+        }
+    }
+
+    var addMedicinePreviewRow = function (data, callback) {
+        if (data.Dept == undefined)
+            data.Dept = $('#ddldepartment').val();
+        if (data.isDischarge == undefined)
+            data.isDischarge = $('#ddlDischarge').val();
+        var table = $('#divPrescribeMedicinePreview table tbody');
+        var tableRows = $(table).find('tr');
+        var addMedicineTemplate = '<tr   class="prescribedItem" onclick="onPreviewMedicineSelect(this)"   ondblclick="onPreviewMedicineRemove(this)" id="' + ($.trim(data.itemID)) + '">'
+            + '<td>' + parseInt(tableRows.length + 1) + '</td>'
+            + '<td style="word-wrap:break-word;"><span id="lblMedicineName">' + data.name + '</span></td>'
+            + '<td><span id="lblMedicineDose">' + data.dose + '</span></td>'
+            + '<td style="width:50px;word-wrap:break-word;"><span id="lblMedicineTimes">' + data.times + '</span></td>'
+            + '<td><span id="lblMedicineDuration">' + data.duration + '</span></td>'
+            + '<td><span id="lblMedicineMeal">' + data.meal + '</span></td>'
+            + '<td style="width:50px;word-wrap:break-word;"><span id="lblMedicineRoute">' + data.route + '</span></td>'
+            + '<td><span id="lblMedicineQuantity">' + data.quantity + '</span></td>'
+            + '<td style="display:none"><span id="lblIssued">' + data.IsIssued + '</span></td>'
+            + '<td style="width:50px;word-wrap:break-word;"><span id="lblMedicineRemarks">' + data.remarks + '</span></td>'
+            + '<td style="display:none"><span id="lblDischarge" >' + data.isDischarge + '</span></td>'
+            + '<td style="display:none"><span id="lblDept" >' + data.Dept + '</span></td>'
+            + '<td style="display:none"><span id="lblIndent" >' + data.IndentNo + '</span></td>'
+            + '</tr>';
+           
+        //+ '<td style="width:50px;word-wrap:break-word;"><img id="imgDrugDetail" alt="" src="../../Images/view.gif" style="cursor:pointer"  onclick="GetDrugDetail(this)"   /></td>'
+
+        $(table).append(addMedicineTemplate);
+        onPreviewMedicineSelect(table.find('tr').last());
+        showHideTableHeader(table);
+
+    }
+
+    var GetDrugDetail = function (elem) {    
+        MedData($(elem).closest('tr').find('#lblMedicineName').text(), $(elem).closest('tr')[0].id);        
+    }
+
+    var onPreviewMedicineRemove = function (elem) {
+        var isindent = Number($(elem).find('#lblIndent').text());
+        if (isindent == 0) {
+            $(elem).remove();
+        }
+        else { modelAlert("This Medicine Already Indent. Kindly Contact To Store Department");}
+        disabledPrint(true);
+    }
+
+    var onPreviewMedicineSelect = function (elem) {
+        $(elem).closest('tbody').find('tr').removeClass('selectedMedicine');
+        $(elem).addClass('selectedMedicine');
+        $('#txtDose').val($(elem).find('#lblMedicineDose').text());
+        $('#txtTimes').val($(elem).find('#lblMedicineTimes').text());
+        $('#txtDays').val($(elem).find('#lblMedicineDuration').text());
+        $('#ddlMeal').val($(elem).find('#lblMedicineMeal').text());
+        $('#txtRoute').val($(elem).find('#lblMedicineRoute').text());
+        $('#txtQuantity').val($(elem).find('#lblMedicineQuantity').text());
+        $('#txtMedicineRemarks').val($(elem).find('#lblMedicineRemarks').text());  
+    }
+
+    function MedData(ItemName, ItemID) {
+        //serverCall('../CPOE/Services/prescribeServices.asmx/SearchMedData', { prefix: ItemName, itemId: ItemID }, function (response) {
+        //    //if (response!="") {
+        //        var url = "../CPOE/CIMS/" + ItemID + ".html";
+        //        $('#pagecontent').attr('src', url);
+        //        $('#divshowDrugDetail').showModel();
+        //    //}
+        //});
+    }
+    function WriteXDoc(TID, ItemID,CIMS_GUID,CIMS_Type) {
+        //serverCall('../CPOE/Services/prescribeServices.asmx/WriteXDoc', { tId: TID, itemId: ItemID, cims_guid: "", cims_Type: CIMS_Type }, function (response) {
+        //    if (response != "0") {
+        //        var url = "../CPOE/CIMS/TID/xDoc_" + TID + ".html";
+        //        $('#pagecontent').attr('src', url);
+        //        $('#divshowDrugDetail').showModel();
+        //    }
+        //});
+    }
+    function RemoveItemXDoc(ID, CIMS_Type) {
+        serverCall('../CPOE/Services/prescribeServices.asmx/RemoveItemXDoc', { Id: ID, Type: CIMS_Type }, function (response) {
+            if (response != "0") {
+                var url = "../CPOE/CIMS/TID/xDoc_" + TID + ".html";
+                $('#pagecontent').attr('src', url);
+                $('#divshowDrugDetail').showModel();
+            }
+        });
+    }
+
+    var onPrescribeMedicineDetailChange = function (index, e) {
+        var itemId = $('#medicineListMenu .selectedPreItem input[type=checkbox]').val();
+        var value = e.target.value;
+        updateMedicinePreviewRow(itemId, index, value);
+    }
+
+
+    var showHideTableHeader = function (table) {
+        if (table.find('tr').length <= 0)
+            $('.lblDivPrescribeMedicinePreview').hide();
+        else
+            $('.lblDivPrescribeMedicinePreview').show();
+    }
+
+
+    var updateMedicinePreviewRow = function (itemID, index, value) {
+        var tr = $('#divPrescribeMedicinePreview table tbody').find('.selectedMedicine');
+
+        var IsIndent = Number($(tr).find('#lblIndent').text());
+        if (IsIndent == 0) {
+            if (tr.length > 0) {
+                var medicineID = $.trim(tr[0].id);
+                if (!String.isNullOrEmpty(medicineID))
+                    $(tr).find('td:eq(' + index + ') span').text(value);
+            }
+        }
+    }
+
+    var deleteMedicinePreViewRow = function (itemID) {
+        var table = $('#divPrescribeMedicinePreview table tbody');
+        $(table).find('#' + itemID).remove();
+        $(table).find('tr').each(function (index, elem) {
+            $(this).find('td:eq(0)').text(index + 1);
+        });
+        showHideTableHeader(table);
+    }
+
+
+    var $searchMedicineByWord = function (e) {
+        if (e.target.value.length >= 1)
+            $('#medicineListMenu').find('li a label').show().not(":containsIgnoreCase('" + e.target.value + "')").closest('li').hide();
+        else if (e.target.value.length < 3)
+            $('#medicineListMenu').find('li').show();
+    }
+
+    var bindPatientMedicineDetails = function (data) {
+        var table = $('#divPrescribeMedicinePreview table tbody');
+        table.find('tr').remove();
+        $(data.medicinesList).each(function (index) {
+            addMedicinePreviewRow(this);
+            var selectedChecked = $('#medicineListMenu').find('#' + this.itemID).prop('checked', true);
+            if (data.medicinesList.length == index + 1)
+                $(selectedChecked).closest('label').addClass('selectedPreItem');
+        });
+        showHideTableHeader(table);
+    }
+
+
+    $(document).ready(function () {
+        binddepartment();
+        prescribedMedicineInit(function () {
+            loadViewData(function (patientPrescriptionDetails) {
+                bindPatientMedicineDetails(patientPrescriptionDetails);
+                $('#listMedicine').slimScroll({
+                    height: '200px',
+                    width: '100%',
+                    color: '#028fff',
+                });
+                $('.clear_input').click(function () {
+                    $(this).prev().val('').focus().change();
+                });
+            });
+        });
+    });
+</script>

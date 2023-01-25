@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Request>
+  <Interaction>
+    <Prescribing>
+      <Product
+        reference="{88817344-9B13-446B-BE00-E8B4C24C5B7A}"
+        ItemID="LSHHI34192" />
+    </Prescribing>
+    <HealthIssueCodes />
+  </Interaction>
+  <PatientProfile />
+</Request>

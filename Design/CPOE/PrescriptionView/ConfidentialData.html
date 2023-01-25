@@ -1,0 +1,48 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto; padding: 0px" id="divConfidentialDataPrescribe" class="row col-md-24">
+    <div style="display:none" class="row">
+        <div class="col-md-24">
+            <input type="text" onkeyup="$searchChiefComplaintByWord(event)" placeholder="Search ConfidentialData Template" id="txtSearchConfidentialDataTemplates" />
+        </div>
+    </div>
+    <div  style="display:none" class="row">
+        <div class="col-md-24">
+            <div style="height: 300px" id="listConfidentialData" class="chkList-Control">
+                <ul id="ConfidentialDataListMenu"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-24">
+            <textarea id="txtConfidentialData" style="height: 100px" onkeyup="onTxtConfidentialDataChange(event)" />
+        </div>
+    </div>
+    <br />
+</div>
+
+
+<script type="text/javascript">
+    var onTxtConfidentialDataChange = function (e){
+        if (e.target.value.length > 0)
+            $('#divConfidentialDataPreview').html('<b>Confidential Data : </b><span style="white-space: pre-wrap;">' + e.target.value + '</span>');
+        else 
+            $('#divConfidentialDataPreview').html('');
+    
+        disabledPrint(true);
+    }
+    var removeConfidentialData = function () {
+        modelConfirmation('Delete Confirm ?', 'Do you want to delete the selected data from this screen', 'Yes', 'No', function (response) {
+            if (response)
+                $('#txtConfidentialData').val('').keyup();
+        });
+    }
+    var bindConfidentialData = function (data) {
+        var confidentialData = data.ConfidentialData;
+        $('#txtConfidentialData').val(confidentialData).keyup();
+
+    }
+    $(document).ready(function () {
+        loadViewData(function (patientPrescriptionDetails) {
+            bindConfidentialData(patientPrescriptionDetails);
+        });
+    });
+</script>

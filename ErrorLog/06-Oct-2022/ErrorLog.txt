@@ -1,0 +1,116 @@
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 06-10-2022 13:17:23
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1168
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type               : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CollectionReportSummary {3180357C-13DE-4284-8E32-E4860812A71E}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 06-10-2022 13:17:27
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 2287
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CollectionReportSummaryTotal {88FD8062-5AEE-4528-B5E5-D1E478D73A6A}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 06-10-2022 13:26:02
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1168
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CollectionReportSummary {1BC750D9-B6EA-4B73-8869-0ADDF884E948}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 06-10-2022 13:28:27
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1168
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CollectionReportSummary {79A085F7-ED54-4CEA-B83F-ECCFA88457DC}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 06-10-2022 13:31:19
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 2434
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 06-10-2022 13:31:37
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 2434
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()

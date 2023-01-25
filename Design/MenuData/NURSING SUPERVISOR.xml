@@ -1,0 +1,133 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>8</ID>
+    <MenuName>IPD</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAWABYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1e9nvTdX7xNeuIZwirAVCqgjRm7ZLHLY68kCr+kSXDSXUU7SkxuvEzKWXKgkZUYIzz+Nebaz4s164u4prXwjY3ccltDIZ5bF5SxaNWIDAjgFsY56VabxRq7aaLW20a704Ov737LpbAhieSp3YGRgZIz71pGKdlp6mTbV3v5He2Gux3txfRS28tqtrN5QknGFkPPK/ln6EetFeKajLqb+Hrpb+0ubK0W7gFtFPlcfLNuOSBljwSfp0AABTlGN9Bxcranruj+DtP0+3eO+t7S+lbywskturFQsUcePmyeqE/jWn/wAI5oX/AEBtO/8AAVP8KKKzKOa8RfD2DWWkSxkt9PicQsY47cAZTzsnAx180f8AfNFFFO4rH//Z</image>
+    <Items>
+      <URLName>/Design/IPD/Patientsearch.aspx</URLName>
+      <DispName>View IPD Patient</DispName>
+      <MenuID>8</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>11</ID>
+    <MenuName>MIS</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QA2RXhpZgAASUkqAAgAAAACAAEDBQABAAAAJgAAAAMDAQABAAAAAAAAAAAAAACghgEAj7EAAP/bAEMACAYGBwYFCAcHBwkJCAoMFA0MCwsMGRITDxQdGh8eHRocHCAkLicgIiwjHBwoNyksMDE0NDQfJzk9ODI8LjM0Mv/bAEMBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIABYAFgMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APatXN+Ldf7OeJZtwyZOm3Bz2PtXNNda9fLdWcd/Yb0QJIVfBXcpKkHHpzwa1vFLObQRxXLWzFkYuikkqG5GB6jiuJ0DRzpFnLEt210SsWf9HKgbVK989c/pXLWw8HerKTSS6PT7jopVbLkSTd1uj0Lw7DqVvo0MOrXcV1dIMGZARuHbOerep70Vi+FNKlj1C91UXM6i6/1luH3Rs+R+8wejYGOOD6cUVdGsqkFJJ6kVKahJxuHiOVru5MargJ8hy3XBPPQ+tc6kLLdwzo8yyQMSoWbapJBB3BVG4YJ4NFFbvVamXU67w9dtFBJG0YJJ3ZDf/WooooA//9k=</image>
+    <Items>
+      <URLName>/Design/IPD/BedManagement.aspx</URLName>
+      <DispName>Bed &amp; Ward Occupancy</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MIS/BedDetails.aspx</URLName>
+      <DispName>Bed &amp; Ward Details</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>13</ID>
+    <MenuName>Reprint</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAcFBgYGBQcGBgYICAcJCxIMCwoKCxcQEQ0SGxccHBoXGhkdISokHR8oIBkaJTIlKCwtLzAvHSM0ODQuNyouLy7/2wBDAQgICAsKCxYMDBYuHhoeLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi7/wAARCAAWABYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3cukYLyOqIOrMcAfiaw9M8VrPPaLc2sMENxxvW43GIlSy7wVAAIB6E1wXx01vU9Ps9N0yz2G1vw/nq0QfeVZSoz255rz/AFS8+In9iT2uo6JNHpoQGZn00KNoUgFmx2BNaKF0ZudnY+rlcY4INFcF8Ktdv9c8IpeahKJZEuJIY5BCIt0a42/KKKhqzsWndXN/ULKDULSS0uQ3lvjJQ4YYIPB7dKqXGjR3MElvcalqskMqlHRrs4YHgjpRRQKxpoAiKiABVGAKKKKBn//Z</image>
+    <Items>
+      <URLName>/Design/OPD/DuplicateReceipt.aspx</URLName>
+      <DispName>Receipt Re-Print</DispName>
+      <MenuID>13</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>17</ID>
+    <MenuName>Tools</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAABEZJREFUSEud0gtMW1UYB/CrMqm09/b2kgHh4oAQWbYMCQQlIVuoYcqEpeiy1WAGCwqGuWRsjiglZJOMOyQ+GhyaMc14DHnPDMoKHY9SuIWOR+XRtbQW+3AdMJshOHQTs8/TRnTykLqTnOTm3vP/ne9892AYGhazJaEwLe0Z1/P/GTJZV6BufPwts9kssdvtSQaDwefvvMlkIpeWln5xOBz60tLSWA/hp7q7u8/qb+rnbzscYJyaAq1W2zAzM8N5NP/EXafzBKDxnVY74Qls1OvTbRYrjA6PgJpl70pycxNcucoLF7Y1NjZS/zKs09Z3zSbTorq//+Jm+Pz8fOfy8jJoR0ehS6FwFhUV7VMqle+3XL1qb21ujliTZwqZeFal+k3DsuUb4TlMDv7g/gOD64ROpxNGhoehQy6HmzodyNvkKqlU6rVutoRh4vt7XfjAuviERkMvLi7OTU9PQ+03taCbnAQdQvtUKoNard71n6d14+7K1+L6EWW6Ua972NTYBCdzTgLbz8LiwgJMjo0d3ayF7u8unF1decKNSDGjtLVfV8Eg2weop2AyGvXoqqnQlXvPI9iNo5672qIdGjxPiZvjUg7XW6g3ByC2cAJq6q7pR24MHGIYBvcYfHShlMmPUfaxs5oGxT3dvmQofyEDArOGjdjWi2GPBa6EuCmdOxrOVVuXK74GY+JemBLuhoookefHXm/3ncxYTGy2zN62Mw4GAv1gobQUbh07Bh18rvEyhxPzWBWnlo1GxxUO2b12y+ClyHOgiNoD40Ih/CAWg1UkgnZfX2cdj5eN8Cc93uDwF9rnUz+fsPgIW2HLfhaizzshLlPO1ntzKnsCAmBWIoFbR47AdYEAGgiitRLHn9sUj8pXhSd/Nm4iEtsAi++CqE8cEJKvm8NE34e7wk08nowNDoY7DAO2zEzooiioJwh7NY7v2RCn32kJ2n5GO4YntQMWLYews1YI/9Dwx5a9stdWQl+RZGgTjs/1IdwplYItO3ul8rk6gWBt3wmhlBecN9THS+kGbFcr0HkmiCi2ACf5mmR1JRV8fpYMtUEZEgLOsjKw/oU3E4Sxxdc36J/1QqlX6OnxK9sQhkW0AnV0EqI//hG4BzpqNjpeFUVdUqA2uHF0W2xZWdBNknCFJBVVNO3tzgUc15wOytXfp0/obGEFRoj4yA64uFODcQuIjWAaw7wvU1RtO8J7UVt+Ki4GW0YG9Lg2o+lT7hyV2mPhiAbrEi7dSdtefBv4YpUZe7Y6dNM/jRbUUFTJtyT5sDcoCGYLCuBeXh4Yk5LOuLOcyPIS37fVvyd+af1Z8EbXDBaQn4hUnkAg2Mrn8/3XmyRJ+mF+fgKMx8NL+PxTVVzukiEmBhZqaoZ+Vav93PDTGObvEyY5ztnxaZG3IPogxcXiEPoqAkUURb2Ong+snq73CN9PUNQrGEm+mEYQ6XU0/cHL/v5RiPT+Ezz3LVkEGqYIAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/IPD/DebitCreditNote.aspx</URLName>
+      <DispName>Debit/Credit Note</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>16</ID>
+    <MenuName>Requisition</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAARLSURBVDhPnVR7UNRVGP05GoFoiGSaiTFNM5HjMOYrRRFRESEUkBCK4iEv3eUxJVqWZULIW+QlD0MWgUUx1nhOJqYCy0NgkaaadFWE0hEVecdjgdP97sJuTP3lnfnm3Pu7vzn33O8795thsCQQ4+MTgqvzGqGqVik8eNgj6OnOEgDh+cZMAx8kZ1wBjcprv2OecSDokPmvBz9XCDtdkzjZwOAIR7v3T0LQ8YDOywF4kWJBAHQX7IPeKywW7sdsFvqLWLwqwhwWcxeLMfc1MV5iYcDECCs3hWG3ewrEB/I5YaGsEdt2xcPeJYmTWzvGY+vOOGzaEY2NNpF4d0sE1mwOx4oN38Bs/VGYrj6Ct1Z9CZPlh2BkEgKBThD0vLDS4hgGB4c5aX3jXVyt/gMlFTdRdqkVhRcb8UOZAmcLanFedgOnJdchkcqRlF7J55EnKiC9UI+M7GsQKFck/Q2zz3C37TEnTM68AtGnuXD+6BR8ArPh5J7K1nkcAw/kwfnjVIhDaZ2CkM8L+E2IvKHxnppwnnEQzwEpo/HXw25cqvwVknw5V5fD1BSVNPN1UfEUNuFMXg1kpc3IlFRB3nAHl3/+TU1ouDQYOkb+kLGfaTzt6kda1lXYOJ2A5/4sUOH8gnNgz9A/iOGeRPgGSmDLlAWEnIXVe7GIjC/H9ZpbWsIXGGFC6k+ckMaz7gGuTFaqQH5hPYrLWziWVKiR1rnn6nies5nS6trbWoWkctZ8f3xy+JyGkCaWtjFw25sJm90J8NqXhe1M8RR6BHzHq+8tOgNz60iERZdoFaoJ/eDimTaNUJJfg++Lm5B3vo5XmRRN4UWmPKdAzpVm5Vajpk45XSEZebNdDFSqcQ3pFvtYuPud5lXcK86GrXMCfCaRlJFi3yAJLHZEISKuDFXy2+ocUtALMDM/is7HvRrCavZDU0sbq6ASitZ2yOvvoIWjkn2/jyqWN8XNdu7Z9j+7OGoIyeBLTENxv6ML95gf7V0S4eadwSKd4x7PdLh6pcPFI42H4wcpcPowBQ5uyXBkSJ60sInSEpIX9ReJ0PJLBx4wH7654jCM3w7lSE9r2dqv+FN7Z+MxrLYMx7qtEdiwPRKWdtGwdojnz5FuqVFIXiTrULK5bZ4NoItFX98Qe5IjGB5WYWxMm99p1ZtcWLGc/4cwNvFHjIyo0Nc/hJ7evzEyqsL4xAQnU1GoxjA6OobunkE8edqP/oEhvndL+Yjd4oiWkApD7YeuSFf5IkzGjW7tEIf1246zThOlibVW3yLokBSJaZXYxXJobn0cpiwtvNH8u5EamQRjhoEvf1r9A+rOc/LUZQj63ur+yHojzVdZhKHzSR/fL2I+pVTpsn5JXNMI6cNMQz+Ex5RqUqRo7cBs1lCpaOp9X3ix9z01HnX2Yumyg5izWPT/hNSJl6/7GuWsD95obuNW0VuoPp2CujMRSC80oJl5MfiglB9oOLn/D9GNAlA25CK9AAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Store/IndentSearch.aspx</URLName>
+      <DispName>View Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/CreateIndent.aspx</URLName>
+      <DispName>Create Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>40</ID>
+    <MenuName>MRD</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAA2NJREFUOE/VlG1IU2EUx/sSaVtzzTVt5trm2FCskUxkTGLhUgpFIykURuFQisQwlAlRGEVRFBV9KuhLFH2pLxFMiFEZFpYFi6b0Mu+2u+tuY823Cqd2/517ewF1vXzpQxf+POeee57fc855nvssW/bfPExJzvH3NrU/6dD4Us68v1C+T4zlrKq+kEl5L6CTbVxQbMya249GPeA2Ay2lQCupbQPJ+l1kt4oiv4fUUgKhuQgztYVI2NQYLJBvXQCM29S+L00mzLWVQeiwA11OwOsCekji6K365jvogNBux/x+G9J7SzHdYABbrsGQQbFlAZAvV/sEtwXzbZsgULDQ5YLgrYHQQ/JWQ+im90NbpMUEqkBosWKm2YLJWh3YioxAjU9oNmOuoxJzgcdID79AOjj0U7Nkz756Jvnnh/z44i7GzC4jxretQ8T2K2CTEbO9O5F+/RLTPQ345K0l1eFj93ZMddZgYl8lPnTX4/NIAMkdRvCONVSuGm8sSgxoZYtLpgx3GZA+XIeZwBNM1ukwua0AH1xaJJz54MtV4EoVGNtdglT/LUQqNWBMcjClSowYFejXZi8FzjcUYurAZkw/fwSOJnAVakmxTavBVhH4ai8SVw6DP+lB4vIRsA0mjBplBFyF/vxFQK4s1ze1WYM4ZTDx7CHCFjmiZhkiJhLZiWsnwXkciOizEHFowF/swvsbZ8DY8zCsW7kUGN6w2peqyAVXvQ7T1KPUoztI3b+JlP8mEtdPId7rBrtdh4h9jfSNP9cBttWJmLcRQe2KzMAJp0Yqj2u2gvfuALe3HPwJD8YDg4i1VmKsvRrjg37Ej+0Bf6oNbJMV3NE9CBb8BsjZVIgYshEpVkiTkncvI/X0AfjzBzHWvRPJG6cRNmSB0a2QfKzHmRnIlFDJtBGxMhWiBIvaqU9H3ZRVjdSzsZ5GJG5fAltvRNRVQIvtk/oYKpJjWC9fWvJosdKXpP5ErSqE6SgwFgVGdZSJPhtMkQwM7SbrtiF+th38hU5wnfUImRR4Z5QjmAn41pTTJ/7kImxUhJlJi8aQfiVCBBazCq3PJnsV3hYpEFyfIUNy+sPmHOmQDhvkGPmdKCMxRswsqJMjUCiDPy+rasHl8FybtXFgrcwlHlBRA3/QjzhxFGF9+cuV/+Ty/wraFZRJFPGqMAAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/Design/MRD/FileSentToMRD.aspx</URLName>
+      <DispName>File Sent To MRD</DispName>
+      <MenuID>40</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MRD/MRDFileRequest.aspx</URLName>
+      <DispName>MRD File Request</DispName>
+      <MenuID>40</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MRD/FileSendStatusReport.aspx</URLName>
+      <DispName>MRD File Sent Status</DispName>
+      <MenuID>40</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MRD/MRDRequestApproval.aspx</URLName>
+      <DispName>MRD Requisition Approval</DispName>
+      <MenuID>40</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MRD/ViewIssuedFile.aspx</URLName>
+      <DispName>View Issued File</DispName>
+      <MenuID>40</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAIAAABL1vtsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAv9JREFUOE+llG9Ik0EYwK8EQQOxQKoZFkEIQRkVSR8ixIl+cJSkH6S+CCopaFhiYYoTE0HHFCc40WEUsxLtD/nBLXFTnDIVdaIba6KTEB0qxt7jNt4d7/Xsn7ncROjlx3Hvce/vnnueu/cEYwz95wMKw8+dvA5jniIiue3Gyg+LTuKByYcfBEOFqll07x3K7EMZkZF8Mtp2IyqKVHMoXd0yZNVb93QrRGcL4u1jvXknVapHOf1TRyiKe+dQmnrCAotQhtcYtgdZY+5NWPmRYgo97D8qCq8ivU+zuCv0ZjoLkLMoBLY0KFHMHUORBood9r0C1yRgaWKAOhGuT2Krekn77HEUas3CVthswWBGuwk9GJpcpxHT6c+FxuSAGQJ2CNw+2wK3Jdiny2rll7Kr5kcGqUXjxW5klN/XeYvqU3g3IqhzuVLElUeFUIp+v07YkyZx9Um44SKuOQtzhA1TeAUbKOBexHBVcQFexnNlUdyreGafYhYtNWvpMoQwjavPkPZUl/qJZ37Ae7iDUQRzQSmjngACpZYR3JDEaxpw7XksvQAtr22AWIhSDK+k5Vo4hUDZPtCzjsJngnNTcG74YXgb9uL++hy8RH7joMJX1MFCrjIWIg9ymnsWjetEvE4GCxL5TWh5nRxK7lJlg4W03jqkUOdwJYgrOxkA8voU4dpz1KbnDUp+sos3dNGVcZBCFvhRGZGlhG7EX9RgwL7OpmfhM5aKqE3HG7p5Qw+0dHUCpLgp2T1QQtruhMtF6OmhKwZIHj+mgG2TtttEnsKPd0CCPeZhXt9KZNdDFBOWnTCHb31MqD7FfhnY7qrgsApbZsFu5CqiYX33l3KQBhT+y978zapbdowsHmDZMfpjZL4gdqk4zlESReD6NCXjxsu4LpGf7OG1b/5WpKjX98sR94EolD4kVqOsTiRWfMyOofUi19scl0riep/vHq7HTVdI89VAFPAjeKycye+cyYf2X2ZzlSaJ0qztbfT0ZJDuLB+ZpPM+UdyF7AYUkS7oMcf/AMkdAOj6D6DkAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/IPD/AdmittedPatientList.aspx</URLName>
+      <DispName>Admitted Patient Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/AdmissionDischargeList.aspx</URLName>
+      <DispName>Admit - Discharge Patient Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/WeeklyPanelPatient.aspx</URLName>
+      <DispName>Admitted Panel Patient Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>60</ID>
+    <MenuName>Intercom</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAQABADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDn/wDgpP8AEjxB4f8A+C/fiq+sdc1azvNMvrK1s5obp43tYTpMGY0IPyqd75AwCWY9zTvDPiP4d/CT9kPwz4y8N/BW30X4teG7LStbXx5F43uJLh7mO50ySa4+x52lpVvFUx9AJJP7vPdfBL/gnR4y/wCCgn7fuj+MtQ8fWFxq8Xhqx1Px9JPp8q33h/WLa1h0+WwuIwixi4kmiklVdy/u0dsfc3+yfDb/AIIO/tBJNoXhfxd40+Dcnw9t3tbPUzp0F4+qTWEMlizLHvt1XzWXT4RkvgbnPOaAP//Z</image>
+    <Items>
+      <URLName>/Design/OPD/IntercomSearch.aspx</URLName>
+      <DispName>View Intercom Detail</DispName>
+      <MenuID>60</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>33</ID>
+    <MenuName>Circular</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAARCAYAAADZsVyDAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAH9SURBVDhPrZQ9SAJhHMZfqaWxTwyMImoqIqFodJQWI3cLpCkaKhprDHJpqaGPJamxjyGqzSGhoaHIIfTsDjszT0s9tTw/7+nek+hTusQX3uFe7v97n//zv+d0d319KIkiqW9uJnV6Pal66XQEkkQKHEd0DQ2EMAYDhLk55HkecjZb/c7lUBRFpI6OwBqNINzICErJJGq5npaXQR5stjKzWET6+Biv5+f/vqMYjSLhdKIQCqm1ycNDBTwxoT5QK9j+flDPxb09zfCsxwN+fBzelhbE1tbK4IODD8WlVAr3o6PwtrWB6epCeHYWOb+/4gXKwJHY3AQ3NARfezuYjg6kT07K4P39T1YoB9LNDR6npuDv7YW3sRHs4CAiS0t4dbuRDwSQDwYhXV8jtr6Oe7MZvtZW+PR6BEwmJHZ2ICsD/BX8Lo+ChPl5sMPDaou0mFrEDgyoyrxNTWA6O8GPjSG+sYGCIHzp7Ifi731ThbS9p5UVhKenEbLbISwsIK5YkLm8RCmT+dWqP8GaJ/jtRc3g7O0txN1dJLa3kT47g1xB6TtfEzhzcYHwzAxeXC5IV1d4djhAAwBZrtiQJnAhEvmRzDzHaQBPTlZrZWXFNHm8xVJzsKjEm9CUpU9Pawanf7ig1Qri7+lRExZdXER8a0v9RqvaSm1sdVUNDdPdjTdoAvliyvfeiAAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/design/Circular/NewCircular.aspx</URLName>
+      <DispName>New Circular</DispName>
+      <MenuID>33</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

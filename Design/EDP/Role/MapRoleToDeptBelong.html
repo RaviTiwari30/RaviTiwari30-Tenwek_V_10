@@ -1,0 +1,111 @@
+﻿<div style="margin: 0px; font-size: 13px; height: auto">
+
+    <div id="divInvestigationPrescribe">
+        <div class="POuter_Box_Inventory" style="margin-left: -6px">
+             <div class="Purchaseheader">
+                 Map Role To Department Belong
+                </div>
+            <div class="row">
+               
+          
+                <div class="row">
+
+                    <div class="row" id="rbldeptbelongappend">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="POuter_Box_Inventory" style="margin-left: -6px">
+            <div style="text-align: center" class="row col-md-24">
+                <input style="width: 80px" type="button" id="btnSave" runat="server" value="Save" onclick="SaveRoleToDepartment()" />
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script id="CenterAccessScript">
+
+
+
+    function BindDepartmentBelong(RoleID) {
+        var count = 0;
+
+        serverCall('RoleManager.aspx/BindDepartmentBelong', {RoleID:RoleID}, function (response) {
+
+            var CentreData = JSON.parse(response);
+
+            if (CentreData.status) {
+                data = CentreData.response;
+                $('#rbldeptbelongappend').empty();
+
+                $.each(data, function (i, item) {
+                    var check = '';
+                    debugger
+                    if (item.IsMaped == 1) {
+                        check = 'checked';
+
+                    }
+
+                    $("#rbldeptbelongappend").append(" <div class='col-md-4' > <input type='radio' id='rbl-" + i + "' name='radiodepartment' value=" + item.DeptBelongID + " class='ChkCentreId' " + check + " style='cursor:pointer'/>  <label for='rbl-" + i + "' style='cursor:pointer'>" + item.DeptBelong + "</label></div>");
+
+                });
+
+            }
+
+
+        });
+
+    }
+
+
+    var SaveRoleToDepartment = function () {
+        var DeptBelong = $("input[name='radiodepartment']:checked").val();
+        var RoleId = $('#txtRoleID').val();
+        alert(DeptBelong)
+        if (RoleId == '') {
+            modelAlert('Error Occured');
+            return false;
+        }
+        
+        if (DeptBelong == '' || DeptBelong == undefined || DeptBelong==null) {
+            modelAlert('Select atleast one Department');
+            return false;
+        }
+
+
+        var obj = {
+            DeptBelong: DeptBelong,
+            RoleID: RoleId,
+
+        };
+
+        var data = JSON.stringify(obj)
+
+
+        $.ajax({
+
+            url: 'RoleManager.aspx/MapRoleToDeptBelong',
+            contentType: 'application/json; charset=utf-8',
+            type: 'POST',
+            data: JSON.stringify(obj),
+            cache: false,
+            success: function () {
+                modelAlert('Saved Successfully');
+
+
+            },
+            error: function (xhr, status, error) {
+                modelAlert('Some Error Occured  while saveing Role');
+            }
+        });
+
+
+
+
+    };
+
+
+</script>
+

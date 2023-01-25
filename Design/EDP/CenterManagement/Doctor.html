@@ -1,0 +1,282 @@
+﻿
+<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="Doctor">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-24" style="text-align: center;">
+                    <label>
+                        <strong style="font-size: medium;">Doctors Mapping</strong>
+                    </label>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Search Criteria </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-22">
+                    <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3">
+                             <label class="pull-left">
+                                Filter
+                            </label>
+                            <b class="pull-right">:</b>
+
+                        </div>
+                        <div class="col-md-3">
+                            <select id="ddlFilterTypeDoctor" onchange="onDoctorFilterTypeChange(this);"> 
+                                <option value="0">Search</option>
+                                <option value="1">All Checked</option>
+                                <option value="2"> All UnChecked</option>
+                             
+                            </select>
+                        </div>
+                        <div class="col-md-7">
+                            <input type="text" id="txtSearchDoctor" onkeyup="$searchDoctorByWord(event);" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row divBlockDoctor" style="margin: 0px;">
+                <div class="Purchaseheader">
+                    Doctors
+                </div>
+
+                <div class="row" style="padding: 0px; margin: 0px;">
+                    <label style="cursor: pointer">
+                        <input type="checkbox" onchange="onSelectAllDoctor(this)" /><b> All</b> </label>
+                </div>
+                <div id="divDoctorMapping" class="clearDiv" style="font-size:10pt;overflow:scroll;height:200px;"></div>
+            </div>
+            <div class="row" style="">
+                <div class="col-md-24 textCenter">
+                     <input type="button" id="btnSaveDoctor" value="Save" class="save margin-top-on-btn" onclick="saveDoctorMappingDetails(this)" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------Modal Pop up---------------------------------------------------------------------------------->
+<div id="divDoctorsMappingModel" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content" style="min-width: 500px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="divDoctorsMappingModel" aria-hidden="true">&times;</button>
+                    <b class="modal-title">Copy Same Doctors</b>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-22">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Copy Centre Name 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <label id="lblCentreFromDoctors" class="pull-left patientInfo" style="font-weight: bold"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Select Centre To Copy 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <ul id="ulCentreDoctorTo" style="list-style-type: none; margin-left: -10px;"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" onclick="copyCentreDoctors(this)" class="save" style="font-size:10pt;">Save</button>
+                    <button type="button" data-dismiss="divDoctorsMappingModel" onclick="CloseDoctorModal()" style="font-size:10pt;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------------------------------END----------------------------------------------------------------------------->
+
+<script id="templateDoctorMapping" type="text/html">
+		<#
+		var dataLength=templateData.length;
+		window.status="Total Records Found :"+ dataLength;
+		var objRow;
+		var status;
+		for(var j=0;j<dataLength;j++)
+		{
+		objRow = templateData[j];
+		#>
+            <div class="row" style="padding: 0px;margin: 0px;">
+              <label style="cursor:pointer"> <input type="checkbox" 
+                  
+                  <#if(objRow.MapID>0){#>
+                       checked
+                  <#}#>
+                   /><span>  <#=objRow.TextField#></span> </label>
+                <label class="hidden lblData"> <#= JSON.stringify(objRow) #></label>
+            </div>
+            	
+		<#}#>     
+	</script>
+
+<script type="text/javascript">
+
+    function CloseDoctorModal() {
+        $("#divDoctorsMappingModel").hide();
+    }
+
+    var GetAllDoctorMappings = function () {
+        var Doccenterid = $.trim($("#spnCenter_ID").text());
+        serverCall('../EDP/Services/CentreWiseMapping.asmx/GetAllMappings', { centreID: Doccenterid }, function (responsedoc) {
+            var responseData = JSON.parse(responsedoc);
+
+            var divDoctorMapping = $('#divDoctorMapping');
+            templateData = responseData.dtDoctors;
+            var parseHTML = $('#templateDoctorMapping').parseTemplate(templateData);
+            divDoctorMapping.html(parseHTML);
+            var totalChecked = templateData.filter(function (i) { return i.MapID > 0 });
+            if (templateData.length == totalChecked.length)
+                divDoctorMapping.closest('.divBlockDoctor').find('.row:first input[type=checkbox]').prop('checked', true);
+
+        });
+    }
+
+    var onSelectAllDoctor = function (el) {
+        $(el).closest('.divBlockDoctor').find('.clearDiv').find('input[type=checkbox]').prop('checked', el.checked);
+    }
+
+    var onDoctorFilterTypeChange = function (el) {
+        var filterType = Number(el.value);
+        var txtSearchDoctor = $('#txtSearchDoctor');
+        if (filterType == 0) {
+            txtSearchDoctor.prop('disabled', false);
+            $('.divBlockDoctor .clearDiv').find('.row').show();
+        }
+        else if (filterType == 1) {
+            txtSearchDoctor.val('').prop('disabled', true);
+            $('.divBlockDoctor .clearDiv').find('.row').hide();
+            $('.divBlockDoctor .clearDiv').find('.row input[type=checkbox]:checked').closest('.row').show();
+        }
+        else if (filterType == 2) {
+            txtSearchDoctor.val('').prop('disabled', true);
+            $('.divBlockDoctor .clearDiv').find('.row').show();
+            $('.divBlockDoctor .clearDiv').find('.row input[type=checkbox]:checked').closest('.row').hide();
+
+        }
+    }
+
+    var $searchDoctorByWord = function (e) {
+        if (e.target.value.length >= 3)
+            $('.divBlockDoctor .clearDiv').find('.row').show().find('span').not(":containsIgnoreCase('" + e.target.value + "')").closest('.row').hide();
+        else if (e.target.value.length == 0)
+            $('.divBlockDoctor .clearDiv').find('.row').show();
+    }
+
+    var getDoctorMappingDetails = function (callback) {
+        var centreID = Number($("#spnCenter_ID").text());
+        var mappedDoctors = [];
+
+        $('#divDoctorMapping').find('input[type=checkbox]:checked').each(function () {
+            var tdDocData = JSON.parse($(this).closest('.row').find('.lblData').text());
+            mappedDoctors.push({
+                centreID: centreID,
+                valueField: tdDocData.ValueField
+            });
+        });
+
+        callback({ centreID: centreID, mappedDoctors: mappedDoctors });
+    }
+
+    var saveDoctorMappingDetails = function () {
+        getDoctorMappingDetails(function (data) {
+            serverCall('../EDP/CenterManagement/CenterManagement.asmx/SavesDoctorsMappingsDetails', data, function (resposneDoc) {
+                var responseData = JSON.parse(resposneDoc);
+                modelAlert(responseData.response, function () {
+                    if (responseData.status)
+                        loadCentreToModelDoctor($("#spnCenter_ID").text(), $("#spnCenter_Name").text());
+                });
+            });
+        });
+    }
+
+    var loadCentreToModelDoctor = function (centreId, CentreName) {
+        $("#lblCentreFromDoctors").text(CentreName);
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetALLCentre', {}, function (response) {
+            var responseData = JSON.parse(response);
+            var responseCentreTo = responseData.filter(function (i) { return i.CentreID != centreId });
+            var ulCentreDoctorTo = $('#ulCentreDoctorTo');
+            ulCentreDoctorTo.find('li').remove();
+            if (responseCentreTo.length > 0) {
+                $.each(responseCentreTo, function (i) {
+                    var aa = '<li  role="menuitem"><a>'
+                        + '<label class="trimList"  title="' + this.CentreName + '" >'
+                        + '<input   id="' + $.trim(this.CentreID) + '" value="' + this.CentreID + '" class="ui-all" type="checkbox" '
+                        + ' >' + this.CentreName + '</label></a> </li>';
+                    ulCentreDoctorTo.append(aa);
+                });
+
+
+                $("#divDoctorsMappingModel").showModel();
+            }
+            else
+                modelAlert("Only One Centre Exist in the System !!!");
+
+        });
+    }
+
+    var copyCentreDoctors = function (btnCopy) {
+        var centreDoctorList = [];
+        $('#ulCentreDoctorTo li').each(function () {
+            if ($(this).find('input').is(":checked")) {
+                centreDoctorList.push({
+                    centreId: $(this).find('input').attr('id')
+                })
+            }
+        });
+
+        if (centreDoctorList.length == 0) {
+            modelAlert('Please Select Atleast One Centre To Copy !!!');
+            return;
+        }
+
+        var centerID = Number($("#spnCenter_ID").text());
+        $mappedDoctors = [];
+
+        $('#divDoctorMapping').find('input[type=checkbox]:checked').each(function () {
+            var tdDocData = JSON.parse($(this).closest('.row').find('.lblData').text());
+            $mappedDoctors.push({
+                centreID: centerID,
+                valueField: tdDocData.ValueField
+            });
+        });
+
+        $(btnCopy).attr('disabled', true).val('Submitting...');
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/CopyDoctorsCenterAccess', { mappedDoctors: $mappedDoctors, centreDOCList: centreDoctorList }, function (ressdoc) {
+            $responseData = JSON.parse(ressdoc);
+            modelAlert($responseData.response, function (ressdoc) {
+                if ($responseData.status) {
+                    $("#divDoctorsMappingModel").hide();
+                    $(btnCopy).removeAttr('disabled').val('Save');
+                }
+                else
+                    $(btnCopy).removeAttr('disabled').val('Save');
+            });
+        });
+    }
+</script>

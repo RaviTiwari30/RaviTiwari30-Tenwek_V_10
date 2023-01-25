@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Result buildID="2465" copyright="MIMS Pte Ltd" expiryDate="31/12/2020">
+  <Interaction>
+    <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{5BD35DA7-C561-499F-8E4B-1DAFC1BC8C1D}" name="ALCIP TAB 500mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Quinolones" reference="{AE5AE7BF-3B78-4E21-8E91-89054D955790}" description="Quinolone bactericidal antibiotics.">
+                <Molecule name="ciprofloxacin" reference="{7FFD21FE-7BDF-44B3-836F-67BE351E6337}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Limited" ranking="2">Limited</Likelihood>
+              <Documentation name="Limited" ranking="2">Limited</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>causes additive toxicity with</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of NSAIDs and quinolones may increase the risk of CNS stimulation and convulsions by synergistically inhibiting GABA (inhibitory neurotransmitter) binding to its receptors. A high incidence of convulsions has been reported in patients on combination of enoxacin and fenbufen, hence this combination should be avoided. Reports of adverse reactions between other quinolones and NSAIDs have been rare, however it would be prudent to monitor for CNS adverse effects (e.g. seizures, tremors). Avoid this combination in patient with risk factors (e.g. elderly, nephropathy, history of seizure) if possible.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor for signs of drug toxicity.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+      </Route>
+      <Allergy>
+        <Molecule reference="{68EC41A6-71EE-427C-B261-03425BAA3DD3}" name="aspirin">
+          <CrossSensitive>
+            <PrescribingSubstanceClass reference="{5C60F191-B92F-4186-ADF5-859CB3B66E11}" name="Nonsteroidal anti-inflammatory drugs">
+              <PrescribingMolecule reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" name="diclofenac sodium" />
+            </PrescribingSubstanceClass>
+            <AllergySubstanceClass reference="{8B9ECB52-CDC9-4460-AB40-6E3C7DF38B1E}" name="Salicylates">
+              <AllergyMolecule reference="{68EC41A6-71EE-427C-B261-03425BAA3DD3}" name="aspirin" />
+            </AllergySubstanceClass>
+          </CrossSensitive>
+        </Molecule>
+      </Allergy>
+      <Allergy>
+        <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol">
+          <CrossSensitive>
+            <PrescribingSubstanceClass reference="{5C60F191-B92F-4186-ADF5-859CB3B66E11}" name="Nonsteroidal anti-inflammatory drugs">
+              <PrescribingMolecule reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" name="diclofenac sodium" />
+            </PrescribingSubstanceClass>
+            <AllergySubstanceClass reference="{50227FDE-1699-4083-92FA-AA75F30A285D}" name="Paracetamol and related agents">
+              <AllergyMolecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol" />
+            </AllergySubstanceClass>
+          </CrossSensitive>
+        </Molecule>
+      </Allergy>
+    </Product>
+    <Product reference="{5BD35DA7-C561-499F-8E4B-1DAFC1BC8C1D}" name="ALCIP TAB 500mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Quinolones" reference="{AE5AE7BF-3B78-4E21-8E91-89054D955790}" description="Quinolone bactericidal antibiotics.">
+                <PrescribingMolecule name="ciprofloxacin" reference="{7FFD21FE-7BDF-44B3-836F-67BE351E6337}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Limited" ranking="2">Limited</Likelihood>
+              <Documentation name="Limited" ranking="2">Limited</Documentation>
+              <Observation>
+                <Abbreviated>causes additive toxicity with</Abbreviated>
+                <Professional>causes additive toxicity with</Professional>
+                <Full>causes additional harmful effects with</Full>
+                <Consumer>causes additional harmful effects with</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of NSAIDs and quinolones may increase the risk of CNS stimulation and convulsions by synergistically inhibiting GABA (inhibitory neurotransmitter) binding to its receptors. A high incidence of convulsions has been reported in patients on combination of enoxacin and fenbufen, hence this combination should be avoided. Reports of adverse reactions between other quinolones and NSAIDs have been rare, however it would be prudent to monitor for CNS adverse effects (e.g. seizures, tremors). Avoid this combination in patient with risk factors (e.g. elderly, nephropathy, history of seizure) if possible.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor for signs of drug toxicity.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg" Mirror="True">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Quinolones" reference="{AE5AE7BF-3B78-4E21-8E91-89054D955790}" description="Quinolone bactericidal antibiotics.">
+                <PrescribingMolecule name="ciprofloxacin" reference="{7FFD21FE-7BDF-44B3-836F-67BE351E6337}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <Molecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Limited" ranking="2">Limited</Likelihood>
+              <Documentation name="Limited" ranking="2">Limited</Documentation>
+              <Observation>
+                <Abbreviated>causes additive toxicity with</Abbreviated>
+                <Professional>causes additive toxicity with</Professional>
+                <Full>causes additional harmful effects with</Full>
+                <Consumer>causes additional harmful effects with</Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of NSAIDs and quinolones may increase the risk of CNS stimulation and convulsions by synergistically inhibiting GABA (inhibitory neurotransmitter) binding to its receptors. A high incidence of convulsions has been reported in patients on combination of enoxacin and fenbufen, hence this combination should be avoided. Reports of adverse reactions between other quinolones and NSAIDs have been rare, however it would be prudent to monitor for CNS adverse effects (e.g. seizures, tremors). Avoid this combination in patient with risk factors (e.g. elderly, nephropathy, history of seizure) if possible.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor for signs of drug toxicity.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+      </Route>
+    </Product>
+    <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+      <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+        <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" name="DICLOFEN TAB 50mg">
+        </Product>
+        <Product reference="{5BD35DA7-C561-499F-8E4B-1DAFC1BC8C1D}" name="ALCIP TAB 500mg">
+          <Route name="Systemic" reference="{90075601-10D4-49DD-9292-9B884D9D3EF3}">
+            <ClassInteraction>
+              <PrescribingInteractionClass name="Nonsteroidal anti-inflammatory drugs" reference="{3848CA1B-1F1B-44D4-8F2D-CB292DD655C0}" description="NSAIDs are considered to nonspecifically inhibit both cyclooxygenase (COX)-1 and COX-2. NSAIDs are generally protein bound and may interact with other protein bound drugs.">
+                <PrescribingMolecule name="diclofenac sodium" reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" />
+              </PrescribingInteractionClass>
+              <InteractionClass name="Quinolones" reference="{AE5AE7BF-3B78-4E21-8E91-89054D955790}" description="Quinolone bactericidal antibiotics.">
+                <Molecule name="ciprofloxacin" reference="{7FFD21FE-7BDF-44B3-836F-67BE351E6337}" />
+              </InteractionClass>
+              <Severity name="Moderate" ranking="4">Moderate</Severity>
+              <Likelihood name="Limited" ranking="2">Limited</Likelihood>
+              <Documentation name="Limited" ranking="2">Limited</Documentation>
+              <Observation>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>causes additive toxicity with</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Observation>
+              <Interaction>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Coadministration of NSAIDs and quinolones may increase the risk of CNS stimulation and convulsions by synergistically inhibiting GABA (inhibitory neurotransmitter) binding to its receptors. A high incidence of convulsions has been reported in patients on combination of enoxacin and fenbufen, hence this combination should be avoided. Reports of adverse reactions between other quinolones and NSAIDs have been rare, however it would be prudent to monitor for CNS adverse effects (e.g. seizures, tremors). Avoid this combination in patient with risk factors (e.g. elderly, nephropathy, history of seizure) if possible.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Interaction>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Use combination with caution.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+              <Precaution>
+                <Abbreviated>
+                </Abbreviated>
+                <Professional>Monitor for signs of drug toxicity.</Professional>
+                <Full>
+                </Full>
+                <Consumer>
+                </Consumer>
+              </Precaution>
+            </ClassInteraction>
+          </Route>
+        </Product>
+      </Route>
+      <Allergy>
+        <Molecule reference="{68EC41A6-71EE-427C-B261-03425BAA3DD3}" name="aspirin">
+          <CrossSensitive>
+            <PrescribingSubstanceClass reference="{5C60F191-B92F-4186-ADF5-859CB3B66E11}" name="Nonsteroidal anti-inflammatory drugs">
+              <PrescribingMolecule reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" name="diclofenac sodium" />
+            </PrescribingSubstanceClass>
+            <AllergySubstanceClass reference="{8B9ECB52-CDC9-4460-AB40-6E3C7DF38B1E}" name="Salicylates">
+              <AllergyMolecule reference="{68EC41A6-71EE-427C-B261-03425BAA3DD3}" name="aspirin" />
+            </AllergySubstanceClass>
+          </CrossSensitive>
+        </Molecule>
+      </Allergy>
+      <Allergy>
+        <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol">
+          <CrossSensitive>
+            <PrescribingSubstanceClass reference="{5C60F191-B92F-4186-ADF5-859CB3B66E11}" name="Nonsteroidal anti-inflammatory drugs">
+              <PrescribingMolecule reference="{B641CB56-2142-4D99-9050-711E64E87B0C}" name="diclofenac sodium" />
+            </PrescribingSubstanceClass>
+            <AllergySubstanceClass reference="{50227FDE-1699-4083-92FA-AA75F30A285D}" name="Paracetamol and related agents">
+              <AllergyMolecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" name="paracetamol" />
+            </AllergySubstanceClass>
+          </CrossSensitive>
+        </Molecule>
+      </Allergy>
+    </Product>
+    <DuplicateTherapy />
+  </Interaction>
+</Result>

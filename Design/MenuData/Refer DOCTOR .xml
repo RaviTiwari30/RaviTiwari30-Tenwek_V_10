@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>92</ID>
+    <MenuName>Refferal</MenuName>
+    <Items>
+      <URLName>/design/ipd/Transferpatientrequestfromoutside.aspx</URLName>
+      <DispName>Outside Refferal</DispName>
+      <MenuID>92</MenuID>
+    </Items>
+    <Items>
+      <URLName>/design/ipd/SearchPatientTransferOnRequest.aspx</URLName>
+      <DispName>Search Refferal</DispName>
+      <MenuID>92</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

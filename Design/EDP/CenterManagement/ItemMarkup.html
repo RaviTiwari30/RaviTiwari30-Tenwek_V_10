@@ -1,0 +1,331 @@
+﻿
+<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="itemmarkup">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-24" style="text-align: center;">
+                    <label>
+                        <strong style="font-size: medium;">Centre Wise Item Markup</strong>
+                    </label>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Search Criteria </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-22">
+                    <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Category
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="ddlCategoryItemMarkup" onchange="$bindSubCategoryItemsMarkup($('#ddlCategoryItemMarkup').val(),function(){});"></select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Sub Category
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="ddlSubCategoryItemMarkup"></select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Item Name 
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" id="txtItemNameItemMarkup" tabindex="4" />
+                        </div>
+                    </div>
+                    <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Is Set
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="radio" name="rbIsSetMarkup" id="rbIsSetMarkupNo" value="0" checked="checked" />No
+                            <input type="radio" name="rbIsSetMarkup" id="rbIsSetMarkupYes" value="1" />Yes
+                            <input type="radio" name="rbIsSetMarkup" id="rbIsSetMarkupBoth" value="2" />Both
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="">
+                <div class="col-md-24 textCenter">
+                     <input type="button" id="btnSearchItemMarkup" value="Search" class="save margin-top-on-btn" onclick="SearchItemMarkup()" />
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Item List </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="row" id="dvItemItemMarkup" style="font-size:10pt;">
+                <div class="col-md-24 textCenter">
+                    <div id="dvItemListItemMarkup" ></div>
+                </div>
+            </div>
+            <div class="row" id="dvSaveItemMarkup" style="display:none;">
+                <div class="col-md-24 textCenter">
+                    <input type="button" id="btnSaveItemMarkup" onclick="saveCentreWiseItemMarkup()" class="save" value="Save" tabindex="7" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------Modal Pop up---------------------------------------------------------------------------------->
+<div id="divItemMarkupMappingModel" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content" style="min-width: 500px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="divItemMarkupMappingModel" aria-hidden="true">&times;</button>
+                    <b class="modal-title">Copy Same Tolerance</b>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-22">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Copy Centre Name 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <label id="lblCentreFromItemMarkup" class="pull-left patientInfo" style="font-weight: bold"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Select Centre To Copy 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <ul id="ulCentreItemMarkup" style="list-style-type: none; margin-left: -10px;"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" onclick="copyCentreItemMarkup(this)" class="save" style="font-size:10pt;">Save</button>
+                    <button type="button" data-dismiss="divItemMarkupMappingModel" onclick="ClosModalItemMarkup()" style="font-size:10pt;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------------------------------END----------------------------------------------------------------------------->
+
+<script type="text/javascript">
+    function ClosModalItemMarkup() {
+        $("#divItemMarkupMappingModel").hide();
+    }
+    var $bindCategoryItemsMarkup = function (callback) {
+        serverCall('../common/CommonService.asmx/BindCategory', { Type: '7' }, function (response) {
+            $Category = $('#ddlCategoryItemMarkup');
+            $Category.bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'CategoryID', textField: 'Name', isSearchAble: true, selectedValue: 'All' });
+           // $bindSubCategoryItemsMarkup($Category.val(), function () {
+                callback($Category.find('option:selected').text());
+           // });
+
+        });
+    }
+    $bindSubCategoryItemsMarkup = function (categoryID, callback) {
+        $subCategory = $('#ddlSubCategoryItemMarkup');
+        serverCall('../common/CommonService.asmx/BindSubCategory', { Type: '0', CategoryID: categoryID }, function (response) {
+            $subCategory.bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'SubCategoryID', textField: 'Name', isSearchAble: true, selectedValue: 'All' });
+            callback($subCategory.find('option:selected').text());
+        });
+    }
+
+    $(document).ready(function () {
+        $bindCategoryItemsMarkup(function () {
+             $('#dvItemListItemMarkup,#dvSaveItemMarkup,#dvItemItemMarkup').hide();
+        });
+    });
+
+    function SearchItemMarkup() {
+
+        $('#lblMsg').text('');
+        $('#dvItemListItemMarkup').html('');
+        $('#dvItemListItemMarkup,#dvSaveItemMarkup,#dvItemItemMarkup').hide();
+        if ($('#ddlCategoryItemMarkup').val() == "0") {
+            $('#lblMsg').text('Please Select Category');
+            return false;
+        }
+        if ($('#ddlSubCategoryItemMarkup').val() == "0") {
+            $('#lblMsg').text('Please Select Sub Category');
+            return false;
+        }
+
+        var centerIdItemMarkup = $.trim($("#spnCenter_ID").text());
+
+        var data = {
+            CategoryID: $.trim($('#ddlCategoryItemMarkup').val()),
+            SubCategoryID: $.trim($('#ddlSubCategoryItemMarkup').val()),
+            ItemName: $.trim($('#txtItemNameItemMarkup').val()),
+            IsSet: $("input[name='rbIsSetMarkup']:checked").val(),
+            CentreID: centerIdItemMarkup
+        };
+        serverCall('Services/centrewise_markup.asmx/BindGridItems', data, function (response) {
+            searchedItemsMarkup = JSON.parse(response);
+            if (searchedItemsMarkup.length > 0) {
+                $('#dvItemListItemMarkup,#dvSaveItemMarkup,#dvItemItemMarkup').show();
+                $('#lblMsg').text('Total Records : ' + searchedItemsMarkup.length);
+                container2 = document.getElementById('dvItemListItemMarkup'),
+                hot2 = new Handsontable(container2, {
+                    data: searchedItemsMarkup,
+                    colHeaders: ["Category", "Sub Category", "Item Name", "MarkUpPercentage"],
+                    readOnly: true,
+                    columns: [
+                     { data: 'CategoryName', readOnly: true, width: '200' },
+                     { data: 'SubCategoryName', readOnly: true, width: '200' },
+                     { data: 'TypeName', renderer: safeHtmlRenderer, readOnly: true, width: '500' },
+                     { data: 'MarkUpPercentage', type: 'numeric', format: '0.0000', readOnly: false, allowInvalid: false, width: '100' },
+
+                    ],
+
+                    stretchH: "all",
+                    autoWrapRow: false,
+                    fillHandle: false,
+                    rowHeaders: true,
+                    contextMenu: false,
+                    filters: true,
+                    height: 380
+                });
+            }
+            else {
+                $('#lblMsg').text('No Record found as per searching criteria');
+                return false;
+            }
+        });
+    }
+
+    function saveCentreWiseItemMarkup() {
+
+        $('#lblMsg').text('');
+        $('#btnSaveItemMarkup').attr('disabled', true).val('Submitting...');
+        var centerIdItemMarkup = $.trim($("#spnCenter_ID").text());
+
+        var data = {
+            ItemList: searchedItemsMarkup,
+            CenterID: Number(centerIdItemMarkup),
+            SubCategoryID: $.trim($('#ddlSubCategoryItemMarkup').val()),
+            IsSet: Number($("input[name='rbIsSetMarkup']:checked").val())
+
+        };
+        serverCall('Services/centrewise_markup.asmx/saveMarkup', data, function (response) {
+            $responseData = JSON.parse(response);
+            modelAlert($responseData.response, function (response) {
+                if ($responseData.status) {
+                    // searchItems();
+                    loadCentreToModelItemMarkup($("#spnCenter_ID").text(), $("#spnCenter_Name").text());
+                    $('#btnSaveItemMarkup').removeAttr('disabled').val('Save');
+                }
+                else {
+                    $('#btnSaveItemMarkup').removeAttr('disabled').val('Save');
+                }
+            });
+        });
+    }
+
+    var loadCentreToModelItemMarkup = function (centreId, CentreName) {
+        $("#lblCentreFromItemMarkup").text(CentreName);
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetALLCentre', {}, function (response) {
+            var responseData = JSON.parse(response);
+            var responseCentreTo = responseData.filter(function (i) { return i.CentreID != centreId });
+            var ulCentreItemMarkup = $('#ulCentreItemMarkup');
+            ulCentreItemMarkup.find('li').remove();
+            if (responseCentreTo.length > 0) {
+                $.each(responseCentreTo, function (i) {
+                    var aa = '<li  role="menuitem"><a>'
+                        + '<label class="trimList"  title="' + this.CentreName + '" >'
+                        + '<input   id="' + $.trim(this.CentreID) + '" value="' + this.CentreID + '" class="ui-all" type="checkbox" '
+                        + ' >' + this.CentreName + '</label></a> </li>';
+                    ulCentreItemMarkup.append(aa);
+                });
+
+
+                $("#divItemMarkupMappingModel").showModel();
+            }
+            else
+                modelAlert("Only One Centre Exist in the System !!!");
+
+        });
+    }
+
+    var copyCentreItemMarkup = function (btnCopy) {
+        var centreItemMarkupList = [];
+        $('#ulCentreItemMarkup li').each(function () {
+            if ($(this).find('input').is(":checked")) {
+                centreItemMarkupList.push({
+                    centreId: $(this).find('input').attr('id')
+                })
+            }
+        });
+
+        if (centreItemMarkupList.length == 0) {
+            modelAlert('Please Select Atleast One Centre To Copy !!!');
+            return;
+        }
+
+        var centerIDMar = Number($("#spnCenter_ID").text());
+
+        var data = {
+            CategoryID: $.trim($('#ddlCategoryItemMarkup').val()),
+            SubCategoryID: $.trim($('#ddlSubCategoryItemMarkup').val()),
+            ItemName: $.trim($('#txtItemNameItemMarkup').val()),
+            IsSet: $("input[name='rbIsSetMarkup']:checked").val(),
+            CentreID: centerIDMar
+        };
+        serverCall('Services/centrewise_markup.asmx/BindGridItems', data, function (response) {
+            searchedMar = JSON.parse(response);
+            if (searchedMar.length > 0) {
+                var dataa = {
+                    CentreID: centerIDMar,
+                    ItemList: searchedMar,
+                    IsSet: Number($("input[name='rbIsSetMarkup']:checked").val())
+                };
+
+                var iset = Number($("input[name='rbIsSetMarkup']:checked").val());
+
+                $(btnCopy).attr('disabled', true).val('Submitting...');
+                serverCall('../EDP/CenterManagement/CenterManagement.asmx/CopyCenterItemsMarkup', { ItemList: searchedMar, IsSet: iset, centreItemMarkuplList: centreItemMarkupList }, function (ressI) {
+                    $responseData = JSON.parse(ressI);
+                    modelAlert($responseData.response, function (ressI) {
+                        if ($responseData.status) {
+                            $("#divItemMarkupMappingModel").hide();
+                            $(btnCopy).removeAttr('disabled').val('Save');
+                        }
+                        else
+                            $(btnCopy).removeAttr('disabled').val('Save');
+                    });
+                });
+            }
+        });
+    }
+</script>

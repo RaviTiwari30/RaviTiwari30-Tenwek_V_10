@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>54</ID>
+    <MenuName>Utility</MenuName>
+    <Items>
+      <URLName>/Design/EDP/UtilityMaster.aspx</URLName>
+      <DispName>Bulk Discount Master</DispName>
+      <MenuID>54</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/utility/EditIPDAdvanceReceipt.aspx</URLName>
+      <DispName>IPD Receipt Edit</DispName>
+      <MenuID>54</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Utility/OPDIPDDiscountApproach.aspx</URLName>
+      <DispName>OPD Receipt Edit</DispName>
+      <MenuID>54</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

@@ -1,0 +1,336 @@
+﻿
+<script type="text/javascript" src="../../Scripts/Handsome-Table/handsontable.full.js"></script>
+    <link href="../../Scripts/Handsome-Table/handsontable.full.min.css" rel="stylesheet" />
+
+<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="Performingcost">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-24" style="text-align: center;">
+                    <label>
+                        <strong style="font-size: medium;">Centre wise Performing Cost Setting</strong>
+                    </label>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Search Criteria </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-22">
+                    <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3" style="display:none;">
+                            <label class="pull-left">
+                                Center Name 
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5" style="display:none;">
+                            <select></select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Category
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="ddlCategoryPerformingCost" onchange="$bindSubCategoryPerformingCost($('#ddlCategoryPerformingCost').val(),function(){});"></select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Sub Category
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="ddlSubCategoryPerformingCost"></select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Item Name 
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" id="txtItemNamePerformingCost" tabindex="4" />
+                        </div>
+                    </div>
+                    <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Is Set
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="radio" name="rbtnIsSet" id="rbtnNo" value="0" checked="checked" />No
+                            <input type="radio" name="rbtnIsSet" id="rbtnYes" value="1" />Yes
+                            <input type="radio" name="rbtnIsSet" id="rbtnBoth" value="2" />Both
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-24 textCenter">
+                    <input type="button" id="btnSearchPerforming" onclick="searchItemsPerforming()" class="save" value="Search" tabindex="6" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Item List </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="row" id="dvItem" style="display:none;font-size:10pt;">
+                <div class="col-md-24 textCenter">
+                    <div id="dvItemList" ></div>
+                </div>
+            </div>
+            <div class="row" id="dvSave" style="display:none;">
+                <div class="col-md-24 textCenter">
+                    <input type="button" id="btnSavePerformingItems" onclick="savePerformingItemsCost()" class="save" value="Save" tabindex="7" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------Modal Pop up---------------------------------------------------------------------------------->
+<div id="divItemMappingModelPer" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content" style="min-width: 500px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="divItemMappingModelPer" aria-hidden="true">&times;</button>
+                    <b class="modal-title">Copy Same Item Mapping</b>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-22">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Copy Centre Name 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <label id="lblCentreFromPer" class="pull-left patientInfo" style="font-weight: bold"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Select Centre To Copy 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <ul id="ulCentreToPer" style="list-style-type: none; margin-left: -10px;"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" onclick="copyCentrePerformSetting(this)" class="save" style="font-size:10pt;">Save</button>
+                    <button type="button" data-dismiss="divItemMappingModelPer" onclick="ClosePerPopup()" style="font-size:10pt;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------------------------------END----------------------------------------------------------------------------->
+
+<script type="text/javascript">
+    function ClosePerPopup() {
+        $("#divItemMappingModelPer").hide();
+    }
+    var $bindCategoryPerformingCost = function (callback) {
+        serverCall('../common/CommonService.asmx/BindCategory', { Type: '0' }, function (response) {
+            $Category = $('#ddlCategoryPerformingCost');
+            $Category.bindDropDown({ defaultValue: 'All', data: JSON.parse(response), valueField: 'CategoryID', textField: 'Name', isSearchAble: true, selectedValue: 'All' });
+          //  $bindSubCategoryPerformingCost($Category.val(), function () {
+                callback($Category.find('option:selected').text());
+          //  });
+
+        });
+    }
+
+    $bindSubCategoryPerformingCost = function (categoryID, callback) {
+        $subCategory = $('#ddlSubCategoryPerformingCost');
+        serverCall('../common/CommonService.asmx/BindSubCategory', { Type: '0', CategoryID: categoryID }, function (response) {
+            $subCategory.bindDropDown({ defaultValue: 'All', data: JSON.parse(response), valueField: 'SubCategoryID', textField: 'Name', isSearchAble: true, selectedValue: 'All' });
+            callback($subCategory.find('option:selected').text());
+        });
+    }
+
+    var searchedItemsPerformingCost = "";
+    $(document).ready(function () {
+        $bindCategoryPerformingCost(function () {
+            $('#dvItemList,#dvSave,#dvItem').hide();
+        });
+    });
+
+    function searchItemsPerforming() {
+        $('#lblMsg').text('');
+        $('#dvItemList').html('');
+        $('#dvItemList,#dvSave,#dvItem').hide();
+        if ($('#ddlCentre').val() == "0") {
+            $('#lblMsg').text('Please Select Centre');
+            return false;
+        }
+        //var isset = "";
+        //if ($("#rbtnNo").checked == true) {
+        //    isset = "0";
+        //}
+        //else if ($("#rbtnYes").checked == true) {
+        //    isset = "1";
+        //}
+        //else if ($("#rbtnBoth").checked == true) {
+        //    isset = "2";
+        //}
+        var data = {
+            centreID: $.trim($("#spnCenter_ID").text()),
+            CategoryID: $.trim($('#ddlCategoryPerformingCost').val()),
+            SubCategoryID: $.trim($('#ddlSubCategoryPerformingCost').val()),
+            ItemName: $.trim($('#txtItemNamePerformingCost').val()),
+            IsSet: $.trim($("input[name='rbtnIsSet']:checked").val()),
+        };
+        serverCall('../EDP/Services/SetPerformingCost.asmx/BindGridItems', data, function (response) {
+            searchedItemsPerformingCost = JSON.parse(response);
+            if (searchedItemsPerformingCost.length > 0) {
+                $('#dvItemList,#dvSave,#dvItem').show();
+                $('#lblMsg').text('Total Records : ' + searchedItemsPerformingCost.length);
+                container2 = document.getElementById('dvItemList'),
+                hot2 = new Handsontable(container2, {
+                    data: searchedItemsPerformingCost,
+                    colHeaders: ["Category Name", "SubCategory Name", "Item Name", "Performing Cost"],
+                    readOnly: true,
+                    columns: [
+                    { data: 'CategoryName', readOnly: true, width: '150' },
+                    { data: 'SubCategoryName', readOnly: true, width: '150' },
+                    { data: 'TypeName', renderer: safeHtmlRenderer, readOnly: true, width: '600' },
+                    { data: 'PerformingCost', type: 'numeric', format: '0.0000', readOnly: false, allowInvalid: false, width: '100' },
+                    ],
+                    stretchH: "all",
+                    //   fixedColumnsLeft: 1,
+                    autoWrapRow: false,
+                    fillHandle: false,
+                    rowHeaders: true,
+                    contextMenu: false,
+                    filters: true,
+                    height: 380
+                });
+            }
+            else {
+                $('#lblMsg').text('No Record found as per searching criteria');
+                return false;
+            }
+        });
+    }
+
+    function safeHtmlRenderer(instance, td, row, col, prop, value, cellProperties) {
+        td.innerText = value;
+        $(td).css({ 'text-align': 'left' });
+    }
+
+    function savePerformingItemsCost() {
+        $('#lblMsg').text('');
+        //if ($('#ddlCentre').val() == "0") {
+        //    $('#lblMsg').text('Please Select Centre');
+        //    return false;
+        //}
+       
+        $('#btnSavePerformingItems').attr('disabled', true).val('Submitting...');
+        var data = {
+            centreID: $.trim($("#spnCenter_ID").text()),
+            ItemList: searchedItemsPerformingCost,
+        };
+
+        serverCall('../EDP/Services/SetPerformingCost.asmx/savePerformingCosting', data, function (response) {
+            $responseData = JSON.parse(response);
+            modelAlert($responseData.response, function (response) {
+                if ($responseData.status) {
+                    modelConfirmation('Confirmation ?', 'Do you want to apply Same Performing Cost to Another Centre.', 'Yes Copy To Another Centre', 'Cancel', function (re) {
+                        if (re) {
+                            loadCentreToModelPerformingCost($("#spnCenter_ID").text(), $("#spnCenter_Name").text());
+                            $('#btnSavePerformingItems').removeAttr('disabled').val('Save');
+                        }
+                    });
+                }    
+                else
+                    $('#btnSavePerformingItems').removeAttr('disabled').val('Save');
+            });
+        });
+    }
+
+    var loadCentreToModelPerformingCost = function (centreId, CentreName) {
+        $("#lblCentreFromPer").text(CentreName);
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetALLCentre', {}, function (response) {
+            var responseData = JSON.parse(response);
+            var responseCentreTo = responseData.filter(function (i) { return i.CentreID != centreId });
+            var ulCentreToPer = $('#ulCentreToPer');
+            ulCentreToPer.find('li').remove();
+            if (responseCentreTo.length > 0) {
+                $.each(responseCentreTo, function (i) {
+                    var aa = '<li  role="menuitem"><a>'
+                        + '<label class="trimList"  title="' + this.CentreName + '" >'
+                        + '<input   id="' + $.trim(this.CentreID) + '" value="' + this.CentreID + '" class="ui-all" type="checkbox" '
+                        + ' >' + this.CentreName + '</label></a> </li>';
+                    ulCentreToPer.append(aa);
+                });
+
+
+                $("#divItemMappingModelPer").showModel();
+            }
+            else
+                modelAlert("Only One Centre Exist in the System !!!");
+
+        });
+    }
+
+    var copyCentrePerformSetting = function (btnCopy) {
+        var centreListPer = [];
+        $('#ulCentreToPer li').each(function () {
+            if ($(this).find('input').is(":checked")) {
+                centreListPer.push({
+                    centreId: $(this).find('input').attr('id')
+                })
+            }
+        });
+
+        if (centreListPer.length == 0) {
+            modelAlert('Please Select Atleast One Centre To Copy !!!');
+            return;
+        }
+
+        var dataPer = {
+            centreID: $.trim($("#spnCenter_ID").text()),
+            ItemList: searchedItemsPerformingCost,
+        };
+
+        $(btnCopy).attr('disabled', true).val('Submitting...');
+
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/copyCentrePerformCostSetting', { ItemList: searchedItemsPerformingCost, centrelListPerform: centreListPer }, function (res) {
+            $responseData = JSON.parse(res);
+            modelAlert($responseData.response, function (res) {
+                if ($responseData.status) {
+                    $("#divItemMappingModelPer").hide();
+                    $(btnCopy).removeAttr('disabled').val('Save');
+                }
+                else
+                    $(btnCopy).removeAttr('disabled').val('Save');
+            });
+        });
+    }
+</script>

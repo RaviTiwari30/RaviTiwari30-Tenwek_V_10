@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Request>
+  <Interaction>
+    <Allergies>
+      <Molecule
+        reference="{AC340A53-6611-425A-8A75-70E82F00B79C}"
+        SaltID="554" />
+    </Allergies>
+    <HealthIssueCodes />
+  </Interaction>
+  <PatientProfile />
+</Request>

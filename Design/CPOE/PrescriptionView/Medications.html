@@ -1,0 +1,90 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto; padding: 0px" id="divMedicationPrescribe" class="row col-md-24">
+    <div   style="display:none" class="row">
+        <div class="col-md-24">
+            <input type="text" onkeyup="$searchMedicationByWord(event)" placeholder="Search Medication Template" id="txtSearchMedicationTemplates" />
+        </div>
+    </div>
+    <div  style="display:none" class="row">
+        <div class="col-md-24">
+            <div style="height: 300px" id="listMedication" class="chkList-Control">
+                <ul id="medicationListMenu"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-24">
+            <textarea id="txtMedication" style="height: 100px" onkeyup="onTxtMedicationChange(event)" />
+        </div>
+    </div>
+    <br />
+</div>
+
+
+<script type="text/javascript">
+    var onTxtMedicationChange = function (e) {
+        var divMedicationPrescribe = $('#divMedicationPrescribe');
+        if ($('#divMedicationPreview').html() == "")
+        {
+            $("#chkHeaders_6").prop('checked', true);
+        }
+        if (e.target.value.length > 0)
+            $('#divMedicationPreview').html('<b>Medications : </b><span style="white-space: pre-wrap;">' + e.target.value + '</span>');
+        else {
+            $(divMedicationPrescribe).find('#medicationListMenu').find('li input[type=checkbox]').prop('checked', false);
+            $('#divMedicationPreview').html('');
+        }
+
+        disabledPrint(true);
+    }
+
+    //var onChiefComplaintTemplatesSelect = function (elem) {
+    //    var divChiefComplaintPrescribe = $('#divChiefComplaintPrescribe');
+    //    if (elem.checked) {
+    //        var templateTextBox = $(divChiefComplaintPrescribe).find('#txtCheifComplaint');
+    //        templateTextBox.val($(templateTextBox).val() + ' ' + elem.value).keyup();
+    //        disabledPrint(true);
+    //    }
+    //}
+
+    var removeMedication = function () {
+        modelConfirmation('Delete Confirm ?', 'Do you want to delete the selected data from this screen', 'Yes', 'No', function (response) {
+            if (response) {
+                $('#txtMedication').val('').keyup();
+                if ($('#divMedicationPreview').html() == "") {
+                    $("#chkHeaders_6").prop('checked', false);
+                }
+            }
+        });
+    }
+
+    //var addFavoriteChiefComplaintList = function (data, callback) {
+    //    var chiefComplaintListMenu = $('#chiefComplaintListMenu');
+    //    chiefComplaintListMenu.find('li').remove();
+    //    $.each(data, function (i) {
+    //        var aa = '<li  role="menuitem"><a>'
+    //            + '<label class="trimList"  title="' + this.ValueField + '" >'
+    //            + '<input   id="' + $.trim(this.ID) + '" onchange="onChiefComplaintTemplatesSelect(this);" templateName="' + this.TemplateName + '"  templateFor="' + this.templateFor + '"   value="' + this.ValueField + '" class="ui-all" type="checkbox">' + this.TempName + '</label>'
+    //            + '</a><a onclick="onDeleteTemplate(this)" class="icon icon-color icon-trash pull-right"></a><a onclick="onEditTemplate(this)" class="icon icon-color icon-edit pull-right"></a></li>';
+    //        chiefComplaintListMenu.append(aa);
+    //    });
+    //    callback();
+    //}
+
+    var bindPatientMedication = function (data) {
+        var data = data.CPOEExamination.length > 0 ? data.CPOEExamination[0].Medications : '';
+        $('#txtMedication').val(data).keyup();
+    }
+
+
+
+    //var $searchChiefComplaintByWord = function (e) {
+    //    $('#chiefComplaintListMenu').find('li').show();
+    //    $('#chiefComplaintListMenu').find('li a label').show().not(":containsIgnoreCase('" + e.target.value + "')").closest('li').hide();
+    //}
+
+    $(document).ready(function () {
+        loadViewData(function (patientPrescriptionDetails) {
+            bindPatientMedication(patientPrescriptionDetails);
+        });
+    });
+</script>

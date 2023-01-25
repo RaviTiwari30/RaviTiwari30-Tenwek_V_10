@@ -1,0 +1,118 @@
+﻿<div id="divClinicalExaminiationPrescribe" style="margin: 0px; font-size: 11px; height: auto;padding:0px" class="row col-md-24">
+        <div class="row">
+            <div class="col-md-24">
+            <input type="text" onkeyup="$searchClinicalExaminationByWord(event)" placeholder="Search  Template"  />
+                
+            </div>
+        </div>
+      <div class="row">
+        <div class="col-md-24">
+            <div style="height: 300px" id="listClinicalExamination" class="chkList-Control">
+                <ul id="ClinicalExaminationListMenu"></ul>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="row">
+            <div class="col-md-24">
+                <textarea style="height: 100px"  onkeyup="onTxtClinicalExaminiationChange(event)" id="txtClinicalExaminiation"></textarea>
+            </div>
+        </div>
+    <br />
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+    var addFavoriteClinicalExaminationList = function (data, callback) {
+        var clinicalExaminationListMenu = $('#divClinicalExaminiationPrescribe #ClinicalExaminationListMenu');
+        clinicalExaminationListMenu.find('li').remove();
+        $.each(data, function (i) {
+            var aa = '<li  role="menuitem"><a>'
+                + '<label  class="trimList"  title="' + this.ValueField + '" >'
+                + '<input   id="' + $.trim(this.ID) + '" onchange="onClinicalExaminationTemplatesSelect(this);" templateName="' + this.TemplateName + '"  templateFor="' + this.templateFor + '"   value="' + this.ValueField + '" class="ui-all" type="checkbox">' + this.TempName + '</label>'
+                + '</a><a onclick="onDeleteTemplate(this)" class="icon icon-color icon-trash pull-right"></a><a onclick="onEditTemplate(this)" class="icon icon-color icon-edit pull-right"></a></li>';
+            clinicalExaminationListMenu.append(aa);
+        });
+        callback();
+    }
+
+    var onClinicalExaminationTemplatesSelect = function (elem) {
+        var divChiefComplaintPrescribe = $('#divClinicalExaminiationPrescribe');
+        if (elem.checked) {
+           // $(divChiefComplaintPrescribe).find('#ClinicalExaminationListMenu').find('li input[type=checkbox]').not(elem).prop('checked', false);
+            var templateTextBox = $(divChiefComplaintPrescribe).find('#txtClinicalExaminiation');
+            templateTextBox.val($(templateTextBox).val() + ' ' + elem.value).keyup();
+            disabledPrint(true);
+
+
+            //$(divChiefComplaintPrescribe).find('#txtClinicalExaminiation').val('').val(elem.value).keyup();
+            //disabledPrint(true);
+        }
+    }
+
+
+    var onSaveClinicalExaminationTemplate = function (elem) {
+        getClinicalExaminationTemplateDetails(function (data) {
+            if (String.isNullOrEmpty(data.id))
+                saveClinicalExaminationTemplate(data, elem);
+            else
+                updateClinicalExaminationTemplate(data, elem);
+        });
+    }
+
+
+    var onTxtClinicalExaminiationChange = function (e) {
+        if ($('#divClinicalExaminationPrintPreview').html() == "")
+        {
+            $("#chkHeaders_1").prop('checked', true);
+        }
+        if (e.target.value.length > 0)
+            $('#divClinicalExaminationPrintPreview').html('<b>History Of Present Illness : </b><span style="white-space: pre-wrap;">' + e.target.value + '</span>');
+        else
+            $('#divClinicalExaminationPrintPreview').html('');
+
+        disabledPrint(true);
+    }
+
+    var onDdlClinicalExaminiationTemplatesChange = function (elem) {
+        if ($.trim(elem.value) != '0')
+            $('#txtClinicalExaminiation').val(elem.value).keyup();
+    }
+    var removeClinicalExamination = function () {
+        modelConfirmation('Delete Confirm ?', 'Do you want to delete the selected data from this screen', 'Yes', 'No', function (response) {
+            if (response) {
+                $('#txtClinicalExaminiation').val('').keyup();
+                if ($('#divClinicalExaminationPrintPreview').html() == "") {
+                    $("#chkHeaders_1").prop('checked', false);
+                }
+            }
+        });
+        
+    }
+
+    var bindClinicalExamination = function (data) {
+        var ClinicalExaminiation = data.CPOEExamination.length > 0 ? data.CPOEExamination[0].ClinicalExaminiation : '';
+        $('#txtClinicalExaminiation').val(ClinicalExaminiation).keyup();
+    }
+
+
+    var $searchClinicalExaminationByWord = function (e) {
+        $('#ClinicalExaminationListMenu').find('li').show();
+
+       // if (e.target.value.length >= 1)
+            $('#ClinicalExaminationListMenu').find('li a label').show().not(":containsIgnoreCase('" + e.target.value + "')").closest('li').hide();
+       // else if (e.target.value.length == 0)
+    }
+
+    $(document).ready(function () {
+        loadViewData(function (patientPrescriptionDetails) {
+            bindClinicalExamination(patientPrescriptionDetails);
+        });
+    });
+</script>

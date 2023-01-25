@@ -1,0 +1,502 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="divInvestigationPrescribe">
+        <div class="row">
+            <div class="col-md-24">
+                <div class="row">
+                    <div class="col-md-24" style="text-align: center;">
+                        <label>
+                            <strong style="font-size: medium;"> 
+                               <input type="radio" name="fm" checked="checked" value="0" class="rdoFM" />
+                                <span>Menu</span>
+                                <input type="radio" name="fm" value="1" class="rdoFM" />
+                                <span>Frame</span>
+                                <input type="radio" name="fm" value="2" class="rdoFM" />
+                                <span>CPOE Menu</span>
+                                <br />
+                            </strong>
+                        </label>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3 DivFileMenu">
+                        <label class="pull-left">
+                            Menu
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 DivFileMenu">
+                        <select id="ddlmenu1" class="ddlMenu required" title="Select Menu"></select>
+                    </div>
+
+                    <div class="col-md-3 DivFileFrame hidden">
+                        <label class="pull-left">
+                            Frame
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 DivFileFrame hidden">
+                        <select id="ddlFrame1" class="ddlFrame required" title="Select Frame"></select>
+                    </div>
+                    <div class="col-md-3 DivCpoeMenu hidden">
+                        <label class="pull-left">
+                            Role
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 DivCpoeMenu hidden">
+                        <select id="ddlCpoeRole" class="ddlLoginType required" title="Select Role"></select>
+                    </div>
+                    <div class="col-md-3 DivCpoeMenu hidden">
+                        <label class="pull-left">
+                            Menu Name
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 DivCpoeMenu hidden">
+                        <input type="text" id="txtCpoeMenuName" autocomplete="off" data-title="Enter Menu Name" maxlength="20" class="ItDoseTextinputText Alphanumeric required" />
+                    </div>
+
+                    <div class="col-md-3 divfile">
+                        <label class="pull-left">
+                            <label class="pull-left">File Name</label>
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 divfile">
+                        <input type="text" id="txtfilename" autocomplete="off" data-title="Enter File Name" maxlength="20" class="ItDoseTextinputText Alphanumeric required" />
+                    </div>
+                    <div class="col-md-2">
+                        <label class="pull-left">
+                            <label class="pull-left">URL</label>
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="txtURL" style="width: 94%; font-weight: bold;" autocomplete="off" data-title="Enter URL" maxlength="50" class="ItDoseTextinputText required" />
+                        <a href="javascript:void(0);" onclick="showDirectory();">
+                            <img src="../../Images/view.GIF" style="border: none;" /></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label class="pull-left">
+                            Description
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" id="txtFDesc" autocomplete="off" data-title="Enter Description" maxlength="100" class="ItDoseTextinputText required" />
+                    </div>
+                    <div class="col-md-3">
+                        <label class="pull-left">
+                            Staus
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-1">
+                        <input type="checkbox" id="chkFileStatus" name="chkFileStatus" value="1" checked="checked" />
+                    </div>
+
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <label class="pull-left lblUrlPath" style="color: #cb0b0b; font-size: small">&nbsp;URL&nbsp;:&nbsp;/Design/Purchase/FileName.Aspx</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10"></div>
+                    <div class="col-md-3">
+                        <label id="lblFileID" class="hidden"></label>
+                        <input type="button" id="btnFileSave" value="Save" class="save margin-top-on-btn" onclick="SaveFileMaster(this)" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-24  Purchaseheader">
+                        <label class="pull-left">
+                            <strong>Search Menu Detail </strong>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-3 DivFileMenu">
+                        <label class="pull-left">
+                            Search By Menu
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 DivFileMenu">
+                        <select id="ddlSearchMenu" class="ddlMenu" title="Select Menu" onchange="BindFileDetail();"></select>
+                    </div>
+
+                    <div class="col-md-3 DivFileFrame hidden">
+                        <label class="pull-left">
+                            Search By Frame
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 DivFileFrame hidden">
+                        <select id="ddlSearchFrame" class="ddlFrame" title="Select Frame" onchange="BindFileDetail();"></select>
+                    </div>
+                    <div class="col-md-3 DivCpoeMenu hidden">
+                        <label class="pull-left">
+                            Search By Role
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5 DivCpoeMenu hidden">
+                        <select id="ddlSearchCpoeRole" class="ddlLoginType" title="Select Menu" onchange="BindFileDetail();"></select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="pull-left lblfile">
+                            Search By File Name
+                        </label>
+                        <b class="pull-right">:</b>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" id="txtSearchFile" onkeyup="BindFileDetail();" autocomplete="off" data-title="Enter File Name" maxlength="50" class="ItDoseTextinputText" />
+                    </div>
+
+                </div>
+                 <div class="row">
+                      <div  class="divViewFileDetails hidden"> </div>
+                    <script id="templateViewFileDetailsMenu" type="text/html">
+    <table  cellspacing="0" rules="all" border="1"   style="width:100%;border-collapse:collapse;">
+        <thead>
+        <tr>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:10px" >SrNo</th>                          
+               <th class="GridViewHeaderStyle thm" scope="col"  style="width:100px">Menu</th>           
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px">File Name</th>
+             <th class="GridViewHeaderStyle" scope="col"  style="width:100px">URL</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:100px">Description</th>                         
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px;">Status</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px;">Edit</th>
+        </tr>
+            
+         </thead>
+        <tbody>
+        <#       
+        var dataLength=templateFileData.length;
+        var objRow; 
+           
+        for(var j=0;j<dataLength;j++)
+        {       
+        objRow = templateFileData[j];
+        #>
+                <tr>
+                    <td class="GridViewLabItemStyle textCenter" style="width:10px"> <#=j+1#>
+                        <label class="hidden GrdlblFileID" ><#= objRow.ID #></label>
+                         <label class="hidden GrdlblMenuOrFrameID" ><#= objRow.MenuOrFrameID #></label>
+                    </td>
+                       <td class="GridViewLabItemStyle textCenter"> <#= objRow.Name #></td> 
+                     <td class="GridViewLabItemStyle textCenter"> <#= objRow.DispName #></td> 
+                    <td class="GridViewLabItemStyle textCenter"> <#= objRow.URLName #></td>
+                    <td class="GridViewLabItemStyle textCenter"> <#= objRow.Description #></td>                                  
+                       <td class="GridViewLabItemStyle textCenter" ><#=objRow.STATUS#></td>
+                    <td class="GridViewLabItemStyle textCenter" ><img alt="" src="../../Images/edit.png" class="imgPlus"  style="cursor:pointer" onclick="EditFileDetails(this)"  /></td>                       
+               </tr>     
+        <#}#>   
+       </tbody>   
+     </table>
+                        </script> 
+                <script id="templateViewFileDetailsFrame" type="text/html">
+    <table  cellspacing="0" rules="all" border="1"   style="width:100%;border-collapse:collapse;">
+        <thead>
+        <tr>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:10px" >SrNo</th>           
+               <th class="GridViewHeaderStyle thm" scope="col"  style="width:100px">Frame</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px">File Name</th>
+             <th class="GridViewHeaderStyle" scope="col"  style="width:100px">URL</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:100px">Description</th>                         
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px;">Status</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px;">Edit</th>
+        </tr>
+            
+         </thead>
+        <tbody>
+        <#       
+        var dataLength=templateFileData.length;
+        var objRow; 
+           
+        for(var j=0;j<dataLength;j++)
+        {       
+        objRow = templateFileData[j];
+        #>
+                <tr>
+                    <td class="GridViewLabItemStyle textCenter" style="width:10px"> <#=j+1#>
+                         <label class="hidden GrdlblFileID" ><#= objRow.ID #></label>
+                         <label class="hidden GrdlblMenuOrFrameID" ><#= objRow.MenuOrFrameID #></label>
+                    </td>
+                       <td class="GridViewLabItemStyle textCenter"> <#= objRow.Name #></td> 
+                     <td class="GridViewLabItemStyle textCenter"> <#= objRow.DispName #></td> 
+                    <td class="GridViewLabItemStyle textCenter"> <#= objRow.URLName #></td>
+                    <td class="GridViewLabItemStyle textCenter"> <#= objRow.Description #></td>                                  
+                       <td class="GridViewLabItemStyle textCenter" ><#=objRow.STATUS#></td>
+                    <td class="GridViewLabItemStyle textCenter" ><img alt="" src="../../Images/edit.png" class="imgPlus"  style="cursor:pointer" onclick="EditFileDetails(this)"  /></td>                       
+               </tr>     
+        <#}#>   
+       </tbody>   
+     </table>
+                        </script>  
+                <script id="templateViewFileDetailsCpoe" type="text/html">
+                      <table  cellspacing="0" rules="all" border="1"   style="width:100%;border-collapse:collapse;">
+        <thead>
+        <tr>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:10px" >SrNo</th>           
+               <th class="GridViewHeaderStyle thm" scope="col"  style="width:100px">Menu</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px">Role Name</th>
+             <th class="GridViewHeaderStyle" scope="col"  style="width:100px">URL</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:100px">Description</th>                         
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px;">Status</th>
+            <th class="GridViewHeaderStyle" scope="col"  style="width:50px;">Edit</th>
+        </tr>
+            
+         </thead>
+        <tbody>
+        <#       
+        var dataLength=templateFileData.length;
+        var objRow; 
+           
+        for(var j=0;j<dataLength;j++)
+        {       
+        objRow = templateFileData[j];
+        #>
+                <tr>
+                    <td class="GridViewLabItemStyle textCenter" style="width:10px"> <#=j+1#>
+                         <label class="hidden GrdlblFileID" ><#= objRow.ID #></label>
+                         <label class="hidden GrdlblMenuOrFrameID" ><#= objRow.MenuOrFrameID #></label>
+                    </td>
+                       <td class="GridViewLabItemStyle textCenter"> <#= objRow.NAME #></td> 
+                     <td class="GridViewLabItemStyle textCenter"> <#= objRow.DispName #></td> 
+                    <td class="GridViewLabItemStyle textCenter"> <#= objRow.URLName #></td>
+                    <td class="GridViewLabItemStyle textCenter"> <#= objRow.Description #></td>                                  
+                       <td class="GridViewLabItemStyle textCenter" ><#=objRow.STATUS#></td>
+                    <td class="GridViewLabItemStyle textCenter" ><img alt="" src="../../Images/edit.png" class="imgPlus"  style="cursor:pointer" onclick="EditFileDetails(this)"  /></td>                       
+               </tr>     
+        <#}#>   
+       </tbody>   
+     </table>
+                </script>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" id="prescribedInvestigationScript">
+    $(document).ready(function () {
+        $commonJsInit(function () {
+        });
+        $('.rdoFM').change(function () {
+
+            if ($(this).val() == "1") {
+                $('.DivFileMenu,.divViewFileDetails,.DivCpoeMenu').addClass('hidden');
+                $('.DivFileFrame,.divfile').removeClass('hidden');
+                $('.lblUrlPath').html('&nbsp;URL&nbsp;:&nbsp; ../IPD/FileName.aspx')
+                $('.lblfile').text('Search By File Name');
+            }
+            else if ($(this).val() == "2") {
+                $('.DivFileMenu,.DivFileFrame,.divViewFileDetails,.divfile').addClass('hidden');
+                $('.DivCpoeMenu').removeClass('hidden');
+                $('.lblUrlPath').html('&nbsp;URL&nbsp;:&nbsp; ../CPOE/FileName.aspx')
+                $('.lblfile').text('Search By Menu');
+            }
+            else {
+                $('.DivFileFrame,.divViewFileDetails,.DivCpoeMenu').addClass('hidden');
+                $('.DivFileMenu,.divfile').removeClass('hidden');
+                $('.lblUrlPath').html('&nbsp;URL&nbsp;:&nbsp;/Design/Purchase/FileName.Aspx');
+                $('.lblfile').text('Search By File Name');
+            }
+        });
+        $(".Alphanumeric").keypress(function (e) {
+            var keyCode = e.keyCode || e.which;
+            var regex = /^[A-Za-z\s0-9]+$/; /^[a-zA-Z\s]+$/
+            var isValid = regex.test(String.fromCharCode(keyCode));
+            return isValid;
+        });
+    });
+    var popup
+    function showDirectory() {
+        var w = 350;
+        var h = 455;
+        var left = (screen.width / 2) - (w / 2);
+        var top = (screen.height / 2) - (h / 2);
+        popup = window.open("browseDirectory.aspx?Frame=Menu", "view", "width=" + w + ",height=" + h + ",top=" + top + ",left=" + left + "  ");
+        popup.focus();
+        return false
+    }
+    var SaveFileMaster = function (btnSave) {
+        if ($.trim($('#ddlmenu1').val()) == '0' && $.trim($("input[name='fm']:checked").val()) == '0') {
+            modelAlert("Please Select Menu.");
+            return false;
+        }
+        if ($.trim($("#ddlCpoeRole").val()) == "0" && $.trim($("input[name='fm']:checked").val()) == '2') {
+            modelAlert('Please Select Role');
+            $("#ddlCpoeRole").focus();
+            return false;
+        }
+       
+        if ($.trim($("#txtCpoeMenuName").val()) == "" && $.trim($("input[name='fm']:checked").val()) == '2') {
+            modelAlert('Please Enter Menu Name');
+            $("#txtCpoeMenuName").focus();
+            return false;
+        }
+        if ($.trim($('#ddlFrame1').val()) == '0' && $.trim($("input[name='fm']:checked").val()) == '1') {
+            modelAlert("Please Select Frame.");
+            return false;
+        }
+        if ($.trim($('#txtfilename').val()) == '' && $.trim($("input[name='fm']:checked").val()) != '2') {
+            modelAlert("Please Enter File Name.");
+            return false;
+        }
+        if ($.trim($('#txtURL').val()) == '') {
+            modelAlert("Please Enter Url.");
+            return false;
+        }
+        if ($.trim($('#txtFDesc').val()) == '') {
+            modelAlert("Please Enter Description.");
+            return false;
+        }
+        if ($.trim($("input[name='fm']:checked").val()) == '2') {
+            var Active = 0;
+            if ($("#chkFileStatus").is(":checked")) { Active = 1; }
+            $.ajax({
+                url: "Services/PagePrivilage.asmx/saveCpoeMenu",
+                data: '{MenuName:"' + $("#txtCpoeMenuName").val().trim() + '",URL:"' + $("#txtURL").val().trim() + '",Description:"' + $("#txtFDesc").val().trim() + '",RoleID:"' + $("#ddlCpoeRole").val().trim() + '",Status:' + Active + ',ID:"' + $.trim($('#lblFileID').text()) + '"}',
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                timeout: 120000,
+                async: true,
+                dataType: "json",
+                success: function (result) {
+                    if (result.d == "1") {
+                        $('#ddlSearchCpoeRole').val($('#ddlCpoeRole').val()).chosen('destroy').chosen();
+                        $('#txtSearchFile').val($('#txtCpoeMenuName').val())
+                        BindFileDetail();
+                        $(btnSave).removeAttr('disabled', true).val('Save');
+                        $('#txtCpoeMenuName,#txtURL,#txtFDesc').val('');
+                        $('#lblFileID').text('');
+                        $('#chkFileStatus').attr('checked');
+                        $('#ddlCpoeRole').val('0').chosen('destroy').chosen();
+                        modelAlert('Record Saved Successfully');
+                    }
+                    else if (result.d == "2") {
+                        modelAlert('Menu Name Already Exists');
+                    }
+                },
+                error: function (xhr, status) {
+                    window.status = status + "\r\n" + xhr.responseText;
+                }
+            });
+        }
+        else {
+            var data = {};
+            data.FileID = $.trim($('#lblFileID').text());
+            if ($.trim($("input[name='fm']:checked").val()) == '1') {
+                data.MenuID = '';
+                data.FrameID = $.trim($('#ddlFrame1').val());
+                data.FrameName = $("#ddlFrame1 option:selected").text();
+            }
+            else {
+                data.MenuID = $.trim($('#ddlmenu1').val());
+                data.FrameID = '';
+                data.FrameName = '';
+            }
+            data.FileName = $.trim($('#txtfilename').val());
+            data.URL = $.trim($('#txtURL').val());
+            data.FDesc = $.trim($('#txtFDesc').val());
+            if ($("#chkFileStatus").is(":checked")) { data.Active = 1; } else { data.Active = 0; }
+            $(btnSave).attr('disabled', true).val('Submitting...');
+            serverCall('Services/PagePrivilage.asmx/SavFileMenuMaster', data, function (response) {
+                var responseData = JSON.parse(response);
+                modelAlert(responseData.message, function () {
+                    if (responseData.status) {
+                        if ($.trim($("input[name='fm']:checked").val()) == '1') {
+                            $('#ddlSearchFrame').val($('#ddlFrame1').val()).chosen('destroy').chosen();
+                        }
+                        else {
+                            $('#ddlSearchMenu').val($('#ddlmenu1').val()).chosen('destroy').chosen();
+                        }
+                        $('#txtSearchFile').val($('#txtfilename').val())
+                        BindFileDetail();
+                        $(btnSave).removeAttr('disabled', true).val('Save');
+                        $('#txtfilename,#txtURL,#txtFDesc').val('');
+                        $('#lblFileID').text('');
+                        $('#chkFileStatus').attr('checked');
+                        $('#ddlFrame1,#ddlmenu1').val('0').chosen('destroy').chosen();
+                        $('#ddlFrame1_chosen').css('width', '100%');
+                    }
+                    else {
+                        if ($.trim($('#lblFileID').text()) != '')
+                            $(btnSave).removeAttr('disabled', true).val('Update');
+                        else
+                            $(btnSave).removeAttr('disabled', true).val('Save');
+                    }
+                });
+            });
+        }
+    };
+    var BindFileDetail = function () {
+        var data = {};
+        var templateViewFileDetails = "";
+        if ($.trim($("input[name='fm']:checked").val()) == '1') {
+            data.ID = $.trim($('#ddlSearchFrame').val());
+            data.type = 1;
+            templateViewFileDetails = $('#templateViewFileDetailsFrame');
+        }
+        else if ($.trim($("input[name='fm']:checked").val()) == '2') {
+            data.ID = $.trim($('#ddlSearchCpoeRole').val());
+            data.type = 2;
+            templateViewFileDetails = $('#templateViewFileDetailsCpoe');
+        }
+        else {
+            data.ID = $.trim($('#ddlSearchMenu').val());
+            data.type = 0;
+            templateViewFileDetails = $('#templateViewFileDetailsMenu');
+        }
+        data.FileName = $.trim($('#txtSearchFile').val());
+        serverCall('Services/PagePrivilage.asmx/BindFileDetail', data, function (response) {
+            templateFileData = JSON.parse(response);
+            if (templateFileData.length > 0) {
+                var parseHTML = templateViewFileDetails.parseTemplate(templateFileData);
+                $('.divViewFileDetails').removeClass('hidden').html(parseHTML);
+            }
+            else {
+                $('.divViewFileDetails').addClass('hidden').html("");
+                modelAlert('Record Not Found');
+
+            }
+        });
+    }
+    var EditFileDetails = function (el) {
+        $('#lblFileID').text($.trim($(el).closest('tr').find('.GrdlblFileID').text()));
+        if ($.trim($("input[name='fm']:checked").val()) == '1') {
+            $('#ddlFrame1').val($.trim($(el).closest('tr').find('.GrdlblMenuOrFrameID').text())).chosen('destroy').chosen();
+            $('#txtfilename').val($.trim($(el).closest('tr').find('td:eq(2)').text()));
+        }
+        else if ($.trim($("input[name='fm']:checked").val()) == '2') {
+            $('#ddlCpoeRole').val($.trim($(el).closest('tr').find('.GrdlblMenuOrFrameID').text())).chosen('destroy').chosen();
+            $('#txtCpoeMenuName').val($.trim($(el).closest('tr').find('td:eq(1)').text()));
+        }
+        else {
+            $('#ddlmenu1').val($.trim($(el).closest('tr').find('.GrdlblMenuOrFrameID').text())).chosen('destroy').chosen();
+            $('#txtfilename').val($.trim($(el).closest('tr').find('td:eq(2)').text()));
+        }
+
+        $('#txtURL').val($.trim($(el).closest('tr').find('td:eq(3)').text()));
+        $('#txtFDesc').val($.trim($(el).closest('tr').find('td:eq(4)').text()));
+        if ($.trim($(el).closest('tr').find('td:eq(5)').text()) == 'Active')
+            $('#chkFileStatus').attr('checked', 'checked');
+        else
+            $('#chkFileStatus').removeAttr('checked');
+        $('#btnFileSave').val('Update');
+    };
+    var $bindLoginTypeDropDown = function () {
+        serverCall('Services/PagePrivilage.asmx/bindLoginType', {}, function (response) {
+            $('.ddlLoginType').bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'ID', textField: 'RoleName', isSearchAble: true, selectedValue: 'Select' });
+        });
+    };
+</script>

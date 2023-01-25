@@ -1,0 +1,2016 @@
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonReceipt_pdf.aspx
+ Time Of Error            : 14/08/2022 00:00:40
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at Util.GetDecimal(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 109
+   at Design_common_CommonReceipt_pdf.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\CommonReceipt_pdf.aspx.cs:line 799
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type               : System.FormatException
+ TargetSite               : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 8/14/2022 1:28:58 AM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 113
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 8/14/2022 1:41:39 AM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 113
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/OPDSearch.aspx
+ Time Of Error            : 8/14/2022 1:43:08 AM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Kitchen/PatientDietRequest.aspx
+ Time Of Error            : 8/14/2022 2:49:12 AM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/VitalSignChart.aspx
+ Time Of Error            : 8/14/2022 5:27:33 AM
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Double.Parse(String s, NumberStyles style, IFormatProvider provider)
+   at System.Convert.ToDouble(String value, IFormatProvider provider)
+   at System.String.System.IConvertible.ToDouble(IFormatProvider provider)
+   at System.Convert.ToDouble(Object value)
+   at Design_IPD_VitalSignChart.BindGraphBP(String TID) in e:\Production Code\Tenwek\Design\IPD\VitalSignChart.aspx.cs:line 174
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Double ParseDouble(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Patientsearch.aspx
+ Time Of Error            : 8/14/2022 5:45:28 AM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Patientsearch.aspx
+ Time Of Error            : 8/14/2022 6:17:27 AM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Patientsearch.aspx
+ Time Of Error            : 8/14/2022 6:18:10 AM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.validateBindRoleAndMenu() in e:\Production Code\Tenwek\DefaultHome.master.cs:line 193
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 140
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Patientsearch.aspx
+ Time Of Error            : 8/14/2022 6:30:28 AM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Patientsearch.aspx
+ Time Of Error            : 8/14/2022 7:00:51 AM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Patientsearch.aspx
+ Time Of Error            : 8/14/2022 7:17:53 AM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonReceipt_pdf.aspx
+ Time Of Error            : 8/14/2022 7:48:39 AM
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at Util.GetDecimal(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 109
+   at Design_common_CommonReceipt_pdf.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\CommonReceipt_pdf.aspx.cs:line 799
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonReceipt_pdf.aspx
+ Time Of Error            : 8/14/2022 7:48:47 AM
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at Util.GetDecimal(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 109
+   at Design_common_CommonReceipt_pdf.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\CommonReceipt_pdf.aspx.cs:line 799
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Patientsearch.aspx
+ Time Of Error            : 8/14/2022 8:22:34 AM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 8/14/2022 8:25:51 AM
+ Error Message            : The process cannot access the file because it is being used by another process.
+ Error Place              :    at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\Commonreport.aspx.cs:line 2456
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Runtime.InteropServices.COMException
+ TargetSite               : System.Object Export(CrystalDecisions.ReportAppServer.ReportDefModel.ExportOptions, CrystalDecisions.ReportAppServer.ReportDefModel.RequestContext)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/Lab_PrescriptionOPD.aspx
+ Time Of Error            : 8/14/2022 9:27:05 AM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.validateBindRoleAndMenu() in e:\Production Code\Tenwek\DefaultHome.master.cs:line 193
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 140
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Pregnancydetails.aspx
+ Time Of Error            : 8/14/2022 9:36:06 AM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Insert_PatientInfo.savePatientMaster(Object PM, MySqlTransaction tnx, MySqlConnection con) in e:\Production Code\Tenwek\App_Code\BLL\Insert_PatientInfo.cs:line 179
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.Collections.Generic.List`1[Insert_PatientInfo+patientList] savePatientMaster(System.Object, MySql.Data.MySqlClient.MySqlTransaction, MySql.Data.MySqlClient.MySqlConnection)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 8/14/2022 9:38:31 AM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 8/14/2022 9:38:36 AM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 8/14/2022 9:38:42 AM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 8/14/2022 9:38:48 AM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/Services/WebService.asmx/SaveOPDPharmacy
+ Time Of Error            : 8/14/2022 9:48:34 AM
+ Error Message            : Duplicate entry 'd562593e-bd46-470b-9fec-06d768f01fc4081420220943085385' for key 'UniqueHash'
+ Error Place              :    at Ledger_Transaction.Insert() in e:\Production Code\Tenwek\App_Code\DLL\Ledger_Transaction.cs:line 361
+   at WebService.SaveOPDPharmacy(Object PMH, Object LT, Object LTD, Object SalesDetails, Object generalPatient, Object PaymentDetail, String patientType, Object PatientMedicineData, String DeptLedgerNo, String contactNo, String PName, Int32 isOtPatient, Boolean isIPDInCash, Int32 IsDischargeMedicine, Object draftMedicineData, String VerifiedUserID, Object ClinicalTrial) in e:\Production Code\Tenwek\Design\Store\Services\WebService.asmx:line 692
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.String Insert()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/Services/WebService.asmx/SaveOPDPharmacy
+ Time Of Error            : 8/14/2022 9:51:11 AM
+ Error Message            : Duplicate entry 'd562593e-bd46-470b-9fec-06d768f01fc4081420220943085385' for key 'UniqueHash'
+ Error Place              :    at Ledger_Transaction.Insert() in e:\Production Code\Tenwek\App_Code\DLL\Ledger_Transaction.cs:line 361
+   at WebService.SaveOPDPharmacy(Object PMH, Object LT, Object LTD, Object SalesDetails, Object generalPatient, Object PaymentDetail, String patientType, Object PatientMedicineData, String DeptLedgerNo, String contactNo, String PName, Int32 isOtPatient, Boolean isIPDInCash, Int32 IsDischargeMedicine, Object draftMedicineData, String VerifiedUserID, Object ClinicalTrial) in e:\Production Code\Tenwek\Design\Store\Services\WebService.asmx:line 692
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.String Insert()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 9:51:22 AM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/Services/WebService.asmx/SaveOPDPharmacy
+ Time Of Error            : 8/14/2022 10:10:20 AM
+ Error Message            : Duplicate entry '0e3de50a-5c97-4251-a9b8-ef6e24363af9081420221008258185' for key 'UniqueHash'
+ Error Place              :    at Ledger_Transaction.Insert() in e:\Production Code\Tenwek\App_Code\DLL\Ledger_Transaction.cs:line 361
+   at WebService.SaveOPDPharmacy(Object PMH, Object LT, Object LTD, Object SalesDetails, Object generalPatient, Object PaymentDetail, String patientType, Object PatientMedicineData, String DeptLedgerNo, String contactNo, String PName, Int32 isOtPatient, Boolean isIPDInCash, Int32 IsDischargeMedicine, Object draftMedicineData, String VerifiedUserID, Object ClinicalTrial) in e:\Production Code\Tenwek\Design\Store\Services\WebService.asmx:line 692
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.String Insert()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 10:12:39 AM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/Services/LabPrescription.asmx/IsBillingThroughSmartCard
+ Time Of Error            : 8/14/2022 10:46:10 AM
+ Error Message            : Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+ Error Place              :    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at GetEncounterNo.GetSessionId(String PatientId) in e:\Production Code\Tenwek\App_Code\DLL\GetEncounterNo.cs:line 473
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.ArgumentOutOfRangeException
+ TargetSite               : Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/Commonreport.aspx
+ Time Of Error            : 8/14/2022 10:49:56 AM
+ Error Message            : Invalid report file path.
+ Error Place              :    at CrystalDecisions.CrystalReports.Engine.EngineExceptionUtils.DoThrowException(String message, EngineExceptionErrorID id)
+   at CrystalDecisions.CrystalReports.Engine.ExceptionThrower.ThrowEngineException(String messageID, EngineExceptionErrorID id)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.EnsureLoadReport()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.get_FormatEngine()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\Commonreport.aspx.cs:line 2456
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : CrystalDecisions.CrystalReports.Engine.LoadSaveReportException
+ TargetSite               : Void DoThrowException(System.String, CrystalDecisions.CrystalReports.Engine.EngineExceptionErrorID)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/Commonreport.aspx
+ Time Of Error            : 8/14/2022 10:50:04 AM
+ Error Message            : Invalid report file path.
+ Error Place              :    at CrystalDecisions.CrystalReports.Engine.EngineExceptionUtils.DoThrowException(String message, EngineExceptionErrorID id)
+   at CrystalDecisions.CrystalReports.Engine.ExceptionThrower.ThrowEngineException(String messageID, EngineExceptionErrorID id)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.EnsureLoadReport()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.get_FormatEngine()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\Commonreport.aspx.cs:line 2456
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : CrystalDecisions.CrystalReports.Engine.LoadSaveReportException
+ TargetSite               : Void DoThrowException(System.String, CrystalDecisions.CrystalReports.Engine.EngineExceptionErrorID)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/Services/WebService.asmx/SaveOPDPharmacy
+ Time Of Error            : 8/14/2022 11:16:45 AM
+ Error Message            : Duplicate entry 'b4fa958e-7de2-45d2-8992-21ed9066833f081420221114034861' for key 'hashcode'
+ Error Place              :    at Patient_Medical_History.Insert() in e:\Production Code\Tenwek\App_Code\DLL\Patient_Medical_History.cs:line 2313
+   at WebService.SaveOPDPharmacy(Object PMH, Object LT, Object LTD, Object SalesDetails, Object generalPatient, Object PaymentDetail, String patientType, Object PatientMedicineData, String DeptLedgerNo, String contactNo, String PName, Int32 isOtPatient, Boolean isIPDInCash, Int32 IsDischargeMedicine, Object draftMedicineData, String VerifiedUserID, Object ClinicalTrial) in e:\Production Code\Tenwek\Design\Store\Services\WebService.asmx:line 498
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.String Insert()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/Services/WebService.asmx/SaveOPDPharmacy
+ Time Of Error            : 8/14/2022 11:17:01 AM
+ Error Message            : Duplicate entry 'b4fa958e-7de2-45d2-8992-21ed9066833f081420221114034861' for key 'hashcode'
+ Error Place              :    at Patient_Medical_History.Insert() in e:\Production Code\Tenwek\App_Code\DLL\Patient_Medical_History.cs:line 2313
+   at WebService.SaveOPDPharmacy(Object PMH, Object LT, Object LTD, Object SalesDetails, Object generalPatient, Object PaymentDetail, String patientType, Object PatientMedicineData, String DeptLedgerNo, String contactNo, String PName, Int32 isOtPatient, Boolean isIPDInCash, Int32 IsDischargeMedicine, Object draftMedicineData, String VerifiedUserID, Object ClinicalTrial) in e:\Production Code\Tenwek\Design\Store\Services\WebService.asmx:line 498
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.String Insert()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/PatientEncounterHistory.aspx
+ Time Of Error            : 8/14/2022 11:23:22 AM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/Services/LabPrescription.asmx/IsBillingThroughSmartCard
+ Time Of Error            : 8/14/2022 11:29:00 AM
+ Error Message            : Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+ Error Place              :    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at GetEncounterNo.GetSessionId(String PatientId) in e:\Production Code\Tenwek\App_Code\DLL\GetEncounterNo.cs:line 473
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.ArgumentOutOfRangeException
+ TargetSite               : Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/design/Common/CommonService.asmx/GetBankMaster
+ Time Of Error            : 8/14/2022 11:29:14 AM
+ Error Message            : The process cannot access the file 'E:\Production Code\Tenwek\CacheDependency\Bank.txt' because it is being used by another process.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at LoadCacheQuery.loadBank() in e:\Production Code\Tenwek\App_Code\CacheQuery\LoadCacheQuery.cs:line 591
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonService.asmx/GetBankMaster
+ Time Of Error            : 8/14/2022 11:34:25 AM
+ Error Message            : The process cannot access the file 'E:\Production Code\Tenwek\CacheDependency\Bank.txt' because it is being used by another process.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at LoadCacheQuery.loadBank() in e:\Production Code\Tenwek\App_Code\CacheQuery\LoadCacheQuery.cs:line 591
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonReceipt_pdf.aspx
+ Time Of Error            : 14/08/2022 11:41:36
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at Util.GetDecimal(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 109
+   at Design_common_CommonReceipt_pdf.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\CommonReceipt_pdf.aspx.cs:line 799
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonReceipt_pdf.aspx
+ Time Of Error            : 14/08/2022 11:51:21
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at Util.GetDecimal(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 109
+   at Design_common_CommonReceipt_pdf.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\CommonReceipt_pdf.aspx.cs:line 799
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/PatientICDCodes.aspx
+ Time Of Error            : 8/14/2022 12:07:17 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_PatientICDCodes.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\CPOE\PatientICDCodes.aspx.cs:line 587
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/PatientICDCodes.aspx
+ Time Of Error            : 8/14/2022 12:07:24 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_PatientICDCodes.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\CPOE\PatientICDCodes.aspx.cs:line 587
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/PatientICDCodes.aspx
+ Time Of Error            : 8/14/2022 12:07:34 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_PatientICDCodes.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\CPOE\PatientICDCodes.aspx.cs:line 587
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/PatientICDCodes.aspx
+ Time Of Error            : 8/14/2022 12:07:35 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_PatientICDCodes.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\CPOE\PatientICDCodes.aspx.cs:line 587
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 8/14/2022 12:08:23 PM
+ Error Message            : The process cannot access the file because it is being used by another process.
+ Error Place              :    at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\Commonreport.aspx.cs:line 2456
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Runtime.InteropServices.COMException
+ TargetSite               : System.Object Export(CrystalDecisions.ReportAppServer.ReportDefModel.ExportOptions, CrystalDecisions.ReportAppServer.ReportDefModel.RequestContext)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 8/14/2022 12:08:29 PM
+ Error Message            : The process cannot access the file because it is being used by another process.
+ Error Place              :    at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\Commonreport.aspx.cs:line 2456
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Runtime.InteropServices.COMException
+ TargetSite               : System.Object Export(CrystalDecisions.ReportAppServer.ReportDefModel.ExportOptions, CrystalDecisions.ReportAppServer.ReportDefModel.RequestContext)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 12:24:42 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 12:34:15 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/design/OPD/Services/LabPrescription.asmx/IsBillingThroughSmartCard
+ Time Of Error            : 8/14/2022 12:40:27 PM
+ Error Message            : Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+ Error Place              :    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at GetEncounterNo.GetSessionId(String PatientId) in e:\Production Code\Tenwek\App_Code\DLL\GetEncounterNo.cs:line 473
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.ArgumentOutOfRangeException
+ TargetSite               : Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 12:41:50 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 12:50:51 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/VitalSignChart.aspx
+ Time Of Error            : 8/14/2022 12:54:13 PM
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Double.Parse(String s, NumberStyles style, IFormatProvider provider)
+   at System.Convert.ToDouble(String value, IFormatProvider provider)
+   at System.String.System.IConvertible.ToDouble(IFormatProvider provider)
+   at System.Convert.ToDouble(Object value)
+   at Design_IPD_VitalSignChart.BindGraphSPO2(String TID) in e:\Production Code\Tenwek\Design\IPD\VitalSignChart.aspx.cs:line 119
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Double ParseDouble(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/PatientICDCodes.aspx
+ Time Of Error            : 8/14/2022 1:06:41 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_PatientICDCodes.btnAddICDCode_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\CPOE\PatientICDCodes.aspx.cs:line 672
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonReceipt_pdf.aspx
+ Time Of Error            : 14/08/2022 13:08:57
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at Util.GetDecimal(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 109
+   at Design_common_CommonReceipt_pdf.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\CommonReceipt_pdf.aspx.cs:line 799
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 8/14/2022 1:09:11 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 113
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 8/14/2022 1:09:19 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 113
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/VitalSignChart.aspx
+ Time Of Error            : 8/14/2022 1:23:03 PM
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Double.Parse(String s, NumberStyles style, IFormatProvider provider)
+   at System.Convert.ToDouble(String value, IFormatProvider provider)
+   at System.String.System.IConvertible.ToDouble(IFormatProvider provider)
+   at System.Convert.ToDouble(Object value)
+   at Design_IPD_VitalSignChart.BindGraphSPO2(String TID) in e:\Production Code\Tenwek\Design\IPD\VitalSignChart.aspx.cs:line 119
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Double ParseDouble(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/Services/LabPrescription.asmx/IsBillingThroughSmartCard
+ Time Of Error            : 8/14/2022 1:47:22 PM
+ Error Message            : Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+ Error Place              :    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at GetEncounterNo.GetSessionId(String PatientId) in e:\Production Code\Tenwek\App_Code\DLL\GetEncounterNo.cs:line 473
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.ArgumentOutOfRangeException
+ TargetSite               : Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 8/14/2022 1:58:21 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICDCode_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 690
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 8/14/2022 1:58:23 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICDCode_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 690
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 1:58:31 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 2:20:41 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 2:34:15 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 2:36:50 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/design/Common/CommonService.asmx/GetBankMaster
+ Time Of Error            : 8/14/2022 2:41:00 PM
+ Error Message            : The process cannot access the file 'E:\Production Code\Tenwek\CacheDependency\Bank.txt' because it is being used by another process.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at LoadCacheQuery.loadBank() in e:\Production Code\Tenwek\App_Code\CacheQuery\LoadCacheQuery.cs:line 591
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 2:44:07 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/Services/WebService.asmx/SaveOPDPharmacy
+ Time Of Error            : 8/14/2022 2:45:15 PM
+ Error Message            : Duplicate entry '49516804-20b9-4a3c-9e37-8fd69f420b3f081420221442457616' for key 'UniqueHash'
+ Error Place              :    at Ledger_Transaction.Insert() in e:\Production Code\Tenwek\App_Code\DLL\Ledger_Transaction.cs:line 361
+   at WebService.SaveOPDPharmacy(Object PMH, Object LT, Object LTD, Object SalesDetails, Object generalPatient, Object PaymentDetail, String patientType, Object PatientMedicineData, String DeptLedgerNo, String contactNo, String PName, Int32 isOtPatient, Boolean isIPDInCash, Int32 IsDischargeMedicine, Object draftMedicineData, String VerifiedUserID, Object ClinicalTrial) in e:\Production Code\Tenwek\Design\Store\Services\WebService.asmx:line 692
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.String Insert()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 2:48:42 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 8/14/2022 2:50:24 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 113
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 2:54:44 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 3:07:32 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 3:13:41 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/Lab_PrescriptionOPD.aspx
+ Time Of Error            : 8/14/2022 3:14:05 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.validateBindRoleAndMenu() in e:\Production Code\Tenwek\DefaultHome.master.cs:line 193
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 140
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/PatientIPDDischarge.aspx
+ Time Of Error            : 8/14/2022 3:20:35 PM
+ Error Message            : Table 'tenwek_live.ipd_case_history' doesn't exist
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at MySqlHelper.ExecuteDataset(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 473
+   at MySqlHelper.ExecuteDataset(MySqlConnection connection, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 445
+   at AllSelectQuery.GetIPDCHIDandPIPPPID(String TrnxID, String Status) in e:\Production Code\Tenwek\App_Code\DLL\AllSelectQuery.cs:line 559
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/PatientIPDDischarge.aspx
+ Time Of Error            : 8/14/2022 3:20:35 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_IPD_PatientIPDDischarge.btnDischarge_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\PatientIPDDischarge.aspx.cs:line 297
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : Void btnDischarge_Click(System.Object, System.EventArgs)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 3:23:14 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 3:26:07 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 8/14/2022 3:39:46 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 113
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 3:47:45 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 3:51:31 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 4:19:52 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 4:22:03 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 8/14/2022 4:28:05 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 113
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Lab/DepartmentReceiving.aspx/BindDepartment
+ Time Of Error            : 8/14/2022 4:30:53 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Lab_DepartmentReceiving.BindDepartment() in e:\Production Code\Tenwek\Design\Lab\DepartmentReceiving.aspx.cs:line 34
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String BindDepartment()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/Lab_PrescriptionOPD.aspx
+ Time Of Error            : 8/14/2022 4:34:40 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.validateBindRoleAndMenu() in e:\Production Code\Tenwek\DefaultHome.master.cs:line 193
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 140
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 4:47:24 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 4:55:32 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/PatientICDCodes.aspx
+ Time Of Error            : 8/14/2022 4:58:25 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_PatientICDCodes.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\CPOE\PatientICDCodes.aspx.cs:line 587
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonService.asmx/GetBankMaster
+ Time Of Error            : 8/14/2022 4:58:56 PM
+ Error Message            : The process cannot access the file 'E:\Production Code\Tenwek\CacheDependency\Bank.txt' because it is being used by another process.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at LoadCacheQuery.loadBank() in e:\Production Code\Tenwek\App_Code\CacheQuery\LoadCacheQuery.cs:line 591
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/HomoDialysis.aspx/saveHemodialysis_Post_Dialytic_Observation
+ Time Of Error            : 8/14/2022 5:02:01 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_CPOE_HomoDialysis.saveHemodialysis_Post_Dialytic_Observation(hemodialysis_post_dialytic_observation Vital) in e:\Production Code\Tenwek\Design\CPOE\HomoDialysis.aspx.cs:line 1017
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String saveHemodialysis_Post_Dialytic_Observation(hemodialysis_post_dialytic_observation)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonReceipt_pdf.aspx
+ Time Of Error            : 14/08/2022 17:21:37
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at Util.GetDecimal(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 109
+   at Design_common_CommonReceipt_pdf.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\CommonReceipt_pdf.aspx.cs:line 799
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/PatientICDCodes.aspx
+ Time Of Error            : 8/14/2022 5:22:29 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_CPOE_PatientICDCodes.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\CPOE\PatientICDCodes.aspx.cs:line 571
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Patientsearch.aspx
+ Time Of Error            : 8/14/2022 5:29:49 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.validateBindRoleAndMenu() in e:\Production Code\Tenwek\DefaultHome.master.cs:line 193
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 140
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 8/14/2022 5:32:01 PM
+ Error Message            : The process cannot access the file because it is being used by another process.
+ Error Place              :    at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\Commonreport.aspx.cs:line 2456
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Runtime.InteropServices.COMException
+ TargetSite               : System.Object Export(CrystalDecisions.ReportAppServer.ReportDefModel.ExportOptions, CrystalDecisions.ReportAppServer.ReportDefModel.RequestContext)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonReceipt_pdf.aspx
+ Time Of Error            : 14/08/2022 17:39:59
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at Util.GetDecimal(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 109
+   at Design_common_CommonReceipt_pdf.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\CommonReceipt_pdf.aspx.cs:line 799
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 8/14/2022 5:54:49 PM
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in e:\Production Code\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonReceipt_pdf.aspx
+ Time Of Error            : 14/08/2022 17:58:17
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at Util.GetDecimal(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 109
+   at Design_common_CommonReceipt_pdf.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\CommonReceipt_pdf.aspx.cs:line 799
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonReceipt_pdf.aspx
+ Time Of Error            : 14/08/2022 17:58:19
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at Util.GetDecimal(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 109
+   at Design_common_CommonReceipt_pdf.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\common\CommonReceipt_pdf.aspx.cs:line 799
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonService.asmx/GetBankMaster
+ Time Of Error            : 8/14/2022 6:24:28 PM
+ Error Message            : The process cannot access the file 'E:\Production Code\Tenwek\CacheDependency\Bank.txt' because it is being used by another process.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at LoadCacheQuery.loadBank() in e:\Production Code\Tenwek\App_Code\CacheQuery\LoadCacheQuery.cs:line 591
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 8/14/2022 6:51:34 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 8/14/2022 6:51:35 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 8/14/2022 6:51:48 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 8/14/2022 6:51:50 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/opd/PendingAmountApproval.aspx
+ Time Of Error            : 8/14/2022 6:55:06 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 8/14/2022 7:01:00 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Emergency/EmergencyComplaint.aspx
+ Time Of Error            : 8/14/2022 7:11:33 PM
+ Error Message            : Data too long for column 'Complaint' at row 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in e:\Production Code\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Design_Emergency_EmergencyComplaint.btnSave_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\Emergency\EmergencyComplaint.aspx.cs:line 42
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/ReceiptBill.aspx
+ Time Of Error            : 8/14/2022 7:30:13 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.validateBindRoleAndMenu() in e:\Production Code\Tenwek\DefaultHome.master.cs:line 193
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 140
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/VitalSignChart.aspx
+ Time Of Error            : 8/14/2022 7:36:37 PM
+ Error Message            : Input string was not in a correct format.
+ Error Place              :    at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Double.Parse(String s, NumberStyles style, IFormatProvider provider)
+   at System.Convert.ToDouble(String value, IFormatProvider provider)
+   at System.String.System.IConvertible.ToDouble(IFormatProvider provider)
+   at System.Convert.ToDouble(Object value)
+   at Design_IPD_VitalSignChart.BindGraphSPO2(String TID) in e:\Production Code\Tenwek\Design\IPD\VitalSignChart.aspx.cs:line 119
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : Double ParseDouble(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/Lab_PrescriptionOPD.aspx
+ Time Of Error            : 8/14/2022 7:38:43 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.validateBindRoleAndMenu() in e:\Production Code\Tenwek\DefaultHome.master.cs:line 193
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 140
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/Lab_PrescriptionOPD.aspx
+ Time Of Error            : 8/14/2022 7:48:05 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.validateBindRoleAndMenu() in e:\Production Code\Tenwek\DefaultHome.master.cs:line 193
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 140
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/CPOE/OPDSearch.aspx
+ Time Of Error            : 8/14/2022 7:48:17 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/opd/triagereport.aspx
+ Time Of Error            : 8/14/2022 7:49:25 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/TreatmentDoctor.aspx
+ Time Of Error            : 8/14/2022 7:54:58 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at TreatmentDoctor.SaveData() in e:\Production Code\Tenwek\Design\IPD\TreatmentDoctor.aspx.cs:line 183
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : Boolean SaveData()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/Lab_PrescriptionOPD.aspx
+ Time Of Error            : 8/14/2022 7:55:41 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.validateBindRoleAndMenu() in e:\Production Code\Tenwek\DefaultHome.master.cs:line 193
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 140
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Patientsearch.aspx
+ Time Of Error            : 8/14/2022 8:51:08 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.validateBindRoleAndMenu() in e:\Production Code\Tenwek\DefaultHome.master.cs:line 193
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 140
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Patientsearch.aspx
+ Time Of Error            : 8/14/2022 8:51:34 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Pregnancydetails.aspx
+ Time Of Error            : 8/14/2022 8:56:48 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Insert_PatientInfo.savePatientMaster(Object PM, MySqlTransaction tnx, MySqlConnection con) in e:\Production Code\Tenwek\App_Code\BLL\Insert_PatientInfo.cs:line 179
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.Collections.Generic.List`1[Insert_PatientInfo+patientList] savePatientMaster(System.Object, MySql.Data.MySqlClient.MySqlTransaction, MySql.Data.MySqlClient.MySqlConnection)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 8/14/2022 9:14:12 PM
+ Error Message            : Object reference not set to an instance of an object.
+ Error Place              :    at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in e:\Production Code\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 113
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.NullReferenceException
+ TargetSite               : System.String bindData(System.String, System.String, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OT/IntraOPVitalSignEntry.aspx
+ Time Of Error            : 8/14/2022 9:26:04 PM
+ Error Message            : String was not recognized as a valid DateTime.
+ Error Place              :    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at Util.GetDateTime(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 133
+   at Design_IPD_IntraOPVitalSignEntry.btnSave_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\OT\IntraOPVitalSignEntry.aspx.cs:line 87
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OT/IntraOPVitalSignEntry.aspx
+ Time Of Error            : 8/14/2022 9:26:08 PM
+ Error Message            : String was not recognized as a valid DateTime.
+ Error Place              :    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at Util.GetDateTime(Object obj) in e:\Production Code\Tenwek\App_Code\DLL\Util.cs:line 133
+   at Design_IPD_IntraOPVitalSignEntry.btnSave_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\OT\IntraOPVitalSignEntry.aspx.cs:line 87
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.FormatException
+ TargetSite               : System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/CommonService.asmx/getTimeDuration
+ Time Of Error            : 8/14/2022 10:08:51 PM
+ Error Message            : The process cannot access the file 'E:\Production Code\Tenwek\CacheDependency\LoadMedicineQuantity.txt' because it is being used by another process.
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at LoadCacheQuery.LoadMedicineQuantity(String TYPE) in e:\Production Code\Tenwek\App_Code\CacheQuery\LoadCacheQuery.cs:line 855
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/OPDFinalSettlementNew.aspx
+ Time Of Error            : 8/14/2022 11:28:00 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/Patientsearch.aspx
+ Time Of Error            : 8/14/2022 11:37:57 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/OPDFinalSettlementNew.aspx
+ Time Of Error            : 8/14/2022 11:40:19 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/emergency/EmergencyAdmission.aspx
+ Time Of Error            : 8/14/2022 11:42:18 PM
+ Error Message            : Thread was being aborted.
+ Error Place              :    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Design_DefaultHome.Page_Load(Object sender, EventArgs e) in e:\Production Code\Tenwek\DefaultHome.master.cs:line 134
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.Threading.ThreadAbortException
+ TargetSite               : Void AbortInternal()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 8/14/2022 11:52:15 PM
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.RBTree`1.get_Item(Int32 index)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICDCode_Click(Object sender, EventArgs e) in e:\Production Code\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 674
+ Error On Machine         : TH-HOSEPEDIA-APP-SVR
+ Error Machine IP Address : ::1
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)

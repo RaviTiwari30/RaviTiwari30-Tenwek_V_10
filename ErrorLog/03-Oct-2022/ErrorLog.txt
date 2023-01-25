@@ -1,0 +1,297 @@
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 03-10-2022 11:01:01
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type               : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 03-10-2022 11:01:05
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICDCode_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 690
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 03-10-2022 11:18:50
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1168
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CollectionReportSummary {EB56DAD0-1584-4DE5-9C31-EEB773DB1696}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 03-10-2022 11:22:44
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1168
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CollectionReportSummary {C4D57207-8D73-4F6D-8641-41812F0D5397}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 03-10-2022 11:22:53
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 2287
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CollectionReportSummaryTotal {34E35BA3-5ECA-461B-82F5-78109987E7BA}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 03-10-2022 11:24:14
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1525
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CollectionDetailReport {39E6E70A-25A1-4C30-8296-EEE48F900C21}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 03-10-2022 11:48:52
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 03-10-2022 11:49:00
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICDCode_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 690
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 03-10-2022 11:49:03
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPD_FinalDiagnosis.aspx
+ Time Of Error            : 03-10-2022 11:49:08
+ Error Message            : There is no row at position 0.
+ Error Place              :    at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at Design_IPD_IPD_FinalDiagnosis.btnAddICD_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\IPD_FinalDiagnosis.aspx.cs:line 603
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IndexOutOfRangeException
+ TargetSite               : NodePath GetNodeByIndex(Int32)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/Commonreport.aspx
+ Time Of Error            : 03-10-2022 14:03:03
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1017
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CancelIPDReport {DFA8DD5E-8E5B-456D-AE8D-46E6A31AB212}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Edp/IPDPackageMaster.aspx/SavePackage
+ Time Of Error            : 03-10-2022 14:08:30
+ Error Message            : Data too long for column 'PanelID' at row 1
+ Error Place              :    at ExcuteCMD.ExecuteScalar(MySqlTransaction tnx, String sqlCmd, CommandType commandType, Object inParameters, Object outParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 149
+   at Design_EDP_IPDPackageMaster.SavePackage(packagemaster packageMaster, List`1 packageDetails) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\IPDPackageMaster.aspx.cs:line 173
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Object ExecuteScalar(MySql.Data.MySqlClient.MySqlTransaction, System.String, System.Data.CommandType, System.Object, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/Commonreport.aspx
+ Time Of Error            : 03-10-2022 16:34:40
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1035
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File BedOccupancyReport {06F4CC4A-E12D-4C16-A0DE-B0BE1B19EA16}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/eDP/ChangePaymentMode.aspx/SavePaymentMode
+ Time Of Error            : 03-10-2022 16:41:18
+ Error Message            : Table 'tenwek_live.f_ledgertransaction_paymentdetail' doesn't exist
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Design_EDP_ChangePaymentMode.SavePaymentMode(Int32 ReceiptID, String ReceiptNo, Int32 newPaymentModeID, String newPaymentMode, String newBankName, String newRefNo, Int32 oldPaymentModeID, String oldPaymentMode, String oldBankName, String oldRefNo, String LedgerTransactionNo, String LedgerNoDr, Decimal Amount) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\ChangePaymentMode.aspx.cs:line 53
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/Commonreport.aspx
+ Time Of Error            : 03-10-2022 16:42:44
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1101
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File LabTurnAroundTime {422ACEE7-025D-4B7D-AD4D-D64F97550429}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Common/Commonreport.aspx
+ Time Of Error            : 03-10-2022 16:48:02
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 1017
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CancelIPDReport {08E3F4FF-1859-4092-B8D9-FC7F9E818EBA}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/common/Commonreport.aspx
+ Time Of Error            : 03-10-2022 17:41:57
+ Error Message            : Load report failed.
+ Error Place              :    at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename, OpenReportMethod openMethod, Int16 parentJob)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.Load(String filename)
+   at Design_common_Commonreport.Page_Load(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\common\Commonreport.aspx.cs:line 998
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : CrystalDecisions.Shared.CrystalReportsException
+ TargetSite               : Void EnsureDocumentIsOpened()
+ Inner Exception Type     : System.Runtime.InteropServices.COMException
+ Inner Exception          : Error in File CollectionReportDetail {BB8684F7-5009-4367-9C50-3F486DD98DB1}.rpt:
+Access to report file denied. Another program may be using it.
+ Inner Source             : Analysis Server
+ Inner Stack Trace        :    at CrystalDecisions.ReportAppServer.ClientDoc.ReportClientDocumentClass.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.Open(Object& DocumentPath, Int32 Options)
+   at CrystalDecisions.ReportAppServer.ReportClientDocumentWrapper.EnsureDocumentIsOpened()

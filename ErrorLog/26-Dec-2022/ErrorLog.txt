@@ -1,0 +1,13 @@
+  **********************************************************  
+ Page Name                : /Tenwek/Design/OPD/CardPrint.aspx
+ Time Of Error            : 26-12-2022 13:10:56
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   at System.IO.DirectoryInfo.Create()
+   at All_LoadData.createDocumentFolder(String folderName, String subFolderName, String anotherSubFolderName) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\BLL\All_LoadData.cs:line 1534
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type               : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)

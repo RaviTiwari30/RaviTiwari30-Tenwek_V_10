@@ -1,0 +1,678 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto">
+    <div id="divInvestigationPrescribe">
+                <div class="row">                                                         
+                            <div class="Purchaseheader">
+                                Centre Details &nbsp; &nbsp;
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                     <div class="col-md-22">
+                                        <div id="chk_prev" style="width:100%; height:auto; overflow:auto;"></div>
+                                     </div>
+                                <div class="col-md-1"></div>
+                            <div class="row"></div>
+                                <div id="divItems" style="width:100%; height:250px; overflow:auto;"></div>
+                                    <div class="row"></div>
+                                <div id="div1" style="width:100%; height:50px; overflow:auto;">
+                                     <div class="Purchaseheader">
+                                        Login Details &nbsp; &nbsp; <input id="cbUpdateNamePassword" type="checkbox" name="UpdateNamePassword" onclick="checkUpdateNamePassword(this);"> Update Login
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-md-2">
+                                                <label class="pull-left">
+                                                   Username
+                                                </label>
+                                                <b class="pull-right">:</b>
+                                            </div>
+                                            <div class="col-md-3">
+                                               <input type="text"  disabled autocomplete="off" id="txtUsername" class="requiredField"  data-title="Enter Username" width="80px"  />
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class="pull-left">
+                                                    Password
+                                                </label>
+                                                <b class="pull-right">:</b>
+                                            </div>
+                                            <div class="col-md-3">
+                                                  <input type="password" disabled id="txtPassword" autocomplete="off" class="requiredField" value="" data-title="Enter Password"  width="80px"  />
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label class="pull-left">
+                                                    Confirm Paassword
+                                                </label>
+                                                <b class="pull-right">:</b>
+                                            </div>
+                                            <div class="col-md-3">
+                                                 <input type="password" disabled id="txtConfirmPassword" autocomplete="off"  value="" class="requiredField" data-title="Enter Confirm Password"  />
+
+                                            </div>
+                                         <div class="col-md-8"></div>
+                                    </div>
+
+
+                                </div>
+                            </div>                  
+                      
+                        <!--    <div class="Purchaseheader">
+                                Module Details &nbsp; &nbsp;
+                            </div>-->
+                            <div class="row" style="display:none;">                                                          
+                                 <div id="sidebar2">
+                                        <div class="row">
+                                                <div class="col-md-3">
+                                                    <label class="pull-left">
+                                                        <strong>Centre Name</strong>
+                                                    </label>
+                                                    <b class="pull-right">:</b>
+                                                </div>
+                                                <div class="col-md-8">
+                                                 <span id="SpnCentreName"></span>
+                                               
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label class="pull-left">                              
+                                                    </label>
+                                                    <b class="pull-right"></b>
+                                                </div>
+                                                <div class="col-md-8">
+                                                   <span id="SpnCentreID" style="display:none;"></span>                             
+                                                </div>
+                                        </div>
+                                        <span id="SpnRoleID"  style="display:none;"></span>        
+                                        <div id="chk_prev_role"></div>
+                                      <div class="row">
+                                        <div class="col-md-24">
+                                            <div id="RoleWiseList" style="height:200px; overflow:auto;">
+
+                                            </div>
+                                        </div>
+                                      </div>  
+                                </div>                                            
+                            </div>                                                                                                                                           
+                    </div>
+
+          <div style="text-align: center" class="row col-md-24">
+               <input style="width: 80px;display:none;" type="button" id="btnPrevious" runat="server" value="Previous" onclick="PreviousTab()" />&nbsp;&nbsp;&nbsp;&nbsp;
+               <input style="width: 80px" type="button" id="btnSave" runat="server" value="Save" onclick="$saveCenterRoleDetails(this)" />&nbsp;&nbsp;&nbsp;&nbsp;
+               <input style="width: 80px;display:none;" type="button" id="btnNext" runat="server" value="Next" onclick="NextTab()" />
+          </div>
+      </div>
+ </div>         
+           
+<script id="CenterAccessScript">
+    $(function () {
+        $commonJsInit(function () { });
+
+
+        if ($("#empid").text() != "") {
+          //GetUserAccess($("#empid").text());
+          
+        }
+        
+    });
+
+
+
+    function checkUpdateNamePassword(val)
+    {
+        if (val.checked == true) {
+          
+            document.getElementById("txtUsername").disabled = false;
+            document.getElementById("txtPassword").disabled = false;
+            document.getElementById("txtConfirmPassword").disabled = false;
+        }
+        else {
+            document.getElementById("txtUsername").disabled = true;
+            document.getElementById("txtPassword").disabled = true;
+            document.getElementById("txtConfirmPassword").disabled = true;
+        }
+
+
+    }
+
+
+    var $saveCenterRoleDetails = function (btnSave) {
+        var password = $("#txtPassword").val();
+        var confirmPassword = $("#txtConfirmPassword").val();
+        if (document.getElementById("cbUpdateNamePassword").checked) {
+
+
+            if ($("#txtUsername").val() == '') {
+                $("#txtUsername").focus();
+                modelAlert('Enter Username');
+                return;
+            }
+
+            if (password == '') {
+                $("#txtPassword").focus();
+                modelAlert('Enter Password');
+                return;
+            }
+            if (confirmPassword == '') {
+                $("#txtConfirmPassword").focus();
+                modelAlert('Confirm Password');
+                return;
+            }
+            if (password != confirmPassword) {
+                modelAlert('Passwords do not match');
+                $("#txtPassword,#txtConfirmPassword").val('');
+                $("#txtPassword").focus();
+                return false;
+            }
+        }
+        getCenterRoleDetails(function (CenterRoleDetails) {
+            $(btnSave).attr('disabled', true).val('Submitting...');
+            serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/saveUserRoles', CenterRoleDetails, function (response) {
+                var $responseData = JSON.parse(response);
+                modelAlert($responseData.response, function () {
+                    if ($responseData.status) {
+                        $(btnSave).removeAttr('disabled').val('Save');
+                        // GetUserAccess($("#empid").text());
+                        if (parseInt($("#SpnTabPosition").text()) < 5)
+                            NextTab();
+                    }
+                    else
+                        $(btnSave).removeAttr('disabled').val('Save');
+                });
+            });
+        });
+    }
+
+    var getCenterRoleDetails = function (callback) {
+        var data = []; var roleId = "", empId = "", centerId = "", status = false;
+        empId = $.trim($("#empid").text());
+
+
+        var IsUpdateLogin = 0;
+        if (document.getElementById("cbUpdateNamePassword").checked) {
+            IsUpdateLogin = 1;
+        }
+
+        jQuery("#tableCentreAccessItems tbody tr").each(function () {
+            var id = $(this).attr("id");
+            var row = $(this).closest("tr");
+            roleId = $.trim($(row).find('#tdRoleID').text());
+           
+
+            var _Center = row.find('._Center');
+            _Center.each(function (j, type) {
+                var centerId = parseInt(type.id);
+                if ($(type).find("#Center_" + type.id).is(':checked') == true)
+                    status = true;
+                else
+                    status = false;
+
+               
+                    var centerId = parseInt(type.id);
+                    data.push({
+                        RoleID: roleId, EmployeeID: empId, CenterID: centerId, Status: status,
+                        Password: $.trim($('#txtPassword').val()),
+                        UserName: $.trim($('#txtUsername').val()),
+                        IsUpdateLogin: $.trim(IsUpdateLogin)
+                    });
+
+             
+
+
+            });
+        });
+        if (data.length < 1) {
+            data.push({
+                RoleID: 0, EmployeeID: empId, CenterID: 0, Status: true,
+                Password: $.trim($('#txtPassword').val()),
+                UserName: $.trim($('#txtUsername').val())
+            });
+            callback({ data: data });
+        }
+        else
+            callback({ data: data });
+    }
+
+    function GetUserAccess(EmpId) {
+        serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/GetUserAccess', { EmpId: $("#empid").text() }, function (response) {
+            if (response != "") {
+                items = JSON.parse(response);
+                var outputPatient = $('#templateItems').parseTemplate(items);
+                $('#divItems').html(outputPatient).customFixedHeader();
+            }
+            else
+                $('#divItems').empty();
+        });
+
+        GetUserNames1();
+    }
+
+    function GetUserNames1() {
+        serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/GetUserNames', { EmpId: $("#empid").text() }, function (response) {
+            var responseData = JSON.parse(response);
+            if (responseData.status) {
+                items = responseData.response;
+
+               
+                $('#txtUsername').val(items[0].UserName);
+            }
+            else
+                $('#txtUsername').val("");
+          
+        });
+    }
+
+    function GetSetCentre(EmpId) {
+        $.ajax({
+            data: JSON.stringify({ EmployeeId: EmpId }),
+            dataType: 'JSON',
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            url: '../EDP/UserPrivilege/UserPrivilege.asmx/GetSetCentre',
+            success: function (responce) {
+                if (responce.d != "") {
+                    CentreData = JSON.parse(responce.d);
+                    CreateCheckBoxList(CentreData);
+                }
+            },
+            error: function () { }
+        });
+    }
+
+    function CreateCheckBoxList(checkboxlistItems) {
+        $('#chk_prev div').remove();
+        var Tr = $('<div class="row"></div>');
+        var counter = 0;
+        var IsChecked = false;
+        var Isdisabled = true;
+        $(checkboxlistItems).each(function () {
+            if (this.CentreSet == 'TRUE') {
+                IsChecked = true; Isdisabled = false;
+            }
+            else {
+                IsChecked = false; Isdisabled = true;
+            }
+            Tr.append($('<div class="col-md-6"></div>').append($('<input>').attr({
+                type: 'checkbox', name: 'chklistitem', value: this.CentreID, id: 'chklistitem' + counter,
+                checked: IsChecked, onclick: 'EnableCentre(this)',
+            })).append(
+            $('<button>').attr({
+                type: 'button', id: 'btnSearch' + this.CentreID, value: this.CentreName, onclick: 'ShowUserPrivilege(this)', class: 'ItDoseButton', disabled: Isdisabled,
+                CentreID: this.CentreID,
+            }).text(this.CentreName)));
+
+
+        });
+        $('#chk_prev').append(Tr);
+    }
+
+    function EnableCentre(elemID) {
+        var CentreId = elemID.value;
+        var IsChk = false;
+        if ($(elemID).prop("checked"))
+            IsChk = true;
+        $.ajax({
+            data: JSON.stringify({ EmployeeID: $("#empid").text(), CentreID: CentreId, IsChecked: IsChk }),
+            dataType: 'JSON',
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            url: '../EDP/UserPrivilege/UserPrivilege.asmx/UpdateCentre',
+            success: function (responce) {
+                GetSetCentre($("#empid").text());
+                GetUserAccess($("#empid").text());
+
+                GetUserNames($("#empid").text());
+
+
+
+
+                $("#sidebar").css("display", "none");
+                if (responce.d == "1")
+                    modelAlert('Centre Enabled Successfully');
+                else if (responce.d == "2")
+                    modelAlert('Centre Disabled Successfully');
+                else
+                    modelAlert('Error Occured');
+
+            },
+            error: function () { }
+        });
+    }
+
+    function ShowUserPrivilege(rowID) {
+        var j_rowID = $(rowID);
+        $(".ItDoseButton").each(function () {
+            if ($(this).is(j_rowID)) {
+                j_rowID.css('color', 'red');
+                $("#SpnCentreName").text(this.value);
+                $("#SpnCentreID").text($(this).attr("centreid"));
+                GetSetRole($("#empid").text(), $("#SpnCentreID").text());
+
+                $("#sidebar").show({
+                    opacity: 0.5,
+                    left: "+=50",
+                    width: 'toggle',
+                    display: 'block'
+                }, 1000, function () {
+                });
+            }
+            else {
+                $(this).css('color', 'white');
+            }
+        });
+    }
+
+    function GetSetRole(EmpId, CentreID) {
+        $.ajax({
+            data: JSON.stringify({ EmployeeId: EmpId, CentreID: CentreID }),
+            dataType: 'JSON',
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            url: '../EDP/UserPrivilege/UserPrivilege.asmx/GetSetRole',
+            success: function (responce) {
+                if (responce.d != "") {
+                    roleData = JSON.parse(responce.d);
+                    CreateCheckBoxListRole(roleData);
+                }
+            },
+            error: function () { }
+        });
+    }
+
+    function CreateCheckBoxListRole(checkboxlistItems) {
+        $('#chk_prev_role div').remove();
+        var Tr = $('<div class="row"></div>');
+        var counter = 0;
+        var IsChecked = false;
+        var Isdisabled = true;
+        $(checkboxlistItems).each(function () {
+            if (this.RoleSet == 'TRUE') {
+                IsChecked = true; Isdisabled = false;
+            }
+            else {
+                IsChecked = false; Isdisabled = true;
+            }
+            Tr.append($('<div class="col-md-5"></div>').append($('<input>').attr({
+                type: 'checkbox', name: 'chklistRoleitem', value: this.ID, id: 'chklistRoleitem' + counter,
+                checked: IsChecked, onclick: 'EnableRole(this)',
+            })).append(
+            $('<button>').attr({
+                type: 'button', id: 'btnRoleSearch' + this.ID, value: this.RoleName, onclick: 'ShowRolePages(this)', class: 'ItDoseButton', disabled: Isdisabled,
+                RoleID: this.ID,
+            }).text(this.RoleName)));
+        });
+        $('#chk_prev_role').append(Tr);
+    }
+
+    function EnableRole(elemID) {
+        var RoleId = elemID.value;
+        var IsChk = false;
+        if ($(elemID).prop("checked"))
+            IsChk = true;
+
+        $.ajax({
+            data: JSON.stringify({ EmployeeID: $("#empid").text(), RoleID: RoleId, CentreID: $("#SpnCentreID").text(), IsChecked: IsChk }),
+            dataType: 'JSON',
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            url: '../EDP/UserPrivilege/UserPrivilege.asmx/UpdateRole',
+            success: function (responce) {
+                GetSetRole($("#empid").text(), $("#SpnCentreID").text());
+                if (responce.d == "1")
+                    modelAlert('Role Enabled Successfully');
+                else if (responce.d == "2")
+                    modelAlert('Role Disabled Successfully');
+                else
+                    modelAlert('Error Occured');
+
+
+            },
+            error: function () { }
+        });
+    }
+
+    function ShowRolePages(rowID) {
+        var j_rowID = $(rowID);
+        $(".ItDoseButton").each(function () {
+            if ($(this).is(j_rowID)) {
+                j_rowID.css('color', 'red');
+                $("#SpnRoleID").text($(this).attr("RoleID"));
+                BindRolePages($("#empid").text(), $(this).attr("RoleID"), $("#SpnCentreID").text());
+                $("#sidebar").show({
+                    opacity: 0.5,
+                    left: "+=50",
+                    width: 'toggle',
+                    display: 'block'
+                }, 1000, function () {
+                });
+            }
+            else {
+                $(this).css('color', 'white');
+            }
+        });
+
+    }
+
+    function BindRolePages(EmpID, RoleId,CentreID) {
+        $.ajax({
+            data: JSON.stringify({ EmployeeID: EmpID, RoleID: RoleId, CentreID: CentreID }),
+            dataType: 'JSON',
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            url: '../EDP/UserPrivilege/UserPrivilege.asmx/BindRegisterPage',
+            success: function (responce) {
+                if (responce.d != "") {
+                    Data = JSON.parse(responce.d);
+                    var OutData = $('#sc_RoleWise_detail').parseTemplate(Data);
+                    $('#RoleWiseList').html(OutData);
+                    $('#RoleWiseList').show();
+                }
+            },
+            error: function () { }
+        });
+    }
+
+    var NextTab = function () {
+        serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/NextTab', { EmpId: $("#empid").text() }, function (response) {
+            var responseData = JSON.parse(response);
+            if (responseData.status) {
+                SearchEmpByEmpID($("#empid").text());
+                GetSetCentre($("#empid").text());
+                modelAlert('Going to Next Tab');
+                getDepartment(function () { });
+            }
+        });
+    }
+    var PreviousTab = function () {
+        serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/PreviousTab', { EmpId: $("#empid").text() }, function (response) {
+            var responseData = JSON.parse(response);
+            if (responseData.status) {
+                SearchEmpByEmpID($("#empid").text());
+                GetSetCentre($("#empid").text());
+                //GetSetRole($("#empid").text(), $("#SpnCentreID").text())
+                modelAlert('Going to Previous Tab');
+                getDepartment(function () { });
+            }
+        });
+    }
+
+    var checkAll = function (checkStatus) {
+        $('#tableCentreAccessItems tr #tdItemSelect input[type=checkbox]').prop('checked', checkStatus);
+    }
+    var checkAllCenter = function (CenterID, checkStatus) {
+        $('#tableCentreAccessItems tr #tdItemSelect' + CenterID + ' input[type=checkbox]').prop('checked', checkStatus);
+    }
+
+</script>
+
+ <script id="sc_RoleWise_detail" type="text/html">
+        <table class="GridViewStyle" style="width:100%;">
+            <thead>
+                <tr>
+                    <td class="GridViewHeaderStyle">S.N.</td>
+                    <td class="GridViewHeaderStyle" style="display:none;">ID</td>
+                    <td class="GridViewHeaderStyle">PageName</td>
+                    <td class="GridViewHeaderStyle">URL</td>
+                    <td class="GridViewHeaderStyle" style="display:none;">upa_ID</td>
+                    <td class="GridViewHeaderStyle"></td>
+
+                </tr>
+            </thead>
+            <tbody>
+                <#dataLength=Data.length;
+                for(var i=0;i<dataLength;i++)
+                    {
+                    objData=Data[i];
+                #>
+                    <tr class="text_data selected_grey" id="<#=i+1#>"
+                         <#                      
+                             #>  style="background-color:<#=objData.RowColour#>" <#                        
+						 #>                                                
+                        >               
+                     <td class="GridViewItemStyle" id="tdsno"><#=(i+1)#></td>
+                     <td class="GridViewItemStyle" id="tdEmployee_ID" style="display:none;"><#=objData.EmployeeID#></td>
+                     <td class="GridViewItemStyle" id="tdName"><#=objData.PageName#></td>
+                     <td class="GridViewItemStyle" id="tdHouse_No"><#=objData.URL#></td>
+                     <td class="GridViewItemStyle" id="tdPhone" style="display:none;"><#=objData.upa_ID#></td>
+                   
+                     <td id="tdchkselect" class="GridViewLabItemStyle">
+                        <# if(objData.Checked=="false"){ #> 
+                    <input type="checkbox" id="chkselect<#=i+1#>" />
+                        <# } else{ #>
+                      <input type="checkbox" id="chkselect<#=i+1#>" checked="checked"  />
+                        <#} #>   
+
+                </td>
+
+                    </tr>
+                    <#}#>
+            </tbody>
+        </table>
+    </script>
+
+ <style type="text/css">
+     .highlighted {
+         background: LightBlue;
+     }
+
+     .nonhighlighted {
+         background: none;
+     }
+
+     .SelectedRole {
+         background: red;
+     }
+
+     .text_data {
+         font-family: Verdana;
+         font-size: 12px;
+         font-weight: none;
+     }
+
+         .text_data:hover {
+             cursor: pointer;
+             background-color: LightBlue;
+         }
+
+     .selected_grey {
+         background-color: none;
+     }
+
+     .RoleButton {
+         COLOR: #fff;
+         font-size: 8pt;
+         font-family: Verdana, Arial, sans-serif, sans-serif;
+         /*background-color: #008CBA;*/
+         /*border: 1px #4CAF50;*/
+         cursor: pointer;
+         /*border-radius: 10px;*/
+         width: auto;
+     }
+
+     #sidebar {
+         width: 100%;
+         height: auto;
+         float: left;
+         border: 1px solid;
+         background-color: #aec6d2;
+         padding: 5px;
+         border-radius: 5px;
+     }
+
+     #toggle {
+         width: 10%;
+         height: 40%;
+         margin-right: 6.5%;
+         margin-top: 3.5%;
+         float: left;
+     }
+ </style>
+
+ <script id="templateItems" type="text/html">  
+	  <table  id="tableCentreAccessItems" cellspacing="0" rules="all" border="1" style="width:auto;border-collapse :collapse;">
+		<thead>
+		<tr id="Header">
+             <td class="GridViewHeaderStyle">S.N.</td>
+			<th class="GridViewHeaderStyle" scope="col" style="width: 10px; display:none;" ><input id="chkAll" onchange="checkAll(this.checked)" type="checkbox" /></th>
+			<th class="GridViewHeaderStyle" scope="col"  style="display:none;">Role ID</th>    
+			<th class="GridViewHeaderStyle" scope="col" style="width:130px; text-align:left;">Module</th>   
+			<#
+				   var dataLength=items.length;          
+					for(var  key in items[0])
+						{
+
+						   if(key.indexOf('_')>-1)
+						#>          
+						   <th class="GridViewHeaderStyle" scope="col" >
+								<table  id="CentreName" cellspacing="0" rules="all"  style="width:100%;border-collapse :collapse; border: transparent;">
+									 <thead>
+										  <tr>
+											<th  scope="col" >
+                                                <span  style="font-size:10px;"  id="tdCenter<#=key.split("_")[1]#>" CenterID="<#=key.split("_")[1]#>"><#=key.split("_")[0]#></span>
+
+                                                <input  style="font-size:10px;"  id='chkAll<#=key.split("_")[1]#>' onchange="checkAllCenter('<#=key.split("_")[1]#>',this.checked)"  type="checkbox" />
+                                             
+											</th>
+										 </tr>										
+									 </thead>
+								</table>
+						   </th>    
+					<#}#>   						
+		</tr>
+			</thead>
+		<tbody>				   
+			<#			
+				var objRow;
+				for(var j=0;j<dataLength;j++)
+				{
+					objRow = items[j];
+				#>          
+				<tr id="tr_<#=(j+1)#>">
+                      <td class="GridViewItemStyle" id="tdSNo"><#=(j+1)#></td>
+					<td class="GridViewItemStyle" id="tdItemSelect0" style="text-align:center;display:none;"><input   type="checkbox" /> </td>
+					<td class="GridViewItemStyle" id="tdRoleID" style="display:none;"><#=objRow.RoleID#></td>
+					<td class="GridViewItemStyle" id="tdRoleName"><#=objRow.RoleName#></td>
+				
+					<#
+					for(var  key in objRow)
+						{
+                    
+						   if(key.indexOf('_')>-1)
+						#>          
+						   <td class="GridViewItemStyle">
+								 <table id='<#=key.split("_")[1]#>'  class="_Center"  cellspacing="0" rules="all"  style="width:100%;border-collapse :collapse; border: transparent;">
+									 <tbody>
+										 <tr>
+										<td id='tdItemSelect<#=key.split("_")[1]#>'>   
+                                            
+                                         <input id='Center_<#=key.split("_")[1]#>' type="checkbox"  <#= (objRow[key]==1)?'checked':'' #> />     
+                                                                                                                                                                                                                           		             
+                                          <input id='td<#=key.split("_")[1]#>'  class="OPD" style="padding:2px;display:none;"   value='<#=objRow[key] #>' type="text" 
+                                          class="ItDoseTextinputNum" onpaste="return false" />                                                                                                                                                                                                                                                      		                                                                                                                                                          
+										</td>									
+										</tr>
+									 </tbody>
+								 </table>
+						   </td>
+					<#}#>   
+
+				</tr>
+			<#}#>   
+			 </tbody>         
+		 </table>       
+	</script>

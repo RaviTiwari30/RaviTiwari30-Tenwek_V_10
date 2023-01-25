@@ -1,0 +1,452 @@
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/Reports/IssueReport.aspx/Store_Get_IssueDetail
+ Time Of Error            : 29-09-2022 16:08:18
+ Error Message            : Fatal error encountered during command execution.
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_IssueReport.Store_Get_IssueDetail(List`1 data) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\Reports\IssueReport.aspx.cs:line 30
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type               : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+ Inner Exception Type     : MySql.Data.MySqlClient.MySqlException
+ Inner Exception          : Fatal error encountered attempting to read the resultset.
+ Inner Source             : MySql.Data
+ Inner Inner Exception    : Reading from the stream has failed.
+ Inner Inner Source       : MySql.Data
+ Inner Stack Trace        :    at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 29-09-2022 16:10:11
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 29-09-2022 16:10:14
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 29-09-2022 16:10:16
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 29-09-2022 16:10:38
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 29-09-2022 16:27:29
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 29-09-2022 16:27:47
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 29-09-2022 16:27:53
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 29-09-2022 16:28:23
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 29-09-2022 16:29:48
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 29-09-2022 16:30:31
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 29-09-2022 16:58:00
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetDirectories(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetDirectories(String searchPattern)
+   at Design_Finance_UpdatePanelApproval.grdPanel_App_RowCommand(Object sender, GridViewCommandEventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 579
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 29-09-2022 16:58:00
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetDirectories(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetDirectories(String searchPattern)
+   at Design_Finance_UpdatePanelApproval.grdPanel_App_RowCommand(Object sender, GridViewCommandEventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 579
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 29-09-2022 16:58:00
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetDirectories(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetDirectories(String searchPattern)
+   at Design_Finance_UpdatePanelApproval.grdPanel_App_RowCommand(Object sender, GridViewCommandEventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 579
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 29-09-2022 16:58:00
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetDirectories(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetDirectories(String searchPattern)
+   at Design_Finance_UpdatePanelApproval.grdPanel_App_RowCommand(Object sender, GridViewCommandEventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 579
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 29-09-2022 16:58:00
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetDirectories(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetDirectories(String searchPattern)
+   at Design_Finance_UpdatePanelApproval.grdPanel_App_RowCommand(Object sender, GridViewCommandEventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 579
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 29-09-2022 16:58:00
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetDirectories(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetDirectories(String searchPattern)
+   at Design_Finance_UpdatePanelApproval.grdPanel_App_RowCommand(Object sender, GridViewCommandEventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 579
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 29-09-2022 16:58:00
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetDirectories(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetDirectories(String searchPattern)
+   at Design_Finance_UpdatePanelApproval.grdPanel_App_RowCommand(Object sender, GridViewCommandEventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 579
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 29-09-2022 16:58:00
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetDirectories(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetDirectories(String searchPattern)
+   at Design_Finance_UpdatePanelApproval.grdPanel_App_RowCommand(Object sender, GridViewCommandEventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 579
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 29-09-2022 16:58:01
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetDirectories(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetDirectories(String searchPattern)
+   at Design_Finance_UpdatePanelApproval.grdPanel_App_RowCommand(Object sender, GridViewCommandEventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 579
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 29-09-2022 16:58:01
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetDirectories(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetDirectories(String searchPattern)
+   at Design_Finance_UpdatePanelApproval.grdPanel_App_RowCommand(Object sender, GridViewCommandEventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 579
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 29-09-2022 16:58:19
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetDirectories(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetDirectories(String searchPattern)
+   at Design_Finance_UpdatePanelApproval.grdPanel_App_RowCommand(Object sender, GridViewCommandEventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 579
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/UpdatePanelApproval.aspx
+ Time Of Error            : 29-09-2022 16:58:19
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetDirectories(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetDirectories(String searchPattern)
+   at Design_Finance_UpdatePanelApproval.grdPanel_App_RowCommand(Object sender, GridViewCommandEventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\IPD\UpdatePanelApproval.aspx.cs:line 579
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 29-09-2022 16:58:36
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Lab/HandlerCS.ashx
+ Time Of Error            : 29-09-2022 17:06:12
+ Error Message            : The network path was not found.
+
+ Error Place              :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   at System.IO.DirectoryInfo.Create()
+   at All_LoadData.createDocumentFolder(String folderName, String subFolderName, String anotherSubFolderName) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\BLL\All_LoadData.cs:line 1534
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : System.IO.IOException
+ TargetSite               : Void WinIOError(Int32, System.String)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 29-09-2022 17:09:13
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/EDP/UserAuthorization.aspx
+ Time Of Error            : 29-09-2022 18:01:03
+ Error Message            : Unknown column 'UpdatedBy' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 208
+   at Design_EDP_UserAuthorization.btnSave_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\UserAuthorization.aspx.cs:line 436
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/EDP/UserAuthorization.aspx
+ Time Of Error            : 29-09-2022 18:02:24
+ Error Message            : Unknown column 'UpdatedBy' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 208
+   at Design_EDP_UserAuthorization.btnSave_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\UserAuthorization.aspx.cs:line 436
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/EDP/UserAuthorization.aspx
+ Time Of Error            : 29-09-2022 18:02:29
+ Error Message            : Unknown column 'UpdatedBy' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 208
+   at Design_EDP_UserAuthorization.btnSave_Click(Object sender, EventArgs e) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\UserAuthorization.aspx.cs:line 436
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/EDP/ReferDoctorMaster.aspx/SaveRefDoc
+ Time Of Error            : 29-09-2022 21:18:26
+ Error Message            : Duplicate entry '1' for key 'DoctorID'
+ Error Place              :    at doctor_referal.Insert() in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\Doctor_Referal.cs:line 186
+   at Design_EDP_ReferDoctorMaster.SaveRefDoc(String Title, String DocName, String Mobile, String Address) in d:\RaviTiwari\ProductionCode\Tenwek\Design\EDP\ReferDoctorMaster.aspx.cs:line 60
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.String Insert()

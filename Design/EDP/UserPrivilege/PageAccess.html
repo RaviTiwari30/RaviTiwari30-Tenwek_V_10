@@ -1,0 +1,281 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto">
+    <div id="divInvestigationPrescribe">
+                <div class="row">                                                         
+                            <div class="Purchaseheader">
+                                Page Access &nbsp; &nbsp;
+                            </div>
+                            <div class="row">                                                             
+                                <div id="div_Pages" style="width:100%; height:350px; overflow:auto;"></div>
+                            </div>                                                                                                                                                                                                                                    
+                    </div>
+
+          <div style="text-align: center" class="row col-md-24">
+                      <input style="width: 80px;display:none;" type="button" id="btnPrevious" runat="server" value="Previous" onclick="PreviousTab()" />&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input style="width: 80px;" type="button" id="btnSave" runat="server" value="Save" onclick="$saveUserPageAccess(this)" />&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input style="width: 80px;display:none;" type="button" id="btnNext" runat="server" value="Next" onclick="NextTab()" />
+          </div>
+    </div>                                                                     
+ </div>         
+           
+<script id="prescribedInvestigationScript">   
+    $(function () {
+        $commonJsInit(function () { });
+        if ($("#empid").text() != "")
+            GetRoleWisePages($("#empid").text());
+    });
+ 
+    function GetRoleWisePages(EmpId) {
+        serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/GetRoleWisePages', { EmpId: $("#empid").text() }, function (response) {
+            RolePages = JSON.parse(response);
+            var output = $('#templatePages').parseTemplate(RolePages);
+            $('#div_Pages').html(output).customFixedHeader();
+        });
+    }
+
+    var PreviousTab = function () {
+        serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/PreviousTab', { EmpId: $("#empid").text() }, function (response) {
+            var responseData = JSON.parse(response);
+            if (responseData.status) {
+                SearchEmpByEmpID($("#empid").text());
+                GetSetCentre($("#empid").text());
+                GetUserAccess($("#empid").text());
+                modelAlert('Going to Previous Tab');
+                getDepartment(function () { });
+            }
+        });
+    }
+    var NextTab = function () {
+        serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/NextTab', { EmpId: $("#empid").text() }, function (response) {
+            var responseData = JSON.parse(response);
+            if (responseData.status) {
+                SearchEmpByEmpID($("#empid").text());
+                GetSetCentre($("#empid").text());
+                modelAlert('Going to Next Tab');
+                getDepartment(function () { });
+            }
+        });
+    }
+
+    var $saveUserPageAccess = function (btnSave) {
+        $(btnSave).attr('disabled', true).val('Submitting...');
+        getPageAccessDetail(function (PageAccessDetails) {
+           
+            serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/SavePageAccess', PageAccessDetails, function (response) {
+                var $responseData = JSON.parse(response);
+                modelAlert($responseData.response, function () {
+                    if ($responseData.status) {
+                        $(btnSave).removeAttr('disabled').val('Save');
+                        //GetRoleWisePages($("#empid").text());
+                        //GetUserAccess($("#empid").text());
+                        if (parseInt($("#SpnTabPosition").text()) < 5)
+                            NextTab();
+                    }
+                    else
+                        $(btnSave).removeAttr('disabled').val('Save');
+                });
+            });
+        });
+    }
+
+    var getPageAccessDetail = function (callback) {
+        var data = []; var roleId = "", empId = "", roleName = "", menuId = "", urlId = "", urlName = "", status = false;
+        jQuery("#tablePageItems tbody tr").each(function () {
+            var id = $(this).attr("id");
+            if (id != "Header" && id != "undefined") {
+                var row = $(this).closest("tr");
+                empId = $.trim($("#empid").text());
+                roleId = $.trim($(row).find('#tdRoleID').text());
+                roleName = $.trim($(row).find('#tdRoleName').text());
+                menuId = $.trim($(row).find('#tdMenuID').text());
+                urlId = $.trim($(row).find('#tdUrlID').text());
+                var _Center = row.find('._Center');
+                _Center.each(function (j, type) {
+                    var centerId = parseInt(type.id);
+                    if ($(type).find("#Center_" + type.id).is(':checked') == true)
+                        status = true;
+                    else
+                        status = false;
+
+                  
+                    
+                        var centreId = parseInt(type.id);
+                        data.push({
+                            RoleID: roleId, MenuID: menuId, UrlID: urlId, EmployeeID: empId, RoleName: roleName, CentreID: centerId, Status: status
+                        });
+                   
+                });
+            }
+
+        });
+        if (data.length < 1)
+            modelAlert('Please Select Atleast one');
+        else
+            callback({ data: data });
+    }
+
+    var checkAll = function (checkStatus) {
+        $('#tablePageItems tr #tdItemSelect input[type=checkbox]').prop('checked', checkStatus);
+    }
+    var chkAllModule = function (RoleID, rowid, checkStatus) {
+        jQuery("#tablePageItems tbody tr").each(function () {
+            var id = $(this).attr("id");
+            var rowidc = $(this).closest("tr");
+            var tdRoleID = rowidc.find("#tdRoleID").text();
+                if(tdRoleID==RoleID)
+                    rowidc.find('#tdItemSelect input[type=checkbox]').prop('checked', checkStatus);
+        });        
+    }
+
+    var checkAllCenter = function (CenterID, checkStatus) {
+        $('#tablePageItems tr #tdItemSelect' + CenterID + ' input[type=checkbox]').not("[disabled]").prop('checked', checkStatus);
+    }
+
+</script>
+
+
+
+ <script id="templatePages" type="text/html">  
+	  <table  id="tablePageItems" cellspacing="0" rules="all" border="1" style="width:auto;border-collapse :collapse;">
+		    
+          <thead>
+		    <tr id="Header">
+            <td class="GridViewHeaderStyle">S.N.</td>
+			<th class="GridViewHeaderStyle" scope="col" style="width: 10px;display:none;" ><input id="chkAll"  type="checkbox" onchange="checkAll(this.checked)" /></th>
+			<th class="GridViewHeaderStyle" scope="col" style="text-align:left;font-size:12px;">Module</th>    
+			<th class="GridViewHeaderStyle" scope="col" style="text-align:left;font-size:12px;">Menu</th>   
+            <th class="GridViewHeaderStyle" scope="col" style="text-align:left;">Display Name</th> 
+			<th class="GridViewHeaderStyle" scope="col" style="display:none; text-align:left;">Role ID</th>    
+			<th class="GridViewHeaderStyle" scope="col" style="display:none;">Menu ID</th>  
+            <th class="GridViewHeaderStyle" scope="col" style="display:none;">Url ID</th>    	
+                <#
+				   var dataLength=RolePages.length;          
+					for(var  key in RolePages[0])
+						{
+
+						   if(key.indexOf('_')>-1)
+						#>          
+						   <th class="GridViewHeaderStyle" scope="col"   >
+								<table  id="CentreName" cellspacing="0" rules="all"  style="width:100%;border-collapse :collapse; border: transparent;">
+									 <thead>
+										  <tr>
+											<th scope="col" >
+                                                <span style="font-size:10px;"  id="tdCenter<#=key.split("_")[1]#>" CenterID="<#=key.split("_")[1]#>"><#=key.split("_")[0]#></span>
+
+                                                <input style="font-size:8px;"  id='chkAll<#=key.split("_")[1]#>' onchange="checkAllCenter('<#=key.split("_")[1]#>',true)"  type="checkbox" <#= (key.split("_")[0]==1)?'checked':'' #> />
+                                             
+											</th>
+										 </tr>										
+									 </thead>
+								</table>
+						   </th>    
+					<#}#> 
+                				
+		    </tr>
+			</thead>
+          		          
+           <tbody>
+                <#dataLength=RolePages.length;
+                for(var i=0;i<dataLength;i++)
+                    {
+                    objData=RolePages[i];
+                #>
+                    <tr class="text_data selected_grey" id="<#=i+1#>" >                       
+                    <td class="GridViewItemStyle" id="tdSNo" ><#=(i+1)#></td>
+                    <td class="GridViewItemStyle"  id="tdItemSelect"  style="text-align:center;display:none;">                        
+                    <input type="checkbox" id="chkAllPages" />
+                    </td>		                                                                        		         
+                    <# 
+                if(i>0)
+                {
+                    if(RolePages[i].RoleName!=RolePages[i-1].RoleName)
+                    {
+                        #>
+                        <td class="GridViewLabItemStyle" id="tdRoleName"   style="width:120px;text-align:left; background-color:#3dbdcf;"  ><#=objData.RoleName#>
+                            <input id='chkAllModule1' onchange="chkAllModule(<#=RolePages[i].RoleID#>,this,this.checked)" style="display:none"   type="checkbox" />
+
+
+                        </td>
+                        <#
+                    }
+                    else
+                    {
+                        #>
+                        <td class="GridViewLabItemStyle" id="td1"  style="width:120px;text-align:left" ></td>
+                        <#
+                    }
+                }
+                else
+                {
+                    #>
+                    <td class="GridViewLabItemStyle" id="td2"  style="width:120px;text-align:left;background-color:#3dbdcf;" ><#=objData.RoleName#>
+                         <input id='Checkbox1' onchange="chkAllModule(<#=RolePages[i].RoleID#>,this,this.checked)" style="display:none"   type="checkbox" />
+
+                    </td>
+                    <#
+                }
+           #>       
+                          <# 
+                if(i>0)
+                {
+                    if(RolePages[i].MenuName!=RolePages[i-1].MenuName)
+                    {
+                        #>
+                        <td class="GridViewLabItemStyle" id="td3"   style="width:120px;text-align:left; background-color:#3dbdcf;"  ><#=objData.MenuName#>
+                          
+                        </td>
+                        <#
+                    }
+                    else
+                    {
+                        #>
+                        <td class="GridViewLabItemStyle" id="td4"  style="width:120px;text-align:left" ></td>
+                        <#
+                    }
+                }
+                else
+                {
+                    #>
+                    <td class="GridViewLabItemStyle" id="td5"  style="width:120px;text-align:left;background-color:#3dbdcf;" ><#=objData.MenuName#>
+                     
+                    </td>
+                    <#
+                }
+           #>                  
+						
+                    <td class="GridViewItemStyle" id="tdDispName"><#=objData.DispName#></td>
+                    <td class="GridViewItemStyle" id="tdRoleID" style="display:none;"><#=objData.RoleID#></td>
+                    <td class="GridViewItemStyle" id="tdMenuID" style="display:none;"><#=objData.MenuID#></td>
+					<td class="GridViewItemStyle" id="tdUrlID"  style="display:none;"><#=objData.UrlID#></td>	                   
+                        
+                        <#
+					for(var  key in objData)
+						{
+                    
+						   if(key.indexOf('_')>-1)
+						#>          
+						   <td class="GridViewItemStyle">
+								 <table id='<#=key.split("_")[1]#>'  class="_Center"  cellspacing="0" rules="all"  style="width:100%;border-collapse :collapse; border: transparent;">
+									 <tbody>
+										 <tr>
+										<td id='tdItemSelect<#=key.split("_")[1]#>'>   
+                                            
+                                         <input id='Center_<#=key.split("_")[1]#>' type="checkbox" <#=(objData[key]==2)?'disabled':(objData[key]==1)?'checked':'' #>/>     
+                                                                                                                                                                                                                           		             
+                                          <input id='td<#=key.split("_")[1]#>' class="OPD" style="padding:2px;display:none;" value='<#=objData[key] #>' type="text" class="ItDoseTextinputNum" onpaste="return false" />                                                                                                                                                                                                                                                      		                                                                                                                                                          
+										</td>									
+										</tr>
+									 </tbody>
+								 </table>
+						   </td>
+					<#}#>  
+                        
+                        		
+                    </tr>
+                    <#}#>
+            </tbody>
+          
+          
+          
+                
+		 </table>       
+	</script>

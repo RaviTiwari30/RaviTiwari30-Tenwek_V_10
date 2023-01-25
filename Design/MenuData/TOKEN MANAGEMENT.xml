@@ -1,0 +1,78 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>69</ID>
+    <MenuName>Display</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAABGdBTUEAALGPC/xhBQAABGlJREFUOE+NVG1Mm1UUvi3jI6AOM7KhiP8MBtwmYSgOREaFjYQREFQQCAwiji+ZlekgsI6vOGUa0USFKMSNjVJGJvgRNhYV1wEOWtqCfLSFAm1pKeVlpS0tBXo8L7KNMZze9Ml93nPO+7z3Puf2MgiO8G5ZhauT8yHXHcwVFyaTuDAJcWIwiSODQXY4EII/wkBOAMga8lVA2IHY7IRY7XayjNy6ZmeYGQzKaGcU9xzwGiXhvYqKaLEW3pRoIE2khHckaij4awY+GNFAyagWzkhnoQJRJdNBpWwWypGfHtNCEebZWJczqIYMsQqSRCqIlxqA9cfokG8Ox5NE9U31Jo0tQMRntdcC4hJqg95IbngpMbkhJDG1ITQpuSEsKXUdhzZA81AEnQ/GuiBE4OuJ9S+kZzXG3xgxRvPHwCfq6PskXqjsypQbIDgzu9GVkEjcqTfi6U3wQu65JbY5T3NvLyfyTGrfxEhCt9TuEx7xEUkaUHXlTixCWO57Le6E7KU93zwAgGm32x/bGt/uOXtUP5DcK4NnWYcrSbpI3cWeNAErj92ykxD/rS90Uub8Ds1Cx559e9weJs75TeFyYkwnPnZLDr608NuD6q5TSjNEbiN8VWPczV8wT0tsAFV19ZX/JXxSOifO6huH5yJQOHtI01WqWoLD2wj3UMZPRlcBJlYA+DKFPpTFWt8Rj8dz6AfAltwbHIXCpVimF+cINoTzhjVdZ9RLEPVu4X1W3Jhf9hMuWo1yyyqoLCtgRLOb2n+8REuJzSsxfP1iE1KnO9K0cKlcL84XTPyz4nwULpt5UJg/b2wdw9UqlpZh3rYKSEE1Ty0XcTiJQ0ZrjwjtKfm6tuiuMHp8GoULhA8R7pw1HeHfttglRisK2+4Jz+mpxrafuqXWNRBY7HBxYES7PzjYjxanm3ef8GYrsO37OgF2ts0uSgdwhSNrAGqcDQgTovXq9W7hzNzyFHIh+t6Nc/mVn2l7mLwhcCpFj+9acXxT8xwJ8WuhbC9f1ty+eaF/UNF8a0DdLpCorkuG1c3Xfh0q/7ymo0epHWwVSKbO94pUdX+K1WVXfpHtDQl6Fb/hsN68/o3m3TluEXlsHp7j5zc8c3NjkhRXR5Lp7EgynJkkw5FJMne5P5qCeT/kaXTMFeGx85Gsp57YnfxKWoH7h+OUgD5u6+c4TaS+yZ4yQdjxvGZ8yef//MP+rebEqE50jBaOOFJFEoXKjtxpM2T9LtKxe4c7zyoo3hdKQ/O3MybuxVkzt2XOwv1Bb+G2UTgjLs+Zmy9hvEFr4n6lXuR+Om3glk0amgrHdO258oXlpB6ZzScktJzECWcCU/onpdl4XRYOzwAHr8Szch3UTMzBN5Pz8N00Bd8rKbigouA8ogF53dQ8fKnQQ/W4bv0aPYVXaP6QGtIHlBZWTT3/yV2Pn1zf1QF2hbd/wlsl/tGx5wJiYqtfjHmtOghxEBES+yAOYozO03WBWB9wNLZ6f3TcOV9W5MdeHh7FXp4eUX8DLU7l7o6y8nQAAAAASUVORK5CYII=</image>
+    <Items>
+      <URLName>/Design/DoctorScreen/DoctorWiseTokenDisplay.aspx</URLName>
+      <DispName>Doctor Wise Token Display</DispName>
+      <MenuID>69</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/DoctorScreen/DiagnosticWiseTokenDisplay.aspx</URLName>
+      <DispName>Dept Wise Token Display</DispName>
+      <MenuID>69</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/DoctorScreen/DisplayExaminationToken.aspx</URLName>
+      <DispName>Exam. Token Display</DispName>
+      <MenuID>69</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/DisplayWardScreen.aspx</URLName>
+      <DispName>IPD Display Screen</DispName>
+      <MenuID>69</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/DoctorScreen/IPDDisplayFloorWise.aspx</URLName>
+      <DispName>IPD Floor Wise Display</DispName>
+      <MenuID>69</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/OT/DisplayOTScreen.aspx</URLName>
+      <DispName>OT Display Screen</DispName>
+      <MenuID>69</MenuID>
+    </Items>
+    <Items>
+      <URLName>/design/doctorscreen/ScreenSet.aspx</URLName>
+      <DispName>Start Display Screen</DispName>
+      <MenuID>69</MenuID>
+    </Items>
+    <Items>
+      <URLName>/design/doctorscreen/Doctor_Appointment.aspx</URLName>
+      <DispName>Update Display Screen</DispName>
+      <MenuID>69</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>86</ID>
+    <MenuName>Token</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAGYktHRAD/AP8A/6C9p5MAAALhSURBVDhPrVVLTxNRGD13pu3M1NKWgistISUhsDASWMiPMHHha+fvEBNXRmP8HW5ITNj4F0wkQY3EREigQgobA6Wl0Hl0Hp7vtuX9WnjSm07me9z7ffd8Z1RC4AK0vQ7afoj1vx6inotpKIzddpC1TGTttH53FucS7rU8LFabWKr5aHVMuLBgKKVtMRI4SYB8JsTMXQuzYwUUc7a29XEqoeu6mFvYQq5YwmAxD4cnsVNGz9qFF8bw/Ah7e/s4bO3i7aMyHMfpWU8kdF0Pc/OrKE/cQ94ykMQxYm2S0/X37D7LiZVhYN+Psbm6jA9PJ2BnuyfVCaXMN59ruDNaQYHJOhGDTh/sHLgf0imFfS/G1mYVrx+WMcjyddjiehNZlpm3DYTx9ckE4iMb5xiTzZd0Dv1ebnNp20OpMACpvtf/G0H7MqZUHMD3bZ+s6MA48EK0gjScTIZlsA7+ohsuyScxEtv0Uzj0Ihgbu56mhiW0SgxEKkbGiJBWCVKXLLGJTyQHYNckts0ckkt9WdlJ5leAqdES3ICOZoQnkyactCKh6X8BTB7N7ST49DtCEJJalsLPjTqeT0r6/wy1uFZPPi7HmKoMIQjIPSmZJSWJOmLfWUjvFH2CWJGTBjJpAz+qu3hx34RRGbZhwwcviF4x+IqOJjrsZ3jJEpv4mJpfMWMTZJWP0SHyMGunULRC9i8gt+jA7U3+3WTJIEmMG3QwkA5xi6NqZHlF0xz0eqMldRxP2Q3ArhBKx86ULa1A3Ad4QNVoN+o44GyKRGk2XAPhX5rXfcDRO2jWtfIIjsXB8/CS4jAyTnGweSEcwavEQWav5caorf3C+2fjsO0T4qCfCJGvVws15AqUr8E8+ZU6kq9+Wq9D+QpClkn52qvj3eMROL1kglMJBY2Wj69/GvhW89AMUvAUBVanY5l0dciIAgV2umxjtlKkwFra1se5hH10PwERqjsuQtJCup1izyrDV30CgH/1K4IuErEZQgAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/Design/Token/investigationTimeSlot_master.aspx</URLName>
+      <DispName>Online Inv Slot Master</DispName>
+      <MenuID>86</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Token/CreateTempCounter.aspx</URLName>
+      <DispName>Exam Counter Master</DispName>
+      <MenuID>86</MenuID>
+    </Items>
+    <Items>
+      <URLName>/design/token/modalitymaster.aspx</URLName>
+      <DispName>Modality Master</DispName>
+      <MenuID>86</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Token/TokenGenerationMaster.aspx</URLName>
+      <DispName>Reciept Token Master</DispName>
+      <MenuID>86</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Token/SampleCollectionRoomMaster.aspx</URLName>
+      <DispName>Sample Coll Room Master</DispName>
+      <MenuID>86</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

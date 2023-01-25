@@ -1,0 +1,703 @@
+﻿body {
+
+
+	
+}
+:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+
+a.mm {
+	font-family: Geneva, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #990000;
+}
+.services {
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #878685;
+	font-family: "Times New Roman";
+}
+.regtext1{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #447fb1;
+}
+
+	.bodytext {
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #515050;
+	font-family: "Verdana, Arial, sans-serif";
+	}
+.footer a{
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #595959;
+	font-family: "Verdana, Arial, sans-serif";
+	}
+.footer a:hover{
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #ffffff;
+	font-family: "Verdana, Arial, sans-serif";
+	}
+	.search a{
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #488fa7;
+	font-family: "Verdana, Arial, sans-serif";
+	}
+	.search a:hover{
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #db8414;
+	font-family: "Verdana, Arial, sans-serif";
+	}
+	.searchTxt {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: xx-small;
+	color: #5f8a99;
+	border:0px;
+	font-weight:bold;
+}
+
+
+	.headertext{
+	font-family: "verdana";
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #286381;
+	}
+	.header{
+	font-family: "Verdana, Arial, sans-serif";
+	font-size: 50px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+     text-transform: capitalize;
+	color: #5f8a99;
+	
+	}
+
+	
+	.ntext{
+	font-family: "Verdana";
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #7f7e7e;
+	}
+	
+	.headertext{
+	font-family: "verdana";
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #286381;
+	}
+	.opdheading{
+	font-family: verdana;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #9ccce8;
+	text-transform: capitalize;
+	}
+	.input_butt4{
+	BORDER-RIGHT: #d6e9dc 1px solid; BORDER-TOP: #d6e9dc 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 10px; BORDER-LEFT: #608c6d 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #608c6d 1px solid; FONT-FAMILY: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif; HEIGHT: 20px; width: 50px;BACKGROUND-COLOR: #a2becd
+	}
+	.searchinput {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 1px; BORDER-LEFT: #7f9db9 1px solid; COLOR: #666666; PADDING-TOP: 1px; BORDER-BOTTOM: #7f9db9 1px solid; FONT-FAMILY: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif; HEIGHT: 22px; width:200px; BACKGROUND-COLOR: #ebf3f6 }
+	.searchinput1 {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 11px; PADDING-BOTTOM: 1px; BORDER-LEFT: #7f9db9 1px solid; COLOR: #666666; PADDING-TOP: 1px; BORDER-BOTTOM: #7f9db9 1px solid; FONT-FAMILY: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif; HEIGHT: 22px; width:120px; BACKGROUND-COLOR: #ebf3f6 }
+	.head a{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #8ecbe7;
+	text-transform: capitalize;
+	}
+	.head a:hover{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #11a0cf;
+	text-transform: capitalize;
+	}
+	.head1 a{
+	font-family: verdana;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #8ecbe7;
+	text-transform: capitalize;
+	}
+	.head1 a:hover{
+	font-family: verdana;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #11a0cf;
+	text-transform: capitalize;
+	}
+	.user {
+	font-family: verdana;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #908e8e;
+	text-transform: capitalize;
+	}
+	.footer1 a{
+	font-family: verdana;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #7aa9be;
+	text-transform: capitalize;
+	}
+	.footer1 a:hover{
+	font-family: verdana;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #7aa9be;
+	text-transform: capitalize;
+	}
+	.text2{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #54a0c0;
+	text-transform: capitalize;
+	}
+	
+	.doc a{
+	font-family: "verdana";
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #84b8dc;
+	}
+	.doc a:hover{
+	font-family: "verdana";
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #4c98ce;}
+	.profile1{
+	font-family: "Verdana, Arial, sans-serif";
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #9dcbec;
+	background-color:#ebf4fb;
+	height:18px;
+	}
+	.profile2{
+	font-family: "Verdana, Arial, sans-serif";
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #9dcbec;
+	background-color:#f8f9f9;
+	height:18px;
+	}
+	
+	.insidegrid{
+	font-family: "Verdana, Arial, sans-serif";
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #9dcbec;
+	height:18px;
+	background:none;
+}	
+
+
+	
+	.mm {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #990000;
+}
+.generaltext3 {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #439abe;
+	text-transform:capitalize;
+	}
+	.generaltext {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #2282c4;
+	line-height:22px;
+	text-transform:capitalize;
+	background-color:#E0F1F5;
+	
+}
+.generaltext1 {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #414243;
+	line-height:22px;
+	font-weight:normal;
+	text-transform:capitalize;
+	background-color:#F3F3F3;
+	
+}
+.general {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #f98305;
+	line-height:14px;
+	text-transform:capitalize;
+	
+}
+.generaldoc {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #f98305;
+	line-height:14px;
+	text-transform:capitalize;
+	
+	
+}
+.generaldoc1 {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #f98305;
+	text-transform:capitalize;
+	line-height:22px;
+	background-color:#FEE0C0;
+	
+}
+
+	.generalhosp {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #95a334;
+	line-height:22px;
+	text-transform:capitalize;
+	background-color:#DFE6B0;
+	
+}
+.show a{
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #2282c4;	
+	text-transform:capitalize;
+	
+	
+}.show a:hover{
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #414243;
+		text-transform:capitalize;
+	
+}
+
+	.generalfooter {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #f98305;
+	text-transform:capitalize;
+	line-height:22px;
+	background-color:#F3F3F3;
+	
+}
+	
+	.general {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #f98305;
+	line-height:14px;
+	text-transform:capitalize;
+	
+}
+	.general1 {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #95a334;
+	text-transform:capitalize;
+	
+}
+.general2 {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #f98305;
+	text-transform:capitalize;	
+	background-color:#FEE0C0;
+	
+}
+.general3 {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #414243;
+	line-height:14px;
+	font-weight:normal;
+	text-transform:capitalize;
+	}
+		.general4 {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #2282c4;
+	line-height:14px;
+	text-transform:capitalize;
+	}
+.general5 {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #2282c4;
+	line-height:14px;
+	text-transform:capitalize;
+	}
+	.sr1{
+	font-family:"Zurich Lt BT";
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #ffffff;
+	background-image:url(gr.jpg);
+	background-repeat:repeat-x;
+	
+	line-height:36px;
+	}
+	.sr2{
+	font-family:"Zurich Lt BT";
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #258bd2;
+	background:#e7f4fa;	
+
+	line-height:36px;
+	}
+		.sr3{
+	font-family:"Zurich Lt BT";
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #444546;
+	background:#e7f4fa;	
+	
+	line-height:36px;
+	}
+	.headerh2 {
+	FONT-SIZE: 16px; COLOR:#326B8D; LINE-HEIGHT: 22px; FONT-FAMILY: "MS Sans Serif", Verdana, Verdana, Arial, sans-serif, Helvetica; TEXT-ALIGN: justify; TEXT-DECORATION: none; background:#e1f0ff;text-transform:capitalize; 
+	}
+	.texth2 {
+	FONT-SIZE: 14px; COLOR: #4a4a4a; LINE-HEIGHT: 22px; FONT-FAMILY: "MS Sans Serif", Verdana, Verdana, Arial, sans-serif, Helvetica; TEXT-ALIGN: justify; TEXT-DECORATION: none;background:#f0f8ff; text-transform:capitalize;
+	}
+	
+.container
+{
+width:1002px;
+height:544px;
+float:left;
+}
+.container1
+{
+width:800px;
+height:544px;
+float:left;
+}
+.menu a{
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	text-transform:capitalize;
+	background-color:#FA8A25;
+	
+}
+.menu a:hover{
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #25456d;
+	text-transform:capitalize;
+	background-color:#FA8A25;
+	
+}
+.bg
+	{
+	background:#FA8A25;
+	}
+	
+.submenu a{
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #278CD2;
+	text-transform:capitalize;
+	
+	}
+.submenu a:hover{
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #DF872F;
+	text-transform:capitalize;
+	
+	}
+	.border
+	{
+	BORDER-RIGHT: #000000 1px solid;BORDER-left: #000000 1px solid;BORDER-top: #000000 1px solid;BORDER-bottom: #000000 1px solid;
+	}
+	
+	.Left
+	{
+	BORDER-left: #000000 1px solid;
+	}
+	.right
+	{
+	BORDER-right: #000000 1px solid;
+	}
+	
+	.top
+	{
+	BORDER-top: #000000 1px solid;
+	}
+	
+	.bottom
+	{
+	BORDER-bottom: #000000 1px solid;
+	}
+	.lefttop
+	{
+	BORDER-left: #000000 1px solid;BORDER-top: #000000 1px solid;
+	}
+	
+	.leftbottom
+	{
+	BORDER-left: #000000 1px solid;BORDER-bottom: #000000 1px solid;
+	}
+	
+	.lefttopbottom
+	{
+	BORDER-left: #000000 1px solid;BORDER-bottom: #000000 1px solid;BORDER-top: #000000 1px solid;
+	}
+	.leftbottomright
+	{
+	BORDER-left: #000000 1px solid;BORDER-bottom: #000000 1px solid;BORDER-right: #000000 1px solid;
+	}
+	
+	.rightttop
+	{
+	BORDER-right: #000000 1px solid;BORDER-top: #000000 1px solid;
+	}
+	
+	.rightbottom
+	{
+	BORDER-right: #000000 1px solid;BORDER-bottom: #000000 1px solid;
+	}
+	
+	.righttopbottom
+	{
+	BORDER-right: #000000 1px solid;BORDER-bottom: #000000 1px solid;BORDER-top: #000000 1px solid;
+	}
+	
+	.topbottom
+	{
+	BORDER-top: #000000 1px solid;BORDER-bottom: #000000 1px solid;
+	}
+	
+	.topbottomdashed
+	{
+	BORDER-top: #000000 1px dashed;BORDER-bottom: #000000 1px dashed;
+	}
+	
+	.topdashed
+	{
+	BORDER-top: #000000 1px dashed;
+	}
+	
+	.generaltext3 {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #439abe;
+	text-transform:capitalize;
+	}
+	.generaltext {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #2282c4;
+	line-height:22px;
+	text-transform:capitalize;
+	background-color:#E0F1F5;
+	
+}
+.generaltext1 {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #414243;
+	line-height:22px;
+	font-weight:normal;
+	text-transform:capitalize;
+	background-color:#F3F3F3;
+	
+}
+.general {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #f98305;
+	line-height:14px;
+	text-transform:capitalize;
+	
+}
+.generaldoc {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #f98305;
+	text-transform:capitalize;
+	
+	
+}
+.generaldoc1 {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #f98305;
+	text-transform:capitalize;	
+	background-color:#FEE0C0;
+	
+}
+
+	.generalhosp {
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #95a334;
+	text-transform:capitalize;
+	background-color:#DFE6B0;
+	
+}
+.show a{
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #2282c4;	
+	text-transform:capitalize;
+	
+	
+}.show a:hover{
+	font-family: Verdana, Verdana, Arial, sans-serif, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #414243;
+		text-transform:capitalize;
+	
+}
+
+
+.Bordercolor {
+    BORDER-right: #000000 1px solid;BORDER-bottom: #000000 1px solid;
+    border-left: #000000 1px solid;border-top: #000000 1px solid;
+
+}
+
+
+
+
+	
+	
+	

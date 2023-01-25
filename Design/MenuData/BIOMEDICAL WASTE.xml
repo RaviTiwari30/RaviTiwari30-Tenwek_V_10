@@ -1,0 +1,58 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>20</ID>
+    <MenuName>Master</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAWCAYAAADwza0nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAnxJREFUOE+FlF1Ik2EUx5+ZEa2giy6kyKgglBiZtZVtfoQ5FqISRm0YYriQBqPVtCi6sBLtg2DRhZEVhGDdeeGVQRddpCWoFQSyLqIsqMsoslG2p9953r32GmYv/DnPOef/Px/PM+aKdj5ZMp0ecSnHF2o6bbyH96+q9UUBffdC+a/hiSJ3qCTd8+3j0tTKwp/vVDByJX9x6Hy7ptbqus6qcZ1RvkWFimkQufSsOouoQ/9Qx7AapP/b0QhnVBWd3uRE3ynU8E+hdJMVlBIoRbd2I/yiDpnRF9rPeVFGNKP2Ivqkv6pWk5MV/hYa4mflg3iH8XpBlPM09rhVUOeZSZzC3Eg7Ib4HfexyK7fXZadonlDe0wizagDcZryjCFs535TOlvDP0811jHZqS6jVEOiG3I6wA3sJf9ASWhe28KgZddiMKrco4iznjAo7L9JMZ1e4NqTz7NuEnEA8CsZA3I7Puw/rrayvov5M8eaSrjVyDh1ormqIhD1y3uJLFvhrkwXWKtpla1ze6rZV2/dEH+wKxt9iH5dWHlm7tTw25fHH7hFbTf6Fryb2GnteRHPTETiH4DlJn5DAQZAi1iI58IhcDfYDsSZ7QkVgmEBCAtiL+P0Qu8AJ/GfYeskR78YfcArHSTZKAOuHMA5GwUvw1FMWXpEr2oJwxAhJuHEm2WW3+I2x/mVCxtdl+xKac4/dgXNQVgrUnVouHTaJENJGByHFLWpys5ADdpxi2+BOkNugpJMITZXch1+Hr7GvIicH3YTNXwvF14mwtDLulY5tOGOSsH+vxTv2F9JJuvU541Ic7pS3Olkrwma5cpuQE7sg9MpOEpe3s4vCv0Gu4jdYW4e6MenskwAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/Design/Biomedicalwaste/BegTypeMaster.aspx</URLName>
+      <DispName>Bag Type Master</DispName>
+      <MenuID>20</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Biomedicalwaste/MapBioMedicalWithDepartment.aspx</URLName>
+      <DispName>Map Bag With Department</DispName>
+      <MenuID>20</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>87</ID>
+    <MenuName>BioMedical</MenuName>
+    <image>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABEUlEQVRIie3UsUrEUBAF0KPIdhaCWIja+AWCiIVgK4JfYqWVpZ0W/sE2YmnpL9inEQsLFcFdQURsZLExFptAEvNMNkFY0AuPSSaZe+c+huGv4BBx4RzXKZwoycUtm8lxTrYka4z0Glr//+sO6goUO6ztcGwc/AuMv8A+1kcpqBrLGI91iKZGUc3gDZvJ8xx2sYV5zBjuoydchAiqHOwlcQ2vvm/a9Nw0FVhMYvQDeYz3snWdElK+zrP4QKekNq3rh6aon8SNCoGo8P4pfy23IYGzJF7KW04xixXcZ3IDnGA5kzsPddbBEXoBgUEhH2EHD5ncHaZDAlXo4Rqn2MYCrjLkz1htSl6GA7wYzn4XS+mHL6XWWPIhRmUjAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Biomedicalwaste/BioMedicalDepartmentDispatch.aspx</URLName>
+      <DispName>Department Dispatch</DispName>
+      <MenuID>87</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Biomedicalwaste/RecievedDepartmentDispatch.aspx</URLName>
+      <DispName>Recieve Dept Dispatched</DispName>
+      <MenuID>87</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Biomedicalwaste/DispatchFromHospital.aspx</URLName>
+      <DispName>Hospital Dispatch</DispName>
+      <MenuID>87</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>11</ID>
+    <MenuName>MIS</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QA2RXhpZgAASUkqAAgAAAACAAEDBQABAAAAJgAAAAMDAQABAAAAAAAAAAAAAACghgEAj7EAAP/bAEMACAYGBwYFCAcHBwkJCAoMFA0MCwsMGRITDxQdGh8eHRocHCAkLicgIiwjHBwoNyksMDE0NDQfJzk9ODI8LjM0Mv/bAEMBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIABYAFgMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APatXN+Ldf7OeJZtwyZOm3Bz2PtXNNda9fLdWcd/Yb0QJIVfBXcpKkHHpzwa1vFLObQRxXLWzFkYuikkqG5GB6jiuJ0DRzpFnLEt210SsWf9HKgbVK989c/pXLWw8HerKTSS6PT7jopVbLkSTd1uj0Lw7DqVvo0MOrXcV1dIMGZARuHbOerep70Vi+FNKlj1C91UXM6i6/1luH3Rs+R+8wejYGOOD6cUVdGsqkFJJ6kVKahJxuHiOVru5MargJ8hy3XBPPQ+tc6kLLdwzo8yyQMSoWbapJBB3BVG4YJ4NFFbvVamXU67w9dtFBJG0YJJ3ZDf/WooooA//9k=</image>
+    <Items>
+      <URLName>/Design/Biomedicalwaste/BioMedicalAnalysis.aspx</URLName>
+      <DispName>BioMedical Dashboard</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAIAAABL1vtsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAv9JREFUOE+llG9Ik0EYwK8EQQOxQKoZFkEIQRkVSR8ixIl+cJSkH6S+CCopaFhiYYoTE0HHFCc40WEUsxLtD/nBLXFTnDIVdaIba6KTEB0qxt7jNt4d7/Xsn7ncROjlx3Hvce/vnnueu/cEYwz95wMKw8+dvA5jniIiue3Gyg+LTuKByYcfBEOFqll07x3K7EMZkZF8Mtp2IyqKVHMoXd0yZNVb93QrRGcL4u1jvXknVapHOf1TRyiKe+dQmnrCAotQhtcYtgdZY+5NWPmRYgo97D8qCq8ivU+zuCv0ZjoLkLMoBLY0KFHMHUORBood9r0C1yRgaWKAOhGuT2Krekn77HEUas3CVthswWBGuwk9GJpcpxHT6c+FxuSAGQJ2CNw+2wK3Jdiny2rll7Kr5kcGqUXjxW5klN/XeYvqU3g3IqhzuVLElUeFUIp+v07YkyZx9Um44SKuOQtzhA1TeAUbKOBexHBVcQFexnNlUdyreGafYhYtNWvpMoQwjavPkPZUl/qJZ37Ae7iDUQRzQSmjngACpZYR3JDEaxpw7XksvQAtr22AWIhSDK+k5Vo4hUDZPtCzjsJngnNTcG74YXgb9uL++hy8RH7joMJX1MFCrjIWIg9ymnsWjetEvE4GCxL5TWh5nRxK7lJlg4W03jqkUOdwJYgrOxkA8voU4dpz1KbnDUp+sos3dNGVcZBCFvhRGZGlhG7EX9RgwL7OpmfhM5aKqE3HG7p5Qw+0dHUCpLgp2T1QQtruhMtF6OmhKwZIHj+mgG2TtttEnsKPd0CCPeZhXt9KZNdDFBOWnTCHb31MqD7FfhnY7qrgsApbZsFu5CqiYX33l3KQBhT+y978zapbdowsHmDZMfpjZL4gdqk4zlESReD6NCXjxsu4LpGf7OG1b/5WpKjX98sR94EolD4kVqOsTiRWfMyOofUi19scl0riep/vHq7HTVdI89VAFPAjeKycye+cyYf2X2ZzlSaJ0qztbfT0ZJDuLB+ZpPM+UdyF7AYUkS7oMcf/AMkdAOj6D6DkAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Biomedicalwaste/BioMedicalWasteReport.aspx</URLName>
+      <DispName>Bio Medical Dispatch Details</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

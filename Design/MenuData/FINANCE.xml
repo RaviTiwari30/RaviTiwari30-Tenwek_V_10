@@ -1,0 +1,338 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Menu>
+    <ID>95</ID>
+    <MenuName>Finance Integration</MenuName>
+    <image>data:image/png;base64,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</image>
+    <Items>
+      <URLName>/Design/Finance/Demo_Tally_Interface_Master.aspx</URLName>
+      <DispName>Map Item with Finance centre</DispName>
+      <MenuID>95</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>19</ID>
+    <MenuName>Issue</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAOWSURBVDhPjZNvTFNXGMYrY6ErRSrOAl236bLxYVlMXOYHZR82mWbMaPgX0gzQuBoh2jmIuM3EGTY2IU5lGXF/Cx9a+dtxtTcttDh0W1xcwDRU2mDJzXCrA0qr7cTYgoVn77kdi3Nc55s8t+fec8/vPO/pc2WyB1f2/8w/9LQuJ+c5d0FBQXhzXt6g5gmNkVbuIr1EUj00hV7csHJFhm3XjgpYuB5MBkJg5fb6YDS1wWAwLBQXFflezs3lU1JSDtP7W0iPSW1QQG6ipvbTcPtG8YXJjNDNWyLw/roRnsGQaxBVlVUg2BtSwHdN7RbE5mJobjGjlcb31gLdzNOF/S4WZ7UzIDuKJctgdw7gTjSKI3Uf4eTnX8LefwHXJ6cRCEYQn/+v0+avWhiwQgpYabWfI+As6j9uwL69+6ArLUV1dQ2KCwth7uoB27D1dCc4vg/hUAAnPjvFgG9KAfWdFuu/bNyNA7/5A/h5cBgenwCjuRO1tQexo6JChDU0HmdAnRRwZ4+1D/PxWQjjfjCYVLGznJu7i/ffO/RAh2V87zlMBcOo+7Ae3ZwN/ed/RI+tBZFbYZHNQEyL4xo6DnK3U8qhjrc7wSLR1Pw1Oixn0db1HUxdTQSM/ANhg9jcvPhH7Te8zYB6KWCJjRwGQxE0ftoEyxkbrL0O8M4O/DmTyONidPwTAfwxGcTeKjGHu6WAhd2cHVPTQTQcOw7W/k+XBhMtzyQcsuiwGHmuCuJXtPstvTQwLX35Ub5/GEMjfnxwpAGnjG3gbA5YrEZyGEF0No7x3ydE2KhwDZNTIZSXlS+dQ/ouS8rK98x4xhfgFmJwj93GRdcEHD94YOo+g8sj1zA0PAaXZwxe36+4SsDA9E0xn9Tu9ntaXiaOVarHXe9U1+FEcx9OfjMAM+cF5xBg7RfAfy+A670Cq9MNx8AVnL/oxZBbgGtEQO7GjQy4h/Qs6RlSqgh8NDm5Nf+1PJRs34atr+dja/42FBfpoNfvR+3BY6hv7MK37ZfQbfPirHMUF37x48CBw0hLTY3ScgNp09/A5ITbR2SvZKnVvDYz06NRq6NPZmdCm6nG05os5KxZjfXr1mPzpi3UYikqK2toIwPWPv8CkpKWeWl1HukpUqLd+4pZXksqlsvlR9MUir4MVbpvVcaKeNbKDGjVq7BGq8VqTTbSlcqYTJbEQq2Uio3UcxVNvEgqVcjlnyxXKnmlQtFB968uteAv5k+vNI/JIAUAAAAASUVORK5CYII=</image>
+    <Items>
+      <URLName>/Design/Store/OPDPharmacyIssue.aspx</URLName>
+      <DispName>Patient Issue</DispName>
+      <MenuID>19</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>4</ID>
+    <MenuName>OPD</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4QC0RXhpZgAASUkqAAgAAAAGAD4BBQACAAAAVgAAAD8BBQAGAAAAZgAAAAIDAgAWAAAAlgAAABBRAQABAAAAAZuCghFRBAABAAAAEwsAABJRBAABAAAAEwsAAAAAAAAlegAAoIYBAIOAAACghgEA//kAAKCGAQDpgAAAoIYBADB1AACghgEAYOoAAKCGAQCYOgAAoIYBAG8XAACghgEAUGhvdG9zaG9wIElDQyBwcm9maWxlAP/iDFhJQ0NfUFJPRklMRQABAQAADEhMaW5vAhAAAG1udHJSR0IgWFlaIAfOAAIACQAGADEAAGFjc3BNU0ZUAAAAAElFQyBzUkdCAAAAAAAAAAAAAAABAAD21gABAAAAANMtSFAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEWNwcnQAAAFQAAAAM2Rlc2MAAAGEAAAAbHd0cHQAAAHwAAAAFGJrcHQAAAIEAAAAFHJYWVoAAAIYAAAAFGdYWVoAAAIsAAAAFGJYWVoAAAJAAAAAFGRtbmQAAAJUAAAAcGRtZGQAAALEAAAAiHZ1ZWQAAANMAAAAhnZpZXcAAAPUAAAAJGx1bWkAAAP4AAAAFG1lYXMAAAQMAAAAJHRlY2gAAAQwAAAADHJUUkMAAAQ8AAAIDGdUUkMAAAQ8AAAIDGJUUkMAAAQ8AAAIDHRleHQAAAAAQ29weXJpZ2h0IChjKSAxOTk4IEhld2xldHQtUGFja2FyZCBDb21wYW55AABkZXNjAAAAAAAAABJzUkdCIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAEnNSR0IgSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYWVogAAAAAAAA81EAAQAAAAEWzFhZWiAAAAAAAAAAAAAAAAAAAAAAWFlaIAAAAAAAAG+iAAA49QAAA5BYWVogAAAAAAAAYpkAALeFAAAY2lhZWiAAAAAAAAAkoAAAD4QAALbPZGVzYwAAAAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRlc2MAAAAAAAAALklFQyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0gc1JHQgAAAAAAAAAAAAAALklFQyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0gc1JHQgAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAAACxSZWZlcmVuY2UgVmlld2luZyBDb25kaXRpb24gaW4gSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcgQ29uZGl0aW9uIGluIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdmlldwAAAAAAE6T+ABRfLgAQzxQAA+3MAAQTCwADXJ4AAAABWFlaIAAAAAAATAlWAFAAAABXH+dtZWFzAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACjwAAAAJzaWcgAAAAAENSVCBjdXJ2AAAAAAAABAAAAAAFAAoADwAUABkAHgAjACgALQAyADcAOwBAAEUASgBPAFQAWQBeAGMAaABtAHIAdwB8AIEAhgCLAJAAlQCaAJ8ApACpAK4AsgC3ALwAwQDGAMsA0ADVANsA4ADlAOsA8AD2APsBAQEHAQ0BEwEZAR8BJQErATIBOAE+AUUBTAFSAVkBYAFnAW4BdQF8AYMBiwGSAZoBoQGpAbEBuQHBAckB0QHZAeEB6QHyAfoCAwIMAhQCHQImAi8COAJBAksCVAJdAmcCcQJ6AoQCjgKYAqICrAK2AsECywLVAuAC6wL1AwADCwMWAyEDLQM4A0MDTwNaA2YDcgN+A4oDlgOiA64DugPHA9MD4APsA/kEBgQTBCAELQQ7BEgEVQRjBHEEfgSMBJoEqAS2BMQE0wThBPAE/gUNBRwFKwU6BUkFWAVnBXcFhgWWBaYFtQXFBdUF5QX2BgYGFgYnBjcGSAZZBmoGewaMBp0GrwbABtEG4wb1BwcHGQcrBz0HTwdhB3QHhgeZB6wHvwfSB+UH+AgLCB8IMghGCFoIbgiCCJYIqgi+CNII5wj7CRAJJQk6CU8JZAl5CY8JpAm6Cc8J5Qn7ChEKJwo9ClQKagqBCpgKrgrFCtwK8wsLCyILOQtRC2kLgAuYC7ALyAvhC/kMEgwqDEMMXAx1DI4MpwzADNkM8w0NDSYNQA1aDXQNjg2pDcMN3g34DhMOLg5JDmQOfw6bDrYO0g7uDwkPJQ9BD14Peg+WD7MPzw/sEAkQJhBDEGEQfhCbELkQ1xD1ERMRMRFPEW0RjBGqEckR6BIHEiYSRRJkEoQSoxLDEuMTAxMjE0MTYxODE6QTxRPlFAYUJxRJFGoUixStFM4U8BUSFTQVVhV4FZsVvRXgFgMWJhZJFmwWjxayFtYW+hcdF0EXZReJF64X0hf3GBsYQBhlGIoYrxjVGPoZIBlFGWsZkRm3Gd0aBBoqGlEadxqeGsUa7BsUGzsbYxuKG7Ib2hwCHCocUhx7HKMczBz1HR4dRx1wHZkdwx3sHhYeQB5qHpQevh7pHxMfPh9pH5Qfvx/qIBUgQSBsIJggxCDwIRwhSCF1IaEhziH7IiciVSKCIq8i3SMKIzgjZiOUI8Ij8CQfJE0kfCSrJNolCSU4JWgllyXHJfcmJyZXJocmtyboJxgnSSd6J6sn3CgNKD8ocSiiKNQpBik4KWspnSnQKgIqNSpoKpsqzysCKzYraSudK9EsBSw5LG4soizXLQwtQS12Last4S4WLkwugi63Lu4vJC9aL5Evxy/+MDUwbDCkMNsxEjFKMYIxujHyMioyYzKbMtQzDTNGM38zuDPxNCs0ZTSeNNg1EzVNNYc1wjX9Njc2cjauNuk3JDdgN5w31zgUOFA4jDjIOQU5Qjl/Obw5+To2OnQ6sjrvOy07azuqO+g8JzxlPKQ84z0iPWE9oT3gPiA+YD6gPuA/IT9hP6I/4kAjQGRApkDnQSlBakGsQe5CMEJyQrVC90M6Q31DwEQDREdEikTORRJFVUWaRd5GIkZnRqtG8Ec1R3tHwEgFSEtIkUjXSR1JY0mpSfBKN0p9SsRLDEtTS5pL4kwqTHJMuk0CTUpNk03cTiVObk63TwBPSU+TT91QJ1BxULtRBlFQUZtR5lIxUnxSx1MTU19TqlP2VEJUj1TbVShVdVXCVg9WXFapVvdXRFeSV+BYL1h9WMtZGllpWbhaB1pWWqZa9VtFW5Vb5Vw1XIZc1l0nXXhdyV4aXmxevV8PX2Ffs2AFYFdgqmD8YU9homH1YklinGLwY0Njl2PrZEBklGTpZT1lkmXnZj1mkmboZz1nk2fpaD9olmjsaUNpmmnxakhqn2r3a09rp2v/bFdsr20IbWBtuW4SbmtuxG8eb3hv0XArcIZw4HE6cZVx8HJLcqZzAXNdc7h0FHRwdMx1KHWFdeF2Pnabdvh3VnezeBF4bnjMeSp5iXnnekZ6pXsEe2N7wnwhfIF84X1BfaF+AX5ifsJ/I3+Ef+WAR4CogQqBa4HNgjCCkoL0g1eDuoQdhICE44VHhauGDoZyhteHO4efiASIaYjOiTOJmYn+imSKyoswi5aL/IxjjMqNMY2Yjf+OZo7OjzaPnpAGkG6Q1pE/kaiSEZJ6kuOTTZO2lCCUipT0lV+VyZY0lp+XCpd1l+CYTJi4mSSZkJn8mmia1ZtCm6+cHJyJnPedZJ3SnkCerp8dn4uf+qBpoNihR6G2oiailqMGo3aj5qRWpMelOKWpphqmi6b9p26n4KhSqMSpN6mpqhyqj6sCq3Wr6axcrNCtRK24ri2uoa8Wr4uwALB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL1U7V0dZV1tjXXNfg2GTY6Nls2fHadtr724DcBdyK3RDdlt4c3qLfKd+v4DbgveFE4cziU+Lb42Pj6+Rz5PzlhOYN5pbnH+ep6DLovOlG6dDqW+rl63Dr++yG7RHtnO4o7rTvQO/M8Fjw5fFy8f/yjPMZ86f0NPTC9VD13vZt9vv3ivgZ+Kj5OPnH+lf65/t3/Af8mP0p/br+S/7c/23////bAEMACAYGBwYFCAcHBwkJCAoMFA0MCwsMGRITDxQdGh8eHRocHCAkLicgIiwjHBwoNyksMDE0NDQfJzk9ODI8LjM0Mv/bAEMBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIABYAFwMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AOm1fVZpvPvblyxUFlQtgD0UZ4HpXKXniSWTQUuIHSzvWw3ly/P8u7Bx61P4xh+0aVDDgkyXKIMHjJyBmsGPTDJ4RuR5R8+xldcI2ASCNzeh4/lXvVpzjJ04KySPj8LRpzgq1Z3bl/Xyueh6FrUsaw3llPmOReR/C3HcexorA8G29xa6DAlwhUszOgJz8p5FFX7OFWKnOOrRj7erh5ypUpvlTfU2vEmnR2F5Jp94i3EW4OhB6jOVz6GsqNrKK0e1S12wSbtyA8Hd1/nRRSpScoKT3sPEU4wqyhHRJ7XZu+HNPOr3K2tsVghhTktyQAMAAfl3ooorhxeIqRqWiz2MuwVCpR5pxu7n/9k=</image>
+    <Items>
+      <URLName>/Design/OPD/OPDFinalSettlementNew.aspx</URLName>
+      <DispName>OPD Settlement</DispName>
+      <MenuID>4</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/OPD/OPD_Refund.aspx</URLName>
+      <DispName>OPD Refund</DispName>
+      <MenuID>4</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>8</ID>
+    <MenuName>IPD</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAWABYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1e9nvTdX7xNeuIZwirAVCqgjRm7ZLHLY68kCr+kSXDSXUU7SkxuvEzKWXKgkZUYIzz+Nebaz4s164u4prXwjY3ccltDIZ5bF5SxaNWIDAjgFsY56VabxRq7aaLW20a704Ov737LpbAhieSp3YGRgZIz71pGKdlp6mTbV3v5He2Gux3txfRS28tqtrN5QknGFkPPK/ln6EetFeKajLqb+Hrpb+0ubK0W7gFtFPlcfLNuOSBljwSfp0AABTlGN9Bxcranruj+DtP0+3eO+t7S+lbywskturFQsUcePmyeqE/jWn/wAI5oX/AEBtO/8AAVP8KKKzKOa8RfD2DWWkSxkt9PicQsY47cAZTzsnAx180f8AfNFFFO4rH//Z</image>
+    <Items>
+      <URLName>/Design/IPD/PatientRegSearch.aspx</URLName>
+      <DispName>Edit Admission</DispName>
+      <MenuID>8</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/Patientsearch.aspx</URLName>
+      <DispName>View IPD Patient</DispName>
+      <MenuID>8</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/ReceiptBill.aspx</URLName>
+      <DispName>IPD Advance &amp; Refund</DispName>
+      <MenuID>8</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>11</ID>
+    <MenuName>MIS</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QA2RXhpZgAASUkqAAgAAAACAAEDBQABAAAAJgAAAAMDAQABAAAAAAAAAAAAAACghgEAj7EAAP/bAEMACAYGBwYFCAcHBwkJCAoMFA0MCwsMGRITDxQdGh8eHRocHCAkLicgIiwjHBwoNyksMDE0NDQfJzk9ODI8LjM0Mv/bAEMBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIABYAFgMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APatXN+Ldf7OeJZtwyZOm3Bz2PtXNNda9fLdWcd/Yb0QJIVfBXcpKkHHpzwa1vFLObQRxXLWzFkYuikkqG5GB6jiuJ0DRzpFnLEt210SsWf9HKgbVK989c/pXLWw8HerKTSS6PT7jopVbLkSTd1uj0Lw7DqVvo0MOrXcV1dIMGZARuHbOerep70Vi+FNKlj1C91UXM6i6/1luH3Rs+R+8wejYGOOD6cUVdGsqkFJJ6kVKahJxuHiOVru5MargJ8hy3XBPPQ+tc6kLLdwzo8yyQMSoWbapJBB3BVG4YJ4NFFbvVamXU67w9dtFBJG0YJJ3ZDf/WooooA//9k=</image>
+    <Items>
+      <URLName>/Design/MIS/Summary.aspx</URLName>
+      <DispName>Summary</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/MIS/BedOccupancyReport.aspx</URLName>
+      <DispName>Bed Occupancy</DispName>
+      <MenuID>11</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>17</ID>
+    <MenuName>Tools</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAABEZJREFUSEud0gtMW1UYB/CrMqm09/b2kgHh4oAQWbYMCQQlIVuoYcqEpeiy1WAGCwqGuWRsjiglZJOMOyQ+GhyaMc14DHnPDMoKHY9SuIWOR+XRtbQW+3AdMJshOHQTs8/TRnTykLqTnOTm3vP/ne9892AYGhazJaEwLe0Z1/P/GTJZV6BufPwts9kssdvtSQaDwefvvMlkIpeWln5xOBz60tLSWA/hp7q7u8/qb+rnbzscYJyaAq1W2zAzM8N5NP/EXafzBKDxnVY74Qls1OvTbRYrjA6PgJpl70pycxNcucoLF7Y1NjZS/zKs09Z3zSbTorq//+Jm+Pz8fOfy8jJoR0ehS6FwFhUV7VMqle+3XL1qb21ujliTZwqZeFal+k3DsuUb4TlMDv7g/gOD64ROpxNGhoehQy6HmzodyNvkKqlU6rVutoRh4vt7XfjAuviERkMvLi7OTU9PQ+03taCbnAQdQvtUKoNard71n6d14+7K1+L6EWW6Ua972NTYBCdzTgLbz8LiwgJMjo0d3ayF7u8unF1decKNSDGjtLVfV8Eg2weop2AyGvXoqqnQlXvPI9iNo5672qIdGjxPiZvjUg7XW6g3ByC2cAJq6q7pR24MHGIYBvcYfHShlMmPUfaxs5oGxT3dvmQofyEDArOGjdjWi2GPBa6EuCmdOxrOVVuXK74GY+JemBLuhoookefHXm/3ncxYTGy2zN62Mw4GAv1gobQUbh07Bh18rvEyhxPzWBWnlo1GxxUO2b12y+ClyHOgiNoD40Ih/CAWg1UkgnZfX2cdj5eN8Cc93uDwF9rnUz+fsPgIW2HLfhaizzshLlPO1ntzKnsCAmBWIoFbR47AdYEAGgiitRLHn9sUj8pXhSd/Nm4iEtsAi++CqE8cEJKvm8NE34e7wk08nowNDoY7DAO2zEzooiioJwh7NY7v2RCn32kJ2n5GO4YntQMWLYews1YI/9Dwx5a9stdWQl+RZGgTjs/1IdwplYItO3ul8rk6gWBt3wmhlBecN9THS+kGbFcr0HkmiCi2ACf5mmR1JRV8fpYMtUEZEgLOsjKw/oU3E4Sxxdc36J/1QqlX6OnxK9sQhkW0AnV0EqI//hG4BzpqNjpeFUVdUqA2uHF0W2xZWdBNknCFJBVVNO3tzgUc15wOytXfp0/obGEFRoj4yA64uFODcQuIjWAaw7wvU1RtO8J7UVt+Ki4GW0YG9Lg2o+lT7hyV2mPhiAbrEi7dSdtefBv4YpUZe7Y6dNM/jRbUUFTJtyT5sDcoCGYLCuBeXh4Yk5LOuLOcyPIS37fVvyd+af1Z8EbXDBaQn4hUnkAg2Mrn8/3XmyRJ+mF+fgKMx8NL+PxTVVzukiEmBhZqaoZ+Vav93PDTGObvEyY5ztnxaZG3IPogxcXiEPoqAkUURb2Ong+snq73CN9PUNQrGEm+mEYQ6XU0/cHL/v5RiPT+Ezz3LVkEGqYIAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Store/StockAdjustment.aspx</URLName>
+      <DispName>Process (-)</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Edp/PanelMaster.aspx</URLName>
+      <DispName>Panel Master</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/EDP/SetPerformingCost.aspx</URLName>
+      <DispName>Centrewise Performing Cost</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/MapStoreItem.aspx</URLName>
+      <DispName>Centrewise Item Mapping</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Finance/UploadOpeningBalance.aspx</URLName>
+      <DispName>Upload Opening Balance</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/DebitCreditNote.aspx</URLName>
+      <DispName>Debit/Credit Note</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/EDP/UploadDocumentmaster.aspx</URLName>
+      <DispName>Document Master</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/StockUpdate.aspx</URLName>
+      <DispName>Adjustment (+)</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Finance/OpeningBalanceReport.aspx</URLName>
+      <DispName>Opening Balance Report</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Purchase/CentrewiseMarkup.aspx</URLName>
+      <DispName>CenterWise MarkUp</DispName>
+      <MenuID>17</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>12</ID>
+    <MenuName>Password</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAYAAACTQC2+AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACzkAAAs5AcnGdmAAAAOYSURBVEhLxZR7TNNXFMcPtFAq7bBDw3QwVqVkbZlEM7slLDpg60B5DF9/aGQagyGrCUZcghkLsMWkoZ0dhkbjAkrYcHS6tmkjwWzBUGnQBkM0WwbLpiidrxjjFlrog+9OW+djc8kqy3bz++Qk996czzn3/n4/ov95FOQsVZg1mtfcBQWve1au1Liys15s5ZqW/Vt1Jchk6R+VlVfNXPpuHNOBMAIhYHo6iMEhD94ofPOeSCSqnbNMKpXWbanegWvX7+DgoS6UlJb/WlikvVZWsc53/KQTVyZv4S3tWggEgsq5yDKWr3jll8GRMVRvr519Jk3WxsmUzGImf/HzWV82NOnh/HYYSqXaw3Pip5WtqdywFZ2WPizJyT3zhCSSvGX5Yyf6hrC66G3/XO6rauPWWnxs/AwLF73wyZOqzZYrHKYOK0rLN4HXlz9FR9J0ogTDau067P7gAMSSBX2cpIJIUPUQqpQtzLzw3r4DKNRWRER7iDJS45Ll5Qq/OLyHMGzNxOWRXDiOpcLeKX4MW4cYzi4pxocVGLVnoWUbQSEX6eMSvZpH5+FKAW4rgLu5gF/F77T6r0TmI+s3luJurxDqHDoVl0ijorO+bhFCF7OBH5mf7scJjteZK4/Mj2djdjQTV40CqOVkjU+kpLNThxMRPJ0KuCXAeWZEgh/M81FXlo6bljTAk4jwGUJ4gBBwEC7vI8hl9FX8IlMCglYB0M98wwwJsH9TEhJJCIsuEQNtStgOFsHRXgxHWzG6PyzClo1lE83NzUebmpqORWhsbIzGP2hoaOjWarU7uBhhtCDNS9yRgRA8TgBXCyfTT5g8RFi1guDRy+C5MIYwgCAzzb8lfv7RcLlcUKlU+Q9EvlYWfc4CG2OPCX0WwhEd8RFm4ueJ29HEk5Ne6HQ69Pb2wm63o729HZFkLS0tcLvdqK+vh9lsRk9PT3S/1+uFRqNZ9bAjPYt6HhHdl2GQ8L3xWXhGxzEb6YZb8t78Dfd8YQRDYczMzEQT+v3+aJyamkIgEEAoFOs5IlcqlbGPm4/u3KyJJSdiR4bTf8JKGGxVY+BIKVwda+DuLMcpw1rUVK+/ZTAaLXq93mIymR5EI88ZDAYL39XXJSUlu1iRFBW9vCTJ1vVOMmzbUuCs4Q9z5+P014rRX0Owb2feJVg3E/YXE55LoU/jeutEaRlysVhcJ01J3jvvb4isxRDulc5Lfp/360iyaEFcov9i8+9CJ3nQTR4/DQAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/Design/Employee/ChangePassword.aspx</URLName>
+      <DispName>Change Password</DispName>
+      <MenuID>12</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>16</ID>
+    <MenuName>Requisition</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAARLSURBVDhPnVR7UNRVGP05GoFoiGSaiTFNM5HjMOYrRRFRESEUkBCK4iEv3eUxJVqWZULIW+QlD0MWgUUx1nhOJqYCy0NgkaaadFWE0hEVecdjgdP97sJuTP3lnfnm3Pu7vzn33O8795thsCQQ4+MTgqvzGqGqVik8eNgj6OnOEgDh+cZMAx8kZ1wBjcprv2OecSDokPmvBz9XCDtdkzjZwOAIR7v3T0LQ8YDOywF4kWJBAHQX7IPeKywW7sdsFvqLWLwqwhwWcxeLMfc1MV5iYcDECCs3hWG3ewrEB/I5YaGsEdt2xcPeJYmTWzvGY+vOOGzaEY2NNpF4d0sE1mwOx4oN38Bs/VGYrj6Ct1Z9CZPlh2BkEgKBThD0vLDS4hgGB4c5aX3jXVyt/gMlFTdRdqkVhRcb8UOZAmcLanFedgOnJdchkcqRlF7J55EnKiC9UI+M7GsQKFck/Q2zz3C37TEnTM68AtGnuXD+6BR8ArPh5J7K1nkcAw/kwfnjVIhDaZ2CkM8L+E2IvKHxnppwnnEQzwEpo/HXw25cqvwVknw5V5fD1BSVNPN1UfEUNuFMXg1kpc3IlFRB3nAHl3/+TU1ouDQYOkb+kLGfaTzt6kda1lXYOJ2A5/4sUOH8gnNgz9A/iOGeRPgGSmDLlAWEnIXVe7GIjC/H9ZpbWsIXGGFC6k+ckMaz7gGuTFaqQH5hPYrLWziWVKiR1rnn6nies5nS6trbWoWkctZ8f3xy+JyGkCaWtjFw25sJm90J8NqXhe1M8RR6BHzHq+8tOgNz60iERZdoFaoJ/eDimTaNUJJfg++Lm5B3vo5XmRRN4UWmPKdAzpVm5Vajpk45XSEZebNdDFSqcQ3pFvtYuPud5lXcK86GrXMCfCaRlJFi3yAJLHZEISKuDFXy2+ocUtALMDM/is7HvRrCavZDU0sbq6ASitZ2yOvvoIWjkn2/jyqWN8XNdu7Z9j+7OGoIyeBLTENxv6ML95gf7V0S4eadwSKd4x7PdLh6pcPFI42H4wcpcPowBQ5uyXBkSJ60sInSEpIX9ReJ0PJLBx4wH7654jCM3w7lSE9r2dqv+FN7Z+MxrLYMx7qtEdiwPRKWdtGwdojnz5FuqVFIXiTrULK5bZ4NoItFX98Qe5IjGB5WYWxMm99p1ZtcWLGc/4cwNvFHjIyo0Nc/hJ7evzEyqsL4xAQnU1GoxjA6OobunkE8edqP/oEhvndL+Yjd4oiWkApD7YeuSFf5IkzGjW7tEIf1246zThOlibVW3yLokBSJaZXYxXJobn0cpiwtvNH8u5EamQRjhoEvf1r9A+rOc/LUZQj63ur+yHojzVdZhKHzSR/fL2I+pVTpsn5JXNMI6cNMQz+Ex5RqUqRo7cBs1lCpaOp9X3ix9z01HnX2Yumyg5izWPT/hNSJl6/7GuWsD95obuNW0VuoPp2CujMRSC80oJl5MfiglB9oOLn/D9GNAlA25CK9AAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/Store/IndentSearch.aspx</URLName>
+      <DispName>View Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/CreateIndent.aspx</URLName>
+      <DispName>Create Requisition</DispName>
+      <MenuID>16</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>13</ID>
+    <MenuName>Reprint</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAcFBgYGBQcGBgYICAcJCxIMCwoKCxcQEQ0SGxccHBoXGhkdISokHR8oIBkaJTIlKCwtLzAvHSM0ODQuNyouLy7/2wBDAQgICAsKCxYMDBYuHhoeLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi7/wAARCAAWABYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3cukYLyOqIOrMcAfiaw9M8VrPPaLc2sMENxxvW43GIlSy7wVAAIB6E1wXx01vU9Ps9N0yz2G1vw/nq0QfeVZSoz255rz/AFS8+In9iT2uo6JNHpoQGZn00KNoUgFmx2BNaKF0ZudnY+rlcY4INFcF8Ktdv9c8IpeahKJZEuJIY5BCIt0a42/KKKhqzsWndXN/ULKDULSS0uQ3lvjJQ4YYIPB7dKqXGjR3MElvcalqskMqlHRrs4YHgjpRRQKxpoAiKiABVGAKKKKBn//Z</image>
+    <Items>
+      <URLName>/Design/OPD/DuplicateReceipt.aspx</URLName>
+      <DispName>Receipt Re-Print</DispName>
+      <MenuID>13</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>9</ID>
+    <MenuName>Reports</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAIAAABL1vtsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAv9JREFUOE+llG9Ik0EYwK8EQQOxQKoZFkEIQRkVSR8ixIl+cJSkH6S+CCopaFhiYYoTE0HHFCc40WEUsxLtD/nBLXFTnDIVdaIba6KTEB0qxt7jNt4d7/Xsn7ncROjlx3Hvce/vnnueu/cEYwz95wMKw8+dvA5jniIiue3Gyg+LTuKByYcfBEOFqll07x3K7EMZkZF8Mtp2IyqKVHMoXd0yZNVb93QrRGcL4u1jvXknVapHOf1TRyiKe+dQmnrCAotQhtcYtgdZY+5NWPmRYgo97D8qCq8ivU+zuCv0ZjoLkLMoBLY0KFHMHUORBood9r0C1yRgaWKAOhGuT2Krekn77HEUas3CVthswWBGuwk9GJpcpxHT6c+FxuSAGQJ2CNw+2wK3Jdiny2rll7Kr5kcGqUXjxW5klN/XeYvqU3g3IqhzuVLElUeFUIp+v07YkyZx9Um44SKuOQtzhA1TeAUbKOBexHBVcQFexnNlUdyreGafYhYtNWvpMoQwjavPkPZUl/qJZ37Ae7iDUQRzQSmjngACpZYR3JDEaxpw7XksvQAtr22AWIhSDK+k5Vo4hUDZPtCzjsJngnNTcG74YXgb9uL++hy8RH7joMJX1MFCrjIWIg9ymnsWjetEvE4GCxL5TWh5nRxK7lJlg4W03jqkUOdwJYgrOxkA8voU4dpz1KbnDUp+sos3dNGVcZBCFvhRGZGlhG7EX9RgwL7OpmfhM5aKqE3HG7p5Qw+0dHUCpLgp2T1QQtruhMtF6OmhKwZIHj+mgG2TtttEnsKPd0CCPeZhXt9KZNdDFBOWnTCHb31MqD7FfhnY7qrgsApbZsFu5CqiYX33l3KQBhT+y978zapbdowsHmDZMfpjZL4gdqk4zlESReD6NCXjxsu4LpGf7OG1b/5WpKjX98sR94EolD4kVqOsTiRWfMyOofUi19scl0riep/vHq7HTVdI89VAFPAjeKycye+cyYf2X2ZzlSaJ0qztbfT0ZJDuLB+ZpPM+UdyF7AYUkS7oMcf/AMkdAOj6D6DkAAAAAElFTkSuQmCC</image>
+    <Items>
+      <URLName>/Design/CommonReports/CollectionReport.aspx</URLName>
+      <DispName>Daily Collection</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/CommonReports/CreditDebitNoteReport.aspx</URLName>
+      <DispName>Credit Debit Note Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/IPDBillRegister.aspx</URLName>
+      <DispName>IPD Bill Register</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Lab/Reports/OutSourceReport.aspx</URLName>
+      <DispName>Lab OutSource Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/OPD/Reports/RegistrationReport.aspx</URLName>
+      <DispName>Registration Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Lab/Reports/LabApprovalReport.aspx</URLName>
+      <DispName>Doctor Wise Approved Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/CommonReports/TypeOfReferenceReport.aspx</URLName>
+      <DispName>Reference Type Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/Reports/ConsumeGatherReport.aspx</URLName>
+      <DispName>Stock Consume Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/Reports/StockLedgerReport.aspx</URLName>
+      <DispName>Stock Ledger</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/Reports/StockBinCard.aspx</URLName>
+      <DispName>Stock Bin Card</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/CommonReports/FinanceRevenue.aspx</URLName>
+      <DispName>Finance Revenue Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/OPD/Reports/OPD_BillRegister.aspx</URLName>
+      <DispName>OPD Bill Register Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/CommonReports/CreditCardCollectionReport.aspx</URLName>
+      <DispName>Credit Card Collection</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/CommonReports/RevenueDepartmentWise.aspx</URLName>
+      <DispName>DepartmentWise Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/CommonReports/AgeingReport.aspx</URLName>
+      <DispName>Panel Aging Reports</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/commonreports/DiscountReport.aspx</URLName>
+      <DispName>Discount Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/Reports/StockLedgerMedical.aspx</URLName>
+      <DispName>Current stock Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/Reports/IssueReport.aspx</URLName>
+      <DispName>Issue Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/Reports/ABCReport.aspx</URLName>
+      <DispName>ABC Analysis</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/Reports/StockStatusReport.aspx</URLName>
+      <DispName>Stock Status Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/commonreports/InvestigationAnalysisReport.aspx</URLName>
+      <DispName>Revenue Analysis Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Emergency/Report/EmergencyRegister.aspx</URLName>
+      <DispName>Casualty Register</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/IPD/SurgeryAnalysisReport.aspx</URLName>
+      <DispName>Surgery Analysis Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/CommonReports/StatesReports.aspx</URLName>
+      <DispName>STATS Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/Reports/StockAgeingReport.aspx</URLName>
+      <DispName>Stock Aging Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/CommonReports/OPDAdvanceUtilization.aspx</URLName>
+      <DispName>Patient Advance Utilization</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/Reports/PurchaseReceiveReport.aspx</URLName>
+      <DispName>GRN Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/Design/Store/Reports/ItemMovementReport.aspx</URLName>
+      <DispName>Item Movement Detail</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+    <Items>
+      <URLName>/design/store/Reports/itemexpiryreport.aspx</URLName>
+      <DispName>Item Expiry Report</DispName>
+      <MenuID>9</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>60</ID>
+    <MenuName>Landline</MenuName>
+    <image>data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAQABADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDn/wDgpP8AEjxB4f8A+C/fiq+sdc1azvNMvrK1s5obp43tYTpMGY0IPyqd75AwCWY9zTvDPiP4d/CT9kPwz4y8N/BW30X4teG7LStbXx5F43uJLh7mO50ySa4+x52lpVvFUx9AJJP7vPdfBL/gnR4y/wCCgn7fuj+MtQ8fWFxq8Xhqx1Px9JPp8q33h/WLa1h0+WwuIwixi4kmiklVdy/u0dsfc3+yfDb/AIIO/tBJNoXhfxd40+Dcnw9t3tbPUzp0F4+qTWEMlizLHvt1XzWXT4RkvgbnPOaAP//Z</image>
+    <Items>
+      <URLName>/Design/OPD/IntercomSearch.aspx</URLName>
+      <DispName>View Landline Detail</DispName>
+      <MenuID>60</MenuID>
+    </Items>
+  </Menu>
+  <Menu>
+    <ID>33</ID>
+    <MenuName>Messaging</MenuName>
+    <image>data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAARCAYAAADZsVyDAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAH9SURBVDhPrZQ9SAJhHMZfqaWxTwyMImoqIqFodJQWI3cLpCkaKhprDHJpqaGPJamxjyGqzSGhoaHIIfTsDjszT0s9tTw/7+nek+hTusQX3uFe7v97n//zv+d0d319KIkiqW9uJnV6Pal66XQEkkQKHEd0DQ2EMAYDhLk55HkecjZb/c7lUBRFpI6OwBqNINzICErJJGq5npaXQR5stjKzWET6+Biv5+f/vqMYjSLhdKIQCqm1ycNDBTwxoT5QK9j+flDPxb09zfCsxwN+fBzelhbE1tbK4IODD8WlVAr3o6PwtrWB6epCeHYWOb+/4gXKwJHY3AQ3NARfezuYjg6kT07K4P39T1YoB9LNDR6npuDv7YW3sRHs4CAiS0t4dbuRDwSQDwYhXV8jtr6Oe7MZvtZW+PR6BEwmJHZ2ICsD/BX8Lo+ChPl5sMPDaou0mFrEDgyoyrxNTWA6O8GPjSG+sYGCIHzp7Ifi731ThbS9p5UVhKenEbLbISwsIK5YkLm8RCmT+dWqP8GaJ/jtRc3g7O0txN1dJLa3kT47g1xB6TtfEzhzcYHwzAxeXC5IV1d4djhAAwBZrtiQJnAhEvmRzDzHaQBPTlZrZWXFNHm8xVJzsKjEm9CUpU9Pawanf7ig1Qri7+lRExZdXER8a0v9RqvaSm1sdVUNDdPdjTdoAvliyvfeiAAAAABJRU5ErkJggg==</image>
+    <Items>
+      <URLName>/design/circular/ViewCircular.aspx</URLName>
+      <DispName>View Messages</DispName>
+      <MenuID>33</MenuID>
+    </Items>
+    <Items>
+      <URLName>/design/Circular/NewCircular.aspx</URLName>
+      <DispName>New Messages</DispName>
+      <MenuID>33</MenuID>
+    </Items>
+  </Menu>
+</NewDataSet>

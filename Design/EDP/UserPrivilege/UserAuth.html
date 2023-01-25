@@ -1,0 +1,324 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto">
+    <div id="divUserAuth">
+                <div class="row">                                                         
+                           <div class="Purchaseheader">
+                                User Authorization &nbsp; &nbsp;
+                           </div>
+                           <div class="row"></div>
+                           <div class="row">
+                                <div class="col-md-3">
+                                   <label class="pull-left">
+                                    Center
+                                    </label>
+                                    <b class="pull-right">:</b>                       
+                                </div>
+                                <div class="col-md-5">      
+                                    <select id="ddlcenter"></select>        
+                                </div>
+                               <div class="col-md-16">      
+                                         
+                                </div>
+                           </div>    
+                           <div class="row"></div>
+                           <div class="row">
+                                <div class="col-md-24">
+                                     <div id="divItems" style="width:100%; height:350px; overflow:auto;">
+
+                                     </div>                        
+                                </div>
+                           </div>                                                                                                                                                                                  
+                    </div>
+
+          <div style="text-align: center" class="row col-md-24">
+               <input style="width: 80px;display:none;" type="button" id="btnPrevious" runat="server" value="Previous" onclick="PreviousTab()" />&nbsp;&nbsp;&nbsp;&nbsp;
+               <input style="width: 80px" type="button" id="btnSave" runat="server" value="Save" onclick="$saveUserAuth(this)" />&nbsp;&nbsp;&nbsp;&nbsp;
+              <input style="width: 80px;display:none;" type="button" id="btnNext" runat="server" value="Next" onclick="NextTab()" />
+          </div>
+      </div>
+ </div>         
+           
+
+
+<script id="CenterAccessScript">
+    $(function () {
+        $commonJsInit(function () { });
+        if (!String.isNullOrEmpty($("#empid").text()))
+            GetCenter($("#empid").text(), function (selectedCentreID) {
+                GetDeptWiseAuth(EmpId, selectedCentreID);
+            });
+    });
+
+    function GetCenter(EmpId, callback) {
+        serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/GetCenter', { EmpId: $("#empid").text() }, function (response) {
+            $ddlcenter = $('#ddlcenter');
+            $ddlcenter.bindDropDown({ data: JSON.parse(response), valueField: 'CentreID', textField: 'CentreName', selectedValue: 1 });
+            callback($ddlcenter.val());
+        });
+    }
+
+    function GetDeptWiseAuth(EmpId, CID) {
+        serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/GetDeptWiseAuth', { EmployeeID: EmpId, CentreID: CID }, function (response) {
+            UserAuth = JSON.parse(response);
+            if (UserAuth != '') {
+                var output = $('#templatePages_').parseTemplate(UserAuth);
+                $('[id$=divItems]').html(output).customFixedHeader();
+            }
+        });
+    }
+
+
+
+    var $saveUserAuth = function (btnSave) {
+        getUserAuthDetail(function (UserAuthDetails) {
+            $(btnSave).attr('disabled', true).val('Submitting...');
+            serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/SaveUserAuth', UserAuthDetails, function (response) {
+                var $responseData = JSON.parse(response);
+                modelAlert($responseData.response, function () {
+                    if ($responseData.status) {
+                        $(btnSave).removeAttr('disabled').val('Save');
+                        //GetRoleWisePages($("#empid").text());
+                        //GetUserAccess($("#empid").text());
+                        if (parseInt($("#SpnTabPosition").text()) < 5)
+                            NextTab();
+                    }
+                    else
+                        $(btnSave).removeAttr('disabled').val('Save');
+                });
+            });
+        });
+    }
+
+    var getUserAuthDetail = function (callback) {
+        var data = []; var empId = "", deptbelong = "", deptbelongId = "", centreId = "", uaId = "", roleId = "", Colname = "", status = false;
+        jQuery("#tableUserAuthItem tbody tr").each(function () {
+            var id = $(this).attr("id");
+            if (id != "Header" && id != "undefined" && id != "") {
+                var row = $(this).closest("tr");
+
+                centreId = parseInt($('#ddlcenter').val());
+                empId = $.trim($("#empid").text());
+                deptbelongId = $.trim($(row).find('#tdDeptBelongID').text());
+                roleId = $.trim($(row).find('#tdRoleID').text());
+                //deptbelong = $.trim($(row).find('#tdDeptBelong').text());
+                uaId = $.trim($(row).find('#tdUAID').text());
+                
+                var Stat = $(row).find("#chk" + uaId).is(':checked');                
+                if (Stat) {
+                    Colname = ($(row).find("#chk" + uaId).val());
+                    status = Stat;
+                }
+                else {
+                    status = Stat;
+                }
+
+                data.push({
+                    CentreID: centreId, EmployeeID: empId, DeptBelongID: deptbelongId, UAID: uaId, RoleID: roleId, ColName: Colname, Status: status
+                });
+
+
+            }
+
+
+        });
+        if (data.length < 1)
+            modelAlert('Please Select Atleast one');
+        else
+            callback({ data: data });
+    }
+
+    var PreviousTab = function () {
+        serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/PreviousTab', { EmpId: $("#empid").text() }, function (response) {
+            var responseData = JSON.parse(response);
+            if (responseData.status) {
+                GetRoleWisePages($("#empid").text());
+                modelAlert('Going to Previous Tab');
+                getDepartment(function () { });
+            }
+        });
+    }
+    var NextTab = function () {
+        serverCall('../EDP/UserPrivilege/UserPrivilege.asmx/NextTab', { EmpId: $("#empid").text() }, function (response) {
+            var responseData = JSON.parse(response);
+            if (responseData.status) {
+                SearchEmpByEmpID($("#empid").text());
+                GetSetCentre($("#empid").text());
+                modelAlert('Going to Next Tab');
+                getDepartment(function () { });
+            }
+        });
+    }
+    var checkAll = function (checkStatus) {
+
+        $('#tableUserAuthItem tbody tr #tdItemSelect input[type=checkbox]').prop('checked', checkStatus);
+    }
+    var chkAllModule = function (DeptBelongID, rowid, checkStatus) {
+        jQuery("#tableUserAuthItem tbody tr").each(function () {
+            var id = $(this).attr("id");
+            var rowidc = $(this).closest("tr");
+
+            var tdDeptBelongID = rowidc.find("#tdDeptBelongID").text();
+            if (tdDeptBelongID == DeptBelongID)
+
+                rowidc.find('#tdColName input[type=checkbox]').prop('checked', checkStatus);
+        });
+    }
+
+    $('#ddlcenter').on('change', function () {
+        GetDeptWiseAuth($("#empid").text(), this.value);
+    })
+
+
+</script>
+
+
+ <script id="templatePages_" type="text/html">  
+	  <table  id="tableUserAuthItem" cellspacing="0" rules="all" border="1" style="width:auto;border-collapse :collapse;">
+		    
+          <thead>
+		    <tr id="Header">
+            <td class="GridViewHeaderStyle">S.N.</td>
+			<th class="GridViewHeaderStyle" scope="col" style="width: 10px;display:none;" ><input id="chkAll"  type="checkbox" onchange="checkAll(this.checked)" /></th>
+            <th class="GridViewHeaderStyle" scope="col" style="text-align:left;display:none;">DeptBelongID</th>
+			<th class="GridViewHeaderStyle" scope="col" style="text-align:left;">DeptBelong</th>           
+			<th class="GridViewHeaderStyle" scope="col" style="text-align:left;">Modules</th> 
+            <th class="GridViewHeaderStyle" scope="col" style="text-align:left;display:none;">RoleID</th>    
+            <th class="GridViewHeaderStyle" scope="col"  style="text-align:left;display:none;">UAID</th> 
+             
+            <th class="GridViewHeaderStyle" scope="col" style="text-align:left;">Col Description</th>  	            				
+		    </tr>
+			</thead>
+          		          
+           <tbody>
+                <#dataLength=UserAuth.length;
+                for(var i=0;i<dataLength;i++)
+                    {
+                    objData=UserAuth[i];
+                #>
+                    <tr class="text_data selected_grey" id="<#=i+1#>" >                       
+                    <td class="GridViewItemStyle" id="tdSNo" ><#=(i+1)#></td>
+                    <td class="GridViewItemStyle"  id="tdItemSelect"  style="text-align:center;display:none;">                        
+                    <input type="checkbox" id="chkAllPages" />
+                    </td>		    
+                    <td class="GridViewLabItemStyle" id="tdDeptBelongID" style="width:150px;text-align:left; background-color:#3dbdcf; display:none;"  ><#=objData.DeptBelongID#></td>                                                                    		         
+                    <# 
+                if(i>0)
+                {
+                    if(UserAuth[i].DeptBelong!=UserAuth[i-1].DeptBelong)
+                    {
+                        #>
+                        <td class="GridViewLabItemStyle" id="tdDeptBelong"   style="width:180px;text-align:left; background-color:#3dbdcf;"  >
+                            <input id='chkAllModule1' onchange="chkAllModule(<#=UserAuth[i].DeptBelongID#>,this,this.checked)"  type="checkbox"  /><#=objData.DeptBelong#>
+
+
+                        </td>
+                        <#
+                    }
+                    else
+                    {
+                        #>
+                        <td class="GridViewLabItemStyle" id="tdDeptBelong"  style="width:150px;text-align:left" ></td>
+                        <#
+                    }
+
+                    if(UserAuth[i].Role!=UserAuth[i-1].Role)
+                    {
+                        #>
+                        <td class="GridViewLabItemStyle" id="td3"   style="width:220px;text-align:left; background-color:#3dbdcf;"  ><#=objData.Role#>                           
+                        </td>
+                        <#
+                    }
+                    else
+                    {
+                        #>
+                        <td class="GridViewLabItemStyle" id="td4"  style="width:220px;text-align:left" ></td>
+                        <#
+                    }
+
+                }
+                else
+                {
+                    #>
+                    <td class="GridViewLabItemStyle" id="tdDeptBelong"  style="width:180px;text-align:left;background-color:#3dbdcf;" >
+                         <input id='chkAllModule1' onchange="chkAllModule(<#=UserAuth[i].DeptBelongID#>,this,this.checked)" type="checkbox" /><#=objData.DeptBelong#>
+
+                    </td>
+                          <td class="GridViewLabItemStyle" id="td5"  style="width:220px;text-align:left;background-color:#3dbdcf;" ><#=objData.Role#>
+                    
+
+                    </td>
+                    <#
+                }
+           #>                 
+                    <td class="GridViewItemStyle" id="tdRoleID" style="display:none;"><#=objData.RoleID#></td>	
+                    <td class="GridViewItemStyle" id="tdUAID" style="display:none;"><#=objData.UAID#></td>	
+                   	
+					<td class="GridViewItemStyle" id="tdColName"><input id='chk<#=UserAuth[i].UAID#>' value="<#=UserAuth[i].ColName#>" type="checkbox" <#=(objData.IsRights==1)?'checked':'' #>  /><#=objData.ColDescription#></td>	                                             	                                       		
+                    </tr>
+                    <#}#>
+            </tbody>
+          
+          
+          
+                
+		 </table>      
+	</script>
+
+
+
+ <style type="text/css">
+     .highlighted {
+         background: LightBlue;
+     }
+
+     .nonhighlighted {
+         background: none;
+     }
+
+     .SelectedRole {
+         background: red;
+     }
+
+     .text_data {
+         font-family: Verdana;
+         font-size: 12px;
+         font-weight: none;
+     }
+
+         .text_data:hover {
+             cursor: pointer;
+             background-color: LightBlue;
+         }
+
+     .selected_grey {
+         background-color: none;
+     }
+
+     .RoleButton {
+         COLOR: #fff;
+         font-size: 8pt;
+         font-family: Verdana, Arial, sans-serif, sans-serif;
+         background-color: #008CBA;
+         border: 1px #4CAF50;
+         cursor: pointer;
+         border-radius: 10px;
+     }
+
+     #sidebar {
+         width: 100%;
+         height: auto;
+         float: left;
+         border: 1px solid;
+         background-color: #aec6d2;
+         padding: 5px;
+         border-radius: 5px;
+     }
+
+     #toggle {
+         width: 10%;
+         height: 40%;
+         margin-right: 6.5%;
+         margin-top: 3.5%;
+         float: left;
+     }
+ </style>
+

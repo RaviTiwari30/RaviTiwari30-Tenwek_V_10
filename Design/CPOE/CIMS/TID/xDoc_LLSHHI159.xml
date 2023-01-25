@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Request>
+  <Interaction>
+    <Allergies>
+      <Molecule reference="{C2972CA3-531D-4AFE-A611-CB9C49A5B9E9}" SaltID="568" />
+      <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" SaltID="554" />
+      <Molecule reference="{68EC41A6-71EE-427C-B261-03425BAA3DD3}" SaltID="557" />
+      <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" SaltID="554" />
+      <Molecule reference="{6D76A61F-C8A3-4288-8A26-3E0EB2B6F41F}" SaltID="560" />
+      <Molecule reference="{AC340A53-6611-425A-8A75-70E82F00B79C}" SaltID="554" />
+    </Allergies>
+    <HealthIssueCodes />
+    <Allergies />
+    <Prescribing>
+      <Product reference="{9FE0E40F-ED39-4EA5-B274-D4FC99CD2753}" ItemID="LSHHI34190" />
+      <Product reference="{96048B6A-575C-4D10-AE5B-D45DD410BAA5}" ItemID="LSHHI34193" />
+      <Product reference="{CCCDB71F-E825-414C-BA3A-E0A665C10AAB}" ItemID="LSHHI34187" />
+      <Product reference="{EDD3FF15-CC25-46C6-80F7-2F8EF72FC502}" ItemID="LSHHI34188" />
+      <Product reference="{63B9060F-BFFF-46F0-92FD-ECB299CF917F}" ItemID="LSHHI34191" />
+      <Product reference="{88817344-9B13-446B-BE00-E8B4C24C5B7A}" ItemID="LSHHI34192" />
+      <Product reference="{88817344-9B13-446B-BE00-E8B4C24C5B7A}" ItemID="LSHHI34192" />
+    </Prescribing>
+    <Prescribing />
+    <Prescribing />
+    <Prescribing />
+    <Allergies />
+    <Prescribing />
+    <Prescribing />
+    <Allergies />
+    <Allergies />
+    <Allergies />
+    <Prescribing />
+  </Interaction>
+  <PatientProfile />
+</Request>

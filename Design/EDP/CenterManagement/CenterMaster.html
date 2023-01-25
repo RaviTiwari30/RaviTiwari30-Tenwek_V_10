@@ -1,0 +1,508 @@
+﻿<style>
+    .pull-left {
+        font-family:Verdana, Arial, sans-serif;
+        font-size:10pt;
+    }
+    #ddlDiscount {
+        font-family:Verdana, Arial, sans-serif;
+        font-size:10pt;
+    }
+</style>
+<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="divInvestigationPrescribe">
+        <div class="row">
+            <div class="col-md-24">
+                <div class="row">
+                    <div class="col-md-24" style="text-align: center;">
+                        <label>
+                            <strong style="font-size: medium;">Centre Master</strong>
+                        </label>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-24  Purchaseheader">
+                        <label class="pull-left">
+                            <strong>Centre Master Details </strong>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-22">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Centre Name
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" id="txtCName" class="requiredField" maxlength="50" />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Centre Code
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" id="txtCCode" class="requiredField" maxlength="50" />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Website
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" id="txtWebsite" maxlength="50" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Contact No.
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" id="txtMobile" maxlength="15" onkeypress="return isNumber(event)" class="requiredField" />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Landline No.
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" id="txtLandline" maxlength="15" onkeypress="return isNumber(event)" />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Email Address
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" id="txtEmail" onblur="email(this);" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Discount Type
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <select id="ddlDiscount" class="requiredField">
+                                    <option value="0">Select</option>
+                                    <option value="Cash">Cash</option>
+                                    <option value="Corporate">Corporate</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Address
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <textarea id="txtCAddress" class="requiredField" maxlength="200" style=""></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Latitude
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" id="txtCLatitude" maxlength="20" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Longitude
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" id="txtCLongitude" maxlength="20" />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    <span id="lblInitialCharCap">Prefix </span>
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" id="txtInitialChar" class="requiredField" maxlength="4" />
+                                <div id="ddlf" Style="display: none;">
+                                <select id="ddlFollowedCentre" Style="display: none;"></select>
+                                    </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    <input type="checkbox" value="1" id="chkPrePrintedBarcode" />PrintedBarcode
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" id="txtPrePrintedBarcode" maxlength="1" />
+                            </div>
+                        </div>
+                        <div class="row" style="font-size:10pt;">
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Header logo
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="file" id="flHeaderlogo"/>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Footer logo
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="file" id="File1"/>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Follow IPD No.
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="checkbox" id="chkSelf" checked="checked" onchange="showItinialChar()" />Self
+                            </div>
+                        </div>
+                        <div class="row" style="font-size:10pt;">
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    <input type="checkbox" id="chkIsNablCenter" />IsNablCenter
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="file" id="flIsNabl"/>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    <input type="checkbox" id="chkIsCap" />IsCAP/ISO
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="file" id="flIsCap" />
+                            </div>
+                        </div>
+                        <div class="row" style="display:none;" id="divActive">
+                            <div class="col-md-3">
+                                <label class="pull-left">
+                                    Active
+                                </label>
+                                <b class="pull-right">:</b>
+                            </div>
+                            <div class="col-md-5" style="font-size:10pt;">
+                                <input type="radio" name="btnradioActive" id="rbtnActive" value="1" />Active
+                                <input type="radio" name="btnradioActive" id="rbtnInActive" value="0" />In-Active
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-10">
+                        </div>
+                        <div class="col-md-2">
+                            <input type="button" value="Save" id="btnSave" style="width:80px;" onclick="SaveCenter()" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    var BindCenter = function (callback) {
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/BindFollowedCenter', {}, function (response) {
+            $ddlFollowedCenter = $('#ddlFollowedCentre');
+            $ddlFollowedCenter.bindDropDown({ defaultValue: 'Select', data: JSON.parse(response), valueField: 'CentreID', textField: 'CentreName', isSearchAble: true, selectedValue: 'Select' });
+            callback($ddlFollowedCenter.find('option:selected').text());
+         });
+    }
+
+    $(document).ready(function () {
+        BindCenter(function () {
+            $("#ddlFollowedCentre").css("display", "none").chosen('destroy').chosen();
+        });
+       
+    });
+
+    var SaveCenter = function () {
+        $bindMandatory(function (response) {
+            var chkself = "";
+            if ($("#chkSelf").checked == true) {
+                chkself = 1;
+            }
+            $Center = {
+                CentreName: $("#txtCName").val(),
+                CentreCode: $("#txtCCode").val(),
+                Website: $("#txtWebsite").val(),
+                MobileNo: $("#txtMobile").val(),
+                LandlineNo: $("#txtLandline").val(),
+                EmailID: $("#txtEmail").val(),
+                DiscountType: $("#ddlDiscount option:selected").val(),
+                Address: $("#txtCAddress").val(),
+                Latitude: $("#txtCLatitude").val(),
+                Longitude: $("#txtCLongitude").val(),
+                initialChar: $("#txtInitialChar").val(),
+                labBarcodeAbbre: $("#txtPrePrintedBarcode").val(),
+                IsActive: 1,
+                IsDefault: 0
+            }
+
+            var followedcenter = $("#ddlFollowedCentre option:selected").val();
+            var self = 0;
+            if ($("#chkSelf").prop('checked') == true) {
+                self = 1;
+            }
+            var printbarcode = 0;
+           // if ($("input[type=checkbox]").prop(":checked"))
+            if ($("#chkPrePrintedBarcode").prop('checked') == true) {
+                printbarcode = 1;
+            }
+
+            var Nabl = 0;
+            if ($("#chkIsNablCenter").prop('checked') == true) {
+                Nabl = 1;
+            }
+            var cap = 0;
+            if ($("#chkIsCap").prop('checked') == true) {
+                cap = 1;
+            }
+            var initialchar = $("#txtInitialChar").val();
+            var txtPrintBarcode = $("#txtPrePrintedBarcode").val();
+            var Hfile = $("#flHeaderlogo")[0].files[0];
+
+            if ($('#btnSave').val() == "Save") {
+                
+                serverCall('../EDP/CenterManagement/CenterManagement.asmx/SaveCenter', { CenterDetail: [$Center], Followedcenter: followedcenter, ChkSelf: self, InitialCharr: initialchar, PrintBarcode: printbarcode, TextPrintBarcode: txtPrintBarcode, IsNablCenter: Nabl, IsCap: cap }, function (response) {
+                    var responseData = JSON.parse(response);
+                    if (responseData.status) {
+
+                        modelAlert('Record Saved Successfully', function (response) {
+                            ClearCenter();
+                            $bindAllCentre(function () { });
+                        });
+                        //modelAlert('Record Saved Successfully');
+                        //$("#tabs").tabs({
+                        //    cache: true, //make click only load page once
+                        //    ajaxOptions: { cache: false }, //but don't cache the ajax request!
+                        //    active: 0, //first tab is active
+                        //    disabled: false
+                        //});
+
+                        //var TabPosition = 12;
+                        //if (TabPosition >= 12) {
+                        //    $("#tabs").tabs("enable", TabPosition);
+                        //    $("#tabs").tabs({ active: TabPosition - 1 });
+                        //    $('#tabs').tabs('option', 'disabled', [])
+                        //}
+                        //else {
+                        //    $("#tabs").tabs("enable", TabPosition);
+                        //    $("#tabs").tabs({ active: TabPosition - 1 });
+                        //}
+                        //modelConfirmation('Confirmation', 'Are you wnat to copy role and Rights of another Empolyee', 'Yes', 'Close', function (status) {
+                        //    if (status) {
+
+                        //        openRoleright(responseData.response);
+
+
+
+                        //    } else {
+                        //        SearchEmpByEmpID(responseData.response);
+
+                        //        GetSetCentre(responseData.response);
+                        //        getDepartment(function () { });
+                        //    }
+                        //});
+
+                    }
+                    else {
+                        modelAlert(responseData.Msg);
+                    }
+                });
+            }
+            else if ($('#btnSave').val() == "Update") {
+                var isactive = $("input[name='btnradioActive']:checked").val();
+                serverCall('../EDP/CenterManagement/CenterManagement.asmx/UpdateCenter', { CenterDetail: [$Center], Followedcenter: followedcenter, ChkSelf: self, InitialCharr: initialchar, PrintBarcode: printbarcode, TextPrintBarcode: txtPrintBarcode, CenterID: Number($("#spnCenter_ID").text()), Active: isactive, IsNablCenter: Nabl, IsCap: cap }, function (responseUp) {
+                    var responseData = JSON.parse(responseUp);
+                    
+                    if (responseData.status) {
+
+                        modelAlert('Record Updated Successfully', function (response) {
+                            ClearCenter();
+                            $bindAllCentre(function () { });
+                        });
+
+                        //modelAlert('Record Updated Successfully');
+                        //$("#tabs").tabs({
+                        //    cache: true, //make click only load page once
+                        //    ajaxOptions: { cache: false }, //but don't cache the ajax request!
+                        //    active: 0, //first tab is active
+                        //    disabled: false
+                        //});
+
+                        //var TabPosition = 12;
+                        //if (TabPosition >= 12) {
+                        //    $("#tabs").tabs("enable", TabPosition);
+                        //    $("#tabs").tabs({ active: TabPosition - 1 });
+                        //    $('#tabs').tabs('option', 'disabled', [])
+                        //}
+                        //else {
+                        //    $("#tabs").tabs("enable", TabPosition);
+                        //    $("#tabs").tabs({ active: TabPosition - 1 });
+                        //}
+                    }
+                    else {
+                        modelAlert(responseData.Msg);
+                    }
+                });
+            }
+        });
+    }
+
+    var $bindMandatory = function (callback) {
+        var manadatory = [
+            { control: '#txtCName', isRequired: true, erroMessage: 'Enter Center Name', tabIndex: 1, isSearchAble: false },
+            { control: '#txtCCode', isRequired: true, erroMessage: 'Enter Center Code', tabIndex: 2, isSearchAble: false },
+            { control: '#txtMobile', isRequired: false, erroMessage: 'Enter Contact No.', tabIndex: 3, isSearchAble: false },
+            { control: '#txtCAddress', isRequired: true, erroMessage: 'Enter Address', tabIndex: 4, isSearchAble: false },
+            { control: '#ddlDiscount', isRequired: true, erroMessage: 'Please select Discount Type', tabIndex: 5, isSearchAble: false },
+           // { control: '#txtPinCode', isRequired: true, erroMessage: 'Please PinCode', tabIndex: 6, isSearchAble: false },
+        ];
+
+        $(manadatory).each(function (index, item) {
+            $(item.control).attr('tabindex', item.tabIndex).attr('errorMessage', item.erroMessage).addClass(item.isRequired ? 'requiredField' : '');
+            $(manadatory[0].control).focus();
+        });
+        callback(true);
+    }
+
+    function email() {
+        var emailaddress = $('#txtEmail').val();
+        var emailexp = /^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$/;
+        if ((emailexp.test(emailaddress) == false) && (emailaddress != "")) {
+
+            alert('Please enter valid email address.');
+            $('#txtEmail').val('');
+            $('#txtEmail').focus();
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    function showItinialChar() {
+        if ($("#chkSelf").prop("checked")) {
+            $("#txtInitialChar").show();
+            $("#ddlFollowedCentre").hide();
+            $("#ddlf").hide();
+            $("#lblInitialCharCap").text('Prefix');
+        }
+        else {
+            $("#txtInitialChar").hide();
+            $("#ddlFollowedCentre").show();
+            $("#ddlf").show();
+            $("#lblInitialCharCap").text('Centre');
+        }
+    }
+
+    function GetCenterDetails(CenterID) {
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetCenter', { CenterId: CenterID }, function (response) {
+            var Data = JSON.parse(response);
+            if (Data.status) {
+                d = Data.response;
+                $("#divActive").show();
+
+                var barcode = d[0].PrePrintedBarcode;
+                if (barcode == 1) {
+                    $("#chkPrePrintedBarcode").attr("checked", true);
+                }
+                else if (barcode == 0) {
+                    $("#rbtnInActive").attr("checked", false);
+                }
+
+                var nabl = d[0].IsNableCentre;
+                if (nabl == 1) {
+                    $("#chkIsNablCenter").attr("checked", true);
+                }
+                else { $("#chkIsNablCenter").attr("checked", false); }
+
+                var iscap = d[0].IsCap;
+                if (iscap == 1) {
+                    $("#chkIsCap").attr("checked", true);
+                }
+                else { $("#chkIsCap").attr("checked", false); }
+
+                var followedcenterid = d[0].FollowedCentreId
+                if (followedcenterid > 0) {
+                  //  $("#ddlFollowedCentre").val(followedcenterid);
+                    $("#chkSelf").attr("checked", true);
+                    //$("#txtInitialChar").hide();
+                    //$("#ddlFollowedCentre").show();
+                    //$("#ddlf").show();
+                    //$("#lblInitialCharCap").text('Centre');
+                }
+                else {
+                    //$("#txtInitialChar").show();
+                    //$("#ddlFollowedCentre").hide();
+                    //$("#ddlf").hide();
+                    //$("#lblInitialCharCap").text('Prefix');
+                    $("#chkSelf").attr("checked", false);
+                }
+
+                var isactive = d[0].IsActive;
+                if (isactive == 1) {
+                    $("#rbtnActive").attr("checked", true);
+                }
+                else if (isactive == 0) {
+                    $("#rbtnInActive").attr("checked", true);
+                }
+
+                $('#txtCName').val(d[0].CentreName);
+                $('#txtCCode').val(d[0].CentreCode);
+                $('#txtWebsite').val(d[0].Website);
+                $('#txtMobile').val(d[0].MobileNo);
+                $('#txtLandline').val(d[0].LandlineNo);
+                $('#txtEmail').val(d[0].EmailID);
+                $('#ddlDiscount').val(d[0].DiscountType);
+                $('#txtCAddress').val(d[0].Address);
+                $('#txtCLatitude').val(d[0].Latitude);
+                $('#txtCLongitude').val(d[0].Longitude);
+                $('#txtInitialChar').val(d[0].InitialChar);
+                $('#txtPrePrintedBarcode').val(d[0].LabBarcodeAbbreviation);
+                $('#btnSave').val("Update");
+            }
+        });
+    }
+
+    function ClearCenter() {
+        $("#ddlDiscount").prop('selectedIndex', 0);
+        $("#txtCName,#txtCCode,#txtMobile,#txtLandline,#txtEmail,#txtCAddress,#txtCLatitude,#txtCLongitude,#txtInitialChar,#txtPrePrintedBarcode,#txtWebsite").val('');
+    }
+</script>

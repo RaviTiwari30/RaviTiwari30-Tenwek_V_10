@@ -1,0 +1,158 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="MaintenanceMaster.aspx.cs" Inherits="Design_Equipment_Masters_MaintenanceMaster" %>
+
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="Ajax" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" src="../../../Scripts/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" href="../../../Styles/PurchaseStyle.css" />
+</head>
+<body style="margin-top: 1px; margin-left: 1px;">
+    <form id="form1" runat="server">
+        <div id="Pbody_box_inventory">
+            <div class="POuter_Box_Inventory">
+                <asp:scriptmanager id="smManager" runat="server"></asp:scriptmanager>
+                <div class="content" style="text-align: center">
+                    <b>Maintenance Master</b>
+                </div>
+
+            </div>
+
+            <div class="POuter_Box_Inventory" style="text-align: center">
+                <div style="text-align: center">
+                    <table class="ItDoseLabel">
+                        <tr>
+                            <td style="text-align: right">Name :</td>
+                            <td>
+                                <asp:textbox id="txtname" runat="server"></asp:textbox>
+                            </td>
+                            <td>Code :</td>
+                            <td>
+                                <asp:textbox id="txtCode" runat="server"></asp:textbox>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align: right">Maintenance Type :&nbsp; </td>
+                            <td style="text-align: left" colspan="2">
+                                <asp:dropdownlist id="ddlMaintenanceType" runat="server" cssclass="ItDoseDropdownbox"></asp:dropdownlist>
+                            </td>
+
+                            <td style="text-align: left">
+                                <asp:checkbox id="chkActive" runat="server" checked="True" text="Active" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="POuter_Box_Inventory" style="text-align: center">
+                <table>
+                    <tr>
+                        <td style="width: 52%; text-align: right;">
+                            <asp:button id="btnsave" runat="server" text="Save" onclick="btnsave_Click" cssclass="ItDoseButton" />
+                        </td>
+                        <td style="width: 48%; text-align: left;">&nbsp;&nbsp;
+                <asp:label id="lblMsg" runat="server" cssclass="ItDoseLblError"></asp:label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="POuter_Box_Inventory" style="text-align: center">
+
+                <div class="Equipmentheader" id="Div3" runat="server">
+                </div>
+
+                <div class="content" style="overflow: scroll; height: 400px; width: 99%;">
+                    <asp:gridview id="grdMaintenanceType" runat="server" autogeneratecolumns="false" cssclass="GridViewStyle" onrowcommand="grdMaintenanceType_RowCommand">
+                    <Columns>
+                        <asp:TemplateField HeaderText="Edit">
+                            <ItemStyle HorizontalAlign="Center" CssClass="GridViewItemStyle" />
+                            <HeaderStyle CssClass="GridViewHeaderStyle" Width="50px" />
+                            <ItemTemplate>
+                                <asp:ImageButton ID="imbEdit" ToolTip="Edit MaintenanceType" runat="server" ImageUrl="~/Images/edit.png" 
+                                    CausesValidation="false" CommandArgument='<%# Eval("MaintenanceID")%>' CommandName="EditAT" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Log">
+                            <ItemStyle HorizontalAlign="Center" CssClass="GridViewItemStyle" />
+                            <HeaderStyle CssClass="GridViewHeaderStyle" Width="50px" />
+                            <ItemTemplate>
+                                <asp:ImageButton ID="imbView" ToolTip="View Log Details" runat="server" ImageUrl="~/Images/view.GIF" 
+                                    CausesValidation="false" CommandArgument='<%# Eval("MaintenanceID")%>' CommandName="ViewLog" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Maintenance Type">
+                            <ItemStyle CssClass="GridViewItemStyle" Width="150px" />
+                            <HeaderStyle CssClass="GridViewHeaderStyle" />
+                            <ItemTemplate><%#Eval("MaintenanceType") %></ItemTemplate>
+                        </asp:TemplateField>
+
+                        <asp:TemplateField HeaderText="Name">
+                            <ItemStyle CssClass="GridViewItemStyle" />
+                            <HeaderStyle CssClass="GridViewHeaderStyle" Width="180px" />
+                            <ItemTemplate><%#Eval("MaintenanceName") %></ItemTemplate>
+                        </asp:TemplateField>
+
+                        <asp:TemplateField HeaderText="Code">
+                            <ItemStyle CssClass="GridViewItemStyle" Width="75px" />
+                            <HeaderStyle CssClass="GridViewHeaderStyle" />
+                            <ItemTemplate>
+                                <%#Eval("MaintenanceCode") %>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+
+                        <asp:TemplateField HeaderText="Active">
+                            <ItemStyle CssClass="GridViewItemStyle" Width="40px" />
+                            <HeaderStyle CssClass="GridViewHeaderStyle" />
+                            <ItemTemplate><%#Eval("IsActive") %></ItemTemplate>
+                        </asp:TemplateField>
+
+                        <asp:TemplateField HeaderText="User">
+                            <ItemStyle CssClass="GridViewItemStyle" Width="120px" />
+                            <HeaderStyle CssClass="GridViewHeaderStyle" />
+                            <ItemTemplate><%# Eval("LastUpdatedby") %></ItemTemplate>
+                        </asp:TemplateField>
+
+                        <asp:TemplateField HeaderText="Date">
+                            <ItemStyle CssClass="GridViewItemStyle" Width="150px" />
+                            <HeaderStyle CssClass="GridViewHeaderStyle" />
+                            <ItemTemplate><%# Eval("UpdateDate") %></ItemTemplate>
+                        </asp:TemplateField>
+
+                        <asp:TemplateField HeaderText="IPAddress">
+                            <ItemStyle CssClass="GridViewItemStyle" Width="120px" />
+                            <HeaderStyle CssClass="GridViewHeaderStyle" />
+                            <ItemTemplate><%# Eval("IPAddress") %></ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                </asp:gridview>
+                </div>
+            </div>
+
+            <asp:panel id="pnlLog" runat="server" style="width: 600px; border: outset; background-color: #EAF3FD; display: none;">
+            <div id="Div1" class="Purchaseheader" style="text-align: center">Log Detail </div>
+            <div style="overflow: scroll; height: 250px; width: 595px; text-align: left; border: groove;">
+                <asp:Label ID="lblLog" runat="server" ></asp:Label>
+            </div>
+            <div style="text-align: center;">
+                <asp:Button ID="btnClose" runat="server" CssClass="ItDoseButton"
+                    Text="Close" />
+            </div>
+        </asp:panel>
+            <cc1:modalpopupextender id="mdpLog" runat="server" cancelcontrolid="btnClose"
+                targetcontrolid="btnHidden" backgroundcssclass="filterPupupBackground" popupcontrolid="pnlLog"
+                x="100" y="80">
+    </cc1:modalpopupextender>
+            <div style="display: none;">
+                <asp:button id="btnHidden" runat="server" text="Button" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

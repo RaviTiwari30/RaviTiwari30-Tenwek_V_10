@@ -1,0 +1,66 @@
+  **********************************************************  
+ Page Name                : /Tenwek/Design/IPD/IPDItemDiscount.aspx
+ Time Of Error            : 04-10-2022 12:29:16
+ Error Message            : Unknown column 'SurgeryID' in 'field list'
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 309
+   at MySqlHelper.ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, String commandText) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ODBCHelper.cs:line 285
+   at Dummy.PostBillForDummy(String TID, MySqlTransaction trnx) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\BLL\Dummy.cs:line 259
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type               : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 04-10-2022 12:52:22
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 04-10-2022 12:52:34
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 04-10-2022 12:52:37
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)
+
+
+  **********************************************************  
+ Page Name                : /Tenwek/Design/Store/OPDPharmacyIssue.aspx/bindData
+ Time Of Error            : 04-10-2022 12:52:40
+ Error Message            : Unknown column 'pm.patientid' in 'where clause'
+ Error Place              :    at ExcuteCMD.GetDataTable(String sqlCmd, CommandType commandType, Object inParameters) in d:\RaviTiwari\ProductionCode\Tenwek\App_Code\DLL\ExcuteCMD.cs:line 211
+   at Design_Store_OPDPharmacyIssue.bindData(String patientID, String IPDNo, String EMGNo) in d:\RaviTiwari\ProductionCode\Tenwek\Design\Store\OPDPharmacyIssue.aspx.cs:line 123
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::bcdf:34d:940e:4136%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : System.Data.DataTable GetDataTable(System.String, System.Data.CommandType, System.Object)

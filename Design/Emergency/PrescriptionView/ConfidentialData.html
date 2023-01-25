@@ -1,0 +1,64 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto; padding: 0px" id="divConfidentialDataPrescribe" class="row col-md-24">
+    <div style="display:none" class="row">
+        <div class="col-md-24">
+            <input type="text" onkeyup="$searchChiefComplaintByWord(event)" placeholder="Search ConfidentialData Template" id="txtSearchConfidentialDataTemplates" />
+        </div>
+    </div>
+    <div  style="display:none" class="row">
+        <div class="col-md-24">
+            <div style="height: 300px" id="listConfidentialData" class="chkList-Control">
+                <ul id="ConfidentialDataListMenu"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-24">
+            <textarea id="txtConfidentialData" style="height: 100px" onkeyup="onTxtConfidentialDataChange(event)" />
+             <span id="spnConfidentialDataOld" style="display:none;" />
+        </div>
+    </div>
+    <br />
+</div>
+
+
+<script type="text/javascript">
+    var onTxtConfidentialDataChange = function (e){
+        if (e.target.value.length > 0) {
+           // $('#divConfidentialDataPreview').html('<b>Confidential Data : </b><span style="white-space: pre-wrap;">' + e.target.value + '</span>');
+            var now = new Date(Date.now());
+            var hours = (Number(now.getHours()) > 12 ? (Number(now.getHours()) - 12) : now.getHours());
+            var formatted = (now.getDate().toString().length < 2 ? '0' + now.getDate() : now.getDate()) + "-" + (now.getMonth().toString().length < 2 ? '0' + (now.getMonth() + 1) : (now.getMonth() + 1)) + "-" + now.getFullYear() + " " + (hours.toString().length < 2 ? '0' + hours : hours) + ":" + (now.getMinutes().toString().length < 2 ? '0' + now.getMinutes() : now.getMinutes()) + (Number(now.getHours()) > 12 ? ' PM' : ' AM');
+
+            $('#divConfidentialDataPreview').html('<b>Confidential Data : </b> <br /><span style="white-space: pre-wrap;" >' + $('#spnConfidentialDataOld').text() + ($('#spnConfidentialDataOld').text().length > 0 ? ' <br />' : '') + '<b> ' + formatted + ' :- </b> ' + e.target.value + '</span>');
+
+        }
+        else {
+          //  $('#divConfidentialDataPreview').html('');
+            $('#divConfidentialDataPreview').html(($('#spnConfidentialDataOld').text().length > 0 ? '<b>Confidential Data : </b> <br /><span style="white-space: pre-wrap;">' + $('#spnConfidentialDataOld').text() + '</span>' : ''));
+
+        }
+    
+        disabledPrint(true);
+    }
+    var removeConfidentialData = function () {
+        modelConfirmation('Delete Confirm ?', 'Do you want to delete the selected data from this screen', 'Yes', 'No', function (response) {
+            if (response)
+                $('#txtConfidentialData').val('').keyup();
+        });
+    }
+    var bindConfidentialData = function (data) {
+        var confidentialData = data.ConfidentialData;
+      //  $('#txtConfidentialData').val(confidentialData).keyup();
+        $('#spnConfidentialDataOld').text(confidentialData);
+      //  if (confidentialData.length > 0)
+      if (!String.isNullOrEmpty(confidentialData))
+            $('#divConfidentialDataPreview').html('<b>Confidential Data : </b> <br /><span style="white-space: pre-wrap;">' + confidentialData + '</span>');
+
+
+    }
+    $(document).ready(function () {
+        loadViewData(function (patientPrescriptionDetails) {
+            bindConfidentialData(patientPrescriptionDetails);
+        });
+    });
+</script>

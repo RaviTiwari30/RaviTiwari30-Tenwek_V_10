@@ -1,0 +1,93 @@
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/EDP/services/Frame.asmx/FrameRoleUpdate
+ Time Of Error            : 12-01-2023 19:59:03
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND RoleID=3' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\DLL\ODBCHelper.cs:line 208
+   at Frame.FrameRoleUpdate(List`1 Data) in d:\Production Code\TenwekUAT\Tenwek_v10\Design\EDP\Services\Frame.asmx:line 138
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type               : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/EDP/services/Frame.asmx/FrameRoleInsert
+ Time Of Error            : 12-01-2023 19:59:11
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''3',24,'EMP001')' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\DLL\ODBCHelper.cs:line 208
+   at Frame.FrameRoleInsert(List`1 Data) in d:\Production Code\TenwekUAT\Tenwek_v10\Design\EDP\Services\Frame.asmx:line 89
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/EDP/services/Frame.asmx/FrameRoleUpdate
+ Time Of Error            : 12-01-2023 20:01:32
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND RoleID=3' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\DLL\ODBCHelper.cs:line 208
+   at Frame.FrameRoleUpdate(List`1 Data) in d:\Production Code\TenwekUAT\Tenwek_v10\Design\EDP\Services\Frame.asmx:line 138
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/EDP/services/Frame.asmx/FrameRoleUpdate
+ Time Of Error            : 12-01-2023 20:01:56
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND RoleID=3' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\DLL\ODBCHelper.cs:line 208
+   at Frame.FrameRoleUpdate(List`1 Data) in d:\Production Code\TenwekUAT\Tenwek_v10\Design\EDP\Services\Frame.asmx:line 138
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()
+
+
+  **********************************************************  
+ Page Name                : /Tenwek_v10/Design/EDP/services/Frame.asmx/FrameRoleInsert
+ Time Of Error            : 12-01-2023 20:02:05
+ Error Message            : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''3',24,'EMP001')' at line 1
+ Error Place              :    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] commandParameters) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\DLL\ODBCHelper.cs:line 232
+   at MySqlHelper.ExecuteNonQuery(MySqlConnection connection, CommandType commandType, String commandText) in d:\Production Code\TenwekUAT\Tenwek_v10\App_Code\DLL\ODBCHelper.cs:line 208
+   at Frame.FrameRoleInsert(List`1 Data) in d:\Production Code\TenwekUAT\Tenwek_v10\Design\EDP\Services\Frame.asmx:line 89
+ Error On Machine         : DESKTOP-M5ATUHK
+ Error Machine IP Address : fe80::d98f:cc21:66a2:fded%5
+ Exception Type           : MySql.Data.MySqlClient.MySqlException
+ TargetSite               : MySql.Data.MySqlClient.MySqlPacket ReadPacket()

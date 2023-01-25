@@ -1,0 +1,489 @@
+﻿
+<script type="text/javascript" src="../../Scripts/Handsome-Table/handsontable.full.js"></script>
+    <link href="../../Scripts/Handsome-Table/handsontable.full.min.css" rel="stylesheet" />
+<div style="margin: 0px; font-size: 11px; height: auto" class="row col-md-24">
+    <div id="ItemMapping">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-24" style="text-align: center;">
+                    <label>
+                        <strong style="font-size: medium;">Centre-Wise Item Mapping</strong>
+                    </label>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Search Criteria </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-22">
+                    <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3" style="display:none;">
+                            <label class="pull-left">
+                                Centre
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5" style="display:none;">
+                            <select id="ddlCentre"></select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="pull-left">Item Name </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" id="txtItemName" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="pull-left">
+                                Item Creation From
+                            </label>
+                            <b class="pull-right">:</b>
+                            <input type="checkbox" id="chkdate" />
+                        </div>
+                        <div class="col-md-4">
+                            <input type="date" autocomplete="off" id="txtFromDate" data-title="Item Creation From" style="width:170px;" />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="pull-left">
+                                Item Type
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <input id="rdbunmappItem" type="radio" name="itemtype" value="unmapped" class="pull-left" />
+                            <span class="pull-left">UnMapped</span>
+                            <input id="rdbmappItem" type="radio" name="itemtype" value="mapped" class="pull-left" />
+                            <span class="pull-left">Mapped</span>
+                            <input id="rdbboth" type="radio" name="itemtype" checked="checked" value="Both" class="pull-left" />
+                            <span class="pull-left">Both</span>
+                        </div>
+                        
+                    </div>
+                    <div class="row" style="font-size:10pt;">
+                        <div class="col-md-3">
+                            <label class="pull-left">Category </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <select onchange="getSubCategorys(this.value)" id="ddlCategoryItemMapping"></select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="pull-left">SubCategory </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-4">
+                            <select id="ddlSubCategoryItemMapping"></select>
+                        </div>
+                    </div>
+                    <div class="row" style="display: none">
+                        <div class="col-md-3">
+                            <label class="pull-left">Manufacturer</label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="ddlManufacturer"></select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="pull-left">Group</label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="ddlMedicineGroup"></select>
+
+                        </div>
+                        <div class="col-md-3">
+                            <label class="pull-left">Department </label>
+                            <b class="pull-right">:</b>
+                        </div>
+
+                        <div class="col-md-5">
+                            <select id="ddlDepartmentItemMapping"></select>
+                        </div>
+
+                        <div class="col-md-3"></div>
+                        <div class="col-md-5"></div>
+                    </div>
+                    <div class="row" style="">
+                        <div class="row">
+                            <div class="col-md-24 textCenter">
+                                <input type="button" id="btnSearchItemsForMapping" onclick="searchItemsForMapping()" class="save" value="Search" tabindex="6" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-24  Purchaseheader">
+                    <label class="pull-left">
+                        <strong>Item List </strong>
+                    </label>
+                </div>
+            </div>
+            <div class="searchResults" style="font-size: 10pt;">
+                <div class="row">
+                    <div class="col-md-24">
+                        <div id="divMappedItems"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--<div class="col-md-8">
+                    <button type="button" style="width: 30px; display: none; height: 30px; float: left; margin-left: 5px; background-color: lightpink" class="circle"></button>
+                    <b style="float: left; margin-top: 5px; display: none; margin-left: 5px">Non-Editable</b>
+                </div>-->
+                <div class="col-md-24 textCenter">
+                    <input type="button" value="Save" class=" save margin-top-on-btn" onclick="saveItemsMapping(this);" id="btnSaveItemMapping" />
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------Modal Pop up---------------------------------------------------------------------------------->
+<div id="divItemMappingModels" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content" style="min-width: 500px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="divItemMappingModel" aria-hidden="true">&times;</button>
+                    <b class="modal-title">Copy Same Item Mapping</b>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-22">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Copy Centre Name 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <label id="lblCentreFrom" class="pull-left patientInfo" style="font-weight: bold"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="pull-left" style="font-weight: bold">
+                                        Select Centre To Copy 
+                                    </label>
+                                    <b class="pull-right">:</b>
+                                </div>
+                                <div class="col-md-12">
+                                    <ul id="ulCentreTo" style="list-style-type: none; margin-left: -10px;"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" onclick="copyCentreItemMapping(this)" class="save" style="font-size:10pt;">Save</button>
+                    <button type="button" data-dismiss="divItemMappingModels" onclick="CloseItemMapModal()" style="font-size:10pt;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------------------------------END----------------------------------------------------------------------------->
+<script type="text/javascript">
+    function CloseItemMapModal() {
+        $("#divItemMappingModels").hide();
+    }
+    var getCategorys = function (callback) {
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetAllCategory', {}, function (response) {
+            var responseData = JSON.parse(response);
+            callback($('#ddlCategoryItemMapping').bindDropDown({ data: JSON.parse(response).reverse(), valueField: 'CategoryID', textField: 'Name' }));
+        });
+    }
+
+    var getSubCategorys = function (categoryID) {
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetSubCategoryByCategory', { categoryID: categoryID }, function (response) {
+            var responseData = JSON.parse(response);
+            $('#ddlSubCategoryItemMapping').bindDropDown({ data: JSON.parse(response), valueField: 'SubCategoryID', textField: 'Name', defaultValue: 'All' });
+        });
+    }
+
+    var getDepartMent = function (callback) {
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetDepartMent', {}, function (response) {
+            var responseData = JSON.parse(response);
+            callback($('#ddlDepartmentItemMapping').bindDropDown({ data: JSON.parse(response), valueField: 'DeptLedgerNo', textField: 'RoleName', defaultValue: 'All' }));
+        });
+    }
+
+    var getMedicineGroup = function (callback) {
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetMedicineGroup', {}, function (response) {
+            var responseData = JSON.parse(response);
+            callback($('#ddlMedicineGroup').bindDropDown({ data: JSON.parse(response), valueField: 'ID', textField: 'ItemGroup', defaultValue: 'All' }));
+        });
+    }
+
+    var loyalityCategerys = {};
+    var getLoyalityCatogerys = function () {
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetLoyalityCatogerys', {}, function (response) {
+            loyalityCategerys.master = JSON.parse(response);
+            loyalityCategerys.categorys = [];
+            loyalityCategerys.categorys.push('');
+            $.map(loyalityCategerys.master, function (i) { loyalityCategerys.categorys.push(i.Name) });
+        });
+    }
+
+    $(document).ready(function () {
+        getCategorys(function () {
+            getSubCategorys($('#ddlCategoryItemMapping').val());
+        });
+        getMedicineGroup(function () { });
+        getDepartMent(function () { });
+        getLoyalityCatogerys(function () { });
+    });
+
+    var hTables = {};
+    var arr = new Array();
+    var searchItemsForMapping = function () {
+        $("#divManufactureList ul li").each(function () {
+            arr.push($(this).attr('id'));
+        });
+
+        if ($('#chkdate').is(":checked"))
+            var date = $('#txtFromDate').val();
+        else
+            date = "";
+
+        var itemtype = $('input[type=radio][name=itemtype]:checked').val();
+
+        var data = {
+            centerID: $.trim($("#spnCenter_ID").text()),
+            departMentLedgerNo: $.trim($('#ddlDepartmentItemMapping').val()),
+            categoryID: $.trim($('#ddlCategoryItemMapping').val()),
+            subCategoryID: $.trim($('#ddlSubCategoryItemMapping').val()),
+            itemName: $.trim($('#txtItemName').val()),
+            manufactureID: arr,                                            // $.trim($('#ddlManufacturer').val())
+            groupid: $.trim($("#ddlMedicineGroup").val()),
+            date: date,
+            itemtype: itemtype,
+            centreName: $.trim($("#spnCenter_Name").text())
+        };
+
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetItems', data, function (response) {
+            mappedItems = JSON.parse(response);
+            bindMappedItems(mappedItems);
+
+        });
+
+        while (arr.length > 0) {
+            arr.pop();
+        }
+        //hTables.init();
+    }
+
+    var bindMappedItems = function (data) {
+        getGridSetting(function (s) {
+            var $container = document.getElementById('divMappedItems');
+            $container.innerHTML = '';
+            s.data = data;
+            hTables = new Handsontable($container, s);
+            hTables.render();
+            hTables.addHook('beforeChange', function (changes, source) {
+                debugger;
+                if (source === 'loadData' || source === 'internal' || changes.length > 1) {
+                    return;
+                }
+                var row = changes[0][0];
+                var prop = changes[0][1];
+                var value = changes[0][3];
+
+                if (prop === 'Rack') {
+                    var rack = racksDetails.master.filter(function (i) { if (i.Name == value) { return i } });
+                    var shelfsByRackID = shelfDetails.master.filter(function (i) { if (i.RackID == rack[0].ID) { return i; } });
+                    var shelfs = [];
+                    $.map(shelfsByRackID, function (i) { shelfs.push(i.ShelfName) });
+                    this.setCellMeta(row, this.propToCol('Shelf'), 'source', shelfs);
+                }
+                hTables.render();
+            });
+            if (mappedItems.length > 0)
+                $('.searchResults').show();
+            else
+                $('.searchResults').hide();
+        });
+    }
+
+    var getGridSetting = function (callback) {
+        var s = {
+            data: mappedItems,
+            rowHeaders: true,
+            contextMenu: false,
+            filters: true,
+            height: 400,
+            stretchH: 'all',
+            afterValidate: onValidateCellData,
+            contextMenu: { callback: function (key, selection, clickEvent) { }, items: { 'row_above': {}, 'row_below': {}, 'remove_row': {} } },
+            //  colHeaders: ['StoreType', 'ItemName', 'Minlevel', 'Maxlevel', 'ReOrder', 'ReOrder Qty', 'Discount', 'LoyalityCategory', 'Rack-Details', 'Shelf', 'IsActive'],
+            colHeaders: ['Category', 'SubCategory', 'ItemName', 'IsActive'],
+            columns: [{ data: "Category", type: 'text', readOnly: true },
+                      { data: "SubCategory", type: 'text', readOnly: true },
+                      { data: 'TypeName', type: 'text', readOnly: true },
+                    // { data: 'MinLevel', type: 'numeric', allowInvalid: false },
+                    // { data: 'MaxLevel', type: 'numeric', allowInvalid: false },
+                    // { data: 'ReorderLevel', type: 'numeric', allowInvalid: false },
+                    //  { data: 'ReorderQty', type: 'numeric', allowInvalid: false },
+                    //  { data: 'Discount', type: 'numeric', allowInvalid: false },
+                      //{
+                      //    data: 'LoyalityCategoryID',
+                      //    type: 'dropdown',
+                      //    source: loyalityCategerys.categorys,
+                      //    allowInvalid: false
+                      //},
+                      //{
+                      //    data: 'Rack',
+                      //    type: 'dropdown',
+                      //    source: racksDetails.racks,
+                      //    allowInvalid: false
+                      //},
+                      //{
+                      //    data: 'Shelf',
+                      //    type: 'dropdown',
+                      //    allowInvalid: false
+                      //},
+                      {
+                          data: 'IsActive',
+                          type: 'dropdown',
+                          source: ['N', 'Y'],
+
+                          allowInvalid: false
+                      }
+            ]
+
+        }
+        callback(s);
+    }
+
+    var onValidateCellData = function (isValid, value, row, prop, source) {
+        //var btnSave= $('#btnSave');
+        //if (!isValid)
+        //    $(btnSave).prop('disabled',false);
+        //else
+        //    $(btnSave).prop('disabled',true);
+    }
+
+    var saveItemsMapping = function (btnSaveItemMapping) {
+        getMappedItems(function (data) {
+            $(btnSave).attr('disabled', true).val('Submitting...');
+            serverCall('../Store/Services/MapStoreItem.asmx/SaveItems', { listItems: data }, function (res) {
+                $responseData = JSON.parse(res);
+                modelAlert($responseData.response, function (res) {
+                    if ($responseData.status)
+                        modelConfirmation('Confirmation ?', 'Do you want to apply Same Items Mapping to Another Centre.', 'Yes Copy To Another Centre', 'Cancel', function (response) {
+                            if (response) {
+                                // $("#divItemMappingModel").showModel();
+                                loadCentreToModels($("#spnCenter_ID").text(), $("#spnCenter_Name").text());
+                                $(btnSave).removeAttr('disabled').val('Save');
+                            }
+                            else {
+                                window.location.reload();
+                            }
+                        });
+                    else
+                        $(btnSave).removeAttr('disabled').val('Save');
+                });
+            });
+        })
+    }
+
+    var getMappedItems = function (callback) {
+        var data = [];
+        $(hTables.getData()).each(function () {
+            var loyalityCategoryID = this.LoyalityCategoryID;
+            var s = loyalityCategerys.master.filter(function (i) { if (i.Name == loyalityCategoryID) { return i; } });
+            var LoyalityCategoryID = s.length > 0 ? s[0].ID : 0;
+            data.push({
+                Maxlevel: Number(this.MaxLevel),
+                Minlevel: Number(this.MinLevel),
+                Reorderlevel: Number(this.ReorderLevel),
+                Reorderqty: Number(this.ReorderQty),
+                Maxreorderqty: Number(this.MaxReorderQty),
+                Minreorderqty: Number(this.MinReorderQty),
+                Discount: Number(this.Discount),
+                Rack: $.trim(this.Rack),
+                Shelf: $.trim(this.Shelf),
+                LoyalityCategoryID: LoyalityCategoryID,
+                Majorunit: this.MajorUnit,
+                Minorunit: this.MinorUnit,
+                Conversionfactor: this.ConversionFactor,
+                Subcategoryid: this.SubCategoryID,
+                Itemid: this.ItemID,
+                Deptledgerno: this.departMentLedgerNo,
+                Centreid: this.centerID,
+                Isactive: this.IsActive,
+                CentreName: this.CentreName
+            });
+        });
+        callback(data);
+        // });
+    }
+
+    var loadCentreToModels = function (centreId, CentreName) {
+        $("#lblCentreFrom").text(CentreName);
+        serverCall('../EDP/CenterManagement/CenterManagement.asmx/GetALLCentre', {}, function (response) {
+            var responseData = JSON.parse(response);
+            var responseCentreTo = responseData.filter(function (i) { return i.CentreID != centreId });
+            var ulCentreTo = $('#ulCentreTo');
+            ulCentreTo.find('li').remove();
+            if (responseCentreTo.length > 0) {
+                $.each(responseCentreTo, function (i) {
+                    var aa = '<li  role="menuitem"><a>'
+                        + '<label class="trimList"  title="' + this.CentreName + '" >'
+                        + '<input   id="' + $.trim(this.CentreID) + '" value="' + this.CentreID + '" class="ui-all" type="checkbox" '
+                        + ' >' + this.CentreName + '</label></a> </li>';
+                    ulCentreTo.append(aa);
+                });
+
+
+                $("#divItemMappingModels").showModel();
+            }
+            else
+                modelAlert("Only One Centre Exist in the System !!!");
+
+        });
+    }
+
+    var copyCentreItemMapping = function (btnCopy) {
+        var centreList = [];
+        $('#ulCentreTo li').each(function () {
+            if ($(this).find('input').is(":checked")) {
+                centreList.push({
+                    centreId: $(this).find('input').attr('id')
+                })
+            }
+        });
+
+        if (centreList.length == 0) {
+            modelAlert('Please Select Atleast One Centre To Copy !!!');
+            return;
+        }
+        getMappedItems(function (data) {
+            $(btnCopy).attr('disabled', true).val('Submitting...');
+            serverCall('../Store/Services/MapStoreItem.asmx/CopyItemMappingItems', { listItems: data, centreList: centreList }, function (res) {
+                $responseData = JSON.parse(res);
+                modelAlert($responseData.response, function (res) {
+                    if ($responseData.status)
+                        $("#divItemMappingModels").hide();
+                    else
+                        $(btnCopy).removeAttr('disabled').val('Save');
+                });
+            });
+        })
+    }
+
+   
+</script>

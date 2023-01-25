@@ -1,0 +1,61 @@
+﻿<div style="margin: 0px; font-size: 11px; height: auto; padding: 0px" id="divProvisionalDiagnosiss" class="row col-md-24">
+    <div style="display:none" class="row">
+        <div class="col-md-24">
+            <input type="text" onkeyup="$searchChiefComplaintByWord(event)" placeholder="Search Allergies Template" id="txtSearchAllergiesTemplates" />
+        </div>
+    </div>
+    <div  style="display:none" class="row">
+        <div class="col-md-24">
+            <div style="height: 300px" id="listAllergies" class="chkList-Control">
+                <ul id="allergiesListMenu"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-24">
+            <textarea id="txtProvisionalDiagnosis" style="height: 100px" onkeyup="OnTextProvisionalDiagnosis(event)" maxlength="500" />
+        </div>
+    </div>
+    <br />
+</div>
+
+<script type="text/javascript">
+    
+
+    var OnTextProvisionalDiagnosis = function (e) {
+        if ($('#divProvisionalDiagnosis').html() == "")
+        {
+            $("#chkHeaders_10").prop('checked', true);
+
+        }
+        if (e.target.value.length > 0)
+            $('#divProvisionalDiagnosis').html('<b>Assessment & Plan : </b><span style="white-space: pre-wrap;">' + e.target.value + '</span>');
+        else
+            $('#divProvisionalDiagnosis').html('');
+
+        disabledPrint(true);
+    }
+
+    var removePD = function () {
+        modelConfirmation('Delete Confirm ?', 'Do you want to delete the selected data from this screen', 'Yes', 'No', function (response) {
+            if (response) {
+                $('#txtProvisionalDiagnosis').val('').keyup();
+                if ($('#divProvisionalDiagnosis').html() == "") {
+                    $("#chkHeaders_10").prop('checked', false);
+
+                }
+            }
+        });
+    }
+
+    var bindProvisionalDiagnosis = function (data) {
+        var data = data.ProvisionalDiagnosis.length > 0 ? data.ProvisionalDiagnosis[0].ProvisionalDiagnosis : '';
+        $('#txtProvisionalDiagnosis').val(data).keyup();
+    }
+    $(document).ready(function () {
+        loadViewData(function (patientPrescriptionDetails) {
+            bindProvisionalDiagnosis(patientPrescriptionDetails);
+        });
+    });
+    
+</script>
