@@ -61,7 +61,7 @@ public partial class Design_OPD_BillRegister : System.Web.UI.Page
         StringBuilder sb = new StringBuilder();
         if (rbtnReportType.SelectedValue == "3")
         {
-            sb.Append("select lt.BillNo,IF(lt.BillNo!='',IFNULL(DATE_FORMAT(lt.BillDate,'%d-%b-%y %h:%m:%s %p'),''),'') AS BillDate,pm.PatientID AS UHID,CONCAT(pm.Title,'',pm.PName)PatientName,IFNULL(fpm.PanelGroup,'')PanelGroup,fpm.Company_Name AS PanelName,ltd.ItemName,   ");
+            sb.Append("select lt.BillNo,IF(lt.BillNo!='',IFNULL(CONCAT(DATE_FORMAT(lt.BillDate,'%d-%b-%y'),' ',TIME_FORMAT(lt.time,'%h:%i:%s %p')),''),'') AS BillDate,pm.PatientID AS UHID,CONCAT(pm.Title,'',pm.PName)PatientName,IFNULL(fpm.PanelGroup,'')PanelGroup,fpm.Company_Name AS PanelName,ltd.ItemName,   ");
             sb.Append(" ROUND(SUM(ltd.Rate),2)Rate,ROUND(SUM(ltd.Quantity),2)Quantity,ROUND(SUM(ltd.DiscAmt),2)DiscountAmount,ROUND(SUM(ltd.Amount),2) Amount,ROUND(lt.NetAmount,2)TotalBillAmount,ROUND(lt.Adjustment,2)TotalPaidAmount,ROUND((lt.NetAmount-lt.Adjustment),2)TotalOutStandingAmt, ");
             sb.Append(" (SELECT CONCAT(emp.`Title`,' ',emp.`NAME` ) FROM `employee_master` emp WHERE emp.`EmployeeID` =ltd.UserID)UserName ");
         }
@@ -75,7 +75,7 @@ public partial class Design_OPD_BillRegister : System.Web.UI.Page
                 sb.Append(" Round(lt.GrossAmount,2)GrossAmt,Round(SUM(ltd.Amount),2) NetAmount,Round(lt.DiscountOnTotal,2)DiscountOnTotal,Round(lt.Adjustment,2)PaidAmount,Round((lt.NetAmount-lt.Adjustment),2)BalanceAmt,GROUP_CONCAT(distinct rpd.`PaymentMode`)PaymentMode, ");
             else if (rdbgroupwise.SelectedValue == "I")
                 sb.Append("Round(SUM(ltd.Rate),2)Rate,Round(SUM(ltd.Quantity),2)Quantity,Round(SUM(ltd.DiscAmt),2)DiscountAmount,Round(SUM(ltd.Amount),2) NetAmount, ");
-            sb.Append("lt.BillNo,IF(lt.BillNo!='',IFNULL(DATE_FORMAT(lt.BillDate,'%d-%b-%y %h:%m:%s %p'),''),'') AS BillDate, ");
+            sb.Append("lt.BillNo,IF(lt.BillNo!='',IFNULL(CONCAT(DATE_FORMAT(lt.BillDate,'%d-%b-%y'),' ',TIME_FORMAT(lt.time,'%h:%i:%s %p')),''),'') AS BillDate, ");
             sb.Append("IF(IFNULL(scm.DisplayName,'')!='',DisplayName,scm.Name)SubGroupName,ca.Name AS GroupName,cm.CentreName ");
         }
             sb.Append("FROM f_ledgertransaction lt INNER JOIN patient_medical_history pmh ON pmh.TransactionID=lt.TransactionID ");

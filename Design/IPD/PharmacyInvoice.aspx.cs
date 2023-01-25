@@ -26,11 +26,11 @@ public partial class Design_IPD_PharmacyInvoice : System.Web.UI.Page
     {
         StringBuilder sb = new StringBuilder();
         sb.Append("  SELECT 'Sales' Type,ltd.Quantity,ltd.Rate,(ltd.Quantity*ltd.Rate-ltd.`DiscAmt`)Amount,ltd.Amount as amt,st.batchNumber,DATE_FORMAT(st.MedExpiryDate,'%d-%b-%y')ExpiryDate,");
-        sb.Append("  DATE_FORMAT(ltd.`EntryDate`,'%d-%b-%y')EntryDate,ltd.ItemName,ltd.ItemID FROM   f_ledgertransaction LT  INNER JOIN f_ledgertnxdetail ltd ");
+        sb.Append("  DATE_FORMAT(ltd.`EntryDate`,'%d-%b-%y')EntryDate,ltd.ItemName,ltd.ItemID,(case when IsPackage=1 then 'UNDER PACKAGE' else 'OUT OF PACKAGE' end)IsPackage FROM   f_ledgertransaction LT  INNER JOIN f_ledgertnxdetail ltd ");
 
         sb.Append(" ON lt.LedgerTransactionNo = ltd.LedgerTransactionNo ");
         sb.Append(" INNER JOIN f_stock st ON st.stockid=ltd.StockID ");
-        sb.Append(" WHERE LT.IsCancel = 0 AND ltd.IsVerified =1 AND lt.TypeOfTnx in ('Sales') AND ltd.ConfigID='11' AND lt.TransactionID ='" + TransID + "'  ORDER BY DATE(LTd.EntryDate) ");
+        sb.Append(" WHERE LT.IsCancel = 0 AND ltd.IsVerified =1 AND lt.TypeOfTnx in ('Sales','Patient-return') AND ltd.ConfigID='11' AND lt.TransactionID ='" + TransID + "'  ORDER BY DATE(LTd.EntryDate),ItemName ");
   
      DataTable dt = new DataTable();
         dt = StockReports.GetDataTable(sb.ToString());
