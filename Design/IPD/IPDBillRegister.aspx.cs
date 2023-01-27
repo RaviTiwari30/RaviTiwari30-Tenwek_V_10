@@ -77,7 +77,7 @@ public partial class Design_IPD_IPDBillRegister : System.Web.UI.Page
             {
                 sb.Append(" SELECT  PanelGroup,T4.CentreID,T4.CentreName,T4.BillDate,T4.BillNo,T4.PatientID MRNo,IF(T4.TransNo<>'0',T4.TransNo,'') AS IPDNo,");
                 sb.Append(" UPPER(PName)PName,DATE_FORMAT(ich.DateOfAdmit,'%d-%b-%y')DateOfAdmit,");
-                sb.Append(" DATE_FORMAT(ich.DateOfDischarge,'%d-%b-%y')DateOfDischarge, ");
+                sb.Append(" DATE_FORMAT(ich.DateOfDischarge,'%d-%b-%y')DateOfDischarge,T4.DischargeIntimateDate,T4.DischargeIntimateTime, ");
                 sb.Append(" (SELECT CONCAT(Bed_No,'-',UPPER(NAME))Room FROM room_master WHERE RoomID= (SELECT ");
                 sb.Append(" RoomID AS Room_ID FROM patient_ipd_profile WHERE PatientIPDProfile_ID =(SELECT  ");
                 sb.Append(" MAX(PatientIPDProfile_ID) FROM patient_ipd_profile WHERE TransactionID=T4.TransactionID)))Room,");
@@ -108,7 +108,7 @@ public partial class Design_IPD_IPDBillRegister : System.Web.UI.Page
                 sb.Append("      if(UPPER(PName)not like '%Cancel%',Round((SELECT REPLACE(SUM(AmountPaid),'-','') FROM f_reciept WHERE TransactionID =T3.TransactionID AND IsCancel = 0 AND AmountPaid <0 and Date(Date) <=Date(BillDate) GROUP BY T3.TransactionID)),0)Refund_AsOn_BillDate, ");
                 sb.Append("      if(UPPER(PName)not like '%Cancel%',Round((SELECT SUM(AmountPaid) FROM f_reciept WHERE TransactionID =T3.TransactionID AND IsCancel = 0 AND AmountPaid >0 and Date(Date) >Date(BillDate) GROUP BY T3.TransactionID)),0)Deposit_After_BillDate, ");
                 sb.Append("      if(UPPER(PName)not like '%Cancel%',Round((SELECT REPLACE(SUM(AmountPaid),'-','') FROM f_reciept WHERE TransactionID =T3.TransactionID AND IsCancel = 0 AND AmountPaid <0 and Date(Date) >Date(BillDate) GROUP BY T3.TransactionID)),0)Refund_After_BillDate, ");
-                sb.Append("      PolicyNo,CardNo,CardHolderName,RelationWith_holder,FileNo,ClaimNo,PanelApprovedAmt,PanelAppRemarks,PanelApprovalDate,DiscountOnBillReason,ApprovalBy,IsBilledClosed,T3.TransNo  FROM ( ");
+                sb.Append("      PolicyNo,CardNo,CardHolderName,RelationWith_holder,FileNo,ClaimNo,PanelApprovedAmt,PanelAppRemarks,PanelApprovalDate,DiscountOnBillReason,ApprovalBy,IsBilledClosed,T3.TransNo,T3.DischargeIntimateDate,T3.DischargeIntimateTime  FROM ( ");
                 sb.Append("            SELECT T2.`CentreID`,T2.`CentreName`,BillDate,BillNo,PatientID,TransactionID,PName,UserID,DoctorName,  ");
                 sb.Append("            IF(TotalBilledAmt IS NULL,0,TotalBilledAmt)TotalBilledAmt, ");
                 sb.Append("            IF(ItemWiseDiscount IS NULL,0,ItemWiseDiscount)ItemWiseDiscount, ");
@@ -116,11 +116,11 @@ public partial class Design_IPD_IPDBillRegister : System.Web.UI.Page
                 sb.Append("            IFNULL(AdjustmentAmt,0)AdjustmentAmt,IFNULL(ReceiveAmt_AsOn_BillDate,0)ReceiveAmt_AsOn_BillDate,");
                 sb.Append("            IFNULL(ReceiveAmt_After_BillDate,0)ReceiveAmt_After_BillDate,IFNULL(TDS,0)TDS,Deduction_Acceptable,");
                 sb.Append("            Deduction_NonAcceptable,WriteOff,CreditAmt,DebitAmt,ServiceTaxAmt,RoundOff,ServiceTaxSurChgAmt,Panel,PanelGroup, ");
-                sb.Append("            PolicyNo,CardNo,CardHolderName,RelationWith_holder,FileNo,ClaimNo,PanelApprovedAmt,PanelAppRemarks,PanelApprovalDate,DiscountOnBillReason,ApprovalBy,IsBilledClosed,T2.TransNo FROM ( ");
+                sb.Append("            PolicyNo,CardNo,CardHolderName,RelationWith_holder,FileNo,ClaimNo,PanelApprovedAmt,PanelAppRemarks,PanelApprovalDate,DiscountOnBillReason,ApprovalBy,IsBilledClosed,T2.TransNo,T2.DischargeIntimateDate,T2.DischargeIntimateTime FROM ( ");
                 sb.Append("               SELECT cm.`CentreID`,cm.`CentreName`,T1.BillNo,T1.BillDate,T1.PatientID,T1.TransactionID,T1.TotalBilledAmt,T1.DiscountOnBill,T1.TDS,T1.Deduction_Acceptable,T1.Deduction_NonAcceptable,T1.WriteOff,T1.CreditAmt,T1.DebitAmt,T1.AdjustmentAmt,  ");
                 sb.Append("               T1.ReceiveAmt_AsOn_BillDate,T1.ReceiveAmt_After_BillDate,T1.ItemWiseDiscount,T1.PName,Em.Name UserID,T1.ServiceTaxAmt,T1.RoundOff,T1.ServiceTaxSurChgAmt,dm.Name DoctorName,pmh.PolicyNo, ");
                 sb.Append("               pmh.CardNo,pmh.CardHolderName,pmh.RelationWith_holder,pmh.FileNo,T1.ClaimNo,T1.PanelApprovedAmt,T1.PanelAppRemarks,DATE_FORMAT(T1.PanelApprovalDate,'%d-%b-%y')PanelApprovalDate,T1.DiscountOnBillReason,T1.ApprovalBy,  ");
-                sb.Append("               PM.Company_Name Panel,T1.IsBilledClosed,pm.PanelGroup,T1.TransNo FROM ( ");
+                sb.Append("               PM.Company_Name Panel,T1.IsBilledClosed,pm.PanelGroup,T1.TransNo,T1.DischargeIntimateDate,T1.DischargeIntimateTime FROM ( ");
                 sb.Append("                    SELECT BillNo,BillDate,PatientID,Temp1.TransactionID, ");
                 sb.Append("                    (SELECT SUM(ltd.GrossAmount) FROM f_ledgertnxdetail ltd  ");
                 sb.Append("                    INNER JOIN f_Itemmaster im ON im.ItemID = Ltd.ItemID  ");
@@ -138,7 +138,7 @@ public partial class Design_IPD_IPDBillRegister : System.Web.UI.Page
                 sb.Append("                   AND IsVerified = 1 AND IsPackage = 0 ");
                 sb.Append("                   GROUP BY TransactionID)ItemWiseDiscount, UserID,TDS,Deduction_Acceptable,Deduction_NonAcceptable,");
                 sb.Append("                   WriteOff,CreditAmt,DebitAmt,ServiceTaxAmt,RoundOff,ServiceTaxSurChgAmt,PName,ClaimNo,CardHolderName,RelationWith_holder,FileNo,PanelAppRemarks, ");
-                sb.Append("                   PanelApprovedAmt,PanelApprovalDate,DiscountOnBillReason,ApprovalBy,IsBilledClosed,Temp1.TransNo  FROM  ( ");
+                sb.Append("                   PanelApprovedAmt,PanelApprovalDate,DiscountOnBillReason,ApprovalBy,IsBilledClosed,Temp1.TransNo,Temp1.DischargeIntimateDate, Temp1.DischargeIntimateTime  FROM  ( ");
                 sb.Append("                       SELECT  LT.BillNo,LT.BillDate,Adj.PatientID,Adj.TransactionID, ");
                 sb.Append("                       Adj.TotalBilledAmt,Adj.DiscountOnBill,Adj.AdjustmentAmt,Adj.UserID,IFNULL(adj.TDS,0)TDS,");
                 sb.Append("                       IFNULL(adj.Deduction_Acceptable,0)Deduction_Acceptable, ");
@@ -148,7 +148,7 @@ public partial class Design_IPD_IPDBillRegister : System.Web.UI.Page
                 sb.Append("                       IFNULL((SELECT SUM(amount) FROM f_drcrnote WHERE TransactionID=lt.TransactionID  ");
                 sb.Append("                       AND CRDR='DR01' AND cancel=0 GROUP BY TransactionID),0)DebitAmt,adj.CardHolderName,adj.RelationWith_holder,adj.FileNo, ");
                 sb.Append("                       Adj.ServiceTaxAmt,adj.RoundOff,Adj.ServiceTaxSurChgAmt,CONCAT(PT.Title,' ',PT.PName)PName,adj.ClaimNo,adj.PanelAppRemarks,adj.PanelApprovedAmt, ");
-                sb.Append("                       adj.PanelApprovalDate,adj.DiscountOnBillReason,adj.ApprovalBy,adj.IsBilledClosed,adj.TransNo FROM ( ");
+                sb.Append("                       adj.PanelApprovalDate,adj.DiscountOnBillReason,adj.ApprovalBy,adj.IsBilledClosed,adj.TransNo,DATE_FORMAT(adj.DischargeIntimateDate,'%d-%b-%y')DischargeIntimateDate, TIME_FORMAT(adj.DischargeIntimateDate,'%h:%i %p')DischargeIntimateTime  FROM ( ");
                 sb.Append("                            SELECT BillNo,TransactionID,BillDate FROM patient_medical_history   ");//f_ipdadjustment
 
                 if (ChkDate.Checked)
@@ -166,7 +166,7 @@ public partial class Design_IPD_IPDBillRegister : System.Web.UI.Page
                 sb.Append("                   BC.BillGenerateUserID,0.0 TDS,0.0 Deduction_Acceptable,0.0 Deduction_NonAcceptable,0.0 WriteOff,0.0 CreditAmt,0.0 DebitAmt,");
                 sb.Append("                   0.0 ServiceTaxAmt,0.0 RoundOff,0.0 ServiceTaxSurChgAmt,CONCAT(PT.Pname,'---CANCEL')PNAME,");
                 sb.Append("                   '' ClaimNo,'' CardHolderName,'' RelationWith_holder,'' FileNo,''PanelAppRemarks,  ");
-                sb.Append("                   ''PanelApprovedAmt,''PanelApprovalDate,''DiscountOnBillReason,''ApprovalBy,'0' IsBilledClosed,pmh.TransNo  ");
+                sb.Append("                   ''PanelApprovedAmt,''PanelApprovalDate,''DiscountOnBillReason,''ApprovalBy,'0' IsBilledClosed,pmh.TransNo,DATE_FORMAT(pmh.DischargeIntimateDate,'%d-%b-%y')DischargeIntimateDate,TIME_FORMAT(pmh.DischargeIntimateDate,'%h:%i %p')DischargeIntimateTime  ");
                 sb.Append("                   FROM f_billcancellation BC INNER JOIN patient_master PT ON BC.PatientID = PT.PatientID INNER JOIN patient_medical_history pmh ON BC.TransactionID=pmh.TransactionID  ");
                 sb.Append("               ) T1  INNER JOIN patient_medical_history pmh ON T1.TransactionID = pmh.TransactionID and pmh.Type='IPD' INNER JOIN center_master cm ON cm.`CentreID`=pmh.`CentreID` ");
                 sb.Append("               INNER JOIN Doctor_Master dm ON dm.DoctorID = pmh.DoctorID ");
@@ -247,7 +247,7 @@ public partial class Design_IPD_IPDBillRegister : System.Web.UI.Page
                 sb.Append("               SELECT cm.`CentreID`,cm.`CentreName`, T1.BillNo,T1.BillDate,T1.PatientID,T1.TransactionID,T1.TotalBilledAmt,T1.DiscountOnBill,T1.TDS,T1.Deduction_Acceptable,T1.Deduction_NonAcceptable,T1.WriteOff,T1.CreditAmt,T1.DebitAmt,T1.AdjustmentAmt,  ");
                 sb.Append("               T1.ReceiveAmt_AsOn_BillDate,T1.ReceiveAmt_After_BillDate,T1.ItemWiseDiscount,T1.PName,Em.Name UserID,ServiceTaxAmt,ServiceTaxSurChgAmt,dm.Name DoctorName,pmh.PolicyNo, ");
                 sb.Append("               pmh.CardNo,T1.ClaimNo,T1.PanelApprovedAmt,T1.PanelAppRemarks,DATE_FORMAT(T1.PanelApprovalDate,'%d-%b-%y')PanelApprovalDate,T1.DiscountOnBillReason,T1.ApprovalBy,  ");
-                sb.Append("               PM.Company_Name Panel,IsBilledClosed,pm.PanelGroup FROM ( ");
+                sb.Append("               PM.Company_Name Panel,IsBilledClosed,pm.PanelGroup,DATE_FORMAT(pmh.DischargeIntimateDate,'%d-%b-%y')DischargeIntimateDate, TIME_FORMAT(pmh.DischargeIntimateDate,'%h:%i %p')DischargeIntimateTime FROM ( ");
                 sb.Append("                    SELECT BillNo,BillDate,PatientID,Temp1.TransactionID, ");
                 sb.Append("                    (SELECT SUM(ltd.GrossAmount) FROM f_ledgertnxdetail ltd  ");
                 sb.Append("                    INNER JOIN f_Itemmaster im ON im.ItemID = Ltd.ItemID  ");
@@ -411,7 +411,7 @@ public partial class Design_IPD_IPDBillRegister : System.Web.UI.Page
             sb.Append("SELECT PanelGroup,BillNo,BillDate,upper(PName)PName,Replace(PatientID,'LSHHI','')MRNo,IF(t.TransNo<>'0',t.TransNo,'') AS IPDNo,CAST(TotalBilledAmt AS DECIMAL(15,2))TotalBilledAmt,");
             sb.Append(" GetIPDPatient_Copay_Payble(1,TransactionID)PatientCopay,GetIPDPatient_Copay_Payble(2,TransactionID)NonPayableAmt,");
             sb.Append(" upper(SurgeryName)SurgeryName,upper(SurgeryDepartment)SurgeryDepartment,CAST(DiscAmt AS DECIMAL(15,2))DiscAmt,CAST(DiscountOnBill AS DECIMAL(15,2))DiscountOnBill,");
-            sb.Append(" CAST(Amount AS DECIMAL(15,2))Amount,upper(SubCategory)SubCategory,IF(DisplayName='',UPPER(SubCategory),UPPER(DisplayName))DisplayName,ConfigID AS ConfigID,DateOfAdmit,TimeOfAdmit,DateOfDischarge,TimeOfDischarge,upper(Doctor)Doctor,upper(Panel)Panel,upper(Room)Room,StayPeriod,CAST(GrossAmtItem AS DECIMAL(15,2))GrossAmtItem,upper(if(IsBilledClosed=1,'Bill Finalised','Bill Not Finalised'))BillingStatus FROM (");
+            sb.Append(" CAST(Amount AS DECIMAL(15,2))Amount,upper(SubCategory)SubCategory,IF(DisplayName='',UPPER(SubCategory),UPPER(DisplayName))DisplayName,ConfigID AS ConfigID,DateOfAdmit,TimeOfAdmit,DateOfDischarge,TimeOfDischarge,DischargeIntimateDate,DischargeIntimateTime,upper(Doctor)Doctor,upper(Panel)Panel,upper(Room)Room,StayPeriod,CAST(GrossAmtItem AS DECIMAL(15,2))GrossAmtItem,upper(if(IsBilledClosed=1,'Bill Finalised','Bill Not Finalised'))BillingStatus FROM (");
             sb.Append("    SELECT LT.BillNo,LT.BillDate,pmh.PatientID,pmh.TransactionID,");
             
             //sb.Append("    adj.TotalBilledAmt,");
@@ -440,7 +440,7 @@ public partial class Design_IPD_IPDBillRegister : System.Web.UI.Page
             sb.Append("    dm.Name Doctor,pnl.Company_Name Panel,pnl.PanelGroup, ");
             sb.Append("    (SELECT CONCAT(Bed_No,'-',NAME)Room FROM room_master WHERE RoomID= (SELECT RoomID AS Room_ID FROM patient_ipd_profile WHERE ");
             sb.Append("    PatientIPDProfile_ID =(SELECT MAX(PatientIPDProfile_ID) FROM patient_ipd_profile WHERE TransactionID=lt.TransactionID)))Room,");
-            sb.Append("    (DATEDIFF(pmh.DateOfDischarge,pmh.DateOfAdmit)+1)StayPeriod,round(sum(GrossAmtItem),2)GrossAmtItem,pmh.IsBilledClosed,pmh.TransNo FROM (");
+            sb.Append("    (DATEDIFF(pmh.DateOfDischarge,pmh.DateOfAdmit)+1)StayPeriod,round(sum(GrossAmtItem),2)GrossAmtItem,pmh.IsBilledClosed,pmh.TransNo,DATE_FORMAT(pmh.DischargeIntimateDate,'%d-%b-%y')DischargeIntimateDate,TIME_FORMAT(pmh.DischargeIntimateDate,'%h:%i %p')DischargeIntimateTime FROM (");
             sb.Append("        SELECT lt.BillNo,lt.TransactionID,Date_Format(lt.Billdate,'%d-%b-%y')Billdate,im.SubCategoryID,ltd.Amount,");
             sb.Append("        (ltd.TotalDiscAmt)DiscAmt,(ltd.GrossAmount) GrossAmtItem ");
 		    
@@ -500,6 +500,8 @@ public partial class Design_IPD_IPDBillRegister : System.Web.UI.Page
                 dtMerge.Columns.Add("DateOfDischarge");
                 dtMerge.Columns.Add("TimeOfAdmit");
                 dtMerge.Columns.Add("TimeOfDischarge");
+                dtMerge.Columns.Add("DischargeIntimateDate");
+                dtMerge.Columns.Add("DischargeIntimateTime");
                 dtMerge.Columns.Add("Doctor");
                 dtMerge.Columns.Add("Panel");
                // dtMerge.Columns.Add("Diagnosis");
@@ -566,6 +568,8 @@ public partial class Design_IPD_IPDBillRegister : System.Web.UI.Page
                                 row["DateOfDischarge"] = NewRow["DateOfDischarge"].ToString();
                                 row["TimeOfAdmit"] = NewRow["TimeOfAdmit"].ToString();
                                 row["TimeOfDischarge"] = NewRow["TimeOfDischarge"].ToString();
+                                row["DischargeIntimateDate"] = NewRow["DischargeIntimateDate"].ToString();
+                                row["DischargeIntimateTime"] = NewRow["DischargeIntimateTime"].ToString();
                                 row["Doctor"] = NewRow["Doctor"].ToString().ToUpper();
                                 row["Panel"] = NewRow["Panel"].ToString().ToUpper();
                                 row["PanelGroup"] = NewRow["PanelGroup"].ToString().ToUpper();
