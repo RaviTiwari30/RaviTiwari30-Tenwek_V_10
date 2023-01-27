@@ -246,14 +246,14 @@ public partial class Design_Store_DirectGRNSearch : System.Web.UI.Page
         StringBuilder sb = new StringBuilder();
         sb.Append("SELECT BillNo,IsGRNUploaded,GRNNo,GRNDate,AgainstPONo,InvoiceNo,ChalanNo,Amt,LedgerName,SUM(isPosted)IsPosted,  ");
         sb.Append("IF(SUM(notPosted)=0,'true','false')Post, SUM(rejected)Rejected,IF(SUM(rejected)<>SUM(COUNT) AND SUM(isPosted)<>SUM(COUNT),'true','false')Reject1,  ");
-        sb.Append("IF((SUM(notPosted)=0  AND SUM(rejected)=0),'Yes',IF((SUM(COUNT)=SUM(rejected)),'Cancel','No'))NewPost,VendorId,InvoiceDate,ChalanDate   ");
+        sb.Append("IF((SUM(notPosted)=0  AND SUM(rejected)=0),'Yes',IF((SUM(COUNT)=SUM(rejected)),'Cancel','No'))NewPost,VendorId,InvoiceDate,ChalanDate,NetAmount   ");
         sb.Append("FROM   ");
         sb.Append("(     ");
         sb.Append("SELECT st.ReferenceNo BillNo, inv.IsGRNUploaded,st.ReferenceNo GRNNo,DATE_FORMAT(st.StockDate,'%d-%b-%y')GRNDate,st.PONumber AgainstPONo,  ");
         sb.Append("st.InvoiceNo,st.ChalanNo, ROUND(inv.GrossAmount,2)Amt, (CASE WHEN st.ispost=1 THEN '1'  ELSE '0' END)IsPosted,   ");
         sb.Append("(CASE  WHEN st.ispost=0 THEN '1' ELSE '0' END)NotPosted,(CASE WHEN st.ispost=3 THEN '1' ELSE '0' END)Rejected,   ");
         sb.Append("lm.LedgerName,'1' AS COUNT,st.VenLedgerNo VendorId,IF(IFNULL(st.InvoiceNo,'')<>'',  ");
-        sb.Append("DATE_FORMAT(st.InvoiceDate,'%d-%b-%Y'),'')InvoiceDate,IF(IFNULL(st.ChalanNo,'')<>'',DATE_FORMAT(st.ChalanDate,'%d-%b-%Y'),'')ChalanDate   ");
+        sb.Append("DATE_FORMAT(st.InvoiceDate,'%d-%b-%Y'),'')InvoiceDate,IF(IFNULL(st.ChalanNo,'')<>'',DATE_FORMAT(st.ChalanDate,'%d-%b-%Y'),'')ChalanDate ,Round(inv.InvoiceAmount,3) AS NetAmount   ");
         sb.Append("FROM f_stock st  ");
         sb.Append("INNER JOIN f_ledgermaster lm ON  lm.LedgerNumber = st.VenLedgerNo   ");
         sb.Append("INNER JOIN f_invoicemaster inv ON inv.ReferenceNo = st.ReferenceNo    ");
