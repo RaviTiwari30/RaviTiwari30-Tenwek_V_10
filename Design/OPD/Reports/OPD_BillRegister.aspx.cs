@@ -76,7 +76,9 @@ public partial class Design_OPD_BillRegister : System.Web.UI.Page
             else if (rdbgroupwise.SelectedValue == "I")
                 sb.Append("Round(SUM(ltd.Rate),2)Rate,Round(SUM(ltd.Quantity),2)Quantity,Round(SUM(ltd.DiscAmt),2)DiscountAmount,Round(SUM(ltd.Amount),2) NetAmount, ");
             sb.Append("lt.BillNo,IF(lt.BillNo!='',IFNULL(CONCAT(DATE_FORMAT(lt.BillDate,'%d-%b-%y'),' ',TIME_FORMAT(lt.time,'%h:%i:%s %p')),''),'') AS BillDate, ");
-            sb.Append("IF(IFNULL(scm.DisplayName,'')!='',DisplayName,scm.Name)SubGroupName,ca.Name AS GroupName,cm.CentreName ");
+            sb.Append("IF(IFNULL(scm.DisplayName,'')!='',DisplayName,scm.Name)SubGroupName,ca.Name AS GroupName,cm.CentreName, ");
+            //Added one Column UserName 26Aug2022 - Pooja
+            sb.Append(" (SELECT CONCAT(emp.`Title`,' ',emp.`NAME` ) FROM `employee_master` emp WHERE emp.`EmployeeID` =lt.UserID)UserName ");
         }
             sb.Append("FROM f_ledgertransaction lt INNER JOIN patient_medical_history pmh ON pmh.TransactionID=lt.TransactionID ");
         sb.Append("INNER JOIN patient_master pm ON pm.PatientID=pmh.PatientID ");
