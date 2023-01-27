@@ -682,7 +682,7 @@ public partial class Design_Doctor_ViewDoctorDetail : System.Web.UI.Page
 
     protected void btnReport_Click(object sender, EventArgs e)
     {
-        DataTable dt = StockReports.GetDataTable("SELECT dm.DoctorID,dm.Name,dm.Designation,dm.Specialization,g.Doctype DoctorType,dm.Mobile `Mobile No` FROM doctor_master dm INNER JOIN DoctorGroup g ON g.ID=dm.DocGroupId ");
+        DataTable dt = StockReports.GetDataTable("SELECT dm.DoctorID,dm.Name,dm.Designation,dm.Specialization,dm.Degree,g.Doctype DoctorType,dm.Mobile `Mobile No` FROM doctor_master dm INNER JOIN DoctorGroup g ON g.ID=dm.DocGroupId ");
         if (dt.Rows.Count > 0)
         {
             Session["dtExport2Excel"] = dt;
