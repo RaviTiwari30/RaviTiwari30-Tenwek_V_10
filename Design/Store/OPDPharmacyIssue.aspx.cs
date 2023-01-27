@@ -91,10 +91,11 @@ public partial class Design_Store_OPDPharmacyIssue : System.Web.UI.Page
 
 
             sb.Append("SELECT IFNULL(IF(pmh.Type='EMG',emg.EmergencyNo,''),'')EmergencyNo ,pm.PatientID, CONCAT(pm.Title, ' ', pm.PName) PName,(pm.Title)Title,(pm.PName)PatientName, pm.Age, pm.Gender, pm.Country, pm.Mobile ContactNo, CONCAT(pm.House_No, ' ,', pm.City) Address, pmh.TransactionID, pm.HospPatientType, IFNULL(PMH.`PanelID`, '') PanelID, IFNULL(fpm.Company_Name, '') Company_Name, IFNULL(pmh.DoctorID, '') DoctorID, '' PharmacyOSAmt , IF(pmh.`TYPE`='IPD',pmh.Status,IF(emg.IsReleased=0 and pmh.Type='EMG','IN','OUT')) AS Status,pmh.BillNo,ifnull(pmh.Type,'OPD')PatientType ");
-            sb.Append(" ,IFNULL((SELECT t.Vitial FROM (SELECT CONCAT(CONCAT( cv.`HT`,' ',CV.HTType),'#',CONCAT(cv.`WT`,' ',cv.WTTYPE))Vitial,DATE(cv.entrydate)EntryDate FROM `cpoe_vital` cv WHERE cv.`PatientID`=pm.patientid ");
+            /*sb.Append(" ,IFNULL((SELECT t.Vitial FROM (SELECT CONCAT(CONCAT( cv.`HT`,' ',CV.HTType),'#',CONCAT(cv.`WT`,' ',cv.WTTYPE))Vitial,DATE(cv.entrydate)EntryDate FROM `cpoe_vital` cv WHERE cv.`PatientID`=pm.patientid ");
             sb.Append(" UNION ALL ");
             sb.Append(" SELECT CONCAT(CONCAT(ipo.`Height`,'CM'),'#',CONCAT(ipo.Weight,ipo.WeightUnit))Vitial,DATE(ipo.date)EntryDate FROM IPD_Patient_ObservationChart ipo WHERE  ipo.`PatientID`=pm.Patientid )t ");
-            sb.Append(" WHERE t.Vitial<>'#' ORDER BY t.EntryDate DESC LIMIT 1),'')Vitial ");
+            sb.Append(" WHERE t.Vitial<>'#' ORDER BY t.EntryDate DESC LIMIT 1),'')Vitial ");*/
+            sb.Append(" ,'' Vitial ")
             sb.Append(" FROM patient_master pm LEFT JOIN patient_medical_history pmh ON pm.PatientID = pmh.PatientID  AND pmh.Type IN('EMG','IPD','OPD') AND pmh.CentreID=@CentreID LEFT JOIN f_panel_master fpm ON fpm.PanelID = pm.PanelID LEFT JOIN emergency_patient_details emg ON emg.TransactionId=pmh.TransactionID AND emg.IsReleased=0 WHERE pm.PatientID IS NOT NULL  ");
             if (!string.IsNullOrEmpty(patientID))
                 sb.Append(" AND pm.PatientID = @patientID");
