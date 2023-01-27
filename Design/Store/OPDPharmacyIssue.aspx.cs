@@ -95,7 +95,7 @@ public partial class Design_Store_OPDPharmacyIssue : System.Web.UI.Page
             sb.Append(" UNION ALL ");
             sb.Append(" SELECT CONCAT(CONCAT(ipo.`Height`,'CM'),'#',CONCAT(ipo.Weight,ipo.WeightUnit))Vitial,DATE(ipo.date)EntryDate FROM IPD_Patient_ObservationChart ipo WHERE  ipo.`PatientID`=pm.Patientid )t ");
             sb.Append(" WHERE t.Vitial<>'#' ORDER BY t.EntryDate DESC LIMIT 1),'')Vitial ");*/
-            sb.Append(" ,'' Vitial ")
+            sb.Append(" ,'' Vitial ");
             sb.Append(" FROM patient_master pm LEFT JOIN patient_medical_history pmh ON pm.PatientID = pmh.PatientID  AND pmh.Type IN('EMG','IPD','OPD') AND pmh.CentreID=@CentreID LEFT JOIN f_panel_master fpm ON fpm.PanelID = pm.PanelID LEFT JOIN emergency_patient_details emg ON emg.TransactionId=pmh.TransactionID AND emg.IsReleased=0 WHERE pm.PatientID IS NOT NULL  ");
             if (!string.IsNullOrEmpty(patientID))
                 sb.Append(" AND pm.PatientID = @patientID");
