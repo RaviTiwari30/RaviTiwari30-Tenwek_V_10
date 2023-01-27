@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Discharge_Medicine.aspx.cs" Inherits="Design_EMR_Discharge_Medicine" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Discharge_Medicine.aspx.cs" Inherits="Design_EMR_Discharge_Medicine" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
     Namespace="System.Web.UI" TagPrefix="Ajax" %>
@@ -92,17 +93,11 @@
                   return true;
               }
           }
-
-
-
-
-
-
-
 </script>
        <script type="text/javascript">
 
            function searchEMRMedicine() {
+               debugger;
                var con = 0;
                var radios = $('input:radio[name=rdoListType]:checked').val();
                if (radios != 4 && radios != 5) {
@@ -120,24 +115,14 @@
                        con = 1;
                        return false;
                    }
-                   else if ($('#<%=ddlnxtdose.ClientID %>').val() == "") {
-                       $('#<%=lblMsg.ClientID %>').text('Please Select Time of next Dose');
-                       $('#<%=ddlnxtdose.ClientID %>').focus();
-                       con = 1;
-                       return false;
-                   }
+                   
                    else if ($('#<%=txtDose.ClientID %>').val() == "") {
                        $('#<%=lblMsg.ClientID %>').text('Please Select Dose');
                        $('#<%=txtDose.ClientID %>').focus();
                        con = 1;
                        return false;
                    }
-                   else if ($('#<%=ddlTime.ClientID %>').val() == "") {
-                       $('#<%=lblMsg.ClientID %>').text('Please Select Time');
-                       $('#<%=ddlTime.ClientID %>').focus();
-                       con = 1;
-                       return false;
-                   }
+                   
                    else if ($('#<%=ddlDays.ClientID %>').val() == "") {
                        $('#<%=lblMsg.ClientID %>').text('Please Select Duration');
                        $('#<%=ddlDays.ClientID %>').focus();
@@ -145,25 +130,39 @@
                        return false;
                    }
 
-                   //if (!$('input:radio[name=Chkscript]:checked').val()) {
-                   //    $('#<%=lblMsg.ClientID %>').text('Please Select Script');
-                   //    con = 1;
-                   //    return false;
-                   // }
-
+                  
                }
                if (con == "0") {
                    $('#<%=lblMsg.ClientID %>').text('');
-                   var radio = $.trim($("#<%=rdoListType.ClientID%> input[type=radio]:checked").val())
+                   var radio = $.trim($("#<%=rdoListType.ClientID%> input[type=radio]:checked").val());
+                   var complete_MedicineName;
                    var Medicine;
-                   if (radio != 4 && radio != 5)
-                       Medicine = $.trim($("#<%=txtmedicine.ClientID%>").val());
-                   else
-                       Medicine = $.trim($("#<%=ddlHospitalMedicine.ClientID%>").val());
+                   var ItemId=0;
+                   if (radio != 4 && radio != 5) {
+                       complete_MedicineName = $.trim($("#<%=txtmedicine.ClientID%>").val());
+                       if ($('#chkIsOutside').is(':checked')) {
+                           Medicine = complete_MedicineName;
+                           ItemId = 0;
+                       }
+                       else {
+                           complete_MedicineName = complete_MedicineName.split('#');
+                           Medicine = $.trim(complete_MedicineName[1]);
+                           ItemId = $.trim(complete_MedicineName[2]);
+                       }
+                   }
+                   else {
+                       Medicine = $.trim($("#<%=ddlHospitalMedicine.ClientID %> option:selected").text());
+                       ItemId=$("#<%=ddlHospitalMedicine.ClientID %>").val();
+
+
+                   }
+
+                   $('#chkIsOutside').prop('checked', false);
+
                    $.ajax({
                        type: "POST",
                        url: "Services/EMR.asmx/EMRMedicine",
-                       data: '{TID:"' + TID + '",Header:"' + $.trim($("#<%=rdoListType.ClientID%> input[type=radio]:checked").next().text()) + '",Medicine:"' + Medicine + '",Route:"' + $.trim($("#<%=ddlRoute.ClientID%>").val()) + '",Timefornxtdose:"' + $.trim($("#<%=ddlnxtdose.ClientID%>").val().split('#')[0]) + '",Dose:"' + $.trim($("#<%=txtDose.ClientID%>").val().split('#')[0]) + '",Time:"' + $.trim($("#<%=ddlTime.ClientID%>").find("option:selected").text()) + '",Days:"' + $.trim($("#<%=ddlDays.ClientID%>").val().split('#')[0]) + '",Script:"' + $.trim($("#<%=Chkscript.ClientID%> input[type=radio]:checked").val()) + '",Reason:"' + $.trim($("#<%=txtRemarks.ClientID%>").val()) + '",ID:"' + $('#spnmedID').text() + '",Meal:"' + $('#ddlMeal').val() + '"}',
+                       data: '{TID:"' + TID + '",Header:"' + $.trim($("#<%=rdoListType.ClientID%> input[type=radio]:checked").next().text()) + '",Medicine:"' + Medicine + '",Route:"' + $.trim($("#<%=ddlRoute.ClientID%>").val()) + '",Dose:"' + $.trim($("#<%=txtDose.ClientID%>").val().split('#')[0]) + '",Days:"' + $.trim($("#<%=ddlDays.ClientID%> option:selected").text().split('#')[0]) + '",Time:"' + $.trim($("#<%=ddlTime.ClientID%> option:selected").text().split('#')[0]) + '",Reason:"' + $.trim($("#<%=txtRemarks.ClientID%>").val()) + '",ItemID:"' + ItemId + '", ID:"' + $('#spnmedID').text() + '"}',
                        dataType: "json",
                        contentType: "application/json;charset=UTF-8",
                        async: true,
@@ -247,40 +246,45 @@
     <form id="form1" runat="server">
     <Ajax:ScriptManager ID="ScriptManager1" runat="server">
     </Ajax:ScriptManager>
-    <div id="Pbody_box_inventory">
-        <div class="POuter_Box_Inventory" >
-          <div class="content" style="text-align: center;">
-                <b>Medication Discharge Instructions </b>
-                <br />
-                <asp:Label ID="lblMsg" runat="server" CssClass="ItDoseLblError" />
+        <div id="Pbody_box_inventory">
+            <div class="POuter_Box_Inventory">
+                <div class="content" style="text-align: center;">
+                    <b>Medication Discharge Instructions </b>
+                    <br />
+                    <asp:Label ID="lblMsg" runat="server" CssClass="ItDoseLblError" />
+                </div>
             </div>
-        </div>
-        <div class="POuter_Box_Inventory">
-             <div class="col-md-24">
-                      <div class="row">
-                            <asp:RadioButtonList ID="rdoListType" runat="server" RepeatDirection="Vertical"
-                            CssClass="ItDoseRadiobuttonlist"    RepeatColumns="3"  ClientIDMode="Static"
-                                ToolTip="Select List Type"  >
-                            <asp:ListItem Text="New Medications To Start Taking At Home" Value="2" Selected="True" />
-                            <asp:ListItem Text="Drugs Given In Hospital" Value="4" /> 
-                            </asp:RadioButtonList>
-                      </div>
-                 </div>
-        </div>
-        <div class="POuter_Box_Inventory">
+            <div class="POuter_Box_Inventory">
                 <div class="col-md-24">
-                      <div class="row">
+                    <div class="row">
+                        <div class="col-md-16">
+                            <asp:RadioButtonList ID="rdoListType" runat="server" RepeatDirection="Vertical"
+                                CssClass="ItDoseRadiobuttonlist" RepeatColumns="3" ClientIDMode="Static"
+                                ToolTip="Select List Type">
+                                <asp:ListItem Text="New Medications To Start Taking At Home" Value="2" Selected="True" />
+                                <asp:ListItem Text="Drugs Given In Hospital" Value="4" />
+                            </asp:RadioButtonList>
+                        </div>
+                         <div class="col-md-5">
+                          <%--  <input type="checkbox" id="chkIsOutside" name="IsOutside" value="yes" /> Outside Medicine--%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="POuter_Box_Inventory">
+                <div class="col-md-24">
+                    <div class="row">
                         <div class="col-md-3">
                             <label class="pull-left">
-                                 Medicine Name
+                                Medicine Name
                             </label>
                             <b class="pull-right">:</b>
                         </div>
                         <div class="col-md-5">
-                            <asp:TextBox ID="txtmedicine"  runat="server" autocomplete="off"  ClientIDMode="Static" CssClass="ItDoseTextinputText requiredField"
-                            onkeyup="validatespace();" TabIndex="1" 
-                            ToolTip="Enter Medicine Name"></asp:TextBox>
-                               <asp:DropDownList ID="ddlHospitalMedicine" runat="server" style="display:none" ClientIDMode="Static" ></asp:DropDownList>
+                            <asp:TextBox ID="txtmedicine" runat="server" autocomplete="off" ClientIDMode="Static" CssClass="ItDoseTextinputText requiredField"
+                                TabIndex="1"
+                                ToolTip="Enter Medicine Name"></asp:TextBox>
+                            <asp:DropDownList ID="ddlHospitalMedicine" runat="server" Style="display: none" ClientIDMode="Static"></asp:DropDownList>
                         </div>
                         <div class="col-md-3">
                             <label class="pull-left">
@@ -289,9 +293,19 @@
                             <b class="pull-right">:</b>
                         </div>
                         <div class="col-md-5">
-                             <asp:DropDownList ID="ddlRoute" runat="server" ClientIDMode="Static"></asp:DropDownList>
+                            <asp:DropDownList ID="ddlRoute" runat="server" ClientIDMode="Static"></asp:DropDownList>
                         </div>
                         <div class="col-md-3">
+                            <label class="pull-left">
+                                Remark
+                            </label>
+                            <b class="pull-right">:</b>
+                        </div>
+                        <div class="col-md-5">
+                            <asp:TextBox ID="txtRemarks" runat="server" TabIndex="8" MaxLength="100" ClientIDMode="Static"
+                                ToolTip="Enter Remarks" />
+                        </div>
+                        <%--<div class="col-md-3">
                             <label class="pull-left">
                                 Time of Next<br /> Dose
                             </label>
@@ -300,9 +314,9 @@
                         <div class="col-md-5">
                              <asp:DropDownList ID="ddlnxtdose" CssClass="requiredField" runat="server"  ToolTip="Select Next Dose Time" ClientIDMode="Static"
                             TabIndex="3" ></asp:DropDownList>
-                        </div>
+                        </div>--%>
                     </div>
-                      <div class="row">
+                    <div class="row">
                         <div class="col-md-3">
                             <label class="pull-left">
                                 Dose
@@ -310,17 +324,16 @@
                             <b class="pull-right">:</b>
                         </div>
                         <div class="col-md-5">
-                              <asp:TextBox ID="txtDose" runat="server" CssClass="requiredField" ClientIDMode="Static"></asp:TextBox>
+                            <asp:TextBox ID="txtDose" runat="server" CssClass="requiredField" ClientIDMode="Static"></asp:TextBox>
                         </div>
                         <div class="col-md-3">
                             <label class="pull-left">
-                                Times
+                                Frequency
                             </label>
                             <b class="pull-right">:</b>
                         </div>
                         <div class="col-md-5">
-                            <asp:DropDownList ID="ddlTime" runat="server" TabIndex="5" ClientIDMode="Static"
-                              ToolTip="Select Time">
+                            <asp:DropDownList ID="ddlDays" CssClass="requiredField" runat="server" ToolTip="Select Days" ClientIDMode="Static" TabIndex="6">
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-3">
@@ -330,13 +343,13 @@
                             <b class="pull-right">:</b>
                         </div>
                         <div class="col-md-5">
-                            <asp:DropDownList ID="ddlDays"  CssClass="requiredField" runat="server" ToolTip="Select Days" ClientIDMode="Static"
-                            TabIndex="6">
-                        </asp:DropDownList>
+                            <asp:DropDownList ID="ddlTime" runat="server" TabIndex="5" ClientIDMode="Static" ToolTip="Select Time">
+                            </asp:DropDownList>
                         </div>
+
                     </div>
-                      <div class="row">
-                        <div class="col-md-3">
+                    <div class="row">
+                        <%--<div class="col-md-3">
                             <label class="pull-left">
                                 Meal
                             </label>
@@ -352,34 +365,24 @@
                 <option value="BeforeMeal">Before Meal</option>
                 <option value="AfterMeal">After Meal</option>
             </select>
-                        </div>
-                        <div class="col-md-3">
-                            <label class="pull-left">
-                                Remark
-                            </label>
-                            <b class="pull-right">:</b>
-                        </div>
+                        </div>--%>
+
+                        <div class="col-md-3"></div>                                            
                         <div class="col-md-5">
-                             <asp:TextBox ID="txtRemarks" runat="server" TabIndex="8" MaxLength="100" ClientIDMode="Static"
-                            ToolTip="Enter Remarks" />
+                            <input type="checkbox" id="chkIsOutside" name="IsOutside" value="yes" /> Outside Medicine
                         </div>
-                            <div class="col-md-2"></div>
+                        <div class="col-md-4"></div> 
                         <div class="col-md-3">
-                            <input type="button" value="Add" tabindex="9" onclick="searchEMRMedicine()" class="ItDoseButton" />   <span id="spnmedID" style="display:none"></span>
+                            <input type="button" value="Add" tabindex="9" onclick="searchEMRMedicine()" class="ItDoseButton" />
+                            <span id="spnmedID" style="display:none"></span>
                         </div>
-                      
                     </div>
                 </div>
             </div>
-    </div>
-    <asp:Panel ID="hide" runat="server" Visible="false">
-        
-           
+        </div>
+    <asp:Panel ID="hide" runat="server" Visible="false"> 
             <asp:Label ID="lblHeaderBlank" runat="server" Visible="false" ></asp:Label>
-            <asp:Button ID="btnSave" runat="server" Text="save" CssClass="ItDoseButton"
-                     Visible="False" TabIndex="7" ToolTip="Click To Save" 
-                      />
-
+            <asp:Button ID="btnSave" runat="server" Text="save" CssClass="ItDoseButton" Visible="False" TabIndex="7" ToolTip="Click To Save" />
    </asp:Panel>
 
         <div class="POuter_Box_Inventory">
@@ -446,15 +449,17 @@
     style="border-collapse:collapse;"  class="GridViewStyle">
 		<tr id="Header">        
             <th class="GridViewHeaderStyle" scope="col" style="width:220px;">Drug Name</th>
+             <th class="GridViewHeaderStyle" scope="col" style="width:220px;">Generic Name</th>
             <th class="GridViewHeaderStyle" scope="col" style="width:50px;">Dose</th>
             <th class="GridViewHeaderStyle" scope="col" style="width:140px;">Route</th>
-			<th class="GridViewHeaderStyle" scope="col" style="width:50px;">How Often</th>
+			<th class="GridViewHeaderStyle" scope="col" style="width:50px;">Frequency</th>
             <th class="GridViewHeaderStyle" scope="col" style="width:50px;">Duration</th>
-            <th class="GridViewHeaderStyle" scope="col" style="width:70px;">Time of Next Dose</th>
-            <th class="GridViewHeaderStyle" scope="col" style="width:50px;">Meal</th>
+<%--            <th class="GridViewHeaderStyle" scope="col" style="width:70px;">Time of Next Dose</th>--%>
+<%--            <th class="GridViewHeaderStyle" scope="col" style="width:50px;">Meal</th>--%>
             <th class="GridViewHeaderStyle" scope="col" style="width:220px;">Remarks</th>
+           <th class="GridViewHeaderStyle" scope="col" style="width:30px;display:none"></th>
             <th class="GridViewHeaderStyle" scope="col" style="width:30px;display:none"></th>
-              <th class="GridViewHeaderStyle" scope="col" style="width:20px;">Edit</th>		
+            <th class="GridViewHeaderStyle" scope="col" style="width:20px;">Edit</th>		
             <th class="GridViewHeaderStyle" scope="col" style="width:20px;">Remove</th>			        
 		</tr>
         <#       
@@ -489,17 +494,21 @@ else
                          </tr> 
       <tr>
                     <td class="GridViewLabItemStyle" id="tdMedicine"  style="width:220px;" ><#=objRow.Medicine#></td>
+                    <td class="GridViewLabItemStyle" id="tdGeneric"  style="width:220px;" ><#=objRow.Generic#></td>
                     <td class="GridViewLabItemStyle" id="tdDose" style="width:50px; text-align:center"><#=objRow.Dose#></td>
                     <td class="GridViewLabItemStyle" id="tdRoute" style="width:140px;"><#=objRow.Route#></td>
-                    <td class="GridViewLabItemStyle" id="tdtime" style="width:50px; text-align:center"><#=objRow.time#></td>
                     <td class="GridViewLabItemStyle" id="tddays" style="width:60px; text-align:center;"><#=objRow.days#></td>
-                    <td class="GridViewLabItemStyle" id="tdTimefornxtdose" style="width:70px; text-align:center"><#=objRow.Timefornxtdose#></td>                     
-                    <td class="GridViewLabItemStyle" id="tdMeal" style="width:50px; text-align:center;"><#=objRow.Meal#></td>
+                    <td class="GridViewLabItemStyle" id="tdtime" style="width:50px; text-align:center"><#=objRow.time#></td>                    
+                    <%--<td class="GridViewLabItemStyle" id="tdTimefornxtdose" style="width:70px; text-align:center"><#=objRow.Timefornxtdose#></td>--%>                     
+                    <%--<td class="GridViewLabItemStyle" id="tdMeal" style="width:50px; text-align:center;"><#=objRow.Meal#></td>--%>
                     <td class="GridViewLabItemStyle" id="tdReason"  style="width:220px;" ><#=objRow.Reason#></td> 
                     <td class="GridViewLabItemStyle" id="tdID" style="width:30px;display:none"><#=objRow.ID#></td>
-           <td class="GridViewLabItemStyle" id="tdHeader1"  style="display:none">
-                     <#=objRow.Header#>
-                     </td> 
+                   <td class="GridViewLabItemStyle" id="tdHeader1"  style="display:none">
+                             <#=objRow.Header#>
+                             </td> 
+                  <td class="GridViewLabItemStyle" id="tdItemID"  style="display:none">
+                                     <#=objRow.ItemID#>
+                                     </td> 
           <td class="GridViewLabItemStyle" style="width:20px; text-align:center"  >
                      <img alt="Edit" src="../../Images/edit.png" style="border: 0px solid #FFFFFF; text-align:center; cursor:pointer"                                    
                          onclick="EditMedicine(this)" title="Click To Edit" />                                                                             
@@ -547,9 +556,14 @@ else
                 ShowHide()
             }
 
+            if ($.trim($(rowid).closest('tr').find('#tdItemID').text()) == 0) {
+                $('#chkIsOutside').prop('checked', true);
+            }
+
             $('#spnmedID').text($(rowid).closest('tr').find('#tdID').text());
             if (head != "Drugs Given In Hospital" && head != "Other Drugs Given In Hospital") {
-                $('#txtmedicine').val($(rowid).closest('tr').find('#tdMedicine').text());
+                //  $('#txtmedicine').val($(rowid).closest('tr').find('#tdMedicine').text());               
+                $('#txtmedicine').val('#' + $(rowid).closest('tr').find('#tdMedicine').text() + '#' + $.trim($(rowid).closest('tr').find('#tdItemID').text()));
             }
             else {
                 $('#ddlHospitalMedicine option:selected').text($(rowid).closest('tr').find('#tdMedicine').text());
@@ -558,7 +572,9 @@ else
             $('#ddlnxtdose').val($(rowid).closest('tr').find('#tdTimefornxtdose').text());
             $('#txtDose').val($(rowid).closest('tr').find('#tdDose').text());
             $('#ddlTime').val($(rowid).closest('tr').find('#tdtime').text());
+            $('#ddlTime option:selected').text($(rowid).closest('tr').find('#tdtime').text());
             $('#ddlDays').val($(rowid).closest('tr').find('#tddays').text());
+            $('#ddlDays option:selected').text($(rowid).closest('tr').find('#tddays').text());
             $('#ddlMeal').val($(rowid).closest('tr').find('#tdMeal').text());
         }
         $(document).ready(function () { ShowHide(); });
@@ -566,22 +582,22 @@ else
             $('#<%=rdoListType.ClientID %> input').change(function () {
                 var radios = $("#<%=rdoListType.ClientID%> input[type=radio]:checked").val();
                 if (radios == 1) {
-                    $('#<%=txtDose.ClientID %>,#<%=ddlTime.ClientID %>,#<%=ddlDays.ClientID %>,#<%=ddlnxtdose.ClientID %>').attr('disabled', 'disabled');
-                    $('#<%=Chkscript.ClientID %>').attr('disabled', true);
+                    $('#<%=txtDose.ClientID %>,,#<%=ddlDays.ClientID %>').attr('disabled', 'disabled');
+                    
                     $('#<%=ddlHospitalMedicine.ClientID %>').hide();
                     $('#<%=txtmedicine.ClientID %>').show();
-                    $('#<%=ddlTime.ClientID %>').val('');
+                    
                 }
                 else if (radios == 2 || radios == 3) {
-                    $('#<%=txtDose.ClientID %>,#<%=ddlTime.ClientID %>,#<%=ddlDays.ClientID %>,#<%=ddlnxtdose.ClientID %>,#<%=Chkscript.ClientID %>').attr('disabled', false);
+                    $('#<%=txtDose.ClientID %>,#<%=ddlDays.ClientID %>,').attr('disabled', false);
                     $('#<%=txtmedicine.ClientID %>').focus();
                     $('#<%=ddlHospitalMedicine.ClientID %>').hide();
                     $('#<%=txtmedicine.ClientID %>').show();
 
                 }
                 else {
-                    $('#<%=txtmedicine.ClientID %>,#<%=ddlRoute.ClientID %>,#<%=txtRemarks.ClientID %>,#<%=txtDose.ClientID %>,#<%=ddlTime.ClientID %>').val('').removeAttr('disabled');
-                    $('#<%=ddlDays.ClientID %>,#<%=ddlnxtdose.ClientID %>').val('').removeAttr('disabled');
+                    $('#<%=txtmedicine.ClientID %>,#<%=ddlRoute.ClientID %>,#<%=txtRemarks.ClientID %>,#<%=txtDose.ClientID %>').val('').removeAttr('disabled');
+                    $('#<%=ddlDays.ClientID %>').val('').removeAttr('disabled');
                     $('#<%=lblMsg.ClientID %>').text('');
                     $('#<%=ddlHospitalMedicine.ClientID %>').show();
                     $('#<%=txtmedicine.ClientID %>').hide();
@@ -592,26 +608,26 @@ else
     function ShowHide() {
         var radios = $("#<%=rdoListType.ClientID%> input[type=radio]:checked").val();
         if (radios == 1) {
-            $('#<%=txtDose.ClientID %>,#<%=ddlTime.ClientID %>,#<%=ddlDays.ClientID %>,#<%=ddlnxtdose.ClientID %>').attr('disabled', 'disabled');
-            $('#<%=Chkscript.ClientID %>').attr('disabled', true);
+            $('#<%=txtDose.ClientID %>,#<%=ddlDays.ClientID %>,').attr('disabled', 'disabled');
+           
             $('#<%=ddlHospitalMedicine.ClientID %>').hide();
             $('#<%=txtmedicine.ClientID %>').show();
-            $('#<%=ddlTime.ClientID %>').val('');
+            
         }
         else if (radios == 2 || radios == 3) {
-            $('#<%=txtDose.ClientID %>,#<%=ddlTime.ClientID %>,#<%=ddlDays.ClientID %>,#<%=ddlnxtdose.ClientID %>,#<%=Chkscript.ClientID %>').attr('disabled', false);
+            $('#<%=txtDose.ClientID %>,#<%=ddlDays.ClientID %>').attr('disabled', false);
             $('#<%=txtmedicine.ClientID %>').focus();
             $('#<%=ddlHospitalMedicine.ClientID %>').hide();
             $('#<%=txtmedicine.ClientID %>').show();
-            $('#<%=ddlTime.ClientID %>').val('1-0-1');
+            
         }
         else {
-            $('#<%=txtmedicine.ClientID %>,#<%=ddlRoute.ClientID %>,#<%=txtRemarks.ClientID %>,#<%=txtDose.ClientID %>,#<%=ddlTime.ClientID %>').val('').removeAttr('disabled');
-            $('#<%=ddlDays.ClientID %>,#<%=ddlnxtdose.ClientID %>').val('').removeAttr('disabled');
+            $('#<%=txtmedicine.ClientID %>,#<%=ddlRoute.ClientID %>,#<%=txtRemarks.ClientID %>,#<%=txtDose.ClientID %>').val('').removeAttr('disabled');
+            $('#<%=ddlDays.ClientID %>').val('').removeAttr('disabled');
             $('#<%=lblMsg.ClientID %>').text('');
             $('#<%=ddlHospitalMedicine.ClientID %>').show();
             $('#<%=txtmedicine.ClientID %>').hide();
-            $('#<%=ddlTime.ClientID %>').val('1-0-1');
+            
         }
 }
     </script>

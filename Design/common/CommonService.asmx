@@ -470,12 +470,13 @@ public class CommonService : System.Web.Services.WebService
     [System.Web.Script.Services.ScriptMethod()]
     public string[] GetCompletion(string prefixText, int count)
     {
-        DataTable medicalitems = StockReports.GetDataTable("SELECT Typename FROM f_itemmaster IM INNER JOIN f_subcategorymaster SM  ON sm.SubcategoryID=IM.Subcategoryid INNER JOIN f_configrelation CM ON SM.categoryid=CM.categoryID WHERE cm.configid='11' AND typename like '" + prefixText + "%'");
-        string[] items = new string[medicalitems.Rows.Count];
+      // DataTable medicalitems = StockReports.GetDataTable("SELECT Typename FROM f_itemmaster IM INNER JOIN f_subcategorymaster SM  ON sm.SubcategoryID=IM.Subcategoryid INNER JOIN f_configrelation CM ON SM.categoryid=CM.categoryID WHERE cm.configid='11' AND typename like '" + prefixText + "%'");
+         DataTable medicalitems = StockReports.GetDataTable("SELECT Typename,CONCAT('(Qty:',ROUND(IFNULL(st.Qty,0),2),')')AvlQty, im.ItemID FROM f_itemmaster IM INNER JOIN f_subcategorymaster SM  ON sm.SubcategoryID=IM.Subcategoryid INNER JOIN f_configrelation CM ON SM.categoryid=CM.categoryID LEFT JOIN ( SELECT SUM(InitialCount - ReleasedCount) Qty, ItemID FROM f_stock WHERE ispost = 1 AND MedExpiryDate > CURDATE() AND (InitialCount - ReleasedCount)>0 AND CentreID=1 AND DeptledgerNo='LSHHI57' GROUP BY ITemID ) st ON st.itemID = im.ItemID WHERE cm.configid='11' AND typename like '" + prefixText + "%'");
+        string[] items = new string[medicalitems.Rows.Count];            
         int i = 0;
         foreach (DataRow dr in medicalitems.Rows)
         {
-            items.SetValue(dr["Typename"].ToString(), i);
+            items.SetValue(dr["AvlQty"].ToString() + "#" + dr["Typename"].ToString() + "#" + dr["ItemID"].ToString(), i);         
             i++;
         }
         return items;
