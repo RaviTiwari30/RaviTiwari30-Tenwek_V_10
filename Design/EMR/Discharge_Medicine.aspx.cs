@@ -9,7 +9,7 @@ public partial class Design_EMR_Discharge_Medicine : System.Web.UI.Page
         if (!IsPostBack)
         {
             ViewState["ID"] = Session["ID"].ToString();
-            ViewState["UserID"] = Session["ID"].ToString(); ;
+            ViewState["UserID"] = Session["ID"].ToString();
             string a = ViewState["ID"].ToString();
 
 
@@ -36,16 +36,15 @@ public partial class Design_EMR_Discharge_Medicine : System.Web.UI.Page
     }
     protected void BindDetail()
     {
-        All_LoadData.bindMedicineQuan(ddlTime, "Time");
-        All_LoadData.bindMedicineQuan(ddlDays, "Duration");
-        ddlnxtdose.DataSource = AllGlobalFunction.Medicinenextdosetime;
-        ddlnxtdose.DataBind();
+        All_LoadData.bindMedicineQuan(ddlTime, "Duration");
+        All_LoadData.bindMedicineQuan(ddlDays, "Time"); 
+        //ddlnxtdose.DataSource = AllGlobalFunction.Medicinenextdosetime;
+        //ddlnxtdose.DataBind();
         ddlRoute.DataSource = AllGlobalFunction.Route;
         ddlRoute.DataBind();
     }
     private void BindMedicine()
     {
-
         AllQuery AQ = new AllQuery();
         DateTime AdmitDate = Util.GetDateTime(AQ.getAdmitDate(ViewState["TransID"].ToString()));
         DataTable dtDischarge = AQ.GetPatientDischargeStatus(ViewState["TransID"].ToString());
@@ -85,10 +84,11 @@ public partial class Design_EMR_Discharge_Medicine : System.Web.UI.Page
         {
             ddlHospitalMedicine.DataSource = dt;
             ddlHospitalMedicine.DataTextField = "ItemName";
-            ddlHospitalMedicine.DataValueField = "ItemName";
+            ddlHospitalMedicine.DataValueField = "ItemID";
             ddlHospitalMedicine.DataBind();
         }
     }
+
     private void HospitalOtherMedicine()
     {
         StringBuilder sb = new StringBuilder();
