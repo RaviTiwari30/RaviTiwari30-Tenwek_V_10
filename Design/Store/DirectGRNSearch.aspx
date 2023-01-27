@@ -269,6 +269,13 @@
                             <HeaderStyle CssClass="GridViewHeaderStyle" Width="100px" />
                             <ItemStyle CssClass="GridViewItemStyle" />
                         </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Net Amount">
+                            <ItemTemplate>
+                                <%# Eval("NetAmount")%>
+                            </ItemTemplate>
+                            <HeaderStyle CssClass="GridViewHeaderStyle" Width="100px" />
+                            <ItemStyle CssClass="GridViewItemStyle" />
+                        </asp:TemplateField>
                         <asp:TemplateField HeaderText="Supplier Name">
                             <ItemTemplate>
                                 <asp:Label ID="lblLedgerName" runat="server" Text='<%# Eval("LedgerName") %>' ClientIDMode="Static"></asp:Label>
