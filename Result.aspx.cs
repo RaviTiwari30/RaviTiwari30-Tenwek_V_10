@@ -17,6 +17,7 @@ public partial class Result : System.Web.UI.Page
 
        //
         string content = (new StreamReader(Request.InputStream)).ReadToEnd();
+        //string json = "";
         string json = "";
         List<Mac_Observation> Order = JsonConvert.DeserializeObject<List<Mac_Observation>>(content);
         
