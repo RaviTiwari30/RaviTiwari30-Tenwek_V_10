@@ -677,4 +677,10 @@
     <value>0</value>
     <comment>1 for Apply 0 for Not Apply</comment>
   </data>
+  <data name="BillMaxLength" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ReceiptMaxLength" xml:space="preserve">
+    <value>20</value>
+  </data>
 </root>
